@@ -1,6 +1,8 @@
+.hugo_build.lock
+README.md
+
 # OS generated files #
 ######################
-.hugo_build.lock
 .DS_Store
 .DS_Store?
 ._*

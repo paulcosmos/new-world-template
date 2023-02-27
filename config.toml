@@ -1,7 +1,7 @@
 
 baseURL = 'http://localhost:1313'
 languageCode = 'en-us'
-title = 'Trusted and professional landscapers in York'
+title = 'Trusted and professional #industry in #towncity
 uglyurls = true
 canonifyURLs = false
 relativeURLs = true
