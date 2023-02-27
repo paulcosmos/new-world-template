@@ -1,0 +1,35 @@
+
+baseURL = 'http://localhost:1313'
+languageCode = 'en-us'
+title = 'Trusted and professional landscapers in York'
+uglyurls = true
+canonifyURLs = false
+relativeURLs = true
+disableKinds = ['taxonomy', 'term', 'RSS']
+sectionPagesMenu = ['main', 'footer']
+[params]
+    company     =   '#company'
+    company2    =   '#companyTagline'
+    fullname    =   '#companyFullName'
+    slogan      =   '#slogan '
+    industry    =   '#industry'
+    years       =   '#years'
+    street      =   '#street'
+    towncity    =   '#towncity'
+    county      =   '#county'
+    postcode    =   '#postcode' 
+    phone       =   '#phone'
+    mobile      =   '#mobile'
+    email       =   '#email'
+    facebook    =   '#fb'
+    instagram   =   '#ig'
+    twitter     =   '#tw'
+    tiktok      =   '#tok'
+    checkatrade =   '#'
+    ratedpeople =   '#'
+    yell        =   '#'
+    bookabuilder    =   '#'
+
+
+    preheading = ''
+

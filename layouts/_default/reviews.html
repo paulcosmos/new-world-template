@@ -1,0 +1,24 @@
+{{ define "hero" }}
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-fullhd">
+        {{ partial "page-hero.html" . }}
+      <div>
+    <div>
+  </section>
+{{ end }}
+
+{{ define "main" }}
+  <section class="section">
+
+    <!-- Reviews -->
+    <div class="container is-fullhd">  
+      <div class="columns is-multiline is-mobile review-grid">
+          {{ range where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/" }}
+            {{ partial "review.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

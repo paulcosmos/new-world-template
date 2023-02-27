@@ -1,0 +1,223 @@
+{{ define "hero" }}
+  <section class="hero hero-index">
+   <div class="hero-body">
+      <div class="container is-fullhd">
+
+        <div class="columns is-multiline is-vcentered">
+          <div class="column _is-7-tablet is-7-desktop is-6-fullhd">
+            {{ if (ne .Params "preheading" "") }}
+            <div class="content" data-aos="fade-down">
+              <span class="pre-heading" data-aos="fade-left">
+                {{ .Params.preheading }}
+              </span>
+            </div>
+            {{ end }}
+            <div class="content has-accent" data-aos="fade-left">
+            {{- .Content -}}
+            </div>
+            <div class="button-primary ml-0 mt-5 modal-trigger" data-target="quote-modal" data-aos="fade-up" data-aos-easing="ease-in-back">
+              <button>Start your project <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="column is-5-fullhd is-offset-1-fullhd" data-aos="fade-left">
+            <div class="image is-5by4 company-services-image">
+              <img src="images/laying-turf.jpg" alt="" title=""/>
+            </div>
+          </div>
+
+          <!-- <div class="column is-5-tablet is-5-desktop is-offset-1-desktop is-5-fullhd is-offset-1-fullhd">
+            <div class="accreditations-grid" data-aos="zoom-out-down" >
+              <img src="images/creds/gardenersguild.png" alt="" title="">
+              <img src="images/creds/cityandguilds.png" alt="" title="">
+              <img src="images/creds/checkatrade.png" alt="" title="">
+            </div>
+          </div>
+        <div> -->
+
+      <div>
+    <div>
+  </section>
+{{ end }}
+
+{{ define "main" }}
+  <!-- Company Intro -->
+  <section class="section company-intro">
+    <div class="container is-fullhd">
+      <!-- Company Section -->
+      {{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" -}}
+      <div class="columns is-vcentered is-multiline is-variable is-8">
+
+        <div class="column">
+          <div class="content company-intro-content has-accent" data-aos="fade-in">
+            {{- .Content -}}
+          </div>
+        </div>
+
+        <div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
+          <div class="image has-rounded-corners">
+            <img src="images/{{ .Params.image }}" alt="" title=""/>
+          </div>
+        </div>
+
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Accreditations  -->
+  <!-- <section>
+    <div class="container is-fullhd">
+      <div class="accreditations-banner">
+        <img src="images/creds/checkatrade.png" alt="" title="">
+        <img src="images/creds/cityandguilds.png" alt="" title="">
+        <img src="images/creds/gardenersguild.png" alt="" title="">
+        <img src="images/creds/checkatrade.png" alt="" title="">
+        <img src="images/creds/cityandguilds.png" alt="" title="">
+        <img src="images/creds/gardenersguild.png" alt="" title="">
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Services -->
+  <section class="section company-services-overview">
+    <div class="container is-fullhd">
+
+      <div class="columns is-multiline is-mobile is-variable is-4">
+        <div class="column" data-aos="fade-in">
+          <h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
+        </div>
+        <div class="column is-narrow" data-aos="fade-in">
+          <span class="icon company-icon">
+            <i class="fa-light fa-leaf"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="columns is-multiline is-variable is-4">
+        {{ $currentPage := . }}
+        {{ $.Scratch.Set "delay" 0 }}
+        {{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" -}}
+          {{ $i := $.Scratch.Get "delay" }}
+          {{ $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
+        <div class="column is-6-tablet is-6-desktop is-4-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
+          <h3>{{ .Params.title }}</h3>
+          <p>{{ .Params.desc }}</p>
+          <a href="/services.html">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
+        </div>
+        {{ end }}
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  {{ partial "cta-banner.html" . }}
+  
+  <!-- Reviews Section TinySlider-->
+  <section class="pb-3">
+
+    <div class="container section is-fullhd ">
+      <div class="columns is-multiline is-mobile is-variable is-4">
+        <div class="column" data-aos="fade-in">
+          <h2>Our reviews speak for themselves</h2>
+        </div>
+        <div class="column is-narrow" data-aos="fade-in">
+          <span class="icon company-icon">
+            <i class="fa-light fa-message-heart"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="columns is-multiline is-variable is-6">
+      <div class="container is-fluid">  
+        <div class="columns is-multiline is-mobile review-slider">
+          {{ range first 4 (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
+            {{ partial "review.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Slider Controls/Buttons -->
+    <div class="container py-5 has-text-centered is-fluid">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <div class="is-grouped">
+            <div class="button-primary ml-0 modal-trigger is-inline-block" data-target="quote-modal" data-aos="fade-right">
+              <button href="#">Start your project <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+              <a href="reviews.html" class="button has-text-primary is-ghost is-inline-block" data-aos="fade-left">View more reviews</a>
+          </div>
+        </div>
+
+        <div class="column text-align-right is-narrow">
+          <div id="review-slider-controls" class="buttons is-small is-centered" aria-label="Carousel Navigation" tabindex="0">
+            <button class="button is-light" aria-controls="review-slider" tabindex="-1" data-controls="prev">
+              <span class="icon is-medium">
+                <i class="fa-regular fa-arrow-left"></i>
+              </span>
+            </button>
+            <button class="button is-light" aria-controls="review-slider" tabindex="-1" data-controls="next">
+              <span class="icon is-medium">
+                <i class="fa-regular fa-arrow-right"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+{{ end }}
+
+{{ define "scripts" }}
+<!-- <script src="js/tinyslider-settings.js" type="module" async defer></script> -->
+  <script>
+      var slider = tns({
+        container: '.review-slider',
+        items: 1,
+        slideBy: 'page',
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 15000,
+        autoplayButtonOutput: false,
+        autoplayHoverPause: true,
+        speed: 1000,
+        gutter: 0,
+        edgePadding: 20,
+        center: true,
+        nav: false,
+        preventActionWhenRunning: true,
+        controls: true,
+        controlsContainer: '#review-slider-controls',
+        responsive: {
+            960: {
+                items: 2,
+                controls: true,
+                center: false,
+            },
+            1024: {
+                slideBy: 1,
+                gutter: 20,
+                items: 2,
+                edgePadding: 40,
+                center: true,
+            },
+            1280: {
+                items: 3,
+                edgePadding: 40,
+
+            },
+            1540: {
+                items: 3,
+                edgePadding: 40,
+
+            }
+        }
+      });
+  </script>
+{{ end }}

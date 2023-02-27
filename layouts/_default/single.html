@@ -1,0 +1,18 @@
+{{ define "hero" }}
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-fullhd">
+        <h1>SINGLE TYPE</h1>
+        {{ partial "page-hero.html" . }}
+      <div>
+    <div>
+  </section>
+{{ end }}
+
+{{ define "main" }}
+  <div>{{ .Content }}</div>
+{{ end }}
+
+{{ define "scripts" }}
+<!-- Page specific scripts -->
+{{ end }}

@@ -1,0 +1,80 @@
+{{ define "hero" }}
+<section class="hero has-text-centered is-halfheight hero-fail">
+    <div class="hero-body">
+        <div class="container is-fullhd">
+
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop is-6-fullhd is-offset-3-fullhd is-12-tablet">
+              <div class="content hero-services-content has-accent" data-aos="fade-down">
+                {{ .Content }}
+              </div>
+            </div>
+          <div>
+
+        <div>
+    <div>
+</section>
+{{ end }}
+
+{{ define "main" }}
+  <section class="section contact">
+    <div class="container is-fullhd">
+      <div id="map" class="map has-background-grey is-hidden-touch"></div>
+      <div class="columns is-variableis-multiline">
+        <!-- Contact Details -->
+        <div class="column">
+          <div class="content contact-details mb-6" data-aos="fade-right">
+              <h2>Business Address</h2>
+              <address>
+              {{- with .Site.Params -}}
+              {{ .street }},<br/>
+              {{ .towncity }}, {{ .county }}, <br/>
+              {{ .postcode }}
+              {{ end }}
+              </address>
+          </div>
+          <div class="content contact-details mt-4" data-aos="fade-right">
+              <h2>Contact Details</h2>
+              <address>
+              {{- with .Site.Params -}}
+                <span class="icon-text">
+                  <span class="icon is-small"><i class="fa-regular fa-phone"></i></span>
+                  <span><a href='tel:{{- replaceRE "(\\s)" "" .phone |  -}}'>{{ .phone }}</a></span>
+                </span>
+                <span class="icon-text">
+                  <span class="icon is-small"><i class="fa-regular fa-mobile"></i></span>
+                  <span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
+                </span>
+                <span class="icon-text">
+                  <span class="icon is-small"><i class="fa-regular fa-envelope"></i></span>
+                  <span><a href="mailto:{{ .email }}">{{ .email }}</a></span>
+                </span>
+              </address>
+              <div class="social-links" data-aos="fade-in-up">
+                <a href="https://facebook.com/{{ .facebook }}" title="Find us on Facebook" target="_blank" rel="noopener">
+                  <span class="icon"><i class="fa-brands fa-lg fa-square-facebook"></i></span>
+                </a>
+                <a href="https://instagram.com/{{ .instagram }}" title="Find us on Instagram" target="_blank" rel="noopener">
+                  <span class="icon"><i class="fa-brands fa-lg fa-instagram"></i></span>
+                </a>
+                <a href="https://twitter.com/{{ .twitter }}" title="Find us on Twitter" target="_blank" rel="noopener">
+                  <span class="icon"><i class="fa-brands fa-lg fa-twitter"></i></span>
+                </a>
+                <a href="https://tiktok.com/@{{ .tiktok }}" title="Find us on TikTok" target="_blank" rel="noopener">
+                  <span class="icon"><i class="fa-brands fa-lg fa-tiktok"></i></span>
+                </a>
+                {{ end }}
+              </div>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <div class="column box contact-form" data-aos="fade-up">         
+          {{ partial "contact-form.html" . }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "scripts" }}
+{{ end }}
