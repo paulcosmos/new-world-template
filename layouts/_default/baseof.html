@@ -4,25 +4,30 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
-<head>
-  {{ partial "meta.html" . }}
-</head>
+  <head>
+    {{ partial "meta.html" . }}
+  </head>
+
 <body>
   <header>
-  {{ partial "top-banner.html" . }}
-  {{ partial "navbar.html" . }}
-  {{ block "hero" . }}
-  {{ end }}
+    {{ partial "top-banner.html" . }}
 
+    {{partial "navbar.html" . }}
+
+  {{ block "hero" . }}
+  {{- end }}
 </header>
+
 <main>
   {{ block "main" . }}{{ end }} 
-  {{ partial "why-us-banner.html" . }}
-  {{ partial "quote-modal.html" . }}
+  {{- partial "why-us-banner.html" . }}
+  {{- partial "quote-modal.html" . }}
 </main>
-<!-- Footer -->
-  {{ partial "site-footer.html" . }}
-<!-- JS stuff -->
+
+<footer class="site-footer">
+  {{- partial "site-footer.html" . }}
+</footer>
+
 <script src="js/site.js"></script>
 <script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -1,12 +1,20 @@
 
 baseURL = 'http://localhost:1313'
 languageCode = 'en-us'
-title = 'Trusted and professional #industry in #towncity
+title = 'Trusted and professional #industry in #towncity'
 uglyurls = true
 canonifyURLs = false
 relativeURLs = true
 disableKinds = ['taxonomy', 'term', 'RSS']
 sectionPagesMenu = ['main', 'footer']
+
+[markup.goldmark.parser]
+    autoHeadingID = false
+    
+[markup.goldmark.renderer]
+    unsafe = true
+    hardWraps = true
+
 [params]
     company     =   '#company'
     company2    =   '#companyTagline'
@@ -29,7 +37,3 @@ sectionPagesMenu = ['main', 'footer']
     ratedpeople =   '#'
     yell        =   '#'
     bookabuilder    =   '#'
-
-
-    preheading = ''
-

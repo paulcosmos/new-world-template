@@ -1,21 +1,19 @@
 <div class="column is-6-tablet is-12-mobile is-flex" data-aos="fade-in">
-    <div class="review-card">
-        <div class="card-content">
-            <!-- Review rating -->
-            <div class="media content">
-                <figure class="media-content">
-                  <figcaption>{{ .Title }}</figcaption>
-                  <div class="review-stars">
-                    {{ range $num := (seq 5) }}
-                    <span class="icon"><i class="fa-solid fa-star-sharp"></i></span>
-                    {{ end }}
-                  </div>
-                </figure>
+            <div class="review-card">
+              <div class="card-content">
+                <div class="media content">
+                  <figure class="media-content">
+                    <figcaption>{{ .Title }}</figcaption>
+                    <div class="review-stars">
+                      {{- range $num := (seq 5) }}
+                      <span class="icon"><i class="fa-solid fa-star-sharp"></i></span>
+                      {{- end }}
+                    </div>
+                  </figure>
+                </div>
+                <blockquote class="content">
+                {{ .Content }}
+                </blockquote>
+              </div>
             </div>
-            <!-- Review Text -->
-            <blockquote class="content">
-            {{- .Content -}}
-            </blockquote>
-        </div>
-    </div>
-</div>
+          </div>

@@ -2,83 +2,58 @@
   <section class="hero hero-index">
    <div class="hero-body">
       <div class="container is-fullhd">
-
         <div class="columns is-multiline is-vcentered">
+
           <div class="column _is-7-tablet is-7-desktop is-6-fullhd">
             {{ if (ne .Params "preheading" "") }}
             <div class="content" data-aos="fade-down">
               <span class="pre-heading" data-aos="fade-left">
-                {{ .Params.preheading }}
+                {{- .Params.preheading -}}
               </span>
             </div>
-            {{ end }}
+            {{ end -}}
             <div class="content has-accent" data-aos="fade-left">
-            {{- .Content -}}
+              {{ .Content }}
             </div>
+            
             <div class="button-primary ml-0 mt-5 modal-trigger" data-target="quote-modal" data-aos="fade-up" data-aos-easing="ease-in-back">
               <button>Start your project <i class="fa-solid fa-arrow-right"></i></button>
             </div>
           </div>
+
           <div class="column is-5-fullhd is-offset-1-fullhd" data-aos="fade-left">
             <div class="image is-5by4 company-services-image">
               <img src="images/laying-turf.jpg" alt="" title=""/>
             </div>
           </div>
 
-          <!-- <div class="column is-5-tablet is-5-desktop is-offset-1-desktop is-5-fullhd is-offset-1-fullhd">
-            <div class="accreditations-grid" data-aos="zoom-out-down" >
-              <img src="images/creds/gardenersguild.png" alt="" title="">
-              <img src="images/creds/cityandguilds.png" alt="" title="">
-              <img src="images/creds/checkatrade.png" alt="" title="">
-            </div>
-          </div>
-        <div> -->
-
+        </div>
       <div>
     <div>
-  </section>
+</section>
 {{ end }}
 
 {{ define "main" }}
-  <!-- Company Intro -->
+  {{/* Company Intro */}}
   <section class="section company-intro">
     <div class="container is-fullhd">
-      <!-- Company Section -->
-      {{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" -}}
+      {{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
       <div class="columns is-vcentered is-multiline is-variable is-8">
-
         <div class="column">
           <div class="content company-intro-content has-accent" data-aos="fade-in">
-            {{- .Content -}}
+            {{ .Content}}
           </div>
         </div>
-
         <div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
           <div class="image has-rounded-corners">
             <img src="images/{{ .Params.image }}" alt="" title=""/>
           </div>
         </div>
-
       </div>
-      {{ end }}
+      {{- end }}
     </div>
   </section>
 
-  <!-- Accreditations  -->
-  <!-- <section>
-    <div class="container is-fullhd">
-      <div class="accreditations-banner">
-        <img src="images/creds/checkatrade.png" alt="" title="">
-        <img src="images/creds/cityandguilds.png" alt="" title="">
-        <img src="images/creds/gardenersguild.png" alt="" title="">
-        <img src="images/creds/checkatrade.png" alt="" title="">
-        <img src="images/creds/cityandguilds.png" alt="" title="">
-        <img src="images/creds/gardenersguild.png" alt="" title="">
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Services -->
   <section class="section company-services-overview">
     <div class="container is-fullhd">
 
@@ -94,11 +69,12 @@
       </div>
 
       <div class="columns is-multiline is-variable is-4">
-        {{ $currentPage := . }}
-        {{ $.Scratch.Set "delay" 0 }}
+        {{/* Service Item */}}
+        {{- $currentPage := . -}}
+        {{- $.Scratch.Set "delay" 0 }}
         {{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" -}}
-          {{ $i := $.Scratch.Get "delay" }}
-          {{ $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
+          {{- $i := $.Scratch.Get "delay" }}
+          {{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
         <div class="column is-6-tablet is-6-desktop is-4-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
           <h3>{{ .Params.title }}</h3>
           <p>{{ .Params.desc }}</p>
@@ -107,12 +83,11 @@
         {{ end }}
       </div>
 
-
     </div>
   </section>
 
   <!-- CTA Banner -->
-  {{ partial "cta-banner.html" . }}
+  {{- partial "cta-banner.html" . }}
   
   <!-- Reviews Section TinySlider-->
   <section class="pb-3">
@@ -134,9 +109,9 @@
     <div class="columns is-multiline is-variable is-6">
       <div class="container is-fluid">  
         <div class="columns is-multiline is-mobile review-slider">
-          {{ range first 4 (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
-            {{ partial "review.html" . }}
-          {{ end }}
+        {{ range first 4 (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
+          {{ partial "review.html" . }}
+        {{ end -}}
         </div>
       </div>
     </div>

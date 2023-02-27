@@ -9,9 +9,9 @@ _build:
 
 ## What makes us the **top choice** for your dream garden?
 
-* Over 40 years of experience in and around York
-* A reputation for excellent build quality and professionalism
-* Hard-working, customer focused approach to projects
++ Over 40 years of experience in and around York
++ A reputation for excellent build quality and professionalism
++ Hard-working, customer focused approach to projects
 
 Spencer Ellis LDC have been providing landscaping services to happy customers in and around York since 1998. In that time we've earned a reputation for excellent build quality using sustainable and long-lasting materials.
 

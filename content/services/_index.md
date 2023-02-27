@@ -1,8 +1,8 @@
 ---
-title: Services
+title: Our Services
 menu: ["main","footer"]
 weight: 2
-preheading: "Our Services"
+anchor: "Services"
 _build:
   render: true
 cascade:
