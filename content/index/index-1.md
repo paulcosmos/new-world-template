@@ -7,7 +7,7 @@ _build:
     render: false
 ---
 
-## What makes us the top choice for your dream garden?
+## What makes us the **top choice** for your dream garden?
 
 * Over 40 years of experience in and around York
 * A reputation for excellent build quality and professionalism
