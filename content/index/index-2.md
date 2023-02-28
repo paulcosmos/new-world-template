@@ -1,15 +1,13 @@
 ---
-image: garden-shed.jpg
 type: index-content
 weight: 4
 _build:
     list: true
     render: false
 image:
-
 ---
 
-## What makes us the top choice for your dream garden?
+## Vintage and **classic car transportation** is our speciality
 
 * Over 40 years of experience in and around York
 * A reputation for excellent build quality and professionalism

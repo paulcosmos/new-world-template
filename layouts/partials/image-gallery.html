@@ -1,4 +1,4 @@
-{{ $folder := .Params.name | lower | printf "/assets/images/gallery/%s"}}
+{{ $folder := .Params.name | lower | printf "assets/images/gallery/%s"}}
   <div class="gallery">
 
   {{- if fileExists $folder }}
@@ -6,20 +6,14 @@
       {{- range $files -}}
         {{- if not .IsDir}}
           {{- if ne .Name ".DS_Store" }}
-          {{- $image := printf "images/gallery/%s" .Name  -}}
+          {{- $image := resources.Get ( printf "images/gallery/%s" .Name ) -}}
           {{- $thumb := resources.Get $image  -}}
-          <a href="images/gallery/{{ .Name }}">
-            <img src='{{ ($thumb.Fill "460x460 q75 Center").RelPermalink }}' alt="" title=""/>
+          <a href="{{ $image.RelPermalink  }}">
+            <img src='{{ ($thumb.Fit "460x460 q75 Center").RelPermalink }}' alt="" title=""/>
           </a>
         {{ end -}}
       {{ end -}}
     {{ end -}}
   {{ end -}}
         <div class="clear"></div>
-  {{/* <a href="images/gallery/vehicle-recovery-red-bmw.webp"><img src="images/gallery/thumbs/vehicle-recovery-red-bmw.jpg" alt="" title=""/></a>
-  <a href="images/gallery/vehicle-recovery-blue-golf.webp"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
-  <a href="images/gallery/vehicle-recovery-dark-golf.jpeg"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
-  <a href="images/gallery/vehicle-recovery.webp"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
-  <a href="images/gallery/vehicle-recovery.webp"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
-  <a href="images/gallery/vehicle-recovery.webp"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>*/}}
   </div>

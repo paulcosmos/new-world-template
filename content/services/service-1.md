@@ -1,14 +1,13 @@
 ---
-title: "#service-1"
+title: "Breakdown Recovery"
 type: service-item
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+desc: 24/7 roadside recovery throughout Glasgow and Scotland.
 weight: 2
-image: 
-anchor: "#service-1"
+image: images/breakdown.jpg
+anchor:
 ---
-## #service-1
+## Breakdown Recovery
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+We're based in {{<towncity>}} and are available 24 hours for local recovery and roadside assistance.
 
-* Duis aute irure dolor in reprehenderit in voluptate velit * Dolore eu fugiat nulla pariatur. 
-* Excepteur sint occaecat cupidatat non proident
+* Available 24 hours, 7 days a week
