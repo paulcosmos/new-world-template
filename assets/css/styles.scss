@@ -660,7 +660,7 @@ address {
             &:not(:last-child){
                 margin-bottom: $size-1!important;
                 padding-bottom: $size-3;
-                border-bottom: solid 2px $tertiary;
+                border-bottom: solid 2px lighten($secondary, 94%);
             }
 
             &:nth-of-type(odd){
