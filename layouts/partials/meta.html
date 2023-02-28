@@ -1,4 +1,5 @@
-<title>{{- print .Page.Title }} | {{ print .Site.Params.fullname }} | {{ print .Site.Title }}</title>
+<title>
+{{- if .IsHome }}{{- print .Site.Params.fullname }} | {{ print .Site.Title }}{{ else}}{{- print .Page.Title }} | {{ print .Site.Params.fullname }}{{ end }}</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
     <meta name="application-name" content="Spencer Ellis Landscaping Design Construction">
     <link rel="canonical" href="http://spencerellislandscapedesign.co.uk">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    {{ "<!--[if (lt IE 9)]><script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js'></script><![endif]-->" | safeHTML }}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     {{- $style := resources.Get "css/styles.scss" | resources.ToCSS | resources.PostCSS  (dict "config" "./postcss.config.js") | resources.Fingerprint "sha512"  }}
     <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">

@@ -1,0 +1,57 @@
+  <section class="pb-3">
+
+    <div class="container section is-fullhd ">
+      <div class="columns is-multiline is-mobile is-variable is-4">
+        <div class="column" data-aos="fade-in">
+          <h2>Our reviews speak for themselves</h2>
+        </div>
+        <div class="column is-narrow" data-aos="fade-in">
+          <span class="icon company-icon">
+            <i class="fa-light fa-message-heart"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="columns is-multiline is-variable is-6">
+      <div class="container is-fluid">  
+        <div class="columns is-multiline is-mobile review-slider">
+        {{ range first 4 (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
+          {{ partial "review.html" . }}
+        {{ end -}}
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Slider Controls/Buttons -->
+    <div class="container py-5 has-text-centered is-fluid">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <div class="is-grouped">
+            <div class="button-primary ml-0 modal-trigger is-inline-block" data-target="quote-modal" data-aos="fade-right">
+              <button href="#">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+              <a href="reviews.html" class="button is-ghost is-inline-block" data-aos="fade-left">View more reviews</a>
+          </div>
+        </div>
+
+        <div class="column text-align-right is-narrow">
+          <div id="review-slider-controls" class="buttons is-small is-centered" aria-label="Carousel Navigation" tabindex="0">
+            <button class="button is-light" aria-controls="review-slider" tabindex="-1" data-controls="prev">
+              <span class="icon is-medium">
+                <i class="fa-regular fa-arrow-left"></i>
+              </span>
+            </button>
+            <button class="button is-light" aria-controls="review-slider" tabindex="-1" data-controls="next">
+              <span class="icon is-medium">
+                <i class="fa-regular fa-arrow-right"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>

@@ -4,9 +4,9 @@
         <!-- Start Column -->
       <div class="columns is-multiline is-vcentered is-centered is-mobile">
         <div class="column is-12-mobile is-hidden-mobile has-text-centered-mobile">
-          {{- .Site.Params.slogan }} 
-          {{- .Site.Params.towncity }}
+          {{ .Site.Params.slogan }} in {{ .Site.Params.towncity }}
         </div>
+        {{ if $.Site.Params.phone }}
         <div class="column is-narrow is-6-touch has-text-left has-text-right-desktop ">
           <span class="icon-text">
             <span class="icon">
@@ -15,6 +15,7 @@
             <span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a></span>
           </span>
         </div>
+        {{ end }}
         <div class="column is-narrow is-6-touch has-text-right">
           <span class="icon-text has-text-weight-medium">
             <span class="icon">

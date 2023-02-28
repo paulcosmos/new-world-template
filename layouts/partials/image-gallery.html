@@ -1,9 +1,25 @@
-<div class="gallery">
-  <a href="images/gallery/placeholder.png"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
-  <a href="images/gallery/placeholder2.png"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
-  <a href="images/gallery/placeholder3.png"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
-  <a href="images/gallery/placeholder4.png"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
-  <a href="images/gallery/placeholder5.png"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
-  <a href="images/gallery/placeholder6.png"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
-  <div class="clear"></div>
-</div>
+{{ $folder := .Params.name | lower | printf "/assets/images/gallery/%s"}}
+  <div class="gallery">
+
+  {{- if fileExists $folder }}
+    {{ $files := readDir $folder }}
+      {{- range $files -}}
+        {{- if not .IsDir}}
+          {{- if ne .Name ".DS_Store" }}
+          {{- $image := printf "images/gallery/%s" .Name  -}}
+          {{- $thumb := resources.Get $image  -}}
+          <a href="images/gallery/{{ .Name }}">
+            <img src='{{ ($thumb.Fill "460x460 q75 Center").RelPermalink }}' alt="" title=""/>
+          </a>
+        {{ end -}}
+      {{ end -}}
+    {{ end -}}
+  {{ end -}}
+        <div class="clear"></div>
+  {{/* <a href="images/gallery/vehicle-recovery-red-bmw.webp"><img src="images/gallery/thumbs/vehicle-recovery-red-bmw.jpg" alt="" title=""/></a>
+  <a href="images/gallery/vehicle-recovery-blue-golf.webp"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
+  <a href="images/gallery/vehicle-recovery-dark-golf.jpeg"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
+  <a href="images/gallery/vehicle-recovery.webp"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
+  <a href="images/gallery/vehicle-recovery.webp"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>
+  <a href="images/gallery/vehicle-recovery.webp"><img src="images/gallery/thumbs/placeholder.png" alt="" title=""/></a>*/}}
+  </div>

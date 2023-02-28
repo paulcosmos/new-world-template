@@ -21,14 +21,19 @@
                 {{ .Content }}
               <hr/>
               <div class="button-primary ml-0 modal-trigger" data-aos="fade-up" data-aos-easing="ease-in-back">
-                <a href="contact.html">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="contact.html">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
 
           </div>
           <div class="column" data-aos="fade-left">
             <div class="image is-5by4 company-services-image company-services-image">
-              <img src="images/{{ .Params.image }}" alt="" title=""/>
+              {{- $image := resources.Get .Params.image }}
+              {{- if $image }}
+              <img src='{{ ($image.Fill "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
+              {{ else }}
+              <img src='images/placeholder.jpg'/>
+              {{- end }}
             </div>
           </div>
         </div>

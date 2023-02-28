@@ -2,6 +2,10 @@
 image: garden-shed.jpg
 type: index-content
 weight: 4
+_build:
+    list: true
+    render: false
+image:
 
 ---
 
