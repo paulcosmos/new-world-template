@@ -10,7 +10,7 @@ $primary: #e4c40e;
 $secondary: #000000;
 $info: $secondary;
 $light-grey: #f8f8f8;
-$tertiary: darken(#EFF2F5, 75%);
+$tertiary: darken(#EFF2F5, 85%);
 $family-sans-serif: "Nunito", sans-serif;
 $family-headings: $family-sans-serif;
 $text: $secondary;
@@ -28,7 +28,6 @@ $navbar-burger-color: $primary;
 $navbar-item-hover-color: white;
 $sl-overlay-background: $secondary;
 $sl-navigation-color: white;
-// $fullhd: 1440px;
 $bg-overlay: rgba(0, 0, 0, 0.6);
 
 @import "bulma.sass";
@@ -48,7 +47,7 @@ $dot-space: 20px;
 // Setting the the 'paved' BG pattern
 $paving-size: 40px;
 $paving-bg:$accent;
-$paving: lighten($accent, 3%);
+$paving : lighten($accent, 8%);
 
 // Mixins 
 @mixin section-item-title {
@@ -347,20 +346,22 @@ address {
 
 // Top Banner
 .top-banner {
-    background-color: $accent;
-    color: white;
+    background-color: $primary;
+    color: inherit;
     font-size: $size-7;
-    font-weight: medium;
-    padding-top: $size-7;
-    padding-bottom: $size-7;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    // padding-top: $size-7;
+    // padding-bottom: $size-7;
     position: relative;
-    // z-index: 99;
+
     .icon {
-        color: $primary;
+        color: $secondary
     }
 
     a {
         color:inherit;
+        font-weight: inherit;
     }
 }
 
@@ -832,21 +833,48 @@ address {
     }
 
     a {
+        position: relative;
         flex-grow: 1;
         opacity: 1;
-        transition: opacity 0.2s ease-in-out;
+        background-color: $secondary;
+        transition: all 0.2s ease-in-out;
+        @include box-shadow-trello;
+
         &:hover {
-            opacity: 0.5;
+            @include box-shadow-high;
+
+            img {
+                opacity: 0.4;
+            }
+
+            &:after {
+                opacity: 1;
+                top:50%;
+            }
         }
 
         img {
             width: 100%;
-            @include box-shadow-trello;
+            vertical-align: bottom;
+            position: relative;
 
             &:hover {
                 transition: box-shadow 0.3s ease-out;
-                @include box-shadow-high;
+                opacity: 0.4;
             }
+        }
+
+        &:after{
+            content: "\f06e";
+            font-family: FontAwesome;
+            color: white;
+            text-align:center;
+            position: absolute;
+            opacity: 0;
+            top: 100%;
+            left: 50%;
+            transform: Translate(-50%, -50%);
+            transition: all 0.3s;
         }
     }
 
@@ -857,7 +885,7 @@ address {
 
     &-banner {
         background-color: $primary;
-        position: relative;
+        position: absolute;
         margin-top: -5rem;
         padding: 2rem;
         font-weight: 600;
@@ -987,14 +1015,21 @@ address {
             color: $accent;
         }
 
+        p {
+            font-size: $size-7;
+            font-style: italic;
+            color: lighten($text, 50%);
+        }
         address {
+            display: block;
+            // margin-bottom: $size-7;
+
             .icon-text {
                 margin-bottom: .5rem;
             }
         }
 
         .icon {
-
             &-text {
                 display: block;
 
@@ -1037,7 +1072,7 @@ address {
 
 // Site Footer 
 .site-footer {
-    background-color: $accent;
+    background-color: $secondary;
     color: white;
     @include background-paved;
 
@@ -1133,11 +1168,11 @@ address {
     }
 
     &-signoff {
+        background-color: lighten($secondary, 10%);
         text-align: center;
         padding-top: $size-4;
         padding-bottom: $size-4;
-        color: darken($tertiary, 20%);
+        color: inherit;
         font-size: $size-7;
-        background-color: black;
     }
 }
