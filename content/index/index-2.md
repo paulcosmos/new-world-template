@@ -4,15 +4,13 @@ weight: 4
 _build:
     list: true
     render: false
-image:
+image: images/vehicle-transportation.jpg
 ---
 
-## Vintage and **classic car transportation** is our speciality
+## We're trusted **vehicle collection &amp; delivery** experts.
 
-* Over 40 years of experience in and around York
-* A reputation for excellent build quality and professionalism
-* Hard-working, customer focused approach to projects
+Whether it's a classic car, a work van or a daily driver, we understand the **value and importance of your vehicle**. We take the utmost care to prevent any damage during collection, transportation and delivery, ensuring it reaches it's destination in exactly the same condition.
 
-Spencer Ellis LDC have been providing landscaping services to happy customers in and around York since 1998. In that time we've earned a reputation for excellent build quality using sustainable and long-lasting materials.
-
-We strive for excellence, and will work closely with you to bring your perfect outdoor space to life, all the way from design to completion.
+* Years of experience delivering vehicles swiftly and safely
+* Experts in classic car collection and delivery
+* Available throughout {{<towncity>}}, {{<county>}} and the UK

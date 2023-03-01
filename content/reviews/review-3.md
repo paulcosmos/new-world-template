@@ -1,6 +1,7 @@
 ---
-title: Reviewer Name.
+title: Sarah K.
 type: review
+rating: 5
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Very happy with the service and promptness of their attendance. I was worried I'd be left stranded in the middle of Scotland but they arrived much quicker than expected. Thank you!

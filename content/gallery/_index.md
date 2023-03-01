@@ -5,6 +5,8 @@ weight: 3
 anchor: "Gallery"
 ---
 
-# Yes, we can **move it**!
+# Whatever the vehicle, we can **move it**!
 
-We are able to transport and relocate a number of vehicles, These are recently completed {{<industry>}} projects in and around {{<towncity>}}. Click on any of the thumbnails below for a closer look.
+Our fleet of flatbed trucks are all fitted with high powered winches, meaning we are able to transport and relocate a wide range of vehicles (even damaged and non-runners) throughout {{<county>}} and the UK. 
+
+See for yourself below, click on any of the thumbnails below for a closer look.

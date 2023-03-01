@@ -14,8 +14,3 @@ sectionPagesMenu = ['main', 'footer']
 [markup.goldmark.renderer]
     unsafe = true
     hardWraps = true
-
-[module]
-    [[module.mounts]]
-        source = "assets/images"
-        target = "static/images"
