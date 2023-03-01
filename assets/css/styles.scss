@@ -542,12 +542,12 @@ strong {
 
 // Inherit font colour from parents Bulma modifier classes 
 
-.pre-heading,
-.pre-heading > span {
+// .pre-heading > span,
+.pre-heading {
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: bold;
-    margin-bottom: $size-4;
+    margin-bottom: $size-5;
     display: block;
     color: $primary;
 }
@@ -1130,6 +1130,7 @@ strong {
         h5{
             font-weight: normal;
             font-size: $size-7;
+            line-height: 1.4em;
         }
 
         .button-primary {
