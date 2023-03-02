@@ -13,4 +13,3 @@ With our fully equipped workshop facilities in Glasgow we can carry out mechanic
 * Latest tools and diagnostic technology available
 * Resolve or avoid MOT failures
 * Servicing option to keep your vehicle in peak condition
-
