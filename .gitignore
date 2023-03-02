@@ -12,3 +12,5 @@ ehthumbs.db
 Thumbs.db
 public
 resources
+
+config/_default/params.toml
