@@ -1,8 +1,8 @@
 ---
 title: "Classic Car Delivery"
 type: service-item
-desc: "Safe, reliable and prompt collection and delivery of classic cars."
-weight: 4
+desc: "Safe, secure and insured, we have a proven track record for reliable collection and delivery of classic cars."
+weight: 6
 image: images/classic-car-front.jpg
 anchor: 
 ---

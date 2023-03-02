@@ -1,12 +1,12 @@
 ---
-title: "Vehicle Transportation"
+title: "Vehicle Relocation Service"
 type: service-item
-desc: "Safe, reliable and prompt collection and delivery of classic cars."
+desc: "No tax, MOT or insurance? We provide prompt vehicle pick-up and drop-off services."
 weight: 2
 image: images/vehicle-transportation.jpg
-anchor: 
+anchor: Vehicle Drop-off
 ---
-## Vehicle Transportation
+## Vehicle Relocation
 
 No MOT, road tax or insurance? Don't risk your licence! Let us give you a competitive price to collect and deliver your vehicle promptly to another location.
 

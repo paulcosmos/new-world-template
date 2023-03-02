@@ -3,7 +3,7 @@ title: 'Home'
 menu: ["main","footer"]
 weight: 1
 preheading: '24/7 Nationwide Vehicle Recovery & Transport'
-image: images/hero-image.jpg
+image: images/towing-traffic.jpg
 ---
 
 # Reliable **{{<industry>}} &amp; transportation services** throughout **{{<towncity>}}**, {{<county>}} and beyond.

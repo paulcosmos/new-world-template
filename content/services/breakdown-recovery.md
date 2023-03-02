@@ -1,7 +1,7 @@
 ---
 title: "Breakdown Recovery"
 type: service-item
-desc: 24/7 roadside recovery throughout Glasgow and Scotland.
+desc: "Anytime, anywhere, 24/7 roadside breakdown recovery throughout Glasgow and Scotland."
 weight: 2
 image: images/car-on-flatbed.jpg
 anchor:
