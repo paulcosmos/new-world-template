@@ -1,6 +1,6 @@
 <section class="section">
    <div class="container is-fullhd">
-      <div class="content has-text-centered is-size-5 has-text-white cta-banner" data-aos="fade-up">
+      <div class="content cta-banner" data-aos="fade-up">
          <p>Don't see a specific service you need listed above? Call us today on 
          {{ if $.Site.Params.phone }}
             <a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a>
