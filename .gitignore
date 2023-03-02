@@ -14,3 +14,4 @@ public
 resources
 content
 config/_default/params.toml
+assets/branding.scss
