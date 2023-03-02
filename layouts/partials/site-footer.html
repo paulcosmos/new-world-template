@@ -1,61 +1,63 @@
-  <div class="section">
-    <div class="container _is-fluid is-fullhd">
-      <div class="columns is-mobile is-8 is-multiline">
+			<div class="section">
+				<div class="container _is-fluid is-fullhd">
+					<div class="columns is-mobile is-8 is-multiline">
 
-        <div class="column is-12-mobile is-5-tablet _is-5-desktop is-4-fullhd ">
-          <div class="content site-footer-company-info">
-            {{- with .Site.Params }}
-            <h4><span>{{ .company }}</span><br/>{{ .company2 }}</h4>
-            <h5>Nationwide vehicle recovery. {{ .company }} are car transportation experts based in {{ .towncity }}, {{ .county }}.</h5>
-            <div class="button-primary ml-0 modal-trigger" data-aos="fade-right" data-aos-easing="ease-in-back">
-              <a href="contact.html">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <div class="site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
-              {{ if .facebook }}<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-square-facebook"></i></span></a>{{ end }}
-              {{ if .instagram }}<a href="https://instagram.com/{{- .instagram -}}" title="Find us on Instagram" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-instagram"></i></span></a>{{ end }}
-              {{ if .twitter }}<a href="https://twitter.com/{{- .twitter -}}" title="Find us on Twitter" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-twitter"></i></span></a>{{ end }}
-              {{ if .tiktok }}<a href="https://tiktok.com/@{{- .tiktok -}}" title="Find us on TikTok" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-tiktok"></i></span></a>{{ end }}
-            </div>
-            {{- end }}
-          </div>
-        </div>
+						<div class="column is-12-mobile is-5-tablet _is-5-desktop is-4-fullhd ">
+							<div class="content site-footer-company-info">
+							{{- with .Site.Params }}
+								<h4><span>{{ .company }}</span><br/>{{ .company2 }}</h4>
+								<h5>Nationwide vehicle recovery. {{ .company }} are car transportation experts based in {{ .towncity }}, {{ .county }}.</h5>
 
-        <div class="column is-6-mobile is-3-tablet is-3-desktop is-3-fullhd _is-narrow">
-          <div class="content site-footer-links has-columns">
-            <h4>Site Links</h4>
-            <ul>
-              {{- range .Site.Menus.footer }}
-              <li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
-              {{- end }}
-            </ul>
-          </div>
-        </div>
+								<div class="button-primary ml-0 modal-trigger" data-aos="fade-right" data-aos-easing="ease-in-back">
+									<a href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
+								</div>
 
-        <div class="column _is-12-mobile is-3-tablet _is-3-desktop is-4-fullhd is-offset-1-fullhd">
-          <div class="content site-footer-links has-columns">
-            <h4>Primary Services</h4>
-            <ul>
-            {{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-              <li><a href="./services.html">
-              {{- if (ne .Params.anchor nil) }}
-                  {{- .Params.anchor }}
-              {{- else -}}
-                  {{- .Title }}
-              {{ end -}}
-              </a></li>
-            {{- end }}
-            </ul>
-          </div>
-        </div>
+								<div class="site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
+									{{ if .facebook }}<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-square-facebook"></i></span></a>{{ end }}
+									{{ if .instagram }}<a href="https://instagram.com/{{- .instagram -}}" title="Find us on Instagram" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-instagram"></i></span></a>{{ end }}
+									{{ if .twitter }}<a href="https://twitter.com/{{- .twitter -}}" title="Find us on Twitter" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-twitter"></i></span></a>{{ end }}
+									{{ if .tiktok }}<a href="https://tiktok.com/@{{- .tiktok -}}" title="Find us on TikTok" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-tiktok"></i></span></a>{{ end }}
+								</div>
+							{{- end }}
+							</div>
+						</div>
 
-      </div>
-    </div>
-  </div>
+					<div class="column is-6-mobile is-3-tablet is-3-desktop is-3-fullhd _is-narrow">
+						<div class="content site-footer-links has-columns">
+							<h4>Site Links</h4>
+							<ul>
+								{{- range .Site.Menus.footer }}
+								<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
+								{{- end }}
+							</ul>
+						</div>
+					</div>
 
-  <div class="container is-fluid site-footer-signoff">
-    <div class="content">
-    {{- with .Site.Params }}
-      Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ .street }}, {{ .towncity }}, {{ .county }}, {{ .postcode }}</address>
-      {{- end }}
-    </div>
-  </div>
+					<div class="column _is-12-mobile is-3-tablet _is-3-desktop is-4-fullhd is-offset-1-fullhd">
+						<div class="content site-footer-links has-columns">
+						<h4>Primary Services</h4>
+							<ul>
+								{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
+								<li><a href="./services.html">
+									{{- if (ne .Params.anchor nil) }}
+										{{- .Params.anchor -}}
+									{{- else -}}
+										{{- .Title -}}
+									{{- end -}}
+								</a></li>
+								{{- end }}
+							</ul>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="container is-fluid site-footer-signoff">
+				<div class="content">
+					{{- with .Site.Params }}
+					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ .street }}, {{ .towncity }}, {{ .county }}, {{ .postcode }}</address>
+					{{- end }}
+				</div>
+			</div>

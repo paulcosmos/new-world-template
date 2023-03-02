@@ -1,7 +1,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
 				<div class="container is-fluid">  
 				    <div class="navbar-brand">
-						<a class="navbar-item navbar-logo" href="./">
+						<a class="navbar-item navbar-logo" href="/">
 							<div class="content navbar-title">
 							  {{ $.Site.Params.company }}
 							  <span>{{ $.Site.Params.company2 }}</span>
@@ -26,7 +26,7 @@
 							</a>
 						    {{ end }}
 						    <div class="navbar-item has-text-centered button-primary modal-trigger" data-target="quote-modal">
-						      <button>Get a Quote</button>
+						      <button>{{ .Site.Params.modalbuttontext }}</button>
 						    </div>
 						</div>
 					</div>
