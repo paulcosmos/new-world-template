@@ -199,6 +199,15 @@ strong {
 
 // Global Helpers
 
+@include until($navbar-breakpoint){
+  [data-aos].aos-animate {
+      -webkit-transition-delay: 0s !important;
+      -moz-transition-delay: 0s !important;
+      -o-transition-delay: 0s !important;
+      transition-delay: 0s !important;
+      }
+  }
+
 .nwdm-link {
     color: inherit;
     text-decoration: none;

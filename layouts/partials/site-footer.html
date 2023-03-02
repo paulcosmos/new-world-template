@@ -8,7 +8,7 @@
             <h4><span>{{ .company }}</span><br/>{{ .company2 }}</h4>
             <h5>Nationwide vehicle recovery. {{ .company }} are car transportation experts based in {{ .towncity }}, {{ .county }}.</h5>
             <div class="button-primary ml-0 modal-trigger" data-aos="fade-right" data-aos-easing="ease-in-back">
-              <a href="contact.html">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
               {{ if .facebook }}<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-square-facebook"></i></span></a>{{ end }}
