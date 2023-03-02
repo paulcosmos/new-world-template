@@ -13,7 +13,7 @@
 			{{ partial "top-banner.html" . }}
 			{{ partial "navbar.html" . }}
 
-			{{- block "hero" . }}
+			{{ block "hero" . -}}
 			<section class="hero">
 				<div class="hero-body">
 				  <div class="container is-fullhd">
@@ -25,23 +25,24 @@
 		</header>
 
 		<main>
-			{{ block "main" . }}{{ end }} 
+			{{ block "main" . }}
+			{{ end }} 
 			{{ partial "why-us-banner.html" . }}
-			{{ partial "quote-modal.html" . }}
 		</main>
 
 		<footer class="site-footer">
-			{{- partial "site-footer.html" . }}
+			{{ partial "site-footer.html" . }}
 		</footer>
 
-	<script src="js/site.js"></script>
-	<script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-	  AOS.init();
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-	{{ block "scripts" . }}
-	{{ end }}
+		{{ partial "quote-modal.html" . }}
+
+		<script src="js/site.js"></script>
+		<script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
+		{{ block "scripts" . }}
+		{{- end }}
 	</body>
 </html>

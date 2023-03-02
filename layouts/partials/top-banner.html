@@ -2,7 +2,6 @@
 			<aside class="top-banner">
 				<div class="container is-fluid">
 					<div class="columns is-multiline is-vcentered is-centered is-mobile">
-
 						<div class="column _is-6-mobile _is-hidden-mobile _has-text-centered-mobile">
 						{{ .Site.Params.slogan }} in {{ .Site.Params.towncity }}
 						</div>
@@ -18,9 +17,9 @@
 							<span class="icon-text">
 								{{- if $.Site.Params.phone }}
 								<span class="icon"><i class="fa-regular fa-mobile"></i></span>
-								{{ else }}
+								{{ else -}}
 								<span class="icon"><i class="fa-regular fa-phone"></i></span>
-								{{ end }}
+								{{ end -}}
 								<span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.mobile |  -}}'>{{ .Site.Params.mobile }}</a></span>
 							</span>
 						</div>
