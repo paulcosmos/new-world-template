@@ -5,18 +5,20 @@
 					    <div class="columns is-multiline is-vcentered">
 
 							<div class="column is-7-desktop is-6-fullhd">
-							{{ if (ne .Params "preheading" "") }}
-								<div class="content" data-aos="fade-down">
-								  <span class="pre-heading" data-aos="fade-left">
-								    {{- .Params.preheading -}}
-								  </span>
-								</div>
-							{{ end }}
-								<div class="content has-accent" data-aos="fade-left">
-									{{ .Content | markdownify }}
-								</div>
-								<div class="button-primary ml-0 mt-5 modal-trigger" data-target="quote-modal" data-aos="fade-up" data-aos-easing="ease-in-back">
-								  <button>{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
+								<div class="content">
+								{{ if (ne .Params "preheading" "") }}
+									<div class="" data-aos="fade-down">
+									  <span class="pre-heading" data-aos="fade-left">
+									    {{- .Params.preheading -}}
+									  </span>
+									</div>
+								{{ end }}
+									<div class="has-accent" data-aos="fade-left">
+										{{ .Content | markdownify }}
+									</div>
+									<div class="button-primary ml-0 mt-5 modal-trigger" data-target="quote-modal" data-aos="fade-up" data-aos-easing="ease-in-back">
+										<button>{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
+									</div>
 								</div>
 							</div>
 

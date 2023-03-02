@@ -237,11 +237,10 @@ strong {
         font-size: inherit;
         cursor: pointer;
         justify-content: center;
-        // padding-left: 1em;
-        // padding-right: 1em;
-        // padding-top: calc(0.5em - 1px);
-        // padding-bottom: calc(0.5em - 1px);
-        padding: 0.5em 1em;
+        padding-bottom: calc(0.5em - 1px);
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: calc(0.5em - 1px);
         text-align: center;
         white-space: nowrap;
         -webkit-appearance: none;
@@ -252,6 +251,7 @@ strong {
         display: inline-flex;
 
         &:hover {
+            color: inherit;
             background-color: lighten($primary, 10%);
             border-color: transparent;
 
@@ -542,12 +542,12 @@ strong {
 
 // Inherit font colour from parents Bulma modifier classes 
 
-.pre-heading,
-.pre-heading > span {
+// .pre-heading > span,
+.pre-heading {
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: bold;
-    margin-bottom: $size-4;
+    margin-bottom: $size-5;
     display: block;
     color: $primary;
 }
@@ -1130,6 +1130,7 @@ strong {
         h5{
             font-weight: normal;
             font-size: $size-7;
+            line-height: 1.4em;
         }
 
         .button-primary {
