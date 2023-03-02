@@ -1,30 +1,30 @@
-  <!-- Top Banner -->
-  <aside class="top-banner">
-    <div class="container is-fluid">
-        <!-- Start Column -->
-      <div class="columns is-multiline is-vcentered is-centered is-mobile">
-        <div class="column is-12-mobile is-hidden-mobile has-text-centered-mobile">
-          {{ .Site.Params.slogan }} in {{ .Site.Params.towncity }}
-        </div>
-        {{ if $.Site.Params.phone }}
-        <div class="column is-narrow is-6-touch has-text-left has-text-right-desktop ">
-          <span class="icon-text">
-            <span class="icon">
-              <i class="fa-regular fa-phone"></i>
-            </span>
-            <span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a></span>
-          </span>
-        </div>
-        {{ end }}
-        <div class="column is-narrow is-6-touch has-text-right">
-          <span class="icon-text">
-            <span class="icon">
-              <i class="fa-regular fa-phone"></i>
-            </span>
-            <span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.mobile |  -}}'>{{ .Site.Params.mobile }}</a></span>
-          </span>
-        </div>
-      <div>
-      
-    </div>
-  </aside>
+			<!-- Top Banner -->
+			<aside class="top-banner">
+				<div class="container is-fluid">
+					<div class="columns is-multiline is-vcentered is-centered is-mobile">
+
+						<div class="column _is-6-mobile _is-hidden-mobile _has-text-centered-mobile">
+						{{ .Site.Params.slogan }} in {{ .Site.Params.towncity }}
+						</div>
+						{{- if $.Site.Params.phone }}
+						<div class="column is-narrow is-6-touch has-text-left has-text-right-desktop ">
+							<span class="icon-text">
+								<span class="icon"><i class="fa-regular fa-phone"></i></span>
+								<span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a></span>
+							</span>
+						</div>
+						{{ end }}
+						<div class="column is-narrow is-6-touch has-text-right">
+							<span class="icon-text">
+								{{- if $.Site.Params.phone }}
+								<span class="icon"><i class="fa-regular fa-mobile"></i></span>
+								{{ else }}
+								<span class="icon"><i class="fa-regular fa-phone"></i></span>
+								{{ end }}
+								<span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.mobile |  -}}'>{{ .Site.Params.mobile }}</a></span>
+							</span>
+						</div>
+
+					</div>
+				</div>
+			</aside>

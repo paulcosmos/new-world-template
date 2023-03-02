@@ -4,45 +4,44 @@
 {{ "<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->" | safeHTML }}
 {{ "<!--[if gt IE 8]>      <html class='no-js'> <![endif]-->" | safeHTML }}
 <html>
-  <head>
-    {{ partial "meta.html" . }}
-  </head>
+	<head>
+	{{ partial "meta.html" . }}
+	</head>
 
-<body>
-  <header>
-    {{ partial "top-banner.html" . }}
+	<body>
+		<header>
+			{{ partial "top-banner.html" . }}
+			{{ partial "navbar.html" . }}
 
-    {{partial "navbar.html" . }}
+			{{- block "hero" . }}
+			<section class="hero">
+				<div class="hero-body">
+				  <div class="container is-fullhd">
+				    {{ partial "page-hero.html" . }}
+				  </div>
+				</div>
+			</section>
+			{{ end }}
+		</header>
 
-  {{ block "hero" . }}
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-fullhd">
-        {{ partial "page-hero.html" . }}
-      <div>
-    <div>
-  </section>
-  {{- end }}
-</header>
+		<main>
+			{{ block "main" . }}{{ end }} 
+			{{ partial "why-us-banner.html" . }}
+			{{ partial "quote-modal.html" . }}
+		</main>
 
-<main>
-  {{ block "main" . }}{{ end }} 
-  {{- partial "why-us-banner.html" . }}
-  {{- partial "quote-modal.html" . }}
-</main>
+		<footer class="site-footer">
+			{{- partial "site-footer.html" . }}
+		</footer>
 
-<footer class="site-footer">
-  {{- partial "site-footer.html" . }}
-</footer>
-
-<script src="js/site.js"></script>
-<script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-{{ block "scripts" . }}
-{{ end }}
-</body>
+	<script src="js/site.js"></script>
+	<script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+	{{ block "scripts" . }}
+	{{ end }}
+	</body>
 </html>

@@ -1,19 +1,18 @@
 {{ $folder := .Params.name | lower | printf "assets/images/gallery/%s"}}
-  <div class="gallery">
-
-  {{- if fileExists $folder }}
-    {{ $files := readDir $folder }}
-      {{- range $files -}}
-        {{- if not .IsDir}}
-          {{- if ne .Name ".DS_Store" }}
-          {{- $image := resources.Get ( printf "images/gallery/%s" .Name ) -}}
-          {{- $thumb := resources.Get $image  -}}
-          <a href="{{ $image.RelPermalink  }}">
-            <img src='{{ ($thumb.Fit "460x460 q75 Center").RelPermalink }}' alt="" title=""/>
-          </a>
-        {{ end -}}
-      {{ end -}}
-    {{ end -}}
-  {{ end -}}
-        <div class="clear"></div>
-  </div>
+<div class="gallery">
+	{{- if fileExists $folder }}
+	{{ $files := readDir $folder }}
+		{{- range $files -}}
+			{{- if not .IsDir}}
+				{{- if ne .Name ".DS_Store" }}
+					{{- $image := resources.Get ( printf "images/gallery/%s" .Name ) -}}
+					{{- $thumb := resources.Get $image  -}}
+					<a href="{{ $image.RelPermalink  }}">
+					<img src='{{ ($thumb.Fill "460x300 q75 smart").RelPermalink }}' alt="" title=""/>
+					</a>
+				{{ end -}}
+			{{ end -}}
+		{{ end -}}
+	{{ end -}}
+	<div class="clear"></div>
+</div>
