@@ -237,10 +237,7 @@ strong {
         font-size: inherit;
         cursor: pointer;
         justify-content: center;
-        padding-bottom: calc(0.5em - 1px);
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-top: calc(0.5em - 1px);
+        padding: 0.5em 1em;
         text-align: center;
         white-space: nowrap;
         -webkit-appearance: none;
@@ -762,7 +759,7 @@ strong {
             &:not(:last-child){
                 margin-bottom: $size-1!important;
                 padding-bottom: $size-3;
-                border-bottom: solid 2px $tertiary;
+                border-bottom: solid 2px lighten($secondary, 94%);
             }
 
             &:last-child{
