@@ -1,43 +1,11 @@
 @charset "utf-8";
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
-
-// Override Bulma variables here:
-$family-sans-serif: "Nunito Sans", sans-serif;
-$family-headings: $family-sans-serif;
-$primary: #828282;
-$secondary: #b7b7b7;
-$info: $secondary;
-$light-grey: #f8f8f8;
-$tertiary: darken(#EFF2F5, 85%);
-$text: $secondary;
-$navbar-background-color: lighten($secondary, 6%);
-$navbar-height: 5rem;
-$navbar-item-color: white;
-$navbar-burger-color: white;
-$navbar-item-hover-background-color: none;
-$navbar-dropdown-arrow: $primary;
-$navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
-$navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
-$navbar-dropdown-item-hover-color: $primary;
-$navbar-dropdown-border-top: 2px solid $primary;
-$navbar-burger-color: $primary;
-$navbar-item-hover-color: white;
-$sl-overlay-background: $secondary;
-$sl-navigation-color: white;
-$bg-overlay: rgba(0, 0, 0, 0.6);
-$site-footer-bg: $secondary;
-
+@import "branding.scss";
 @import "bulma.sass";
 @import "simple-lightbox.scss";
 
-$link: $primary;
-$accent: $secondary;
-$help-color: $warning;
+
 $button-corner-radius: 4px;
 $image-corner-radius: 0.5rem;;
 
@@ -111,23 +79,10 @@ $image-corner-radius: 0.5rem;;
     background-position: center;
 }
 
-// Settings for 'Rings' BG pattern
-$ring-bg-color: $tertiary;
-$ring-grad-top: $primary;
-$ring-grad-bottom: darken($primary, 20%);
-$ring-x: 0%;
-$ring-y: 50%;
-
 @mixin background-rings {
     background-color: $ring-bg-color;
     background-image:  repeating-radial-gradient( circle at $ring-x $ring-y, transparent 0, white 11px ), repeating-linear-gradient( $ring-grad-top, $ring-grad-bottom );
 }
-
-// Settings for 'Dots' BG pattern
-$dot-bg-color: $tertiary;
-$dot-color: darken($primary, 20%);
-$dot-size: 1px;
-$dot-space: 20px;
 
 @mixin background-dots {
 	background:
@@ -141,11 +96,6 @@ $dot-space: 20px;
     background-color: $accent;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='ffffff' fill-opacity='0.2' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E"); 
 }
-
-// Settings for 'Paving' BG pattern
-$paving-size: 40px;
-$paving-bg:$accent;
-$paving : lighten($accent, 8%);
 
 @mixin background-paved {
     background:
@@ -231,9 +181,8 @@ strong {
     &-primary > button {
         background-color: $primary;
         border-color: transparent;
-        color: $secondary;
+        color: $button-text;
         border-width: 1px;
-        // font-size: 1rem;
         font-size: inherit;
         cursor: pointer;
         justify-content: center;
@@ -248,7 +197,6 @@ strong {
         display: inline-flex;
 
         &:hover {
-            color: inherit;
             background-color: lighten($primary, 10%);
             border-color: transparent;
 
@@ -365,8 +313,9 @@ strong {
 
 // Top Banner
 .top-banner {
-    background-color: $primary;
+    background-color: $secondary;
     color: inherit;
+    color: white;
     font-size: $size-7;
     font-weight: bold;
     padding: 0.5rem 0;
@@ -553,11 +502,9 @@ strong {
 .hero { 
     
     @include background-dots;
-    color: white!important;
+    color: $hero-text!important;
     font-weight: normal;
     text-align: left; 
-    color: white;
-    color: inherit;
     text-align: inherit;
 
     @include from($navbar-breakpoint){
@@ -711,17 +658,18 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            // @include background-dots;
+            @include background-dots;
             background-position: bottom;
-            color: white;
+            // color: white;
             padding-bottom: 5rem;
 
             &-item {
                 margin-bottom: 1rem;
-                color: darken(white, 20%);
+                // color: darken(white, 20%);
 
                 h3 {
-                    color: white;
+                    // color: white;
+                    color: inherit;
                     font-size: $size-5;
                     margin-bottom: $size-7;
                 }
@@ -1003,7 +951,7 @@ strong {
 
     &-banner {
         background-color: $tertiary;
-        color: white;
+        color: $why-us-text;
         padding-top: 3rem;
         padding-bottom: 3rem;
         @include from($navbar-breakpoint) {
@@ -1052,7 +1000,7 @@ strong {
         p {
             font-size: $size-7;
             font-style: italic;
-            color: lighten($text, 50%);
+            color: $text;
         }
         address {
             display: block;
