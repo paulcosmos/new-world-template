@@ -3,8 +3,10 @@
 				    <div class="navbar-brand">
 						<a class="navbar-item navbar-logo" href="/">
 							<div class="content navbar-title">
-							  {{ $.Site.Params.company }}
-							  <span>{{ $.Site.Params.company2 }}</span>
+							{{ with .Site.Params }}
+								{{ .company }}
+								<span>{{ .industry | humanize }} services in {{ .towncity }}</span>
+							{{ end }}
 							</div>
 						</a>
 						<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-site">
