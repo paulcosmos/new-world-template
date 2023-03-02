@@ -7,7 +7,7 @@ _build:
 image:
 ---
 
-## Vintage and **classic car transportation** is our speciality
+## We're **{{<industry>}} experts**. Tough jobs are our speciality
 
 * Over {{<years>}} years of experience in and around {{<towncity>}}
 * A reputation for excellent quality and professionalism

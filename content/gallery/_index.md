@@ -5,6 +5,6 @@ weight: 3
 anchor: "Gallery"
 ---
 
-# Yes, we can **move it**!
+# We think the **quality of our work** speaks volumes. See for yourself.
 
-We are able to transport and relocate a number of vehicles, These are recently completed {{<industry>}} projects in and around {{<towncity>}}. Click on any of the thumbnails below for a closer look.
+Here's some recently completed {{<industry>}} projects in and around {{<towncity>}}. Click on any of the thumbnails below for a closer look.
