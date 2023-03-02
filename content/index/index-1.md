@@ -7,7 +7,7 @@ _build:
 image:
 ---
 
-## We're your **top choice** for vehicle recovery &amp; relocation
+## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
 
 Whether you've broken down and need roadside assistance, call
 

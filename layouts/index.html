@@ -9,7 +9,11 @@
 								{{ if (ne .Params "preheading" "") }}
 									<div class="" data-aos="fade-down">
 									  <span class="pre-heading" data-aos="fade-left">
-									    {{- .Params.preheading -}}
+									    {{ if .Params.preheading }}
+											{{- .Params.preheading -}}
+										{{ else }}
+											{{ .Site.Params.slogan }}
+										{{ end }}
 									  </span>
 									</div>
 								{{ end }}

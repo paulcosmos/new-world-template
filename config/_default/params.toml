@@ -1,6 +1,6 @@
 modalbuttontext =  "Get a Quote"
 company     =   "#companyName"
-company2    =   "jobDescription"
+company2    =   "#jobDescription"
 fullname    =   "#companyFullName"
 slogan      =   "#companySlogan"
 industry    =   "#industry"
