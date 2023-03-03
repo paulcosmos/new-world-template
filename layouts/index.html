@@ -1,50 +1,8 @@
-			{{- define "hero" }}
-			<section class="hero hero-index">
-				<div class="hero-body">
-					<div class="container is-fullhd">
-					    <div class="columns is-multiline is-vcentered">
-
-							<div class="column is-7-desktop is-6-fullhd">
-								<div class="content">
-								{{ if (ne .Params "preheading" "") }}
-									<div class="" data-aos="fade-down">
-									  <span class="pre-heading" data-aos="fade-left">
-									    {{ if .Params.preheading }}
-											{{- .Params.preheading -}}
-										{{ else }}
-											{{ .Site.Params.slogan }}
-										{{ end }}
-									  </span>
-									</div>
-								{{ end }}
-									<div class="has-accent" data-aos="fade-left">
-										{{ .Content | markdownify }}
-									</div>
-									<div class="button-primary ml-0 mt-5 modal-trigger" data-target="quote-modal" data-aos="fade-up" data-aos-easing="ease-in-back">
-										<button>{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
-									</div>
-								</div>
-							</div>
-
-							<div class="column is-5-fullhd is-offset-1-fullhd" data-aos="fade-right">
-								<div class="image is-5by4 company-services-image">
-								  {{- $image := resources.Get .Params.image }}
-								  {{- if $image }}
-									  <img src='{{ ($image.Fill "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
-								  {{ else }}
-									  <img src='images/placeholder.jpg'/>
-								  {{- end }}
-								</div>
-							</div>
-
-						</div>
-					<div>
-				<div>
-			</section>
+			{{- define "hero" -}}
+				{{ partial "hero/hero-text-cta.html" . }}
 			{{ end -}}
 
 			{{- define "main" -}}
-			{{/* Company Intro */}}
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
