@@ -4,7 +4,7 @@
 {{ "<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->" | safeHTML }}
 {{ "<!--[if gt IE 8]>      <html class='no-js'> <![endif]-->" | safeHTML }}
 <html>
-	<head>
+	<head class="has-navbar">
 	{{ partial "meta.html" . }}
 	</head>
 
@@ -14,13 +14,7 @@
 			{{ partial "navbar.html" . }}
 
 			{{ block "hero" . -}}
-			<section class="hero">
-				<div class="hero-body">
-				  <div class="container is-fullhd">
-				    {{ partial "page-hero.html" . }}
-				  </div>
-				</div>
-			</section>
+			    {{ partial "hero/hero-text-only.html" . }}
 			{{ end }}
 		</header>
 
