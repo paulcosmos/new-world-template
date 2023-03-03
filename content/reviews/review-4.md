@@ -1,7 +1,7 @@
 ---
-title: Reviewer Name.
+title: Veronica
 type: review
-rating: 2
+rating:
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Lovely bunch, were very friendly and considerate and even tidied and swept up after themselves. Thank you
