@@ -701,14 +701,14 @@ strong {
                     }
 
                     &:hover {
+                        color: $primary;
+                        margin-right:0.5rem;
+
                         &:after {
                             width:100%;
                         }
                     }
 
-                    &:hover {
-                        color: $primary;
-                    }
                 }
             }
         }
