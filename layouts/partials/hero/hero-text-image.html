@@ -27,12 +27,12 @@
 
 							<div class="column is-5-fullhd is-offset-1-fullhd" data-aos="fade-right">
 								<div class="image is-5by4 company-services-image">
-								  {{- $image := resources.Get .Params.image }}
-								  {{- if $image }}
-									  <img src='{{ ($image.Fill "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
-								  {{ else }}
-									  <img src='images/placeholder.jpg'/>
-								  {{- end }}
+									{{- $image := resources.Get .Params.image }}
+									{{- if $image }}
+									<img src='{{ ($image.Fill "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
+									  {{ else }}
+									<img src='/images/placeholder.jpg'/>
+									{{- end }}
 								</div>
 							</div>
 
