@@ -4,7 +4,7 @@ menu: ["main","footer"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/roof-cleaning.jpg
+image: images/placeholder.jpg
 _build:
   render: true
 cascade:
