@@ -1,9 +1,13 @@
+		{{- define "hero" -}}
+			{{ partial "hero/hero-text-image.html" . }}
+		{{ end -}}
+
 		{{ define "main" }}
 			<section class="section">
 				<div class="container is-fullhd company-services pb-4">
 					{{- $currentPage := . }}
 					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-					<div class="columns company-services-item is-vcentered is-multiline is-variable is-8">
+					<div class="columns company-services-item _is-vcentered is-multiline is-variable is-8">
 						<div class="column is-12-touch is-7-desktop is-6-fullhd">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="content has-accent" data-aos="fade-right">
@@ -20,7 +24,7 @@
 								{{- if $image }}
 								<img src='{{ ($image.Fill "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
 								{{ else }}
-								<img src='images/placeholder.jpg'/>
+								<img src='/images/placeholder.jpg'/>
 								{{- end }}
 							</div>
 						</div>

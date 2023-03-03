@@ -1,6 +1,7 @@
 ---
-title: Abdul M.
+title: Reviewer Name.
 type: review
+rating: 5
 ---
 
-Outstanding service , car broke down on motorway very late night and was there within 5 minutes and done a great job also very friendly 👍🏼 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

@@ -3,7 +3,7 @@
 				<div class="container is-fluid">
 					<div class="columns is-multiline is-vcentered is-centered is-mobile">
 						<div class="column _is-6-mobile _is-hidden-mobile _has-text-centered-mobile">
-						{{ .Site.Params.slogan }} in {{ .Site.Params.towncity }}
+						{{ .Site.Title}}
 						</div>
 						{{- if $.Site.Params.phone }}
 						<div class="column is-narrow is-6-touch has-text-left has-text-right-desktop ">
@@ -15,12 +15,15 @@
 						{{ end }}
 						<div class="column is-narrow is-6-touch has-text-right">
 							<span class="icon-text">
+								{{- if $.Site.Params.mobile }}
+
 								{{- if $.Site.Params.phone }}
 								<span class="icon"><i class="fa-regular fa-mobile"></i></span>
 								{{ else -}}
 								<span class="icon"><i class="fa-regular fa-phone"></i></span>
 								{{ end -}}
 								<span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.mobile |  -}}'>{{ .Site.Params.mobile }}</a></span>
+								{{ end }}
 							</span>
 						</div>
 

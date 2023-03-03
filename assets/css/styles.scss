@@ -1,43 +1,10 @@
 @charset "utf-8";
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
-
-// Override Bulma variables here:
-$family-sans-serif: "Nunito Sans", sans-serif;
-$family-headings: $family-sans-serif;
-$primary: #e4c40e;
-$secondary: #000000;
-$info: $secondary;
-$light-grey: #f8f8f8;
-$tertiary: darken(#EFF2F5, 85%);
-$text: $secondary;
-$navbar-background-color: lighten($secondary, 6%);
-$navbar-height: 5rem;
-$navbar-item-color: white;
-$navbar-burger-color: white;
-$navbar-item-hover-background-color: none;
-$navbar-dropdown-arrow: $primary;
-$navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
-$navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
-$navbar-dropdown-item-hover-color: $primary;
-$navbar-dropdown-border-top: 2px solid $primary;
-$navbar-burger-color: $primary;
-$navbar-item-hover-color: white;
-$sl-overlay-background: $secondary;
-$sl-navigation-color: white;
-$bg-overlay: rgba(0, 0, 0, 0.6);
-$site-footer-bg: $secondary;
-
+@import "branding.scss";
 @import "bulma.sass";
 @import "simple-lightbox.scss";
 
-$link: $primary;
-$accent: $secondary;
-$help-color: $warning;
 $button-corner-radius: 4px;
 $image-corner-radius: 0.5rem;;
 
@@ -78,15 +45,23 @@ $image-corner-radius: 0.5rem;;
 @mixin box-shadow-trello {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
-@mixin box-shadow-offset-lines {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+@mixin box-shadow-outer-glow {
+    box-shadow: darken($primary, 10%) 0px 0px 50px -10px;
+}
+
+@mixin box-shadow-offset-solid($shadow) {
+    box-shadow: $shadow 20px 20px 0px -10px;
+}
+
+@mixin box-shadow-offset-lines($insides,$lines){
     box-shadow:  
-    $tertiary 10px 10px 0px -2px, 
-    $primary 10px 10px, 
-    $tertiary 20px 20px 0px -2px, 
-    $primary  20px 20px, 
-    $tertiary 30px 30px 0px -2px, 
-    $primary  30px 30px
+    $insides 10px 10px 0px -2px, 
+    $lines 10px 10px, 
+    $insides 20px 20px 0px -2px, 
+    $lines  20px 20px, 
+    $insides 30px 30px 0px -2px, 
+    $lines  30px 30px
 }
 
 @mixin box-shadow-3d {
@@ -195,6 +170,7 @@ a {
 
 strong {
     font-weight: inherit;
+    color: inherit;
 }
 
 // Global Helpers
@@ -240,9 +216,8 @@ strong {
     &-primary > button {
         background-color: $primary;
         border-color: transparent;
-        color: $secondary;
+        color: $button-text;
         border-width: 1px;
-        // font-size: 1rem;
         font-size: inherit;
         cursor: pointer;
         justify-content: center;
@@ -287,7 +262,7 @@ strong {
         }
 
         &:hover {
-            color: $secondary;
+            color: white;
             text-decoration: none;
             background-color: $primary;
             transition: all 0.3s;
@@ -295,7 +270,7 @@ strong {
             &:after {
                 // background-color: $secondary;
                 // width: 25%;
-                height: 0;
+                // height: 0;
             }
         }
     }
@@ -374,8 +349,9 @@ strong {
 
 // Top Banner
 .top-banner {
-    background-color: $primary;
+    background-color: $secondary;
     color: inherit;
+    color: white;
     font-size: $size-7;
     font-weight: bold;
     padding: 0.5rem 0;
@@ -384,7 +360,7 @@ strong {
     position: relative;
 
     .icon {
-        color: $secondary
+        color: $link;
     }
 
     a {
@@ -398,8 +374,6 @@ strong {
 
 
     &-brand {
-
-        // color: inherit;
         
         .navbar-item {
             @include until($navbar-breakpoint) {
@@ -410,12 +384,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-4;
+        font-size: $size-6;
         font-weight: 600;
 
         &:hover {
             transition: color 0.3s;
-            color: $primary;
+            color: $link;
 
             span {
                 color:white;
@@ -562,11 +536,9 @@ strong {
 .hero { 
     
     @include background-dots;
-    color: white!important;
+    color: $hero-text!important;
     font-weight: normal;
     text-align: left; 
-    color: white;
-    color: inherit;
     text-align: inherit;
 
     @include from($navbar-breakpoint){
@@ -574,52 +546,61 @@ strong {
         padding-bottom: 3rem;
     }
 
-    &-index {
-    color: inherit;
-    text-align: inherit;
-    }
-
-    &-services {
-    color: inherit;
-    text-align: inherit;
-    }
-
-    &-gallery {
-    color: inherit;
-    text-align: inherit;
-    }
-
-    &-reviews {
-    color: inherit;
-    text-align: inherit;
-    }
-
-    &-contact {
-    color: inherit;
-    text-align: inherit;
-    }
-
     &-fail {
-    color: inherit;
-    text-align: inherit;
+        color: inherit;
+        text-align: inherit;
 
-    .has-accent {
-        
-        span,
-        strong {
-            color: $danger;
-            font-weight: 600!important;
+        .has-accent {
+    
+            span,
+            strong {
+                color: $danger;
+                font-weight: 600 !important;
             }
         }
-
+    
         a {
             color: $link;
         }
     }
 
     &-success {
-    color: inherit;
-    text-align: inherit;
+        color: inherit;
+        text-align: inherit;
+    }
+
+    &-cta {
+        background-color: $hero-cta-bg;
+        // @include box-shadow-offset-lines($tertiary, $hero-cta-bg);
+        @include box-shadow-offset-solid($hero-cta-shadow);
+        color: white;
+        font-weight: 600;
+        padding: 1.25rem;
+        margin: 0 auto;
+        margin: 1rem;
+
+        @include from($desktop){
+            // margin-top: 2rem;
+        }
+
+        h4 {
+            display: inline-block;
+            font-size:150%;
+            font-weight: bold;
+            width: 100%;
+            color: lighten($link, 20%);
+            margin-top: 0;
+            margin-bottom: 1rem ;
+
+            @include from($desktop) {
+                font-size: 200%;
+            }
+        }
+
+        button {
+            font-weight: bold;
+            margin-top: 2rem;
+        }
     }
 
     &-socials {
@@ -720,17 +701,18 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            // @include background-dots;
+            @include background-dots;
             background-position: bottom;
-            color: white;
+            // color: white;
             padding-bottom: 5rem;
 
             &-item {
                 margin-bottom: 1rem;
-                color: darken(white, 20%);
+                // color: darken(white, 20%);
 
                 h3 {
-                    color: white;
+                    // color: white;
+                    color: inherit;
                     font-size: $size-5;
                     margin-bottom: $size-7;
                 }
@@ -747,14 +729,14 @@ strong {
                     }
 
                     &:hover {
+                        color: $primary;
+                        margin-right:0.5rem;
+
                         &:after {
                             width:100%;
                         }
                     }
 
-                    &:hover {
-                        color: $primary;
-                    }
                 }
             }
         }
@@ -849,7 +831,7 @@ strong {
         margin: 0.5rem 0 1rem;
 
         .stars-remaining {
-            color: lighten($secondary, 80%);
+            color: lighten($primary, 80%);
         }
     }
 }
@@ -874,10 +856,10 @@ strong {
         opacity: 1;
         background-color: $secondary;
         transition: all 0.2s ease-in-out;
-        @include box-shadow-trello;
+        @include box-shadow-below;
 
         &:hover {
-            @include box-shadow-high;
+            // @include box-shadow-below();
 
             img {
                 opacity: 0.4;
@@ -1012,7 +994,7 @@ strong {
 
     &-banner {
         background-color: $tertiary;
-        color: white;
+        color: $why-us-text;
         padding-top: 3rem;
         padding-bottom: 3rem;
         @include from($navbar-breakpoint) {
@@ -1061,7 +1043,7 @@ strong {
         p {
             font-size: $size-7;
             font-style: italic;
-            color: lighten($text, 50%);
+            color: $text;
         }
         address {
             display: block;
