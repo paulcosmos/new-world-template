@@ -570,8 +570,9 @@ strong {
 
     &-cta {
         background-color: $hero-cta-bg;
-        // @include box-shadow-offset-lines($tertiary, $hero-cta-bg);
+        // @include box-shadow-offset-lines($tertiary, $hero-cta-shadow);
         @include box-shadow-offset-solid($hero-cta-shadow);
+        border: solid 3px $tertiary;
         color: white;
         font-weight: 600;
         padding: 1.25rem;
@@ -587,7 +588,7 @@ strong {
             font-size:150%;
             font-weight: bold;
             width: 100%;
-            color: lighten($link, 20%);
+            color: $hero-cta-phone;
             margin-top: 0;
             margin-bottom: 1rem ;
 

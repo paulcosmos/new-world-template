@@ -21,8 +21,9 @@ $why-us-text: white;
 $button-text: darken($primary, 50%);
 $top-banner-bg: $primary;
 $top-banner-text: $text;
-$hero-cta-bg: darken($primary, 25%);
-$hero-cta-shadow: lighten($primary, 25%);
+$hero-cta-bg: darken($primary, 10%);
+$hero-cta-shadow: $primary;
+$hero-cta-phone: $primary;
 $company-services-text: white;
 
 $navbar-background-color: darken($secondary, 6%);
