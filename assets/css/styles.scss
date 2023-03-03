@@ -234,7 +234,7 @@ strong {
         }
 
         &:hover {
-            color: $secondary;
+            color: white;
             text-decoration: none;
             background-color: $primary;
             transition: all 0.3s;
@@ -242,7 +242,7 @@ strong {
             &:after {
                 // background-color: $secondary;
                 // width: 25%;
-                height: 0;
+                // height: 0;
             }
         }
     }
@@ -549,6 +549,7 @@ strong {
         font-weight: 600;
         padding: 1.25rem;
         margin: 0 auto;
+        margin: 1rem;
 
         @include from($desktop){
             // margin-top: 2rem;

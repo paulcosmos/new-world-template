@@ -7,7 +7,7 @@
 $family-sans-serif: "Nunito Sans", sans-serif;
 $family-headings: $family-sans-serif;
 
-$primary: #33429f;
+$primary: #7c69c0;
 // $secondary: #0A1A28;
 $secondary: darken($primary, 20%);
 $info: $secondary;
@@ -35,14 +35,14 @@ $navbar-item-hover-color: white;
 $sl-overlay-background: $secondary;
 $sl-navigation-color: white;
 $bg-overlay: rgba(0, 0, 0, 0.6);
-$hero-cta-bg: darken($primary, 40%);
-$hero-cta-shadow: darken($primary, 10%);
+$hero-cta-bg: darken($primary, 25%);
+$hero-cta-shadow: lighten($primary, 25%);
 $site-footer-bg: $secondary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
 $paving-bg: darken($primary, 40%);
-$paving : darken($paving-bg, 40%);
+$paving: darken($paving-bg, 40%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;
