@@ -50,8 +50,8 @@ $image-corner-radius: 0.5rem;;
     box-shadow: darken($primary, 10%) 0px 0px 50px -10px;
 }
 
-@mixin box-shadow-offset-solid {
-    box-shadow: darken($primary, 10%) 20px 20px 0px -10px;
+@mixin box-shadow-offset-solid($shadow) {
+    box-shadow: $shadow 20px 20px 0px -10px;
 }
 
 @mixin box-shadow-offset-lines($insides,$lines){
@@ -332,7 +332,7 @@ strong {
     position: relative;
 
     .icon {
-        color: $secondary
+        color: $link;
     }
 
     a {
@@ -346,8 +346,6 @@ strong {
 
 
     &-brand {
-
-        // color: inherit;
         
         .navbar-item {
             @include until($navbar-breakpoint) {
@@ -358,7 +356,7 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-4;
+        font-size: $size-6;
         font-weight: 600;
 
         &:hover {
@@ -546,26 +544,33 @@ strong {
     &-cta {
         background-color: $hero-cta-bg;
         // @include box-shadow-offset-lines($tertiary, $hero-cta-bg);
-        @include box-shadow-offset-solid;
+        @include box-shadow-offset-solid($hero-cta-shadow);
         color: white;
+        font-weight: 600;
         padding: 1.25rem;
         margin: 0 auto;
 
         @include from($desktop){
-            // margin-top: 10rem;
+            // margin-top: 2rem;
         }
 
-        span {
-            // display: inline-block;
-            // font-stretch: 100%;
-            // text-align: justify;
-            // min-width: 100%;
+        h4 {
+            display: inline-block;
+            font-size:150%;
+            font-weight: bold;
+            width: 100%;
+            color: lighten($link, 20%);
+            margin-top: 0;
+            margin-bottom: 1rem ;
 
-            &:after {
-                    /* hack added for Safari */
-                    // display: block;
-                    // width: 100%;
+            @include from($desktop) {
+                font-size: 200%;
             }
+        }
+
+        button {
+            font-weight: bold;
+            margin-top: 2rem;
         }
     }
 
@@ -797,7 +802,7 @@ strong {
         margin: 0.5rem 0 1rem;
 
         .stars-remaining {
-            color: lighten($secondary, 80%);
+            color: lighten($primary, 80%);
         }
     }
 }

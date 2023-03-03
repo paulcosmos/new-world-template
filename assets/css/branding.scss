@@ -13,7 +13,7 @@ $secondary: darken($primary, 20%);
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: $secondary;
-$link: $primary;
+$link: lighten($primary, 20%);
 
 $text: $secondary;
 $hero-text: $text;

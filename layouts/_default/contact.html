@@ -16,49 +16,7 @@
 								{{- end }}
 								</address>
 							</div>
-							<div class="content contact-details mt-4" data-aos="fade-right">
-								<h2>Contact Details</h2>
-								<address>
-								{{- with .Site.Params -}}
-									{{ if .phone  -}}
-									<span class="icon-text">
-										<span class="icon is-small"><i class="fa-regular fa-phone"></i></span>
-										<span><a href='tel:{{- replaceRE "(\\s)" "" .phone |  -}}'>{{ .phone }}</a></span>
-									</span> 
-									{{ end }}
-									<span class="icon-text">
-										<span class="icon is-small"><i class="fa-regular fa-mobile"></i></span>
-										<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
-									</span>
-									<span class="icon-text">
-										<span class="icon is-small"><i class="fa-regular fa-envelope"></i></span>
-									<span><a href="mailto:{{ .email }}">{{ .email }}</a></span>
-									</span>
-								</address>
-								<div class="social-links" data-aos="fade-in-up">
-									{{ if .facebook -}}
-									<a href="https://facebook.com/{{ .facebook }}" title="Find us on Facebook" target="_blank" rel="noopener">
-										<span class="icon"><i class="fa-brands fa-lg fa-square-facebook"></i></span>
-									</a>
-									{{- end }}
-									{{ if .instagram -}}
-									<a href="https://instagram.com/{{ .instagram }}" title="Find us on Instagram" target="_blank" rel="noopener">
-										<span class="icon"><i class="fa-brands fa-lg fa-instagram"></i></span>
-									</a>
-									{{- end }}
-									{{ if .twitter -}}
-									<a href="https://twitter.com/{{ .twitter }}" title="Find us on Twitter" target="_blank" rel="noopener">
-										<span class="icon"><i class="fa-brands fa-lg fa-twitter"></i></span>
-									</a>
-									{{- end }}
-									{{ if .twitter -}}
-									<a href="https://tiktok.com/@{{ .tiktok }}" title="Find us on TikTok" target="_blank" rel="noopener">
-										<span class="icon"><i class="fa-brands fa-lg fa-tiktok"></i></span>
-									</a>
-									{{- end }}
-								{{- end }}
-								</div>
-							</div>
+							{{  partial "contact-details.html" .  }}
 						</div>
 
 						<div class="column is-offset-2-desktop box contact-form" data-aos="fade-up">         
