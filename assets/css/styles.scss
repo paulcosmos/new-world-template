@@ -232,7 +232,7 @@ strong {
         display: inline-flex;
 
         &:hover {
-            color: inherit;
+            // color: inherit;
             background-color: lighten($primary, 10%);
             border-color: transparent;
 
@@ -262,7 +262,7 @@ strong {
         }
 
         &:hover {
-            color: white;
+            color: inherit;
             text-decoration: none;
             background-color: $primary;
             transition: all 0.3s;
@@ -349,9 +349,8 @@ strong {
 
 // Top Banner
 .top-banner {
-    background-color: $secondary;
-    color: inherit;
-    color: white;
+    background-color: $top-banner-bg;
+    color: $top-banner-text;
     font-size: $size-7;
     font-weight: bold;
     padding: 0.5rem 0;
@@ -360,7 +359,7 @@ strong {
     position: relative;
 
     .icon {
-        color: $link;
+        color: $text;
     }
 
     a {
@@ -703,7 +702,7 @@ strong {
             background-color: $tertiary;
             @include background-dots;
             background-position: bottom;
-            // color: white;
+            color: $company-services-text;
             padding-bottom: 5rem;
 
             &-item {
@@ -999,6 +998,10 @@ strong {
         padding-bottom: 3rem;
         @include from($navbar-breakpoint) {
             padding: 3rem 32px;
+        }
+
+        h3 {
+            color:$primary;
         }
     }
 }
