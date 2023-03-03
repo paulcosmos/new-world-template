@@ -1,7 +1,6 @@
 ---
-title: Reviewer Name.
+title: Jemma
 type: review
-rating: 3
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Sorted out my damp wall in no time! It looks good as new now and I've had no issues since.

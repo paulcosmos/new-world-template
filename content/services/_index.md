@@ -3,6 +3,8 @@ title: Our Services
 menu: ["main","footer"]
 weight: 2
 anchor: "Services"
+preheading: "Our Services"
+image: images/roof-cleaning.jpg
 _build:
   render: true
 cascade:
@@ -13,4 +15,4 @@ cascade:
 
 # Providing a wide range of customer-focused **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}
 
-With over {{<years>}} in the {{<industry>}} business, {{<companyname>}} are the reliable and professional choice for all aspects of {{<industry>}}.
+With over {{<years>}} in the {{<industry>}} business, **{{<companyname>}}** are the reliable and professional choice for all aspects of {{<industry>}}.

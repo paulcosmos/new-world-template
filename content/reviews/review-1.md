@@ -1,7 +1,7 @@
 ---
-title: Reviewer Name.
+title: Elaine
 type: review
-rating: 4
+rating: 5
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Very nice guys explained everything clearly good price and very friendly would definitely use again thanks guys
