@@ -16,4 +16,5 @@ content
 config/_default/params.toml
 assets/branding.scss
 config/_default/config.toml
+assets/images/gallery
 assets/images
