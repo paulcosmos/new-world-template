@@ -12,9 +12,10 @@ $secondary: #000000;
 $info: $secondary;
 $tertiary: darken(#EFF2F5, 85%);
 $accent: $secondary;
-$link: lighten($primary, 20%);
+$link: lighten($primary, 10%);
 
 $text: $secondary;
+$brand-title-size: 1.25rem;
 $hero-text: white;
 $why-us-text: white;
 $button-text: darken($primary, 50%);
