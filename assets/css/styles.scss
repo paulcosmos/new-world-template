@@ -46,15 +46,23 @@ $image-corner-radius: 0.5rem;;
 @mixin box-shadow-trello {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
-@mixin box-shadow-offset-lines {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+@mixin box-shadow-outer-glow {
+    box-shadow: darken($primary, 10%) 0px 0px 50px -10px;
+}
+
+@mixin box-shadow-offset-solid {
+    box-shadow: darken($primary, 10%) 20px 20px 0px -10px;
+}
+
+@mixin box-shadow-offset-lines($insides,$lines){
     box-shadow:  
-    $tertiary 10px 10px 0px -2px, 
-    $primary 10px 10px, 
-    $tertiary 20px 20px 0px -2px, 
-    $primary  20px 20px, 
-    $tertiary 30px 30px 0px -2px, 
-    $primary  30px 30px
+    $insides 10px 10px 0px -2px, 
+    $lines 10px 10px, 
+    $insides 20px 20px 0px -2px, 
+    $lines  20px 20px, 
+    $insides 30px 30px 0px -2px, 
+    $lines  30px 30px
 }
 
 @mixin box-shadow-3d {
@@ -145,6 +153,7 @@ a {
 
 strong {
     font-weight: inherit;
+    color: inherit;
 }
 
 // Global Helpers
@@ -512,52 +521,53 @@ strong {
         padding-bottom: 3rem;
     }
 
-    &-index {
-    color: inherit;
-    text-align: inherit;
-    }
-
-    &-services {
-    color: inherit;
-    text-align: inherit;
-    }
-
-    &-gallery {
-    color: inherit;
-    text-align: inherit;
-    }
-
-    &-reviews {
-    color: inherit;
-    text-align: inherit;
-    }
-
-    &-contact {
-    color: inherit;
-    text-align: inherit;
-    }
-
     &-fail {
-    color: inherit;
-    text-align: inherit;
+        color: inherit;
+        text-align: inherit;
 
-    .has-accent {
-        
-        span,
-        strong {
-            color: $danger;
-            font-weight: 600!important;
+        .has-accent {
+    
+            span,
+            strong {
+                color: $danger;
+                font-weight: 600 !important;
             }
         }
-
+    
         a {
             color: $link;
         }
     }
 
     &-success {
-    color: inherit;
-    text-align: inherit;
+        color: inherit;
+        text-align: inherit;
+    }
+
+    &-cta {
+        background-color: $hero-cta-bg;
+        // @include box-shadow-offset-lines($tertiary, $hero-cta-bg);
+        @include box-shadow-offset-solid;
+        color: white;
+        padding: 1.25rem;
+        margin: 0 auto;
+
+        @include from($desktop){
+            // margin-top: 10rem;
+        }
+
+        span {
+            // display: inline-block;
+            // font-stretch: 100%;
+            // text-align: justify;
+            // min-width: 100%;
+
+            &:after {
+                    /* hack added for Safari */
+                    // display: block;
+                    // width: 100%;
+            }
+        }
     }
 
     &-socials {
@@ -813,10 +823,10 @@ strong {
         opacity: 1;
         background-color: $secondary;
         transition: all 0.2s ease-in-out;
-        @include box-shadow-trello;
+        @include box-shadow-below;
 
         &:hover {
-            @include box-shadow-high;
+            // @include box-shadow-below();
 
             img {
                 opacity: 0.4;
