@@ -5,7 +5,7 @@ weight: 1
 preheading:
 _build:
   render: true
-image: images/hero-image.jpg
+image:
 
 ---
 
