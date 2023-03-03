@@ -15,3 +15,5 @@ resources
 content
 config/_default/params.toml
 assets/branding.scss
+assets/images/gallery
+assets/images
