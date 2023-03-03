@@ -12,7 +12,7 @@ ehthumbs.db
 Thumbs.db
 public
 resources
-content
+#content
 config/_default/params.toml
 assets/branding.scss
 config/_default/config.toml
