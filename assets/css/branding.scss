@@ -17,8 +17,13 @@ $link: lighten($primary, 20%);
 
 $text: $secondary;
 $hero-text: $text;
+$preheading-text: $text;
 $why-us-text: $text;
+$why-us-title-size: 1rem;
 $button-text: lighten($primary, 100%);
+
+// $top-banner-bg: lighten($secondary, 10%);
+$top-banner-bg: darken($primary, 20%);
 
 $navbar-background-color: darken($secondary, 6%);
 $navbar-height: 5rem;
