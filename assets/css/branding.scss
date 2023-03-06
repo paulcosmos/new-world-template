@@ -61,7 +61,7 @@ $why-us-text: $text;
 $why-us-title-size: 1rem;
 
 // Main Footer
-$site-footer-bg: $secondary;
+$site-footer-bg: darken($secondary, 10%);
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;

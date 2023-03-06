@@ -664,6 +664,7 @@ strong {
         transition: all 0.3s;
 
         &:hover {
+        color: $link;
         fill: $link;
         }
     }
