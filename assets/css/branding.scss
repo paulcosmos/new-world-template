@@ -8,7 +8,7 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-headings: $family-sans-serif;
 
 //  Set colours
-$primary: #F0CC51;
+$primary: #7c69c0;
 $secondary: #242833;
 $info: $secondary;
 $tertiary: #EFF2F5;
@@ -17,14 +17,14 @@ $link: $primary;
 $text: $secondary;
 
 @mixin brand-gradient {
-	background: rgb(252, 237, 94);
-	background: linear-gradient(-90deg, rgba(252, 237, 94, 1) 0%, rgba(240, 178, 77, 1) 100%);
+	background: $primary;
+	background: linear-gradient(-90deg, $primary, 0%, darken($primary, 10%));
 }
 
 //  Top Banner
 $top-banner-bg: include brand-gradient;
-$top-banner-text: $text;
-$top-banner-icon: $text;
+$top-banner-text: lighten($primary, 30%);
+$top-banner-icon: $top-banner-text;
 
 // Main Navigation 
 $navbar-background-color: $secondary;
@@ -41,7 +41,8 @@ $navbar-burger-color: $primary;
 $navbar-item-hover-color: white;
 
 // Buttons
-$button-text: darken($primary, 70%);
+$button-text: lighten($primary, 70%);
+// $button-text: darken($primary, 70%);
 
 // Modal overlay
 $sl-overlay-background: $secondary;
