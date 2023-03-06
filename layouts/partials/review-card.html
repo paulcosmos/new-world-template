@@ -8,10 +8,10 @@
 												{{- if .Params.rating -}}
 												{{/* 
 												Get the rating from the review .MD file if it's set,
-												and calculate the rating out of 5 using modulus
+												and calculate the rating out of 5
 												*/}}
 													{{- $rating := .Params.rating -}}
-													{{- $stars := mod 5 .Params.rating -}}
+													{{- $stars := sub .Params.rating 5 -}}
 													{{- range $num := (seq $rating) }}
 													<span class="icon stars"><i class="fa-solid fa-star-sharp"></i></span>
 													{{- end -}}

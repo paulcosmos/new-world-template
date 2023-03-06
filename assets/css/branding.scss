@@ -56,6 +56,10 @@ $hero-cta-shadow: lighten($primary, 5%);
 $hero-cta-number-text: $primary;
 $bg-overlay: rgba(0, 0, 0, 0.6);
 
+// Reviews
+$review-stars: $primary;
+$review-stars-remaining:lighten($primary, 35%);
+
 // Why us banner 
 $why-us-text: $text;
 $why-us-title-size: 1rem;

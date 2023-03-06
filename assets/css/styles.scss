@@ -833,11 +833,11 @@ strong {
     }
 
     &-stars {
-        color: $primary;
+        color: $review-stars;
         margin: 0.5rem 0 1rem;
 
         .stars-remaining {
-            color: lighten($primary, 80%);
+            color: $review-stars-remaining;
         }
     }
 }
