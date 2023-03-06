@@ -7,23 +7,27 @@
 $family-sans-serif: "Nunito Sans", sans-serif;
 $family-headings: $family-sans-serif;
 
-$primary: #7c69c0;
-// $secondary: #0A1A28;
-$secondary: darken($primary, 20%);
+//  Set colours
+$primary: #F0CC51;
+$secondary: #242833;
 $info: $secondary;
 $tertiary: #EFF2F5;
-$accent: $secondary;
-$link: lighten($primary, 20%);
-
+$accent: darken($primary, 10%);
+$link: $primary;
 $text: $secondary;
 
-$button-text: lighten($primary, 100%);
+@mixin brand-gradient {
+	background: rgb(252, 237, 94);
+	background: linear-gradient(-90deg, rgba(252, 237, 94, 1) 0%, rgba(240, 178, 77, 1) 100%);
+}
 
-// $top-banner-bg: lighten($secondary, 10%);
-$top-banner-bg: darken($primary, 20%);
+//  Top Banner
+$top-banner-bg: include brand-gradient;
+$top-banner-text: $text;
+$top-banner-icon: $text;
 
 // Main Navigation 
-$navbar-background-color: darken($secondary, 6%);
+$navbar-background-color: $secondary;
 $navbar-height: 5rem;
 $navbar-item-color: white;
 $navbar-burger-color: white;
@@ -36,17 +40,20 @@ $navbar-dropdown-border-top: 2px solid $primary;
 $navbar-burger-color: $primary;
 $navbar-item-hover-color: white;
 
+// Buttons
+$button-text: darken($primary, 70%);
+
 // Modal overlay
 $sl-overlay-background: $secondary;
 $sl-navigation-color: white;
 
-$bg-overlay: rgba(0, 0, 0, 0.6);
-
 // Page Hero
 $hero-text: $text;
 $preheading-text: $text;
-$hero-cta-bg: darken($primary, 25%);
-$hero-cta-shadow: lighten($primary, 25%);
+$hero-cta-bg: $secondary;
+$hero-cta-shadow: lighten($primary, 5%);
+$hero-cta-number-text: $primary;
+$bg-overlay: rgba(0, 0, 0, 0.6);
 
 // Why us banner 
 $why-us-text: $text;

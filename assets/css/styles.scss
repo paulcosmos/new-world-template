@@ -111,6 +111,8 @@ $image-corner-radius: 0.5rem;;
     background-size: $paving-size $paving-size; 
 }
 
+
+
 html {
     font-size:19px;
 }
@@ -187,7 +189,8 @@ strong {
     color: $secondary;
     &-primary > a,
     &-primary > button {
-        background-color: $primary;
+        // background-color: $primary;
+        @include brand-gradient;
         border-color: transparent;
         color: $button-text;
         border-width: 1px;
@@ -292,7 +295,7 @@ strong {
 
     strong,
     span {
-        color: $primary;
+        color: $accent;
         // font-weight: inherit;
     }
 
@@ -321,9 +324,9 @@ strong {
 
 // Top Banner
 .top-banner {
-    background-color: $top-banner-bg;
-    color: inherit;
-    color: white;
+    // background-color: $top-banner-bg;
+    @include brand-gradient;
+    color: $top-banner-text;
     font-size: $size-7;
     font-weight: bold;
     padding: 0.5rem 0;
@@ -332,7 +335,7 @@ strong {
     position: relative;
 
     .icon {
-        color: $link;
+        color: $top-banner-icon;
     }
 
     a {
@@ -517,7 +520,7 @@ strong {
     font-size: 0.75rem;
     font-weight: bold;
     margin-bottom: $size-5;
-    margin-top: $size-4;
+    // margin-top: $size-4;
     display: block;
     color: $preheading-text;
 }
@@ -577,7 +580,7 @@ strong {
             font-size:150%;
             font-weight: bold;
             width: 100%;
-            color: lighten($link, 20%);
+            color: $hero-cta-number-text;
             margin-top: 0;
             margin-bottom: 1rem ;
 
@@ -616,8 +619,15 @@ strong {
         a[href^="#"]{
             display: none!important;
         }
+        
         .icon {
             color:inherit;
+            fill: white;
+
+            &:hover {
+                color: $link;
+                fill: $link;
+            }
         }
     }
 }
@@ -650,6 +660,12 @@ strong {
     
     .icon {
         color:inherit;
+        fill: white;
+        transition: all 0.3s;
+
+        &:hover {
+        fill: $link;
+        }
     }
 }
 
@@ -1026,7 +1042,7 @@ strong {
         color: inherit;
 
         h2,h3,h4,h5,h6 {
-            color: $accent;
+            color: $text;
         }
 
         p {

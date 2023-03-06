@@ -6,18 +6,14 @@
 							<div class="content site-footer-company-info">
 							{{- with .Site.Params }}
 								<h4>{{ .company }}</h4>
-								<h5>{{ .slogan | humanize }} in {{ .towncity }} and {{ .county }}</h5>
+								<h5>{{ .industry | humanize }} services in {{ .towncity }} and {{ .county }}</h5>
 								<div class="button-primary ml-0 modal-trigger" data-aos="fade-right" data-aos-easing="ease-in-back">
 									<a href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
 								</div>
-
-								<div class="site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
-									{{ if .facebook }}<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-square-facebook"></i></span></a>{{ end }}
-									{{ if .instagram }}<a href="https://instagram.com/{{- .instagram -}}" title="Find us on Instagram" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-instagram"></i></span></a>{{ end }}
-									{{ if .twitter }}<a href="https://twitter.com/{{- .twitter -}}" title="Find us on Twitter" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-twitter"></i></span></a>{{ end }}
-									{{ if .tiktok }}<a href="https://tiktok.com/@{{- .tiktok -}}" title="Find us on TikTok" target="_blank" rel="noopener"><span class="icon"><i class="fa-brands fa-lg fa-tiktok"></i></span></a>{{ end }}
+							{{ end }}
+								<div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
+								{{ partial "social-links.html" . }}
 								</div>
-							{{- end }}
 							</div>
 						</div>
 
