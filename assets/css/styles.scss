@@ -389,13 +389,13 @@ strong {
     }
 
     &-logo {
-        position: absolute;
-        top: .5rem;
-        left: 0;
-        width: 160px;
-        @include until($navbar-breakpoint) {
-            position: relative;
-        }
+        // position: absolute;
+        // top: .5rem;
+        // left: 0;
+        // width: 160px;
+        // @include until($navbar-breakpoint) {
+        //     // position: relative;
+        // }
 
         img {
             max-height: 5rem;

@@ -9,7 +9,7 @@ image:
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality
 
-* Over {{<years>}} years of experience in and around {{<towncity>}}
+* Over {{<years>}} of experience in and around {{<towncity>}}
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 

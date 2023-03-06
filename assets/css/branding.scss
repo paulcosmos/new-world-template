@@ -16,15 +16,13 @@ $accent: $secondary;
 $link: lighten($primary, 20%);
 
 $text: $secondary;
-$hero-text: $text;
-$preheading-text: $text;
-$why-us-text: $text;
-$why-us-title-size: 1rem;
+
 $button-text: lighten($primary, 100%);
 
 // $top-banner-bg: lighten($secondary, 10%);
 $top-banner-bg: darken($primary, 20%);
 
+// Main Navigation 
 $navbar-background-color: darken($secondary, 6%);
 $navbar-height: 5rem;
 $navbar-item-color: white;
@@ -37,11 +35,24 @@ $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
 $navbar-burger-color: $primary;
 $navbar-item-hover-color: white;
+
+// Modal overlay
 $sl-overlay-background: $secondary;
 $sl-navigation-color: white;
+
 $bg-overlay: rgba(0, 0, 0, 0.6);
+
+// Page Hero
+$hero-text: $text;
+$preheading-text: $text;
 $hero-cta-bg: darken($primary, 25%);
 $hero-cta-shadow: lighten($primary, 25%);
+
+// Why us banner 
+$why-us-text: $text;
+$why-us-title-size: 1rem;
+
+// Main Footer
 $site-footer-bg: $secondary;
 
 // Settings for 'Paving' BG pattern
