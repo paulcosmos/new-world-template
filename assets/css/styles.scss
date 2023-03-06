@@ -234,9 +234,9 @@ strong {
         }
 
         &:hover {
-            color: white;
+            color: $primary;
             text-decoration: none;
-            background-color: $primary;
+            // background-color: $primary;
             transition: all 0.3s;
 
             &:after {
@@ -344,9 +344,9 @@ strong {
 // Navigation Menu
 .navbar {
 
-
     &-brand {
-        
+        position: relative;
+
         .navbar-item {
             @include until($navbar-breakpoint) {
                 padding-left: 0;
@@ -386,7 +386,24 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
+    }
 
+    &-logo {
+        position: absolute;
+        top: .5rem;
+        left: 0;
+        width: 160px;
+        @include until($navbar-breakpoint) {
+            position: relative;
+        }
+
+        img {
+            max-height: 5rem;
+
+            @include until($navbar-breakpoint) {
+                max-height: 3rem !important;
+            }
+        }
     }
 
     &-menu {
@@ -500,8 +517,9 @@ strong {
     font-size: 0.75rem;
     font-weight: bold;
     margin-bottom: $size-5;
+    margin-top: $size-4;
     display: block;
-    color: $primary;
+    color: $preheading-text;
 }
 
 // Page Content
@@ -549,10 +567,9 @@ strong {
         font-weight: 600;
         padding: 1.25rem;
         margin: 0 auto;
-        margin: 1rem;
 
-        @include from($desktop){
-            // margin-top: 2rem;
+        @include from($tablet){
+            margin-top: 3rem;
         }
 
         h4 {
