@@ -126,8 +126,8 @@ body {
 // Typography
 
 h1,h2,h3,h4,h5,h6 {
-
     font-family: $family-headings;
+    font-weight: $family-heading-weight;
 }
 
 h2 {
@@ -622,7 +622,7 @@ strong {
         
         .icon {
             color:inherit;
-            fill: white;
+            fill: inherit;
 
             &:hover {
                 color: $link;
@@ -647,6 +647,7 @@ strong {
 
     a {
         color: inherit;
+        fill: currentColor;
         transition: color 0.3s;
 
         &:hover{
