@@ -4,13 +4,13 @@ weight: 4
 _build:
     list: true
     render: false
-image:
+image: "images/painting-room.jpg"
 ---
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality
 
-* Over {{<years>}} years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+* Experienced across all aspects of {{<industry>}}
+* City &amp; Guilds London decorating qualifications 
+* Competitive and affordable prices
 
-{{<companyname>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} since {{<years>}}. In that time we've earned a reputation for excellent final quality and a professional working practices.
+Whatever the job, we can handle it. Call today on **{{<mobile>}}** for a no obligation quote.

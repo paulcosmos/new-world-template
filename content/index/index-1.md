@@ -4,16 +4,19 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/hero-image.jpg
+
 ---
 
 ## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
 
-+ Years of experience across all aspects of {{<industry>}}
-+ A reputation for fast delivery times and reliability
-+ Competitive and affordable prices
+{{<companyname>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} since 2012. In that time we've earned a reputation for excellent final quality and a professional working practices.
 
-Whatever the job, we can handle it. Call us today on {{<mobile>}} for a no obligation quote.
+* Over {{<years>}} of experience in and around {{<towncity>}}
+* A reputation for excellent quality and professionalism
+* Hard-working, customer focused approach to projects
+
+
 
 
 

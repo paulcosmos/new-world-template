@@ -1,7 +1,7 @@
 ---
-title: Reviewer Name.
+title: R. Lambert
 type: review
-rating: 3
+rating: 5
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+{{<companyname>}} completely transformed my business premises with absolutely minimal disruption to me or my customers. My shop looks so modern and inviting and I couldn't be happier.

@@ -1,7 +1,7 @@
 ---
-title: Reviewer Name.
+title: B. Scanlon
 type: review
-rating: 4
+rating: 5
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+I would like to highly recommend {{<companyname>}} in his high degree of workmanship. The professionalism he shows in his craft is great. He’s reliable, reputable and really good. He decorated all rooms of our home after it was extended and his preparation was first class, never rushed and reassured. Thank you, your manner is of a true professional and you’re a credit to your craft!

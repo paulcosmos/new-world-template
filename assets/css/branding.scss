@@ -2,14 +2,15 @@
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 // Override Bulma variables here:
 $family-sans-serif: "Nunito Sans", sans-serif;
-$family-headings: $family-sans-serif;
+$family-headings: "Lora", serif;
 
-$primary: #7c69c0;
+$primary: #5e9ac5;
 // $secondary: #0A1A28;
-$secondary: darken($primary, 20%);
+$secondary: darken($primary, 50%);
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: $secondary;
@@ -40,14 +41,14 @@ $navbar-item-hover-color: white;
 $sl-overlay-background: $secondary;
 $sl-navigation-color: white;
 $bg-overlay: rgba(0, 0, 0, 0.6);
-$hero-cta-bg: darken($primary, 25%);
-$hero-cta-shadow: lighten($primary, 25%);
+$hero-cta-bg: darken($primary, 45%);
+$hero-cta-shadow: darken($primary, 10%);
 $site-footer-bg: $secondary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($primary, 40%);
-$paving: darken($paving-bg, 40%);
+$paving-bg: darken($primary, 50%);
+$paving: darken($paving-bg, 20%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;
