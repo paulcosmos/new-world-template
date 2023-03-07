@@ -11,5 +11,8 @@ image:
 
 # Reliable **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
 
-{{<fullname>}} has been serving {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<fullname>}}** are an established, family-run **{{<industry>}} company**. We offer specialist high durability coatings for UPVC, alloy wheels, callipers, kitchen units and other hard wearing surfaces.
 
+* Over 7 years of experience in the trade
+* No job too large or too small
+* Competative and affordable pricing

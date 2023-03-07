@@ -4,10 +4,10 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: "images/kitchen.jpg"
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
+## We're **specialists** in coating UPVC and kitchens in {{<towncity>}} &amp; {{<county>}}
 
 + Years of experience across all aspects of {{<industry>}}
 + A reputation for fast delivery times and reliability

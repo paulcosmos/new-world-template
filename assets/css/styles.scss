@@ -126,8 +126,8 @@ body {
 // Typography
 
 h1,h2,h3,h4,h5,h6 {
-
     font-family: $family-headings;
+    font-weight: $family-heading-weight;
 }
 
 h2 {
@@ -1105,7 +1105,7 @@ strong {
 .site-footer {
     background-color: $site-footer-bg;
     color: white;
-    @include background-paved;
+    // @include background-paving;
 
     &-company-info {
 
@@ -1199,7 +1199,7 @@ strong {
     }
 
     &-signoff {
-        background-color: lighten($site-footer-bg, 0%);
+        background-color: $site-footer-signoff-bg;
         text-align: center;
         padding-top: $size-4;
         padding-bottom: $size-4;
