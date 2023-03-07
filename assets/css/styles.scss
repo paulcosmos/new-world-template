@@ -126,8 +126,8 @@ body {
 // Typography
 
 h1,h2,h3,h4,h5,h6 {
+
     font-family: $family-headings;
-    font-weight: $family-heading-weight;
 }
 
 h2 {
@@ -633,6 +633,7 @@ strong {
 }
 
 .social-links {
+    fill: inherit;
     display: grid;
     grid-gap: 1rem;
     justify-content: left;
@@ -661,11 +662,10 @@ strong {
     
     .icon {
         color:inherit;
-        fill: white;
+        fill: inherit;
         transition: all 0.3s;
 
         &:hover {
-        color: $link;
         fill: $link;
         }
     }
@@ -834,11 +834,11 @@ strong {
     }
 
     &-stars {
-        color: $review-stars;
+        color: $primary;
         margin: 0.5rem 0 1rem;
 
         .stars-remaining {
-            color: $review-stars-remaining;
+            color: lighten($primary, 80%);
         }
     }
 }
@@ -1066,13 +1066,15 @@ strong {
                 display: block;
 
                 .icon {
-                    color: $primary;
+                    color: $link;
+                    fill: $link
                 }
             }
         }
 
         a {
             color:inherit;
+            fill: inherit;
 
             &:hover {
                 color:$primary;
@@ -1106,7 +1108,7 @@ strong {
 .site-footer {
     background-color: $site-footer-bg;
     color: white;
-    // @include background-paved;
+    @include background-paved;
 
     &-company-info {
 
@@ -1137,6 +1139,7 @@ strong {
         a {
         font-size: $size-7;
         color: white;
+        fill: white;
         text-decoration: none;
         transition: color 0.3s;
         display: inline-block;
@@ -1200,7 +1203,7 @@ strong {
     }
 
     &-signoff {
-        background-color: $site-footer-signoff-bg;
+        background-color: lighten($site-footer-bg, 0%);
         text-align: center;
         padding-top: $size-4;
         padding-bottom: $size-4;
