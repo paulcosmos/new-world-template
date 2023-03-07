@@ -19,8 +19,10 @@
 									<span><a href="mailto:{{ .email }}">{{ .email }}</a></span>
 									</span>
 								</address>
+								{{ end }}
 								<div class="social-links" data-aos="fade-in-up">
-									{{ if .facebook -}}
+								{{ partial "social-links.html" . }}
+									{{/*  {{ if .facebook -}}
 									<a href="https://facebook.com/{{ .facebook }}" title="Find us on Facebook" target="_blank" rel="noopener">
 										<span class="icon"><i class="fa-brands fa-lg fa-square-facebook"></i></span>
 									</a>
@@ -39,7 +41,7 @@
 									<a href="https://tiktok.com/@{{ .tiktok }}" title="Find us on TikTok" target="_blank" rel="noopener">
 										<span class="icon"><i class="fa-brands fa-lg fa-tiktok"></i></span>
 									</a>
-									{{- end }}
-								{{- end }}
+									{{- end }}  */}}
+
 								</div>
 							</div>

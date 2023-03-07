@@ -622,7 +622,7 @@ strong {
         
         .icon {
             color:inherit;
-            fill: white;
+            fill: inherit;
 
             &:hover {
                 color: $link;
@@ -633,6 +633,7 @@ strong {
 }
 
 .social-links {
+    fill: inherit;
     display: grid;
     grid-gap: 1rem;
     justify-content: left;
@@ -647,6 +648,7 @@ strong {
 
     a {
         color: inherit;
+        fill: currentColor;
         transition: color 0.3s;
 
         &:hover{
@@ -660,7 +662,7 @@ strong {
     
     .icon {
         color:inherit;
-        fill: white;
+        fill: inherit;
         transition: all 0.3s;
 
         &:hover {
@@ -1064,13 +1066,15 @@ strong {
                 display: block;
 
                 .icon {
-                    color: $primary;
+                    color: $link;
+                    fill: $link
                 }
             }
         }
 
         a {
             color:inherit;
+            fill: inherit;
 
             &:hover {
                 color:$primary;
@@ -1135,6 +1139,7 @@ strong {
         a {
         font-size: $size-7;
         color: white;
+        fill: white;
         text-decoration: none;
         transition: color 0.3s;
         display: inline-block;
