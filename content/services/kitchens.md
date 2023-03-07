@@ -1,7 +1,7 @@
 ---
 title: "Kitchen Spraying"
 type: service-item
-desc: We offer a huge variety of different colours and styles for you to choose from. 
+desc: Overall your kitchen with a wide rang of colours and styles to choose from. 
 weight: 4
 image: "images/kitchen-range.jpg"
 anchor: "Kitchen Spraying"

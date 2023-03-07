@@ -622,7 +622,7 @@ strong {
         
         .icon {
             color:inherit;
-            fill: white;
+            fill: inherit;
 
             &:hover {
                 color: $link;
@@ -647,6 +647,7 @@ strong {
 
     a {
         color: inherit;
+        fill: currentColor;
         transition: color 0.3s;
 
         &:hover{
@@ -1105,7 +1106,7 @@ strong {
 .site-footer {
     background-color: $site-footer-bg;
     color: white;
-    // @include background-paving;
+    // @include background-paved;
 
     &-company-info {
 

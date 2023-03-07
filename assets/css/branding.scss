@@ -72,8 +72,8 @@ $site-footer-bg: $secondary;
 $site-footer-signoff-bg: darken($site-footer-bg, 10%);
 
 // Settings for 'Paving' BG pattern
-$paving-size: 40px;
-$paving-bg: darken($primary, 20%);
+$paving-size: 20px;
+$paving-bg: $secondary;
 $paving: darken($paving-bg, 10%);
 
 // Settings for 'Rings' BG pattern
@@ -84,7 +84,7 @@ $ring-x: 0%;
 $ring-y: 50%;
 
 // Settings for 'Dots' BG pattern
-$dot-bg-color: $tertiary;
+$dot-bg-color: lighten($tertiary, 10%);
 $dot-color: darken($dot-bg-color, 8%);
 $dot-size: 2px;
 $dot-space: 16px;

@@ -1,13 +1,15 @@
 ---
-title: "Exterior Property Painting"
+title: "Exterior Painting"
 type: service-item
-desc: UPVC, shopfronts, sheds, fences, fascias and masonry . 
-weight: 4
-image: 
+desc: Shopfronts, sheds, fences, UPVC, fascias and masonry. 
+weight: 1
+image: "images/exterior-spraying.jpg"
 anchor: "Exterior Painting"
 ---
-## Exterior Property Painting
+## Exterior Painting
 
-Exterior paint work needs to be hard wearing weatherproof and look fantastic in all conditions. At Demon Sprays Ltd we know that every project requires individual attention. Spraying outdoor surfaces like UPVC is much more than just a change of colour. Our specialist coating also gives it a protective layer that will revive your property protect it against all weather conditions.
+Completely change the look at feel of your property, or business premises with our outdoor spraying service. Our specialist coating also gives it a protective layer that protects against all weather conditions.
 
-* 
+* Wide range of colours to suit your style
+* Hard-wearing and long-lasting
+* Includes 10 year guarantee as standard

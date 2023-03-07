@@ -13,4 +13,6 @@ image: "images/car-wheels.jpg"
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 
-Windows, doors, fences, kitchen cupboards, floors, furniture, alloy wheels. Whatever the job, we can handle it. Call us today on **{{<mobile>}}** for a no obligation quote.
+Windows, doors, fences, kitchen cupboards, floors, furniture, alloy wheels. Whatever the job, we can handle it. 
+
+Call us today on **{{<mobile>}}** for a no obligation quote.

@@ -4,7 +4,7 @@ menu: ["main","footer"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: "images/demon-spraying.jpg"
 _build:
   render: true
 cascade:

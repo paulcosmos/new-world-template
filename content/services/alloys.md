@@ -1,8 +1,8 @@
 ---
 title: "Alloy Wheel Painting"
 type: service-item
-desc: Repairs to custom finishes, we have a wide range of colours available.
-weight: 2
+desc: Repairs and custom finishes, we have a wide range of colours available.
+weight: 3
 image: "images/car-wheels.jpg"
 anchor:
 ---
