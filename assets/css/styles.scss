@@ -386,9 +386,9 @@ strong {
     }
 
     &-logo {
-        max-width: $logo-max-width;
 
         img {
+            max-width: $logo-max-width;
             max-height: $logo-max-height;
 
             @include until($navbar-breakpoint) {
