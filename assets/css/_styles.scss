@@ -126,8 +126,8 @@ body {
 // Typography
 
 h1,h2,h3,h4,h5,h6 {
-
     font-family: $family-headings;
+    font-weight: $family-heading-weight;
 }
 
 h2 {
@@ -375,11 +375,7 @@ strong {
         display: block;
         font-size: $size-7;
         color: inherit;
-
-        // &:hover {
-        //     transition: color 0.3s;
-        //     color:white;
-        //     }
+        
         }
 
     }
@@ -627,7 +623,6 @@ strong {
 }
 
 .social-links {
-    fill: inherit;
     display: grid;
     grid-gap: 1rem;
     justify-content: left;
@@ -656,10 +651,11 @@ strong {
     
     .icon {
         color:inherit;
-        fill: inherit;
+        fill: white;
         transition: all 0.3s;
 
         &:hover {
+        color: $link;
         fill: $link;
         }
     }
@@ -828,7 +824,7 @@ strong {
     }
 
     &-stars {
-        color: $primary;
+        color: $review-stars;
         margin: 0.5rem 0 1rem;
 
         .stars-remaining {
@@ -1060,15 +1056,13 @@ strong {
                 display: block;
 
                 .icon {
-                    color: $link;
-                    fill: $link
+                    color: $primary;
                 }
             }
         }
 
         a {
             color:inherit;
-            fill: inherit;
 
             &:hover {
                 color:$primary;
@@ -1133,7 +1127,6 @@ strong {
         a {
         font-size: $size-7;
         color: white;
-        fill: white;
         text-decoration: none;
         transition: color 0.3s;
         display: inline-block;

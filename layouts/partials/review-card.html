@@ -8,7 +8,7 @@
 												{{- if .Params.rating -}}
 												{{/* 
 												Get the rating from the review .MD file if it's set,
-												and calculate the rating out of 5
+												and calculate the rating out of 5 using modulus
 												*/}}
 													{{- $rating := .Params.rating -}}
 													{{- $stars := sub .Params.rating 5 -}}
