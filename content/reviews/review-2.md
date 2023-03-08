@@ -1,7 +1,7 @@
 ---
-title: Reviewer Name.
+title: Chris
 type: review
 rating: 5
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Arrived on time every day and finished a head of schedule. Very pleased with final results.
