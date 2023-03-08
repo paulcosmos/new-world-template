@@ -100,8 +100,8 @@ $image-corner-radius: 0.5rem;;
 }
 
 @mixin background-dots-offset {
-    background-color: $accent;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='ffffff' fill-opacity='0.2' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E"); 
+    background-color: $hero-bg;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='ffffff' fill-opacity='0.1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E"); 
 }
 
 @mixin background-paved {
@@ -560,7 +560,7 @@ strong {
         background-color: $hero-cta-bg;
         // @include box-shadow-offset-lines($tertiary, $hero-cta-bg);
         @include box-shadow-offset-solid($hero-cta-shadow);
-        color: white;
+        color: $hero-cta-text;
         font-weight: 600;
         padding: 1.25rem;
         margin: 0 auto;
@@ -581,6 +581,10 @@ strong {
             @include from($desktop) {
                 font-size: 200%;
             }
+        }
+
+        hr {
+            background-color:$hero-cta-text;
         }
 
         button {
@@ -701,10 +705,10 @@ strong {
     &-services {
 
         &-overview {
-            background-color: $tertiary;
+            background-color: $services-bg;
             @include background-dots;
             background-position: bottom;
-            // color: white;
+            color: $services-text;
             padding-bottom: 5rem;
 
             &-item {

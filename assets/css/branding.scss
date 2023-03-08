@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400,700');
 
 // Override Bulma variables here:
-$family-sans-serif: "Nunito Sans", sans-serif;
+$family-sans-serif: "Roboto", sans-serif;
 $family-headings: $family-sans-serif;
-$family-heading-weight: 600;
+$family-heading-weight: 700;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #b89a58;
+$secondary: #2b303e;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 10%);
@@ -19,16 +19,16 @@ $text: $secondary;
 
 @mixin brand-gradient {
 	background: $primary;
-	background: linear-gradient(-90deg, $primary, 0%, darken($primary, 10%));
+	background: linear-gradient(45deg, $primary 0%, darken($primary, 10%));
 }
 
 //  Top Banner
 $top-banner-bg: include brand-gradient;
-$top-banner-text: lighten($primary, 30%);
+$top-banner-text: lighten($primary, 40%);
 $top-banner-icon: $top-banner-text;
 
 // Main Navigation 
-$navbar-background-color: $secondary;
+$navbar-background-color: darken($secondary, 4%);
 $navbar-height: 5rem;
 $navbar-item-color: white;
 $navbar-burger-color: white;
@@ -50,16 +50,22 @@ $sl-overlay-background: $secondary;
 $sl-navigation-color: white;
 
 // Page Hero
-$hero-text: $text;
+$hero-text: white;
+$hero-bg: $secondary;
 $preheading-text: $text;
-$hero-cta-bg: $secondary;
+$hero-cta-bg: darken($secondary, 10%);
 $hero-cta-shadow: lighten($primary, 5%);
+$hero-cta-text: white;
 $hero-cta-number-text: $primary;
 $bg-overlay: rgba(0, 0, 0, 0.6);
 
+// Services
+$services-bg: $hero-bg;
+$services-text: $hero-text;
+
 // Reviews
 $review-stars: $primary;
-$review-stars-remaining:lighten($primary, 15%);
+$review-stars-remaining:lighten($secondary, 60%);
 
 // Why us banner 
 $why-us-text: $text;
@@ -69,9 +75,9 @@ $why-us-title-size: 1rem;
 $site-footer-bg: darken($secondary, 10%);
 
 // Settings for 'Paving' BG pattern
-$paving-size: 40px;
-$paving-bg: darken($primary, 40%);
-$paving: darken($paving-bg, 40%);
+$paving-size: 200px;
+$paving-bg: $secondary;
+$paving: darken($paving-bg, 3%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;
@@ -81,7 +87,7 @@ $ring-x: 0%;
 $ring-y: 50%;
 
 // Settings for 'Dots' BG pattern
-$dot-bg-color: $tertiary;
-$dot-color: darken($dot-bg-color, 8%);
-$dot-size: 2px;
-$dot-space: 16px;
+$dot-bg-color: $secondary;
+$dot-color: lighten($secondary, 20%);
+$dot-size: 1px;
+$dot-space: 20px;
