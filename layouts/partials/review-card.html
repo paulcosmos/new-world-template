@@ -16,20 +16,19 @@
 													<span class="icon stars"><i class="fa-solid fa-star-sharp"></i></span>
 													{{- end -}}
 													{{- if (ne $stars "0") -}}
-												{{/* 
-												Check if the modulus outcome is 0 and don't render 
-												the markup for the extra stars to keep it clean
-												*/}}
-													{{- range $num := (seq $stars) -}}
+													{{/* 
+													Calculate the remaining stars out of n
+													*/}}
+													{{ range $num := (seq $stars) -}}
 													<span class="icon stars-remaining"><i class="fa-solid fa-star-sharp"></i></span>
-													{{ end }}
-													{{ end }}
+													{{ end -}}
+													{{- end -}}
 												{{/* If no rating is set, just show 5 stars */}}
 												{{ else -}}
-													{{- range $num := (seq 5) }}
+													{{- range $num := (seq 5) -}}
 													<span class="icon"><i class="fa-solid fa-star-sharp"></i></span>
 													{{- end -}}
-												{{- end }}
+												{{- end -}}
 												</div>
 											</figure>
 										</div>
