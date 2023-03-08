@@ -2,13 +2,16 @@
 				<div class="container is-fluid">  
 				    <div class="navbar-brand">
 						<a class="navbar-item navbar-logo" href="/">
-							<img src="images/{{ .Site.Params.logo }}"/>
-							{{/*  <div class="content navbar-title">
-							{{ with .Site.Params }}
+							{{- with .Site.Params }}
+							{{ if .logo }}
+							<img src="images/{{ .logo }}"/>
+							{{- else }}
+							<div class="content navbar-title">
 								{{ .company }}
 								<span>{{ .industry | humanize }} services in {{ .towncity }}</span>
-							{{ end }}
-							</div>  */}}
+							</div>
+							{{ end -}}
+							{{ end -}}
 						</a>
 						<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-site">
 							<span aria-hidden="true"></span>
