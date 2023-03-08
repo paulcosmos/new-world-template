@@ -13,7 +13,7 @@ $primary: #b89a58;
 $secondary: #2b303e;
 $info: $secondary;
 $tertiary: #EFF2F5;
-$accent: darken($primary, 10%);
+$accent: darken($primary, 0%);
 $link: $primary;
 $text: $secondary;
 
@@ -52,7 +52,7 @@ $sl-navigation-color: white;
 // Page Hero
 $hero-text: white;
 $hero-bg: $secondary;
-$preheading-text: $text;
+$preheading-text: $primary;
 $hero-cta-bg: darken($secondary, 10%);
 $hero-cta-shadow: lighten($primary, 5%);
 $hero-cta-text: white;

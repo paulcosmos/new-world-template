@@ -9,7 +9,7 @@ image:
 
 ---
 
-# Reliable **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable **{{<industry>}}** throughout **{{<towncity>}}**, {{<county>}} and beyond.
 
-{{<fullname>}} has been serving {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<fullname>}}** provide domestic, commercial and agricultural {{<industry>}} to customers throughout {{<county>}}. We are experienced in all aspects of the electrical trade.
 

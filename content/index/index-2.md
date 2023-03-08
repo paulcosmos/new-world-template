@@ -4,12 +4,12 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/kitchen-lighting.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality
+## We're **expert electricians**. Tough jobs are our speciality
 
-+ Years of experience across all aspects of {{<industry>}}
++ Experienced across all aspects of electrical installation
 + A reputation for fast delivery times and reliability
 + Competitive and affordable prices
 

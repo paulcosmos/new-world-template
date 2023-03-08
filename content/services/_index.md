@@ -4,7 +4,7 @@ menu: ["main","footer"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: images/electrical-switch.jpg
 _build:
   render: true
 cascade:
@@ -15,4 +15,4 @@ cascade:
 
 # Providing a wide range of customer-focused **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}
 
-With over {{<years>}} in the {{<industry>}} business, **{{<companyname>}}** are the reliable and professional choice for all aspects of {{<industry>}}.
+With many yearsin the {{<industry>}} business and a long list of happy customers, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.
