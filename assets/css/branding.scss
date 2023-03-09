@@ -24,7 +24,7 @@ $text: $secondary;
 
 //  Top Banner
 $top-banner-bg: include brand-gradient;
-$top-banner-text: $text;
+$top-banner-text: lighten($primary, 50%);
 $top-banner-icon: $top-banner-text;
 
 // Main Navigation 

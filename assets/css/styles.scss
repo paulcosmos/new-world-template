@@ -559,7 +559,7 @@ strong {
         margin: 0 auto;
 
         @include from($tablet){
-            margin-top: 3rem;
+            margin-top: 0rem;
         }
 
         h4 {
