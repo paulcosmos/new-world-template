@@ -1,12 +1,12 @@
 ---
-title: "#service-1"
+title: "Plumbing"
 type: service-item
 desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 weight: 4
 image: 
-anchor: "#service-1"
+anchor:
 ---
-## #service-1
+## Plumbing
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 

@@ -388,6 +388,7 @@ strong {
     &-logo {
 
         img {
+            width: 100%;
             max-width: $logo-max-width;
             max-height: $logo-max-height;
 
@@ -559,7 +560,7 @@ strong {
         margin: 0 auto;
 
         @include from($tablet){
-            margin-top: 3rem;
+            margin-top: 0rem;
         }
 
         h4 {
@@ -892,9 +893,9 @@ strong {
 .cta {
 
     &-banner {
-        background-color: $primary;
+        background-color: $cta-banner-bg;
         display: block;
-        color: $white;
+        color: $cta-banner-text;
         text-align: center;
         font-size: $size-5;
         position: relative;
@@ -905,7 +906,7 @@ strong {
         font-weight: 600;
         @include rounded-corners;
         @include box-shadow-high;
-        @include background-paved;
+        // @include background-paved;
         
         a {
             // color:white;
@@ -1091,7 +1092,7 @@ strong {
 .site-footer {
     background-color: $site-footer-bg;
     color: white;
-    @include background-paved;
+    // @include background-paved;
 
     &-company-info {
 

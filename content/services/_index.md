@@ -13,6 +13,8 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of customer-focused **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}
+# Providing a wide range of customer-focused **{{<industry>}} services** in **{{<towncity>}}** and beyond
 
-With over {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.
+**{{<company>}}** can provide all your domestic **plumbing and tiling** needs. We are fully experienced and pride ourselves on giving you the kitchen or bathroom that you deserve. 
+
+Call today on **{{<mobile>}}** to arrange a free estimate.

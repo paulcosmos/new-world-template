@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
 
 // Override Bulma variables here:
 $family-sans-serif: "Nunito Sans", sans-serif;
-$family-headings: $family-sans-serif;
+$family-headings: "Lora", serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #c78d5a;
+$secondary: #2c1f1f;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 10%);
@@ -24,8 +22,8 @@ $text: $secondary;
 
 //  Top Banner
 $top-banner-bg: include brand-gradient;
-$top-banner-text: $text;
-$top-banner-icon: $top-banner-text;
+$top-banner-text: white;
+$top-banner-icon: darken($primary, 40%);
 
 // Main Navigation 
 $navbar-background-color: $secondary;
@@ -58,6 +56,9 @@ $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);
 $hero-cta-number-text: $primary;
 $bg-overlay: rgba(0, 0, 0, 0.6);
+
+$cta-banner-bg: $secondary;
+$cta-banner-text: white;
 
 // Reviews
 $review-stars: $primary;

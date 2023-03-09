@@ -1,12 +1,12 @@
 ---
-title: "#service-2"
+title: "Bathroom Installation"
 type: service-item
 desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 weight: 4
 image: 
-anchor: "#service-2"
+anchor:
 ---
-## #service-2
+## Bathroom Installation
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
