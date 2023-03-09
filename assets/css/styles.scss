@@ -229,7 +229,7 @@ strong {
     }
 
     &.is-ghost {
-        color: $secondary;
+        // color: $secondary;
 
         &:after {
             @include animated-underline;
@@ -784,6 +784,11 @@ strong {
 // Customer Reviews 
 .review {
 
+    &-section {
+        background: $review-section-bg;
+        color: $review-section-text;
+    }
+
     &-grid,
     &-slider {
         .column {
@@ -793,11 +798,49 @@ strong {
 
     &-slider {
         padding-bottom: $size-2;
+
+        &-nav {
+            
+            &-button,
+            &-button:active,
+            &-button:focus {
+                background: $review-nav-bg;
+                color: $review-nav-text;
+                border: $review-nav-border;
+
+                &:hover {
+                background-color: $review-nav-bg-hover;
+                color: $review-nav-text-hover;
+                }
+            }
+        }
+
+        &-dots {
+            text-align: center;
+            margin-top: 2rem;
+
+            &>[aria-controls] {
+                width: $review-dots-width;
+                height: $review-dots-height;
+                padding: 0;
+                margin: 0 5px;
+                margin-top: 0px;
+                margin-top: 1em;
+                border-radius: $review-dots-border-radius;
+                background: $review-dots-bg;
+                border: $review-dots-border;
+            }
+
+            & > .tns-nav-active {
+                background: $review-dots-bg-active;
+            }
+        }
     }
 
     &-card {
         @include box-shadow-stripe;
         background-color: white;
+        color: $text;
         border-radius: 0.5rem;
         display: flex;
         flex-grow: 1;
@@ -813,6 +856,28 @@ strong {
                     font-weight: 600;
                     font-style: inherit;
                     text-align: inherit;
+            }
+        }
+    }
+
+    &-quote {
+        @include from($navbar-breakpoint){
+        width: 960px;
+        }
+        width:100%;
+        max-width: 860px;
+        margin: 0 auto;
+        text-align: center;
+        figure {
+            margin-left: 0;
+            margin-right: 0;
+    
+            figcaption {
+                font-size: $size-4;
+                font-weight: 600;
+                font-style: inherit;
+                text-align: inherit;
+                margin-bottom: $size-4;
             }
         }
     }

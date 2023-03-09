@@ -62,6 +62,19 @@ $hero-cta-border: none;
 $bg-overlay: rgba(0, 0, 0, 0.6);
 
 // Reviews
+$review-section-bg: $secondary;
+$review-section-text: white;
+$review-nav-text: $primary;
+$review-nav-bg: transparent;
+$review-nav-text-hover: white;
+$review-nav-bg-hover: $primary;
+$review-nav-border: solid 1px $review-nav-text;
+$review-dots-width: 28px;
+$review-dots-height: $review-dots-width;
+$review-dots-border-radius: 50%;
+$review-dots-border: solid 4px lighten($link, 20%);
+$review-dots-bg: transparent;
+$review-dots-bg-active: $link;
 $review-stars: $primary;
 $review-stars-remaining:lighten($primary, 15%);
 
