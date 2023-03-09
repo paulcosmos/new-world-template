@@ -200,6 +200,7 @@ strong {
         padding: 0.5em 1em;
         text-align: center;
         white-space: nowrap;
+        appearance: none;
         -webkit-appearance: none;
         align-items: center;
         border: 1px solid transparent;
@@ -239,14 +240,7 @@ strong {
         &:hover {
             color: $primary;
             text-decoration: none;
-            // background-color: $primary;
             transition: all 0.3s;
-
-            &:after {
-                // background-color: $secondary;
-                // width: 25%;
-                // height: 0;
-            }
         }
     }
 }
@@ -392,16 +386,10 @@ strong {
     }
 
     &-logo {
-        // position: absolute;
-        // top: .5rem;
-        // left: 0;
-        // width: 160px;
-        // @include until($navbar-breakpoint) {
-        //     // position: relative;
-        // }
 
         img {
-            max-height: 5rem;
+            max-width: $logo-max-width;
+            max-height: $logo-max-height;
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
@@ -520,7 +508,6 @@ strong {
     font-size: 0.75rem;
     font-weight: bold;
     margin-bottom: $size-5;
-    // margin-top: $size-4;
     display: block;
     color: $preheading-text;
 }
@@ -623,7 +610,7 @@ strong {
         
         .icon {
             color:inherit;
-            fill: white;
+            fill: inherit;
 
             &:hover {
                 color: $link;
@@ -634,6 +621,7 @@ strong {
 }
 
 .social-links {
+    fill: inherit;
     display: grid;
     grid-gap: 1rem;
     justify-content: left;
@@ -648,6 +636,7 @@ strong {
 
     a {
         color: inherit;
+        fill: currentColor;
         transition: color 0.3s;
 
         &:hover{
@@ -661,11 +650,10 @@ strong {
     
     .icon {
         color:inherit;
-        fill: white;
+        fill: inherit;
         transition: all 0.3s;
 
         &:hover {
-        color: $link;
         fill: $link;
         }
     }
@@ -746,10 +734,6 @@ strong {
 
                 }
             }
-        }
-
-        &-title {
-
         }
 
         &-item {
@@ -834,7 +818,7 @@ strong {
     }
 
     &-stars {
-        color: $review-stars;
+        color: $primary;
         margin: 0.5rem 0 1rem;
 
         .stars-remaining {
@@ -1066,13 +1050,15 @@ strong {
                 display: block;
 
                 .icon {
-                    color: $primary;
+                    color: $link;
+                    fill: $link
                 }
             }
         }
 
         a {
             color:inherit;
+            fill: inherit;
 
             &:hover {
                 color:$primary;
@@ -1137,6 +1123,7 @@ strong {
         a {
         font-size: $size-7;
         color: white;
+        fill: white;
         text-decoration: none;
         transition: color 0.3s;
         display: inline-block;

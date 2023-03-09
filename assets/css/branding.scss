@@ -6,6 +6,7 @@
 // Override Bulma variables here:
 $family-sans-serif: "Nunito Sans", sans-serif;
 $family-headings: $family-sans-serif;
+$family-heading-weight: 600;
 
 //  Set colours
 $primary: #7c69c0;
@@ -23,12 +24,14 @@ $text: $secondary;
 
 //  Top Banner
 $top-banner-bg: include brand-gradient;
-$top-banner-text: lighten($primary, 30%);
+$top-banner-text: $text;
 $top-banner-icon: $top-banner-text;
 
 // Main Navigation 
 $navbar-background-color: $secondary;
 $navbar-height: 5rem;
+$logo-max-width: 180px;
+$logo-max-height: $navbar-height;
 $navbar-item-color: white;
 $navbar-burger-color: white;
 $navbar-item-hover-background-color: none;
@@ -50,7 +53,7 @@ $sl-navigation-color: white;
 
 // Page Hero
 $hero-text: $text;
-$preheading-text: $text;
+$preheading-text: $primary;
 $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);
 $hero-cta-number-text: $primary;
@@ -60,7 +63,7 @@ $bg-overlay: rgba(0, 0, 0, 0.6);
 
 // Reviews
 $review-stars: $primary;
-$review-stars-remaining:lighten($primary, 35%);
+$review-stars-remaining:lighten($primary, 15%);
 
 // Why us banner 
 $why-us-text: $text;
@@ -83,6 +86,6 @@ $ring-y: 50%;
 
 // Settings for 'Dots' BG pattern
 $dot-bg-color: $tertiary;
-$dot-color: darken($dot-bg-color, 8%);
+$dot-color: darken($dot-bg-color, 5%);
 $dot-size: 2px;
 $dot-space: 16px;
