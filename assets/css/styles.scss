@@ -701,7 +701,7 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
+            // @include background-dots;
             background-position: bottom;
             color: $company-services-text;
             padding-bottom: 5rem;
