@@ -564,12 +564,13 @@ strong {
 
     &-cta {
         background-color: $hero-cta-bg;
-        // @include box-shadow-offset-lines($tertiary, $hero-cta-bg);
+        border-radius: $hero-cta-corner-radius;
         @include box-shadow-offset-solid($hero-cta-shadow);
         color: white;
         font-weight: 600;
         padding: 1.25rem;
         margin: 0 auto;
+        border: $hero-cta-border;
 
         @include from($tablet){
             margin-top: 3rem;
