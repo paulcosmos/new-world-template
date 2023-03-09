@@ -7,17 +7,17 @@ $family-headings: "Lora", serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #c78d5a;
-$secondary: #2c1f1f;
+$primary: #e4a975;
+$secondary: #241818;
 $info: $secondary;
 $tertiary: #EFF2F5;
-$accent: darken($primary, 10%);
+$accent: darken($primary, 20%);
 $link: $primary;
 $text: $secondary;
 
 @mixin brand-gradient {
 	background: $primary;
-	background: linear-gradient(-90deg, $primary, 0%, darken($primary, 10%));
+	background: linear-gradient(90deg, darken($primary, 15%), darken($primary, 20%));
 }
 
 //  Top Banner
@@ -51,7 +51,7 @@ $sl-navigation-color: white;
 
 // Page Hero
 $hero-text: $text;
-$preheading-text: $primary;
+$preheading-text: $accent;
 $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);
 $hero-cta-number-text: $primary;
@@ -84,7 +84,8 @@ $why-us-text: $text;
 $why-us-title-size: 1rem;
 
 // Main Footer
-$site-footer-bg: darken($secondary, 10%);
+$site-footer-bg: darken($secondary, 0%);
+$site-footer-signoff-bg: darken($site-footer-bg, 3%);
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;

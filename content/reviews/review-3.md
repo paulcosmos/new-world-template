@@ -1,7 +1,7 @@
 ---
-title: Reviewer Name 3.
+title: 
 type: review
-rating: 3
+rating: 5
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+From start to finish, {{<company>}} were extremely professional and knowledgeable. The job was completed quickly and efficiently, and they worked tirelessly to make sure I was satisfied with their work.

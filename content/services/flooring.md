@@ -1,14 +1,14 @@
 ---
 title: "Laminate Flooring"
 type: service-item
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+desc: Laminate and adhesive flooring professionally and expertly applied.
 weight: 4
 image: images/flooring.jpg
 anchor:
 ---
 ## Laminate Flooring
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+{{<company>}}'s **expert team** are highly experienced in the installation of a wide range of laminate flooring across any property size or type.
 
-* Duis aute irure dolor in reprehenderit in voluptate velit * Dolore eu fugiat nulla pariatur. 
-* Excepteur sint occaecat cupidatat non proident
+* Cheap alternative to real wood or vinyl floors. 
+* Hard wearing and easy to clean

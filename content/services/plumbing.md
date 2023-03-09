@@ -1,14 +1,14 @@
 ---
 title: "Plumbing"
 type: service-item
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+desc: Taps, pipes, central heating and more. If it involves water we can help.
 weight: 4
-image: 
+image: images/plumbing.jpg
 anchor:
 ---
 ## Plumbing
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Installations of pipes, shower, taps and other fittings are no problem for our **plumbing experts**.
 
-* Duis aute irure dolor in reprehenderit in voluptate velit * Dolore eu fugiat nulla pariatur. 
-* Excepteur sint occaecat cupidatat non proident
+* Experienced in all aspects of plumbing
+* Bathroom and kitchen fittings are our speciality 

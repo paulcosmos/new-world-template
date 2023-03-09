@@ -1,14 +1,14 @@
 ---
 title: "Joinery"
 type: service-item
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-weight: 4
-image: 
+desc: Wooden fixtures designed and built to your exact specifications.
+weight: 6
+image: images/joinery.jpg
 anchor:
 ---
 ## Joinery
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Our team of experienced joiners have the ability to **design and install** a wide range of wooden fixtures and furnishings to your specific requirements. 
 
-* Duis aute irure dolor in reprehenderit in voluptate velit * Dolore eu fugiat nulla pariatur. 
-* Excepteur sint occaecat cupidatat non proident
+* From skirting and cupboards to bespoke installations. 
+* Completed by professional, expert joiners

@@ -4,7 +4,7 @@ menu: ["main","footer"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: images/taps.jpg
 _build:
   render: true
 cascade:
@@ -13,7 +13,7 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of customer-focused **{{<industry>}} services** in **{{<towncity>}}** and beyond
+# Providing a wide range of customer-focused **{{<industry>}} services** in **{{<towncity>}}**
 
 **{{<company>}}** can provide all your domestic **plumbing and tiling** needs. We are fully experienced and pride ourselves on giving you the kitchen or bathroom that you deserve. 
 

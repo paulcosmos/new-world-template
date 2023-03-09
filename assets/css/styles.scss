@@ -1253,7 +1253,7 @@ strong {
     }
 
     &-signoff {
-        background-color: lighten($site-footer-bg, 0%);
+        background-color: $site-footer-signoff-bg;
         text-align: center;
         padding-top: $size-4;
         padding-bottom: $size-4;

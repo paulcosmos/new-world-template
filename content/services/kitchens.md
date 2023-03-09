@@ -1,14 +1,14 @@
 ---
 title: "Kitchen Installation"
 type: service-item
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-weight: 4
+desc: The perfect kitchen designed and built around your needs.
+weight: 2
 image: images/kitchen-taps.jpg
 anchor:
 ---
-## Kitchen Installation
+## Kitchen Design & Fitting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+We have the experience and knowledge required to professionally design and install your **perfect kitchen** with options to suit any budget.
 
-* Duis aute irure dolor in reprehenderit in voluptate velit * Dolore eu fugiat nulla pariatur. 
-* Excepteur sint occaecat cupidatat non proident
+* We can take your kitchen from an idea to completion 
+* Experienced in all aspects of kitchen installation

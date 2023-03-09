@@ -1,14 +1,14 @@
 ---
 title: "Tiling"
 type: service-item
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+desc: Wall and floor tiles professionally and expertly installed.
 weight: 4
-image: 
+image: images/tiling.jpg
 anchor:
 ---
 ## Tiling
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Whether you want tiled walls, floors or both, the **professional tilers** at {{<company>}} are on hand to install a wide range of tiles to the highest standards.
 
-* Duis aute irure dolor in reprehenderit in voluptate velit * Dolore eu fugiat nulla pariatur. 
-* Excepteur sint occaecat cupidatat non proident
+* All work completed to the highest quality. 
+* Our team of professionals have years of tiling experience

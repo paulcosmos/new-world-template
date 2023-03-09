@@ -1,14 +1,14 @@
 ---
 title: "Bathroom Installation"
 type: service-item
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-weight: 4
-image: 
+desc: Modern and stylish bathrooms taken from design to completion
+weight: 1
+image: images/bathroom.jpg
 anchor:
 ---
-## Bathroom Installation
+## Bathroom Design & Installation
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+The team at {{<company>}} are experts when it comes to **designing and fitting bathrooms**. We can help you design your perfect bathing and relaxation space.
 
-* Duis aute irure dolor in reprehenderit in voluptate velit * Dolore eu fugiat nulla pariatur. 
-* Excepteur sint occaecat cupidatat non proident
+* Our skilled fitters can take the job from design to completion 
+* Wide range of bathroom fixtures and fittings to suit any budget
