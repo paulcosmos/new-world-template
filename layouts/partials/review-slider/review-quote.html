@@ -1,0 +1,40 @@
+<div class="column is-flex is-12-mobile is-8-tablet _is-offset-2-tablet is-6-fullhd" data-aos="fade-in">
+								<div class="review-quote">
+									<div class="card-content">
+										<div class="media content">
+											<figure class="media-content">
+												<div class="review-stars">
+												{{- if .Params.rating -}}
+												{{/* 
+												Get the rating from the review .MD file if it's set,
+												and calculate the rating out of 5 using modulus
+												*/}}
+													{{- $rating := .Params.rating -}}
+													{{- $stars := sub .Params.rating 5 -}}
+													{{- range $num := (seq $rating) }}
+													<span class="icon stars"><i class="fa-solid fa-star-sharp"></i></span>
+													{{- end -}}
+													{{- if (ne $stars "0") -}}
+													{{/* 
+													Calculate the remaining stars out of n
+													*/}}
+													{{ range $num := (seq $stars) -}}
+													<span class="icon stars-remaining"><i class="fa-solid fa-star-sharp"></i></span>
+													{{ end -}}
+													{{- end -}}
+												{{/* If no rating is set, just show 5 stars */}}
+												{{ else -}}
+													{{- range $num := (seq 5) -}}
+													<span class="icon"><i class="fa-solid fa-star-sharp"></i></span>
+													{{- end -}}
+												{{- end -}}
+												</div>
+												<figcaption>{{ .Title }}</figcaption>
+											</figure>
+										</div>
+										<blockquote class="content">
+											{{ .Content }}
+										</blockquote>
+									</div>
+								</div>
+							</div>
