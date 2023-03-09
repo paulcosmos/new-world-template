@@ -9,8 +9,8 @@ $family-headings: $family-sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #019c1a;
+$secondary: #181c17;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 10%);
@@ -19,12 +19,12 @@ $text: $secondary;
 
 @mixin brand-gradient {
 	background: $primary;
-	background: linear-gradient(-90deg, $primary, 0%, darken($primary, 10%));
+	background: linear-gradient(45deg, darken($primary, 10%), darken($primary, 15%));
 }
 
 //  Top Banner
 $top-banner-bg: include brand-gradient;
-$top-banner-text: lighten($primary, 50%);
+$top-banner-text: white;
 $top-banner-icon: $top-banner-text;
 
 // Main Navigation 
