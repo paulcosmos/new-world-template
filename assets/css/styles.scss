@@ -823,6 +823,7 @@ strong {
                 &:hover {
                 background-color: $review-nav-bg-hover;
                 color: $review-nav-text-hover;
+                border: $review-nav-border;
                 }
             }
         }
