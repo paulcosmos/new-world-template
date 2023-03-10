@@ -741,7 +741,7 @@ strong {
             &:not(:last-child){
                 margin-bottom: $size-1!important;
                 padding-bottom: $size-3;
-                border-bottom: solid 2px lighten($secondary, 94%);
+                border-bottom: $services-item-divider;
             }
 
             &:last-child{
@@ -769,6 +769,18 @@ strong {
             & > img {
                 @include rounded-corners;
                 @include box-shadow-below;
+            }
+        }
+
+        &-list {
+            flex-direction: row-reverse;
+
+            .content {
+                columns: 2;
+
+                ul {
+                    margin-top: 0;
+                }
             }
         }
     }

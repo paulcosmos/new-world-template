@@ -5,31 +5,7 @@
 		{{ define "main" }}
 			<section class="section">
 				<div class="container is-fullhd company-services pb-4">
-					{{- $currentPage := . }}
-					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-					<div class="columns company-services-item _is-vcentered is-multiline is-variable is-8">
-						<div class="column is-12-touch is-7-desktop is-6-fullhd">
-							<div class="pre-heading" data-aos="fade-down">What we do</div>
-							<div class="content has-accent" data-aos="fade-right">
-								{{ .Content }}
-								<hr/>
-								<div class="button-primary ml-0 modal-trigger" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
-								<a href="contact.html">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="column" data-aos="fade-left">
-							<div class="image is-5by4 company-services-image company-services-image">
-								{{- $image := resources.Get .Params.image }}
-								{{- if $image }}
-								<img src='{{ ($image.Fill "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
-								{{ else }}
-								<img src='/images/placeholder.jpg'/>
-								{{- end }}
-							</div>
-						</div>
-					</div>
-				{{ end }}
+					{{ partial "services/services-image-list-only.html" . }}
 				</div>
 			</section>
 

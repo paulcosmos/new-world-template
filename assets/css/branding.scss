@@ -61,6 +61,9 @@ $hero-cta-corner-radius: .5rem;
 $hero-cta-border: none;
 $bg-overlay: rgba(0, 0, 0, 0.6);
 
+// Services
+$services-item-divider: solid 2px lighten($secondary, 75%);
+
 // Reviews
 $review-section-bg: $secondary;
 $review-section-text: white;
