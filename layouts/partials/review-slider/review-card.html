@@ -1,9 +1,11 @@
-<div class="column is-12-mobile" data-aos="fade-in">
+<div class="column is-12-mobile is-6-tablet is-flex" data-aos="fade-in">
 								<div class="review-card">
 									<div class="card-content">
 										<div class="media content">
 											<figure class="media-content">
+												{{- if .Title }}
 												<figcaption>{{ .Title }}</figcaption>
+												{{ end -}}
 												<div class="review-stars">
 												{{- if .Params.rating -}}
 												{{/* 

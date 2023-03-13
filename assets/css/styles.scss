@@ -1064,10 +1064,10 @@ strong {
     &-banner {
         background-color: $tertiary;
         color: $why-us-text;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        // padding: 3rem 0;
+        // padding-bottom: 3rem;
         @include from($navbar-breakpoint) {
-            padding: 3rem 32px;
+            // padding: 3rem 32px;
         }
     }
 }
