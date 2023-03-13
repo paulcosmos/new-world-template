@@ -19,7 +19,7 @@ $text: $secondary;
 
 @mixin brand-gradient {
 	background: $primary;
-	background: linear-gradient(-90deg, $primary, 0%, darken($primary, 10%));
+	background: linear-gradient(-90deg, darken($primary, 0%), darken($primary, 10%));
 }
 
 //  Top Banner
