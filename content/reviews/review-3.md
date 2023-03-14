@@ -1,7 +1,7 @@
 ---
-title: Andy
+title: 
 type: review
 rating: 5
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Ben managed to squeeze us in over a weekend which I really appreciated as we wanted to get the extension completed before Christmas. Ben and his team were thoroughly professional - fast, clean and flawless finish to the walls.

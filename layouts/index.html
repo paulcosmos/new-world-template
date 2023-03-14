@@ -1,18 +1,38 @@
 			{{- define "hero" -}}
-				{{ partial "hero/hero-text-cta.html" . }}
+				{{ partial "hero/hero-text-image.html" . }}
 			{{ end -}}
 
 			{{- define "main" -}}
+			<section class="section company-services-overview">
+				<div class="container is-fullhd">
+					<div class="columns is-multiline is-mobile is-variable is-4">
+						<div class="column" data-aos="fade-in">
+							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
+						</div>
+						<div class="column is-narrow" data-aos="fade-in">
+							<span class="icon company-icon">
+								<i class="fa-light fa-square-check"></i>
+							</span>
+						</div>
+					</div>
+					{{ partial "services/services-image-list-only.html" . }}
+				</div>
+			</section>
+			
+			{{ partial "cta-banner.html" . }}
+
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
-					<div class="columns is-vcentered is-multiline is-variable is-8">
+					<div class="columns company-intro-item is-vcentered is-multiline is-variable is-8">
 						<div class="column is-7-desktop is-6-fullhd">
+							{{ if .Params.preheading }}
+							<div class="pre-heading" data-aos="fade-down">{{ .Params.preheading }}</div>
+							{{ end }}
 							<div class="content company-intro-content has-accent" data-aos="fade-in">
 								{{ .Content }}
 							</div>
 						</div>
-
 						<div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
 							<div class="image has-rounded-corners">
 							{{- $image := resources.Get .Params.image }}
@@ -28,38 +48,8 @@
 				</div>
 			</section>
 
-			<section class="section company-services-overview">
-				<div class="container is-fullhd">
-					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column" data-aos="fade-in">
-							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
-						</div>
-						<div class="column is-narrow" data-aos="fade-in">
-							<span class="icon company-icon">
-								<i class="fa-light fa-square-check"></i>
-							</span>
-						</div>
-					</div>
-					<div class="columns is-multiline is-variable is-4">
-					{{/* Automatically increment the aos-delay value */}}
-					{{- $currentPage := . -}}
-					{{- $.Scratch.Set "delay" 0 }}
-					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" -}}
-					{{- $i := $.Scratch.Get "delay" }}
-						{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
-						<div class="column is-6-tablet is-6-desktop is-4-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
-							<h3>{{ .Params.title }}</h3>
-							<p>{{ .Params.desc }}</p>
-							<a href="/services.html">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
-						</div>
-					{{ end -}}
-					</div>
-				</div>
-			</section>
-
-			{{ partial "cta-banner.html" . }}
-
 			{{ partial "review-slider/review-slider.html" . }}
+			{{ partial "cta-text.html" . }}
 
 			{{- end }}
 

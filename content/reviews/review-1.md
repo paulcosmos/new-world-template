@@ -1,7 +1,7 @@
 ---
-title: James
+title: 
 type: review
 rating: 5
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Fantastic service, Ben came and priced up and book the job in, he turned up when he said and cleaned up. Will definitely recommend and have him again.

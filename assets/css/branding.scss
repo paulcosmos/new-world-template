@@ -1,39 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
 
 // Override Bulma variables here:
 $family-sans-serif: "Nunito Sans", sans-serif;
-$family-headings: $family-sans-serif;
-$family-heading-weight: 600;
+$family-headings: "Poppins", sans-serif;
+$family-heading-weight: 300;
 
 //  Set colours
-$primary: #7c69c0;
+$primary: #FF8A00;
 $secondary: #242833;
 $info: $secondary;
 $tertiary: #EFF2F5;
-$accent: darken($primary, 10%);
+$accent: darken($primary, 0%);
 $link: $primary;
 $text: $secondary;
 
 @mixin brand-gradient {
 	background: $primary;
-	background: linear-gradient(-90deg, $primary, 0%, darken($primary, 10%));
+	background: linear-gradient(-45deg, lighten($primary, 5%), lighten($primary, 2%));
 }
 
+$button-corner-radius: 0px;
+$image-corner-radius: 0.4rem;
+
 //  Top Banner
-$top-banner-bg: include brand-gradient;
-$top-banner-text: lighten($primary, 50%);
-$top-banner-icon: $top-banner-text;
+// $top-banner-bg: include brand-gradient;
+$top-banner-bg: $tertiary;
+$top-banner-text: $secondary;
+$top-banner-icon: $link;
 
 // Main Navigation 
-$navbar-background-color: $secondary;
+$navbar-background-color: white;
 $navbar-height: 5rem;
 $logo-max-width: 180px;
 $logo-max-height: $navbar-height;
-$navbar-item-color: white;
-$navbar-burger-color: white;
+$navbar-box-shadow-size: 0 5px 10px 5px;
+$navbar-item-font: $family-headings;
+$navbar-item-color: $secondary;
+$navbar-item-hover-color: $link;
+$navbar-burger-color: $link;
 $navbar-item-hover-background-color: none;
 $navbar-dropdown-arrow: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
@@ -41,7 +50,6 @@ $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
 $navbar-burger-color: $primary;
-$navbar-item-hover-color: white;
 
 // Buttons
 $button-text: lighten($primary, 70%);
@@ -60,6 +68,9 @@ $hero-cta-number-text: $primary;
 $hero-cta-corner-radius: .5rem;
 $hero-cta-border: none;
 $bg-overlay: rgba(0, 0, 0, 0.6);
+
+// Services
+$services-item-divider: solid 2px lighten($secondary, 80%);
 
 // Reviews
 $review-section-bg: $secondary;
@@ -86,9 +97,9 @@ $why-us-title-size: 1rem;
 $site-footer-bg: darken($secondary, 10%);
 
 // Settings for 'Paving' BG pattern
-$paving-size: 40px;
-$paving-bg: darken($primary, 40%);
-$paving: darken($paving-bg, 40%);
+$paving-size: 400px;
+$paving-bg: darken($secondary, 10%);
+$paving: lighten($paving-bg, 5%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;
@@ -98,7 +109,7 @@ $ring-x: 0%;
 $ring-y: 50%;
 
 // Settings for 'Dots' BG pattern
-$dot-bg-color: $tertiary;
-$dot-color: darken($dot-bg-color, 5%);
+$dot-bg-color: white;
+$dot-color: darken($tertiary, 5%);
 $dot-size: 2px;
 $dot-space: 16px;

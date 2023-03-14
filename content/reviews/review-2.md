@@ -1,7 +1,7 @@
 ---
-title: Sarah
+title: 
 type: review
 rating: 5
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Ben did a fantastic job on our old ceiling covering the artex with a smooth finish he also helped us to remove the old fireplace and fit a beam and took great care not to damage the fitted fire .

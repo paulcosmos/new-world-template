@@ -6,7 +6,7 @@
 							<div class="content site-footer-company-info">
 							{{- with .Site.Params }}
 								<h4>{{ .company }}</h4>
-								<h5>{{ .industry | humanize }} services in {{ .towncity }} and {{ .county }}</h5>
+								<p>Professional, no-hassle {{ .industry }} services in {{ .towncity }} and {{ .county }}.</p>
 								<div class="button-primary ml-0 modal-trigger" data-aos="fade-right" data-aos-easing="ease-in-back">
 									<a href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
 								</div>
@@ -30,7 +30,7 @@
 
 					<div class="column _is-12-mobile is-3-tablet _is-3-desktop is-4-fullhd is-offset-1-fullhd">
 						<div class="content site-footer-links has-columns">
-						<h4>Primary Services</h4>
+						<h4>Popular Services</h4>
 							<ul>
 								{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
 								<li><a href="./services.html">

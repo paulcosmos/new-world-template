@@ -5,11 +5,11 @@ weight: 1
 preheading:
 _build:
   render: true
-image:
+image: images/plastering-hero.jpg
 
 ---
 
-# Reliable **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Affordable, professional **{{<industry>}} services** throughout **{{<county>}}** and beyond.
 
-{{<company>}} has been serving {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+Based in {{<towncity>}}, **{{<company>}}** pride ourselves on providing an affordable, professional service. Our team is highly skilled in all aspects of the plastering trade and are experienced enough to tackle any project.
 

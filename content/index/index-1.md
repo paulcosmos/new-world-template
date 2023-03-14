@@ -4,16 +4,13 @@ weight: 1
 _build:
     list: true
     render: false
-image:
+image: images/plastering-wall.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
+## Why choose **{{<company>}}** for your {{<industry>}} needs?
 
-* Many of experience in and around {{<towncity>}}
+* Many years of experience in and around {{<county>}}
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} since {{<years>}}. In that time we've earned a reputation for excellent final quality and a professional working practices.
-
-
-
+**{{<company>}}** provide the best, most comprehensive plastering services in and around {{<county>}}. Our many satisfied and returning customers are proof of that and we are confident we're the right team for your project.

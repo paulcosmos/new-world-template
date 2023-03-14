@@ -5,9 +5,6 @@
 @import "bulma.sass";
 @import "simple-lightbox.scss";
 
-$button-corner-radius: 4px;
-$image-corner-radius: 0.5rem;;
-
 // Mixins 
 @mixin section-item-title {
     color: inherit;
@@ -191,6 +188,7 @@ strong {
     &-primary > button {
         // background-color: $primary;
         @include brand-gradient;
+        font-family: $navbar-item-font;
         border-color: transparent;
         color: $button-text;
         border-width: 1px;
@@ -318,8 +316,8 @@ strong {
 
 // Top Banner
 .top-banner {
-    // background-color: $top-banner-bg;
-    @include brand-gradient;
+    background-color: $top-banner-bg;
+    // @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
     font-weight: bold;
@@ -361,7 +359,7 @@ strong {
             color: $link;
 
             span {
-                color:white;
+                color:inherit;
             }
         }
 
@@ -369,20 +367,15 @@ strong {
         display: block;
         font-size: $size-7;
         color: inherit;
-
-        // &:hover {
-        //     transition: color 0.3s;
-        //     color:white;
-        //     }
         }
 
     }
     
     &-item {
-        color: white;
         transition: all 0.3s;
         text-align: center;
         position: relative;
+        font-family: $navbar-item-font;
     }
 
     &-logo {
@@ -442,9 +435,14 @@ strong {
     &-burger {
         text-align: center;
         position: relative;
+        
         &:hover {
-            color: white;
+            color: $link;
             background-color: $primary;
+
+            span {
+                background-color: $navbar-background-color;
+            }
         }
 
         &.is-active {
@@ -663,12 +661,12 @@ strong {
 
     &-intro {
 
-        .columns {
+        &-item {
 
             &:not(:last-child){
                 margin-bottom: $size-1!important;
                 padding-bottom: $size-3;
-                border-bottom: solid 2px lighten($secondary, 94%);
+                border-bottom: $services-item-divider;
             }
 
             &:nth-of-type(odd){
@@ -687,7 +685,7 @@ strong {
 
         .image {
             img {
-                @include box-shadow-below;
+                @include box-shadow-trello();
             }
         }
     }
@@ -695,15 +693,13 @@ strong {
     &-services {
 
         &-overview {
-            background-color: $tertiary;
-            @include background-dots;
+            // background-color: $tertiary;
+            // @include background-image;
             background-position: bottom;
-            // color: white;
             padding-bottom: 5rem;
 
             &-item {
                 margin-bottom: 1rem;
-                // color: darken(white, 20%);
 
                 h3 {
                     // color: white;
@@ -741,7 +737,7 @@ strong {
             &:not(:last-child){
                 margin-bottom: $size-1!important;
                 padding-bottom: $size-3;
-                border-bottom: solid 2px lighten($secondary, 94%);
+                border-bottom: $services-item-divider;
             }
 
             &:last-child{
@@ -769,6 +765,18 @@ strong {
             & > img {
                 @include rounded-corners;
                 @include box-shadow-below;
+            }
+        }
+
+        &-list {
+            flex-direction: row-reverse;
+
+            .content {
+                columns: 2;
+
+                ul {
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -970,7 +978,7 @@ strong {
         border: solid 4px white;
         padding: 2rem;
         font-weight: 600;
-        @include rounded-corners;
+        border-radius: 0.5rem;
         @include box-shadow-high;
         @include background-paved;
         
@@ -1174,7 +1182,8 @@ strong {
                 font-weight: bold;
             }
         }
-        h5{
+        h5,
+        p{
             font-weight: normal;
             font-size: $size-7;
             line-height: 1.4em;

@@ -1,9 +1,14 @@
+		{{- define "hero" -}}
+			{{ partial "hero/hero-text-cta.html" . }}
+		{{ end -}}
 		{{- define "main" }}
 			<section class="section">
 				<div class="container is-fullhd">
 					{{ partial "image-gallery.html" . }}
 				</div>
 			</section>
+
+			{{ partial "why-us-banner.html" . }}
 		{{ end }}
 
 		{{- define "scripts" -}}
