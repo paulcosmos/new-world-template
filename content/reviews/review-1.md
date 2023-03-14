@@ -1,7 +1,7 @@
 ---
-title: James
+title: Paddy
 type: review
 rating: 5
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Kyle’s attention to detail is brilliant. He did the majority of the building works when I renovated my house. With Kyle everything is done properly and to a high quality. I would highly recommend Myatts building solutions to anyone that I know.

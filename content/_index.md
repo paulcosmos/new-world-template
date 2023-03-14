@@ -2,14 +2,14 @@
 title: 'Home'
 menu: ["main","footer"]
 weight: 1
-preheading: "#preheading"
+preheading: "Professional & Reliable Building Solutions"
 _build:
   render: true
 image:
 
 ---
 
-# Reliable **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Expert **{{<industry>}} services** throughout **{{<county>}}** and beyond.
 
-{{<company>}} has been serving {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+Based in {{<towncity>}} **{{<company>}}** has been providing professional, building and construction work to happy customers for over {{<years>}}.
 

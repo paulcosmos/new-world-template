@@ -174,7 +174,7 @@ strong {
                 line-height: 2rem;
                 text-align: center;
                 border-radius: 50%;
-                background-color: $primary;
+                background-color: $accent;
             } 
         }
     }
@@ -215,8 +215,8 @@ strong {
 
 // Top Banner
 .top-banner {
-    // background-color: $top-banner-bg;
-    @include brand-gradient;
+    background-color: $top-banner-bg;
+    // @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
     font-weight: bold;
@@ -606,8 +606,12 @@ strong {
             background-color: $tertiary;
             @include background-dots;
             background-position: bottom;
-            // color: white;
             padding-bottom: 5rem;
+
+            &-list {
+            background-color: $tertiary;
+            padding-bottom: 5rem;
+            }
 
             &-item {
                 margin-bottom: 1rem;
@@ -1085,6 +1089,8 @@ strong {
         @include until($desktop) {
             margin-bottom:2rem;
         }
+
+
         h4 {
             margin-bottom: 1rem;
             font-size: $size-6;
@@ -1094,7 +1100,12 @@ strong {
                 font-weight: bold;
             }
         }
-        h5{
+
+        img {
+            margin-bottom: rem;
+        }
+
+        p {
             font-weight: normal;
             font-size: $size-7;
             line-height: 1.4em;

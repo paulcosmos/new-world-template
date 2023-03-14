@@ -4,13 +4,13 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/extension.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality
+## We're qualified, **{{<industry>}} experts**. Tough jobs are our speciality
 
-+ Years of experience across all aspects of {{<industry>}}
-+ A reputation for fast delivery times and reliability
++ {{<years>}} of {{<industry>}} experience across all aspects
++ Certified and fully insured team
 + Competitive and affordable prices
 
-Whatever the job, we can handle it. Call us today on **{{<mobile>}}** for a no obligation quote.
+We're a proud member of the **Guild of Master Craftsmen**. Whatever the job, we can handle it. Call us today on **{{<mobile>}}** for a no obligation quote.
