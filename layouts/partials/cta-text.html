@@ -1,26 +1,23 @@
-				<div class="hero-body">
+<section class="section">
 					<div class="container is-fullhd">
 					    <div class="columns is-multiline _is-vcentered">
 
-							<div class="column is-6-desktop is-7-widescreen is-6-fullhd">
+							<div class="column is-6-desktop _is-7-widescreen is-6-fullhd">
 								<div class="content">
 									<div class="" data-aos="fade-down">
-									  <span class="pre-heading" data-aos="fade-left">
-									    {{ if .Params.preheading }}
-											{{- .Params.preheading -}}
-										{{ else }}
-											{{- .Site.Params.slogan -}}
-										{{ end }}
-									  </span>
+										<span class="pre-heading" data-aos="fade-left">
+											Arrange a quotation
+										</span>
 									</div>
-								{{/*  {{ end }}  */}}
 									<div class="has-accent" data-aos="fade-left">
-										{{ .Content }}
+										<h2>Looking for {{ .Site.Params.industry }} services in {{ .Site.Params.county }}?</h2>
+										<p>Speak to us today and we'll be happy to answer any questions you have or arrange a free, no obligation quote.</p>
+										<p>Already got a quote? Call us today on <b>07713 479 547</b> and let us beat it!</p>
 									</div>
 								</div>
 							</div>
 
-							<div class="column is-6-tablet _is-offset-1-tablet is-5-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen" data-aos="fade-right">
+							<div class="column is-6-tablet _is-offset-1-tablet is-5-desktop is-offset-1-desktop is-4-fullhd is-offset-2-fullhd" data-aos="fade-right">
 								<div class="content _box hero-cta">
 									<h3>Get a Quote</h3>
 									<hr/>
@@ -31,7 +28,7 @@
 										{{- .Site.Params.mobile -}}
 									{{- end -}}
 									</h4>
-									<p>Speak to us today to arrange a no obligation quotation or use our contact form to request a callback</p>
+									<p>Call us today to arrange a no obligation quotation. Or you can use our contact form to request a callback</p>
 									<button class="button is-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
 										<span class="icon-text">
 										  <span class="icon is-hidden-touch">
@@ -45,4 +42,4 @@
 
 						</div>
 					</div>
-				</div>
+			</section>

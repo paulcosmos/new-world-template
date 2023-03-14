@@ -10,10 +10,10 @@ $family-heading-weight: 600;
 
 //  Set colours
 $primary: #7c69c0;
-$secondary: #242833;
+$secondary: rgb(36, 40, 51);
 $info: $secondary;
 $tertiary: #EFF2F5;
-$accent: darken($primary, 10%);
+$accent: darken($primary, 0%);
 $link: $primary;
 $text: $secondary;
 
@@ -21,6 +21,22 @@ $text: $secondary;
 	background: $primary;
 	background: linear-gradient(-90deg, darken($primary, 0%), darken($primary, 10%));
 }
+
+// Page hero settings 
+@mixin hero-default-bg {
+	@include background-dots;
+}
+
+@mixin hero-index-bg {
+	@include hero-default-bg;
+	@include from($tablet){
+		@include background-image;
+			background-image: linear-gradient(-249deg, rgba(36,40,51,1), rgba(36,40,51, 0.5)), url('/images/placeholder.jpg');
+			color: $hero-index-text;
+		}
+}
+
+$hero-index-text: white;
 
 //  Top Banner
 $top-banner-bg: include brand-gradient;
@@ -42,6 +58,8 @@ $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
 $navbar-burger-color: $primary;
 $navbar-item-hover-color: white;
+
+// Page geris
 
 // Buttons
 $button-text: lighten($primary, 70%);

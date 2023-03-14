@@ -1,13 +1,13 @@
 					{{- $currentPage := . }}
 					{{- range where (where .Site.RegularPages "Type" "services-list") "File.Dir" "services/" }}
-					<div class="columns _company-services-item company-services-list _is-vcentered is-multiline is-variable is-8">
+					<div class="columns company-services-list is-multiline is-variable is-8">
 						<div class="column is-12-touch is-7-desktop is-6-fullhd">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="content has-accent" data-aos="fade-right">
 								{{ .Content }}							
 							</div>
 						</div>
-						<div class="column" data-aos="fade-left">
+						<div class="column is-hidden-touch" data-aos="fade-left">
 							<div class="image is-5by4 company-services-image company-services-image">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
