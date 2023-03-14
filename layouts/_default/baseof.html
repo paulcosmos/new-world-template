@@ -14,14 +14,15 @@
 			{{ partial "navbar.html" . }}
 
 			{{ block "hero" . -}}
+			<section class="hero is-small">
 			    {{ partial "hero/hero-text-only.html" . }}
+			</section>
 			{{ end }}
 		</header>
 
 		<main>
 			{{ block "main" . }}
 			{{ end }} 
-			{{ partial "why-us-banner.html" . }}
 		</main>
 
 		<footer class="site-footer">

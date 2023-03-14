@@ -1,15 +1,18 @@
 		{{- define "hero" -}}
-			{{ partial "hero/hero-text-image.html" . }}
+		<section class="hero is-small">
+			{{ partial "hero/hero-text-cta.html" . }}
+		</section>
 		{{ end -}}
 
 		{{ define "main" }}
 			<section class="section">
 				<div class="container is-fullhd company-services pb-4">
-					{{ partial "services/services-image-list-only.html" . }}
+					{{ partial "services/services-image-text.html" . }}
 				</div>
 			</section>
 
 			{{ partial "cta-banner.html" . }}
+			{{ partial "why-us-banner.html" . }}
 
 		{{ end }}
 

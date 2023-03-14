@@ -1,0 +1,103 @@
+// Mixins 
+@mixin section-item-title {
+    color: inherit;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    word-break: break-word;
+    margin-bottom:1rem;
+}
+
+@mixin x-item-title {
+    color: inherit;
+    font-weight: 600;
+    font-size:1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+@mixin animated-underline {
+    content: "";
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: $link;
+    transition: all 0.3s;
+}
+
+@mixin box-shadow-stripe {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px -10px;
+}
+
+@mixin box-shadow-trello {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+@mixin box-shadow-outer-glow {
+    box-shadow: darken($primary, 10%) 0px 0px 50px -10px;
+}
+
+@mixin box-shadow-offset-solid($shadow) {
+    box-shadow: $shadow 20px 20px 0px -10px;
+}
+
+@mixin box-shadow-offset-lines($insides,$lines){
+    box-shadow:  
+    $insides 10px 10px 0px -2px, 
+    $lines 10px 10px, 
+    $insides 20px 20px 0px -2px, 
+    $lines  20px 20px, 
+    $insides 30px 30px 0px -2px, 
+    $lines  30px 30px
+}
+
+@mixin box-shadow-3d {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@mixin box-shadow-below {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+@mixin box-shadow-high {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+@mixin rounded-corners {
+    border-radius: $image-corner-radius;
+}
+
+@mixin background-image {
+	background: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin background-rings {
+    background-color: $ring-bg-color;
+    background-image:  repeating-radial-gradient( circle at $ring-x $ring-y, transparent 0, white 11px ), repeating-linear-gradient( $ring-grad-top, $ring-grad-bottom );
+}
+
+@mixin background-dots {
+	background:
+		linear-gradient(90deg, $dot-bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($dot-bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+	background-size: $dot-space $dot-space;
+}
+
+@mixin background-dots-offset {
+    background-color: $accent;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='ffffff' fill-opacity='0.2' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E"); 
+}
+
+@mixin background-paved {
+    background:
+        linear-gradient(135deg,#0000 18.75%,$paving-bg 0 31.25%,#0000 0),
+        repeating-linear-gradient(45deg,$paving-bg -6.25% 6.25%,$paving 0 18.75%);
+    background-size: $paving-size $paving-size; 
+}
