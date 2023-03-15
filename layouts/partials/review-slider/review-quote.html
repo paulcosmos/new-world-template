@@ -1,9 +1,8 @@
-<div class="column is-12-mobile is-6-tablet is-flex" data-aos="fade-in">
-								<div class="review-card">
+<div class="column is-flex is-12-mobile is-8-tablet _is-offset-2-tablet is-6-fullhd" data-aos="fade-in">
+								<div class="review-quote">
 									<div class="card-content">
 										<div class="media content">
 											<figure class="media-content">
-												<figcaption>{{ .Title }}</figcaption>
 												<div class="review-stars">
 												{{- if .Params.rating -}}
 												{{/* 
@@ -30,6 +29,9 @@
 													{{- end -}}
 												{{- end -}}
 												</div>
+												{{- if .Title -}}
+												<figcaption>{{ .Title }}</figcaption>
+												{{ end }}
 											</figure>
 										</div>
 										<blockquote class="content">

@@ -2,7 +2,7 @@
 title: 'Home'
 menu: ["main","footer"]
 weight: 1
-preheading:
+preheading: "#preheading"
 _build:
   render: true
 image:

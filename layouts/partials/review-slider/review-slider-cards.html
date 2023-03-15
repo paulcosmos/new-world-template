@@ -1,4 +1,4 @@
-<section class="pb-3">
+<section class="review-section">
 				<div class="container section is-fullhd ">
 					<div class="columns is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
@@ -15,7 +15,7 @@
 					<div class="container is-fluid">  
 						<div class="columns is-multiline is-mobile review-slider">
 						{{ range first 4 (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
-							{{ partial "review-card.html" . }}
+							{{ partial "review-slider/review-card.html" . }}
 						{{ end -}}
 						</div>
 					</div>
@@ -24,20 +24,20 @@
 					<div class="columns">
 						<div class="column is-8 is-offset-2">
 							<div class="is-grouped">
+								<a href="/reviews.html" class="button is-ghost is-inline-block" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">View more reviews</a>
 								<div class="button-primary ml-0 modal-trigger is-inline-block" data-target="quote-modal" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
 									<button href="#">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
 								</div>
-							<a href="reviews.html" class="button is-ghost is-inline-block" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">View more reviews</a>
 							</div>
 						</div>
 						<div class="column text-align-right is-narrow">
 							<div id="review-slider-controls" class="buttons is-small is-centered" aria-label="Carousel Navigation" tabindex="0">
-								<button class="button is-light" aria-controls="review-slider" tabindex="-1" data-controls="prev">
+								<button class="button review-slider-nav-button _is-light" aria-controls="review-slider" tabindex="-1" data-controls="prev">
 									<span class="icon is-medium">
 										<i class="fa-regular fa-arrow-left"></i>
 									</span>
 								</button>
-								<button class="button is-light" aria-controls="review-slider" tabindex="-1" data-controls="next">
+								<button class="button review-slider-nav-button _is-light" aria-controls="review-slider" tabindex="-1" data-controls="next">
 									<span class="icon is-medium">
 										<i class="fa-regular fa-arrow-right"></i>
 									</span>
@@ -47,3 +47,51 @@
 					</div>
 				</div>
 			</section>
+
+	{{- define "scripts" -}}
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+		<script>
+			var slider = tns({
+			    container: '.review-slider',
+			    items: 1,
+			    slideBy: 'page',
+			    loop: true,
+			    autoplay: false,
+			    autoplayTimeout: 15000,
+			    autoplayButtonOutput: false,
+			    autoplayHoverPause: true,
+			    speed: 1000,
+			    gutter: 0,
+			    edgePadding: 20,
+			    center: true,
+			    nav: false,
+			    preventActionWhenRunning: true,
+			    controls: true,
+			    controlsContainer: '#review-slider-controls',
+			    responsive: {
+			        960: {
+			            items: 2,
+			            controls: true,
+			            center: false,
+			        },
+			        1024: {
+			            slideBy: 1,
+			            gutter: 20,
+			            items: 2,
+			            edgePadding: 40,
+			            center: true,
+			        },
+			        1280: {
+			            items: 3,
+			            edgePadding: 40,
+
+			        },
+			        1540: {
+			            items: 3,
+			            edgePadding: 40,
+
+			        }
+			    }
+			});
+		</script>
+	{{ end }}

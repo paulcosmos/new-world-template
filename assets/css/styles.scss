@@ -1,116 +1,13 @@
 @charset "utf-8";
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 
+@import "mixins.scss";
 @import "branding.scss";
 @import "bulma.sass";
 @import "simple-lightbox.scss";
 
 $button-corner-radius: 4px;
 $image-corner-radius: 0.5rem;;
-
-// Mixins 
-@mixin section-item-title {
-    color: inherit;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.125;
-    word-break: break-word;
-    margin-bottom:1rem;
-}
-
-@mixin x-item-title {
-    color: inherit;
-    font-weight: 600;
-    font-size:1.25rem;
-    margin-bottom: 0.75rem;
-}
-
-@mixin animated-underline {
-    content: "";
-    position: relative;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    width: 0%;
-    height: 2px;
-    background-color: $link;
-    transition: all 0.3s;
-}
-
-@mixin box-shadow-stripe {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px -10px;
-}
-
-@mixin box-shadow-trello {
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-}
-
-@mixin box-shadow-outer-glow {
-    box-shadow: darken($primary, 10%) 0px 0px 50px -10px;
-}
-
-@mixin box-shadow-offset-solid($shadow) {
-    box-shadow: $shadow 20px 20px 0px -10px;
-}
-
-@mixin box-shadow-offset-lines($insides,$lines){
-    box-shadow:  
-    $insides 10px 10px 0px -2px, 
-    $lines 10px 10px, 
-    $insides 20px 20px 0px -2px, 
-    $lines  20px 20px, 
-    $insides 30px 30px 0px -2px, 
-    $lines  30px 30px
-}
-
-@mixin box-shadow-3d {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-@mixin box-shadow-below {
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-
-@mixin box-shadow-high {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-}
-
-@mixin rounded-corners {
-    border-radius: $image-corner-radius;
-}
-
-@mixin background-image {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-@mixin background-rings {
-    background-color: $ring-bg-color;
-    background-image:  repeating-radial-gradient( circle at $ring-x $ring-y, transparent 0, white 11px ), repeating-linear-gradient( $ring-grad-top, $ring-grad-bottom );
-}
-
-@mixin background-dots {
-	background:
-		linear-gradient(90deg, $dot-bg-color ($dot-space - $dot-size), transparent 1%) center,
-		linear-gradient($dot-bg-color ($dot-space - $dot-size), transparent 1%) center,
-		$dot-color;
-	background-size: $dot-space $dot-space;
-}
-
-@mixin background-dots-offset {
-    background-color: $accent;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='ffffff' fill-opacity='0.2' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E"); 
-}
-
-@mixin background-paved {
-    background:
-        linear-gradient(135deg,#0000 18.75%,$paving-bg 0 31.25%,#0000 0),
-        repeating-linear-gradient(45deg,$paving-bg -6.25% 6.25%,$paving 0 18.75%);
-    background-size: $paving-size $paving-size; 
-}
-
 
 
 html {
@@ -229,7 +126,7 @@ strong {
     }
 
     &.is-ghost {
-        color: $secondary;
+        // color: $secondary;
 
         &:after {
             @include animated-underline;
@@ -341,6 +238,12 @@ strong {
 // Navigation Menu
 .navbar {
 
+    .container {
+        @include until($navbar-breakpoint){
+            padding-left:32px;
+        }
+    }
+
     &-brand {
         position: relative;
 
@@ -379,7 +282,7 @@ strong {
     }
     
     &-item {
-        color: white;
+        // color: white;
         transition: all 0.3s;
         text-align: center;
         position: relative;
@@ -515,8 +418,9 @@ strong {
 // Page Content
 .hero { 
     
-    @include background-dots;
-    color: $hero-text!important;
+    // @include background-dots;
+    @include hero-default-bg;
+    color: $hero-text;
     font-weight: normal;
     text-align: left; 
     text-align: inherit;
@@ -524,6 +428,10 @@ strong {
     @include from($navbar-breakpoint){
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+
+    &-index {
+        @include hero-index-bg;
     }
 
     &-fail {
@@ -551,15 +459,16 @@ strong {
 
     &-cta {
         background-color: $hero-cta-bg;
-        // @include box-shadow-offset-lines($tertiary, $hero-cta-bg);
+        border-radius: $hero-cta-corner-radius;
         @include box-shadow-offset-solid($hero-cta-shadow);
         color: white;
         font-weight: 600;
         padding: 1.25rem;
         margin: 0 auto;
+        border: $hero-cta-border;
 
         @include from($tablet){
-            margin-top: 3rem;
+            margin-top: 0rem;
         }
 
         h4 {
@@ -740,7 +649,7 @@ strong {
             &:not(:last-child){
                 margin-bottom: $size-1!important;
                 padding-bottom: $size-3;
-                border-bottom: solid 2px lighten($secondary, 94%);
+                border-bottom: $services-item-divider;
             }
 
             &:last-child{
@@ -770,6 +679,18 @@ strong {
                 @include box-shadow-below;
             }
         }
+
+        &-list {
+            flex-direction: row-reverse;
+
+            .content {
+                columns: 2;
+
+                ul {
+                    margin-top: 0;
+                }
+            }
+        }
     }
 
     &-icon {
@@ -783,6 +704,11 @@ strong {
 // Customer Reviews 
 .review {
 
+    &-section {
+        background: $review-section-bg;
+        color: $review-section-text;
+    }
+
     &-grid,
     &-slider {
         .column {
@@ -792,11 +718,50 @@ strong {
 
     &-slider {
         padding-bottom: $size-2;
+
+        &-nav {
+            
+            &-button,
+            &-button:active,
+            &-button:focus {
+                background: $review-nav-bg;
+                color: $review-nav-text;
+                border: $review-nav-border;
+
+                &:hover {
+                background-color: $review-nav-bg-hover;
+                color: $review-nav-text-hover;
+                border: $review-nav-border;
+                }
+            }
+        }
+
+        &-dots {
+            text-align: center;
+            margin-top: 2rem;
+
+            &>[aria-controls] {
+                width: $review-dots-width;
+                height: $review-dots-height;
+                padding: 0;
+                margin: 0 5px;
+                margin-top: 0px;
+                margin-top: 1em;
+                border-radius: $review-dots-border-radius;
+                background: $review-dots-bg;
+                border: $review-dots-border;
+            }
+
+            & > .tns-nav-active {
+                background: $review-dots-bg-active;
+            }
+        }
     }
 
     &-card {
         @include box-shadow-stripe;
         background-color: white;
+        color: $text;
         border-radius: 0.5rem;
         display: flex;
         flex-grow: 1;
@@ -812,6 +777,28 @@ strong {
                     font-weight: 600;
                     font-style: inherit;
                     text-align: inherit;
+            }
+        }
+    }
+
+    &-quote {
+        @include from($navbar-breakpoint){
+        width: 960px;
+        }
+        width:100%;
+        max-width: 860px;
+        margin: 0 auto;
+        text-align: center;
+        figure {
+            margin-left: 0;
+            margin-right: 0;
+    
+            figcaption {
+                font-size: $size-4;
+                font-weight: 600;
+                font-style: inherit;
+                text-align: inherit;
+                margin-bottom: $size-4;
             }
         }
     }
@@ -985,10 +972,10 @@ strong {
     &-banner {
         background-color: $tertiary;
         color: $why-us-text;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        // padding: 3rem 0;
+        // padding-bottom: 3rem;
         @include from($navbar-breakpoint) {
-            padding: 3rem 32px;
+            // padding: 3rem 32px;
         }
     }
 }
