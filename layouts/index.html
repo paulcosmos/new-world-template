@@ -19,7 +19,7 @@
 							<div class="image has-rounded-corners">
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
-								<img src='{{ ($image.Fill "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
+								<img src='{{ ($image.Fit "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
 							{{ else }}
 								<img src='/images/placeholder.jpg'/>
 							{{- end }}
