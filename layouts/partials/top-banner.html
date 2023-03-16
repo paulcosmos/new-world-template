@@ -23,7 +23,7 @@
 								{{ else -}}
 								<span class="icon"><i class="fa-regular fa-phone"></i></span>
 								{{ end -}}
-								<span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.mobile |  -}}'>{{ .mobile }}</a></span>
+								<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
 								{{ end }}
 							</span>
 						</div>
