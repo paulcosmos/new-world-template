@@ -1,1 +1,1 @@
-{{- .Site.Params.phone -}}
+{{ if .Site.Params.phone }}{{- .Site.Params.phone -}}{{ else }}{{- .Site.Params.mobile -}}{{ end }}

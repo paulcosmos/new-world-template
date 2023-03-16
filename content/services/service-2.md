@@ -2,7 +2,7 @@
 title: "#service-2"
 type: service-item
 desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-weight: 4
+weight: 2
 image: 
 anchor: "#service-2"
 ---
