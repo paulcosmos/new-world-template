@@ -1,5 +1,9 @@
 	<title>
-	{{- if .IsHome }}{{- print .Site.Params.company }} | {{ print .Site.Title }}{{ else}}{{- print .Page.Title }} | {{ print .Site.Params.company }}{{ end -}}
+	{{- if .IsHome }}
+	{{- print .Site.Params.company }} | Trusted and professional {{ print .Site.Params.industry }} in {{ .Site.Params.towncity }} and {{ .Site.Params.county }}
+	{{ else }}
+	{{- print .Page.Title }} | {{ print .Site.Params.company }}
+	{{ end -}}
 	</title>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">

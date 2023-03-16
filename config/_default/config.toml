@@ -1,5 +1,5 @@
 baseURL = 'http://localhost'
-title = 'Trusted and professional #industry services in #towncity'
+title = ''
 
 languageCode = 'en-us'
 uglyurls = true
