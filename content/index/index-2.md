@@ -4,10 +4,10 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/bespoke.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality
+## We're **bathroom installation experts**. Bespoke projects are our speciality
 
 + Years of experience across all aspects of {{<industry>}}
 + A reputation for fast delivery times and reliability

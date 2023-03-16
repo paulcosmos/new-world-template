@@ -1,7 +1,7 @@
 ---
-title: Peter
+title: Sarah C.
 type: review
 rating: 5
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+They were absolutely brilliant in that we had to get a shower fitted in quickly. We ordered the shower and they worked around us and were able to fit in at very short notice for a very reasonable cost too. Will definitely use them again and highly recommend them.

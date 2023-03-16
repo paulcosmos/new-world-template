@@ -215,8 +215,8 @@ strong {
 
 // Top Banner
 .top-banner {
-    // background-color: $top-banner-bg;
-    @include brand-gradient;
+    background-color: $top-banner-bg;
+    // @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
     font-weight: bold;
