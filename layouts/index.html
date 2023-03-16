@@ -1,6 +1,7 @@
 			{{- define "hero" -}}
 			<section class="hero is-medium hero-index">
 				{{ partial "hero/hero-image.html" . }}
+				<img class="gas-safe-emblem" src="images/gsr-logo.png">
 			</section>
 			{{ end -}}
 
@@ -19,7 +20,7 @@
 							<div class="image has-rounded-corners">
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
-								<img src='{{ ($image.Fit "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
+								<img src='{{ ($image.Crop "1200x890 q50 Smart").RelPermalink }}' alt="" title=""/>
 							{{ else }}
 								<img src='/images/placeholder.jpg'/>
 							{{- end }}
@@ -42,7 +43,7 @@
 							</span>
 						</div>
 					</div>
-					{{ partial "services/services-image-list-only.html" . }}
+					{{ partial "services/services-grid.html" . }}
 				</div>
 			</section>
 

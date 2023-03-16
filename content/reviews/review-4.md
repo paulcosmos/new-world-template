@@ -1,7 +1,7 @@
 ---
-title: Peter
+title: 
 type: review
 rating: 5
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Michael was prompt and professional. I needed a quick solution to a boiler problem and Michael was able to provide a range of solutions at different prices. The job ended up being completed very quickly and at a good price. Wouldn't hesitate to use again.

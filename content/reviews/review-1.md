@@ -1,7 +1,7 @@
 ---
-title: James
+title: 
 type: review
 rating: 5
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Really pleased with the work done. Very polite and pleasant to have in the house. Nothing was too much trouble. Would definitely recommend.

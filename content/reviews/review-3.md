@@ -1,7 +1,7 @@
 ---
-title: Andy
+title: 
 type: review
 rating: 5
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Mike did us a huge favour by coming out to us at very late notice in order to fix a leaking drain off valve, otherwise we would have faced the prospect of turning off our heating over the coldest weekend of the year. Work was completed quickly and professionally as well.
