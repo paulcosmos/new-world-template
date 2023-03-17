@@ -15,7 +15,7 @@
 							<div class="image is-5by4 company-services-image company-services-image">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
-								<img src='{{ ($image.Fit "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
+								<img src='{{ ($image.Resize "x890 q50 Smart").RelPermalink }}' alt="" title=""/>
 								{{ else }}
 								<img src='/images/placeholder.jpg'/>
 								{{- end }}
