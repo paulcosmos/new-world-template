@@ -29,11 +29,13 @@ $text: $secondary;
 
 @mixin hero-index-bg {
 	@include hero-default-bg;
-	@include from($tablet){
-		@include background-image;
-			background-image: linear-gradient(-249deg, rgba(36,40,51,1), rgba(36,40,51, 0.5)), url('/images/placeholder.jpg');
-			color: $hero-index-text;
-		}
+	@include background-image;
+	color: $hero-index-text;
+	background-image: linear-gradient(-249deg, rgba(36, 40, 51, 1), rgba(36, 40, 51, 0.5)), url('../images/hero-image-mobile.jpg');
+	
+	@include from($tablet) {
+		background-image: linear-gradient(-249deg, rgba(36, 40, 51, 1), rgba(36, 40, 51, 0.5)), url('../images/hero-image.jpg');
+	}
 }
 
 $hero-index-text: white;

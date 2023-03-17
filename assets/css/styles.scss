@@ -606,12 +606,15 @@ strong {
             background-color: $tertiary;
             @include background-dots;
             background-position: bottom;
-            // color: white;
             padding-bottom: 5rem;
+
+            &-list {
+                    background-color: $tertiary;
+                    padding-bottom: 5rem;
+            }
 
             &-item {
                 margin-bottom: 1rem;
-                // color: darken(white, 20%);
 
                 h3 {
                     // color: white;
