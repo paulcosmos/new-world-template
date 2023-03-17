@@ -11,7 +11,8 @@
 								<address>
 								{{- with .Site.Params }}
 									{{ .street }},<br/>
-									{{ .towncity }}, {{ .county }}, <br/>
+									{{ .towncity }},<br/>
+									{{ .county }}, <br/>
 									{{ .postcode }}
 								{{- end }}
 								</address>

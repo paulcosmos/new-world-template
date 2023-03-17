@@ -1,6 +1,11 @@
 			{{- define "hero" -}}
 			<section class="hero is-medium hero-index">
 				{{ partial "hero/hero-image.html" . }}
+				{{- with .Site.Params }}
+				{{ if .emblem }}
+				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
+				{{ end -}}
+				{{ end -}}
 			</section>
 			{{ end -}}
 

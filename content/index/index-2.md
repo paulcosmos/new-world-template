@@ -9,8 +9,8 @@ image:
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality
 
-+ Years of experience across all aspects of {{<industry>}}
-+ A reputation for fast delivery times and reliability
++ Experienced across all aspects of {{<industry>}}
++ Reputation for fast delivery times and reliability
 + Competitive and affordable prices
 
 We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<mobile>}}** for a no obligation quote.
