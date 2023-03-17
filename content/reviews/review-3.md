@@ -1,7 +1,7 @@
 ---
-title: Andy
+title: 
 type: review
 rating: 5
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+This is the second time I have used Caroline's company and would not hesitate to recommend and use again. Extremely hard working, excellent workmanship and all rubbish removed. Very polite and friendly.

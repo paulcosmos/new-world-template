@@ -282,7 +282,6 @@ strong {
     }
     
     &-item {
-        // color: white;
         transition: all 0.3s;
         text-align: center;
         position: relative;
@@ -296,6 +295,30 @@ strong {
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
+            }
+        }
+    }
+
+    &-logo-overlap {
+
+        position: relative;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: -40px;
+
+        img {
+            position: relative;
+            top: 0;
+            bottom: -40px;
+            left: 0;
+            width: $logo-max-width;
+            max-height: 100%;
+            // margin-top:-20px;
+            // margin-bottom: -20px;
+
+            @include until($navbar-breakpoint) {
+                width: 200px;
             }
         }
     }
@@ -417,7 +440,7 @@ strong {
 
 // Page Content
 .hero { 
-    
+
     // @include background-dots;
     @include hero-default-bg;
     position: relative;
@@ -542,6 +565,13 @@ strong {
             right: 10px;
             bottom: 10px;
             margin: 0;
+        }
+    }
+
+    &.overlapping-logo {
+        // Paddding for overlapping logo
+        @include until($navbar-breakpoint) {
+            padding-top: 40px;
         }
     }
 }
