@@ -28,7 +28,7 @@ $text: $secondary;
 }
 
 @mixin hero-index-bg {
-	@include hero-default-bg;
+	// @include hero-default-bg;
 	@include background-image;
 	color: $hero-index-text;
 	background-image: linear-gradient(-249deg, rgba(36, 40, 51, 1), rgba(36, 40, 51, 0.5)), url('../images/hero-image-mobile.jpg');
@@ -111,7 +111,7 @@ $site-footer-bg: darken($secondary, 10%);
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
 $paving-bg: darken($primary, 40%);
-$paving: darken($paving-bg, 40%);
+$paving: darken($paving-bg, 2%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;
