@@ -8,7 +8,7 @@ anchor: "Radiators"
 ---
 ## Radiators & Central Heating
 
-Our experienced team can install a wide range of radiators and heated fixtures such as towel rails or even underfloor heating. We can also safely and legally dispose of your old radiators for you.
+Our experienced team can install a wide range of radiators and heated fixtures such as towel rails. We can also safely and legally dispose of your old radiators for you.
 
 * Wide variety of styles and finishes to suit your aesthetic
 * Fast and safe installation by experienced experts

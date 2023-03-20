@@ -5,6 +5,8 @@
 							<span class="pre-heading" data-aos="fade-left">
 							{{- if .Params.preheading -}}
 								{{ .Params.preheading }} 
+							{{ else }}
+								{{ .Site.Params.industry | humanize }} services in {{ .Site.Params.towncity }}
 							{{- end }}
 							</span>
 							<div class="content hero-services-content has-accent" data-aos="fade-down">
