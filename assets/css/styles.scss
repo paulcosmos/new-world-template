@@ -256,7 +256,8 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-6;
+        font-size: $size-5;
+        font-family: $family-headings;
         font-weight: 600;
 
         &:hover {
@@ -272,6 +273,7 @@ strong {
         display: block;
         font-size: $size-7;
         color: inherit;
+        font-weight: 400;
 
         // &:hover {
         //     transition: color 0.3s;
