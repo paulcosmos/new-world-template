@@ -13,6 +13,6 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of customer-focused **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}
+# Providing a wide variety of **{{<industry>}}** in {{<towncity>}} and throughout {{<county>}}
 
-With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.
+With {{<years>}} in the {{<industry>}} business and a **10 year guarantee** on all our builds, **{{<company>}}** are the reliable and professional choice.

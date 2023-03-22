@@ -4,12 +4,12 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/outdoor-room.jpg
 ---
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality
 
-+ Experienced across all aspects of {{<industry>}}
++ 10 year guarantee as standard on all our outdoor rooms
 + Reputation for fast delivery times and reliability
 + Competitive and affordable prices
 
