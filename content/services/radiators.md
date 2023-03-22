@@ -1,14 +1,14 @@
 ---
-title: "Radiators & Central Heating"
+title: "Radiators"
 type: service-item
 desc: Radiators and heated fixtures available to suit any property or budget.
-weight: 4
+weight: 3
 image: images/radiators.jpg
 anchor: "Radiators"
 ---
-## Radiators & Central Heating
+## Radiator Replacement & Repositioning
 
-Our experienced team can install a wide range of radiators and heated fixtures such as towel rails. We can also safely and legally dispose of your old radiators for you.
+Our experienced engineers can install a wide range of radiators and heated fixtures such as towel rails to suit any space. We can also safely and legally dispose of your old radiators for you.
 
 * Wide variety of styles and finishes to suit your aesthetic
 * Fast and safe installation by experienced experts

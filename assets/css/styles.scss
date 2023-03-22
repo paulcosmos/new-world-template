@@ -256,7 +256,7 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-6;
+        font-size: $size-5;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
@@ -706,7 +706,13 @@ strong {
             flex-direction: row-reverse;
 
             .content {
+                columns: 1;
+                @include from($tablet) {
                 columns: 2;
+                }
+                @include from($desktop){
+                columns: 4;
+                }
 
                 ul {
                     margin-top: 0;

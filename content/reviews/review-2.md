@@ -1,7 +1,7 @@
 ---
-title: Sarah
+title: 
 type: review
 rating: 5
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Very pleased with the quality of our shower installation. Everything left clean and tidy, and all rubbish removed. Very good job done. 
