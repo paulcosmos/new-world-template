@@ -215,8 +215,8 @@ strong {
 
 // Top Banner
 .top-banner {
-    // background-color: $top-banner-bg;
-    @include brand-gradient;
+    background-color: $top-banner-bg;
+    // @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
     font-weight: bold;
@@ -257,7 +257,8 @@ strong {
     &-title {
         text-align: left;
         font-size: $size-6;
-        font-weight: 600;
+        font-family: $family-headings;
+        font-weight: $family-heading-weight;
 
         &:hover {
             transition: color 0.3s;

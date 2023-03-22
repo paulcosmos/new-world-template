@@ -41,7 +41,7 @@ $text: $secondary;
 $hero-index-text: white;
 
 //  Top Banner
-$top-banner-bg: include brand-gradient;
+$top-banner-bg: darken($secondary,10%);
 $top-banner-text: lighten($primary, 50%);
 $top-banner-icon: $top-banner-text;
 
