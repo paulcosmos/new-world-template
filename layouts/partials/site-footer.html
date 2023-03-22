@@ -6,7 +6,7 @@
 							<div class="content site-footer-company-info">
 							{{- with .Site.Params }}
 								<h4>{{ .company }}</h4>
-								<h5>{{ .industry | humanize }} services in {{ .towncity }} and {{ .county }}</h5>
+								<h5>{{ .industry | humanize }} in {{ .towncity }} and {{ .county }}</h5>
 								<div class="button-primary ml-0 modal-trigger" data-aos="fade-right" data-aos-easing="ease-in-back">
 									<a href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
 								</div>
@@ -51,7 +51,7 @@
 			{{- with .Site.Params }}
 			{{ if .emblem }}
 			<div class="emblem">
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
+				<img class="gas-safe-emblem" src="images/niceic-light.png">
 			</div>
 			{{ end -}}
 			{{ end -}}

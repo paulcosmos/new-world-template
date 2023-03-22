@@ -1,7 +1,7 @@
 ---
-title: Peter
+title: Naomi H
 type: review
 rating: 5
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Excellent job done, fast and efficiently for a very reasonable price, with very reliable communications . Also a genuinley nice bloke. Excellent service all round.

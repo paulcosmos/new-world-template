@@ -6,6 +6,7 @@
 							{{ if .logo }}
 							<img src="images/{{ .logo }}"/>
 							{{- else }}
+							<img src="images/logo.png"/ width="30px">
 							<div class="content navbar-title">
 								{{ .company }}
 								<span>{{ .industry | humanize }} services in {{ .towncity }}</span>

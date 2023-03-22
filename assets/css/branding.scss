@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 // Override Bulma variables here:
 $family-sans-serif: "Nunito Sans", sans-serif;
-$family-headings: $family-sans-serif;
+$family-headings: "Poppins", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
+$primary: #dea75b;
 $secondary: rgb(36, 40, 51);
 $info: $secondary;
 $tertiary: #EFF2F5;
@@ -110,8 +111,8 @@ $site-footer-bg: darken($secondary, 10%);
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($primary, 40%);
-$paving: darken($paving-bg, 2%);
+$paving-bg: darken($secondary, 10%);
+$paving: darken($paving-bg, 0%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;

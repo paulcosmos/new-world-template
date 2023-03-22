@@ -257,7 +257,8 @@ strong {
     &-title {
         text-align: left;
         font-size: $size-6;
-        font-weight: 600;
+        font-family: $family-headings;
+        font-weight: $family-heading-weight;
 
         &:hover {
             transition: color 0.3s;
@@ -272,11 +273,10 @@ strong {
         display: block;
         font-size: $size-7;
         color: inherit;
+        }
 
-        // &:hover {
-        //     transition: color 0.3s;
-        //     color:white;
-        //     }
+        image {
+            display: inline-block;
         }
 
     }
@@ -293,6 +293,7 @@ strong {
         img {
             max-width: $logo-max-width;
             max-height: $logo-max-height;
+            margin-right: 1rem;
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
