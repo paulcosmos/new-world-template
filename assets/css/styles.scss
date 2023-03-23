@@ -637,8 +637,8 @@ strong {
             padding-bottom: 5rem;
 
             &-list {
-                    background-color: $tertiary;
-                    padding-bottom: 5rem;
+                background-color: $tertiary;
+                padding-bottom: 5rem;
             }
 
             &-item {
@@ -674,6 +674,17 @@ strong {
                 }
             }
         }
+        
+        &-list {
+
+            .content {
+                columns: 2;
+
+                ul {
+                    margin-top: 0;
+                }
+            }
+        }
 
         &-item {
 
@@ -689,7 +700,7 @@ strong {
 
             // Flip the columns to make it pretty
             &:nth-of-type(odd){
-                flex-direction: row-reverse;
+                flex-direction: row-reverse!important;
             }
 
             hr {
@@ -708,18 +719,6 @@ strong {
             & > img {
                 @include rounded-corners;
                 @include box-shadow-below;
-            }
-        }
-
-        &-list {
-            flex-direction: row-reverse;
-
-            .content {
-                columns: 2;
-
-                ul {
-                    margin-top: 0;
-                }
             }
         }
     }
