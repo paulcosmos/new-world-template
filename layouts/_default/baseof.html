@@ -11,7 +11,10 @@
 	<body>
 		<header>
 			{{ partial "top-banner.html" . }}
+			
+			{{- if not .IsHome }}
 			{{ partial "navbar.html" . }}
+			{{ end }}
 
 			{{ block "hero" . -}}
 			<section class="hero is-small">

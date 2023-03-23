@@ -1,6 +1,6 @@
 			{{- define "hero" -}}
 			<section class="hero is-halfheight hero-index">
-				{{ partial "hero/hero-image.html" . }}
+				{{ partial "hero/hero-image-navbar.html" . }}
 				{{- with .Site.Params }}
 				{{ if .emblem }}
 				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
@@ -8,6 +8,16 @@
 				{{ end -}}
 			</section>
 			{{ end -}}
+			{{/*  {{- define "hero" -}}
+			<section class="hero is-halfheight hero-index">
+				{{ partial "hero/hero-image.html" . }}
+				{{- with .Site.Params }}
+				{{ if .emblem }}
+				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
+				{{ end -}}
+				{{ end -}}
+			</section>
+			{{ end -}}  */}}
 
 			{{- define "main" -}}
 			<section class="section company-intro">
@@ -35,6 +45,8 @@
 				</div>
 			</section>
 
+			{{ partial "accreditations.html" . }}
+			\
 			<section class="section company-services-overview">
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
@@ -56,6 +68,10 @@
 			{{ partial "review-slider/review-slider.html" . }}
 
 			{{ partial "cta-text.html" . }}
+
+			{{ partial "why-us-banner.html" . }}
+			{{ partial "stats-row.html" . }}
+
 
 			{{- end }}
 

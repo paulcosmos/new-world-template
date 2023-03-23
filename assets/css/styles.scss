@@ -434,6 +434,15 @@ strong {
 
     &-index {
         @include hero-index-bg;
+        padding-top: 0;
+        
+        h1,h2 {
+            font-size: $hero-title-size;
+        }
+
+        p {
+            font-size: $hero-text-size;
+        }
     }
 
     &-fail {
@@ -998,6 +1007,34 @@ strong {
         // padding-bottom: 3rem;
         @include from($navbar-breakpoint) {
             // padding: 3rem 32px;
+        }
+    }
+}
+
+.stats-row {
+    background-color: $tertiary;
+
+    &-item {
+
+        @include from($desktop){
+            &:not(:last-child){
+                border-right: solid 2px $tertiary;
+            }
+        }
+
+        h3 {
+            font-weight: 800;
+
+            span {
+                color: lighten($text, 30%);
+            }
+        }
+
+        .icon {
+            color: $accent;
+            margin-top: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
         }
     }
 }
