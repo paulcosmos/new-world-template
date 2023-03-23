@@ -637,8 +637,8 @@ strong {
             padding-bottom: 5rem;
 
             &-list {
-                    background-color: $tertiary;
-                    padding-bottom: 5rem;
+                background-color: $tertiary;
+                padding-bottom: 5rem;
             }
 
             &-item {
@@ -674,6 +674,17 @@ strong {
                 }
             }
         }
+        
+        &-list {
+
+            .content {
+                columns: 2;
+
+                ul {
+                    margin-top: 0;
+                }
+            }
+        }
 
         &-item {
 
@@ -689,7 +700,7 @@ strong {
 
             // Flip the columns to make it pretty
             &:nth-of-type(odd){
-                flex-direction: row-reverse;
+                flex-direction: row-reverse!important;
             }
 
             hr {
@@ -708,18 +719,6 @@ strong {
             & > img {
                 @include rounded-corners;
                 @include box-shadow-below;
-            }
-        }
-
-        &-list {
-            flex-direction: row-reverse;
-
-            .content {
-                columns: 2;
-
-                ul {
-                    margin-top: 0;
-                }
             }
         }
     }
@@ -1011,16 +1010,49 @@ strong {
     }
 }
 
+.level {
+    flex-wrap: wrap !important;
+}
+
 .stats-row {
     background-color: $tertiary;
 
     &-item {
 
+        @include until($tablet) {
+            
+            &:not(:last-child) {
+                border-bottom: solid 2px $tertiary;
+            }
+        }
+
+        @include from($tablet) {
+            @include until($navbar-breakpoint){
+                padding: 0.5rem;
+                flex: 0 0 50%;
+
+                &:nth-of-type(odd) {
+                    border-right: solid 2px $tertiary;
+                }
+
+                &:nth-child(-n+2){
+                    border-bottom: solid 2px $tertiary;
+                }
+            }
+        }
+
+
         @include from($desktop){
+            border-bottom: none;
             &:not(:last-child){
                 border-right: solid 2px $tertiary;
             }
+
         }
+
+        // &:nth-of-type(odd) {
+        //     border-right: none;
+        // }
 
         h3 {
             font-weight: 800;
@@ -1037,6 +1069,10 @@ strong {
             font-size: 1.75rem;
         }
     }
+
+    // .level-item {
+    //     flex-shrink: 1!important;
+    // }
 }
 
 // Quote Form Modal Pop-up
