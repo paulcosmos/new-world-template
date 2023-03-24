@@ -1,6 +1,6 @@
 ---
 type: services-list
-image:
+image: images/hero-image.jpg
 ---
 * Handyman Services 
 * Bathroom Installation 

@@ -2,14 +2,16 @@
 title: 'Home'
 menu: ["main","footer"]
 weight: 1
-preheading: "#preheading"
+preheading: "Your Home Renovation Specialists"
 _build:
   render: true
 image:
 
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}** &amp; {{<county>}}.
 
-**{{<company>}}** has been serving {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been providing customer in {{<county>}} and beyond, with a wide range of property maintenance and home improvement services for a number of years. 
+
+We are experienced in all aspects of {{<industry>}}.
 

@@ -4,7 +4,7 @@ weight: 1
 _build:
     list: true
     render: false
-image:
+image: images/drilling.jpg
 ---
 
 ## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
@@ -13,7 +13,7 @@ image:
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent final quality and a professional working practices.
+Based in {{<towncity>}}, **{{<company>}}** offer a wide variety of {{<industry>}} services, specialising in internal refurbishment projects and renovations in and around {{<county>}}. We have built up an enviable reputation and we pride ourselves on our commitment to professional and speedy services at all times, whilst maintaining the highest quality of work.
 
 
 

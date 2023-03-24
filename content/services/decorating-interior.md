@@ -3,7 +3,7 @@ title: "Interior Decorating"
 type: service-item
 desc: Interior painting from walls, floors and ceilings to furniture, doors, windows and more.
 weight: 1
-image: images/interior-painting.jpg
+image: images/decorating.jpg
 anchor:
 ---
 ## Interior Decorating

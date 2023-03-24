@@ -1,12 +1,12 @@
 ---
-title: "Tiling"
+title: "Tiling & Grouting"
 type: service-item
 desc: Wall and floor tiles professionally and expertly installed.
 weight: 3
-image: images/tiling.jpg
+image: images/floor-tiles.jpg
 anchor:
 ---
-## Tiling
+## Tiling & Grouting
 
 Whether you want tiled walls, floors or both, the **professional tilers** at {{<company>}} are on hand to install a wide range of tiles to the highest standards.
 

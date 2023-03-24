@@ -152,6 +152,11 @@ strong {
     p, ul, li {
         color: inherit;
     }
+
+    strong {
+        font-weight: bold;
+        // color: inherit;
+    }
     
     ul {
         position: relative;
@@ -177,6 +182,14 @@ strong {
                 background-color: $primary;
             } 
         }
+    }
+}
+
+.policy-content {
+
+    a {
+        color: lighten($text, 30%);
+        text-decoration: underline;
     }
 }
 
@@ -273,20 +286,15 @@ strong {
         display: block;
         font-size: $size-7;
         color: inherit;
-
-        // &:hover {
-        //     transition: color 0.3s;
-        //     color:white;
-        //     }
         }
 
     }
     
     &-item {
-        // color: white;
         transition: all 0.3s;
         text-align: center;
         position: relative;
+        font-family: $navbar-link-font;
     }
 
     &-logo {
@@ -943,6 +951,13 @@ strong {
             }
         }
     }
+    &-finance {
+        background-color: $accent;
+        // color: white;
+        h2 {
+            margin: 0 auto;
+        }
+    }
 }
 
 .accreditations {
@@ -1010,16 +1025,49 @@ strong {
     }
 }
 
+.level {
+    flex-wrap: wrap !important;
+}
+
 .stats-row {
     background-color: $tertiary;
 
     &-item {
 
+        @include until($tablet) {
+            
+            &:not(:last-child) {
+                border-bottom: solid 2px $tertiary;
+            }
+        }
+
+        @include from($tablet) {
+            @include until($navbar-breakpoint){
+                padding: 0.5rem;
+                flex: 0 0 50%;
+
+                &:nth-of-type(odd) {
+                    border-right: solid 2px $tertiary;
+                }
+
+                &:nth-child(-n+2){
+                    border-bottom: solid 2px $tertiary;
+                }
+            }
+        }
+
+
         @include from($desktop){
+            border-bottom: none;
             &:not(:last-child){
                 border-right: solid 2px $tertiary;
             }
+
         }
+
+        // &:nth-of-type(odd) {
+        //     border-right: none;
+        // }
 
         h3 {
             font-weight: 800;
@@ -1036,6 +1084,10 @@ strong {
             font-size: 1.75rem;
         }
     }
+
+    // .level-item {
+    //     flex-shrink: 1!important;
+    // }
 }
 
 // Quote Form Modal Pop-up

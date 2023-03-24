@@ -1,7 +1,7 @@
 ---
-title: Andy
+title: 
 type: review
 rating: 5
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Excellent service. We had a new bathroom fitted by Solly and his team. They were really good even up against some unexpected complications! With the complications the price quoted was what we paid. Beautiful work and very professional. I would definitely recommend {{<company>}}.

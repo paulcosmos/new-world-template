@@ -1,12 +1,11 @@
 ---
 title: 'Privacy Policy'
 menu: ["footer"]
+type: single.html
 weight: 99
 _build:
   render: true
 ---
-
-# Privacy Policy for {{<companyfullname>}}
 
 **Last updated** : 24th September 2022
 
@@ -57,7 +56,13 @@ You can instruct your browser to refuse all cookies or to indicate when a cookie
 
 {{<companyfullname>}} uses the collected data for various purposes:
 
-To provide and maintain the service To notify you about changes to our service To allow you to participate in interactive features of our service when you choose to do so To provide customer care and support To provide analysis or valuable information so that we can improve the service To monitor the usage of the service To detect, prevent and address technical issues 
+* To provide and maintain the service 
+* To notify you about changes to our service 
+* To allow you to participate in interactive features of our service when you choose to do so 
+* To provide customer care and support 
+* To provide analysis or valuable information so that we can improve the service 
+* To monitor the usage of the service 
+* To detect, prevent and address technical issues 
 
 ### Transfer Of Data
 

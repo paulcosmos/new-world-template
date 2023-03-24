@@ -1,7 +1,7 @@
 ---
-title: James
+title: 
 type: review
 rating: 5
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+I highly recommend! Very efficient and did a good job. Reasonable pricing and easy to communicate with. Huge thanks to the team.
