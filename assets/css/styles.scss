@@ -409,7 +409,7 @@ strong {
 // .pre-heading > span,
 .pre-heading {
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: $preheading-size;
     font-weight: bold;
     margin-bottom: $size-5;
     display: block;

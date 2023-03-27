@@ -12,17 +12,19 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:title" content="{{ print .Site.Params.company }} | {{ print .Site.Title }}"/>
+		<meta property="og:title" content="{{- print .Page.Title }} | {{ print .Site.Params.company }}"/>
 		<meta property="og:description" content="{{ print .Site.Params.slogan }}"/>
 		<meta property="og:type" content="website"/>
 		<meta name="theme-color" content="#1a1a1a">
 		<meta name="msapplication-navbutton-color" content="#1a1a1a">
 		<meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a">
-		<meta name="application-name" content="{{ print .Site.Params.company }} | {{ print .Site.Title }}">
+		<meta name="application-name" content="{{- print .Page.Title }} | {{ print .Site.Params.company }}">
 		<link rel="canonical" href="{{ print .Site.BaseURL }}">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 		{{ "<!--[if (lt IE 9)]><script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js'></script><![endif]-->" | safeHTML }}
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		{{- $bulma := resources.Get "css/bulma.sass" | resources.ToCSS }}
 		{{- $style := resources.Get "css/styles.scss" | resources.ToCSS | resources.PostCSS  (dict "config" "./postcss.config.js") }}
 		{{- $stylemin := resources.Get "css/styles.scss" | resources.ToCSS | resources.PostCSS  (dict "config" "./postcss.config.js") | resources.Minify | resources.Fingerprint "sha512" }}
-		<link rel="stylesheet" href="{{ $stylemin.Permalink | relURL }}">
+		<link rel="stylesheet" href="{{ $bulma.Permalink | relURL }}">
+		<link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
