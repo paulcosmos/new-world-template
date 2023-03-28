@@ -7,8 +7,8 @@
 	<!-- Hero content: will be in the middle -->
 	<div class="hero-body">
 		<div class="container is-fullhd">
-			<div class="columns is-centered">
-				<div class="column has-text-centered is-12-tablet is-12-desktop is-10-fullhd">
+			<div class="columns">
+				<div class="column is-12-desktop is-8-fullhd is-12-tablet">
 					<span class="pre-heading" data-aos="fade-left">
 					{{- if .Params.preheading -}}
 						{{ .Params.preheading }} 
@@ -16,7 +16,7 @@
 						{{ .Site.Params.industry | humanize }} services in {{ .Site.Params.towncity }}
 					{{- end }}
 					</span>
-					<div class="content _has-text-centered has-accent" data-aos="fade-down">
+					<div class="content has-accent" data-aos="fade-down">
 						{{ .Content }}
 					</div>
 				</div>

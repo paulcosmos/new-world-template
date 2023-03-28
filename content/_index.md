@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 1
 preheading: "Your Home Renovation Specialists"
 _build:
