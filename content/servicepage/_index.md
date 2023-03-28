@@ -1,8 +1,8 @@
 ---
-title: Our Services
+title: Blank Service Page
 menu: ["footer"]
 weight: 2
-anchor: "Services"
+anchor:
 dropdown: 
 preheading: "Our Services"
 image: images/placeholder.jpg

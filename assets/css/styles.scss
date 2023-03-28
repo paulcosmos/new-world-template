@@ -3,12 +3,18 @@
 
 @import "mixins.scss";
 @import "branding.scss";
-@import "bulma.sass";
-@import "simple-lightbox.scss";
+// @import "bulma/base/helpers.sass";
+// @import "bulma/utilities/derived-variables.sass";
+@import "bulma/utilities/controls.sass";
+@import "bulma/utilities/extends.sass";
+// @import "bulma/utilities/functions.sass";
+@import "bulma/utilities/initial-variables.sass";
+@import "bulma/utilities/mixins.sass";
+
 
 $button-corner-radius: 4px;
-$image-corner-radius: 0.5rem;;
-
+$image-corner-radius: 0.5rem;
+$navbar-breakpoint: $desktop !default;
 
 html {
     font-size:19px;
@@ -84,40 +90,50 @@ strong {
 // Buttons 
 .button {
     color: $secondary;
-    &-primary > a,
+    // padding: 1rem 0.5rem;
+
+    &-primary,
     &-primary > button {
-        // background-color: $primary;
         @include brand-gradient;
         border-color: transparent;
-        color: $button-text;
+        color: $button-text!important;
         border-width: 1px;
         font-size: inherit;
         cursor: pointer;
         justify-content: center;
-        padding: 0.5em 1em;
+        padding: 1rem;
         text-align: center;
         white-space: nowrap;
         appearance: none;
         -webkit-appearance: none;
         align-items: center;
-        border: 1px solid transparent;
         border-radius: $button-corner-radius;
         box-shadow: none;
         display: inline-flex;
+        height: 3rem;
 
         &:hover {
             background-color: lighten($primary, 10%);
             border-color: transparent;
+            color: $button-text!important;
 
             i {
-                margin-left: 1.2rem;
+                margin-left: 0.75rem;
+            }
+
+            a {
+                color: currentColor;
             }
         }
 
         i {
-            transition: all 0.3s;
-            margin-left: 0.75rem;
+            transition: margin 0.2s;
+            margin-left: 0.5rem;
         }
+    }
+
+    a {
+        color: currentColor;
     }
 
     &-fullwidth > a {
@@ -235,7 +251,10 @@ strong {
     }
 }
 
+
 // Navigation Menu
+@import "bulma/components/navbar.sass";
+
 .navbar {
 
     .container {
@@ -418,7 +437,10 @@ strong {
 
 // Page Content
 .hero { 
-    
+    // background: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     // @include background-dots;
     @include hero-default-bg;
     position: relative;
@@ -443,6 +465,25 @@ strong {
         p {
             font-size: $hero-text-size;
         }
+    }
+
+    &-service {
+        color:white;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include until($tablet) {
+            background-color: $secondary;
+            background-image: none!important;
+        }
+        // h1, h2 {
+        //     font-size: $hero-title-size;
+        // }
+        
+        // p {
+        //     font-size: $hero-text-size;
+        // }
     }
 
     &-fail {
@@ -706,7 +747,7 @@ strong {
             hr {
                 top: -10px;
                 position: relative;
-                display: inline-block;
+                // display: inline-block;
                 height: 3px;
                 width: 60px;
                 background-color: $primary;
@@ -1101,6 +1142,18 @@ strong {
     }
 }
 
+.service {
+
+    &-page {
+
+        &-list {
+            background-color: lighten($secondary, 0%);
+            color:white;
+            @include box-shadow-offset-solid($hero-cta-shadow);
+        }
+    }
+}
+
 // Contact Page
 .contact {
 
@@ -1298,3 +1351,5 @@ strong {
         }
     }
 }
+
+@import "simple-lightbox.scss";
