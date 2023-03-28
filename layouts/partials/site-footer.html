@@ -7,8 +7,9 @@
 							{{- with .Site.Params }}
 								<h4>{{ .company }}</h4>
 								<h5>{{ .industry | humanize }} services in {{ .towncity }} and {{ .county }}</h5>
-								<div class="button-primary ml-0 modal-trigger" data-aos="fade-right" data-aos-easing="ease-in-back">
-									<a href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
+								<div data-aos="fade-right" data-aos-easing="ease-in-back">
+									<a 	class="button-primary ml-0 modal-trigger" 
+										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
 								</div>
 							{{ end }}
 								<div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
@@ -32,8 +33,8 @@
 						<div class="content site-footer-links has-columns">
 						<h4>Primary Services</h4>
 							<ul>
-								{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-								<li><a href="./services.html">
+								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
+								<li><a href="{{ .RelPermalink }}">
 									{{- if (ne .Params.anchor nil) }}
 										{{- .Params.anchor -}}
 									{{- else -}}
@@ -51,7 +52,7 @@
 			{{- with .Site.Params }}
 			{{ if .emblem }}
 			<div class="emblem">
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
+				<img class="gas-safe-emblem" src="/images/{{ .emblem }}">
 			</div>
 			{{ end -}}
 			{{ end -}}
