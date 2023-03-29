@@ -13,18 +13,23 @@ $image-corner-radius: 0.5rem;
 $navbar-breakpoint: $desktop !default;
 
 html {
-    font-size:19px;
+    font-size: 19px;
 }
 
 html,
 body {
-    width: auto!important; 
-    overflow-x: hidden!important
+    width: auto !important;
+    overflow-x: hidden !important
 }
 
 // Typography
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 
     font-family: $family-headings;
 }
@@ -46,6 +51,7 @@ address {
 a {
     color: $link;
     transition: all 0.2s;
+
     &:hover {
         color: darken($link, 5%);
     }
@@ -63,7 +69,7 @@ strong {
     text-decoration: none;
 
     &:hover {
-        color:$primary;
+        color: $primary;
     }
 }
 
@@ -72,12 +78,10 @@ strong {
 }
 
 .image {
-    
+
     &.has-rounded-corners {
-        > img {
+        >img {
             border-radius: $image-corner-radius;
-            // border-radius: 10% 25%;
-            // border-right-width: 3rem;
             border-color: $primary;
         }
     }
@@ -86,13 +90,12 @@ strong {
 // Buttons 
 .button {
     color: $secondary;
-    // padding: 1rem 0.5rem;
 
     &-primary,
-    &-primary > button {
+    &-primary>button {
         @include brand-gradient;
         border-color: transparent;
-        color: $button-text!important;
+        color: $button-text !important;
         border-width: 1px;
         font-size: inherit;
         cursor: pointer;
@@ -111,7 +114,7 @@ strong {
         &:hover {
             background-color: lighten($primary, 10%);
             border-color: transparent;
-            color: $button-text!important;
+            color: $button-text !important;
 
             i {
                 margin-left: 0.75rem;
@@ -132,13 +135,12 @@ strong {
         color: currentColor;
     }
 
-    &-fullwidth > a {
+    &-fullwidth>a {
         display: flex;
         width: 100%;
     }
 
     &.is-ghost {
-        // color: $secondary;
 
         &:after {
             @include animated-underline;
@@ -160,17 +162,24 @@ strong {
         margin-bottom: 0;
     }
 
-    h1, h2, h3, h4, h5, h6,
-    p, ul, li {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    li {
         color: inherit;
     }
-    
+
     ul {
         position: relative;
         margin-left: 0;
-    
+
         li {
-            list-style: none;   
+            list-style: none;
             position: relative;
             padding-left: 1.5rem;
             font-weight: 600;
@@ -187,7 +196,7 @@ strong {
                 text-align: center;
                 border-radius: 50%;
                 background-color: $primary;
-            } 
+            }
         }
     }
 }
@@ -199,11 +208,11 @@ strong {
     strong,
     span {
         color: $accent;
-        // font-weight: inherit;
     }
 
     p,
     li {
+
         a,
         strong,
         span {
@@ -214,10 +223,12 @@ strong {
         a {
             display: inline-block;
             transition: color 0.2s;
+
             &:after {
                 @include animated-underline;
                 width: 100%;
             }
+
             &:hover {
                 color: $link;
             }
@@ -254,8 +265,8 @@ strong {
 .navbar {
 
     .container {
-        @include until($navbar-breakpoint){
-            padding-left:32px;
+        @include until($navbar-breakpoint) {
+            padding-left: 32px;
         }
     }
 
@@ -280,7 +291,7 @@ strong {
             color: $link;
 
             span {
-                color:white;
+                color: white;
             }
         }
 
@@ -291,11 +302,40 @@ strong {
         }
 
     }
-    
+
     &-item {
         transition: all 0.3s;
         text-align: center;
         position: relative;
+
+        &:before {
+            @include animated-underline;
+            display: block;
+            position: absolute;
+            bottom: 25%;
+            width: 0%;
+            z-index: 99;
+
+            @include until($navbar-breakpoint) {
+                bottom: 0;
+            }
+        }
+
+        &:hover {
+            &:before {
+                width: 100%;
+            }
+        }
+
+        a {
+            color: currentColor;
+        }
+
+        &.no-underline {
+            &:before {
+                display: none;
+            }
+        }
     }
 
     &-logo {
@@ -315,20 +355,23 @@ strong {
 
         &.is-active {
             @include until($navbar-breakpoint) {
-                width:100%;
-                min-height:100vh;
-                display:flex;
+                width: 100%;
+                min-height: 100vh;
+                display: flex;
                 position: fixed;
                 top: 0;
                 left: 0;
-                // z-index: 99;
-                background-color: rgba(0,0,0,0.94);
+                background-color: rgba(0, 0, 0, 0.94);
             }
         }
     }
 
     &-dropdown {
         font-size: 1rem;
+
+        @include until($navbar-breakpoint) {
+            padding: 0;
+        }
 
         .navbar-item {
             &:hover {
@@ -343,7 +386,7 @@ strong {
     }
 
     &-end {
-        @include until($navbar-breakpoint){
+        @include until($navbar-breakpoint) {
             min-height: 100%;
             display: flex;
             flex-direction: column;
@@ -353,19 +396,20 @@ strong {
         }
     }
 
-    & > .navbar-item {
-        @include until($navbar-breakpoint){
+    &>.navbar-item {
+        @include until($navbar-breakpoint) {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
         }
-      }
+    }
 
     &-burger {
         text-align: center;
         position: relative;
+
         &:hover {
             color: white;
             background-color: $primary;
@@ -374,6 +418,7 @@ strong {
         &.is-active {
             z-index: 99;
             color: white;
+
             &:before {
                 content: "Close";
                 text-transform: uppercase;
@@ -386,6 +431,7 @@ strong {
                 left: -50%;
                 transform: translateX(0%) translateY(-50%);
             }
+
             &:hover {
                 background-color: initial;
                 color: $primary;
@@ -399,26 +445,26 @@ strong {
 }
 
 .site-nav-links {
-    
+
     text-align: center;
 
-    & > a {
+    &>a {
         &:after {
             @include animated-underline;
             display: block;
             position: absolute;
             bottom: 25%;
-            width:0%;
+            width: 0%;
             z-index: 99;
 
             @include until($navbar-breakpoint) {
-                bottom:0;
+                bottom: 0;
             }
         }
 
         &:hover {
             &:after {
-                width:100%;
+                width: 100%;
             }
         }
     }
@@ -437,7 +483,7 @@ strong {
 }
 
 // Page Content
-.hero { 
+.hero {
     // background: none;
     background-size: cover;
     background-repeat: no-repeat;
@@ -447,10 +493,10 @@ strong {
     position: relative;
     color: $hero-text;
     font-weight: normal;
-    text-align: left; 
+    text-align: left;
     text-align: inherit;
 
-    @include from($navbar-breakpoint){
+    @include from($navbar-breakpoint) {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
@@ -458,8 +504,9 @@ strong {
     &-index {
         @include hero-index-bg;
         padding-top: 0;
-        
-        h1,h2 {
+
+        h1,
+        h2 {
             font-size: $hero-title-size;
         }
 
@@ -469,19 +516,20 @@ strong {
     }
 
     &-service {
-        color:white;
+        color: white;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
 
         @include until($tablet) {
             background-color: $secondary;
-            background-image: none!important;
+            background-image: none !important;
         }
+
         // h1, h2 {
         //     font-size: $hero-title-size;
         // }
-        
+
         // p {
         //     font-size: $hero-text-size;
         // }
@@ -492,14 +540,14 @@ strong {
         text-align: inherit;
 
         .has-accent {
-    
+
             span,
             strong {
                 color: $danger;
                 font-weight: 600 !important;
             }
         }
-    
+
         a {
             color: $link;
         }
@@ -520,18 +568,18 @@ strong {
         margin: 0 auto;
         border: $hero-cta-border;
 
-        @include from($tablet){
+        @include from($tablet) {
             margin-top: 0rem;
         }
 
         h4 {
             display: inline-block;
-            font-size:150%;
+            font-size: 150%;
             font-weight: bold;
             width: 100%;
             color: $hero-cta-number-text;
             margin-top: 0;
-            margin-bottom: 1rem ;
+            margin-bottom: 1rem;
 
             @include from($desktop) {
                 font-size: 200%;
@@ -552,7 +600,7 @@ strong {
         grid-auto-flow: column;
         margin-top: 2rem;
 
-        @include until($navbar-breakpoint){
+        @include until($navbar-breakpoint) {
             margin-top: 2rem;
         }
 
@@ -560,17 +608,17 @@ strong {
             color: $link;
             transition: color 0.3s;
 
-            &:hover{
-            color: $secondary;
+            &:hover {
+                color: $secondary;
             }
         }
 
-        a[href^="#"]{
-            display: none!important;
+        a[href^="#"] {
+            display: none !important;
         }
-        
+
         .icon {
-            color:inherit;
+            color: inherit;
             fill: inherit;
 
             &:hover {
@@ -608,7 +656,7 @@ strong {
     margin-top: 2rem;
     margin-bottom: 2rem;
 
-    @include until($navbar-breakpoint){
+    @include until($navbar-breakpoint) {
         margin-top: 2rem;
     }
 
@@ -617,22 +665,22 @@ strong {
         fill: currentColor;
         transition: color 0.3s;
 
-        &:hover{
-        color: inherit;
+        &:hover {
+            color: inherit;
         }
     }
 
     a[href$="#"] {
-        display: none!important;
+        display: none !important;
     }
-    
+
     .icon {
-        color:inherit;
+        color: inherit;
         fill: inherit;
         transition: all 0.3s;
 
         &:hover {
-        fill: $link;
+            fill: $link;
         }
     }
 }
@@ -643,19 +691,19 @@ strong {
 
         .columns {
 
-            &:not(:last-child){
-                margin-bottom: $size-1!important;
+            &:not(:last-child) {
+                margin-bottom: $size-1 !important;
                 padding-bottom: $size-3;
                 border-bottom: solid 2px lighten($secondary, 94%);
             }
 
-            &:nth-of-type(odd){
+            &:nth-of-type(odd) {
                 flex-direction: row-reverse;
             }
         }
 
         &-content {
-        color: $secondary;
+            color: $secondary;
 
             h2 {
                 color: inherit;
@@ -700,23 +748,23 @@ strong {
                     margin-top: 1rem;
 
                     &:after {
-                    @include animated-underline;
-                    width:100%;
+                        @include animated-underline;
+                        width: 100%;
                     }
 
                     &:hover {
                         color: $primary;
-                        margin-right:0.5rem;
+                        margin-right: 0.5rem;
 
                         &:after {
-                            width:100%;
+                            width: 100%;
                         }
                     }
 
                 }
             }
         }
-        
+
         &-list {
 
             .content {
@@ -730,19 +778,19 @@ strong {
 
         &-item {
 
-            &:not(:last-child){
-                margin-bottom: $size-1!important;
+            &:not(:last-child) {
+                margin-bottom: $size-1 !important;
                 padding-bottom: $size-3;
                 border-bottom: $services-item-divider;
             }
 
-            &:last-child{
+            &:last-child {
                 padding-bottom: $size-5;
             }
 
             // Flip the columns to make it pretty
-            &:nth-of-type(odd){
-                flex-direction: row-reverse!important;
+            &:nth-of-type(odd) {
+                flex-direction: row-reverse !important;
             }
 
             hr {
@@ -758,7 +806,7 @@ strong {
         }
 
         &-image {
-            & > img {
+            &>img {
                 @include rounded-corners;
                 @include box-shadow-below;
             }
@@ -792,7 +840,7 @@ strong {
         padding-bottom: $size-2;
 
         &-nav {
-            
+
             &-button,
             &-button:active,
             &-button:focus {
@@ -801,9 +849,9 @@ strong {
                 border: $review-nav-border;
 
                 &:hover {
-                background-color: $review-nav-bg-hover;
-                color: $review-nav-text-hover;
-                border: $review-nav-border;
+                    background-color: $review-nav-bg-hover;
+                    color: $review-nav-text-hover;
+                    border: $review-nav-border;
                 }
             }
         }
@@ -824,7 +872,7 @@ strong {
                 border: $review-dots-border;
             }
 
-            & > .tns-nav-active {
+            &>.tns-nav-active {
                 background: $review-dots-bg-active;
             }
         }
@@ -839,32 +887,34 @@ strong {
         flex-grow: 1;
         border: solid 1px lighten(black, 95%);
 
-            figure {
-                text-align: left;
-                margin-left: 0;
-                margin-right: 0;
+        figure {
+            text-align: left;
+            margin-left: 0;
+            margin-right: 0;
 
-                figcaption {
-                    font-size: $size-4;
-                    font-weight: 600;
-                    font-style: inherit;
-                    text-align: inherit;
+            figcaption {
+                font-size: $size-4;
+                font-weight: 600;
+                font-style: inherit;
+                text-align: inherit;
             }
         }
     }
 
     &-quote {
-        @include from($navbar-breakpoint){
-        width: 960px;
+        @include from($navbar-breakpoint) {
+            width: 960px;
         }
+
         width:100%;
         max-width: 860px;
         margin: 0 auto;
         text-align: center;
+
         figure {
             margin-left: 0;
             margin-right: 0;
-    
+
             figcaption {
                 font-size: $size-4;
                 font-weight: 600;
@@ -888,15 +938,15 @@ strong {
 // Image Gallery 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 
     @include from($desktop) {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     @include from($fullhd) {
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     a {
@@ -916,7 +966,7 @@ strong {
 
             &:after {
                 opacity: 1;
-                top:50%;
+                top: 50%;
             }
         }
 
@@ -931,11 +981,11 @@ strong {
             }
         }
 
-        &:after{
+        &:after {
             content: "\f06e";
             font-family: FontAwesome;
             color: white;
-            text-align:center;
+            text-align: center;
             position: absolute;
             opacity: 0;
             top: 100%;
@@ -965,7 +1015,7 @@ strong {
         @include rounded-corners;
         @include box-shadow-high;
         @include background-paved;
-        
+
         a {
             // color:white;
             display: inline-block;
@@ -985,6 +1035,15 @@ strong {
             }
         }
     }
+
+    &-finance {
+        background-color: $accent;
+        color: $text;
+
+        h2 {
+            margin: 0 auto;
+        }
+    }
 }
 
 .accreditations {
@@ -997,26 +1056,26 @@ strong {
         padding-top: $size-4;
         padding-bottom: $size-2;
 
-        @include until($fullhd){
-        padding-left: 32px;
-        padding-right: 32px;
-        // grid-template-columns: repeat(3, 1fr);
+        @include until($fullhd) {
+            padding-left: 32px;
+            padding-right: 32px;
+            // grid-template-columns: repeat(3, 1fr);
         }
 
-        @include from($desktop){
-        grid-template-columns: none;
-        grid-auto-flow: column;
-        align-items: center;
-        justify-items: center;
-        // grid-template-columns: repeat(auto-fill, minmax(128px, 0.5fr));
+        @include from($desktop) {
+            grid-template-columns: none;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-items: center;
+            // grid-template-columns: repeat(auto-fill, minmax(128px, 0.5fr));
 
         }
 
         img {
             @include box-shadow-below;
             display: block;
-            }
         }
+    }
 
     &-grid {
         display: grid;
@@ -1029,14 +1088,15 @@ strong {
 
         img {
             @include box-shadow-below;
+
             &:nth-child(even) {
                 @include from($navbar-breakpoint) {
-                margin-top:2rem;
-                }
+                    margin-top: 2rem;
                 }
             }
         }
     }
+}
 
 // Why Us Banner
 .why-us {
@@ -1044,6 +1104,7 @@ strong {
     &-banner {
         background-color: $tertiary;
         color: $why-us-text;
+
         // padding: 3rem 0;
         // padding-bottom: 3rem;
         @include from($navbar-breakpoint) {
@@ -1062,14 +1123,14 @@ strong {
     &-item {
 
         @include until($tablet) {
-            
+
             &:not(:last-child) {
                 border-bottom: solid 2px $tertiary;
             }
         }
 
         @include from($tablet) {
-            @include until($navbar-breakpoint){
+            @include until($navbar-breakpoint) {
                 padding: 0.5rem;
                 flex: 0 0 50%;
 
@@ -1077,16 +1138,17 @@ strong {
                     border-right: solid 2px $tertiary;
                 }
 
-                &:nth-child(-n+2){
+                &:nth-child(-n+2) {
                     border-bottom: solid 2px $tertiary;
                 }
             }
         }
 
 
-        @include from($desktop){
+        @include from($desktop) {
             border-bottom: none;
-            &:not(:last-child){
+
+            &:not(:last-child) {
                 border-right: solid 2px $tertiary;
             }
 
@@ -1111,14 +1173,19 @@ strong {
             font-size: 1.75rem;
         }
     }
+
+    // .level-item {
+    //     flex-shrink: 1!important;
+    // }
 }
 
 // Quote Form Modal Pop-up
 .modal-trigger {
 
-    margin-left:inherit auto;
-        @include from($navbar-breakpoint){
-        margin-left:1rem;
+    margin-left: inherit auto;
+
+    @include from($navbar-breakpoint) {
+        margin-left: 1rem;
     }
 
 }
@@ -1145,7 +1212,7 @@ strong {
 
         &-list {
             background-color: lighten($secondary, 0%);
-            color:white;
+            color: white;
             @include box-shadow-offset-solid($hero-cta-shadow);
         }
     }
@@ -1158,7 +1225,11 @@ strong {
 
         color: inherit;
 
-        h2,h3,h4,h5,h6 {
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             color: $text;
         }
 
@@ -1167,6 +1238,7 @@ strong {
             font-style: italic;
             color: $text;
         }
+
         address {
             display: block;
             // margin-bottom: $size-7;
@@ -1188,11 +1260,11 @@ strong {
         }
 
         a {
-            color:inherit;
+            color: inherit;
             fill: inherit;
 
             &:hover {
-                color:$primary;
+                color: $primary;
             }
         }
     }
@@ -1209,13 +1281,14 @@ strong {
 // Map section
 .map {
     margin-bottom: 3rem;
-    width:100%;
+    width: 100%;
 }
 
 .ol-viewport {
-    min-height:500px;
-    @include until($desktop){
-        min-height:300px;
+    min-height: 500px;
+
+    @include until($desktop) {
+        min-height: 300px;
     }
 }
 
@@ -1228,8 +1301,9 @@ strong {
     &-company-info {
 
         @include until($desktop) {
-            margin-bottom:2rem;
+            margin-bottom: 2rem;
         }
+
         h4 {
             margin-bottom: 1rem;
             font-size: $size-6;
@@ -1239,25 +1313,26 @@ strong {
                 font-weight: bold;
             }
         }
-        h5{
+
+        h5 {
             font-weight: normal;
             font-size: $size-7;
             line-height: 1.4em;
         }
 
         .button-primary {
-            margin-top:2rem;
+            margin-top: 2rem;
         }
     }
 
     &-links {
         a {
-        font-size: $size-7;
-        color: white;
-        fill: white;
-        text-decoration: none;
-        transition: color 0.3s;
-        display: inline-block;
+            font-size: $size-7;
+            color: white;
+            fill: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: inline-block;
 
             &:after {
                 @include animated-underline;
@@ -1280,7 +1355,7 @@ strong {
             column-count: 2;
             column-gap: 10px;
 
-            @include until($fullhd){
+            @include until($fullhd) {
                 column-count: 1;
             }
 
@@ -1298,21 +1373,21 @@ strong {
         grid-auto-flow: column;
         margin-top: 2rem;
 
-        @include until($navbar-breakpoint){
+        @include until($navbar-breakpoint) {
             margin-top: 2rem;
         }
 
         a {
-            color:inherit;
+            color: inherit;
             transition: color 0.3s;
 
-            &:hover{
-            color: $link;
+            &:hover {
+                color: $link;
             }
         }
 
-        a[href^="#"]{
-            display: none!important;
+        a[href^="#"] {
+            display: none !important;
         }
 
     }
@@ -1329,7 +1404,6 @@ strong {
     .emblem {
         position: relative;
 
-        // display: block;
         .gas-safe-emblem {
             position: relative;
             display: block;

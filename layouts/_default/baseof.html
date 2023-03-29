@@ -13,7 +13,7 @@
 			{{ partial "top-banner.html" . }}
 			
 			{{- if not .IsHome }}
-			{{ partial "navbar.html" . }}
+			{{ partial "navbar-dropdown.html" . }}
 			{{ end }}
 
 			{{ block "hero" . -}}

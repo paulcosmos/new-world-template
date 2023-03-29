@@ -1,12 +1,14 @@
 ---
 title: 'Home'
-menu: ["footer"]
+menu: ["main","footer"]
 weight: 1
 preheading: "#preheading"
 _build:
   render: true
-image:
-
+cascade:
+  _build:
+    list: true
+    render: false
 ---
 
 # Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
