@@ -4,13 +4,12 @@
 						<a class="navbar-item navbar-logo no-underline" href="/index.html">
 							{{- with .Site.Params }}
 							{{ if .logo }}
-							<img src="/images/{{ .logo }}"/>
-							{{- else }}
+							<img class="is-hidden-mobile" src="/images/{{ .logo }}"/>
+							{{ end -}}
 							<div class="content navbar-title">
 								{{ .company }}
 								<span>{{ .industry | humanize }} services in {{ .towncity }}</span>
 							</div>
-							{{ end -}}
 							{{ end -}}
 						</a>
 						<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-site">

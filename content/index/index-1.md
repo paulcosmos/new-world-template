@@ -4,16 +4,14 @@ weight: 1
 _build:
     list: true
     render: false
-image:
+image: images/van.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
+## AquaSafe, designs, installs and maintains high-quality **fire sprinkler systems**.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+Having a working fire alarm is an effective alert in the event of a fire, allowing precious time to get you and your family to safety. While the alert is invaluable, you still have to wait for the fire brigade to reach you before they can start to suppress the fire. 
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent final quality and a professional working practices.
+Fire sprinkler systems, which are now a **legal requirement in Wales**, will suppress the fire. This quick action, before the fire brigade arrive at your property, reduces property damage and helps allow a safe escape.
 
 
 

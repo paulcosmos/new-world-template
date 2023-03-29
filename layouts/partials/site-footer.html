@@ -33,7 +33,7 @@
 						<div class="content site-footer-links has-columns">
 						<h4>Primary Services</h4>
 							<ul>
-								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
+								{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
 								<li><a href="{{ .RelPermalink }}">
 									{{- if (ne .Params.anchor nil) }}
 										{{- .Params.anchor -}}

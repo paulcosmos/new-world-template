@@ -4,13 +4,11 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/sprinkler.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality
+## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
 
-+ Experienced across all aspects of {{<industry>}}
-+ Reputation for fast delivery times and reliability
-+ Competitive and affordable prices
+ In the past, fire sprinklers would require enormous water tanks to supply the systems. Thanks to their intuitive design, Sprinkle Safe can be connected directly to your water supply so that you barely notice it’s there until it’s needed.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<mobile>}}** for a no obligation quote.
+Call our team today on **{{<mobile>}}** to discuss fire sprinkler installation at your property.
