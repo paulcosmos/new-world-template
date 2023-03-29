@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
@@ -41,7 +41,7 @@ $text: $secondary;
 $hero-index-text: white;
 
 //  Top Banner
-$top-banner-bg: include brand-gradient;
+$top-banner-bg: darken($secondary,10%);
 $top-banner-text: lighten($primary, 50%);
 $top-banner-icon: $top-banner-text;
 
@@ -51,15 +51,15 @@ $navbar-height: 5rem;
 $logo-max-width: 180px;
 $logo-max-height: $navbar-height;
 $navbar-item-color: white;
+$navbar-item-hover-color: white;
+$navbar-item-hover-background-color: transparent;
 $navbar-burger-color: white;
-$navbar-item-hover-background-color: none;
 $navbar-dropdown-arrow: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
 $navbar-burger-color: $primary;
-$navbar-item-hover-color: white;
 
 // Page geris
 

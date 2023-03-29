@@ -1,0 +1,84 @@
+{{ define "hero" }}
+<section class="hero hero-service is-halfheight"
+ 	style="background-image:linear-gradient(-249deg, rgba(36, 40, 51, 1), rgba(36, 40, 51, 0.5)), url(../{{ .Params.backgroundImage }}">
+	<div class="hero-body">
+		<div class="container is-fullhd">
+			<div class="columns">
+				<div class="column is-12-tablet is-8-desktop is-6-fullhd">
+					<span class="pre-heading" data-aos="fade-left">
+						Our Services
+					</span>
+					<div class="content hero-services-content has-accent" data-aos="fade-down">
+						<h1>{{ .Title }}</h1>
+						<p>{{ .Params.desc }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+
+{{ define "main" }}
+<section class="section">
+	<div class="container is-fullhd">
+		<div class="columns is-multiline is-centered">
+			<div class="column is-12-touch is-7-desktop" data-aos="fade-in">
+				<article class="content has-accent">
+				{{ .Content }}
+				</article>
+			</div>
+			<div class="column is-offset-1-desktop _is-narrow _is-12-touch" data-aos="fade-left">
+			{{- if .Params.services }}
+				<aside class="content service-page-list box">
+					<h3>What we offer</h3>
+					<ul>
+					{{ range .Params.services }}
+					<li>{{ . }}</li>
+					{{ end }}
+				</aside>
+			{{- end }}
+				<div class="content hero-cta">
+					<h3>Get a Quote</h3>
+					<hr/>
+					<h4>
+					{{- if $.Site.Params.phone }}
+						{{- .Site.Params.phone -}}
+					{{ else }}
+						{{- .Site.Params.mobile -}}
+					{{- end -}}
+					</h4>
+					<p>Speak to us today to arrange a no obligation quotation or use our contact form to request a callback</p>
+					<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
+						<span class="icon-text">
+						  <span class="icon is-hidden-touch">
+						    <i class="fa-regular fa-phone"></i>
+						  </span>
+						  <span>Request a call back</span>
+						</span>
+					</button>
+				</div>
+			</div>
+			{{/*  {{ else }}
+			{{- $image := resources.Get .Params.image }}
+			<div class="column" data-aos="fade-left">
+				<div class="image is-1by1 company-services-image company-services-image">
+				{{- if .Params.image }}
+					<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' alt="" title=""/>
+				{{ else }}
+					<img src='/images/placeholder.jpg'/>
+				{{ end }}
+				</div>
+			</div>  */}}
+		</div>
+	</div>
+</section>
+
+	{{/*  {{ partial "cta-text.html" . }}  */}}
+	{{ partial "why-us-banner.html" . }}
+
+{{ end }}
+
+{{ define "scripts" }}
+<!-- Page specific scripts -->
+{{ end }}

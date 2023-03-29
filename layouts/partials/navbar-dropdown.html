@@ -21,6 +21,33 @@
 				    </div>
 					<div id="navbar-site" class="navbar-menu">
 						<div class="navbar-end has-text-centered">
+						    <a href="/index.html" class="navbar-item">
+							Home
+							</a>
+
+							{{/*  Dropdown  */}}
+							<div class="navbar-item has-dropdown is-hoverable no-underline">
+								<a href="/services.html" class="navbar-link is-hidden-touch">
+								  Services
+								</a>
+								<div class="navbar-dropdown">
+							    {{- $currentPage := . }}
+								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
+									<a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Title }}">
+									{{- if .Params.anchor -}}
+									  {{ .Params.anchor }}
+									{{- else -}}
+									  {{- .Title }}
+									{{- end -}}
+									</a>
+								{{- end }}
+								<hr class="navbar-divider">
+								<a class="navbar-item" href="/services.html" title="View all services">
+									View All Services
+								</a>
+								</div>
+					      	</div>
+							{{/*  END dropdown  */}}
 							{{/*  Main Nav  */}}
 						    {{- $currentPage := . }}
 						    {{ range .Site.Menus.main -}}
