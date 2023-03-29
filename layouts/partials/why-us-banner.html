@@ -1,6 +1,6 @@
 <section class="why-us-banner section ">
 				<div class="container _is-fluid is-fullhd">
-					<div class="columns is-multiline is-variable is-6 mb-6">
+					<div class="columns is-multiline is-variable is-6">
 					{{ with .Site.Params }}
 						<div class="column is-6-tablet is-6-desktop is-6-widescreen is-12-fullhd has-accent is-4 is-align-items-center is-justify-content-cnter is-flex-direction-column" data-aos="fade-in" data-aos-delay="0">
 							<h2>Why trust <span>{{ .company }}</span> for your {{ .industry }} needs?</h2>
@@ -19,6 +19,5 @@
 						</div>
 					{{ end }}
 					</div>
-					{{ partial "stats-row-embedded.html" . }}
 				</div>
 			</section>

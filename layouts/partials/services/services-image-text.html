@@ -1,6 +1,6 @@
 					{{- $currentPage := . }}
-					{{- range where (where .Site.RegularPages "Type" "service-pages") "File.Dir" "services/" }}
-					<div class="columns company-services-item _is-vcentered is-multiline is-variable is-8">
+					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
+					<div class="columns company-services-item is-vcentered is-multiline is-variable is-8">
 						<div class="column is-12-touch is-7-desktop is-6-fullhd">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="content has-accent" data-aos="fade-right">

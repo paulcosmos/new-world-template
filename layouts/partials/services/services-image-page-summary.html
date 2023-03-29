@@ -1,21 +1,19 @@
 					{{- $currentPage := . }}
 					{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
-					<div class="columns company-services-item _is-vcentered is-multiline is-variable is-8">
+					<div class="columns company-services-item is-vcentered is-multiline is-variable is-8">
 						<div class="column is-12-touch is-7-desktop is-6-fullhd">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="content has-accent" data-aos="fade-right">
 								<h2>{{ .Title }}</h2>
 								<p>{{ .Params.desc }}</p>
 								<hr/>
-								{{/*  <div class="button _button-primary ml-0 modal-trigger" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">  */}}
-									<a 	class="button button-primary ml-0 modal-trigger" 
+								<a 	class="button button-primary ml-0 modal-trigger" 
 									data-aos="fade-up" 
 									data-aos-easing="ease-in-back" 
 									data-aos-anchor-placement="bottom-bottom" 
 									data-aos-delay="200"
 									href="{{ .RelPermalink }}">More info…
-									<i class="fa-solid fa-arrow-right"></i></a>
-								{{/*  </div>  */}}
+								<i class="fa-solid fa-arrow-right"></i></a>
 							</div>
 						</div>
 						<div class="column" data-aos="fade-left">

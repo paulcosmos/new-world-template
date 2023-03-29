@@ -1,5 +1,6 @@
 baseURL = 'http://localhost'
 title = ''
+servicePages = 'true'
 
 languageCode = 'en-us'
 uglyurls = true
