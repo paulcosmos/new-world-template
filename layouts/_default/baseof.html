@@ -11,10 +11,18 @@
 	<body>
 		<header>
 			{{ partial "top-banner.html" . }}
-			
-			{{- if not .IsHome }}
+
+			{{/*  {{ if .Site.Params.servicePages }}
+				{{ partial "navbar-dropdown.html" . }}
+			{{ else }}
+				{{- if not .IsHome }}  */}}
 			{{ partial "navbar-dropdown.html" . }}
-			{{ end }}
+				{{/*  {{ end }}
+			{{end }}	  */}}
+
+			{{/*  {{- if not .IsHome }}
+			{{ partial "navbar-dropdown.html" . }}
+			{{ end }}  */}}
 
 			{{ block "hero" . -}}
 			<section class="hero is-small">
@@ -34,7 +42,7 @@
 
 		{{ partial "quote-modal.html" . }}
 
-		<script src="js/site.js"></script>
+		<script src="/js/site.js"></script>
 		<script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>

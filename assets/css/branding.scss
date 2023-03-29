@@ -43,7 +43,7 @@ $hero-index-text: white;
 //  Top Banner
 $top-banner-bg: darken($secondary,10%);
 $top-banner-text: lighten($primary, 50%);
-$top-banner-icon: $top-banner-text;
+$top-banner-icon: $accent;
 
 // Main Navigation 
 $navbar-background-color: $secondary;
@@ -53,15 +53,13 @@ $logo-max-height: $navbar-height;
 $navbar-item-color: white;
 $navbar-item-hover-color: white;
 $navbar-item-hover-background-color: transparent;
-$navbar-burger-color: white;
+$navbar-burger-color: $primary;
 $navbar-dropdown-arrow: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
-$navbar-burger-color: $primary;
-
-// Page geris
+$navbar-divider-background-color: lighten($secondary, 10%);
 
 // Buttons
 $button-text: lighten($primary, 70%);
@@ -113,7 +111,7 @@ $site-footer-bg: darken($secondary, 10%);
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($primary, 40%);
+$paving-bg: darken($secondary, 10%);
 $paving: darken($paving-bg, 2%);
 
 // Settings for 'Rings' BG pattern
