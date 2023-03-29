@@ -2,11 +2,13 @@
 title: 'Home'
 menu: ["footer"]
 weight: 1
-preheading: "#preheading"
+preheading: "Over 24 years of building experience"
 _build:
   render: true
-image:
-
+cascade:
+  _build:
+    list: true
+    render: false
 ---
 
 # Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
