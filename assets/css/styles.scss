@@ -19,7 +19,9 @@ html {
 html,
 body {
     width: auto !important;
-    overflow-x: hidden !important
+    overflow-x: hidden !important;
+    font-family: $family-sans-serif;
+    color: $text;
 }
 
 // Typography
@@ -242,7 +244,7 @@ strong {
     // @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
-    font-weight: bold;
+    // font-weight: bold;
     padding: 0.5rem 0;
     // padding-top: $size-7;
     // padding-bottom: $size-7;
@@ -267,6 +269,7 @@ strong {
     .container {
         @include until($navbar-breakpoint) {
             padding-left: 32px;
+            padding-right: 0;
         }
     }
 
