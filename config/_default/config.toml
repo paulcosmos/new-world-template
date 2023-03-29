@@ -1,5 +1,6 @@
 baseURL = 'http://burkeconstructionservicesltd.co.uk'
 title = ''
+servicePages = 'true'
 
 languageCode = 'en-us'
 uglyurls = true

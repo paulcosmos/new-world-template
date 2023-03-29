@@ -20,8 +20,8 @@ html,
 body {
     width: auto !important;
     overflow-x: hidden !important;
-    color: $text;
     font-family: $family-sans-serif;
+    color: $text;
 }
 
 // Typography
@@ -243,7 +243,7 @@ strong {
     background-color: $top-banner-bg;
     color: $top-banner-text;
     font-size: $size-7;
-    font-weight: bold;
+    // font-weight: bold;
     padding: 0.5rem 0;
     // padding-top: $size-7;
     // padding-bottom: $size-7;

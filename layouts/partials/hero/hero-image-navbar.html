@@ -1,6 +1,10 @@
 
 	<div class="hero-head">
+	{{ if .Site.Params.servicePages }}
 		{{ partial "navbar-dropdown.html" . }}
+	{{ else }}
+		{{ partial "navbar.html" . }}
+	{{end }}
 	</div>
 
 	<!-- Hero content: will be in the middle -->
