@@ -6,4 +6,5 @@
 								{{ if .yell }}<a href="https://yell.com/biz/{{- .yell -}}" title="Find us on Yell.com" target="_blank" rel="noopener"><span class="icon">{{- partial "svg/yell.html" . -}}</i></span></a>{{ end }}
 								{{ if .checkatrade }}<a href="https://www.checkatrade.com/trades/{{- .checkatrade -}}" title="Find us on checkatrade.com" target="_blank" rel="noopener"><span class="icon">{{- partial "svg/checkatrade.html" . -}}</i></span></a>{{ end }}
 								{{ if .mybuilder }}<a href="https://mybuilder.com/profile/view/{{- .mybuilder -}}" title="Find us on mybuilder.com" target="_blank" rel="noopener"><span class="icon">{{- partial "svg/mybuilder.html" . -}}</span></a>{{ end }}
+								{{ if .ratedpeople }}<a href="https://ratedpeople.com/profile/{{- .mybuilder -}}" title="Find us on ratedpeople.com" target="_blank" rel="noopener"><span class="icon">{{- partial "svg/ratedpeople.html" . -}}</span></a>{{ end }}
 							{{- end }}

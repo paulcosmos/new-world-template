@@ -184,7 +184,7 @@ strong {
             list-style: none;
             position: relative;
             padding-left: 1.5rem;
-            font-weight: 600;
+            font-weight: $family-heading-weight;
 
             &:before {
                 content: " ";
@@ -1234,6 +1234,7 @@ strong {
         h5,
         h6 {
             color: $text;
+            font-weight: $family-heading-weight;
         }
 
         p {
@@ -1368,32 +1369,32 @@ strong {
         }
     }
 
-    &-socials {
-        display: grid;
-        grid-gap: 1rem;
-        justify-content: flex-start;
-        align-content: center;
-        grid-auto-flow: column;
-        margin-top: 2rem;
+    // &-socials {
+    //     display: grid;
+    //     grid-gap: 1rem;
+    //     justify-content: flex-start;
+    //     align-content: center;
+    //     grid-auto-flow: column;
+    //     margin-top: 2rem;
 
-        @include until($navbar-breakpoint) {
-            margin-top: 2rem;
-        }
+    //     @include until($navbar-breakpoint) {
+    //         margin-top: 2rem;
+    //     }
 
-        a {
-            color: inherit;
-            transition: color 0.3s;
+    //     a {
+    //         color: inherit;
+    //         transition: color 0.3s;
 
-            &:hover {
-                color: $link;
-            }
-        }
+    //         &:hover {
+    //             color: $link;
+    //         }
+    //     }
 
-        a[href^="#"] {
-            display: none !important;
-        }
+    //     a[href^="#"] {
+    //         display: none !important;
+    //     }
 
-    }
+    // }
 
     &-signoff {
         background-color: lighten($site-footer-bg, 0%);
