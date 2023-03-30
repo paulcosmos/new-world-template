@@ -1,7 +1,7 @@
 ---
-title: Peter
+title: David B.
 type: review
 rating: 5
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Phoned and came following morning at time agreed. Surveyed work required and gave written fixed price quote. Completed work satisfactorily and although took longer than expected price stayed the same. Very pleasant experience, definitely use again. 

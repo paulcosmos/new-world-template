@@ -8,6 +8,6 @@ anchor:
 ---
 ## Leaks & Repairs
 
-{{<company>}} are on hand to quickly help resolve leaks and problems with your plumbing or central heating. We offer a quick response and aim to make repairs the same day when possible. 
+{{<company>}} are on hand **24 hours** to quickly help resolve leaks and problems with your plumbing or central heating. We offer a quick response and aim to make repairs the same day when possible. 
 
 Call us today on **{{<phone>}}** to arrange a visit.
