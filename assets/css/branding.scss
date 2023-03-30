@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
 
 // Override Bulma variables here:
 $family-sans-serif: "Nunito Sans", sans-serif;
@@ -9,8 +6,8 @@ $family-headings: $family-sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: rgb(36, 40, 51);
+$primary: #57B1E3;
+$secondary: darken(#1b3c6c, 15%);
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -31,24 +28,24 @@ $text: $secondary;
 	// @include hero-default-bg;
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba(36, 40, 51, 1), rgba(36, 40, 51, 0.5)), url('../images/hero-image-mobile.jpg');
+	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.2)), url('../images/hero-image-mobile.jpg');
 	
 	@include from($tablet) {
-		background-image: linear-gradient(-249deg, rgba(36, 40, 51, 1), rgba(36, 40, 51, 0.5)), url('../images/hero-image.jpg');
+		background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
 	}
 }
 
 $hero-index-text: white;
 
 //  Top Banner
-$top-banner-bg: darken($secondary,10%);
+$top-banner-bg: lighten($secondary,10%);
 $top-banner-text: lighten($primary, 50%);
 $top-banner-icon: $accent;
 
 // Main Navigation 
-$navbar-background-color: $secondary;
+$navbar-background-color: darken($secondary, 0%);
 $navbar-height: 5rem;
-$logo-max-width: 180px;
+$logo-max-width: 380px;
 $logo-max-height: $navbar-height;
 $navbar-item-color: white;
 $navbar-item-hover-color: white;
@@ -83,7 +80,7 @@ $hero-cta-border: none;
 $bg-overlay: rgba(0, 0, 0, 0.6);
 
 // Services
-$services-item-divider: solid 2px lighten($secondary, 75%);
+$services-item-divider: solid 2px lighten($tertiary, 0%);
 
 // Reviews
 $review-section-bg: $secondary;
@@ -111,8 +108,8 @@ $site-footer-bg: darken($secondary, 10%);
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($secondary, 10%);
-$paving: darken($paving-bg, 2%);
+$paving-bg: darken($secondary, 3%);
+$paving: darken($paving-bg, 0%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;

@@ -1,6 +1,6 @@
-baseURL = 'http://localhost'
+baseURL = 'http://bluehippobathrooms.uk/'
 title = ''
-servicePages = 'true'
+servicePages = ''
 
 languageCode = 'en-us'
 uglyurls = true

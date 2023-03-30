@@ -12,8 +12,8 @@
 					</div>
 				</div>
 				<div class="columns is-multiline is-variable is-6">
-					<div class="columns is-multiline is-mobile review-slider">
-					{{ $slides := 6 }}
+					<div id="review-slider" class="columns is-multiline is-mobile slider">
+					{{ $slides := 3 }}
 					{{ range first $slides (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
 						{{ partial "review-slider/review-quote.html" . }}
 					{{ end -}}
@@ -23,7 +23,6 @@
 					<div class="columns">
 						<div class="column is-8 is-offset-2">
 							<div class="is-grouped">
-								{{/*  <a href="/reviews.html" class="button is-ghost is-inline-block" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">View more reviews</a>  */}}
 								<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
 									<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
 								</div>
@@ -48,46 +47,5 @@
 			</section>
 
 	{{- define "scripts" -}}
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-		<script>
-			var slider = tns({
-			    container: '.review-slider',
-				//mode: 'gallery',
-				autoHeight: false,
-			   	items: 1,
-			    slideBy: 1,
-			    loop: true,
-			    autoplay: false,
-			    autoplayButtonOutput: false,
-			    autoplayHoverPause: true,
-			    speed: 800,
-			    gutter: 0,
-			    edgePadding: 10,
-			    center: true,
-			    nav: false,
-			    controls: true,
-			    controlsContainer: '#review-slider-controls',
-			    preventActionWhenRunning: true,
-				responsive: {
-			        960: {
-			            items: 2,
-			            controls: true,
-			            center: false,
-			        },
-			        1024: {
-			            slideBy: 1,
-			            gutter: 20,
-			            items: 2,
-			            edgePadding: 40,
-			            center: true,
-			        },
-			        1280: {
-			            items: 2,
-			            edgePadding: 40,
-
-			        }
-			    }
-			});
-		</script>
 		
 	{{ end }}

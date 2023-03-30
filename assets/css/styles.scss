@@ -824,8 +824,14 @@ strong {
     }
 }
 
+.slider {
+    .column {
+        display: flex;
+    }
+}
 // Customer Reviews 
 .review {
+
 
     &-section {
         background: $review-section-bg;

@@ -8,16 +8,6 @@
 				{{ end -}}
 			</section>
 			{{ end -}}
-			{{/*  {{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
-				{{ partial "hero/hero-image.html" . }}
-				{{- with .Site.Params }}
-				{{ if .emblem }}
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
-				{{ end -}}
-				{{ end -}}
-			</section>
-			{{ end -}}  */}}
 
 			{{- define "main" -}}
 			<section class="section company-intro">
@@ -46,7 +36,9 @@
 			</section>
 
 			{{ partial "accreditations.html" . }}
-			\
+			
+			{{ partial "image-slider.html" . }}
+
 			<section class="section company-services-overview">
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
@@ -59,7 +51,7 @@
 							</span>
 						</div>
 					</div>
-					{{ partial "services/services-image-list.html" . }}
+					{{ partial "services/services-grid.html" . }}
 				</div>
 			</section>
 
@@ -74,5 +66,128 @@
 			{{- end }}
 
 	{{- define "scripts" -}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+	<script>
+		var imageSlider = tns({
+			container: '.image-slider',
+			items: 1,
+			slideBy: 'page',
+			loop: true,
+			autoplay: false,
+			autoplayTimeout: 15000,
+			autoplayButtonOutput: false,
+			autoplayHoverPause: true,
+			speed: 1000,
+			gutter: 0,
+			edgePadding: 20,
+			center: true,
+			nav: false,
+			preventActionWhenRunning: true,
+			controls: true,
+			controlsContainer: '#image-slider-controls',
+			responsive: {
+				960: {
+					items: 2,
+					controls: true,
+					center: false,
+					mouseDrag: true,
+				},
+				1024: {
+					slideBy: 1,
+					gutter: 20,
+					items: 2,
+					edgePadding: 40,
+					center: true,
+				},
+				1280: {
+					items: 3,
+					edgePadding: 40,
+		
+				},
+				1540: {
+					items: 4,
+					edgePadding: 40,
+		
+				}
+			}
+		});
+	</script>
+	<script>
+		var reviewSlider = tns({
+			container: '#image-slider',
+			items: 2,
+			mouseDrag: true,
+			slideBy: 1,
+			loop: true,
+			autoplay: false,
+			autoplayButtonOutput: false,
+			autoplayHoverPause: true,
+			speed: 800,
+			gutter: 10,
+			edgePadding: 20,
+			center: true,
+			nav: false,
+			controls: true,
+			controlsContainer: '#image-slider-controls',
+			preventActionWhenRunning: true,
+			responsive: {
+				720: {
+					items: 4,
+					controls: true,
+					center: false,
+				},
+				1024: {
+					slideBy: 1,
+					gutter: 20,
+					items: 4,
+					edgePadding: 40,
+					center: true,
+				},
+				1280: {
+					items: 4,
+					edgePadding: 40,
 
+				}
+			}
+		});
+	</script>
+	<script>
+		var reviewSlider = tns({
+			container: '#review-slider',
+			autoHeight: false,
+			items: 1,
+			slideBy: 1,
+			loop: true,
+			autoplay: false,
+			autoplayButtonOutput: false,
+			autoplayHoverPause: true,
+			speed: 800,
+			gutter: 0,
+			edgePadding: 10,
+			center: true,
+			nav: false,
+			controls: true,
+			controlsContainer: '#review-slider-controls',
+			preventActionWhenRunning: true,
+			responsive: {
+				960: {
+					items: 2,
+					controls: true,
+					center: false,
+				},
+				1024: {
+					slideBy: 1,
+					gutter: 20,
+					items: 2,
+					edgePadding: 40,
+					center: true,
+				},
+				1280: {
+					items: 2,
+					edgePadding: 40,
+
+				}
+			}
+		});
+	</script>
 	{{ end }}
