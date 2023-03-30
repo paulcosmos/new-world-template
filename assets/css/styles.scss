@@ -285,9 +285,13 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-6;
+        font-size: $size-7;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
+
+        @include from($widescreen) {
+            font-size: $size-6;
+        }
 
         &:hover {
             transition: color 0.3s;
