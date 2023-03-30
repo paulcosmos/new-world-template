@@ -4,16 +4,13 @@ type: service-page
 layout: servicepage
 desc: Our expert team can work with you to design and create a beautiful outdoor living space that's perfectly suited to your property. From concept to finished project, we have the creativity and experience to bring your ideas to life.
 services:
-- Garden re-design 
-- Garden pathways 
-- Garden maintenance 
-- Turfing
-- Timber edging 
-- Brick edging 
-- Concrete & block paving 
-- Garden wall construction
-- Garden retaining walls 
-- Gazebos & pergolas 
+- Resin-bound driveways 
+- Concrete driveways
+- Block paved driveways 
+- Stone & gravel driveways 
+- Brick & Cobblestone driveways 
+- Asphalt & tarmac driveways 
+- Patterned & Imprinted driveways 
 weight: 6
 image: "images/driveway.jpg"
 backgroundImage: images/driveway-hero.jpg

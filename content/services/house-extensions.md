@@ -3,17 +3,6 @@ title: "House Extensions"
 type: service-page
 layout: servicepage
 desc: Our reputable construction specialists are all vastly skilled in conducting a full spectrum of extension planning, designing and building skills and techniques
-services:
-- Garden re-design 
-- Garden pathways 
-- Garden maintenance 
-- Turfing
-- Timber edging 
-- Brick edging 
-- Concrete & block paving 
-- Garden wall construction
-- Garden retaining walls 
-- Gazebos & pergolas 
 weight: 2
 image: "images/extensions.jpg"
 backgroundImage: images/extensions-hero.jpg
