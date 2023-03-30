@@ -4,10 +4,9 @@ weight: 1
 _build:
     list: true
     render: false
-image:
+image: images/silicone-rendering.jpg
 ---
-
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
+## We're **silicone rendering experts**. Tough jobs are our speciality
 
 * Many years of experience in and around {{<towncity>}}
 * A reputation for excellent quality and professionalism

@@ -81,7 +81,7 @@ $hero-cta-border: none;
 $bg-overlay: rgba(0, 0, 0, 0.6);
 
 // Services
-$services-item-divider: solid 2px lighten($secondary, 75%);
+$services-item-divider: solid 2px $tertiary;
 
 // Reviews
 $review-section-bg: $secondary;
@@ -109,8 +109,8 @@ $site-footer-bg: darken($secondary, 10%);
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($secondary, 10%);
-$paving: darken($paving-bg, 2%);
+$paving-bg: darken($secondary, 0%);
+$paving: darken($paving-bg, 0%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;

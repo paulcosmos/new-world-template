@@ -1,7 +1,7 @@
 ---
-title: Andy
+title: Terry
 type: review
 rating: 5
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Great guys who did a great job. Left inside spotless when plastering indoors and did a great job on the external rendering. Always courteous and respectful. Thanks.

@@ -1,7 +1,7 @@
 ---
-title: Peter
+title: Kevin
 type: review
 rating: 5
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Great lads, done a fantastic job at a fair price. Reliable, clean, polite and friendly. Would not hesitate to use again and highly recommend to anyone looking for high quality work .

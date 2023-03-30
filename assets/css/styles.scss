@@ -184,7 +184,7 @@ strong {
             list-style: none;
             position: relative;
             padding-left: 1.5rem;
-            font-weight: 600;
+            font-weight: $family-heading-weight;
 
             &:before {
                 content: " ";
@@ -285,9 +285,13 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-6;
+        font-size: $size-7;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
+
+        @include from($widescreen) {
+            font-size: $size-6;
+        }
 
         &:hover {
             transition: color 0.3s;
@@ -300,8 +304,9 @@ strong {
 
         span {
             display: block;
-            font-size: $size-7;
+            font-size: 0.75em;
             color: inherit;
+            font-weight: 400;
         }
 
     }
@@ -1234,6 +1239,7 @@ strong {
         h5,
         h6 {
             color: $text;
+            font-weight: $family-heading-weight;
         }
 
         p {
