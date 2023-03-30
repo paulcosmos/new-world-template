@@ -17,6 +17,11 @@
 				<a href="https://yell.com/biz/{{- .yell -}}" title="Find us on Yell.com" target="_blank" rel="noopener"><img src="images/creds/yell.png" alt="" title=""></a>
 			</div>
 			{{ end }}
+			{{- if .ratedpeople }}
+			<div class="level-item stats-row-item has-text-centered">
+				<a href="https://ratedpeople.com/profile/{{- .ratedpeople -}}" title="Find us on ratedpeople.com" target="_blank" rel="noopener"><img src="images/creds/ratedpeople.png" alt="" title=""></a>
+			</div>
+			{{ end }}
 		{{ end }}
 	</div>
 </section>
