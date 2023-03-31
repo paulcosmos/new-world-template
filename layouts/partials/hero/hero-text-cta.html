@@ -25,11 +25,10 @@
 									<h3>Get a Quote</h3>
 									<hr/>
 									<h4>
-									{{- if $.Site.Params.phone }}
-										{{- .Site.Params.phone -}}
-									{{ else }}
 										{{- .Site.Params.mobile -}}
-									{{- end -}}
+									</h4>
+									<h4>
+										{{- .Site.Params.phone -}}
 									</h4>
 									<p>Speak to us today to arrange a no obligation quotation or use our contact form to request a callback</p>
 									<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">

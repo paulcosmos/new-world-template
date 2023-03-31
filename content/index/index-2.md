@@ -13,4 +13,4 @@ image: images/tools.jpg
 + Reputation for fast delivery times and reliability
 + Competitive and affordable prices
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<mobile>}}** for a no obligation quote.
+We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<mobile>}}** or **{{<phone>}}** for a no obligation quote.

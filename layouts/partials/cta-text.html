@@ -12,7 +12,7 @@
 									<div class="has-accent" data-aos="fade-left">
 										<h2>Looking for <span>{{ .Site.Params.industry }} services</span> in {{ .Site.Params.county }}?</h2>
 										<p>Speak to us today and we'll be happy to answer any questions you have or arrange a free, no obligation quote.</p>
-										<p>Already got a quote? Call us today on <b>{{- .Site.Params.mobile -}}</b> and let us beat it!</p>
+										<p>Already got a quote? Call us today on <b>{{- .Site.Params.mobile -}}</b> or <b>{{- .Site.Params.phone -}}</b> and let us beat it!</p>
 									</div>
 								</div>
 							</div>
@@ -22,11 +22,10 @@
 									<h3>Get a Quote</h3>
 									<hr/>
 									<h4>
-									{{- if $.Site.Params.phone }}
-										{{- .Site.Params.phone -}}
-									{{ else }}
 										{{- .Site.Params.mobile -}}
-									{{- end -}}
+									</h4>
+									<h4>
+										{{- .Site.Params.phone -}}
 									</h4>
 									<p>Call us today to arrange a no obligation quotation. Or you can use our contact form to request a callback</p>
 									<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">

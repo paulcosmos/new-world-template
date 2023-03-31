@@ -34,4 +34,4 @@ Over the years, our team have built a broad range of experience working in the i
 
 We like to express our priority of health and safety to all customers we come across. As an established team we take regulations very seriously, ensuring all measures are in place before conducting any work within an environment. This way, all properties are maintained in a hazard-free position for the duration of our time working, and all results adhere to current guidelines, regulations and standards at the end of each project. 
 
-For more information regarding our building renovations at {{<company>}}, give our friendly team a call today **{{<mobile>}}**. 
+For more information regarding our building renovations at {{<company>}}, give our friendly team a call today **{{<mobile>}}** or **{{<phone>}}**. 
