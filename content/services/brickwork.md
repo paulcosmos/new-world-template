@@ -1,7 +1,7 @@
 ---
 title: "Brickwork"
 type: service-item
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+desc: From new construction to repairs and repointing, whatever your brickwork needs our experienced team can help.
 weight: 2
 image: images/brickwork.jpg
 anchor:

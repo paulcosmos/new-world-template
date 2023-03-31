@@ -285,12 +285,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-7;
+        font-size: $size-6;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
         @include from($widescreen) {
-            font-size: $size-6;
+            font-size: $size-4;
         }
 
         &:hover {
@@ -304,7 +304,7 @@ strong {
 
         span {
             display: block;
-            font-size: 1em;
+            font-size: $size-7;
             color: inherit;
             font-weight: 400;
 
