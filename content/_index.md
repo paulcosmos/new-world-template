@@ -2,7 +2,7 @@
 title: 'Home'
 menu: ["main","footer"]
 weight: 1
-preheading: "#preheading"
+preheading: "Established over 10 years"
 _build:
   render: true
 cascade:

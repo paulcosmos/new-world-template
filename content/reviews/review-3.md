@@ -1,7 +1,7 @@
 ---
-title: Andy
+title: Paul T.
 type: review
 rating: 5
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+They are prompt, efficient and polite, good value. They have just done some work on the front of my house very pleased. Am already discussing some work to be done!
