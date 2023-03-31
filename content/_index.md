@@ -2,7 +2,7 @@
 title: 'Home'
 menu: ["main","footer"]
 weight: 1
-preheading: "Experienced plumber in Stafforshire"
+preheading: "Experienced plumber in Kidsgrove & surrounding areas"
 _build:
   render: true
 cascade:

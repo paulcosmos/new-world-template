@@ -356,7 +356,8 @@ strong {
             max-width: $logo-max-width;
             max-height: $logo-max-height;
 
-            @include until($navbar-breakpoint) {
+            @include until($tablet) {
+                max-width: 280px;
                 max-height: 3rem !important;
             }
         }
