@@ -1,9 +1,9 @@
 ---
 title: "Property Refurbishment"
 type: service-item
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+desc: We are experts in property refurbishment. Our team are fully experienced in the removal and rebuilding of all manner of property features.
 weight: 1
-image: images/ripout.jpg
+image: images/property-refurbishment.jpg
 anchor: 
 ---
 ## Property Refurbishment
