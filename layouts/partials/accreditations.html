@@ -22,6 +22,11 @@
 				<a href="https://ratedpeople.com/profile/{{- .ratedpeople -}}" title="Find us on ratedpeople.com" target="_blank" rel="noopener"><img src="images/creds/ratedpeople.png" alt="" title=""></a>
 			</div>
 			{{ end }}
+			{{- if .mybuilder }}
+			<div class="level-item stats-row-item has-text-centered">
+				<a href="https://mybuilder.com/profile/view/{{- .mybuilder -}}" title="Find us on mybuilder.com" target="_blank" rel="noopener"><img src="images/creds/mybuilder.png" alt="" title=""></a>
+			</div>
+			{{ end }}
 		{{ end }}
 	</div>
 </section>
