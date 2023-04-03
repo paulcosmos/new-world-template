@@ -2,7 +2,7 @@
 title: "Patios & Driveways"
 type: service-item
 desc: Improve the overall look of your property whilst also increasing value with a professionally installed driveway or patio.
-weight: 2
+weight: 3
 image: images/paving.jpg
 anchor: 
 ---
@@ -12,3 +12,4 @@ A well thought-out and professionally installed driveway is easy to clean and ma
 
 * Maximise and optimise your outdoor space
 * Increase the value of your property
+
