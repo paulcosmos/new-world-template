@@ -1132,8 +1132,9 @@ strong {
 .stats-row {
     background-color: $tertiary;
 
-    &-item {
-
+    &-item {            
+        padding-top:1rem;
+        padding-bottom:1rem;
         @include until($tablet) {
 
             &:not(:last-child) {
