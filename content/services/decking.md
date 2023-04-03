@@ -1,8 +1,8 @@
 ---
 title: Wooden Decking
 type: service-item
-desc: Hard wearing, sturdy and easy to clean, wooden decking can turn a corner of your garden into an outdoor dining area.
-weight: 3
+desc: Hard wearing, sturdy and easy to clean, wooden decking can turn a corner of your garden into a great BBQ or outdoor dining area.
+weight: 2
 image: images/decking.jpg
 anchor: Garden Decking
 ---

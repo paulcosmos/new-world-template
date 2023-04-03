@@ -2,7 +2,7 @@
 title: "Brickwork"
 type: service-item
 desc: From new construction to repairs and repointing, whatever your brickwork needs our experienced team can help.
-weight: 2
+weight: 6
 image: images/brickwork.jpg
 anchor:
 ---

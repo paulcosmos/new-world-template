@@ -95,7 +95,8 @@ strong {
 
     &-primary,
     &-primary>button {
-        @include brand-gradient;
+        background-color: $brandblue;
+        // @include brand-gradient;
         border-color: transparent;
         color: $button-text !important;
         border-width: 1px;
@@ -114,7 +115,7 @@ strong {
         height: 3rem;
 
         &:hover {
-            background-color: lighten($primary, 10%);
+            background-color: $primary;
             border-color: transparent;
             color: $button-text !important;
 
@@ -241,7 +242,7 @@ strong {
 // Top Banner
 .top-banner {
     background-color: $top-banner-bg;
-    // @include brand-gradient;
+    @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
     // font-weight: bold;
@@ -826,7 +827,7 @@ strong {
     }
 
     &-icon {
-        color: $primary;
+        color: $brandblue;
         width: 2rem;
         height: 2rem;
         font-size: 2rem;
@@ -890,6 +891,10 @@ strong {
         }
     }
 
+    &-icon {
+        color: $review-nav-text;
+    }
+
     &-card {
         @include box-shadow-stripe;
         background-color: white;
@@ -938,7 +943,7 @@ strong {
     }
 
     &-stars {
-        color: $primary;
+        color: $review-stars;
         margin: 0.5rem 0 1rem;
 
         .stars-remaining {

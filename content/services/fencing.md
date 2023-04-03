@@ -1,9 +1,9 @@
 ---
-title: Fencing
+title: Fencing & Gates
 type: service-item
 desc: Improve your privacy with a choice of fencing styles and heights, all guaranteed to be professionally treated and safely installed.
 anchor: 
-weight: 5
+weight: 4
 image: images/fencing.jpg
 ---
 ## Fencing & Gate Installation
