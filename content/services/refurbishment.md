@@ -2,8 +2,8 @@
 title: "Property Refurbishment"
 type: service-item
 desc: We are experts in property refurbishment. Our team are fully experienced in the removal and rebuilding of all manner of property features.
-weight: 1
-image: images/property-refurbishment.jpg
+weight: 6
+image: images/refurb.jpg
 anchor: 
 ---
 ## Property Refurbishment

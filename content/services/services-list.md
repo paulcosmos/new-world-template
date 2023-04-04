@@ -1,5 +1,6 @@
 ---
 type: services-list
+image: images/landscaping-lawn.jpg
 ---
 
 * Artificial Grass
@@ -15,6 +16,12 @@ type: services-list
 * Garden Makeovers
 * Garden Terracing
 * Garden Walling
+* Garage conversions
+* Outdor rooms
+* Summer houses
+* Rendering services
+* Carpentry services
+* Joinery services
 * Grounds Maintenance
 * Hard Landscaping
 * Imprinted Concrete
