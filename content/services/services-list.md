@@ -1,6 +1,6 @@
 ---
 type: services-list
-image: images/landscaping-lawn.jpg
+image: images/steps.jpg
 ---
 
 * Artificial Grass

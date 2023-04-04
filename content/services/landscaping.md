@@ -1,7 +1,7 @@
 ---
 title: Landscaping
 type: service-item
-desc: We have the knowledge and skills to take your perfect garden from a dream to a reality.
+desc: We have the knowledge and skills to make your perfect garden or outdoor recreational space a reality.
 anchor: Landscaping 
 weight: 1
 image: images/landscaping.jpg

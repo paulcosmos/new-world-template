@@ -3,7 +3,7 @@ title: Plastering & Rendering
 type: service-item
 desc: With years of experience, we can ensure your walls and surfaces are smooth and protected, inside and out.
 weight: 6
-image: images/plastering.jpg
+image: images/rendering.jpg
 anchor:
 ---
 ## Plastering & Rendering

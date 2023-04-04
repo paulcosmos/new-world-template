@@ -4,7 +4,7 @@ weight: 2
 _build:
     list: true
     render: false
-image: images/paving-site.jpg
+image: images/decking-installation.jpg
 ---
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality
