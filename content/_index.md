@@ -2,7 +2,7 @@
 title: 'Home'
 menu: ["main","footer"]
 weight: 1
-preheading: "#preheading"
+preheading: "Experienced and Creative Landscape Designers"
 _build:
   render: true
 cascade:
