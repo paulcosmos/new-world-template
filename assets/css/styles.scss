@@ -89,13 +89,18 @@ strong {
     }
 }
 
+.has-background-tertiary {
+    background-color: $tertiary;
+}
+
 // Buttons 
 .button {
     color: $secondary;
 
     &-primary,
     &-primary>button {
-        @include brand-gradient;
+        // @include brand-gradient;
+        background-color: $button-bg;
         border-color: transparent;
         color: $button-text !important;
         border-width: 1px;
@@ -114,7 +119,7 @@ strong {
         height: 3rem;
 
         &:hover {
-            background-color: lighten($primary, 10%);
+            background-color: $button-bg-hover;
             border-color: transparent;
             color: $button-text !important;
 
@@ -1132,38 +1137,44 @@ strong {
 .stats-row {
     background-color: $tertiary;
 
-    &-item {
+    &-item {            
+        padding-top:1.5rem;
+        padding-bottom:1.5rem;
+        flex: 0 0 25%;
 
-        @include until($tablet) {
-
-            &:not(:last-child) {
-                border-bottom: solid 2px $tertiary;
-            }
-        }
+        // @include until($desktop) {
+        //     &:not(:last-child) {
+        //         border-bottom: solid 2px $tertiary;
+        //     }
+        // }
 
         @include from($tablet) {
             @include until($navbar-breakpoint) {
                 padding: 0.5rem;
-                flex: 0 0 50%;
+                flex: 0 0 33%;
 
-                &:nth-of-type(odd) {
-                    border-right: solid 2px $tertiary;
-                }
+                // &:nth-of-type(odd) {
+                //     &:not(:last-child) {
+                //     border-right: solid 2px $tertiary;
+                //     }
+                // }
 
-                &:nth-child(-n+2) {
-                    border-bottom: solid 2px $tertiary;
-                }
+                // &:nth-child(-n+2) {
+                //     // border-bottom: solid 2px $tertiary;
+                // }
             }
         }
 
 
         @include from($desktop) {
-            border-bottom: none;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            flex: 0 0 20%;
+            // border-bottom: none;
 
-            &:not(:last-child) {
-                border-right: solid 2px $tertiary;
-            }
-
+            // &:not(:last-child) {
+            //     border-right: solid 2px $tertiary;
+            // }
         }
 
         // &:nth-of-type(odd) {
@@ -1308,7 +1319,7 @@ strong {
 // Site Footer 
 .site-footer {
     background-color: $site-footer-bg;
-    color: white;
+    color: $site-footer-text;
     @include background-paved;
 
     &-company-info {
@@ -1378,39 +1389,12 @@ strong {
         }
     }
 
-    // &-socials {
-    //     display: grid;
-    //     grid-gap: 1rem;
-    //     justify-content: flex-start;
-    //     align-content: center;
-    //     grid-auto-flow: column;
-    //     margin-top: 2rem;
-
-    //     @include until($navbar-breakpoint) {
-    //         margin-top: 2rem;
-    //     }
-
-    //     a {
-    //         color: inherit;
-    //         transition: color 0.3s;
-
-    //         &:hover {
-    //             color: $link;
-    //         }
-    //     }
-
-    //     a[href^="#"] {
-    //         display: none !important;
-    //     }
-
-    // }
-
     &-signoff {
-        background-color: lighten($site-footer-bg, 0%);
+        background-color: $site-footer-signoff-bg;
         text-align: center;
         padding-top: $size-4;
         padding-bottom: $size-4;
-        color: inherit;
+        color: $site-footer-signoff-text;
         font-size: $size-7;
     }
 
