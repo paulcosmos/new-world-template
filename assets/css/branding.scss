@@ -62,7 +62,8 @@ $navbar-divider-background-color: lighten($secondary, 10%);
 
 // Buttons
 $button-text: lighten($primary, 70%);
-// $button-text: darken($primary, 70%);
+$button-bg: $primary;
+$button-bg-hover: lighten($button-bg, 10%);
 
 // Modal overlay
 $sl-overlay-background: $secondary;
@@ -106,7 +107,10 @@ $why-us-text: $text;
 $why-us-title-size: 1rem;
 
 // Main Footer
-$site-footer-bg: darken($secondary, 10%);
+$site-footer-bg: $secondary;
+$site-footer-text: white;
+$site-footer-signoff-bg: darken($secondary, 3%);
+$site-footer-signoff-text: $tertiary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
