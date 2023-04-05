@@ -1,7 +1,7 @@
 ---
-title: James
+title: Casey
 type: review
 rating: 5
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Did our living room and kitchen about a year ago, never had any problems and it looks fabulous would definitely use this service again! 

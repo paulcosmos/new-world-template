@@ -2,7 +2,6 @@
 title: 'Home'
 menu: ["main","footer"]
 weight: 1
-preheading: "#preheading"
 _build:
   render: true
 cascade:
