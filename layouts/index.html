@@ -50,8 +50,39 @@
 						</div>
 					</div>
 					{{ partial "services/services-grid.html" . }}
-					{{ partial "services/services-image-list.html" . }}
+					{{/*  {{ partial "services/services-image-list.html" . }}  */}}
 
+				</div>
+			</section>
+
+			<section class="section has-background-rings">
+				<div class="container is-fullhd">
+					<div class="columns is-multiline is-mobile is-variable is-4">
+						<div class="column" data-aos="fade-in">
+							<h2>We also offer garden maintenance services</h2>
+							<p>Alongside our hard landscaping services, we also offer a variety of garden maintenance and general upkeep services, including:</p>
+						</div>
+						<div class="column is-narrow" data-aos="fade-in">
+							<span class="icon company-icon">
+								<i class="fa-light fa-leaf"></i>
+							</span>
+						</div>
+					</div>
+					<div class="columns is-multiline is-variable is-4">
+						{{/* Automatically increment the aos-delay value */}}
+						{{- $currentPage := . -}}
+						{{- $.Scratch.Set "delay" 0 }}
+						{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/extra/" -}}
+						{{- $i := $.Scratch.Get "delay" }}
+							{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
+							<div class="column is-6-tablet is-6-desktop is-4-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
+								<div class="box content">
+								<h3>{{ .Params.title }}</h3>
+								<p>{{ .Params.desc }}</p>
+								</div>
+							</div>
+						{{ end -}}
+					</div>
 				</div>
 			</section>
 

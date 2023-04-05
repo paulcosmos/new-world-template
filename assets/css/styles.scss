@@ -64,6 +64,9 @@ strong {
     color: inherit;
 }
 
+.box {
+    color: inherit;
+}
 // Global Helpers
 
 .nwdm-link {
@@ -91,6 +94,10 @@ strong {
 
 .has-background-tertiary {
     background-color: $tertiary;
+}
+
+.has-background-rings {
+	@include background-rings;
 }
 
 // Buttons 

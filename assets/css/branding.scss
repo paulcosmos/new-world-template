@@ -120,11 +120,11 @@ $paving-bg: darken($secondary, 0%);
 $paving: darken($paving-bg, 2%);
 
 // Settings for 'Rings' BG pattern
-$ring-bg-color: $tertiary;
-$ring-grad-top: $primary;
-$ring-grad-bottom: darken($primary, 10%);
+$ring-bg-color: white;
+$ring-grad-top: white;
+$ring-grad-bottom: $tertiary;
 $ring-x: 0%;
-$ring-y: 50%;
+$ring-y: 100%;
 
 // Settings for 'Dots' BG pattern
 $dot-bg-color: $tertiary;
