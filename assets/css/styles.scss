@@ -1132,6 +1132,13 @@ strong {
 
 .level {
     flex-wrap: wrap !important;
+
+    &-item {
+
+        img {
+            
+        }
+    }
 }
 
 .stats-row {
@@ -1142,26 +1149,10 @@ strong {
         padding-bottom:1.5rem;
         flex: 0 0 25%;
 
-        // @include until($desktop) {
-        //     &:not(:last-child) {
-        //         border-bottom: solid 2px $tertiary;
-        //     }
-        // }
-
         @include from($tablet) {
             @include until($navbar-breakpoint) {
                 padding: 0.5rem;
                 flex: 0 0 33%;
-
-                // &:nth-of-type(odd) {
-                //     &:not(:last-child) {
-                //     border-right: solid 2px $tertiary;
-                //     }
-                // }
-
-                // &:nth-child(-n+2) {
-                //     // border-bottom: solid 2px $tertiary;
-                // }
             }
         }
 
@@ -1170,16 +1161,7 @@ strong {
             padding-left: 2rem;
             padding-right: 2rem;
             flex: 0 0 20%;
-            // border-bottom: none;
-
-            // &:not(:last-child) {
-            //     border-right: solid 2px $tertiary;
-            // }
         }
-
-        // &:nth-of-type(odd) {
-        //     border-right: none;
-        // }
 
         h3 {
             font-weight: 800;
@@ -1196,10 +1178,6 @@ strong {
             font-size: 1.75rem;
         }
     }
-
-    // .level-item {
-    //     flex-shrink: 1!important;
-    // }
 }
 
 // Quote Form Modal Pop-up

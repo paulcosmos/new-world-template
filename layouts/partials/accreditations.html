@@ -32,6 +32,11 @@
 				<a href="https://mybuilder.com/profile/view/{{- .mybuilder -}}" title="Find us on mybuilder.com" target="_blank" rel="noopener"><img src="images/creds/mybuilder.png" alt="" title=""></a>
 			</div>
 			{{ end }}
+			{{- if .bookabuilder }}
+			<div class="level-item stats-row-item has-text-centered">
+				<a href="https://mybuilder.com/profile/view/{{- .bookabuilder -}}" title="Find us on bookabuilderuk.com" target="_blank" rel="noopener"><img src="images/creds/bookabuilder.png" alt="" title=""></a>
+			</div>
+			{{ end }}
 		{{ end }}
 	</div>
 </section>
