@@ -37,6 +37,12 @@
 				<a href="https://mybuilder.com/profile/view/{{- .bookabuilder -}}" title="Find us on bookabuilderuk.com" target="_blank" rel="noopener"><img src="images/creds/bookabuilder.png" alt="" title=""></a>
 			</div>
 			{{ end }}
+			{{- if .localheroes }}
+			<div class="level-item stats-row-item has-text-centered">
+				<a href="https://www.localheroes.com/the-heroes/{{- .localheros -}}" title="Find us on localheroes.com" target="_blank" rel="noopener"><img src="images/creds/localheroes.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			
 		{{ end }}
 	</div>
 </section>
