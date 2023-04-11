@@ -14,6 +14,5 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}
-
+# Providing a wide range of **{{<industry>}} services in {{<county>}}**
 With over {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.

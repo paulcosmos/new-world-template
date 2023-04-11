@@ -4,7 +4,7 @@ weight: 2
 _build:
     list: true
     render: false
-image: images/elemental-van.jpg
+image: images/planters.jpg
 ---
 
 ## We're **{{<industry>}} experts**. Bespoke jobs are our speciality

@@ -7,9 +7,9 @@ _build:
 image: images/paving.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
+## We're your **top choice** for {{<industry>}} in {{<county>}}
 
-* Many years of experience in and around {{<towncity>}}
+* Many years of experience in and around {{<county>}}
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 

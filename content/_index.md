@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}, {{<county>}}** and beyond.
+# Reliable, professional **{{<industry>}} services** throughout **{{<county>}}** and beyond.
 
-**{{<company>}}** has been serving {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been serving customers in {{<county>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
