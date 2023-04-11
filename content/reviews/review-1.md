@@ -1,7 +1,7 @@
 ---
-title: James
+title: 
 type: review
 rating: 5
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Tidy and kept me informed of what was being done. Knowledgeable with good previous experience.

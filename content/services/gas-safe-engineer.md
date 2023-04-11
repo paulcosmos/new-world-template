@@ -1,27 +1,15 @@
 ---
-title: "#ServiceTitle"
+title: "Gas Safe Engineer"
 type: service-page
 layout: servicepage
-desc: Elegant, luxurious bath and shower rooms designed and built to your exact specifications. Our team have years of bathroom fitting experience in a multitude of property types and sizes.
-services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-weight: 4
-image: "images/service.jpg"
-backgroundImage: images/service-hero.jpg
+desc: Our Gas Safe Registered experts are fully qualified to inspect, diagnose, repair and service all domestic boilers.
+weight: 3
+image: "images/boiler-inspection.jpg"
+backgroundImage: images/boiler-repair-hero.jpg
 anchor:
 _build:
   render: true
 ---
-
-## #ServiceTitle
 
 At {{<company>}}, we are a property improvement and maintenance team based in Tunbridge Wells, offering our bathroom installation services to all homeowners throughout the areas of Kent. As an established team we are highly skilled and experienced in all aspects of bathroom planning and installations which allows us to take on a comprehensive range of styles and allows us to achieve first-class results every time. Therefore, if you are looking for a specialist team to transform your bathroom, we are perfect for you. 
 

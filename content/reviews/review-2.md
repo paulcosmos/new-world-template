@@ -1,7 +1,7 @@
 ---
-title: Sarah
+title: 
 type: review
 rating: 5
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Chris went above and beyond, he carried out the work to a high standard and shared a lot of knowledge with us on our heating system as we have just moved in to a new house.

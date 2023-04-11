@@ -208,6 +208,10 @@ strong {
     }
 }
 
+strong {
+    font-weight: bold;
+}
+
 .has-accent {
 
     white-space: normal;
@@ -246,10 +250,10 @@ strong {
 // Top Banner
 .top-banner {
     background-color: $top-banner-bg;
-    // @include brand-gradient;
+    @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
-    // font-weight: bold;
+    font-weight: bold;
     padding: 0.5rem 0;
     // padding-top: $size-7;
     // padding-bottom: $size-7;
@@ -356,6 +360,8 @@ strong {
     }
 
     &-logo {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
         img {
             max-width: $logo-max-width;
@@ -1066,6 +1072,7 @@ strong {
 }
 
 .accreditations {
+    display: flex;
 
     &-banner {
         display: grid;
@@ -1115,6 +1122,35 @@ strong {
             }
         }
     }
+
+    &-item {          
+        padding-top:1.5rem;
+        padding-bottom:1.5rem;
+        flex: 0 1 50%;
+        // margin: 0 0.5rem;
+        margin-bottom: 2rem!important;
+
+        @include from($tablet) {
+            @include until($navbar-breakpoint) {
+                padding: 0.5rem;
+                flex: 0 0 50%;
+            }
+        }
+
+        @include from($desktop) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            flex: 0 0 20%;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 // Why Us Banner
@@ -1150,6 +1186,11 @@ strong {
         padding-top:1.5rem;
         padding-bottom:1.5rem;
         flex: 0 0 25%;
+        background: white;
+        @include box-shadow-below;
+        border-radius: $image-corner-radius;
+        margin: 0 0.5rem;
+        margin-bottom: 2rem!important;
 
         @include from($tablet) {
             @include until($navbar-breakpoint) {
@@ -1158,18 +1199,29 @@ strong {
             }
         }
 
-
         @include from($desktop) {
             padding-left: 2rem;
             padding-right: 2rem;
             flex: 0 0 20%;
+
+            &:first-child {
+                margin-left: 0;
+            }
+    
+            &:last-child {
+                margin-right: 0;
+            }
         }
 
         h3 {
             font-weight: 800;
+            font-size: $size-3;
+            line-height: 2rem;
+            color: $text;
 
             span {
-                color: lighten($text, 30%);
+                color: lighten($accent, 0%);
+                font-size: $size-5;
             }
         }
 
@@ -1294,6 +1346,17 @@ strong {
     @include until($desktop) {
         min-height: 300px;
     }
+}
+
+.policy {
+
+    &-content {
+
+        strong {
+            font-weight: bold;
+        }
+    }
+
 }
 
 // Site Footer 

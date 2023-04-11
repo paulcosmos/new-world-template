@@ -4,13 +4,13 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/tools.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality
+## We're **{{<industry>}} experts**. Dosmetic jobs are our speciality
 
-+ Experienced across all aspects of {{<industry>}}
-+ Reputation for fast delivery times and reliability
-+ Competitive and affordable prices
+* Experienced across all aspects of {{<industry>}}
+* Reputation for fast delivery times and reliability
+* No job too big or too small
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<mobile>}}** for a no obligation quote.
+**{{<company>}}** are experienced {{<industry>}} professionals. Whatever the job, we can handle it. Call us today on **{{<mobile>}}** for a no obligation quote.
