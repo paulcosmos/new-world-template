@@ -6,9 +6,9 @@ weight: 3
 image: images/furniture-painting.jpg
 anchor:
 ---
-## Furniture Painting
+## Furniture Painting & Spraying
 
-Transform the look of your home with our professional furniture painting service. Ideal for kitchen cupboards, stools and chairs, wardrobes and bedroom furniture, tables and everything else.
+Transform the look of your home with our professional hand or spray-painting service for fixtures and furniture. Ideal for kitchen cupboards, stools and chairs, wardrobes and bedroom furniture, tables and everything else.
 
 * Quick and effective way to change the look of a room
 * Vast range of colours and finishes available
