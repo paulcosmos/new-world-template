@@ -8,7 +8,7 @@ anchor:
 ---
 ## Fire Sprinkler Inspections
 
-Having a working fire alarm is an effective alert in the event of a fire, allowing precious time to get you and your family to safety. Our sprinkler inspection services will ensure it's always in peak condition and ready should you need it.
+Having a working fire suppression system is an effective alert in the event of a fire, allowing precious time to get you and your family to safety. Our sprinkler inspection services will ensure it's always in peak condition and ready should you need it.
 
 * Recommnded to have your system checked regularly
 * Available for both homeowners and landlords 

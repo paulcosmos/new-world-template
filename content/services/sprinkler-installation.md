@@ -8,7 +8,7 @@ anchor:
 ---
 ## Fire Sprinkler Installation
 
-In the past, fire sprinklers would require enormous water tanks to supply the systems. Thanks to their intuitive design, Sprinkle Safe can be connected directly to your property's existing mains water supply so that you barely notice it’s there until it’s needed.
+In the past, fire sprinklers would require enormous water tanks to supply the systems. Thanks to modern, innovative designs, sprinklers can now be connected directly to your property's existing mains water supply so that you barely notice it’s there until it’s needed.
 
 * Sprinkler systems are now a legal requirement in Wales. 
 * Installation by a team with over 25 years total experience
