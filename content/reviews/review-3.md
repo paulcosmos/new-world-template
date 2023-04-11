@@ -1,7 +1,7 @@
 ---
-title: Andy
+title: 
 type: review
 rating: 5
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Stephen and team turned my tatty front garden into a very neat and good looking gravel drive. The work was quick and the result has made our drive and house look much more appealing. Communication was great. The quoted estimate was accurate and very competitive. We would definitely recommend Sterdec to anyone who needs groundworks.

@@ -3,8 +3,8 @@ title: "Landscaping & Groundworks"
 type: service-item
 desc: From concept to finished project, we have the tools and experience to create your perfect outdoor space.
 weight: 3
-image: images/digging.jpg
-anchor: Landscaping
+image: images/landscaping.jpg
+anchor: Groundworks
 ---
 ## Landscaping & Groundworks
 

@@ -1,7 +1,7 @@
 ---
-title: Sarah
+title: 
 type: review
 rating: 5
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Stephen was reliable, hard-working and fulfilled the job to a high standard. Would absolutely recommend him to anyone needing some construction work doing.
