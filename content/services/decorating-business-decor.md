@@ -1,7 +1,7 @@
 ---
 title: "Business Decor"
 type: service-item
-desc: Professional decorating services to transform your business premises.
+desc: Reliable, expert decorating services to transform your business premises.
 weight: 12
 image: images/business-decorating.jpg
 ---
