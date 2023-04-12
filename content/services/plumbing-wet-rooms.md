@@ -2,7 +2,7 @@
 title: "Wet Rooms"
 type: service-item
 desc: Wet rooms professionally designed and expertly built from scratch.
-weight: 2
+weight: 3
 image: images/wet-room.jpg
 anchor: 
 ---
