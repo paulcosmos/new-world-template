@@ -1,7 +1,7 @@
 ---
-title: Andy
+title: 
 type: review
 rating: 5
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+I would highly recommend Bobby. He was very prompt in offering me a time slot to do the job, was really efficient, and also very friendly. I will definately call on him again when I need to.
