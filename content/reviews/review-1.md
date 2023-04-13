@@ -1,7 +1,7 @@
 ---
-title: James
+title: 
 type: review
 rating: 5
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Great job. Just what I asked for. Two very pleasant, polite guys, nothing was too much trouble.

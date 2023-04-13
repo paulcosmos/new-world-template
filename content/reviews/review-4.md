@@ -1,7 +1,7 @@
 ---
-title: Peter
+title: 
 type: review
 rating: 5
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Rhydian done an amazing job at my shop. Turned it from Old offices to a hair salon and it looks amazing. From skirting boards, fixing ceilings to panelling walls and hanging doors. Highly recommend
