@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: rgb(36, 40, 51);
+$primary: #df5d3c;
+$secondary: #17182a;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -42,7 +42,7 @@ $hero-index-text: white;
 //  Top Banner
 $top-banner-bg: darken($secondary,10%);
 $top-banner-text: lighten($primary, 50%);
-$top-banner-icon: $accent;
+$top-banner-icon: $top-banner-text;
 
 // Main Navigation 
 $navbar-background-color: $secondary;
@@ -114,7 +114,7 @@ $site-footer-signoff-text: $tertiary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($secondary, 10%);
+$paving-bg: darken($secondary, 0%);
 $paving: darken($paving-bg, 2%);
 
 // Settings for 'Rings' BG pattern
