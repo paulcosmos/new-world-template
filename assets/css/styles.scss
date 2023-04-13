@@ -309,7 +309,7 @@ strong {
 
         span {
             display: block;
-            font-size: 1em;
+            font-size: 0.6rem;
             color: inherit;
             font-weight: 400;
 
@@ -724,7 +724,7 @@ strong {
         }
 
         &-content {
-            color: $secondary;
+            color: $text;
 
             h2 {
                 color: inherit;
@@ -798,6 +798,7 @@ strong {
         }
 
         &-item {
+            color: inherit;
 
             &:not(:last-child) {
                 margin-bottom: $size-1 !important;
