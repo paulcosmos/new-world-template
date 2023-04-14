@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #e95e22;
-$secondary: rgb(26, 26, 27);
+$primary: #38b7db;
+$secondary: rgb(30, 30, 39);
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -96,9 +96,9 @@ $review-nav-border: solid 1px $review-nav-text;
 $review-dots-width: 28px;
 $review-dots-height: $review-dots-width;
 $review-dots-border-radius: 50%;
-$review-dots-border: solid 4px lighten($link, 20%);
+$review-dots-border: solid 4px lighten($secondary, 20%);
 $review-dots-bg: transparent;
-$review-dots-bg-active: $link;
+$review-dots-bg-active: lighten($secondary, 20%);
 $review-stars: $primary;
 $review-stars-remaining:lighten($primary, 15%);
 
@@ -109,12 +109,12 @@ $why-us-title-size: 1rem;
 // Main Footer
 $site-footer-bg: $secondary;
 $site-footer-text: white;
-$site-footer-signoff-bg: darken($secondary, 3%);
+$site-footer-signoff-bg: darken($secondary, 2%);
 $site-footer-signoff-text: $tertiary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($secondary, 10%);
+$paving-bg: darken($secondary, 0%);
 $paving: darken($paving-bg, 2%);
 
 // Settings for 'Rings' BG pattern

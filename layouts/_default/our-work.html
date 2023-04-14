@@ -2,92 +2,78 @@
 			<section class="section">
 				<div class="container is-fullhd">
 					<span class="pre-heading">Our work</span>
-					<h2>Single story extension foundation</h2>
-					{{ $folder := .Params.name | lower | printf "assets/images/gallery_01/%s"}}
-					<div class="gallery mt-2 py-6">
-						{{- if fileExists $folder }}
+					<h2>House Extensions & New Construction</h2>
+					<div class="slider extensions-slider mt-2 py-6">
+					{{ $folder := .Params.name | lower | printf "assets/images/extensions/%s"}}
+					{{- if fileExists $folder }}
 						{{ $files := readDir $folder }}
 						{{- range $files -}}
-						{{- if not .IsDir}}
-						{{- if ne .Name ".DS_Store" }}
-						{{- $image := resources.Get ( printf "images/gallery_01/%s" .Name ) -}}
-						{{- $thumb := resources.Get $image  -}}
-						<a href="{{ $image.RelPermalink }}">
+							{{- if not .IsDir}}
+								{{- if ne .Name ".DS_Store" }}
+									{{- $image := resources.Get ( printf "images/extensions/%s" .Name ) -}}
+									{{- $thumb := resources.Get $image  -}}
 							<img 
-								src='{{ ($thumb.Fill "460x460 q75 smart").RelPermalink }}' 
+								src='{{ ($thumb.Resize "x600 q75 smart").RelPermalink }}' 
 								alt="" 
 								title=""
-								width="460px"
-								height="460px"
 							/>
-						</a>
+								{{ end -}}
+							{{ end -}}
 						{{ end -}}
-						{{ end -}}
-						{{ end -}}
-						{{ end -}}
-						<div class="clear"></div>
-					</div>
+					{{ end -}}
+					</div>		
 					<hr>
 				</div>
 			</section>
 			<section class="section">
 				<div class="container is-fullhd">
 					<span class="pre-heading">Our work</span>
-					<h2>Single story extension before and after</h2>
-					{{ $folder := .Params.name | lower | printf "assets/images/gallery_02/%s"}}
-					<div class="gallery mt-2 py-6">
+					<h2>Patios & Driveways</h2>
+					<div class="slider driveways-slider mt-2 py-6">
+						{{ $folder := .Params.name | lower | printf "assets/images/driveways/%s"}}
 						{{- if fileExists $folder }}
-						{{ $files := readDir $folder }}
-						{{- range $files -}}
-						{{- if not .IsDir}}
-						{{- if ne .Name ".DS_Store" }}
-						{{- $image := resources.Get ( printf "images/gallery_02/%s" .Name ) -}}
-						{{- $thumb := resources.Get $image  -}}
-						<a href="{{ $image.RelPermalink }}">
-							<img 
-								src='{{ ($thumb.Fill "460x460 q75 smart").RelPermalink }}' 
-								alt="" 
-								title=""
-								width="460px"
-								height="460px"
-							/>
-						</a>
+							{{ $files := readDir $folder }}
+							{{- range $files -}}
+								{{- if not .IsDir}}
+									{{- if ne .Name ".DS_Store" }}
+										{{- $image := resources.Get ( printf "images/driveways/%s" .Name ) -}}
+										{{- $thumb := resources.Get $image  -}}
+								<img 
+									src='{{ ($thumb.Resize "x600 q75 smart").RelPermalink }}' 
+									alt="" 
+									title=""
+								/>
+									{{ end -}}
+								{{ end -}}
+							{{ end -}}
 						{{ end -}}
-						{{ end -}}
-						{{ end -}}
-						{{ end -}}
-						<div class="clear"></div>
 					</div>
 					<hr>
 				</div>
 			</section>
+			{{/*  Gallery 3  */}}
 			<section class="section">
 				<div class="container is-fullhd">
 					<span class="pre-heading">Our work</span>
-					<h2>Double story extension from foundation up to roof level</h2>
-					{{ $folder := .Params.name | lower | printf "assets/images/gallery_03/%s"}}
-					<div class="gallery mt-2 py-6">
+					<h2>Landscaping & Groundworks</h2>
+					<div class="slider landscaping-slider mt-2 py-6">
+						{{ $folder := .Params.name | lower | printf "assets/images/landscaping/%s"}}
 						{{- if fileExists $folder }}
-						{{ $files := readDir $folder }}
-						{{- range $files -}}
-						{{- if not .IsDir}}
-						{{- if ne .Name ".DS_Store" }}
-						{{- $image := resources.Get ( printf "images/gallery_03/%s" .Name ) -}}
-						{{- $thumb := resources.Get $image  -}}
-						<a href="{{ $image.RelPermalink }}">
-							<img 
-								src='{{ ($thumb.Fill "460x460 q75 smart").RelPermalink }}' 
-								alt="" 
-								title=""
-								width="460px"
-								height="460px"
-							/>
-						</a>
+							{{ $files := readDir $folder }}
+							{{- range $files -}}
+								{{- if not .IsDir}}
+									{{- if ne .Name ".DS_Store" }}
+										{{- $image := resources.Get ( printf "images/landscaping/%s" .Name ) -}}
+										{{- $thumb := resources.Get $image  -}}
+								<img 
+									src='{{ ($thumb.Resize "x600 q75 smart").RelPermalink }}' 
+									alt="" 
+									title=""
+								/>
+									{{ end -}}
+								{{ end -}}
+							{{ end -}}
 						{{ end -}}
-						{{ end -}}
-						{{ end -}}
-						{{ end -}}
-						<div class="clear"></div>
 					</div>
 					<hr>
 				</div>
@@ -99,15 +85,104 @@
 		{{ end }}
 
 		{{- define "scripts" -}}
-		<script src="js/simple-lightbox.min.js?v2.11.0"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 		<script>
-			(function() {
-				var $gallery = new SimpleLightbox('.gallery a', {
-				scrollZoom : false,
-				captions: false,
-				overlayOpacity : 0.95,
-				disableScroll: false,
+			var slider = tns({
+			    container: '.extensions-slider',
+				// autoHeight: false,
+				 autoWidth: true,
+			   	items: 3,
+			    slideBy: 1,
+			    loop: true,
+			    autoplay: false,
+			    autoplayButtonOutput: false,
+			    autoplayHoverPause: true,
+			    speed: 800,
+			    gutter: 20,
+			    edgePadding: 50,
+			    center: true,
+			    nav: true,
+				navPosition: "bottom",
+			    //navContainer: '#extensions-slider-nav',
+				navAsThumbnails: true,
+			    controls: false,
+			    preventActionWhenRunning: true,
+				responsive: {
+			        960: {
+			            items: 2,
+			            center: false,
+			        },
+			        1024: {
+			            gutter: 20,
+			            items: 2,
+			            edgePadding: 40,
+			        },
+			    }
 			});
-		})();
+
+			var slider = tns({
+			    container: '.driveways-slider',
+				// autoHeight: false,
+				 autoWidth: true,
+			   	items: 3,
+			    slideBy: 1,
+			    loop: true,
+			    autoplay: false,
+			    autoplayButtonOutput: false,
+			    autoplayHoverPause: true,
+			    speed: 800,
+			    gutter: 20,
+			    edgePadding: 50,
+			    center: true,
+			    nav: true,
+				navPosition: "bottom",
+				navAsThumbnails: true,
+			    controls: false,
+			    preventActionWhenRunning: true,
+				responsive: {
+			        960: {
+			            items: 2,
+			            center: false,
+			        },
+			        1024: {
+			            gutter: 20,
+			            items: 2,
+			            edgePadding: 40,
+			        },
+			    }
+			});
+
+			var slider = tns({
+			    container: '.landscaping-slider',
+				// autoHeight: false,
+				 autoWidth: true,
+			   	items: 3,
+			    slideBy: 1,
+			    loop: true,
+			    autoplay: false,
+			    autoplayButtonOutput: false,
+			    autoplayHoverPause: true,
+			    speed: 800,
+			    gutter: 20,
+			    edgePadding: 50,
+			    center: true,
+			    nav: true,
+				navPosition: "bottom",
+				navAsThumbnails: true,
+			    controls: false,
+			    preventActionWhenRunning: true,
+				responsive: {
+			        960: {
+			            items: 2,
+			            center: false,
+			        },
+			        1024: {
+			            gutter: 20,
+			            items: 2,
+			            edgePadding: 40,
+			        },
+			    }
+			});
 		</script>
 		{{ end }}

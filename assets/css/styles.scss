@@ -842,6 +842,47 @@ strong {
     }
 }
 
+.slider {
+
+    &-dots {
+        text-align: center;
+        margin-top: 2rem;
+
+        &>[aria-controls] {
+            width: $review-dots-width;
+            height: $review-dots-height;
+            padding: 0;
+            margin: 0 5px;
+            margin-top: 0px;
+            margin-top: 1em;
+            border-radius: $review-dots-border-radius;
+            background: $review-dots-bg;
+            border: $review-dots-border;
+        }
+
+        &>.tns-nav-active {
+            background: $review-dots-bg-active;
+        }
+    }
+}
+
+.tns-nav {
+    text-align: center;
+    button {
+        width:$review-dots-width;
+        height:$review-dots-height;
+        border-radius: $review-dots-border-radius;
+        border: $review-dots-border;
+        margin: 0 5px;
+        background: $review-dots-bg;
+        transition: background 0.2s;
+
+        &.tns-nav-active {
+        background: $review-dots-bg-active;
+        }
+    }
+}
+
 // Customer Reviews 
 .review {
 
@@ -874,27 +915,6 @@ strong {
                     color: $review-nav-text-hover;
                     border: $review-nav-border;
                 }
-            }
-        }
-
-        &-dots {
-            text-align: center;
-            margin-top: 2rem;
-
-            &>[aria-controls] {
-                width: $review-dots-width;
-                height: $review-dots-height;
-                padding: 0;
-                margin: 0 5px;
-                margin-top: 0px;
-                margin-top: 1em;
-                border-radius: $review-dots-border-radius;
-                background: $review-dots-bg;
-                border: $review-dots-border;
-            }
-
-            &>.tns-nav-active {
-                background: $review-dots-bg-active;
             }
         }
     }
