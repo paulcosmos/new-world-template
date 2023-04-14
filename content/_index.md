@@ -13,4 +13,4 @@ cascade:
 
 # Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
 
-**{{<company>}}** has been serving {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}**, a two-man team for all your drainage needs. We are both ex-soldiers and believe in high standards, hard work and customer satisfaction. Discounts are available for military veterans.

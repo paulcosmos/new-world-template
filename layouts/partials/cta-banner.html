@@ -1,13 +1,11 @@
 <section class="section">
                <div class="container is-fullhd">
                   <div class="content cta-banner" data-aos="fade-up">
-                     <p>Don't see a specific service you need listed above? Call us today on 
-                     {{ if $.Site.Params.phone }}
+                     <p>Whatever the problem or for a more details on our drainage services call us today on
                         <a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a>
-                     {{ else -}}
-                        <a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.mobile |  -}}'>{{ .Site.Params.mobile }}</a>
-                     {{- end }}
-                     and we'll be happy to answer any questions you have.</p>
+                    or
+                        <a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.mobile |  -}}'>{{ .Site.Params.mobile }}</a>.
+                     We can usually get to you in the same day and we are available 24 hours a day, 7 days a week.</p>
                   </div>
                </div>
             </section>

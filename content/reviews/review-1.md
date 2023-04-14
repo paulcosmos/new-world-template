@@ -1,7 +1,7 @@
 ---
-title: James
+title: 
 type: review
 rating: 5
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Cleared our blocked internal drain and used camera to confirm it was clear and advised why it was happening. Came when someone else didn't turn up, because it was an unusual job.
