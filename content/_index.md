@@ -2,7 +2,7 @@
 title: 'Home'
 menu: ["main","footer"]
 weight: 1
-preheading: 
+preheading:  Premier Lawn Mowing Services Ltd
 _build:
   render: true
 cascade:
@@ -11,6 +11,8 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, **Wrexham** and **Flintshire**.
 
-**{{<company>}}** has been serving {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** have been cerving customers in and around **Chester**, **Wrexham** and **Flintshire** for a number of years. We are experienced in all aspects of the {{<industry>}} trade. 
+
+Call today on **{{<phone>}}** to find out if we operate in your area.
