@@ -59,7 +59,7 @@
 			<div class="container is-fluid site-footer-signoff">
 				<div class="content">
 					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ .street }}, {{ .towncity }}, {{ .county }}, {{ .postcode }}</address>
+					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ if .building }}{{ .building }},{{end }} {{ .street }}, {{ .towncity }}, {{ .county }}, {{ .postcode }}</address>
 					{{- end }}
 				</div>
 			</div>

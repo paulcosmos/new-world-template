@@ -9,7 +9,11 @@
 								<h2>Business Address</h2>
 								<p>Please note, our business address is purely for correspondence. We do not have a public office.</p>
 								<address>
-								{{- with .Site.Params }}
+									{{- with .Site.Params }}
+									<b>{{ .fullname }},<br/></b>
+									{{ if .building }}
+									{{ .building }},<br/>
+									{{end }}
 									{{ .street }},<br/>
 									{{ .towncity }},<br/>
 									{{ .county }}, <br/>
