@@ -8,12 +8,13 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #579EB0;
+$secondary: #0b0e17;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
 $link: $primary;
+$animated-underline: #C2D102;
 $text: $secondary;
 
 @mixin brand-gradient {
@@ -47,12 +48,12 @@ $top-banner-icon: $accent;
 // Main Navigation 
 $navbar-background-color: $secondary;
 $navbar-height: 5rem;
-$logo-max-width: 180px;
+$logo-max-width: 280px;
 $logo-max-height: $navbar-height;
 $navbar-item-color: white;
-$navbar-item-hover-color: white;
+$navbar-item-hover-color: $primary;
 $navbar-item-hover-background-color: transparent;
-$navbar-burger-color: $primary;
+$navbar-burger-color: $animated-underline;
 $navbar-dropdown-arrow: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
@@ -63,7 +64,7 @@ $navbar-divider-background-color: lighten($secondary, 10%);
 // Buttons
 $button-text: lighten($primary, 70%);
 $button-bg: $primary;
-$button-bg-hover: lighten($button-bg, 10%);
+$button-bg-hover: lighten($button-bg, 5%);
 
 // Modal overlay
 $sl-overlay-background: $secondary;

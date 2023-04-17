@@ -16,7 +16,9 @@
 									{{end }}
 									{{ .street }},<br/>
 									{{ .towncity }},<br/>
+									{{ if .county -}}
 									{{ .county }}, <br/>
+									{{ end -}}
 									{{ .postcode }}
 								{{- end }}
 								</address>

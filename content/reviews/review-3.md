@@ -1,7 +1,7 @@
 ---
-title: Andy
+title: L. Whitehouse
 type: review
 rating: 5
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+WOW! Honestly I am blown away by AD cleaning service- I needed a last minute cleaner for a move out, and the entire place was completely transformed in such a short space of time. Super flexible, very lovely people who were able to work magic on my generally pretty worn down flat. We had a checkout today and the inspectors said they've never been so impressed. Five Stars!

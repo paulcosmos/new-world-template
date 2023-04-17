@@ -24,7 +24,7 @@
     display: block;
     width: 0%;
     height: 2px;
-    background-color: $link;
+    background-color: $animated-underline;
     transition: all 0.3s;
 }
 
@@ -74,7 +74,7 @@
 	background: none;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 @mixin background-rings {
