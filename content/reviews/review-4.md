@@ -1,7 +1,8 @@
 ---
-title: Peter
+title: Damy A.
 type: review
 rating: 5
+weight: 6
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Thanks a lot for your excellent service today, it was so top notch. Expect several referrals from me!

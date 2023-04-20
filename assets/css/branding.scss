@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #339CC9;
+$secondary: #00001A;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -24,14 +24,14 @@ $text: $secondary;
 
 // Page hero settings 
 @mixin hero-default-bg {
-	@include background-dots;
+	background-color: $tertiary;
 }
 
 @mixin hero-index-bg {
 	// @include hero-default-bg;
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
+	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/house-moves-hero.jpg');
 	
 	// @include from($tablet) {
 	// 	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
@@ -41,7 +41,7 @@ $text: $secondary;
 $hero-index-text: white;
 
 //  Top Banner
-$top-banner-bg: darken($secondary,10%);
+$top-banner-bg: lighten($secondary,5%);
 $top-banner-text: lighten($primary, 50%);
 $top-banner-icon: $accent;
 
@@ -55,12 +55,11 @@ $navbar-item-hover-color: white;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
 $navbar-dropdown-arrow: $primary;
-$navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
+$navbar-dropdown-background-color: $navbar-background-color;
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
-$navbar-divider-background-color: lighten($secondary, 10%);
-
+$navbar-divider-background-color: darken($primary, 40%);
 // Buttons
 $button-text: lighten($primary, 70%);
 $button-bg: $primary;
@@ -115,8 +114,8 @@ $site-footer-signoff-text: $tertiary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($secondary, 10%);
-$paving: darken($paving-bg, 2%);
+$paving-bg: lighten($secondary, 2%);
+$paving: $paving-bg;
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;

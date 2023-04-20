@@ -10,6 +10,6 @@ cascade:
     render: false
 ---
 
-# We think the **quality of our work** speaks volumes. See for yourself.
+# We pride ourselves on our **friendly service** and swift, safe transportation of your possessions
 
 Here's some recently completed {{<industry>}} projects in and around {{<towncity>}}. Click on any of the thumbnails below for a closer look.
