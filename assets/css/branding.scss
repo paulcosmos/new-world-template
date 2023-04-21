@@ -43,7 +43,7 @@ $hero-index-text: white;
 //  Top Banner
 $top-banner-bg: darken($secondary,10%);
 $top-banner-text: lighten($primary, 50%);
-$top-banner-icon: white;
+$top-banner-icon: $link;
 
 // Main Navigation 
 $navbar-background-color: $secondary;
