@@ -1298,8 +1298,8 @@ strong {
 // Site Footer 
 .site-footer {
     background-color: $site-footer-bg;
-    color: white;
     @include background-paved;
+    color: white;
 
     &-company-info {
 

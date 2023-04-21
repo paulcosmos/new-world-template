@@ -1,8 +1,8 @@
 ---
 title: 'Home'
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 1
-preheading: "#preheading"
+preheading: "Over 18 years of experience"
 _build:
   render: true
 cascade:

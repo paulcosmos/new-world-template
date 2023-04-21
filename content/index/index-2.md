@@ -4,12 +4,12 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/boiler-open.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality
+## We're **gas and central heating experts**. Tough jobs are our speciality
 
-+ Experienced across all aspects of {{<industry>}}
++ Experienced across all aspects of the industru
 + Reputation for fast delivery times and reliability
 + Competitive and affordable prices
 
