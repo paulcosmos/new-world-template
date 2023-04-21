@@ -15,6 +15,7 @@ $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
 $link: $primary;
 $text: $secondary;
+$animated-underline: $link;
 
 @mixin brand-gradient {
 	background: $primary;
