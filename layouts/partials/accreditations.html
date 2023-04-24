@@ -42,7 +42,11 @@
 				<a href="https://www.localheroes.com/the-heroes/{{- .localheroes -}}" title="Find us on localheroes.com" target="_blank" rel="noopener"><img src="images/creds/localheroes.png" alt="" title=""></a>
 			</div>
 			{{ end }}
-			
+			{{- if .watersafe }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.watersafe.org.uk/search/{{- .watersafe -}}" title="Watersafe.org certified" target="_blank" rel="noopener"><img src="images/creds/watersafe.png" alt="" title=""></a>
+			</div>
+			{{ end }}
 		{{ end }}
 	</div>
 </section>
