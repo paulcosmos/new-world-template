@@ -4,7 +4,7 @@ weight: 1
 _build:
     list: true
     render: false
-image:
+image: images/radiator-dial.jpg
 ---
 
 ## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
@@ -13,7 +13,7 @@ image:
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent final quality and a professional working practices.
+**{{<company>}}** has been serving customers in {{<towncity>}} and beyond for a number of years. We offer hassle free and affordable {{<industry>}} services, and are confident that we can meet your requirements and exceed your expectations.
 
 
 

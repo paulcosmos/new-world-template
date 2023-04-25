@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #5c1c79;
-$secondary: #242833;
+$primary: #a83f92;
+$secondary: #1a1729;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -41,7 +41,7 @@ $text: $secondary;
 $hero-index-text: white;
 
 //  Top Banner
-$top-banner-bg: darken($secondary,10%);
+$top-banner-bg: darken($secondary,0%);
 $top-banner-text: lighten($primary, 50%);
 $top-banner-icon: $accent;
 
@@ -54,6 +54,7 @@ $navbar-item-color: $secondary;
 $navbar-item-hover-color: $link;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
+$navbar-item-mobile-color: white;
 $navbar-dropdown-arrow: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;

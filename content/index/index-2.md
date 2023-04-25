@@ -4,13 +4,13 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/van.jpg
 ---
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality
 
-+ Experienced across all aspects of {{<industry>}}
-+ Reputation for fast delivery times and reliability
++ Experienced across a wide range of {{<industry>}} projects
++ Friendly, reliable service with swift response times
 + Competitive and affordable prices
 
 We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<mobile>}}** for a no obligation quote.

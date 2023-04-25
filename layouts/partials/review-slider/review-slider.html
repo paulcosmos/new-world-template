@@ -11,19 +11,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="columns is-multiline is-variable is-6">
-					<div class="columns is-multiline is-mobile review-slider">
+				<div class="columns is-multiline is-mobile review-slider">
 					{{ $slides := 6 }}
 					{{ range first $slides (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
 						{{ partial "review-slider/review-quote.html" . }}
 					{{ end -}}
-					</div>
 				</div>
 				<div class="_container py-5 has-text-centered _is-fluid">
 					<div class="columns">
 						<div class="column is-8 is-offset-2">
 							<div class="is-grouped">
-								{{/*  <a href="/reviews.html" class="button is-ghost is-inline-block" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">View more reviews</a>  */}}
 								<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
 									<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
 								</div>
@@ -52,7 +49,6 @@
 		<script>
 			var slider = tns({
 			    container: '.review-slider',
-				//mode: 'gallery',
 				autoHeight: false,
 			   	items: 1,
 			    slideBy: 1,
