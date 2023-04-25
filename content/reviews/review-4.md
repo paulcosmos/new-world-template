@@ -1,7 +1,7 @@
 ---
-title: Peter
+title: Jack S.
 type: review
 rating: 5
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+ Fantastic workmanship and really takes care of the work they do. Would highly recomend for any tiling work. 

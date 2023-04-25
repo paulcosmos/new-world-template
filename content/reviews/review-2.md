@@ -1,7 +1,7 @@
 ---
-title: Sarah
+title: Lara H
 type: review
 rating: 5
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Ian tiled my kitchen wall. He is polite and has great time keeping skills. very tidy worker. He has a vast knowledge of materials. Nothing was to much bother for him. 
