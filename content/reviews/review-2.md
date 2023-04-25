@@ -1,7 +1,7 @@
 ---
-title: Sarah
+title: 
 type: review
 rating: 5
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Easy to contact, fast response, polite, professional and tidy. I would recommend this company.

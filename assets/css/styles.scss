@@ -364,7 +364,7 @@ strong {
             max-height: $logo-max-height;
 
             @include until($navbar-breakpoint) {
-                max-height: 3rem !important;
+                max-height: 4.2rem !important;
             }
         }
     }
@@ -381,6 +381,10 @@ strong {
                 top: 0;
                 left: 0;
                 background-color: rgba(0, 0, 0, 0.94);
+
+                .navbar-item {
+                    color: $navbar-item-mobile-color;
+                }
             }
         }
     }
@@ -1101,7 +1105,7 @@ strong {
 
     &-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(128px, 0.5fr));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 0.5fr));
         gap: 1.75rem;
 
         @include until($desktop) {
@@ -1122,7 +1126,7 @@ strong {
     &-item {          
         padding-top:1.5rem;
         padding-bottom:1.5rem;
-        flex: 0 1 50%;
+        flex: 0 1 100%;
         // margin: 0 0.5rem;
         margin-bottom: 2rem!important;
 

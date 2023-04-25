@@ -1,6 +1,6 @@
-baseURL = 'amethystplumbing.com'
+baseURL = 'http://amethystplumbing.com'
 title = ''
-servicePages = 'true'
+servicePages = 'false'
 
 languageCode = 'en-us'
 uglyurls = true
