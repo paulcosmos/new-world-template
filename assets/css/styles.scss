@@ -89,13 +89,18 @@ strong {
     }
 }
 
+.has-background-tertiary {
+    background-color: $tertiary;
+}
+
 // Buttons 
 .button {
     color: $secondary;
 
     &-primary,
     &-primary>button {
-        @include brand-gradient;
+        // @include brand-gradient;
+        background-color: $button-bg;
         border-color: transparent;
         color: $button-text !important;
         border-width: 1px;
@@ -114,7 +119,7 @@ strong {
         height: 3rem;
 
         &:hover {
-            background-color: lighten($primary, 10%);
+            background-color: $button-bg-hover;
             border-color: transparent;
             color: $button-text !important;
 
@@ -244,7 +249,7 @@ strong {
     // @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
-    // font-weight: bold;
+    font-weight: bold;
     padding: 0.5rem 0;
     // padding-top: $size-7;
     // padding-bottom: $size-7;
@@ -304,9 +309,13 @@ strong {
 
         span {
             display: block;
-            font-size: 0.75em;
+            font-size: 1em;
             color: inherit;
             font-weight: 400;
+
+            @include from($widescreen) {
+                font-size: $size-7;
+            }
         }
 
     }
@@ -347,6 +356,8 @@ strong {
     }
 
     &-logo {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
         img {
             max-width: $logo-max-width;
@@ -675,6 +686,7 @@ strong {
 
         &:hover {
             color: inherit;
+            fill: inherit;
         }
     }
 
@@ -689,6 +701,7 @@ strong {
 
         &:hover {
             fill: $link;
+            color: $link;
         }
     }
 }
@@ -711,7 +724,7 @@ strong {
         }
 
         &-content {
-            color: $secondary;
+            color: $text;
 
             h2 {
                 color: inherit;
@@ -1055,6 +1068,7 @@ strong {
 }
 
 .accreditations {
+    display: flex;
 
     &-banner {
         display: grid;
@@ -1104,6 +1118,35 @@ strong {
             }
         }
     }
+
+    &-item {          
+        padding-top:1.5rem;
+        padding-bottom:1.5rem;
+        flex: 0 1 50%;
+        // margin: 0 0.5rem;
+        margin-bottom: 2rem!important;
+
+        @include from($tablet) {
+            @include until($navbar-breakpoint) {
+                padding: 0.5rem;
+                flex: 0 0 50%;
+            }
+        }
+
+        @include from($desktop) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            flex: 0 0 20%;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 // Why Us Banner
@@ -1123,54 +1166,58 @@ strong {
 
 .level {
     flex-wrap: wrap !important;
+
+    &-item {
+
+        img {
+            
+        }
+    }
 }
 
 .stats-row {
     background-color: $tertiary;
 
-    &-item {
-
-        @include until($tablet) {
-
-            &:not(:last-child) {
-                border-bottom: solid 2px $tertiary;
-            }
-        }
+    &-item {            
+        padding-top:1.5rem;
+        padding-bottom:1.5rem;
+        flex: 0 0 25%;
+        background: white;
+        @include box-shadow-below;
+        border-radius: $image-corner-radius;
+        margin: 0 0.5rem;
+        margin-bottom: 2rem!important;
 
         @include from($tablet) {
             @include until($navbar-breakpoint) {
                 padding: 0.5rem;
-                flex: 0 0 50%;
-
-                &:nth-of-type(odd) {
-                    border-right: solid 2px $tertiary;
-                }
-
-                &:nth-child(-n+2) {
-                    border-bottom: solid 2px $tertiary;
-                }
+                flex: 0 0 33%;
             }
         }
-
 
         @include from($desktop) {
-            border-bottom: none;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            flex: 0 0 20%;
 
-            &:not(:last-child) {
-                border-right: solid 2px $tertiary;
+            &:first-child {
+                margin-left: 0;
             }
-
+    
+            &:last-child {
+                margin-right: 0;
+            }
         }
-
-        // &:nth-of-type(odd) {
-        //     border-right: none;
-        // }
 
         h3 {
             font-weight: 800;
+            font-size: $size-3;
+            line-height: 2rem;
+            color: $text;
 
             span {
-                color: lighten($text, 30%);
+                color: lighten($accent, 0%);
+                font-size: $size-5;
             }
         }
 
@@ -1181,10 +1228,6 @@ strong {
             font-size: 1.75rem;
         }
     }
-
-    // .level-item {
-    //     flex-shrink: 1!important;
-    // }
 }
 
 // Quote Form Modal Pop-up
@@ -1304,7 +1347,7 @@ strong {
 // Site Footer 
 .site-footer {
     background-color: $site-footer-bg;
-    color: white;
+    color: $site-footer-text;
     @include background-paved;
 
     &-company-info {
@@ -1374,39 +1417,12 @@ strong {
         }
     }
 
-    // &-socials {
-    //     display: grid;
-    //     grid-gap: 1rem;
-    //     justify-content: flex-start;
-    //     align-content: center;
-    //     grid-auto-flow: column;
-    //     margin-top: 2rem;
-
-    //     @include until($navbar-breakpoint) {
-    //         margin-top: 2rem;
-    //     }
-
-    //     a {
-    //         color: inherit;
-    //         transition: color 0.3s;
-
-    //         &:hover {
-    //             color: $link;
-    //         }
-    //     }
-
-    //     a[href^="#"] {
-    //         display: none !important;
-    //     }
-
-    // }
-
     &-signoff {
-        background-color: lighten($site-footer-bg, 0%);
+        background-color: $site-footer-signoff-bg;
         text-align: center;
         padding-top: $size-4;
         padding-bottom: $size-4;
-        color: inherit;
+        color: $site-footer-signoff-text;
         font-size: $size-7;
     }
 
