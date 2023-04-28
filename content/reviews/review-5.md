@@ -4,4 +4,4 @@ type: review
 rating: 5
 ---
 
-Friendly and tidy, got the job done efficiently and quickky
+Friendly and tidy, got the job done efficiently and quickly

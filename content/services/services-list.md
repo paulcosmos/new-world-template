@@ -2,7 +2,8 @@
 type: services-list
 image: images/external-scaffolding.jpg
 ---
-* Decorative Cornicing & Plasterwork
+* Decorative Cornicing
+* Decorative Plasterwork
 * Dry Lining & Plasterboard
 * External Rendering
 * External Wall Insulation
