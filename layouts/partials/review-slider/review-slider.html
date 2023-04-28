@@ -45,45 +45,44 @@
 			</section>
 
 	{{- define "scripts" -}}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-	<script>
-		var slider = tns({
-			container: '.review-slider',
-			autoHeight: false,
-			   items: 1,
-			slideBy: 1,
-			loop: true,
-			autoplay: false,
-			autoplayButtonOutput: false,
-			autoplayHoverPause: true,
-			speed: 800,
-			gutter: 0,
-			edgePadding: 10,
-			center: true,
-			nav: false,
-			controls: true,
-			controlsContainer: '#review-slider-controls',
-			preventActionWhenRunning: true,
-			responsive: {
-				960: {
-					items: 2,
-					controls: true,
-					center: false,
-				},
-				1024: {
-					slideBy: 1,
-					gutter: 20,
-					items: 2,
-					edgePadding: 40,
-					center: true,
-				},
-				1280: {
-					items: 2,
-					edgePadding: 40,
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+		<script>
+			var slider = tns({
+			    container: '.review-slider',
+				autoHeight: false,
+			   	items: 1,
+			    slideBy: 1,
+			    loop: true,
+			    autoplay: false,
+			    autoplayButtonOutput: false,
+			    autoplayHoverPause: true,
+			    speed: 800,
+			    gutter: 0,
+			    edgePadding: 10,
+			    center: true,
+			    nav: false,
+			    controls: true,
+			    controlsContainer: '#review-slider-controls',
+			    preventActionWhenRunning: true,
+				responsive: {
+			        960: {
+			            items: 2,
+			            controls: true,
+			            center: false,
+			        },
+			        1024: {
+			            gutter: 20,
+			            items: 2,
+			            edgePadding: 40,
+			            center: true,
+			        },
+			        1280: {
+			            items: 2,
+			            edgePadding: 40,
 
-				}
-			}
-		});
-	</script>
+			        }
+			    }
+			});
+		</script>
 		
 	{{ end }}
