@@ -2,7 +2,7 @@
 title: 'Home'
 menu: ["main","footer"]
 weight: 1
-preheading: 
+preheading: Never give safety a day off
 _build:
   render: true
 cascade:
@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
 
-**{{<company>}}** has been serving {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been supplying and professionally installing fire safety doors for over {{<years>}}. From fitting a single fire door to outfitting an entire office block, we offer our services to both commercial and private customers in an around {{<county>}}.
