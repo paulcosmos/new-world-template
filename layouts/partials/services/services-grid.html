@@ -6,6 +6,14 @@
 					{{- $i := $.Scratch.Get "delay" }}
 						{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
 						<div class="column is-6-tablet is-6-desktop is-4-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
+							<div class="image is-5by4 _company-services-image mb-4">
+								{{- $image := resources.Get .Params.image }}
+								{{- if $image }}
+								<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' alt="" title=""/>
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
 							<h3>{{ .Params.title }}</h3>
 							<p>{{ .Params.desc }}</p>
 							<a href="/services.html">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
