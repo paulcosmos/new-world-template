@@ -1,16 +1,18 @@
 {{ define "hero" }}
 <section class="hero hero-service is-halfheight"
- 	style="background-image:linear-gradient(-249deg, rgba(36, 40, 51, 1), rgba(36, 40, 51, 0.5)), url(../{{ .Params.backgroundImage }}">
+ 	style="background-image:linear-gradient(-249deg, rgba(239, 242, 245, 0.3), rgba(239, 242, 245, 0.0)), url(../{{ .Params.backgroundImage }}">
 	<div class="hero-body">
 		<div class="container is-fullhd">
 			<div class="columns">
 				<div class="column is-12-tablet is-8-desktop is-6-fullhd">
-					<span class="pre-heading" data-aos="fade-left">
-						Our Services
-					</span>
-					<div class="content hero-services-content has-accent" data-aos="fade-down">
-						<h1>{{ .Title }}</h1>
-						<p>{{ .Params.desc }}</p>
+					<div class="box">
+						<span class="pre-heading" data-aos="fade-left">
+							Our Services
+						</span>
+						<div class="content hero-services-content has-accent" data-aos="fade-down">
+							<h1>{{ .Title }}</h1>
+							<p>{{ .Params.desc }}</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -30,8 +32,12 @@
 			</div>
 			<div class="column is-offset-1-desktop _is-narrow _is-12-touch" data-aos="fade-left">
 			{{- if .Params.services }}
-				<aside class="content service-page-list box">
-					<h3>What we offer</h3>
+				<aside class="content service-page-list box mb-6">
+					<h3>{{ if .Params.servicesheading }}
+						{{ .Params.servicesheading }}
+						{{ else }} What we offer
+						{{ end }}
+					</h3>
 					<ul>
 					{{ range .Params.services }}
 					<li>{{ . }}</li>

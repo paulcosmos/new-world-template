@@ -1,5 +1,5 @@
 			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
+			<section class="hero is-medium hero-index">
 				{{ partial "hero/hero-image.html" . }}
 				{{- with .Site.Params }}
 				{{ if .emblem }}
@@ -21,10 +21,10 @@
 						</div>
 
 						<div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
-							<div class="image has-rounded-corners">
+							<div class="image is-1by1 has-rounded-corners">
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
-								<img src='{{ ($image.Resize "x890 q50 Smart").RelPermalink }}' alt="" title=""/>
+								<img src='{{ ($image.Fill "1200x1200 q50 Smart").RelPermalink }}' alt="" title=""/>
 							{{ else }}
 								<img src='/images/placeholder.jpg'/>
 							{{- end }}
@@ -34,9 +34,9 @@
 				{{- end }}
 				</div>
 			</section>
-
-			{{ partial "accreditations.html" . }}
 			
+			{{ partial "accreditations.html" . }}
+
 			<section class="section company-services-overview">
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
@@ -53,14 +53,14 @@
 				</div>
 			</section>
 
-			{{ partial "cta-banner.html" . }}
+			{{/*  {{ partial "cta-banner.html" . }}  */}}
 
 			{{ partial "review-slider/review-slider.html" . }}
-
-			{{ partial "cta-text.html" . }}
-
+			
 			{{ partial "why-us-banner.html" . }}
-
+			
+			{{ partial "cta-text.html" . }}
+			
 			{{- end }}
 
 	{{- define "scripts" -}}

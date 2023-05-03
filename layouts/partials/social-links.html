@@ -8,4 +8,6 @@
 								{{ if .mybuilder }}<a href="https://mybuilder.com/profile/view/{{- .mybuilder -}}" title="Find us on mybuilder.com" target="_blank" rel="noopener"><span class="icon">{{- partial "svg/mybuilder.html" . -}}</span></a>{{ end }}
 								{{ if .ratedpeople }}<a href="https://ratedpeople.com/profile/{{- .ratedpeople -}}" title="Find us on ratedpeople.com" target="_blank" rel="noopener"><span class="icon">{{- partial "svg/ratedpeople.html" . -}}</span></a>{{ end }}
 								{{ if .localheroes }}<a href="https://www.localheroes.com/the-heroes/{{- .localheroes -}}" title="Find us on localheroes.com" target="_blank" rel="noopener"><span class="icon">{{- partial "svg/localheroes.html" . -}}</span></a>{{ end }}
+								{{ if .linkedin }}<a href="https://www.linkedin.com/company/{{ .linkedin }}" title="Find us on Linkedin.com" target="_blank" rel="noopener"><span class="icon">{{- partial "svg/linkedin.html" . -}}</span></a>{{ end }}
+
 							{{- end }}

@@ -6,14 +6,18 @@
 <html>
 	<head class="has-navbar">
 	{{ partial "meta.html" . }}
+
+	{{ block "stylesheets" . }}
+
+	{{ end }}
 	</head>
 
 	<body>
 		<header>
 			{{ partial "top-banner.html" . }}
-
-			{{ partial "navbar.html" . }}
-
+			{{/*  {{ if not .IsHome }}  */}}
+			{{ partial "navbar-dropdown.html" . }}
+			{{/*  {{ end }}  */}}
 			{{ block "hero" . -}}
 			<section class="hero is-small">
 			    {{ partial "hero/hero-text-only.html" . }}

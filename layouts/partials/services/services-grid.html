@@ -2,13 +2,49 @@
 					{{/* Automatically increment the aos-delay value */}}
 					{{- $currentPage := . -}}
 					{{- $.Scratch.Set "delay" 0 }}
-					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" -}}
+					{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" -}}
 					{{- $i := $.Scratch.Get "delay" }}
 						{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
-						<div class="column is-6-tablet is-6-desktop is-4-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
-							<h3>{{ .Params.title }}</h3>
-							<p>{{ .Params.desc }}</p>
-							<a href="/services.html">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
+						<div class="column is-6-tablet is-6-desktop is-4-fullhd company-services-overview-item mb-6" data-aos="fade-in" data-aos-delay="{{ print $i }}">
+							<div class="is-flex is-flex-grow-2 is-flex-direction-column is-justify-content-space-between pb-5">
+								<div class="image is-5by4 _company-services-image mb-4">
+									{{- $image := resources.Get .Params.image }}
+									{{- if $image }}
+									<a href="{{ .RelPermalink }}">
+									<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' alt="" title=""/>
+									</a>
+									{{ else }}
+									<img src='/images/placeholder.jpg'/>
+									{{- end }}
+								</div>
+								<h3>{{ .Params.title }}</h3>
+								<p>{{ .Params.desc }}</p>
+								<div>
+									<a href="{{ .RelPermalink }}">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
+								</div>
+							</div>
 						</div>
 					{{ end -}}
+					<div class="column is-6-tablet is-6-desktop is-4-fullhd company-services-overview-item mb-6" data-aos="fade-up">
+						<div class="content _box hero-cta">
+							<h3>Get a Quote</h3>
+							<hr/>
+							<h4>
+							{{- if $.Site.Params.phone }}
+								{{- .Site.Params.phone -}}
+							{{ else }}
+								{{- .Site.Params.mobile -}}
+							{{- end -}}
+							</h4>
+							<p>Don't see a specific service you need listed here? Speak to us today about your electrical requirements and we'll be happy to help. Or you can use our contact form to request a callback</p>
+							<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
+								<span class="icon-text">
+								  <span class="icon is-hidden-touch">
+									<i class="fa-regular fa-phone"></i>
+								  </span>
+								  <span>Request a call back</span>
+								</span>
+							</button>
+						</div>
+					</div>
 					</div>

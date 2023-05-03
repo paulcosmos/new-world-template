@@ -8,8 +8,8 @@
 @import "bulma/utilities/initial-variables.sass";
 @import "bulma/utilities/mixins.sass";
 
-$button-corner-radius: 4px;
-$image-corner-radius: 0.5rem;
+$button-corner-radius: 0px;
+$image-corner-radius: 0.0rem;
 $navbar-breakpoint: $desktop !default;
 
 html {
@@ -91,6 +91,10 @@ strong {
 
 .has-background-tertiary {
     background-color: $tertiary;
+}
+
+.box {
+    color: $text;
 }
 
 // Buttons 
@@ -432,6 +436,8 @@ strong {
     &-burger {
         text-align: center;
         position: relative;
+        width: $navbar-height;
+        height: $navbar-height;
 
         &:hover {
             color: white;
@@ -524,13 +530,18 @@ strong {
         padding-bottom: 3rem;
     }
 
+    h1 {
+        font-weight: $family-heading-weight;
+    }
+
     &-index {
         @include hero-index-bg;
         padding-top: 0;
-
+        color: $hero-index-text;
         h1,
         h2 {
             font-size: $hero-title-size;
+            font-weight: $family-heading-weight;
         }
 
         p {
@@ -539,23 +550,15 @@ strong {
     }
 
     &-service {
-        color: white;
+        color: currentColor;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
 
         @include until($tablet) {
-            background-color: $secondary;
+            // background-color: $secondary;
             background-image: none !important;
         }
-
-        // h1, h2 {
-        //     font-size: $hero-title-size;
-        // }
-
-        // p {
-        //     font-size: $hero-text-size;
-        // }
     }
 
     &-fail {
@@ -584,7 +587,7 @@ strong {
     &-cta {
         background-color: $hero-cta-bg;
         border-radius: $hero-cta-corner-radius;
-        @include box-shadow-offset-solid($hero-cta-shadow);
+        @include box-shadow-outer-glow;
         color: white;
         font-weight: 600;
         padding: 1.25rem;
@@ -732,6 +735,7 @@ strong {
 
             h2 {
                 color: inherit;
+                font-weight: $family-heading-weight;
             }
 
         }
@@ -746,8 +750,9 @@ strong {
     &-services {
 
         &-overview {
-            background-color: $tertiary;
-            @include background-dots;
+            // background-color: $tertiary;
+            background-image: linear-gradient(0deg, rgba($tertiary, 1), white);
+            // @include background-dots;
             background-position: bottom;
             padding-bottom: 5rem;
 
@@ -760,10 +765,10 @@ strong {
                 margin-bottom: 1rem;
 
                 h3 {
-                    // color: white;
                     color: inherit;
                     font-size: $size-5;
                     margin-bottom: $size-7;
+                    font-weight: $family-heading-weight;
                 }
 
                 a {
@@ -771,6 +776,7 @@ strong {
                     color: inherit;
                     font-weight: 600;
                     margin-top: 1rem;
+                    color:$link;
 
                     &:after {
                         @include animated-underline;
@@ -778,11 +784,16 @@ strong {
                     }
 
                     &:hover {
-                        color: $primary;
+                        color: $link;
                         margin-right: 0.5rem;
 
                         &:after {
-                            width: 100%;
+                            width: 0%;
+                        }
+
+                        &>img {
+                            opacity: 0.5;
+                            transition: all 0.3s;
                         }
                     }
 
@@ -951,7 +962,7 @@ strong {
     }
 
     &-stars {
-        color: $primary;
+        color: $review-stars;
         margin: 0.5rem 0 1rem;
 
         .stars-remaining {
@@ -967,7 +978,7 @@ strong {
     gap: 1rem;
 
     @include from($desktop) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     @include from($fullhd) {
@@ -1033,7 +1044,6 @@ strong {
         font-size: $size-5;
         position: relative;
         margin-top: -5rem;
-        // margin-bottom: 2rem;
         border: solid 4px white;
         padding: 2rem;
         font-weight: 600;
@@ -1160,10 +1170,8 @@ strong {
         background-color: $tertiary;
         color: $why-us-text;
 
-        // padding: 3rem 0;
-        // padding-bottom: 3rem;
-        @include from($navbar-breakpoint) {
-            // padding: 3rem 32px;
+        h3 {
+            font-weight: $family-heading-weight;
         }
     }
 }
@@ -1266,9 +1274,10 @@ strong {
     &-page {
 
         &-list {
-            background-color: lighten($secondary, 0%);
-            color: white;
-            @include box-shadow-offset-solid($hero-cta-shadow);
+            background-color: $tertiary;
+            border: solid 1px darken($tertiary, 5%);
+            color: currentColor;
+            // @include box-shadow-offset-solid($hero-cta-shadow);
         }
     }
 }
@@ -1338,6 +1347,7 @@ strong {
 .map {
     margin-bottom: 3rem;
     width: 100%;
+    height: 600px;
 }
 
 .ol-viewport {

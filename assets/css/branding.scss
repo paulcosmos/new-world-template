@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
 
 // Override Bulma variables here:
-$family-headings: "Poppins", sans-serif;
+$family-headings: "Nunito Sans", sans-serif;
 $family-sans-serif: "Nunito Sans", sans-serif;
-$family-heading-weight: 600;
+$family-heading-weight: 700;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #0b617a;
+$eliteyellow: #fec627;
+$secondary: #001218;
+$tertiary: #edf2f7;
 $info: $secondary;
-$tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
 $link: $primary;
-$animated-underline: $link;
+$animated-underline: $eliteyellow;
 $text: $secondary;
 
 @mixin brand-gradient {
@@ -31,36 +33,42 @@ $text: $secondary;
 	// @include hero-default-bg;
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
-	
-	// @include from($tablet) {
-	// 	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
-	// }
+	background-image: linear-gradient(90deg, rgba($tertiary, 0.0), rgba($tertiary, 0.0)), url('../images/hero-image.jpg');
+	background-image: linear-gradient(90deg, rgba($tertiary, 0.0), rgba($tertiary, 0.0)), url('../images/hero-image.svg');
+	background-size: contain;
+	background-position: top right;
+
+	@include until($desktop) {
+		background-image: linear-gradient(90deg, rgba(white, 1.0), rgba($tertiary, 0.3)), url('../images/hero-image.jpg');
+		background-image: linear-gradient(90deg, rgba(white, 1.0), rgba($tertiary, 0.3)), url('../images/hero-image.svg');
+	}
+
+	@include until($tablet) {
+		background-image: linear-gradient(90deg, rgba($tertiary, 1.0), rgba($tertiary, 0.5));
+	}
 }
 
-$hero-index-text: white;
-
 //  Top Banner
-$top-banner-bg: darken($secondary,10%);
-$top-banner-text: lighten($primary, 50%);
+$top-banner-bg: lighten($secondary,0%);
+$top-banner-text: white;
 $top-banner-icon: $accent;
 
 // Main Navigation 
-$navbar-background-color: $secondary;
+$navbar-background-color: white;
 $navbar-height: 5rem;
-$logo-max-width: 180px;
+$logo-max-width: 200px;
 $logo-max-height: $navbar-height;
-$navbar-item-color: white;
-$navbar-item-hover-color: white;
+$navbar-item-color: $secondary;
+$navbar-item-hover-color: $link;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
-$navbar-item-mobile-color: $navbar-item-color;
+$navbar-item-mobile-color: white;
 $navbar-dropdown-arrow: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
-$navbar-divider-background-color: lighten($secondary, 10%);
+$navbar-divider-background-color: $tertiary;
 
 // Buttons
 $button-text: lighten($primary, 70%);
@@ -73,6 +81,7 @@ $sl-navigation-color: white;
 
 // Page Hero
 $hero-text: $text;
+$hero-index-text: $secondary;
 $preheading-text: $primary;
 $preheading-size: 1rem;
 $hero-title-size: 2rem;
@@ -85,11 +94,11 @@ $hero-cta-border: none;
 $bg-overlay: rgba(0, 0, 0, 0.6);
 
 // Services
-$services-item-divider: solid 2px $tertiary;
+$services-item-divider: solid 2px darken($tertiary, 2%);
 
 // Reviews
-$review-section-bg: $secondary;
-$review-section-text: white;
+$review-section-bg: linear-gradient(0deg, $tertiary, white);
+$review-section-text: $text;
 $review-nav-text: $primary;
 $review-nav-bg: transparent;
 $review-nav-text-hover: white;
@@ -101,7 +110,7 @@ $review-dots-border-radius: 50%;
 $review-dots-border: solid 4px lighten($link, 20%);
 $review-dots-bg: transparent;
 $review-dots-bg-active: $link;
-$review-stars: $primary;
+$review-stars: $eliteyellow;
 $review-stars-remaining:lighten($primary, 15%);
 
 // Why us banner 
@@ -116,8 +125,8 @@ $site-footer-signoff-text: $tertiary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($secondary, 10%);
-$paving: darken($paving-bg, 2%);
+$paving-bg: darken($secondary, 0%);
+$paving: darken($paving-bg, 0%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;
@@ -127,7 +136,7 @@ $ring-x: 0%;
 $ring-y: 50%;
 
 // Settings for 'Dots' BG pattern
-$dot-bg-color: $tertiary;
+$dot-bg-color: lighten($tertiary, 1%);
 $dot-color: darken($dot-bg-color, 5%);
 $dot-size: 2px;
 $dot-space: 16px;
