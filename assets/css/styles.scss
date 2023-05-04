@@ -793,7 +793,14 @@ strong {
         &-list {
 
             .content {
-                columns: 2;
+                columns: 1;
+
+                @include from($tablet){
+                    columns: 2
+                }
+                @include from($desktop){
+                    columns: 3
+                }
 
                 ul {
                     margin-top: 0;

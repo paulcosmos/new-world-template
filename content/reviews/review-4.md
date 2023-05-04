@@ -1,5 +1,5 @@
 ---
-title: Peter
+title: 
 type: review
 rating: 5
 ---
