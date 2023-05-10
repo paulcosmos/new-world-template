@@ -784,6 +784,11 @@ strong {
                         &:after {
                             width: 100%;
                         }
+                        
+                        &>img {
+                            opacity: 0.5;
+                            transition: all 0.3s;
+                        }
                     }
 
                 }

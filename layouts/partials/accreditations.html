@@ -12,6 +12,11 @@
 				<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><img src="images/creds/facebook.png" alt="" title=""></a>
 			</div>
 			{{ end }}
+			{{- if .tradesmen }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://tradesmenonline.co.uk/directory/name/{{- .tradesmen -}}" title="Find us on tradesmenonline.co.uk" target="_blank" rel="noopener"><img src="images/creds/tradesmenonline.png" alt="" title=""></a>
+			</div>
+			{{ end }}
 			{{- if .yell }}
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="https://yell.com/biz/{{- .yell -}}" title="Find us on Yell.com" target="_blank" rel="noopener"><img src="images/creds/yell.png" alt="" title=""></a>
@@ -47,6 +52,7 @@
 				<a href="https://www.watersafe.org.uk/search/{{- .watersafe -}}" title="Watersafe.org certified" target="_blank" rel="noopener"><img src="images/creds/watersafe.png" alt="" title=""></a>
 			</div>
 			{{ end }}
+
 		{{ end }}
 	</div>
 </section>
