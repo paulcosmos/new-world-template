@@ -30,7 +30,10 @@
 												{{- end -}}
 												</div>
 												{{- if .Title -}}
-												<figcaption>{{ .Title }}</figcaption>
+												<figcaption>
+													{{ .Title }}
+													{{ if .Params.location }}<span class="is-size-6 is-block">{{.Params.location }}</span>{{ end }}
+												</figcaption>
 												{{ end }}
 											</figure>
 										</div>
