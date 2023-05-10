@@ -5,16 +5,16 @@
 						<div class="column is-12-mobile is-5-tablet _is-5-desktop is-3-fullhd ">
 							<div class="content site-footer-company-info">
 							{{- with .Site.Params }}
-								<h4>{{ .company }}</h4>
-								<h5>{{ .industry | humanize }} services in {{ .towncity }} and {{ .county }}.</h5>
-								<div data-aos="fade-right" data-aos-easing="ease-in-back">
+								<img class="mb-2" src="images/logo.png" width="280px">
+								<h5>{{ .industry | humanize }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>
+								{{/*  <div data-aos="fade-right" data-aos-easing="ease-in-back">
 									<a 	class="button-primary ml-0 modal-trigger" 
 										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
-								</div>
+								</div>  */}}
 							{{ end }}
-								<div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
+								{{/*  <div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
 								{{ partial "social-links.html" . }}
-								</div>
+								</div>  */}}
 							</div>
 						</div>
 
@@ -33,8 +33,8 @@
 						<div class="content site-footer-links has-columns">
 						<h4>Primary Services</h4>
 							<ul>
-								{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-								<li><a href="/services.html">
+								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
+								<li><a href="{{ .RelPermalink }}">
 									{{- if (ne .Params.anchor nil) }}
 										{{- .Params.anchor -}}
 									{{- else -}}

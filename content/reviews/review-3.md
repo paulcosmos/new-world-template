@@ -1,7 +1,7 @@
 ---
-title: Andy
+title: Bathroom Refurbishment
 type: review
 rating: 5
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Very happy with bathroom refurbishment that guys done for us. Highly reccomend

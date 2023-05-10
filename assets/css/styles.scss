@@ -784,6 +784,11 @@ strong {
                         &:after {
                             width: 100%;
                         }
+
+                        &>img {
+                            opacity: 0.5;
+                            transition: all 0.3s;
+                        }
                     }
 
                 }
@@ -1135,6 +1140,16 @@ strong {
                 padding: 0.5rem;
                 flex: 0 0 50%;
             }
+        }
+
+        p {
+            margin: 1rem 0;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        img {
+            height: 100px;
         }
 
         @include from($desktop) {

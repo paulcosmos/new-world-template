@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 1
 preheading: 
 _build:
@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable, professional, insurance-backed **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
 
-**{{<company>}}** has been serving {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** are a small team of skilled and trusted tradesmen with a wealth of experience working together as a close-knit team. We have been serving customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
