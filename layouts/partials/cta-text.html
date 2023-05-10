@@ -11,8 +11,8 @@
 									</div>
 									<div class="has-accent" data-aos="fade-left">
 										<h2>Looking for <span>{{ .Site.Params.industry }}</span> services in {{ .Site.Params.county }}?</h2>
-										<p>Speak to us today and we'll be happy to answer any questions you have or arrange a free, no obligation quote.</p>
-										<p>Already got a quote? Call us today on <b>{{- .Site.Params.mobile -}}</b> and let us beat it!</p>
+										<p>Speak to us today and we'll be happy to answer any questions or arrange a free, no obligation quote.</p>
+										<p>Already got a quote? Call us today on <b>{{- if $.Site.Params.phone }}{{- .Site.Params.phone -}}{{ else }}{{- .Site.Params.mobile -}}{{- end -}}</b> and let us beat it!</p>
 									</div>
 								</div>
 							</div>
