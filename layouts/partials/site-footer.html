@@ -2,49 +2,58 @@
 				<div class="container _is-fluid is-fullhd">
 					<div class="columns is-mobile is-8 is-multiline">
 
-						<div class="column is-12-mobile is-5-tablet _is-5-desktop is-3-fullhd ">
+						<div class="column is-12-mobile is-12-tablet is-4-desktop">
 							<div class="content site-footer-company-info">
 							{{- with .Site.Params }}
 								<h4>{{ .company }}</h4>
-								<h5>{{ .industry | humanize }} services in {{ .towncity }} and {{ .county }}.</h5>
+								<h5>{{ .industry | humanize }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>
 								<div data-aos="fade-right" data-aos-easing="ease-in-back">
 									<a 	class="button-primary ml-0 modal-trigger" 
 										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
 								</div>
 							{{ end }}
-								<div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
-								{{ partial "social-links.html" . }}
-								</div>
+								{{/*  <div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
+								{{ partial "social-links-icons.html" . }}
+								</div>  */}}
 							</div>
 						</div>
 
-					<div class="column is-6-mobile is-3-tablet is-3-desktop is-3-fullhd is-offset-1-fullhd _is-narrow">
-						<div class="content site-footer-links has-columns">
-							<h4>Site Links</h4>
-							<ul>
-								{{- range .Site.Menus.footer }}
-								<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
-								{{- end }}
-							</ul>
+						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd is-offset-1-desktop _is-narrow">
+							<div class="content site-footer-links _has-columns">
+								<h4>Site Links</h4>
+								<ul>
+									{{- range .Site.Menus.footer }}
+									<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
+									{{- end }}
+								</ul>
+							</div>
 						</div>
-					</div>
 
-					<div class="column _is-12-mobile is-3-tablet _is-3-desktop is-4-fullhd is-offset-1-fullhd">
-						<div class="content site-footer-links has-columns">
-						<h4>Primary Services</h4>
-							<ul>
-								{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-								<li><a href="/services.html">
-									{{- if (ne .Params.anchor nil) }}
-										{{- .Params.anchor -}}
-									{{- else -}}
-										{{- .Title -}}
-									{{- end -}}
-								</a></li>
-								{{- end }}
-							</ul>
+						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
+							<div class="content site-footer-links _has-columns">
+							<h4>Primary Services</h4>
+								<ul>
+									{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
+									<li><a href="/services.html#{{ anchorize .Title }}">
+										{{- if (ne .Params.anchor nil) }}
+											{{- .Params.anchor -}}
+										{{- else -}}
+											{{- .Title -}}
+										{{- end -}}
+									</a></li>
+									{{- end }}
+								</ul>
+							</div>
 						</div>
-					</div>
+
+						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
+							<div class="content site-footer-links _has-columns">
+								<h4>Social Media</h4>
+								<ul>
+									{{ partial "social-links-text.html" . }}
+								</ul>
+							</div>
+						</div>
 
 					</div>
 				</div>
