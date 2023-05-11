@@ -12,6 +12,11 @@
 				<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><img src="images/creds/facebook.png" alt="" title=""></a>
 			</div>
 			{{ end }}
+			{{- if .instagram }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://instagram.com/{{- .instagram -}}" title="Find us on Instagram" target="_blank" rel="noopener"><img src="images/creds/instagram.png" alt="" title=""></a>
+			</div>
+			{{ end }}
 			{{- if .tradesmen }}
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="https://tradesmenonline.co.uk/directory/name/{{- .tradesmen -}}" title="Find us on tradesmenonline.co.uk" target="_blank" rel="noopener"><img src="images/creds/tradesmenonline.png" alt="" title=""></a>

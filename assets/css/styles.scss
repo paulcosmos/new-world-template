@@ -280,6 +280,7 @@ strong {
 
     &-brand {
         position: relative;
+        margin-left: 0!important;
 
         .navbar-item {
             @include until($navbar-breakpoint) {
@@ -365,6 +366,38 @@ strong {
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
+            }
+        }
+    }
+
+    &-logo-overlap {
+
+        @include from($navbar-breakpoint) {
+            position: relative;
+            top: 0;
+            padding: 1rem;
+            // padding-top: 0;
+            margin-top: 0;
+            margin-bottom: -40px;
+            background-color: lighten($navbar-background-color,5%);
+            @include box-shadow-high;
+        }
+
+        &:hover {
+            background-color: $navbar-background-color!important;
+        }
+
+        img {
+            padding: 0;
+            width: 100%;
+            max-height: $navbar-height;
+
+            @include from($navbar-breakpoint) {
+                position: relative;
+                top: 0;
+                bottom: -40px;
+                left: 0;
+                max-height: 120px;
             }
         }
     }
