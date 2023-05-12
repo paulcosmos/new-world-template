@@ -6,6 +6,12 @@
 						<div class="column is-hidden-mobile has-text-centered-mobile">
 						Professional {{ .industry }} services in {{ if .county }}{{ .county }}{{ else }}{{ .towncity}}{{ end }}
 						</div>
+						<div class="column is-narrow is-6-touch has-text-right">
+							<span class="icon-text">
+								<span class="icon"><i class="fa-regular fa-envelope"></i></span>
+								<span><a href='mailto:{{- .email |  -}}'>{{ .email }}</a></span>
+							</span>
+						</div>
 						{{- if .phone }}
 						<div class="column is-narrow is-6-touch has-text-left has-text-right-desktop ">
 							<span class="icon-text">
@@ -14,9 +20,9 @@
 							</span>
 						</div>
 						{{ end }}
+						{{- if .mobile }}
 						<div class="column is-narrow is-6-touch has-text-right">
 							<span class="icon-text">
-								{{- if .mobile }}
 
 								{{- if .phone }}
 								<span class="icon"><i class="fa-regular fa-mobile"></i></span>
@@ -24,9 +30,9 @@
 								<span class="icon"><i class="fa-regular fa-phone"></i></span>
 								{{ end -}}
 								<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
-								{{ end }}
 							</span>
 						</div>
+						{{ end }}
 
 					</div>
 				</div>
