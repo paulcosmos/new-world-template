@@ -361,11 +361,12 @@ strong {
         padding-bottom: 1rem;
 
         img {
-            max-width: $logo-max-width;
-            max-height: $logo-max-height;
 
-            @include until($navbar-breakpoint) {
-                max-height: 3rem !important;
+            max-height: 3rem !important;
+
+            @include from($navbar-breakpoint) {
+                max-width: $logo-max-width;
+                max-height: $logo-max-height;
             }
         }
     }
@@ -484,7 +485,7 @@ strong {
                 height: 5rem;
                 line-height: 5rem;
                 top: 50%;
-                left: -50%;
+                left: -60%;
                 transform: translateX(0%) translateY(-50%);
             }
 

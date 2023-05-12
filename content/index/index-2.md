@@ -7,7 +7,7 @@ _build:
 image:
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality
+## We're **{{<industry>}} experts**. Tough jobs are our speciality.
 
 + Experienced across all aspects of {{<industry>}}
 + Reputation for fast delivery times and reliability
