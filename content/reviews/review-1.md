@@ -1,8 +1,8 @@
 ---
-title: James
+title: Confidential Shredding
 type: review
 rating: 5
-location: 
+location: WA8
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Great guys, kept us up to date with their arrival time. Would definitely call them again for any waste disposal needs

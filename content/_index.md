@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# {{<company>}}. Architectural salvage, reclamation, waste clearance and recycling services throughout the Northwest.
 
-**{{<company>}}** has been serving both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been reclaiming and recycling scrap and waste in {{<towncity>}} for a number of years. We can safely and legally dispose of **anything**.

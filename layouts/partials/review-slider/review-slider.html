@@ -22,7 +22,16 @@
 						<div class="column is-8 is-offset-2">
 							<div class="is-grouped">
 								<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
-									<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
+									<a href='https://wa.me/{{- if .Site.Params.phone }}{{- replaceRE "(\\s)" "" .Site.Params.phone -}}{{ else }}{{- replaceRE "(\\s)" "" .Site.Params.mobile -}}{{- end -}}' 
+										target="_blank" rel="noopener"
+										class="button-primary">
+										<span class="icon-text">
+											<span class="icon">
+												<i class="fa-brands fa-whatsapp"></i>
+											</span>
+											<span>{{ .Site.Params.modalbuttontext }}</span>
+										</span>
+									</a>
 								</div>
 							</div>
 						</div>

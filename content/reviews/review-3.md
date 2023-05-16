@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Yard Clearance
 type: review
 rating: 5
-location: 
+location: L4
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Joe and his lads done an excellent clearing of my yard. They left it spotless Highly Recommended

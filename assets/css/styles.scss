@@ -14,6 +14,11 @@ $navbar-breakpoint: $desktop !default;
 
 html {
     font-size: 19px;
+    background-image: linear-gradient(-249deg, rgba(white, 0.95), rgba(white, 0.95)), url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 html,
@@ -123,9 +128,9 @@ strong {
             border-color: transparent;
             color: $button-text !important;
 
-            i {
-                margin-left: 0.75rem;
-            }
+            // i {
+            //     margin-left: 0.75rem;
+            // }
 
             a {
                 color: currentColor;
@@ -380,25 +385,26 @@ strong {
             // padding-top: 0;
             margin-top: 0;
             margin-bottom: -40px;
-            background-color: lighten($navbar-background-color,5%);
+            background-color: darken($navbar-background-color, 15%);
             @include box-shadow-high;
         }
 
         &:hover {
-            background-color: $navbar-background-color!important;
+            background-color: $primary!important;
         }
 
         img {
             padding: 0;
             width: 100%;
             max-height: $navbar-height;
-
+            
             @include from($navbar-breakpoint) {
                 position: relative;
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-width: $logo-max-width;
+                max-height: 100%;
             }
         }
     }
@@ -748,12 +754,18 @@ strong {
 
     &-intro {
 
+        // background-image: linear-gradient(-249deg, rgba(white, 0.95), rgba(white, 0.95)), url('../images/logo.png');
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // background-position: center center;
+        // background-attachment: fixed;
+
         .columns {
 
             &:not(:last-child) {
                 margin-bottom: $size-1 !important;
                 padding-bottom: $size-3;
-                border-bottom: solid 2px lighten($secondary, 94%);
+                border-bottom: $services-item-divider;
             }
 
             &:nth-of-type(odd) {
@@ -1006,12 +1018,12 @@ strong {
     gap: 1rem;
 
     @include from($desktop) {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    @include from($fullhd) {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    // @include from($fullhd) {
+    //     grid-template-columns: repeat(4, 1fr);
+    // }
 
     a {
         position: relative;
@@ -1112,6 +1124,7 @@ strong {
 
 .accreditations {
     display: flex;
+    background: none;
 
     &-banner {
         display: grid;
@@ -1144,7 +1157,7 @@ strong {
 
     &-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(128px, 0.5fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 0.5fr));
         gap: 1.75rem;
 
         @include until($desktop) {
@@ -1166,7 +1179,6 @@ strong {
         padding-top:1.5rem;
         padding-bottom:1.5rem;
         flex: 0 1 50%;
-        // margin: 0 0.5rem;
         margin-bottom: 2rem!important;
 
         @include from($tablet) {
@@ -1180,6 +1192,7 @@ strong {
             padding-left: 2rem;
             padding-right: 2rem;
             flex: 0 0 20%;
+            margin: 0 0.5rem;
 
             &:first-child {
                 margin-left: 0;
@@ -1192,17 +1205,29 @@ strong {
     }
 }
 
+// Our Process
+.our-process {
+
+    i {
+        color: $primary;
+    }
+}
+
 // Why Us Banner
 .why-us {
 
     &-banner {
-        background-color: $tertiary;
+        background-color: $why-us-bg;
         color: $why-us-text;
 
-        // padding: 3rem 0;
-        // padding-bottom: 3rem;
-        @include from($navbar-breakpoint) {
-            // padding: 3rem 32px;
+        i {
+            margin-bottom: 1rem;
+            color: darken(white, 10%);
+            font-size: 1.75rem;
+        }
+
+        h3 {
+            color: lighten($primary, 0%);
         }
     }
 }

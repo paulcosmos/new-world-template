@@ -1,16 +1,17 @@
 ---
 type: index-content
-weight: 2
+weight: 1
 _build:
     list: true
     render: false
-image:
+image: images/recycling.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## We recycle or re-home **at least 90%** of all waste and scrap we clear. 
 
-+ Experienced across all aspects of {{<industry>}}
-+ Reputation for fast delivery times and reliability
-+ Competitive and affordable prices
+We hate scrapping perfectly good items or seeing them go to landfill, and we particularly hate the destruction of local history. 
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+That's why we aim to recycle and reclaim as much of our salvage as possible, giving new life to old things, donating usable building materials to worthy causes, and hanging over essential items to local folks in need. 
+
+
+

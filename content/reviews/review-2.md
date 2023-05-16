@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Bulky Item Removal
 type: review
 rating: 5
-location: 
+location: L21
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Great service and communication, good price as well. Happy and would use this company again, recommend. Thank you!

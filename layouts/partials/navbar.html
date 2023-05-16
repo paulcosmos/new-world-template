@@ -1,7 +1,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
 				<div class="container is-fluid">  
 				    <div class="navbar-brand">
-						<a class="navbar-item navbar-logo no-underline" href="/index.html">
+						<a class="navbar-item navbar-logo-overlap no-underline" href="/index.html">
 							{{- with .Site.Params }}
 							{{ if .logo }}
 							<img src="/images/{{ .logo }}"/>
@@ -32,8 +32,17 @@
 								{{- end -}}
 							</a>
 						    {{ end }}
-						    <div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
-						      <button class="button-primary">{{ .Site.Params.modalbuttontext }}</button>
+						    <div class="navbar-item has-text-centered no-underline">
+								<a href='https://wa.me/{{- if .Site.Params.phone }}{{- replaceRE "(\\s)" "" .Site.Params.phone -}}{{ else }}{{- replaceRE "(\\s)" "" .Site.Params.mobile -}}{{- end -}}' 
+									target="_blank" rel="noopener"
+									class="button-primary">
+									<span class="icon-text">
+										<span class="icon">
+											<i class="fa-brands fa-whatsapp"></i>
+										</span>
+										<span>{{ .Site.Params.modalbuttontext }}</span>
+									</span>
+								</a>
 						    </div>
 						</div>
 					</div>
