@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Rubbish Clearance
 type: review
 rating: 5
-location: 
+location: LL24
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+I was very pleased indeed with Black Dog Salvage. The men were quick, tidy, efficient and charged exactly what was quoted. Excellent.

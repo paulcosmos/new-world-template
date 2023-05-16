@@ -22,7 +22,7 @@
 
 							<div class="column is-6-tablet _is-offset-1-tablet is-5-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen" data-aos="fade-right">
 								<div class="content _box hero-cta">
-									<h3>Get a Quote</h3>
+									<h3>Speak to The Dog</h3>
 									<hr/>
 									<h4>
 									{{- if $.Site.Params.phone }}
@@ -31,15 +31,16 @@
 										{{- .Site.Params.mobile -}}
 									{{- end -}}
 									</h4>
-									<p>Speak to us today to arrange a no obligation quotation or use our contact form to request a callback</p>
-									<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
+									<p>Speak to us now and get a cost today.</p>
+									<p>Simply send us images or a short video of what you need clearing and we'll give you a no obligation, fixed cost for our services.</p>
+									<a href='https://wa.me/{{- if .Site.Params.phone }}{{- replaceRE "(\\s)" "" .Site.Params.phone -}}{{ else }}{{- replaceRE "(\\s)" "" .Site.Params.mobile -}}{{- end -}}' class="button button-primary is-fullwidth ml-0">
 										<span class="icon-text">
 										  <span class="icon is-hidden-touch">
-										    <i class="fa-regular fa-phone"></i>
+										    <i class="fa-brands fa-whatsapp"></i>
 										  </span>
-										  <span>Request a call back</span>
+										  <span>Message us now</span>
 										</span>
-									</button>
+									</a>
 								</div>
 							</div>
 

@@ -1,0 +1,32 @@
+<section class="our-process section ">
+				<div class="container _is-fluid is-fullhd">
+					<div class="columns is-multiline is-variable is-8">
+					{{ with .Site.Params }}
+						<div class="column is-6-tablet is-12-desktop is-12-widescreen is-12-fullhd has-accent is-4 is-align-items-center is-justify-content-cnter is-flex-direction-column" data-aos="fade-in" data-aos-delay="0">
+							<h2>How to get a quote</h2>
+						</div>
+						<div class="column is-6-tablet is-4-desktop is-6-widescreen is-4-fullhd" data-aos="fade-in" data-aos-delay="200">
+                            <div class="box content has-text-dark ">
+								<i class="fa-sharp fa-solid fa-square-1 fa-2x"></i>
+								<h3>Take pictures of your job</h3>
+								<p>We need to see <b>images or a short video</b> of the job you need clearing in order to give you an accurate cost.</p>
+                            </div>
+                        </div>
+						<div class="column is-6-tablet is-4-desktop is-6-widescreen is-4-fullhd" data-aos="fade-in" data-aos-delay="400">
+                            <div class="box content has-text-dark ">
+								<i class="fa-sharp fa-solid fa-square-2 fa-2x"></i>
+								<h3>Send us a message</h3>
+								<p>Simply send us the images or via WhatsApp to <b>{{ .phone }}</b> and we will reply with a cost.</p>
+                            </div>
+                        </div>
+						<div class="column is-6-tablet is-4-desktop is-6-widescreen is-4-fullhd" data-aos="fade-in" data-aos-delay="600">
+                            <div class="box content has-text-dark ">
+								<i class="fa-sharp fa-solid fa-square-3 fa-2x"></i>
+								<h3>We give you a cost</h3>
+								<p>We'll get back to quickly with a cost. Our prices are clear and transparent. The price we quote is the price you pay.</p>
+                            </div>
+                        </div>
+					{{ end }}
+					</div>
+				</div>
+			</section>

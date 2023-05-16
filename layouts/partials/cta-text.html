@@ -6,20 +6,20 @@
 								<div class="content">
 									<div class="" data-aos="fade-down">
 										<span class="pre-heading" data-aos="fade-left">
-											Arrange a quotation
+											Get a cost
 										</span>
 									</div>
 									<div class="has-accent" data-aos="fade-left">
 										<h2>Looking for <span>{{ .Site.Params.industry }}</span> services in {{ if $.Site.Params.county }}{{ .Site.Params.county }}{{ else }}{{ .Site.Params.towncity }}{{ end }}?</h2>
-										<p>Speak to us today and we'll be happy to answer any questions or arrange a free, no obligation quote.</p>
-										<p>Already got a quote? Call us today on <b>{{- if .Site.Params.phone }}{{- .Site.Params.phone -}}{{ else }}{{- .Site.Params.mobile -}}{{- end -}}</b> and let us beat it!</p>
+										<p>Simply send us images or a short video of what you need clearing or removing and we will get back to you with a quote the same day.</p>
+										<p>Already got a quote? Send us images via WhatsApp on <b>{{- if .Site.Params.phone }}{{- .Site.Params.phone -}}{{ else }}{{- .Site.Params.mobile -}}{{- end -}}</b> and see if The Dog can beat it!</p>
 									</div>
 								</div>
 							</div>
 
 							<div class="column is-6-tablet _is-offset-1-tablet is-5-desktop is-offset-1-desktop is-4-fullhd is-offset-2-fullhd" data-aos="fade-right">
 								<div class="content _box hero-cta">
-									<h3>Get a Quote</h3>
+									<h3>Get a Cost</h3>
 									<hr/>
 									<h4>
 									{{- if .Site.Params.phone }}
@@ -28,15 +28,16 @@
 										{{- .Site.Params.mobile -}}
 									{{- end -}}
 									</h4>
-									<p>Call us today to arrange a no obligation quotation. Or you can use our contact form to request a callback</p>
-									<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
+									<p>Speak to us now and get a cost today!</p>
+									<p>Simply send us images or a short video of what you need clearing and we'll give you a no obligation, fixed cost for our services.</p>
+									<a href='https://wa.me/{{- if .Site.Params.phone }}{{- replaceRE "(\\s)" "" .Site.Params.phone -}}{{ else }}{{- replaceRE "(\\s)" "" .Site.Params.mobile -}}{{- end -}}' class="button button-primary is-fullwidth ml-0">
 										<span class="icon-text">
 										  <span class="icon is-hidden-touch">
-										    <i class="fa-regular fa-phone"></i>
+										    <i class="fa-brands fa-whatsapp"></i>
 										  </span>
-										  <span>Request a call back</span>
+										  <span>Message The Dog</span>
 										</span>
-									</button>
+									</a>
 								</div>
 							</div>
 

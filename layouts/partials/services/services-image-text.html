@@ -7,12 +7,14 @@
 								{{ .Content }}
 								<hr/>
 								{{/*  <div class="button _button-primary ml-0 modal-trigger" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">  */}}
-									<a 	class="button button-primary ml-0 modal-trigger" 
+									<a class="button button-primary has-font-weight-bold ml-0 modal-trigger" 
 									data-aos="fade-up" 
 									data-aos-easing="ease-in-back" 
 									data-aos-anchor-placement="bottom-bottom" 
 									data-aos-delay="200"
-									href="contact.html">{{ .Site.Params.modalbuttontext }} 
+									href="https://wa.me/{{- if .Site.Params.phone }}{{- replaceRE "(\\s)" "" .Site.Params.phone -}}{{ else }}{{- replaceRE "(\\s)" "" .Site.Params.mobile -}}{{- end -}}"
+									target="_blank" rel="noopener">
+									{{ .Site.Params.modalbuttontext }} 
 									<i class="fa-solid fa-arrow-right"></i></a>
 								{{/*  </div>  */}}
 							</div>
