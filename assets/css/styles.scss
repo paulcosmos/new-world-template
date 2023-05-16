@@ -753,7 +753,7 @@ strong {
             &:not(:last-child) {
                 margin-bottom: $size-1 !important;
                 padding-bottom: $size-3;
-                border-bottom: solid 2px lighten($secondary, 94%);
+                border-bottom: $services-item-divider;
             }
 
             &:nth-of-type(odd) {
@@ -1192,17 +1192,29 @@ strong {
     }
 }
 
+// Our Process
+.our-process {
+
+    i {
+        color: $primary;
+    }
+}
+
 // Why Us Banner
 .why-us {
 
     &-banner {
-        background-color: $tertiary;
+        background-color: $why-us-bg;
         color: $why-us-text;
 
-        // padding: 3rem 0;
-        // padding-bottom: 3rem;
-        @include from($navbar-breakpoint) {
-            // padding: 3rem 32px;
+        i {
+            margin-bottom: 1rem;
+            color: darken(white, 10%);
+            font-size: 1.75rem;
+        }
+
+        h3 {
+            color: lighten($primary, 0%);
         }
     }
 }

@@ -28,14 +28,10 @@ $text: $secondary;
 }
 
 @mixin hero-index-bg {
-	// @include hero-default-bg;
 	@include background-image;
 	color: $hero-index-text;
 	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
-	
-	// @include from($tablet) {
-	// 	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
-	// }
+
 }
 
 $hero-index-text: white;
@@ -105,6 +101,7 @@ $review-stars: $primary;
 $review-stars-remaining:lighten($primary, 15%);
 
 // Why us banner 
+$why-us-bg: $tertiary;
 $why-us-text: $text;
 $why-us-title-size: 1rem;
 
