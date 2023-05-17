@@ -10,6 +10,6 @@ cascade:
     render: false
 ---
 
-# We think the **quality of our work** speaks volumes. See for yourself.
+# We can tow **almost anything**. See for yourself.
 
 Here's some recently completed {{<industry>}} projects in and around {{<towncity>}}. Click on any of the thumbnails below for a closer look.

@@ -1,8 +1,8 @@
 ---
-title: James
+title: Mike C.
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Fantastic service from Jack at JBC Towing - would recommend to use this company. 
