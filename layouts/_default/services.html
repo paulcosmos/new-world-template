@@ -7,7 +7,10 @@
 		{{ define "main" }}
 			<section class="section">
 				<div class="container is-fullhd company-services pb-4">
-					{{ partial "services/services-image-text.html" . }}
+					{{- $currentPage := . }}
+					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
+						{{ partial "services/services-image-text.html" . }}
+					{{ end }}
 				</div>
 			</section>
 			{{/*  <section class="section">
