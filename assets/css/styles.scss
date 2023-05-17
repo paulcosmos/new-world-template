@@ -380,12 +380,13 @@ strong {
             // padding-top: 0;
             margin-top: 0;
             margin-bottom: -40px;
-            background-color: lighten($navbar-background-color,5%);
+            background-color: $logo-bg-colour;
             @include box-shadow-high;
-        }
 
-        &:hover {
-            background-color: $navbar-background-color!important;
+            &:hover,
+            &:focus {
+                background-color: $logo-bg-hover-colour!important;
+            }
         }
 
         img {
