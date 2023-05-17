@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Cut and Cap-off Numerous Sinks
 type: review
 rating: 5
-location: 
+location: SL6
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+After being let down by another plumber, I called {{<company>}} on the off chance hoping that they would have someone available to help us ASAP. They managed to fit us in straight away! They were very professional, turned up on time and did an excellent job.

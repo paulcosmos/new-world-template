@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Underfloor Heating
 type: review
 rating: 5
-location: 
+location: SL1
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+They were willing to amend their quote and use my preferred materials for the underfloor heating I wanted. They are dedicated to the task and I am happy to use them again for future works.

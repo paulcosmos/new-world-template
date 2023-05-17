@@ -4,7 +4,7 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/bathroom-design.jpg
 ---
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality.
