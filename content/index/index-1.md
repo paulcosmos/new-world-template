@@ -4,10 +4,10 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/radiator.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
+## We're your **top choice** for plumbing and oil heating services across {{<county>}}
 
 * Many years of experience in and around {{<towncity>}}
 * A reputation for excellent quality and professionalism
