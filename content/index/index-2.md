@@ -4,7 +4,7 @@ weight: 2
 _build:
     list: true
     render: false
-image: images/digger-towing.jpg
+image: images/luxury-boat-towing.jpg
 ---
 
 ## We're **{{<industry>}} experts**. We'll get it where it needs to be.

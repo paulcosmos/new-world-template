@@ -1100,9 +1100,14 @@ strong {
         }
     }
 
-    &-finance {
+    &-callouts {
         background-color: $accent;
         color: $text;
+
+        a {
+            color: white;
+            text-decoration: underline;
+        }
 
         h2 {
             margin: 0 auto;
@@ -1214,7 +1219,7 @@ strong {
         }
 
         h3 {
-            color: lighten($primary, 0%);
+            color: $text;
         }
     }
 }
