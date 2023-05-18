@@ -5,8 +5,9 @@
 						<div class="column is-12-mobile is-12-tablet is-4-desktop">
 							<div class="content site-footer-company-info">
 							{{- with .Site.Params }}
-								<h4>{{ .company }}</h4>
-								<h5>{{ .industry | strings.FirstUpper }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>
+							<img src="/images/logo-light.png" width="280px"/>
+								{{/*  <h4>{{ .company }}</h4>
+								<h5>{{ .industry | strings.FirstUpper }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>  */}}
 								<div data-aos="fade-right" data-aos-easing="ease-in-back">
 									<a 	class="button-primary ml-0 modal-trigger" 
 										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
@@ -47,10 +48,12 @@
 						</div>
 
 						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
-							<div class="content site-footer-links _has-columns">
-								<h4>Social Media</h4>
+							<div class="content site-footer-links" data-aos="fade-right">
+								<h4>Opening Hours</h4>
 								<ul>
-									{{ partial "social-links-text.html" . }}
+									<li>Weekdays - 8am to 6pm</li>
+									<li>Saturday - 8am to 5pm</li>
+									<li>Sunday - 8am to 4pm</li>
 								</ul>
 							</div>
 						</div>

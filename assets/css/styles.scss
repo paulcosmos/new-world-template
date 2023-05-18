@@ -8,7 +8,7 @@
 @import "bulma/utilities/initial-variables.sass";
 @import "bulma/utilities/mixins.sass";
 
-$button-corner-radius: 4px;
+$button-corner-radius: 500px;
 $image-corner-radius: 0.5rem;
 $navbar-breakpoint: $desktop !default;
 
@@ -122,6 +122,7 @@ strong {
             background-color: $button-bg-hover;
             border-color: transparent;
             color: $button-text !important;
+            transition: all 0.4s;
 
             i {
                 margin-left: 0.75rem;
@@ -325,6 +326,9 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
+        text-transform: uppercase;
+        font-weight: 700;
+
 
         &:before {
             @include animated-underline;
@@ -362,7 +366,7 @@ strong {
 
         img {
 
-            max-height: 3rem !important;
+            max-height: 3rem;
 
             @include from($navbar-breakpoint) {
                 max-width: $logo-max-width;
@@ -834,6 +838,7 @@ strong {
 
             .content {
                 columns: 2;
+                font-size: $size-5;
 
                 ul {
                     margin-top: 0;
@@ -1215,7 +1220,7 @@ strong {
         }
 
         h3 {
-            color: lighten($primary, 0%);
+            color: $text;
         }
     }
 }
@@ -1434,6 +1439,11 @@ strong {
     }
 
     &-links {
+
+        li {
+            font-size: $size-7;
+        }
+
         a {
             font-size: $size-7;
             color: white;

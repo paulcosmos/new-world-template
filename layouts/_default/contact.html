@@ -7,9 +7,8 @@
 						<div class="column is-4-desktop">
 							<div class="content contact-details mb-6" data-aos="fade-right">
 								<h2>Business Address</h2>
-								<p>Please note, our business address is purely for correspondence. We do not have a public office.</p>
 								<address>
-									{{- with .Site.Params }}
+								{{- with .Site.Params }}
 									<b>{{ .fullname }},<br/></b>
 									{{ if .building }}
 									{{ .building }},<br/>
@@ -23,9 +22,16 @@
 								{{- end }}
 								</address>
 							</div>
+							<div class="content contact-details mb-6" data-aos="fade-right">
+								<h2>Opening Hours</h2>
+								<ul>
+									<li>Monday to friday - 8am to 6pm</li>
+									<li>Saturday - 8am to 5pm</li>
+									<li>Sunday - 8am to 4pm</li>
+								</ul>
+							</div>
 							{{  partial "contact-details.html" .  }}
 						</div>
-
 						<div class="column is-offset-2-desktop box contact-form" data-aos="fade-up">         
 										{{ partial "contact-form.html" . }}
 						</div>

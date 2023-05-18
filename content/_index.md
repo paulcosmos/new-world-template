@@ -2,7 +2,7 @@
 title: 'About'
 menu: ["main","footer"]
 weight: 1
-preheading: 
+preheading: 24 hour mobile tyre fitting available
 _build:
   render: true
 cascade:
@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**.
 
-**{{<company>}}** has been serving both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been keeping both drivers in {{<towncity>}} on the road for a number of years.

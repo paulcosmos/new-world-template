@@ -4,14 +4,14 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/lion-tyres.jpg
 ---
 
 ## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+* Many years of tyre fitting experience in {{<towncity>}}
+* A reputation for excellent service and professionalism
+* Customer focused with affordable prices
 
 {{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
 
