@@ -10,6 +10,6 @@ cascade:
     render: false
 ---
 
-# We think the **quality of our work** speaks volumes. See for yourself.
+# We think the **quality of our work** speaks for itself. But don't just take our word for it. See what our **happy customers** think.
 
-Here's some recently completed {{<industry>}} projects in and around {{<towncity>}}. Click on any of the thumbnails below for a closer look.
+Here's some happy (but not always _happy-looking_) customers. Click on any of the thumbnails below for a closer look.

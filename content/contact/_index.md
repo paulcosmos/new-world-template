@@ -11,8 +11,8 @@ cascade:
     render: false
 ---
 
-# Looking for **{{<industry>}} services** in **{{<towncity>}}** &amp; {{<county>}}?
+# Looking for experienced **luxury dog groomers** in **{{<towncity>}}**?
 
-Speak to us today to request a quote. 
+Speak to us today to make an appointment. 
 
 

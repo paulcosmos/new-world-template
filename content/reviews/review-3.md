@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Sarah Marshall
 type: review
 rating: 5
-location: 
+location: Warrington
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Had an eyebrow trim for our Cockapoo today so he could see properly again. Great human and dog customer service. Highly recommend. Thank you

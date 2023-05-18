@@ -14,6 +14,6 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}
+# We provide a wide range of **luxury {{<industry>}}** services in **{{<towncity>}}**.
 
-With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.
+With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for your pet.

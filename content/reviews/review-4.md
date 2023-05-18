@@ -1,8 +1,9 @@
 ---
-title: Peter
+title: Joanne Nemits
 type: review
 rating: 5
-location: 
+location: Warrington
+
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Lola’s first time being groomed and it’s safe to say she loved it! I am chuffed to bits with how she looks. Thanks to Steph and Mike. We will be back in a few weeks 🥰

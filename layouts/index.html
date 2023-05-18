@@ -1,11 +1,6 @@
 			{{- define "hero" -}}
 			<section class="hero is-halfheight hero-index">
 				{{ partial "hero/hero-image.html" . }}
-				{{- with .Site.Params }}
-				{{ if .emblem }}
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
-				{{ end -}}
-				{{ end -}}
 			</section>
 			{{ end -}}
 
@@ -21,7 +16,7 @@
 						</div>
 
 						<div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
-							<div class="image has-rounded-corners">
+							<div class="image is-1by1 has-rounded-corners">
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 								<img src='{{ ($image.Resize "x890 q50 Smart").RelPermalink }}' alt="" title=""/>
@@ -45,7 +40,8 @@
 						</div>
 						<div class="column is-narrow" data-aos="fade-in">
 							<span class="icon company-icon">
-								<i class="fa-light fa-square-check"></i>
+								{{/*  <i class="fa-duotone fa-paw"></i>  */}}
+								<i class="fa-regular fa-dog"></i>
 							</span>
 						</div>
 					</div>

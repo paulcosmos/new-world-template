@@ -4,16 +4,14 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/paws-team.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
+## We're your **no.1 choice** for {{<industry>}} in {{<towncity>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+Hello! We're Steph and Mike, the owners of **{{<company>}}**. We have been pampering pooches in {{<towncity>}} for many years (and even longer in dog years). 
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+Being dog owners ourselves, we understand how important it is to consider the mood and stress levels any pets that are being groomed. That's why all our services are conducted by trained and experienced professionals, with attention paid to the well being of your pet every step of the way.
 
 
 

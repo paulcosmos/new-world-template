@@ -8,7 +8,7 @@
 @import "bulma/utilities/initial-variables.sass";
 @import "bulma/utilities/mixins.sass";
 
-$button-corner-radius: 4px;
+$button-corner-radius: 50px;
 $image-corner-radius: 0.5rem;
 $navbar-breakpoint: $desktop !default;
 
@@ -105,6 +105,7 @@ strong {
         color: $button-text !important;
         border-width: 1px;
         font-size: inherit;
+        font-weight: bold;
         cursor: pointer;
         justify-content: center;
         padding: 1rem;
@@ -325,6 +326,8 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
+        font-weight: 600;
+
 
         &:before {
             @include animated-underline;
@@ -362,7 +365,7 @@ strong {
 
         img {
 
-            max-height: 3rem !important;
+            max-height: 3rem;
 
             @include from($navbar-breakpoint) {
                 max-width: $logo-max-width;
@@ -399,7 +402,7 @@ strong {
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 200px;
             }
         }
     }
@@ -538,6 +541,10 @@ strong {
     margin-bottom: $size-5;
     display: block;
     color: $preheading-text;
+
+    &-service {
+        color: $accent;
+    }
 }
 
 // Page Content
@@ -550,7 +557,8 @@ strong {
     @include hero-default-bg;
     position: relative;
     color: $hero-text;
-    font-weight: normal;
+    font-weight:600;
+    font-size: 1.2rem;
     text-align: left;
     text-align: inherit;
 
@@ -559,9 +567,23 @@ strong {
         padding-bottom: 3rem;
     }
 
+    .has-accent strong {
+        color:$text;
+    }
+
     &-index {
         @include hero-index-bg;
         padding-top: 0;
+        color: white;
+
+        @include from($navbar-breakpoint) {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .has-accent strong {
+            color:$text;
+        }
 
         h1,
         h2 {
@@ -619,7 +641,7 @@ strong {
     &-cta {
         background-color: $hero-cta-bg;
         border-radius: $hero-cta-corner-radius;
-        @include box-shadow-offset-solid($hero-cta-shadow);
+        @include box-shadow-3d;
         color: white;
         font-weight: 600;
         padding: 1.25rem;
@@ -1456,7 +1478,7 @@ strong {
         }
 
         h4 {
-            font-size: $size-6;
+            font-size: $size-5;
         }
 
         &.has-columns ul {

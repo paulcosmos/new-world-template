@@ -4,7 +4,9 @@
 						<a class="navbar-item navbar-logo no-underline" href="/index.html">
 							{{- with .Site.Params }}
 							{{ if .logo }}
-							<img src="/images/{{ .logo }}"/>
+							<img class="" src="/images/{{ .logo }}"/>
+							{{/*  <img class="is-hidden-desktop" src="/images/logo-mobile.png"/>  */}}
+
 							{{- else }}
 							<div class="content navbar-title">
 								{{ .company }}
