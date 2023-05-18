@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Cleaning Gutters
 type: review
 rating: 5
-location: 
+location: Stockport, SK16
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Turned up on the day he said and completed the job as discussed for the agreed price. Friendly polite service and it’s nice to see and father and son team.

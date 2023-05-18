@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Remove Moss Off Roof & Jet Wash Patio
 type: review
 rating: 5
-location: 
+location: Stockport, SK10
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Excellent job The guys turned up on time and were really nice they did an amazing job I'm very happy I would definitely recommend them. They are excellent at what they do.

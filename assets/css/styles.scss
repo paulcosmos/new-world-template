@@ -181,6 +181,10 @@ strong {
         color: inherit;
     }
 
+    h1,h2 {
+        font-weight: $family-heading-weight;
+    }
+
     ul {
         position: relative;
         margin-left: 0;
@@ -291,12 +295,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-7;
+        font-size: $size-5;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
         @include from($widescreen) {
-            font-size: $size-6;
+            font-size: $size-5;
         }
 
         &:hover {
@@ -310,9 +314,9 @@ strong {
 
         span {
             display: block;
-            font-size: 1em;
+            font-size: $size-7;
             color: inherit;
-            font-weight: 400;
+            font-weight: 500;
 
             @include from($widescreen) {
                 font-size: $size-7;
