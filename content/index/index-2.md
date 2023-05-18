@@ -4,13 +4,13 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/vehicle-transportation.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## We're **{{<industry>}} experts**. We'll get you home safely.
 
 + Experienced across all aspects of {{<industry>}}
-+ Reputation for fast delivery times and reliability
++ Reputation for fast recovery times and reliability
 + Competitive and affordable prices
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We are highly experienced {{<industry>}} professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
