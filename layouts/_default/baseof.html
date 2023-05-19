@@ -10,11 +10,14 @@
 
 	<body>
 		<header>
-			{{ partial "top-banner.html" . }}
+			{{/*  {{ partial "top-banner.html" . }}  */}}
+			{{/*  {{- if not .IsHome }}
 			{{ partial "navbar.html" . }}
+			{{ end }}  */}}
 
 			{{ block "hero" . -}}
 			<section class="hero is-small">
+				{{ partial "navbar.html" . }}
 			    {{ partial "hero/hero-text-only.html" . }}
 			</section>
 			{{ end }}
@@ -29,7 +32,7 @@
 			{{ partial "site-footer.html" . }}
 		</footer>
 
-		{{ partial "quote-modal.html" . }}
+		{{/*  {{ partial "quote-modal.html" . }}  */}}
 
 		<script src="js/site.js"></script>
 		<script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>

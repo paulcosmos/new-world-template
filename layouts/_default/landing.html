@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{{ "<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->" | safeHTML }}
+{{ "<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->" | safeHTML }}
+{{ "<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->" | safeHTML }}
+{{ "<!--[if gt IE 8]>      <html class='no-js'> <![endif]-->" | safeHTML }}
+<html>
+	<head class="has-navbar">
+	{{ partial "meta.html" . }}
+	</head>
+
+	<body>
+		<header>
+			<section class="hero is-fullheight hero-landing">
+				<div class="hero-body">
+					<div class="container is-fullhd">
+						<div class="columns is-centered is-vcentered">
+							<div class="column is-8-desktop is-7-fullhd is-12-tablet">
+								<div class="content is-size-5 has-text-centered hero-services-content has-accent" data-aos="fade-down">
+								<img src="images/logo-white-stacked@2x.png" width="300px">
+									<h1 class="mb-0">Website coming soon</h1>
+									{{/*  <h2 class="my-0 has-font-weight-light">Website coming soon</h2>  */}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+
+		<script src="js/site.js"></script>
+		<script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+		{{ block "scripts" . }}
+		{{- end }}
+	</body>
+</html>

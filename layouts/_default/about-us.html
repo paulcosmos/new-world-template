@@ -1,0 +1,19 @@
+
+		{{ define "main" }}
+			<section class="section company-intro">
+				<div class="container is-fullhd">
+					<div class="columns is-centered is-multiline is-variable is-8">
+						{{- range where (where .Site.RegularPages "Type" "about-content") "File.Dir" "about-us/" }}
+						<div class="column _is-7-desktop _is-offset-3-fullhd is-9-fullhd">
+							<div class="content company-intro-content has-accent">
+								{{ .Content }}
+							</div>
+						</div>
+						{{- end }}
+					</div>
+				</div>
+			</section>
+		{{ end }}
+
+		{{ define "scripts" }}
+		{{ end }}

@@ -1,34 +1,30 @@
 			<div class="section">
 				<div class="container _is-fluid is-fullhd">
-					<div class="columns is-mobile is-8 is-multiline">
+					<div class="columns is-mobile is-vcentered is-8 is-multiline">
 
-						<div class="column is-12-mobile is-5-tablet _is-5-desktop is-3-fullhd ">
+						<div class="column is-12-mobile is-4-tablet is-2-fullhd ">
 							<div class="content site-footer-company-info">
-							{{- with .Site.Params }}
-								<h4>{{ .company }}</h4>
-								<h5>{{ .industry | humanize }} services in {{ .towncity }} and {{ .county }}</h5>
-								<div class="button-primary ml-0 modal-trigger" data-aos="fade-right" data-aos-easing="ease-in-back">
-									<a href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
-								</div>
-							{{ end }}
-								<div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
-								{{ partial "social-links.html" . }}
-								</div>
+								<img src="images/{{ .Site.Params.logo }}" width="200px"/>
+							</div>
+						</div>
+						<div class="column is-12-mobile is-4-tablet is-4-fullhd is-offset-1-fullhd">
+							<div class="content site-footer-links has-columns">
+								<h4>About Us</h4>
+								<p>We strive to build high-specification homes, with technological innovation that meet consumers’ specifications and environmental standards.</p>
+							</div>
+						</div>
+						<div class="column is-12-mobile is-4-tablet is-4-fullhd is-offset-1-fullhd">
+							<div class="content site-footer-links has-columns">
+								<h4>Site Links</h4>
+								<ul>
+									{{- range .Site.Menus.footer }}
+									<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
+									{{- end }}
+								</ul>
 							</div>
 						</div>
 
-					<div class="column is-6-mobile is-3-tablet is-3-desktop is-3-fullhd is-offset-1-fullhd _is-narrow">
-						<div class="content site-footer-links has-columns">
-							<h4>Site Links</h4>
-							<ul>
-								{{- range .Site.Menus.footer }}
-								<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
-								{{- end }}
-							</ul>
-						</div>
-					</div>
-
-					<div class="column _is-12-mobile is-3-tablet _is-3-desktop is-4-fullhd is-offset-1-fullhd">
+					{{/*  <div class="column _is-12-mobile is-3-tablet _is-3-desktop is-4-fullhd is-offset-1-fullhd">
 						<div class="content site-footer-links has-columns">
 						<h4>Primary Services</h4>
 							<ul>
@@ -43,22 +39,15 @@
 								{{- end }}
 							</ul>
 						</div>
-					</div>
+					</div>  */}}
 
 					</div>
 				</div>
 			</div>
-			{{- with .Site.Params }}
-			{{ if .emblem }}
-			<div class="emblem">
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
-			</div>
-			{{ end -}}
-			{{ end -}}
 			<div class="container is-fluid site-footer-signoff">
 				<div class="content">
 					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ .street }}, {{ .towncity }}, {{ .county }}, {{ .postcode }}</address>
+					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ .building }}, {{ .street }}, {{ .towncity }}, {{ .postcode }}</address>
 					{{- end }}
 				</div>
 			</div>

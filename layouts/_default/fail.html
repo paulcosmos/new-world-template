@@ -1,16 +1,17 @@
 			{{ define "hero" }}
-			<section class="hero has-text-centered is-halfheight hero-fail">
-			    <div class="hero-body">
-			        <div class="container is-fullhd">
-			          <div class="columns">
-			            <div class="column is-8-desktop is-offset-2-desktop is-6-fullhd is-offset-3-fullhd is-12-tablet">
-			              <div class="content hero-services-content has-accent" data-aos="fade-down">
-			                {{ .Content }}
-			              </div>
-			            </div>
-			          <div>
-			        <div>
-			    <div>
+			<section class="hero has-text-white has-text-centered is-halfheight hero-fail">
+				{{ partial "navbar.html" . }}
+				<div class="hero-body">
+					<div class="container is-fullhd">
+						<div class="columns">
+							<div class="column is-8-desktop is-offset-2-desktop is-6-fullhd is-offset-3-fullhd is-12-tablet">
+								<div class="content hero-services-content has-accent" data-aos="fade-down">
+								{{ .Content }}
+								</div>
+							</div>
+						<div>
+					<div>
+				<div>
 			</section>
 			{{ end }}
 
@@ -23,7 +24,6 @@
 						<div class="column is-4-desktop">
 							<div class="content contact-details mb-6" data-aos="fade-right">
 								<h2>Business Address</h2>
-								<p>Please note, our business address is purely for correspondence. We do not have a public office.</p>
 								<address>
 								{{- with .Site.Params }}
 									{{ .street }},<br/>
@@ -43,5 +43,5 @@
 			</section>
 			{{ end }}
 
-	      {{ define "scripts" }}
-	      {{ end }}
+			{{ define "scripts" }}
+			{{ end }}

@@ -1,11 +1,24 @@
-{{ define "hero" }}
+{{/*  {{ define "hero" }}
 <section class="hero">
 	{{ partial "hero/hero-text-only.html" . }}
 </section>
-{{ end }}
+{{ end }}  */}}
 
 {{ define "main" }}
-
+<section class="section company-intro">
+	<div class="container is-fullhd">
+		<div class="columns is-centered is-multiline is-variable is-8">
+			{{- range where (where .Site.RegularPages "Type" "content-section") "File.Dir" "joint-venture/" }}
+			<div class="column is-12-tablet is-9-desktop">
+				<div class="content company-intro-content has-accent">
+					{{ .Content }}
+				</div>
+			</div>
+			{{- end }}
+		</div>
+	</div>
+</section>
+{{ partial "stats-row-section.html" . }}
 {{ end }}
 
 {{ define "scripts" }}

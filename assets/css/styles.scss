@@ -11,7 +11,7 @@ $image-corner-radius: 0.5rem;;
 
 
 html {
-    font-size:19px;
+    font-size:22px;
 }
 
 html,
@@ -23,7 +23,6 @@ body {
 // Typography
 
 h1,h2,h3,h4,h5,h6 {
-
     font-family: $family-headings;
 }
 
@@ -74,10 +73,12 @@ strong {
     &.has-rounded-corners {
         > img {
             border-radius: $image-corner-radius;
-            // border-radius: 10% 25%;
-            // border-right-width: 3rem;
             border-color: $primary;
         }
+    }
+
+    &-text {
+
     }
 }
 
@@ -151,6 +152,11 @@ strong {
     h1, h2, h3, h4, h5, h6,
     p, ul, li {
         color: inherit;
+        font-weight: inherit;
+    }
+
+    h1 {
+        font-size: 2rem;
     }
     
     ul {
@@ -161,7 +167,7 @@ strong {
             list-style: none;   
             position: relative;
             padding-left: 1.5rem;
-            font-weight: 600;
+            font-weight: inherit;
 
             &:before {
                 content: " ";
@@ -237,6 +243,9 @@ strong {
 
 // Navigation Menu
 .navbar {
+    margin-bottom: 6rem;
+    font-family: $family-headings;
+    font-size: 0.8rem;
 
     .container {
         @include until($navbar-breakpoint){
@@ -246,6 +255,8 @@ strong {
 
     &-brand {
         position: relative;
+        top: 0;
+        // padding: 1rem 0;
 
         .navbar-item {
             @include until($navbar-breakpoint) {
@@ -269,39 +280,87 @@ strong {
         }
 
         span {
-        display: block;
-        font-size: $size-7;
-        color: inherit;
-
-        // &:hover {
-        //     transition: color 0.3s;
-        //     color:white;
-        //     }
+            display: block;
+            font-size: $size-7;
+            color: inherit;
         }
 
     }
-    
+
     &-item {
-        // color: white;
         transition: all 0.3s;
         text-align: center;
         position: relative;
+
+        &:before {
+            @include animated-underline;
+            display: block;
+            position: absolute;
+            bottom: 25%;
+            width: 0%;
+            z-index: 99;
+
+            @include until($navbar-breakpoint) {
+                bottom: 0;
+            }
+        }
+
+        &:hover {
+            &:before {
+                width: 100%;
+            }
+        }
+
+        a {
+            color: currentColor;
+        }
+
+        &.no-underline {
+            &:before {
+                display: none;
+            }
+        }
     }
 
     &-logo {
-
+        
         img {
             max-width: $logo-max-width;
-            max-height: $logo-max-height;
+            margin-top: 1rem;
 
             @include until($navbar-breakpoint) {
-                max-height: 3rem !important;
+                // max-height: 8rem;
+            }
+        }
+    }
+
+    &-logo-overlap {
+
+        position: relative;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: -40px;
+
+        img {
+            position: relative;
+            top: 0;
+            bottom: -40px;
+            left: 0;
+            width: $logo-max-width;
+            max-height: 100%;
+            // margin-top:-20px;
+            // margin-bottom: -20px;
+
+            @include until($navbar-breakpoint) {
+                width: 200px;
             }
         }
     }
 
     &-menu {
         transition: all 0.3s;
+        color: currentColor;
 
         &.is-active {
             @include until($navbar-breakpoint) {
@@ -318,7 +377,29 @@ strong {
     }
 
     &-dropdown {
-        font-size: 1rem;
+        font-family: $family-headings;
+        font-size: 0.8rem;
+
+        @include until($navbar-breakpoint) {
+            padding: 0;
+        }
+
+        .navbar-item {
+
+            a {
+                &:hover {
+                    color: $link;
+                }
+            }
+
+            &:hover {
+                &:before {
+                    @include from($navbar-breakpoint) {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 
     &-end {
@@ -345,6 +426,9 @@ strong {
     &-burger {
         text-align: center;
         position: relative;
+        height: 5rem;
+        width: 5rem;
+
         &:hover {
             color: white;
             background-color: $primary;
@@ -408,16 +492,16 @@ strong {
 // .pre-heading > span,
 .pre-heading {
     text-transform: uppercase;
-    font-size: 0.75rem;
-    font-weight: bold;
+    font-size: $preheading-size;
+    font-weight: $preheading-weight;
+    letter-spacing: $preheading-spacing;
     margin-bottom: $size-5;
     display: block;
     color: $preheading-text;
 }
 
 // Page Content
-.hero { 
-    
+.hero {     
     // @include background-dots;
     @include hero-default-bg;
     position: relative;
@@ -427,11 +511,25 @@ strong {
     text-align: inherit;
 
     @include from($navbar-breakpoint){
-        padding-top: 3rem;
         padding-bottom: 3rem;
     }
 
     &-index {
+        @include hero-index-bg;
+        padding-top: 0;
+        font-family: $family-headings;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .hero-body {
+            display: block!important;
+            // margin-top: 5rem;
+        }
+    }
+
+    &-landing {
         @include hero-index-bg;
     }
 
@@ -443,7 +541,7 @@ strong {
     
             span,
             strong {
-                color: $danger;
+                color: $primary;
                 font-weight: 600 !important;
             }
         }
@@ -613,7 +711,7 @@ strong {
 
         .image {
             img {
-                @include box-shadow-below;
+                // @include box-shadow-below;
             }
         }
     }
@@ -719,6 +817,18 @@ strong {
         width: 2rem;
         height: 2rem;
         font-size: 2rem;
+    }
+
+    &-team {
+        margin-bottom:3rem;
+        h2 {
+            margin-bottom: 1rem;
+        }
+        h3 {
+            margin-top: 0!important;
+            margin-bottom: 1rem;
+            color: $accent;
+        }
     }
 }
 
@@ -839,13 +949,14 @@ strong {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
+    margin-top: 2rem;
 
     @include from($desktop) {
         grid-template-columns: repeat(3,1fr);
     }
 
     @include from($fullhd) {
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
 
     a {
@@ -855,6 +966,7 @@ strong {
         background-color: $secondary;
         transition: all 0.2s ease-in-out;
         @include box-shadow-below;
+        @include rounded-corners;
 
         &:hover {
             // @include box-shadow-below();
@@ -1001,6 +1113,81 @@ strong {
     }
 }
 
+.level {
+    flex-wrap: wrap !important;
+}
+
+.stats-row {
+    background-color: $stats-row-section-bg;
+
+    .level {
+        background-color: $stats-row-bg;
+        color: $stats-row-text;
+    }
+
+    &-item {
+
+        @include until($tablet) {
+
+            &:not(:last-child) {
+                border-bottom: solid 2px $tertiary;
+            }
+        }
+
+        @include from($tablet) {
+            @include until($navbar-breakpoint) {
+                padding: 0.5rem;
+                flex: 0 0 50%;
+
+                &:nth-of-type(odd) {
+                    border-right: solid 2px $tertiary;
+                }
+
+                &:nth-child(-n+2) {
+                    border-bottom: solid 2px $tertiary;
+                }
+            }
+        }
+
+
+        @include from($desktop) {
+            border-bottom: none;
+
+            &:not(:last-child) {
+                border-right: solid 2px $tertiary;
+            }
+
+        }
+
+        // &:nth-of-type(odd) {
+        //     border-right: none;
+        // }
+
+        h3 {
+            font-weight:400;
+            font-size: $stats-row-size;
+
+
+            span {
+                color: lighten($primary, 0%);
+                font-size: 0.5em;
+                display: block;
+            }
+        }
+
+        .icon {
+            color: $accent;
+            margin-top: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+        }
+    }
+
+    // .level-item {
+    //     flex-shrink: 1!important;
+    // }
+}
+
 // Quote Form Modal Pop-up
 .modal-trigger {
 
@@ -1008,7 +1195,6 @@ strong {
         @include from($navbar-breakpoint){
         margin-left:1rem;
     }
-
 }
 
 .quote-modal {
@@ -1025,6 +1211,22 @@ strong {
             border: none;
         }
     }
+}
+
+.developments {
+
+    // @include background-image;
+        color: $hero-index-text;
+        background-color: darken($secondary,0%);
+        // background-image: linear-gradient(0deg, rgba(33, 47, 96, 0.5), rgb(33, 47, 96)), url('../images/hero-image-mobile.jpg');
+    
+    // @include from($tablet) {
+        // background-image: linear-gradient(-180deg, rgba(36, 40, 51, 1), rgba(36, 40, 51, 0.7)), url('../images/hero-image.jpg');
+    // }
+}
+
+.locations {
+    background-color: #F5F5F5;
 }
 
 // Contact Page
@@ -1099,7 +1301,7 @@ strong {
 .site-footer {
     background-color: $site-footer-bg;
     color: white;
-    @include background-paved;
+    // @include background-paved;
 
     &-company-info {
 
@@ -1123,6 +1325,11 @@ strong {
 
         .button-primary {
             margin-top:2rem;
+        }
+
+        img {
+            position: relative;
+            margin: 0 auto;
         }
     }
 

@@ -1,12 +1,18 @@
 ---
 title: Contact
-menu: ["main","footer"]
-weight: 5
-preheading: "Get a Quote"
+menu: ["footer"]
+weight: 99
+preheading: "Contact us"
+_build:
+  render: true
+cascade:
+  _build:
+    list: true
+    render: false
 ---
 
-# Looking for **{{<industry>}} services** in **{{<towncity>}}** &amp; {{<county>}}?
+# Contact Us
 
-Speak to us today to request a quote. 
+Speak to us today.
 
 
