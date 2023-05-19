@@ -5,4 +5,4 @@ rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Very professional, fast workers. Highly recommended for any plumbing needs in {{<towncity>}}! Will definitely use again.
