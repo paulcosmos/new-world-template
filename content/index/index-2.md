@@ -13,5 +13,7 @@ We hate scrapping perfectly good items or seeing them go to landfill, and we par
 
 That's why we aim to recycle and reclaim as much of our salvage as possible, giving new life to old things, donating usable building materials to worthy causes, and hanging over essential items to local folks in need. 
 
+Take a look at some of the salvage we collect on our [Facebook](https://facebook.com/blackdogsalvageuk) and [Instagram](https://instagram.com/blackdogsalvageuk) pages.
+
 
 

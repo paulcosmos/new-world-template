@@ -8,7 +8,7 @@
 @import "bulma/utilities/initial-variables.sass";
 @import "bulma/utilities/mixins.sass";
 
-$button-corner-radius: 4px;
+$button-corner-radius: 40px;
 $image-corner-radius: 0.5rem;
 $navbar-breakpoint: $desktop !default;
 
@@ -109,7 +109,8 @@ strong {
         border-color: transparent;
         color: $button-text !important;
         border-width: 1px;
-        font-size: inherit;
+        font-size: 1.1rem;
+        font-weight: bold;
         cursor: pointer;
         justify-content: center;
         padding: 1rem;
@@ -1211,6 +1212,11 @@ strong {
     i {
         color: $primary;
     }
+}
+
+.apparel {
+    background-color:$secondary;
+    color: white;
 }
 
 // Why Us Banner

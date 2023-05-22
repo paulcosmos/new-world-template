@@ -63,6 +63,27 @@
 
 			{{ partial "cta-text.html" . }}
 
+			<section class="apparel section ">
+				<div class="container _is-fluid is-fullhd">
+					<div class="columns is-multiline is-variable is-8 is-vcentered">
+					{{ with .Site.Params }}
+						<div class="column is-6-tablet is-5-desktop" data-aos="fade-in">
+							<div class="content has-accent">
+								<h2><strong>Coming Soon!</strong><span class="is-block mt-1 has-text-white">Black Dog Salvage Apparel.</span></h2>
+								<p>We'll soon be launching a range of Black Dog Salvage clothing and apparel.</p>
+								<p>Be sure to keep an eye on our <a href="https://facebook.com/{{.facebook}}" target="_blank" rel="noopener">Facebook</a> and <a href="https://instagram.com/{{.instagram}}" target="_blank" rel="noopener">Instagram</a> accounts to be notified when they're available.</p>
+							</div>
+						</div>
+						<div class="column is-6-tablet is-offset-1-desktop is-6-desktop" data-aos="fade-up">
+							<figure class="image is-1by1">
+								<img src="/images/blackdog-apparel.png">
+							</figure>
+                        </div>
+					{{ end }}
+					</div>
+				</div>
+			</section>
+
 			{{- end }}
 
 	{{- define "scripts" -}}
