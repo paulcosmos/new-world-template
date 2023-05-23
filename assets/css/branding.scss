@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #0071B6;
+$secondary: #030a20;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -31,6 +31,7 @@ $text: $secondary;
 	@include background-image;
 	color: $hero-index-text;
 	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
+	background-position: bottom right;
 
 }
 
@@ -115,8 +116,8 @@ $site-footer-signoff-text: $tertiary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($secondary, 10%);
-$paving: darken($paving-bg, 2%);
+$paving-bg: lighten($secondary, 2%);
+$paving: darken($paving-bg, 0%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;

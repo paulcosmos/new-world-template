@@ -12,6 +12,10 @@ cascade:
   _build:
     list: true
     render: false
+type: services-list
+services:
+- one
+- two
 ---
 
 # Providing a wide range of **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}
