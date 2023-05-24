@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Professional **{{<industry>}} installation services** throughout {{<county>}}.
 
-**{{<company>}}** has been serving both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been providing both domestic and commercial customers throughout {{<county>}} and surrounding areas with professional solar and renewable energy installations for over {{<years>}}.

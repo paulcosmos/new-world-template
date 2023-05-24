@@ -14,4 +14,4 @@ cascade:
 
 # We are a **customer-focused** business, proud of our reputation for **quality**.
 
-Feedback is important to us as it helps us improve our service. Below are some of our recent reviews from happy customers.
+Feedback is important to us as it helps us improve our service. Below are some of our recent reviews from happy customers. You can view many more on our [MyBuilder](https://www.mybuilder.com/profile/view/d_cookman_electrical/feedback) profile.

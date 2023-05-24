@@ -8,7 +8,7 @@
 @import "bulma/utilities/initial-variables.sass";
 @import "bulma/utilities/mixins.sass";
 
-$button-corner-radius: 4px;
+$button-corner-radius: 40px;
 $image-corner-radius: 0.5rem;
 $navbar-breakpoint: $desktop !default;
 
@@ -89,9 +89,32 @@ strong {
     }
 }
 
+.has-background-primary {
+    background-color: $primary;
+    color: white;
+}
+
+.has-background-secondary {
+    background-color: $secondary;
+    color: white;
+}
+
 .has-background-tertiary {
     background-color: $tertiary;
 }
+
+// .has-columns {
+//     column-count: 1;
+//     column-gap: 10px;
+
+//     @include from($desktop) {
+//         column-count: 3;
+//     }
+
+//     a:before {
+//         line-height: 2rem;
+//     }
+// }
 
 // Buttons 
 .button {
@@ -362,7 +385,7 @@ strong {
 
         img {
 
-            max-height: 3rem !important;
+            max-height: 3rem;
 
             @include from($navbar-breakpoint) {
                 max-width: $logo-max-width;
@@ -1201,16 +1224,50 @@ strong {
     }
 }
 
+.qualifications {
+
+    ul {
+        column-count: 1;
+        column-gap: 10px;
+
+        @include from($tablet) {
+            column-count: 2;
+        }
+    
+        @include from($widescreen) {
+            column-count: 3;
+        }
+
+        li {
+            &:before {
+                content: "\f00c";
+                font-family: "FontAwesome";
+                display: inline-block;
+                position: relative;
+                background: none;
+                top: 0;
+                margin-right: 0.4rem;
+                color: $primary;
+                width: 1rem;
+            }
+        }
+    }
+
+}
+
 // Why Us Banner
 .why-us {
 
     &-banner {
         background-color: $why-us-bg;
         color: $why-us-text;
+        @include from($desktop){
+            text-align: center;
+        }
 
         i {
             margin-bottom: 1rem;
-            color: darken(white, 10%);
+            color: darken($primary, 0%);
             font-size: 1.75rem;
         }
 
@@ -1400,6 +1457,13 @@ strong {
     }
 }
 
+.policy-content {
+
+    strong {
+        font-weight: bold;
+    }
+}
+
 // Site Footer 
 .site-footer {
     background-color: $site-footer-bg;
@@ -1459,7 +1523,7 @@ strong {
             font-size: $size-6;
         }
 
-        &.has-columns ul {
+        &.has-columns ul, {
             column-count: 2;
             column-gap: 10px;
 

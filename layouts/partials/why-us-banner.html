@@ -2,20 +2,23 @@
 				<div class="container _is-fluid is-fullhd">
 					<div class="columns is-multiline is-variable is-6">
 					{{ with .Site.Params }}
-						<div class="column is-6-tablet is-6-desktop is-6-widescreen is-12-fullhd has-accent is-4 is-align-items-center is-justify-content-cnter is-flex-direction-column" data-aos="fade-in" data-aos-delay="0">
-							<h2>Why trust <span>{{ .company }}</span> for your {{ .industry }} needs?</h2>
+						<div class="column mb-4 is-12-tablet is-12-fullhd has-accent is-4 is-align-items-center is-justify-content-cnter is-flex-direction-column" data-aos="fade-in" data-aos-delay="0">
+							<h2>Why use <span>{{ .company }}</span> for your {{ .industry }} needs?</h2>
 						</div>
 						<div class="column is-6-tablet is-6-desktop is-6-widescreen is-4-fullhd" data-aos="fade-in" data-aos-delay="200">
-							<h3>Experienced &amp Reliable</h3>
-							<p>We have years of {{ .industry }} experience in and around {{ if .county}}{{ .county}}{{ else }}{{ .towncity }}{{ end }}.</p>
+							<i class="fa-light fa-brightness"></i>
+							<h3>Experienced &amp; Reliable</h3>
+							<p>We have over 20 years of {{ .industry }} installation experience in and around {{ if .county}}{{ .county}}{{ else }}{{ .towncity }}{{ end }}.</p>
+						</div>
+						<div class="column is-6-tablet is-6-desktop is-6-widescreen is-4-fullhd" data-aos="fade-in" data-aos-delay="300">
+							<i class="fa-regular fa-user-helmet-safety"></i>
+							<h3>Careful & Considerate</h3>
+							<p>All jobs are undertaken with the utmost care and consideration for you, your property and your neighbours.</p>
 						</div>
 						<div class="column is-6-tablet is-6-desktop is-6-widescreen is-4-fullhd" data-aos="fade-in" data-aos-delay="400">
-							<h3>Careful & Considerate</h3>
-							<p>All jobs are undertaken with the utmost care and consideration for safety. </p>
-						</div>
-						<div class="column is-6-tablet is-6-desktop is-6-widescreen is-4-fullhd" data-aos="fade-in" data-aos-delay="600">
-							<h3>Customer Focused</h3>
-							<p>We're known for our reputation for reliability and friendly service.</p>
+							<i class="fa-regular fa-file-certificate"></i>
+							<h3>Fully Qualified Company</h3>
+							<p>All of our team are fully qualified and certified electricians with a wealth of professional experience behind them</p>
 						</div>
 					{{ end }}
 					</div>

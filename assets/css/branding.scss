@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 // Override Bulma variables here:
-$family-headings: "Poppins", sans-serif;
+$family-headings: "Montserrat", sans-serif;
 $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #F26522;
+$secondary: #191d27;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -30,8 +31,12 @@ $text: $secondary;
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
+	background-image: linear-gradient(-249deg, rgba($secondary, 0.93), rgba($secondary, 0.83), rgba($secondary, 0.6)), url('../images/hero-image.jpg');
+	background-position: bottom right;
 
+	@include until($navbar-breakpoint){
+		background-image: linear-gradient(-249deg, rgba($secondary, 0.8), rgba($secondary, 0.8)), url('../images/hero-image.jpg');
+	}
 }
 
 $hero-index-text: white;
@@ -44,7 +49,7 @@ $top-banner-icon: $accent;
 // Main Navigation 
 $navbar-background-color: $secondary;
 $navbar-height: 5rem;
-$logo-max-width: 180px;
+$logo-max-width: 280px;
 $logo-max-height: $navbar-height;
 $logo-bg-colour: lighten($navbar-background-color,5%);
 $logo-bg-hover-colour: lighten($logo-bg-colour,5%);
@@ -73,7 +78,7 @@ $sl-navigation-color: white;
 $hero-text: $text;
 $preheading-text: $primary;
 $preheading-size: 1rem;
-$hero-title-size: 2rem;
+$hero-title-size: 3rem;
 $hero-text-size: 1rem;
 $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);
@@ -115,8 +120,8 @@ $site-footer-signoff-text: $tertiary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($secondary, 10%);
-$paving: darken($paving-bg, 2%);
+$paving-bg: darken($secondary, 2%);
+$paving: darken($paving-bg, 0%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;
@@ -127,6 +132,6 @@ $ring-y: 50%;
 
 // Settings for 'Dots' BG pattern
 $dot-bg-color: $tertiary;
-$dot-color: darken($dot-bg-color, 5%);
-$dot-size: 2px;
-$dot-space: 16px;
+$dot-color: darken($dot-bg-color, 4%);
+$dot-size: 3px;
+$dot-space: 26px;
