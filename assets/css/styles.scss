@@ -8,7 +8,7 @@
 @import "bulma/utilities/initial-variables.sass";
 @import "bulma/utilities/mixins.sass";
 
-$button-corner-radius: 4px;
+$button-corner-radius: 40px;
 $image-corner-radius: 0.5rem;
 $navbar-breakpoint: $desktop !default;
 
@@ -125,6 +125,7 @@ strong {
 
             i {
                 margin-left: 0.75rem;
+                margin-right: 0.5rem;
             }
 
             a {
@@ -832,13 +833,34 @@ strong {
 
         &-list {
 
-            .content {
+            ul {
+                display: grid;
                 columns: 2;
 
-                ul {
-                    margin-top: 0;
-                }
+                li {
+
+                    &:before {
+                        content:"\f14a";
+                        font-family: "FontAwesome";
+                        margin-right: 10px;
+                        color: $primary;
+                    }
+
+                    display: block;
+                    background-color: white;
+                    @include box-shadow-high;
+                    padding: 10px;
+                    margin: 10px;
             }
+        }
+
+            // .content {
+            //     columns: 2;
+
+            //     ul {
+            //         margin-top: 0;
+            //     }
+            // }
         }
 
         &-item {
