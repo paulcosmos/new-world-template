@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #e63333;
+$secondary: #161c2d;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -46,8 +46,8 @@ $navbar-background-color: $secondary;
 $navbar-height: 5rem;
 $logo-max-width: 180px;
 $logo-max-height: $navbar-height;
-$logo-bg-colour: lighten($navbar-background-color,5%);
-$logo-bg-hover-colour: lighten($logo-bg-colour,5%);
+$logo-bg-colour: white;
+$logo-bg-hover-colour: $logo-bg-colour;
 $navbar-item-color: white;
 $navbar-item-hover-color: white;
 $navbar-item-hover-background-color: transparent;
@@ -115,7 +115,7 @@ $site-footer-signoff-text: $tertiary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($secondary, 10%);
+$paving-bg: darken($secondary, 2%);
 $paving: darken($paving-bg, 2%);
 
 // Settings for 'Rings' BG pattern

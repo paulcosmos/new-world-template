@@ -1,8 +1,8 @@
 ---
-title: James
+title: Replacing Slipped Tiles
 type: review
 rating: 5
-location: 
+location: Merseyside
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Helpful and quick to solve the issues raised. Friendly service. Did a good job in fixing what we needed. Professional job.

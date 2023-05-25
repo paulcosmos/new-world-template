@@ -1,0 +1,10 @@
+					{{- $currentPage := . }}
+					{{- range where (where .Site.RegularPages "Type" "services-list") "File.Dir" "services/" }}
+					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+						<div class="column is-12-touch _is-5-desktop _is-6-fullhd">
+							<div class="_content has-accent company-services-list" data-aos="fade-right">
+								{{ .Content }}							
+							</div>
+						</div>
+					</div>
+				{{ end }}

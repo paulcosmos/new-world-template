@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Chimney & Roof Repairs
 type: review
 rating: 5
-location: 
+location: Merseyside
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Job done last week. Arthur gave me a start date and kept to it. Team arrived on 1st day and erected scaffolding, two days late did work needed, scaffold removed and debris cleared the following day. Reasonable price and I’m happy with work carried out.

@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Repair Slipped Tile
 type: review
 rating: 5
-location: 
+location: Merseyside
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Perfect! Job priced next day and completed the following day.
