@@ -12,4 +12,4 @@ Whether you're looking for fire doors for you home or a commercial premises, the
 
 * Expert installation from a qualified, knowledgeable team
 * Available to both commercial and private/domestic customers
-* No job too big or too large
+* All sizes of jobs undertaken
