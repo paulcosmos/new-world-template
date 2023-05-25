@@ -1,7 +1,7 @@
 ---
 title: "Electrical Inspections"
 type: service-item
-desc: Safety checks and certifications on domestic and commercial electric appliances.
+desc: Safety checks and condition reports and certification for domestic,  commercial and industrial premises.
 weight: 3
 image: images/electrical-testing.jpg
 anchor:
