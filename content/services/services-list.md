@@ -10,14 +10,11 @@ type: services-list
 * Gutter Cleaning
 * Gutter Repairs
 * Guttering Services
-* Industrial Roofing
-* Roof Cleaning
 * Roof Conversions
 * Roof Repairs
 * Roof Tiling
 * Roof Windows
 * Single Ply Roofing
-* Steel Roofing
 * Storm Damage Repairs
 * GRP Roofing Specialist
 
