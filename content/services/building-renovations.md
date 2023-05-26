@@ -1,0 +1,14 @@
+---
+title: "Renovation & Refurbishment"
+type: service-item
+desc: Our team of skilled builders are on hand to improve, enhance and update your home.
+weight: 3
+image: images/renovations.jpg
+anchor: Renovation & Refurb
+---
+## Renovations & Refurbishment
+
+If you're looking to improve, enhance or update your home through specialist renovation works, our skilled and reliable team of builders and trusted tradesmen are on hand to help. From removing and or adding walls to building porches, garages and extensions, we have the skills and experience to make your dream a reality.
+
+* Over {{<years>}} of building experience
+* Highly experienced expert team

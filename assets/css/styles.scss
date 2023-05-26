@@ -363,7 +363,7 @@ strong {
 
         img {
 
-            max-height: 3rem !important;
+            max-height: 3rem;
 
             @include from($navbar-breakpoint) {
                 max-width: $logo-max-width;
