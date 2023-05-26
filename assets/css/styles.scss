@@ -374,6 +374,8 @@ strong {
 
     &-logo-overlap {
 
+        padding: 0;
+
         @include from($navbar-breakpoint) {
             position: relative;
             top: 0;
@@ -391,7 +393,7 @@ strong {
         }
 
         img {
-            padding: 0;
+            padding: 1rem;
             width: 100%;
             max-height: $navbar-height;
 
@@ -400,7 +402,8 @@ strong {
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 100px;
+                padding: 0;
             }
         }
     }
