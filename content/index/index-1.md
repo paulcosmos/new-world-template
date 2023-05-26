@@ -4,10 +4,10 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/interior-lighting.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
+## We're your **top choice** for {{<industry>}} services in {{<towncity>}} &amp; {{<county>}}.
 
 * Many years of experience in and around {{<towncity>}}
 * A reputation for excellent quality and professionalism
