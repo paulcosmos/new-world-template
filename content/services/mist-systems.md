@@ -2,8 +2,8 @@
 title: "Water Mist Fire Suppression Systems"
 type: service-item
 desc: Modern sprinkler systems are discreet and connect easily to your mains water supply.
-weight: 1
-image: images/sprinkler-installation.jpg
+weight: 2
+image: images/mist-suppression.jpg
 anchor:
 ---
 ## Water Mist Fire Suppression Systems

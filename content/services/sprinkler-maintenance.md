@@ -2,7 +2,7 @@
 title: "Fire Sprinkler Maintenance"
 type: service-item
 desc: Our experienced team are on hand to assess and diagnose any issues with your existing sprinkler system.
-weight: 2
+weight: 3
 image: images/sprinkler-maintenance.jpg
 anchor:
 ---

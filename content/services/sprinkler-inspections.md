@@ -2,7 +2,7 @@
 title: "Fire Sprinkler Inspections"
 type: service-item
 desc: Ensure your sprinkler system is always ready for action with our annual inspections.
-weight: 3
+weight: 4
 image: images/sprinkler-valve.jpg
 anchor:
 ---
