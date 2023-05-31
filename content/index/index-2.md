@@ -4,7 +4,8 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/mchardy-team.jpg
+
 ---
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality.
