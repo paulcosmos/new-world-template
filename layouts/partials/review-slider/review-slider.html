@@ -12,7 +12,7 @@
 					</div>
 				</div>
 				<div class="columns is-multiline is-mobile review-slider">
-					{{ $slides := 6 }}
+					{{ $slides := 1 }}
 					{{ range first $slides (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
 						{{ partial "review-slider/review-quote.html" . }}
 					{{ end -}}
@@ -26,7 +26,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="column text-align-center _is-narrow">
+						{{/*  <div class="column text-align-center _is-narrow">
 							<div id="review-slider-controls" class="buttons is-small is-centered" aria-label="Carousel Navigation" tabindex="0">
 								<button class="button review-slider-nav-button" aria-controls="review-slider" tabindex="-1" data-controls="prev">
 									<span class="icon is-medium">
@@ -39,7 +39,7 @@
 									</span>
 								</button>
 							</div>
-						</div>
+						</div>  */}}
 					</div>
 				</div>
 			</section>
@@ -72,12 +72,12 @@
 			        },
 			        1024: {
 			            gutter: 20,
-			            items: 2,
+			            items: 1,
 			            edgePadding: 40,
 			            center: true,
 			        },
 			        1280: {
-			            items: 2,
+			            items: 1,
 			            edgePadding: 40,
 
 			        }
