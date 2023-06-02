@@ -249,11 +249,9 @@ strong {
     background-color: $top-banner-bg;
     // @include brand-gradient;
     color: $top-banner-text;
-    font-size: $size-7;
+    font-size: 0.8rem;
     font-weight: bold;
-    padding: 0.5rem 0;
-    // padding-top: $size-7;
-    // padding-bottom: $size-7;
+    padding: 0.85rem 0;
     position: relative;
 
     .icon {
@@ -328,12 +326,15 @@ strong {
         position: relative;
 
         &:before {
-            @include animated-underline;
-            display: block;
-            position: absolute;
-            bottom: 25%;
-            width: 0%;
-            z-index: 99;
+            @include from($navbar-breakpoint) {
+                @include animated-underline;
+                background-color: white;
+                display: block;
+                position: absolute;
+                bottom: 25%;
+                width: 2%;
+                z-index: 99;
+            }
 
             @include until($navbar-breakpoint) {
                 bottom: 0;
@@ -341,7 +342,10 @@ strong {
         }
 
         &:hover {
+            color: white;
+            
             &:before {
+                background-color: $primary;
                 width: 100%;
             }
         }
@@ -380,7 +384,6 @@ strong {
             position: relative;
             top: 0;
             padding: 1rem;
-            // padding-top: 0;
             margin-top: 0;
             margin-bottom: -40px;
             background-color: $logo-bg-colour;
@@ -394,7 +397,7 @@ strong {
 
         img {
             padding: 1rem;
-            width: 100%;
+            // width: 100%;
             max-height: $navbar-height;
 
             @include from($navbar-breakpoint) {
@@ -402,7 +405,7 @@ strong {
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 100px;
+                max-height: 120px;
                 padding: 0;
             }
         }
@@ -423,6 +426,10 @@ strong {
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
+
+                    &:hover {
+                        color: $navbar-item-mobile-color-hover;
+                    }
                 }
             }
         }
