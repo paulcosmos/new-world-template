@@ -418,7 +418,7 @@ strong {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: rgba(0, 0, 0, 0.94);
+                background-color: $navbar-background-color-mobile;
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
@@ -696,7 +696,7 @@ strong {
         margin-right: 20px;
         margin-left: auto;
         width: 80px;
-        z-index: 99;
+        // z-index: 90;
 
         @include from($desktop) {
             position: absolute;

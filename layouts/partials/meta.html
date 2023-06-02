@@ -8,12 +8,11 @@
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="{{ print .Site.Title }}">
+		<meta name="description" content="Professional {{ .Site.Params.industry }} services in {{ if .Site.Params.county }}{{ .Site.Params.county }}{{ else }}{{ .Site.Params.towncity}}{{ end }}">
 		<meta name="keywords" content="">
-		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:title" content="{{- print .Page.Title }} | {{ print .Site.Params.company }}"/>
-		<meta property="og:description" content=""/>
+		<meta property="og:title" content="{{ .Page.Title }} | {{ .Site.Params.company }}"/>
+		<meta property="og:description" content="Professional {{ .Site.Params.industry }} services in {{ if .Site.Params.county }}{{ .Site.Params.county }}{{ else }}{{ .Site.Params.towncity}}{{ end }}"/>
 		<meta property="og:type" content="website"/>
 		<meta name="theme-color" content="#1a1a1a">
 		<meta name="msapplication-navbutton-color" content="#1a1a1a">
