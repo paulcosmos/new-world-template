@@ -63,7 +63,7 @@ $navbar-dropdown-border-top: 2px solid $primary;
 $navbar-divider-background-color: lighten($secondary, 10%);
 
 // Buttons
-$button-text: lighten($primary, 70%);
+$button-text: white;
 $button-bg: $primary;
 $button-bg-hover: lighten($button-bg, 10%);
 

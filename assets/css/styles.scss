@@ -24,6 +24,19 @@ body {
     color: $text;
 }
 
+.container {
+
+    &.is-fluid {
+
+        @include until($navbar-breakpoint){
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }
+
+}
+
 // Typography
 
 h1,
