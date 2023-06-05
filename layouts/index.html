@@ -21,10 +21,10 @@
 						</div>
 
 						<div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
-							<div class="image has-rounded-corners">
+							<div class="image is-1by1 has-rounded-corners">
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
-								<img src='{{ ($image.Resize "x890 q50 Smart").RelPermalink }}' alt="" title=""/>
+								<img src='{{ ($image.Resize "1200x q50 Smart").RelPermalink }}' alt="" title=""/>
 							{{ else }}
 								<img src='/images/placeholder.jpg'/>
 							{{- end }}
