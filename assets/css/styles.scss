@@ -285,6 +285,10 @@ strong {
 
 .navbar {
 
+    @include until($navbar-breakpoint){
+        background-color: $navbar-background-color-mobile;
+    }
+
     .container {
         @include until($navbar-breakpoint) {
             padding-left: 32px;
