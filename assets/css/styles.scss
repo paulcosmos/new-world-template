@@ -853,8 +853,16 @@ strong {
         &-list {
 
             ul {
-                display: grid;
-                columns: 2;
+                margin-top: 2rem;
+                columns: 1;
+
+                @include from($tablet){
+                    columns: 2;
+                }
+
+                @include from($desktop){
+                    columns: 3;
+                }
 
                 li {
 
