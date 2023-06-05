@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Kathy Bishop
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Matt and his team are absolutely fantastic! The lads are super tidy and were very respectful of our home (and cats!) while they were renovating our two bathrooms. Their workmanship is excellent and nothing is too much trouble for them. Really strong after-sale service as well. Highly recommended!
