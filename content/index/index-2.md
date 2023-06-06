@@ -4,13 +4,13 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/fleet-moving.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## We're **{{<industry>}} experts**. We'll get your belongings to their destination safely.
 
-+ Experienced across all aspects of {{<industry>}}
-+ Reputation for fast delivery times and reliability
-+ Competitive and affordable prices
+Harrington Removals offer a full scales removals, relocation and courier services for both domestic and commercial customers. 
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We have an extensive fleet of well equipped vehicles and can undertake removals and relocations of all sizes. Based in Rhosrobin, Wrexham, we carry out removals locally and all over the UK. 
+
+Call Luke today on **{{<phone>}}** to arrange a quotation.

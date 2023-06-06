@@ -18,10 +18,10 @@
 							</div>
 						</div>
 						<div class="column" data-aos="fade-left">
-							<div class="image is-5by4 company-services-image company-services-image">
+							<div class="image is-1by1 company-services-image company-services-image">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
-								<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' alt="" title=""/>
+								<img src='{{ ($image.Fill "1200x1200 q50 Smart").RelPermalink }}' alt="" title=""/>
 								{{ else }}
 								<img src='/images/placeholder.jpg'/>
 								{{- end }}
