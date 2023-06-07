@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Friendly & Happy to Help
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+{{<company>}} Helped us out in our time of need. Fast response, friendly, great service. 

@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Excellent Service
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Great service and fast response. Really friendly and even plugged the diagnostics onto my car to help find the issue. TOP SERVICE! 
