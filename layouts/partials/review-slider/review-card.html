@@ -6,7 +6,13 @@
 												{{- if .Title }}
 												<figcaption>
 													{{ .Title }}
-													{{ if .Params.location }}<span class="is-size-6 is-block">{{.Params.location }}</span>{{ end }}
+													<span class="is-size-6 is-block">
+														{{ if .Params.location }}
+														{{.Params.location }}
+														{{ else }}
+														{{ .Site.Params.county }}
+														{{ end }}
+													</span>
 												</figcaption>
 												{{ end -}}
 												<div class="review-stars">
