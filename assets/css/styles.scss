@@ -326,6 +326,7 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
+        font-weight: 600;
 
         &:before {
             @include animated-underline;
@@ -418,7 +419,7 @@ strong {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: rgba(0, 0, 0, 0.94);
+                background-color: $navbar-background-color-mobile;
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
@@ -622,7 +623,7 @@ strong {
     &-cta {
         background-color: $hero-cta-bg;
         border-radius: $hero-cta-corner-radius;
-        @include box-shadow-offset-solid($hero-cta-shadow);
+        // @include box-shadow-offset-solid($hero-cta-shadow);
         color: white;
         font-weight: 600;
         padding: 1.25rem;
@@ -836,15 +837,23 @@ strong {
         &-list {
 
             ul {
-                display: grid;
-                columns: 2;
+
+                columns: 1;
+
+                @include from($tablet){
+                    columns: 2;
+                }
+
+                @include from($desktop){
+                    columns: 3;
+                }
 
                 li {
 
                     &:before {
                         content:"\f14a";
                         font-family: "FontAwesome";
-                        margin-right: 10px;
+                        margin-right: 15px;
                         color: $primary;
                     }
 
@@ -853,6 +862,8 @@ strong {
                     @include box-shadow-high;
                     padding: 10px;
                     margin: 10px;
+                    margin-top: 0;
+                    font-weight: bold;
             }
         }
 
@@ -1106,7 +1117,7 @@ strong {
         @include background-paved;
 
         a {
-            // color:white;
+            color:$hero-cta-number-text;
             display: inline-block;
 
             &:after {
@@ -1344,7 +1355,7 @@ strong {
         &-list {
             background-color: lighten($secondary, 0%);
             color: white;
-            @include box-shadow-offset-solid($hero-cta-shadow);
+            // @include box-shadow-offset-solid($hero-cta-shadow);
         }
     }
 }
@@ -1435,7 +1446,7 @@ strong {
 .site-footer {
     background-color: $site-footer-bg;
     color: $site-footer-text;
-    @include background-paved;
+    // @include background-paved;
 
     &-company-info {
 

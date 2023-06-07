@@ -4,13 +4,11 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/water-feature.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## We're highly experienced **{{<industry>}} experts**. Porcelain paving and natural stone are our speciality.
 
-+ Experienced across all aspects of {{<industry>}}
-+ Reputation for fast delivery times and reliability
-+ Competitive and affordable prices
+The team at {{<fullname>}} are highly experienced professionals. We are experienced across a wide range of landscaping jobs, but are known for our expert knowledge of **porcelain paving** and **natural stone** installation.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+Whatever the job, Matt and the team can handle it. Call Lisa today on **{{<phone>}}** to arrange a no obligation quote.

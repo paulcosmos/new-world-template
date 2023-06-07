@@ -1,8 +1,9 @@
 ---
-title: Peter
+title: Klare White
 type: review
 rating: 5
-location: 
+location: West Midlands
+
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Wow, what can I say?! Amazing workers super friendly. worked so hard to get our garden done. looks fantastic! totally transformed our garden. Safe for our children and puppy too. Thanks guys x

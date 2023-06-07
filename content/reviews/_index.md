@@ -14,4 +14,4 @@ cascade:
 
 # We are a **customer-focused** business, proud of our reputation for **quality**.
 
-Feedback is important to us as it helps us improve our service. Below are some of our recent reviews from happy customers.
+Much of our work comes from word-of-mouth recommendations from happy customers. Below are some genuine reviews. View more on our [Facebook page](https://www.facebook.com/MGraingersLandscaping/reviews)

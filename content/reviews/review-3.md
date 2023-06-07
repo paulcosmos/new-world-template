@@ -1,8 +1,9 @@
 ---
-title: Andy
+title: Rachel Cunningham
 type: review
 rating: 5
-location: 
+location: West Midlands
+
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Fantastic job on our large patio area. It was a big job but SO worth it. Matt and co worked so hard to give us the perfect patio. Can’t wait to get it furnished

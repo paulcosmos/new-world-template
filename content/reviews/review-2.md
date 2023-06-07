@@ -1,8 +1,9 @@
 ---
-title: Sarah
+title: Debbie Shepherd
 type: review
 rating: 5
-location: 
+location: West Midlands
+
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Fantastic garden transformation carried out by M Grainger Landscaping. Matt and the lads were friendly and hardworking with an emphasis on quality and attention to detail. Lisa coordinated and managed the project superbly, all done at a very competitive price. I would definitely recommend this company. Many thanks for a job well done.
