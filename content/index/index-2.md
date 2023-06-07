@@ -4,13 +4,15 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/247-van-2.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## We're **{{<industry>}} experts**. We'll get you there safely.
 
-+ Experienced across all aspects of {{<industry>}}
++ Experienced and friendly recovery experts
 + Reputation for fast delivery times and reliability
 + Competitive and affordable prices
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We aim to meet and exceed all expectations of every customer. We take on all types of jobs from small to larger commercial jobs. 
+
+We are highly experienced professionals. Where ever you are, whatever time it is, we'll be there. Call us today on **{{<phone>}}**.
