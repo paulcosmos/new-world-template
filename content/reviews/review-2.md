@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Paul Harries
 type: review
 rating: 5
-location: 
+location: Cleethorpes
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Thank you very much. Did a great job at fitting me an outdoor tap. Highly recommend! Outstanding service.

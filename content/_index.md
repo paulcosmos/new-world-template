@@ -2,7 +2,7 @@
 title: 'About'
 menu: ["main","footer"]
 weight: 1
-preheading: 
+preheading: High standards & Friendly service
 _build:
   render: true
 cascade:

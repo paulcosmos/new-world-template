@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Nicola Stanley
 type: review
 rating: 5
-location: 
+location: Cleethorpes
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Always reliable and arrives on time, would recommend Alec to anyone, his work is excellent. Very happy customer.
