@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Paul
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Lee was very informative as to what was to be done regarding the re-gas, pointing out the various parts. A phone call when he finished with a test showing me it had been fixed and asking if I was happy with it all. I was. Very happy.

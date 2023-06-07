@@ -4,16 +4,14 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/roadside-repair.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We're your **top choice** for a {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+**{{<company>}}** have been providing {{<industry>}} services to happy customers in and around {{<county>}} for over {{<years>}}. We pride ourselves on our excellent customer service, competitive prices and swift turnaround times.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+We specialise in **Nissan** and **Renault** vehicles, but are equipped and experienced to work on any make and model. We only fit genuine OEM or manufacturer approved parts and offer a **12 month warranty** on all our work.
 
 
 

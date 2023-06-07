@@ -4,13 +4,15 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/well-equipped.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## We're **fully qualified** mechanics. We have the skills, experience and tools to work on any vehicle.
 
-+ Experienced across all aspects of {{<industry>}}
-+ Reputation for fast delivery times and reliability
-+ Competitive and affordable prices
+* City & Guilds F Gas Mobile Air-con
+* IMI Certified Member
+* IMI Level 2 EV/HEVv
+* IMI Level 3 EV/HEV
+* Fully insured including public liability
 
 We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.

@@ -419,7 +419,7 @@ strong {
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 140px;
             }
         }
     }
@@ -656,6 +656,7 @@ strong {
             font-weight: bold;
             width: 100%;
             color: $hero-cta-number-text;
+            font-family: "Lora";
             margin-top: 0;
             margin-bottom: 1rem;
 
@@ -865,6 +866,9 @@ strong {
                 }
 
                 li {
+                    &:first-child {
+                        margin-top: 0;
+                    }
 
                     &:before {
                         content:"\f14a";
