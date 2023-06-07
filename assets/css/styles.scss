@@ -865,6 +865,9 @@ strong {
                 }
 
                 li {
+                    &:first-child {
+                        margin-top: 0;
+                    }
 
                     &:before {
                         content:"\f14a";
