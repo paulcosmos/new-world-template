@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
 
 // Override Bulma variables here:
-$family-headings: "Sigmar", sans-serif;
+$family-headings: "Outfit", sans-serif;
 $family-sans-serif: "Nunito Sans", sans-serif;
-$family-heading-weight: 600;
+$family-heading-weight:700;
 
 //  Set colours
 $primary: #57B98F;
@@ -59,7 +60,7 @@ $navbar-item-color: $secondary;
 $navbar-item-hover-color: darken($primary,10%);
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
-$navbar-item-mobile-color: $navbar-item-color;
+$navbar-item-mobile-color: white;
 $navbar-dropdown-arrow: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
@@ -80,7 +81,7 @@ $sl-navigation-color: white;
 $hero-text: white;
 $preheading-text: white;
 $preheading-size: 1rem;
-$hero-title-size: 3.2rem;
+$hero-title-size: 3.6rem;
 $hero-text-size: 1rem;
 $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);

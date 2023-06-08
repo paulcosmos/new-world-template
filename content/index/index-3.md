@@ -7,8 +7,8 @@ _build:
 image: images/location.jpg
 ---
 
-## It's super easy to sniff us out! We're on **Chester Rd** with parking right outside.
+## It's super easy to sniff us out!
 
-You can find us on Chester Rd in Warrington, just across the canal. On-street parking is available nearby.
+You can find us just off Chester Rd at the top of **Morley Rd** in Warrington, just across the canal from The Stag. 
 
-We are highly experienced dog grooming professionals. Whatever the size or breed of your pooch, we can give them the star treatment. Pick up the dog and bone and call us today on **{{<phone>}}** to arrange a visit.
+On-street parking is available right outside.

@@ -182,6 +182,10 @@ strong {
         color: inherit;
     }
 
+    h2 {
+        font-size: 2.2rem;
+    }
+
     ul {
         position: relative;
         margin-left: 0;
@@ -588,6 +592,10 @@ strong {
         h1,
         h2 {
             font-size: $hero-title-size;
+
+            @include until($tablet){
+                font-size:2.8rem;
+            }
         }
 
         p {
@@ -644,6 +652,7 @@ strong {
         @include box-shadow-3d;
         color: white;
         font-weight: 600;
+        font-size: 1rem;
         padding: 1.25rem;
         margin: 0 auto;
         border: $hero-cta-border;

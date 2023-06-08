@@ -2,9 +2,9 @@
 			<section class="section contact">
 				<div class="container is-fullhd">
 					<div id="map" class="map has-background-grey is-hidden-touch"></div>
-					<div class="columns is-variableis-multiline">
+					<div class="columns is-variable is-multiline">
 
-						<div class="column is-4-desktop">
+						<div class="column is-12-tablet is-5-desktop">
 							<div class="content contact-details mb-6" data-aos="fade-right">
 								<h2>Business Address</h2>
 								<address>
@@ -21,11 +21,14 @@
 									{{ .postcode }}
 								{{- end }}
 								</address>
+								<figure class="image is-square m-0 mt-5">
+									<img src="/images/location.jpg">
+								  </figure>
 							</div>
 							{{  partial "contact-details.html" .  }}
 						</div>
 
-						<div class="column is-offset-2-desktop box contact-form" data-aos="fade-up">         
+						<div class="column is-offset-1-desktop box contact-form" data-aos="fade-up">         
 										{{ partial "contact-form.html" . }}
 						</div>
 					</div>

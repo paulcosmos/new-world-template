@@ -8,6 +8,7 @@ anchor:
 ---
 ## Doggy Dental Care
 
-As much as we love our pets, nobody likes dog breath. If your pooch has the pong, bring them in us and our professionally-trained, highly experienced team can give their teeth a professional clean and examination.
+As much as we love our pets, nobody likes dog breath! If your pooch has the pong, bring them in us and our professionally-trained, highly experienced team can give their teeth a professional clean. We offer Emmy-Pet ultrasonic teeth cleaning to help keep on top of your dogs dental hygiene. 
 
-If your dog is not comfortable having their teeth brushed, we can work with you to slowly build up their trust and familiarity with a toothbrush over time, helping you both work into a daily dental-hygiene routine.
+Severe bad breath may be a sign of tooth decay or other dental issues. Book a consultation today and our expert staff can perform an examination and advise you on the best treatment for your dog.
+
