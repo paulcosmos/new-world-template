@@ -9,18 +9,13 @@
 								<h2>Business Address</h2>
 								<p>Please note, our business address is purely for correspondence. We do not have a public office.</p>
 								<address>
-									{{- with .Site.Params }}
-									<b>{{ .fullname }},<br/></b>
-									{{ if .building }}
-									{{ .building }},<br/>
-									{{end }}
-									{{ .street }},<br/>
-									{{ .towncity }},<br/>
-									{{ if .county -}}
-									{{ .county }}, <br/>
-									{{ end -}}
-									{{ .postcode }}
-								{{- end }}
+									<b>{{ .Site.Params.fullname }},<br/></b>
+									c/o Danbro Accounting, <br/>
+									Jubilee House, <br/>
+									East Beach, <br/>
+									Lytham, <br/>
+									Saint Annes, <br/>
+									FY8 5FT
 								</address>
 							</div>
 							{{  partial "contact-details.html" .  }}
