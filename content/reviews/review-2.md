@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Bradley Clarke
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Very good service, polite quick and efficient. Would highly recommend.

@@ -391,12 +391,12 @@ strong {
 
     &-logo-overlap {
 
-        padding: 0;
+        // padding: 0;
 
-        @include from($navbar-breakpoint) {
+        // @include from($navbar-breakpoint) {
             position: relative;
             top: 0;
-            padding: 1rem;
+            padding: 1rem!important;
             // padding-top: 0;
             margin-top: 0;
             margin-bottom: -40px;
@@ -407,7 +407,7 @@ strong {
             &:focus {
                 background-color: $logo-bg-hover-colour!important;
             }
-        }
+        // }
 
         img {
             padding: 0;
@@ -419,7 +419,7 @@ strong {
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 140px;
             }
         }
     }
