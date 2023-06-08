@@ -1,6 +1,6 @@
 {{ define "hero" }}
 <section class="hero hero-service is-halfheight"
- 	style="background-image:linear-gradient(-249deg, rgba(36, 40, 51, 1), rgba(36, 40, 51, 0.5)), url(../{{ .Params.backgroundImage }}">
+ 	style="background-image:linear-gradient(-249deg, rgba(11, 16, 26, 1), rgba(11, 16, 26, 0.5)), url(../{{ .Params.backgroundImage }})">
 	<div class="hero-body">
 		<div class="container is-fullhd">
 			<div class="columns">
@@ -22,59 +22,49 @@
 {{ define "main" }}
 <section class="section">
 	<div class="container is-fullhd">
-		<div class="columns is-multiline is-centered">
-			<div class="column is-12-touch is-7-desktop" data-aos="fade-in">
+		<div class="columns is-multiline is-vcentered is-centered is-variable is-8">
+			<div class="column is-12-touch is-6-desktop" data-aos="fade-in">
 				<article class="content has-accent">
 				{{ .Content }}
 				</article>
 			</div>
-			<div class="column is-offset-1-desktop _is-narrow _is-12-touch" data-aos="fade-left">
-			{{- if .Params.services }}
-				<aside class="content service-page-list box">
-					<h3>What we offer</h3>
-					<ul>
-					{{ range .Params.services }}
-					<li>{{ . }}</li>
-					{{ end }}
-				</aside>
-			{{- end }}
-				<div class="content hero-cta">
-					<h3>Get a Quote</h3>
-					<hr/>
-					<h4>
-					{{- if $.Site.Params.phone }}
-						{{- .Site.Params.phone -}}
+			<div class="column is-12-touch is-6-desktop" data-aos="fade-in">
+				<div class="image is-1by1 company-services-image company-services-image">
+					{{- $image := resources.Get .Params.image }}
+					{{- if $image }}
+					<img src='{{ ($image.Fill "1200x1200 q75 Center").RelPermalink }}' alt="" title=""/>
 					{{ else }}
-						{{- .Site.Params.mobile -}}
-					{{- end -}}
-					</h4>
-					<p>Speak to us today to arrange a no obligation quotation or use our contact form to request a callback</p>
-					<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
-						<span class="icon-text">
-						  <span class="icon is-hidden-touch">
-						    <i class="fa-regular fa-phone"></i>
-						  </span>
-						  <span>Request a call back</span>
-						</span>
-					</button>
+					<img src='/images/placeholder.jpg'/>
+					{{- end }}
 				</div>
 			</div>
-			{{/*  {{ else }}
-			{{- $image := resources.Get .Params.image }}
-			<div class="column" data-aos="fade-left">
+		</div>
+		<div class="columns mt-6 company-services-item is-multiline is-vcentered is-variable is-8">
+			<div class="column is-hidden-touch" data-aos="fade-in">
 				<div class="image is-1by1 company-services-image company-services-image">
-				{{- if .Params.image }}
-					<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' alt="" title=""/>
-				{{ else }}
+					{{- $image := resources.Get .Params.image2 }}
+					{{- if $image }}
+					<img src='{{ ($image.Fill "1200x1200 q75 Center").RelPermalink }}' alt="" title=""/>
+					{{ else }}
 					<img src='/images/placeholder.jpg'/>
-				{{ end }}
+					{{- end }}
 				</div>
-			</div>  */}}
+			</div>
+			<div class="column is-7-desktop">
+				<div class="_content has-accent company-services-list" data-aos="fade-right">
+					<h2>First Choice Driveways & Treecare offer a wide range of <em>landscaping services</em> throughout Lancashire.</h2>
+					<ul>
+						{{ range .Params.services }}
+						<li>{{ . }}</li>
+						{{ end }}	
+					</ul>					
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 
-	{{/*  {{ partial "cta-text.html" . }}  */}}
+	{{ partial "cta-text.html" . }}
 	{{ partial "why-us-banner.html" . }}
 
 {{ end }}

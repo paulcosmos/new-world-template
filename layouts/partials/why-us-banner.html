@@ -1,10 +1,8 @@
+{{ with .Site.Params }}
 <section class="why-us-banner section ">
-				<div class="container _is-fluid is-fullhd">
-					<div class="columns is-multiline is-variable is-6">
-					{{ with .Site.Params }}
-						<div class="column is-6-tablet is-6-desktop is-6-widescreen is-12-fullhd has-accent is-4 is-align-items-center is-justify-content-cnter is-flex-direction-column" data-aos="fade-in" data-aos-delay="0">
-							<h2>Why trust <span>{{ .company }}</span> for your {{ .industry }} needs?</h2>
-						</div>
+				<div class="container has-text-centered _is-fluid is-fullhd">
+					<h2>Why trust <em>{{ .company }}</em> for your landscaping needs?</h2>
+					<div class="columns mt-6 is-multiline is-variable is-6">
 						<div class="column is-6-tablet is-6-desktop is-6-widescreen is-4-fullhd" data-aos="fade-in" data-aos-delay="200">
 							<h3>Experienced &amp Reliable</h3>
 							<p>We have years of {{ .industry }} experience in and around {{ if .county}}{{ .county}}{{ else }}{{ .towncity }}{{ end }}.</p>
@@ -17,7 +15,7 @@
 							<h3>Customer Focused</h3>
 							<p>We're known for our reputation for reliability and friendly service.</p>
 						</div>
-					{{ end }}
 					</div>
 				</div>
 			</section>
+{{ end }}

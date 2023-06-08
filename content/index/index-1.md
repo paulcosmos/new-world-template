@@ -4,16 +4,16 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/tree-surgeon.jpg
+image2: images/tree-surgeon.jpg
+
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We're your _First Choice_ for patios, driveways and tree care in {{<towncity>}} &amp; {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+At {{<company>}}, we offer an expert driveways, patios and tree care service for a highly competitive price. Our years of experience in the field can be seen in our finished work. 
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+We make it our aim to make sure that your project is completed to your absolute satisfaction. Rest assured knowing your in the hands of experts with a proven track record.
 
 
 

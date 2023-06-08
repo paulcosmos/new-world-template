@@ -12,11 +12,13 @@
 		<header>
 			{{ partial "top-banner.html" . }}
 
+			{{ if not .IsHome }}
 			{{ partial "navbar.html" . }}
+			{{ end }}
 
 			{{ block "hero" . -}}
-			<section class="hero is-small">
-			    {{ partial "hero/hero-text-only.html" . }}
+			<section class="hero is-medium">
+			    {{ partial "hero/hero-image.html" . }}
 			</section>
 			{{ end }}
 		</header>

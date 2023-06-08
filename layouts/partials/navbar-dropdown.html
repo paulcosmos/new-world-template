@@ -22,7 +22,7 @@
 					<div id="navbar-site" class="navbar-menu">
 						<div class="navbar-end has-text-centered">
 						    <a href="/index.html" class="navbar-item">
-							Home
+							About
 							</a>
 
 							{{/*  Dropdown  */}}
@@ -33,7 +33,7 @@
 								<div class="navbar-dropdown">
 							    {{- $currentPage := . }}
 								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
-									<a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Title }}">
+									<a class="navbar-item" href="/{{ .Params.slug }}" title="{{ .Title }}">
 									{{- if .Params.anchor -}}
 									  {{ .Params.anchor }}
 									{{- else -}}

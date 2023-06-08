@@ -33,8 +33,8 @@
 							<div class="content site-footer-links _has-columns">
 							<h4>Primary Services</h4>
 								<ul>
-									{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-									<li><a href="/services.html#{{ anchorize .Title }}">
+									{{- range where .Site.RegularPages "Type" "service-page" }}
+									<li><a href="/services/{{ .Params.slug }}.html">
 										{{- if (ne .Params.anchor nil) }}
 											{{- .Params.anchor -}}
 										{{- else -}}
@@ -42,18 +42,21 @@
 										{{- end -}}
 									</a></li>
 									{{- end }}
+									<li><a href="/services/driveways-patios.html">Paths</a></li>
+									<li><a href="/services/driveways-patios.html">Landscaping</a></li>
+									<li><a href="/services/driveways-patios.html">Exterior cleaning</a></li>	
 								</ul>
 							</div>
 						</div>
 
-						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
+						{{/*  <div class="column is-6-mobile _is-4-tablet _is-2-desktop">
 							<div class="content site-footer-links _has-columns">
 								<h4>Social Media</h4>
 								<ul>
 									{{ partial "social-links-text.html" . }}
 								</ul>
 							</div>
-						</div>
+						</div>  */}}
 
 					</div>
 				</div>

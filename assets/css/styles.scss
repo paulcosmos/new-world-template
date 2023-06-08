@@ -49,11 +49,11 @@ h6 {
     font-family: $family-headings;
 }
 
-h2 {
+h2,.content h2 {
     @include section-item-title;
 }
 
-h3 {
+h3, .content h3 {
     @include x-item-title;
 
 }
@@ -229,6 +229,11 @@ strong {
     strong,
     span {
         color: $accent;
+    }
+
+    em {
+        text-decoration: underline;
+        text-decoration-color: $primary;
     }
 
     p,
@@ -552,9 +557,9 @@ strong {
 
 // .pre-heading > span,
 .pre-heading {
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-size: $preheading-size;
-    font-weight: bold;
+    // font-weight: bold;
     margin-bottom: $size-5;
     display: block;
     color: $preheading-text;
@@ -577,6 +582,14 @@ strong {
     @include from($navbar-breakpoint) {
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+
+    .pre-heading {
+        color:$primary;
+    }
+
+    h1, h2 {
+        font-size: $hero-title-size;
     }
 
     &-index {
@@ -639,7 +652,7 @@ strong {
     &-cta {
         background-color: $hero-cta-bg;
         border-radius: $hero-cta-corner-radius;
-        @include box-shadow-offset-solid($hero-cta-shadow);
+        // @include box-shadow-offset-solid($hero-cta-shadow);
         color: white;
         font-weight: 600;
         padding: 1.25rem;
@@ -802,7 +815,8 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
+            // @include background-dots;
+            color: $text;
             background-position: bottom;
             padding-bottom: 5rem;
 
@@ -817,7 +831,7 @@ strong {
                 h3 {
                     // color: white;
                     color: inherit;
-                    font-size: $size-5;
+                    font-size: $size-4;
                     margin-bottom: $size-7;
                 }
 
@@ -861,7 +875,7 @@ strong {
                 }
 
                 @include from($desktop){
-                    columns: 3;
+                    columns: 2;
                 }
 
                 li {
@@ -873,7 +887,7 @@ strong {
                         content:"\f14a";
                         font-family: "FontAwesome";
                         margin-right: 10px;
-                        color: $primary;
+                        color: lighten($secondary,20%);
                     }
 
                     display: block;
@@ -1121,7 +1135,7 @@ strong {
         background-color: $primary;
         display: block;
         color: $white;
-        text-align: center;
+        // text-align: center;
         font-size: $size-5;
         position: relative;
         margin-top: -5rem;
@@ -1493,7 +1507,9 @@ strong {
     }
 
     &-links {
+        // font-size: $size-7;
         a {
+            font-size: inherit;
             font-size: $size-7;
             color: white;
             fill: white;
