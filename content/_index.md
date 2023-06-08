@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable, professional {{<industry>}} services throughout {{<towncity>}}, {{<county>}} and beyond.
 
-**{{<company>}}** is a family-run business. We have been providing {{<industry>}} services to customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade but specialise in **porcelain paving and natural stone**.
+**{{<company>}}** is a family-run business. We are specialists in **porcelain paving and natural stone**.

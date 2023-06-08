@@ -575,6 +575,10 @@ strong {
         p {
             font-size: $hero-text-size;
         }
+
+        .pre-heading {
+            color: lighten($preheading-text,10%);
+        }
     }
 
     &-service {

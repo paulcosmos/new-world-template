@@ -54,7 +54,7 @@ $navbar-item-color: $text;
 $navbar-item-hover-color: $primary;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
-$navbar-item-mobile-color: $navbar-item-color;
+$navbar-item-mobile-color: white;
 
 $navbar-dropdown-arrow: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
@@ -81,7 +81,7 @@ $hero-text-size: 1rem;
 
 $hero-cta-bg: darken($secondary,9%);
 $hero-cta-shadow: #c7c6c6;
-$hero-cta-number-text: $primary;
+$hero-cta-number-text: white;
 $hero-cta-corner-radius: .5rem;
 $hero-cta-border: none;
 $bg-overlay: rgba(0, 0, 0, 0.6);
