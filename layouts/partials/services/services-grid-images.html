@@ -1,11 +1,11 @@
-					<div class="columns is-multiline is-variable is-centered is-4">
+					<div class="columns is-desktop is-multiline is-variable is-centered is-4">
 					{{/* Automatically increment the aos-delay value */}}
 					{{- $currentPage := . -}}
 					{{- $.Scratch.Set "delay" 0 }}
 					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" -}}
 					{{- $i := $.Scratch.Get "delay" }}
 						{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
-						<div class="column is-6-tablet is-6-desktop is-3-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
+						<div class="column is-6-tablet is-one-third-desktop is-one-fifth-widescreen company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
 							<div class="image is-1by1 _company-services-image mb-4">
 								{{- $image := resources.Get .Params.image }}
 								<a href="/services.html#{{ anchorize .Title }}">

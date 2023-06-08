@@ -7,9 +7,9 @@ _build:
 image: images/fleet-van.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We're your **top choice** for {{<industry>}} in {{<county>}}. We provide both local and nationwide removals services.
 
-Harrington Removals in Rhosrobin, Wrexham are one of the leading companies in the area. We provide house removals at the fraction of the cost of larger national removal companies. 
+Harrington Removals based in Rhosrobin, Wrexham are one of the leading companies in the area. We provide house removals at the fraction of the cost of larger national removal companies. 
 
 We have had many happy customers over the years that return to our service again and again if not for themselves, with recommendations for their friends and family. 
 
