@@ -50,6 +50,18 @@
 						</div>
 					</div>
 					{{ partial "services/services-grid-images.html" . }}
+					{{- $currentPage := . }}
+					{{- range where (where .Site.RegularPages "Type" "services-list") "File.Dir" "services/" }}
+					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+						<div class="column is-12-touch">
+							{{/*  <div class="pre-heading" data-aos="fade-down">What we do</div>  */}}
+							<div class="_content has-accent company-services-list" data-aos="fade-right">
+								{{ .Content }}							
+							</div>
+						</div>
+					</div>
+				{{ end }}
+
 				</div>
 			</section>
 
