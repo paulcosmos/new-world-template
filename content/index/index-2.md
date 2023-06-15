@@ -9,6 +9,6 @@ image: images/water-feature.jpg
 
 ## We're highly experienced **{{<industry>}} experts**. Porcelain paving and natural stone are our speciality.
 
-The team at {{<fullname>}} are highly experienced professionals. We are experienced across a wide range of landscaping jobs, but are known for our expert knowledge of **porcelain paving** and **natural stone** installation.
+The team at {{<fullname>}} are highly experienced professionals. We have experience across a wide range of landscaping jobs, but are known for our expert knowledge of **porcelain paving** and **natural stone** installation.
 
-Whatever the job, Matt and the team can handle it. Call Lisa today on **{{<phone>}}** to arrange a no obligation quote.
+Whatever the job, Matt and the team can handle it. Call Lisa today on **{{<phone>}}** to arrange a no-obligation quote.

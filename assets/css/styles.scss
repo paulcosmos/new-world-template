@@ -363,11 +363,12 @@ strong {
         padding-bottom: 1rem;
 
         img {
-            max-width: $logo-max-width;
             max-height: $logo-max-height;
+            max-width: $logo-max-width;
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
+                max-width: $logo-max-width-mobile;
                 padding: 0;
             }
         }
