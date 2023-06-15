@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Deimantas
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+We recently had our kitchen refurbished and updated. We are more than happy with the result and completed job was done efficiently and tidily. We would have no hesitation in using {{<company>}} again.

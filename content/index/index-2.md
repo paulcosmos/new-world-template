@@ -4,10 +4,10 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/stairs.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## We're **{{<industry>}} experts**. No job is too big for our expert team.
 
 + Experienced across all aspects of {{<industry>}}
 + Reputation for fast delivery times and reliability

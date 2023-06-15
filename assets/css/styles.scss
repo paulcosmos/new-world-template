@@ -1219,7 +1219,6 @@ strong {
         padding-top:1.5rem;
         padding-bottom:1.5rem;
         flex: 0 1 50%;
-        // margin: 0 0.5rem;
         margin-bottom: 2rem!important;
 
         @include from($tablet) {
@@ -1241,6 +1240,10 @@ strong {
             &:last-child {
                 margin-right: 0;
             }
+        }
+
+        img {
+            max-height: 130px;
         }
     }
 }
