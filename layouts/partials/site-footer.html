@@ -34,8 +34,8 @@
 							<h4>Primary Services</h4>
 								<ul>
 									{{- $currentPage := . -}}
-									{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "gas-services/"}}
-									<li><a href="/gas-services.html#{{ anchorize .Title }}">
+									{{- range (where .Site.RegularPages "Type" "service-item")}}
+									<li><a href="{{ .Params.slug }}#{{ anchorize .Title }}">
 										{{- if (ne .Params.anchor nil) }}
 											{{- .Params.anchor -}}
 										{{- else -}}
@@ -43,7 +43,7 @@
 										{{- end -}}
 									</a></li>
 									{{- end }}
-									{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "plumbing-services/"}}
+									{{/*  {{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "plumbing-services/"}}
 									<li><a href="/plumbing-services.html#{{ anchorize .Title }}">
 										{{- if (ne .Params.anchor nil) }}
 											{{- .Params.anchor -}}
@@ -51,7 +51,7 @@
 											{{- .Title -}}
 										{{- end -}}
 									</a></li>
-									{{- end }}
+									{{- end }}  */}}
 								</ul>
 							</div>
 						</div>

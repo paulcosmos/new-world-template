@@ -5,6 +5,8 @@ desc: Bespoke kitchens and utility rooms designed and installed around your need
 weight: 2
 image: images/kitchens.jpg
 anchor:
+slug: plumbing-services.html
+
 ---
 ## Kitchens & Utilities
 

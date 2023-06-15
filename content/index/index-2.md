@@ -4,7 +4,8 @@ weight: 2
 _build:
     list: true
     render: false
-image: images/bathroom-design.jpg
+image: images/candm.jpg
+
 ---
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality.
@@ -13,4 +14,4 @@ image: images/bathroom-design.jpg
 + Reputation for fast delivery times and reliability
 + Competitive and affordable prices
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** or **{{<mobile>}}** for a no obligation quote.

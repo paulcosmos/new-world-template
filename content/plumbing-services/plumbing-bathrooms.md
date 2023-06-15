@@ -5,6 +5,8 @@ desc: Elegant, bespoke bathrooms designed and built to your exact specifications
 weight: 1
 image: images/bathrooms.jpg
 anchor:
+slug: plumbing-services.html
+
 ---
 ## Bathroom Fitting & Installations
 

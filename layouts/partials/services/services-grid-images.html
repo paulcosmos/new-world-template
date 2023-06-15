@@ -2,13 +2,13 @@
 					{{/* Automatically increment the aos-delay value */}}
 					{{- $currentPage := . -}}
 					{{- $.Scratch.Set "delay" 0 }}
-					{{- range (where .Site.RegularPages "Type" "service-item") -}}
+					{{- range (where .Site.RegularPages "Type" "service-item")}}
 					{{- $i := $.Scratch.Get "delay" }}
 						{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
 						<div class="column is-6-tablet is-4-desktop is-4-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
 							<div class="image is-3by2 _company-services-image mb-4">
 								{{- $image := resources.Get .Params.image }}
-								<a href="/services.html#{{ anchorize .Title }}">
+								<a href="{{ .Params.slug }}#{{ anchorize .Title }}">
 								{{- if $image }}
 								<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' alt="" title=""/>
 								{{ else }}
@@ -19,7 +19,7 @@
 							<h3>{{ .Params.title }}</h3>
 							<p>{{ .Params.desc }}</p>
 							<div>
-								<a href="/services.html#{{ anchorize .Title }}">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
+								<a href="{{ .Params.slug }}#{{ anchorize .Title }}">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
 							</div>
 						</div>
 					{{ end -}}

@@ -5,6 +5,7 @@ desc: Our safety inspections provide you with a thorough gas safety check and ce
 weight: 2
 image: images/gas-safety.jpg
 anchor: 
+slug: gas-services.html
 ---
 # Gas Safety Checks
 

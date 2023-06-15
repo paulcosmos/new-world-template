@@ -5,6 +5,8 @@ desc: We are fully qualified to install, inspect and repair domestic LPG tank an
 weight: 3
 image: images/lpg.jpg
 anchor: 
+slug: gas-services.html
+
 ---
 # Domestic LPG
 

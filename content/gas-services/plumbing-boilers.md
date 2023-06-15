@@ -5,6 +5,8 @@ desc: Our Gas Safe Registered experts are fully qualified to inspect, repair and
 weight: 1
 image: images/boiler.jpg
 anchor:
+slug: gas-services.html
+
 ---
 ## Boilers & Central Heating
 

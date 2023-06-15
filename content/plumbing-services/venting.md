@@ -5,6 +5,8 @@ desc: We are experienced working on a variety of vented and unvented hot water c
 weight: 3
 image: images/unvented-cylinder.jpg
 anchor: Unvented Cylinders
+slug: plumbing-services.html
+
 ---
 ## Unvented Cylinder Systems
 
