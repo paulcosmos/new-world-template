@@ -865,6 +865,9 @@ strong {
                 }
 
                 li {
+                    &:first-child {
+                        margin-top: 0;
+                    }
 
                     &:before {
                         content:"\f14a";
@@ -1238,6 +1241,10 @@ strong {
             &:last-child {
                 margin-right: 0;
             }
+        }
+        
+        img {
+            max-height: 130px;
         }
     }
 }
