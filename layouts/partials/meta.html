@@ -1,23 +1,23 @@
 	<title>
 	{{- if .IsHome }}
-	{{- print .Site.Params.company }} | Trusted and professional {{ print .Site.Params.industry }} in {{ .Site.Params.towncity }} and {{ .Site.Params.county }}
+	{{- print .Site.Params.company }} | Trusted and professional {{ print .Site.Params.industry }} in {{ .Site.Params.towncity }} {{ if .Site.Params.county }} and {{ .Site.Params.county }} {{ end }}.
 	{{ else }}
 	{{- print .Page.Title }} | {{ print .Site.Params.company }}
 	{{ end -}}
-	</title>
+	</title>{{ with .Site.Params }}
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Professional {{ .Site.Params.industry }} services in {{ if .Site.Params.county }}{{ .Site.Params.county }}{{ else }}{{ .Site.Params.towncity}}{{ end }}">
-		<meta name="keywords" content="">
+		<meta name="description" content="Professional {{ .industry }} services in {{ .towncity }} {{- if .county }} and {{ .county }}{{ end }}">
+		<meta name="keywords" content="{{ .industry|humanize }} in {{ .towncity }} {{- if .county }} and {{ .county }}{{ end }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:title" content="{{ .Page.Title }} | {{ .Site.Params.company }}"/>
-		<meta property="og:description" content="Professional {{ .Site.Params.industry }} services in {{ if .Site.Params.county }}{{ .Site.Params.county }}{{ else }}{{ .Site.Params.towncity}}{{ end }}"/>
+		<meta property="og:title" content="{{ .Page.Title }} | {{ .company }}"/>
+		<meta property="og:description" content="Professional {{ .industry }} services in {{ if .county }}{{ .county }}{{ end }}"/>
 		<meta property="og:type" content="website"/>
 		<meta name="theme-color" content="#1a1a1a">
 		<meta name="msapplication-navbutton-color" content="#1a1a1a">
 		<meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a">
-		<meta name="application-name" content="{{- print .Page.Title }} | {{ print .Site.Params.company }}">
+		<meta name="application-name" content="{{- print .Page.Title }} | {{ print .company }}">
 		<link rel="canonical" href="{{ print .Site.BaseURL }}">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 		{{ "<!--[if (lt IE 9)]><script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js'></script><![endif]-->" | safeHTML }}
@@ -26,4 +26,4 @@
 		{{- $style := resources.Get "css/styles.scss" | resources.ToCSS | resources.PostCSS  (dict "config" "./postcss.config.js") }}
 		{{- $stylemin := resources.Get "css/styles.scss" | resources.ToCSS | resources.PostCSS  (dict "config" "./postcss.config.js") | resources.Minify | resources.Fingerprint "sha512" }}
 		<link rel="stylesheet" href="{{ $bulma.Permalink | relURL }}">
-		<link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+		<link rel="stylesheet" href="{{ $style.Permalink | relURL }}">{{ end }}

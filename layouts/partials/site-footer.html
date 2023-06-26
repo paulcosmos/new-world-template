@@ -68,7 +68,7 @@
 			<div class="container is-fluid site-footer-signoff">
 				<div class="content">
 					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ if .building }}{{ .building }},{{end }} {{ .street }}, {{ .towncity }}, {{ if .county }}{{ .county }}, {{ end }} {{ .postcode }}</address>
+					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ if .building }}{{ .building }},{{end }} {{ .street }}, {{ .towncity }}, {{ if .county }}{{ .county }}, {{ end }} {{ .postcode }}</address> | {{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
 					{{- end }}
 				</div>
 			</div>

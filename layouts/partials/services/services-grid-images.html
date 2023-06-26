@@ -1,3 +1,4 @@
+
 					<div class="columns is-multiline is-variable is-4">
 					{{/* Automatically increment the aos-delay value */}}
 					{{- $currentPage := . -}}
@@ -10,7 +11,11 @@
 								{{- $image := resources.Get .Params.image }}
 								<a href="/services.html#{{ anchorize .Title }}">
 								{{- if $image }}
-								<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' alt="" title=""/>
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' 
+									alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end -}}
 								{{ else }}
 								<img src='/images/placeholder.jpg'/>
 								{{- end }}

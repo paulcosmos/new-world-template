@@ -24,9 +24,9 @@
 							<div class="image has-rounded-corners">
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
-								<img src='{{ ($image.Resize "x890 q50 Smart").RelPermalink }}' alt="" title=""/>
+								<img src='{{ ($image.Resize "x890 q50 Smart").RelPermalink }}' alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ else }}
-								<img src='/images/placeholder.jpg'/>
+								<img src='/images/placeholder.jpg' alt="{{ .Site.Params.industry|humanize }} in {{ .Site.Params.towncity }}" title="{{ .Site.Params.industry|humanize }} in {{ .Site.Params.towncity }}"/>
 							{{- end }}
 							</div>
 						</div>
