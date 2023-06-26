@@ -7,5 +7,17 @@
 								{{ .Content }}							
 							</div>
 						</div>
+						<div class="column is-hidden-touch" data-aos="fade-left">
+							<div class="image is-4by5 company-services-image company-services-image">
+								{{- $image := resources.Get .Params.image }}
+								{{- if $image }}
+								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+									alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
+						</div>
 					</div>
 				{{ end }}
