@@ -23,5 +23,6 @@ type: services-list
 * Tap Changes
 * Leaks & drips repaired
 * Septic Tank Work
-* Pump removals
-* Rising Main Repairs & Renewals    
+* Pump Maintenance & Renewal
+* Rising Main Repairs & Renewals 
+* Water Main Repairs   
