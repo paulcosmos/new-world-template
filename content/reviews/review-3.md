@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: 1st Class Service
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+I would highly recommend James as he came out when he said he would and the scaffolding was safe and sound. I will certainly use JMK Scaffolding Ltd on my next jobs.

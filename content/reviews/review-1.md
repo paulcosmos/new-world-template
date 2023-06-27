@@ -1,8 +1,8 @@
 ---
-title: James
+title: Good Service
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+ Fast response, reliable and a very reasonable price. Will use again with future work. 
