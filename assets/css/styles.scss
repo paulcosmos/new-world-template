@@ -443,7 +443,7 @@ strong {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: $navbar-background-color-mobile;
+                background-color: rgba($navbar-background-color-mobile,0.95);
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
@@ -503,7 +503,7 @@ strong {
 
         &.is-active {
             z-index: 99;
-            color: white;
+            color: $navbar-burger-text;
 
             &:before {
                 content: "Close";

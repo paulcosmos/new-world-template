@@ -43,7 +43,7 @@ $top-banner-icon: $accent;
 
 // Main Navigation 
 $navbar-background-color: $secondary;
-$navbar-background-color-mobile: rgba($secondary, 0.95);
+$navbar-background-color-mobile: $secondary;
 
 $navbar-height: 5rem;
 $logo-max-width: 180px;
@@ -56,6 +56,7 @@ $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
 $navbar-item-mobile-color: $navbar-item-color;
 $navbar-dropdown-arrow: $primary;
+$navbar-burger-text: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
