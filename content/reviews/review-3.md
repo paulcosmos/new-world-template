@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Ian H.
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Neil is a very reliable man, he offers and provides an excellent service, I phoned him in the afternoon and he arrived the following morning, I can't rate him highly enough, sorted out a difficult problem very quickly, many thanks, Ian. 
