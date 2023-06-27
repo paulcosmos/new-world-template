@@ -277,6 +277,14 @@ strong {
         color: inherit;
         font-weight: inherit;
     }
+
+    .container.is-fluid {
+
+        @include until($navbar-breakpoint){
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
 }
 
 
@@ -411,7 +419,7 @@ strong {
 
         img {
             padding: 0;
-            width: 100%;
+            max-width: 100%;
             max-height: $navbar-height;
 
             @include from($navbar-breakpoint) {
