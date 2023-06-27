@@ -1,11 +1,12 @@
 ---
-title: "CCTV Drain Surveys, Mapping & Reports"
+title: "CCTV Surveys & Mapping"
 type: service-page
 layout: servicepage
-desc: We can usually fix most drain problems using a 'no dig' solution, but when we can't then drain excavation may be required.
+desc: CCTV surveys and drain mapping enable us to trace your drainage and diagnose problems quickly with minimal disruption to you.
+summary: We are fully equipped with the latest technologies, machinery and equipment which allow us to conduct all CCTV surveys, reports and mapping services with accuracy and optimal safety.
 weight: 2
-image: images/service.jpg
-backgroundImage: images/service-hero.jpg
+image: images/cctv-surveys.jpg
+backgroundImage: images/cctv-surveys-hero.jpg
 anchor: Drain Mapping & Surveys
 _build:
   render: true
@@ -37,4 +38,4 @@ Our drain reports are comprised of a full inspection and survey of the pipes con
 ## How We Work
 Safety is essential for us at {{<company>}}. We comply with all regulations for the duration of our drain assessment services in order to maintain a hazard-free environment from start to finish. With this in mind, all properties and drainage systems are in safe hands for the entirety of each investigation process.
 
-To discuss our CCTV drainage investigations, reports or mapping services at {{<company>}}, or to book your service with our team, give us a call on 07786195002. {{<phone>}}.
+To discuss our CCTV drainage investigations, reports or mapping services at {{<company>}}, or to book your service with our team, give us a call on {{<phone>}}.

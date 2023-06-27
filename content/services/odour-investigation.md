@@ -2,10 +2,11 @@
 title: "Odour Investigation"
 type: service-page
 layout: servicepage
-desc: Noticed a smell coming from your sinks or drains. We are on hand to investigate and resolve the issue.
+desc: Noticed a smell coming from your sinks or drains? We are on hand to investigate and resolve the issue.
+summary: Unfortunately, with time and lack of maintenance, drains may start to release unpleasant odours into the property. Our specialist odour investigation service is an effective way of accurately identifying the source of unpleasant odours throughout the drains and sewage system.
 weight: 2
-image: images/service.jpg
-backgroundImage: images/service-hero.jpg
+image: images/odours.jpg
+backgroundImage: images/odours-hero.jpg
 anchor:
 _build:
   render: true

@@ -3,6 +3,7 @@ title: "High-Pressure Water Jetting"
 type: service-page
 layout: servicepage
 desc: Using high-pressure water jets is one of the most effective ways to unblock and maintain the condition and overall function of drains.
+summary: High-pressure water jetting is an innovative, efficient method of removing unwanted drainage build-up using extremely high-pressure jets of water and other non-toxic chemicals to rigorously clean the internal aspects of drain pipe systems.
 services:
 - Efficient unblocking process 
 - Low-cost drainage maintenance 
@@ -13,8 +14,8 @@ services:
 - Prevents slow drainage 
 - Prevents drain gurgling 
 weight: 1
-image: images/service.jpg
-backgroundImage: images/service-hero.jpg
+image: images/jetting.jpg
+backgroundImage: images/jetting-hero.jpg
 anchor:
 _build:
   render: true

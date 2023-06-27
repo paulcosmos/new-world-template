@@ -3,9 +3,10 @@ title: "Drainage Excavations"
 type: service-page
 layout: servicepage
 desc: We can usually fix most drain problems using a 'no dig' solution, but when we can't then drain excavation may be required.
+summary: We are fully equipped with top-of-the-range excavation machinery, tools and equipment that allow us to safely dig a hole or trench into blocked pipes within the system in order to repair or replace them without creating further damages or additional problems throughout the drainage system. 
 weight: 2
-image: images/service.jpg
-backgroundImage: images/service-hero.jpg
+image: images/excavations.jpg
+backgroundImage: images/excavations-hero.jpg
 anchor:
 _build:
   render: true

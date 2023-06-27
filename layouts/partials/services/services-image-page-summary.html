@@ -4,7 +4,7 @@
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="content has-accent" data-aos="fade-right">
 								<h2>{{ .Title }}</h2>
-								<p>{{ .Params.desc }}</p>
+								<p>{{ .Params.summary }}</p>
 								<hr/>
 								<a 	class="button button-primary ml-0 modal-trigger" 
 									data-aos="fade-up" 
@@ -19,9 +19,11 @@
 							<div class="image is-5by4 company-services-image company-services-image">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
+								{{ with .Site.Params }}
 								<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' 
 									alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
 									title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+									{{ end }}
 								{{ else }}
 								<img src='/images/placeholder.jpg'/>
 								{{- end }}

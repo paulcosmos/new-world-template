@@ -3,9 +3,10 @@ title: "Drain Rodding"
 type: service-page
 layout: servicepage
 desc: Get your plumbing flowing again, both interior and exterior blockages are no problem for our specialist rodding equipment.
+summary: One of our effective drain inspection and cleaning methods is our drain rodding process. Our drain rodding method includes accessing the drains using specialist rodding equipment (known as plumbing rods), in order to accurately inspect and meticulously clean the internal pipes.
 weight: 2
-image: images/service.jpg
-backgroundImage: images/service-hero.jpg
+image: images/drain-rodding.jpg
+backgroundImage: images/drain-rodding-hero.jpg
 anchor:
 _build:
   render: true
