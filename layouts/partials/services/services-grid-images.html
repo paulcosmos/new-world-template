@@ -7,12 +7,12 @@
 					{{- $i := $.Scratch.Get "delay" }}
 						{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
 						<div class="column is-6-tablet is-4-desktop is-4-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
-							<div class="image is-3by2 _company-services-image mb-4">
+							<div class="image is-1by1 has-ratio company-services-grid-image mb-4">
 								{{- $image := resources.Get .Params.image }}
 								<a href="/services.html#{{ anchorize .Title }}">
 								{{- if $image }}
 								{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' 
+								<img src='{{ ($image.Fill "1200x1200 q50 Smart").RelPermalink }}' 
 									alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
 									title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
 								{{ end -}}

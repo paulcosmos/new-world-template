@@ -495,7 +495,7 @@ strong {
 
         &.is-active {
             z-index: 99;
-            color: white;
+            color: $primary;
 
             &:before {
                 content: "Close";
@@ -920,6 +920,13 @@ strong {
                 border: 0px !important;
             }
 
+        }
+
+        &-grid-image {
+
+            img {
+                height: auto!important;
+            }
         }
 
         &-image {
