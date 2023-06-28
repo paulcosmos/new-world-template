@@ -1226,8 +1226,7 @@ strong {
     &-item {          
         padding-top:1.5rem;
         padding-bottom:1.5rem;
-        flex: 0 1 50%;
-        // margin: 0 0.5rem;
+        flex: 0 1 100%;
         margin-bottom: 2rem!important;
 
         @include from($tablet) {
