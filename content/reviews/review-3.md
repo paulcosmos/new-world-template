@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Lorna Ach
 type: review
 rating: 5
-location: 
+location: Glasgow
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Can’t recommend highly enough. Nathan and Stuart were very professional from start to finish. Answered my initial enquiry really quickly, turned up exactly when they said they would and completed the job with no hassle. Will definitely get them back again.
