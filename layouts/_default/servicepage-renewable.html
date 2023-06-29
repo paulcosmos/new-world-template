@@ -1,0 +1,198 @@
+{{ define "hero" -}}
+<section class="hero hero-service-page renewable is-medium">
+	{{ partial "hero/hero-image.html" . }}
+</section>
+{{ end }}
+
+{{ define "main" }}
+<section class="section">
+	<div class="container is-fullhd">
+		<div class="text-row has-text-centered mb-6">
+			<div class="text-row-inner service-page">
+				<h2>
+					Domestic & Residential Services
+				</h2>
+				<h3>
+					Norwich Electrical Contractors
+				</h3>
+				<p>
+					Family owned and operated with {{ .Site.Params.years }} experience, we are proud of our customer service track record working across {{ .Site.Params.county }}.
+				</p>
+			</div>
+		</div>
+		<div class="columns is-multiline is-variable is-4">
+
+			<div class="column is-12-tablet is-4-widescreen">
+				<figure class="image is-3by2 service-page-image contain">
+					{{ $image := resources.Get "images/solar-panels.png" }}
+					<img src='{{ ($image.Resize "x600 q50 Smart").RelPermalink }}' alt="" title=""/>
+				</figure>
+				<div class="_content mt-4 px-4 service-page-list renewable">
+					<div class="has-text-centered mb-6">
+						<h3>Solar Panels (PV)</h3>
+						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<ul>
+							<li>5 Year Guarantee</li>
+							<li>1kWh – 15kWh Systems</li>
+							<li>Built-in or Retrofit</li>
+							<li>Reduced Energy Bills</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="column is-12-tablet is-4-widescreen">
+				<figure class="image is-3by2 service-page-image contain">
+					{{ $image := resources.Get "images/solar-battery.png" }}
+					<img src='{{ ($image.Resize "x600 q50 Smart").RelPermalink }}' alt="" title=""/>
+				</figure>
+				<div class="_content mt-4 px-4 service-page-list renewable">
+					<div class="has-text-centered mb-6">
+						<h3>Solar Battery Storage</h3>
+						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<ul>
+							<li>10 Year Guarantee</li>
+							<li>Expandable Systems</li>
+							<li>App enabled control</li>
+							<li>Reduced Energy Bills</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="column is-12-tablet is-4-widescreen">
+				<figure class="image is-3by2 service-page-image contain">
+					{{ $image := resources.Get "images/ev-charger.png" }}
+					<img src='{{ ($image.Resize "x600 q50 Smart").RelPermalink }}' alt="" title=""/>
+				</figure>
+				<div class="_content mt-4 px-4 service-page-list renewable">
+					<div class="has-text-centered mb-6">
+						<h3>EICR Testing & Inspection</h3>
+						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<ul>
+							<li>Private Domestic - 10 years</li>
+							<li>Rented Domestic - 5 years</li>
+							<li>Commercial - 5 years</li>
+							<li>Industrial - 3 years</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+{{/*  Contact Form  */}}
+<section id="contact" class="section">
+	<div class="container is-fullhd">
+		<form class="contact-form service-page-contact-form renewable" action="https://mail.amcsinternet.co.uk/mailer.php?to={{ .Site.Params.email }}" method="post" >
+			<div class="columns is-multiline is-centered">
+				{{/*  Radio Buttons  */}}
+				<div class="column is-3-desktop form-choice">
+					<div class=" form-choice-wrapper box">
+						<div class="control">
+							<label class="checkbox">
+							<input type="checkbox" name="Enquiry" value="Solar Panels">
+							Solar Panels
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3-desktop form-choice">
+					<div class=" form-choice-wrapper box">
+						<div class="control">
+							<label class="checkbox">
+							<input type="checkbox" name="Enquiry" value="Battery Storage">
+							Battery Storage
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3-desktop form-choice">
+					<div class=" form-choice-wrapper box">
+						<div class="control">
+							<label class="checkbox">
+							<input type="checkbox" name="Enquiry" value="EV Charger">
+							EV Charger
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3-desktop form-choice">
+					<div class=" form-choice-wrapper box">
+						<div class="control">
+							<label class="checkbox">
+							<input type="checkbox" name="Enquiry" value="Package System">
+							Package System
+							</label>
+						</div>
+					</div>
+				</div>
+				{{/*  First column  */}}
+				<div class="column is-12-touch is-6-desktop">
+					<div class="field">
+						<div class="control">
+							<input class="input" type="text" required="required" name="Name" placeholder="e.g Alex Smith">
+						</div>
+					</div>
+					<div class="field">
+						<div class="control">
+							<input class="input" type="tel" required="required" name="Phone" placeholder="01234 567 890">
+						</div>
+					</div>
+					<div class="field">
+						<div class="control">
+							<input class="input" type="email" required="required" name="Email" placeholder="e.g. alexsmith@gmail.com">
+						</div>
+					</div>
+				</div>
+				{{/*  Second Column  */}}
+				<div class="column is-12-touch is-6-desktop">
+					<div class="field">
+						<div class="control">
+							<textarea class="textarea" type="textarea" required="required" name="Message" placeholder="As much or as little detail as you have"></textarea>
+						</div>
+					</div>
+				</div>
+				{{/*  Button  */}}
+				<div class="column is-12-touch is-6-desktop">
+					<div class="field">
+						<div class="control">
+							<button class="button submit-button submit-button-{{ .Params.serviceClass }} is-fullwidth" type="submit">Submit Form</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</form>
+	</div>
+</section>
+
+{{ end }}
+
+{{ define "scripts" }}
+<!-- Page specific scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script>
+	var slider = tns({
+		container: '.service-page-hero-slider',
+		autoHeight: false,
+		items: 1,
+		slideBy: 1,
+		loop: true,
+		autoplay: true,
+		autoplayButtonOutput: false,
+		autoplayHoverPause: true,
+		speed: 800,
+		gutter: 0,
+		edgePadding: 0,
+		center: true,
+		nav: false,
+		navPosition: 'bottom',
+		controls: false,
+		preventActionWhenRunning: true,
+		mouseDrag: true,
+	});
+</script>
+{{ end }}

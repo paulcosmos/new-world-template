@@ -1,26 +1,35 @@
-					<div class="columns is-multiline is-variable is-4">
-					{{/* Automatically increment the aos-delay value */}}
-					{{- $currentPage := . -}}
-					{{- $.Scratch.Set "delay" 0 }}
-					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" -}}
-					{{- $i := $.Scratch.Get "delay" }}
-						{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
-						<div class="column is-6-tablet is-4-desktop is-4-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
-							<div class="image is-3by2 _company-services-image mb-4">
-								{{- $image := resources.Get .Params.image }}
-								<a href="/services.html#{{ anchorize .Title }}">
-								{{- if $image }}
-								<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' alt="" title=""/>
-								{{ else }}
-								<img src='/images/placeholder.jpg'/>
-								{{- end }}
-								</a>
+					<div class="columns is-multiline is-variable is-6">
+						{{/* Automatically increment the aos-delay value */}}
+						{{- $currentPage := . -}}
+						{{- $.Scratch.Set "delay" 0 }}
+						{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" -}}
+						{{- $i := $.Scratch.Get "delay" }}
+							{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
+							<div class="column is-6-tablet is-6-desktop is-4-widescreen" data-aos="fade-in" data-aos-delay="{{ print $i }}">
+								<div class="card services-grid-item {{ .Params.serviceClass }}">
+									<div class="card-image">
+										<div class="image is-3by2 _company-services-image mb-4">
+											{{- $image := resources.Get .Params.mainImage }}
+											<a href="{{ .RelPermalink }}">
+											{{- if $image }}
+												<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' alt="" title=""/>
+											{{ else }}
+												<img src='/images/placeholder.jpg'/>
+											{{- end }}
+											</a>
+										</div>
+									</div>
+									<div class="card-content">							
+										<div class="content">
+											<h3>{{ .Params.card_title }}</h3>
+											<p>{{ .Params.card_desc }}</p>
+										<hr>
+											<div class="has-text-centered">
+												<a href="{{ .RelPermalink }}" class="button button-{{ .Params.serviceClass }} ml-0">{{ .Params.anchor }} <i class="fa-regular fa-sm fa-arrow-right"></i></a> 
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<h3>{{ .Params.title }}</h3>
-							<p>{{ .Params.desc }}</p>
-							<div>
-								<a href="/services.html#{{ anchorize .Title }}">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
-							</div>
+						{{ end -}}
 						</div>
-					{{ end -}}
-					</div>

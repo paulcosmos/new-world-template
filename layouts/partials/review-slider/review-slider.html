@@ -1,31 +1,44 @@
 <section class="review-section">
 				<div class="container section is-fullhd ">
-					<div class="columns is-multiline is-mobile is-variable is-4">
+					{{/*  <div class="columns is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
 							<h2>Our reviews speak for themselves</h2>
 						</div>
-						<div class="column is-narrow" data-aos="fade-in">
-							<span class="icon company-icon">
-								<i class="fa-light fa-message-heart"></i>
-							</span>
+					</div>  */}}
+					<div class="text-row has-text-centered">
+						<div class="text-row-inner">
+							<h2>
+								A company you can trust
+							</h2>
+							<h3>
+								Recent Customer Reviews
+							</h3>
 						</div>
 					</div>
 				</div>
 				<div class="columns is-multiline is-mobile review-slider">
 					{{ $slides := 6 }}
 					{{ range first $slides (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
-						{{ partial "review-slider/review-quote.html" . }}
+						{{ partial "review-slider/review-card.html" . }}
 					{{ end -}}
+				</div>
+				<div id="review-slider-dots">
+					<ul class="tns-nav">
+						{{ $dots := $slides}}
+						{{ range first $dots (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
+						<li></li>
+						{{ end }}
+					</ul>
 				</div>
 				<div class="_container py-5 has-text-centered _is-fluid">
 					<div class="columns">
-						<div class="column is-8 is-offset-2">
+						{{/*  <div class="column is-8 is-offset-2">
 							<div class="is-grouped">
 								<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
 									<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
 								</div>
 							</div>
-						</div>
+						</div>  */}}
 						<div class="column text-align-center _is-narrow">
 							<div id="review-slider-controls" class="buttons is-small is-centered" aria-label="Carousel Navigation" tabindex="0">
 								<button class="button review-slider-nav-button" aria-controls="review-slider" tabindex="-1" data-controls="prev">
@@ -50,7 +63,7 @@
 			var slider = tns({
 			    container: '.review-slider',
 				autoHeight: false,
-			   	items: 1,
+				items: 1,
 			    slideBy: 1,
 			    loop: true,
 			    autoplay: false,
@@ -61,7 +74,9 @@
 			    edgePadding: 10,
 			    center: true,
 			    nav: false,
-			    controls: true,
+				navPosition: 'bottom',
+				navContainer: '#review-slider-dots',
+			    controls: false,
 			    controlsContainer: '#review-slider-controls',
 			    preventActionWhenRunning: true,
 				responsive: {
@@ -77,7 +92,7 @@
 			            center: true,
 			        },
 			        1280: {
-			            items: 2,
+			            items: 3,
 			            edgePadding: 40,
 
 			        }

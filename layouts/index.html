@@ -1,66 +1,88 @@
-			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
-				{{ partial "hero/hero-image.html" . }}
-				{{- with .Site.Params }}
-				{{ if .emblem }}
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
-				{{ end -}}
-				{{ end -}}
-			</section>
-			{{ end -}}
-
-			{{- define "main" -}}
-			<section class="section company-intro">
+			{{ define "hero" -}}
+			<section class="hero is-medium">
 				<div class="container is-fullhd">
-				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
-					<div class="columns is-vcentered is-multiline is-variable is-8">
-						<div class="column is-7-desktop is-6-fullhd">
-							<div class="content company-intro-content has-accent" data-aos="fade-in">
-								{{ .Content }}
-							</div>
-						</div>
-
-						<div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
-							<div class="image has-rounded-corners">
-							{{- $image := resources.Get .Params.image }}
-							{{- if $image }}
-								<img src='{{ ($image.Resize "x890 q50 Smart").RelPermalink }}' alt="" title=""/>
-							{{ else }}
-								<img src='/images/placeholder.jpg'/>
-							{{- end }}
+					<div class="hero-body p-0">
+						<div class="hero-carousel-wrapper">
+							<div class="hero-carousel">
+								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" -}}
+								<div class="hero-index-service" style="background-image:linear-gradient(-249deg, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url( '{{ .Params.backgroundImage }}' );">
+									<div class="columns is-multiline is-centered">
+										<div class="column is-12-tablet">
+											<div class="content" data-aos="fade-down">
+												<h2>{{ .Params.hero_title }}</h2>
+												<p>{{ .Params.hero_subtitle }}</p>
+												<a href="{{ .RelPermalink }}" class="button button-{{ .Params.serviceClass }} mt-6 ml-0">{{ .Params.hero_anchor_text }} <i class="fa-solid fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								{{ end }}
 							</div>
 						</div>
 					</div>
-				{{- end }}
+				</div>
+			</section>
+			{{ end }}
+
+			{{- define "main" -}}
+			<section class="section ">
+				<div class="container is-fullhd">
+					{{/*  <div class="_content has-text-centered">  */}}
+						<div class="text-row has-text-centered">
+							<div class="text-row-inner">
+								<h2>
+									Complete electrical services
+								</h2>
+								<h3>
+									{{ .Site.Params.towncity }} Electrical Contractors
+								</h3>
+								<p>
+									With {{ .Site.Params.years }} experience, we are proud of our customer service track record working across {{ .Site.Params.targetarea }}.
+								</p>
+							</div>
+						</div>
+					{{/*  </div>  */}}
 				</div>
 			</section>
 
-			{{ partial "accreditations.html" . }}
+			{{/*  {{ partial "accreditations.html" . }}  */}}
 			
-			<section class="section company-services-overview">
+			<section class="section services-grid">
 				<div class="container is-fullhd">
-					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column" data-aos="fade-in">
-							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
-						</div>
-						<div class="column is-narrow" data-aos="fade-in">
-							<span class="icon company-icon">
-								<i class="fa-light fa-square-check"></i>
-							</span>
-						</div>
-					</div>
 					{{ partial "services/services-grid-images.html" . }}
 				</div>
 			</section>
 
-			{{ partial "cta-banner.html" . }}
+			{{/*  {{ partial "cta-banner.html" . }}  */}}
 
 			{{ partial "review-slider/review-slider.html" . }}
 
-			{{ partial "cta-text.html" . }}
+			<script src="/js/tiny-slider-min.js"></script>
+			<script type="module">
 
-			{{ partial "why-us-banner.html" . }}
-
+				var slider = tns({
+					container: '.hero-carousel',
+					mode: 'carousel',
+					items: 1,
+					autoHeight: false,
+					slideBy: 1,
+					loop: false,
+					autoplay: false,
+					autoplayButtonOutput: false,
+					autoplayHoverPause: true,
+					speed: 600,
+					gutter: 0,
+					edgePadding: 0,
+					center: true,
+					controls: false,
+					nav: true,
+					navPosition: 'bottom',
+					//navContainer: '#hero-slider-dots',
+					navAsThumbnails: false,
+					preventActionWhenRunning: true,
+					mouseDrag: false,
+				});
+			  </script>
 			{{- end }}
 
 	{{- define "scripts" -}}

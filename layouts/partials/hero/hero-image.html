@@ -1,16 +1,25 @@
+			<div class="container is-fullhd">
 				<div class="hero-body">
-				  <div class="container is-fullhd">
-					<div class="columns">
-						<div class="column is-8-desktop _is-offset-2-desktop is-7-fullhd _is-offset-3-fullhd is-12-tablet">
-							<span class="pre-heading" data-aos="fade-left">
+					<div class="columns is-variable is-6 is-vcentered">
+						<div class="column is-12-tablet is-6-desktop is-6-fullhd">
+							<span class="pre-heading {{ .Params.serviceClass }}" data-aos="fade-left">
 							{{- if .Params.preheading -}}
 								{{ .Params.preheading }} 
 							{{ else }}
 								{{ .Site.Params.industry | humanize }} services in {{ .Site.Params.towncity }}
 							{{- end }}
 							</span>
-							<div class="content hero-services-content has-accent" data-aos="fade-down">
+							<div class="content has-accent" data-aos="fade-down">
 								{{ .Content }}
+								<a href="#contact" class="button button-{{ .Params.serviceClass }} mt-4 ml-0">{{ .Params.hero_anchor_text }} <i class="fa-solid fa-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="column is-hidden-touch is-12-tablet is-6-desktop is-6-fullhd">
+							<div class="service-page-hero-slider-wrapper">
+								<div class="service-page-hero-slider">
+									<img src="/images/placeholder.jpg">
+									<img src="/images/placeholder.jpg">
+								</div>
 							</div>
 						</div>
 					</div>

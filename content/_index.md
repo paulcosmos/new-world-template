@@ -1,8 +1,9 @@
 ---
 title: 'About'
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 1
 preheading: 
+bannerButtonURL: "renewable-energy#contact"
 _build:
   render: true
 cascade:

@@ -1,6 +1,6 @@
 ---
 title: Contact
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 5
 preheading: "Get a Quote"
 _build:
