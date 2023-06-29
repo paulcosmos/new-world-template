@@ -317,12 +317,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-7;
+        font-size: $size-5;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
         @include from($widescreen) {
-            font-size: $size-6;
+            font-size: $size-3;
         }
 
         &:hover {
@@ -341,7 +341,7 @@ strong {
             font-weight: 400;
 
             @include from($widescreen) {
-                font-size: $size-7;
+                font-size: $size-6;
             }
         }
 
@@ -392,6 +392,7 @@ strong {
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
+                max-width: 200px;
                 padding: 0;
             }
         }
