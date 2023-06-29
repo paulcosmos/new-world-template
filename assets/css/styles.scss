@@ -112,7 +112,6 @@ strong {
 
     &-primary,
     &-primary>button {
-        // @include brand-gradient;
         background-color: $button-bg;
         border-color: transparent;
         color: $button-text !important;
@@ -130,6 +129,8 @@ strong {
         box-shadow: none;
         display: inline-flex;
         height: 3rem;
+        @include brand-gradient;
+
 
         &:hover {
             background-color: $button-bg-hover;
@@ -226,9 +227,13 @@ strong {
 
     white-space: normal;
 
-    strong,
-    span {
-        color: $accent;
+    h1, h2, h3 {
+        
+        strong,
+        span {
+            color: $accent;
+            @include text-gradient;
+        }
     }
 
     p,
@@ -260,13 +265,11 @@ strong {
 // Top Banner
 .top-banner {
     background-color: $top-banner-bg;
-    // @include brand-gradient;
+    @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
     font-weight: bold;
     padding: 0.5rem 0;
-    // padding-top: $size-7;
-    // padding-bottom: $size-7;
     position: relative;
 
     .icon {
@@ -566,6 +569,8 @@ strong {
     margin-bottom: $size-5;
     display: block;
     color: $preheading-text;
+    // @include text-gradient;
+
 }
 
 // Page Content
@@ -647,7 +652,7 @@ strong {
     &-cta {
         background-color: $hero-cta-bg;
         border-radius: $hero-cta-corner-radius;
-        @include box-shadow-offset-solid($hero-cta-shadow);
+        // @include box-shadow-offset-solid($hero-cta-shadow);
         color: white;
         font-weight: 600;
         padding: 1.25rem;

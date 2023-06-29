@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #49b38f;
+$secondary: #010d28;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -19,7 +19,13 @@ $text: $secondary;
 
 @mixin brand-gradient {
 	background: $primary;
-	background: linear-gradient(-90deg, darken($primary, 0%), darken($primary, 10%));
+	background: linear-gradient(-90deg, darken(#648dbe, 0%), darken($primary, 0%));
+}
+
+@mixin text-gradient {
+	@include brand-gradient();
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 // Page hero settings 
@@ -30,7 +36,7 @@ $text: $secondary;
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
+	background-image: linear-gradient(-249deg, rgba(black, 1), rgba(black, 0.5)), url('../images/hero-image.jpg');
 
 }
 
@@ -39,7 +45,7 @@ $hero-index-text: white;
 //  Top Banner
 $top-banner-bg: darken($secondary,10%);
 $top-banner-text: white;
-$top-banner-icon: $accent;
+$top-banner-icon: white;
 
 // Main Navigation 
 $navbar-background-color: $secondary;
@@ -119,8 +125,8 @@ $site-footer-signoff-text: $tertiary;
 
 // Settings for 'Paving' BG pattern
 $paving-size: 40px;
-$paving-bg: darken($secondary, 10%);
-$paving: darken($paving-bg, 2%);
+$paving-bg: darken($secondary, 0%);
+$paving: darken($paving-bg, 0%);
 
 // Settings for 'Rings' BG pattern
 $ring-bg-color: $tertiary;
