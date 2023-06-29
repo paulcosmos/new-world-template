@@ -11,7 +11,11 @@
 							<div class="image is-4by5 company-services-image company-services-image">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
-								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' alt="" title=""/>
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+									alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end }}
 								{{ else }}
 								<img src='/images/placeholder.jpg'/>
 								{{- end }}

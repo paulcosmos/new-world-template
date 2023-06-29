@@ -277,6 +277,14 @@ strong {
         color: inherit;
         font-weight: inherit;
     }
+
+    .container.is-fluid {
+
+        @include until($navbar-breakpoint){
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
 }
 
 
@@ -411,7 +419,7 @@ strong {
 
         img {
             padding: 0;
-            width: 100%;
+            max-width: 100%;
             max-height: $navbar-height;
 
             @include from($navbar-breakpoint) {
@@ -435,7 +443,7 @@ strong {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: $navbar-background-color-mobile;
+                background-color: rgba($navbar-background-color-mobile,0.95);
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
@@ -495,7 +503,7 @@ strong {
 
         &.is-active {
             z-index: 99;
-            color: white;
+            color: $navbar-burger-text;
 
             &:before {
                 content: "Close";
@@ -581,7 +589,6 @@ strong {
 
     &-index {
         @include hero-index-bg;
-        padding-top: 0;
 
         h1,
         h2 {
@@ -1242,6 +1249,10 @@ strong {
             &:last-child {
                 margin-right: 0;
             }
+        }
+        
+        img {
+            max-height: 130px;
         }
     }
 }
