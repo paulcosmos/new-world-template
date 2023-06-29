@@ -295,6 +295,7 @@ strong {
 
     @include until($navbar-breakpoint){
         background-color: $navbar-background-color-mobile;
+        min-height: 6rem;
     }
 
     .container {
@@ -427,7 +428,7 @@ strong {
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 160px;
             }
         }
     }
@@ -495,6 +496,10 @@ strong {
     &-burger {
         text-align: center;
         position: relative;
+        @include until($navbar-breakpoint) {
+            height: 6rem;
+            width: 6rem;
+        }
 
         &:hover {
             color: white;

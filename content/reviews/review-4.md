@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Jenny Bennett
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+{{<company>}} did a fantastic job on my shower room & downstairs loo. As for my utility room, went from a dumping ground to a very nice room!

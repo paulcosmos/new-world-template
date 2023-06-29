@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Joy Jenkins
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+From recommendation I used {{<company>}} services to remove and fit a new bathroom. I was very impressed by his standard of work, excellent. If you are looking for a professional, reliable, friendly, honest person to carry out any plumbing work, look no further. Highly recommended.
