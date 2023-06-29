@@ -1,8 +1,8 @@
 ---
-title: James
+title: Kimberley D.
 type: review
 rating: 5
-location: 
+location: Leeds 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Adam has done a few jobs for us now and he has been excellent and really reasonably priced. Professional, on time and really neat work. Would highly recommend and we will be using Adam for any electrical jobs in our house going forward.

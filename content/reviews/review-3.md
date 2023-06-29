@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Jeremy B.
 type: review
 rating: 5
-location: 
+location: Leeds
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Had a great experience with Adam. Responded promptly and was able to come around to the house on the same day to identify an issue with our fusebox. Would recommend.

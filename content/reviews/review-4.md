@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Scott K.
 type: review
 rating: 5
-location: 
+location: Leeds
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Called {{<company>}} for a electrical test cert for my offices, they came out out after hours to do this for me. Total professionalism in every way. 
