@@ -4,10 +4,10 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/gdavies-van-2.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## We're **expert {{<industry>}}s**. Tough jobs are our speciality.
 
 + Experienced across all aspects of {{<industry>}}
 + Reputation for fast delivery times and reliability
