@@ -405,7 +405,6 @@ strong {
             position: relative;
             top: 0;
             padding: 1rem;
-            // padding-top: 0;
             margin-top: 0;
             margin-bottom: -40px;
             background-color: $logo-bg-colour;
@@ -427,7 +426,7 @@ strong {
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 140px;
             }
         }
     }
@@ -589,7 +588,6 @@ strong {
 
     &-index {
         @include hero-index-bg;
-        padding-top: 0;
 
         h1,
         h2 {

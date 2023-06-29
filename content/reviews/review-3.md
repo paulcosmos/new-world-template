@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Paul
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Love our new bathroom by Colin at {{<company>}}. Thoroughly recommend him, he really knows his stuff and has great attention to detail. Every morning the protective cloths went down and at the end of each day the place was spotlessly tidy, ready for the next day. Can’t recommend his work enough! Our bathroom is fantastic. 
