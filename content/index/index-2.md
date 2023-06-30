@@ -11,7 +11,7 @@ image: images/well-equipped.jpg
 
 * City & Guilds F Gas Mobile Air-con
 * IMI Certified Member
-* IMI Level 2 EV/HEVv
+* IMI Level 2 EV/HEV
 * IMI Level 3 EV/HEV
 * Fully insured including public liability
 
