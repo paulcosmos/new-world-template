@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Pip Aldridge
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Jamie and his team did a very quick boiler service for me at short notice, would definitely recommend and use again!

@@ -1,8 +1,8 @@
 ---
-title: James
+title: Kamil Kucharczyk
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Had my boiler serviced today, same as year before. Excellent service and quick response. Fully recommended 🙂
