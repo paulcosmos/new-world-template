@@ -16,4 +16,4 @@ cascade:
 
 # Providing a wide range of **{{<industry>}} services** throughout **{{<towncity>}}**.
 
-With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.
+With {{<years>}} in the electrical business, **{{<company>}}** are the reliable and professional choice for an {{<industry>}} in {{<towncity>}}.

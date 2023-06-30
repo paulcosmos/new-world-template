@@ -11,7 +11,7 @@ cascade:
     render: false
 ---
 
-# Looking for **{{<industry>}} services** in **{{<towncity>}}**?
+# Looking for an **{{<industry>}}** in **{{<towncity>}}**? {{<company>}} is on hand to help.
 
 Speak to us today to request a quote. 
 

@@ -13,4 +13,4 @@ cascade:
 
 # Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}** and surrounding areas.
 
-**{{<company>}}** has been providing {{<industry>}} services to domestic and customers in {{<towncity>}} and beyond for over {{<years>}}. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been providing {{<industry>}} services to domestic and customers in {{<towncity>}} and beyond for over {{<years>}}. We are experienced in all aspects of the electrical trade.

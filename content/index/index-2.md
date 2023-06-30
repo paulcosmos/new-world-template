@@ -9,7 +9,7 @@ image: images/gdavies-van-2.jpg
 
 ## We're **expert {{<industry>}}s**. Tough jobs are our speciality.
 
-+ Experienced across all aspects of {{<industry>}}
++ Experienced across all aspects of the electrical trade
 + Reputation for fast delivery times and reliability
 + Competitive and affordable prices
 
