@@ -2,7 +2,7 @@
 				<div class="container _is-fluid is-fullhd">
 					<div class="columns is-mobile is-8 is-multiline">
 
-						<div class="column is-12-mobile is-12-tablet is-4-desktop">
+						<div class="column is-12-mobile is-12-tablet is-7-desktop">
 							<div class="content site-footer-company-info">
 							{{- with .Site.Params }}
 								<h4>{{ .company }}</h4>
@@ -18,7 +18,7 @@
 							</div>
 						</div>
 
-						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd is-offset-1-desktop _is-narrow">
+						<div class="column">
 							<div class="content site-footer-links _has-columns">
 								<h4>Site Links</h4>
 								<ul>
@@ -29,7 +29,7 @@
 							</div>
 						</div>
 
-						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
+						<div class="column">
 							<div class="content site-footer-links _has-columns">
 							<h4>Primary Services</h4>
 								<ul>
@@ -46,14 +46,14 @@
 							</div>
 						</div>
 
-						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
+						{{/*  <div class="column is-6-mobile _is-4-tablet _is-2-desktop">
 							<div class="content site-footer-links _has-columns">
 								<h4>Social Media</h4>
 								<ul>
 									{{ partial "social-links-text.html" . }}
 								</ul>
 							</div>
-						</div>
+						</div>  */}}
 
 					</div>
 				</div>
@@ -68,7 +68,7 @@
 			<div class="container is-fluid site-footer-signoff">
 				<div class="content">
 					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ if .building }}{{ .building }},{{end }} {{ .street }}, {{ .towncity }}, {{ if .county }}{{ .county }}, {{ end }} {{ .postcode }}</address> | {{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
+					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ if .building }}{{ .building }},{{end }} {{ .street }}, Egham, {{ .postcode }}</address> | {{ .industry|humanize }} services in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
 					{{- end }}
 				</div>
 			</div>

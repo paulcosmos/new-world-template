@@ -293,6 +293,8 @@ strong {
 
 .navbar {
 
+    max-height: $navbar-height;
+
     @include until($navbar-breakpoint){
         background-color: $navbar-background-color-mobile;
     }
@@ -405,7 +407,6 @@ strong {
             position: relative;
             top: 0;
             padding: 1rem;
-            // padding-top: 0;
             margin-top: 0;
             margin-bottom: -40px;
             background-color: $logo-bg-colour;
@@ -418,7 +419,7 @@ strong {
         }
 
         img {
-            padding: 0;
+            padding: 0.5rem;
             max-width: 100%;
             max-height: $navbar-height;
 
@@ -427,7 +428,7 @@ strong {
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 150px;
             }
         }
     }
@@ -495,6 +496,9 @@ strong {
     &-burger {
         text-align: center;
         position: relative;
+        height: $navbar-height;
+        width: $navbar-height;
+
 
         &:hover {
             color: white;
@@ -579,8 +583,11 @@ strong {
     position: relative;
     color: $hero-text;
     font-weight: normal;
-    text-align: left;
     text-align: inherit;
+
+    h1 {
+        text-transform: uppercase;
+    }
 
     @include from($navbar-breakpoint) {
         padding-top: 3rem;
@@ -1279,6 +1286,7 @@ strong {
 
         h3 {
             color: $text;
+            font-size: 1.5rem;
         }
     }
 }
