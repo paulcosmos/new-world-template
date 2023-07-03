@@ -21,13 +21,13 @@
 						</div>
 
 						<div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
-							<div class="image has-rounded-corners">
+							<div class="image is-square has-rounded-corners">
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}'
-									alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
-									title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
+								<img src='{{ ($image.Fill "1200x1200 q75 Center").RelPermalink }}'
+									alt="{{ .industry|humanize }} services in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
+									title="{{ .industry|humanize }} services in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
 							{{ else }}
 								<img src='/images/placeholder.jpg'/>

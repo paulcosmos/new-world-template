@@ -4,10 +4,10 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/kitchen-lighting.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We're your **top choice** for a qualified electrician in {{<county>}}.
 
 * Many years of experience in and around {{<towncity>}}
 * A reputation for excellent quality and professionalism

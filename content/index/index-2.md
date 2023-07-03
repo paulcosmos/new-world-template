@@ -4,12 +4,12 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/jose-van.jpg
 ---
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality.
 
-+ Experienced across all aspects of {{<industry>}}
++ Experienced across all aspects of the {{<industry>}} trade
 + Reputation for fast delivery times and reliability
 + Competitive and affordable prices
 
