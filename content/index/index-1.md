@@ -13,7 +13,7 @@ image: images/gdavies-van.jpg
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for over {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+{{<company>}} have been providing electrical services to happy customers in and around {{<towncity>}} for over {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
 
 
 
