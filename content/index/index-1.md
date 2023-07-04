@@ -4,16 +4,14 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/fitted-wardrobe.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## {{<company>}} is your **top choice** for {{<industry>}} services in {{<towncity>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+From doors to cabinets and work surfaces, {{<company>}} can create stunning, bespoke furniture for your home. With extensive experience in joinery, I am a fully qualified joiner with a passion for delivering high-quality woodwork at affordable rates.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+Having been in the industry for more than 18 years, I have established an excellent reputation for the quality of my work and the unrivalled service that I offer. 
 
 
 

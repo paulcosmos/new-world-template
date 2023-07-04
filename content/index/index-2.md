@@ -4,13 +4,13 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/veranda.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## I am an experienced **expert joiner**. Tough jobs are my speciality.
 
-+ Experienced across all aspects of {{<industry>}}
-+ Reputation for fast delivery times and reliability
-+ Competitive and affordable prices
+Whether you require a bespoke, made-to-measure worktop for your kitchen or a new, personalised wardrobe for your bedroom, {{<company>}} is here to help.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+Simply provide your measurements and specifications and I will take care of the rest. I pride myself on offering the highest quality of woodwork and joinery at competitive prices.
+
+Call me today on **{{<phone>}}** for a no obligation quote.

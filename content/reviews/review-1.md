@@ -1,8 +1,8 @@
 ---
-title: James
+title: Barry C.
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+ Very happy with Wayne's work. Kitted out a cupboard with shelving and a shoe rack. Definitely recommend 👍 

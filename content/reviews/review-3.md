@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Aadil K.
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Brilliant. Doesn’t mess around. Wayne works around your needs which many don’t. Straight to the point, gets the job done to very high quality standards, very good reliable pricing. Had to get my doors trimmed and he came on very short notice and did an excellent job, can’t complain one bit. Will definitely be calling him again for more work.

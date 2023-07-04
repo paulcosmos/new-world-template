@@ -12,6 +12,6 @@ cascade:
     render: false
 ---
 
-# We are a **customer-focused** business, proud of our reputation for **quality**.
+# {{<company>}} is a **customer-focused** business, with a proud **reputation for quality**.
 
-Feedback is important to us as it helps us improve our service. Below are some of our recent reviews from happy customers.
+Feedback is important to me as it helps us improve our service. Below are some of our recent reviews from happy customers.
