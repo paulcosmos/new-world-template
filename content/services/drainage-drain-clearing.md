@@ -1,6 +1,6 @@
 ---
 title: "Blocked Drains"
-type: service-item
+type: service-item--
 desc: Get your plumbing flowing again, both interior and exterior blockages are no problem.
 weight: 1
 image: images/drains.jpg

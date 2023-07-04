@@ -1,6 +1,6 @@
 ---
 title: "Bathroom Installations"
-type: service-item
+type: service-item--
 desc: Elegant, bespoke bathrooms designed and built to your exact specifications.
 weight: 1
 image: images/bathroom-installation.jpg

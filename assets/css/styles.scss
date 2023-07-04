@@ -602,14 +602,15 @@ strong {
 
     &-service {
         color: white;
-        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background: $secondary;
 
-        @include until($tablet) {
-            background-color: $secondary;
-            background-image: none !important;
-        }
+
+        // @include until($tablet) {
+        //     background-color: $secondary;
+        //     background-image: none !important;
+        // }
 
         // h1, h2 {
         //     font-size: $hero-title-size;

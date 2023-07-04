@@ -1,6 +1,6 @@
 ---
 title: "Boiler Installation & Repair"
-type: service-item
+type: service-item--
 desc: Our Gas Safe Registered experts are fully qualified to inspect, repair and service all boilers
 weight: 3
 image: images/boiler-install.jpg

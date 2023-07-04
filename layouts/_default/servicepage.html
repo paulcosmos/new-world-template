@@ -1,6 +1,5 @@
 {{ define "hero" }}
-<section class="hero hero-service is-halfheight"
- 	style="background-image:linear-gradient(-249deg, rgba(36, 40, 51, 1), rgba(36, 40, 51, 0.5)), url(../{{ .Params.backgroundImage }}">
+<section class="hero hero-service is-halfheight">
 	<div class="hero-body">
 		<div class="container is-fullhd">
 			<div class="columns">
@@ -10,7 +9,7 @@
 					</span>
 					<div class="content hero-services-content has-accent" data-aos="fade-down">
 						<h1>{{ .Title }}</h1>
-						<p>{{ .Params.desc }}</p>
+						<p>{{ .Params.summary }}</p>
 					</div>
 				</div>
 			</div>
