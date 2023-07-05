@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Jan G.
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+I had a cold dark bathroom which is only small, but is now warm and bright and looks twice the size, thanks to the reconfiguration. I would highly recommend Mark, he is a clean hard worker, and even finished my bathroom a day ahead of my quote, which was a real bonus for me. I would give Mark a 5* rating and have recommended him to many people.

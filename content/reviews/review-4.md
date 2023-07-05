@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Sue W.
 type: review
 rating: 5
-location: 
+location: Malpas
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+I had {{<company>}} install a new kitchen and bathroom in my home. Mark was very reliable, clean and tidy, and very reasonably priced. I would recommend him to anyone.
