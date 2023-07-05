@@ -4,7 +4,7 @@ type: service-item
 desc: Safety checks and certifications for domestic and commercial properties and appliances.
 weight: 6
 image: images/electrical-testing.jpg
-anchor:
+anchor: Safety Inspections
 ---
 ## Electrical Safety Inspections
 

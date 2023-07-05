@@ -7,13 +7,13 @@ _build:
 image: images/solar-panels.jpg
 ---
 
-## We're your **expert choice** for {{<industry>}} installations in {{<towncity>}} &amp; {{<county>}}.
+## We're your **expert choice** for {{<industry>}} installations in the South East and across the UK.
 
-* Over {{<years>}} of experience in and around {{<towncity>}}
+* Over {{<years>}} of solar panel installation experience
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 
-**{{<company>}}** have been providing {{<industry>}} installations and electrician services to happy customers in and around {{<towncity>}} for over {{<years>}}. We've earned a reputation for excellent service and professional working practices.
+**{{<company>}}** have been providing {{<industry>}} installations and electrician services to happy customers in and around {{<county>}}, Buckinghamshire and Hertfordshire for over {{<years>}}. We've earned a reputation for excellent service and professional working practices.
 
 
 
