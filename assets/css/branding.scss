@@ -48,17 +48,21 @@ $top-banner-icon: $accent;
 
 // Main Navigation 
 $navbar-background-color: $secondary;
+$navbar-background-color-mobile: $navbar-background-color;
+
 $navbar-height: 5rem;
 $logo-max-width: 280px;
 $logo-max-height: $navbar-height;
 $logo-bg-colour: lighten($navbar-background-color,5%);
 $logo-bg-hover-colour: lighten($logo-bg-colour,5%);
+
 $navbar-item-color: white;
 $navbar-item-hover-color: white;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
 $navbar-item-mobile-color: $navbar-item-color;
 $navbar-dropdown-arrow: $primary;
+$navbar-burger-text: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
@@ -66,7 +70,7 @@ $navbar-dropdown-border-top: 2px solid $primary;
 $navbar-divider-background-color: lighten($secondary, 10%);
 
 // Buttons
-$button-text: lighten($primary, 70%);
+$button-text: white;
 $button-bg: $primary;
 $button-bg-hover: lighten($button-bg, 10%);
 
