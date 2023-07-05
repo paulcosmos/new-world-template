@@ -3,7 +3,7 @@ title: "Boilers & Central Heating"
 type: service-item
 desc: Our Gas Safe Registered experts are fully qualified to inspect, repair and service all boilers
 weight: 1
-image: images/boiler.jpg
+image: images/boilers.jpg
 anchor: Boilers
 ---
 ## Boilers & Central Heating
