@@ -11,8 +11,8 @@ cascade:
     render: false
 ---
 
-# Looking for **{{<industry>}} services** in **{{<towncity>}}** &amp; {{<county>}}?
+# Looking for **{{<industry>}} services** in the UK or an electrician in the South East?
 
-Speak to us today to request a quote. 
+Speak to us today.
 
 

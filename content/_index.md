@@ -13,4 +13,4 @@ cascade:
 
 # Professional **{{<industry>}} installation services** throughout the UK.
 
-**{{<company>}}** has been providing both domestic and commercial customers throughout {{<county>}} and surrounding areas with professional solar and renewable energy installations for over {{<years>}}.
+**{{<company>}}** has been providing **nationwide {{<industry>}} installations** to both domestic and commercial customers for over {{<years>}}. We are based in {{<towncity>}}, and also provide general electrical services across {{<county>}}, Buckinghamshire and Hertfordshire.

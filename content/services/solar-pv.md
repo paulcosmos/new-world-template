@@ -1,6 +1,5 @@
 ---
 title: "Nationwide Solar PV Installation"
-menu: ["main"]
 type: service-page
 layout: servicepage
 desc: Solar power is becoming an increasingly popular form supplying renewable energy to homes. Even during cloudy British weather, solar panels can help to drastically cut down on your energy bills in the longterm.
@@ -14,12 +13,12 @@ services:
 weight: 2
 image: 
 backgroundImage: images/solar-hero.jpg
-anchor: Solar PV
+anchor: "Solar PV Installation"
 _build:
   render: true
 ---
 
-## Solar Panel Installation in the UK
+## Domestic Solar Panel Installation in the UK
 
 At {{<company>}}, we are a professional electrical team based in Dunstable, offering our solar PV services to homeowners looking to switch their current energy provider to a renewable solution. Our specialists have been working in the trade for many years, making us widely skilled in all areas of solar PV planning and installations. This ensures all of our solar PV systems are installed meticulously, leaving our customers overjoyed with their results, every time. 
 

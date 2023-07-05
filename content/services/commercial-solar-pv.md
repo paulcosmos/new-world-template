@@ -4,13 +4,12 @@ type: service-page
 layout: servicepage
 desc: Solar PV is a natural, renewable energy source, ideal for powering business premises. We are highly experienced in the installation of solar panels and batteries on a wide-range of business and commercial premises across the UK.
 services:
-- Reliability 
+- Reliable and safe
 - Lower energy costs & business output
 - Decreased greenhouse emissions 
 - Lowers carbon footprint 
 - Battery storage options 
 - Low maintenance system
-- Safety 
 weight: 4
 image: "images/service.jpg"
 backgroundImage: images/commercial-solar-hero.jpg

@@ -52,7 +52,7 @@ You can instruct your browser to refuse all cookies or to indicate when a cookie
 
 **Security Cookies.** We use Security Cookies for security purposes.
 
-##Use of Data
+## Use of Data
 
 {{<fullname>}} uses the collected data for various purposes:
 

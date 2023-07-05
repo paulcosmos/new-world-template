@@ -218,6 +218,10 @@ strong {
         color: inherit;
     }
 
+    h2 {
+        line-height: 2.2rem;
+    }
+
     ul {
         position: relative;
         margin-left: 0;
@@ -910,16 +914,8 @@ strong {
                     @include box-shadow-high;
                     padding: 10px;
                     margin: 10px;
+                }
             }
-        }
-
-            // .content {
-            //     columns: 2;
-
-            //     ul {
-            //         margin-top: 0;
-            //     }
-            // }
         }
 
         &-item {
