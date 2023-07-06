@@ -1,12 +1,12 @@
 ---
-title: Ground-up Design
+title: Landscaping & Paving
 type: service-item
-desc: With decades of landscaping experience, we have the knowledge and skills to take your perfect garden from a dream to a reality.
+desc: We have the knowledge and skills to take your perfect garden from a dream to a reality.
 anchor: Bespoke Design
 weight: 1
-image: images/design.jpg
+image: images/garden-design.jpg
 ---
-## Bespoke Garden & Outdoor Space Design
+## Bespoke Garden Design
 
 Our expert team can work with you to design and create a beautiful outdoor living space that's perfectly suited to your property. From concept to finished project, we have the creativity and experience to bring your ideas to life.
 

@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Laura Bradshaw
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Did my slabs in my back garden. 100% happy. lovely man. would 100% recommend. very happy. thank you

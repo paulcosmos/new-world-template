@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Wendy Taylor
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Reliable, professional, hard working, reasonably priced work done by {{<company>}}.
