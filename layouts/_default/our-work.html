@@ -1,7 +1,9 @@
 		{{- define "main" }}
 			<section class="section">
 				<div class="container is-fullhd">
-					{{ partial "image-gallery.html" . }}
+					{{/*  {{ partial "image-gallery.html" . }}  */}}
+					<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+					<div class="elfsight-app-4d7e50c1-24eb-407b-a64e-ed2b8cfde681"></div>
 				</div>
 			</section>
 
@@ -11,7 +13,7 @@
 		{{ end }}
 
 		{{- define "scripts" -}}
-		<script src="js/simple-lightbox.min.js?v2.11.0"></script>
+		{{/*  <script src="js/simple-lightbox.min.js?v2.11.0"></script>
 		<script>
 			(function() {
 				var $gallery = new SimpleLightbox('.gallery a', {
@@ -21,5 +23,5 @@
 				disableScroll: false,
 			});
 		})();
-		</script>
+		</script>  */}}
 		{{ end }}

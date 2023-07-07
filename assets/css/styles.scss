@@ -418,16 +418,17 @@ strong {
         }
 
         img {
-            padding: 0;
+            padding: 0.5rem;
             max-width: 100%;
             max-height: $navbar-height;
 
             @include from($navbar-breakpoint) {
                 position: relative;
                 top: 0;
+                padding: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 160px;
             }
         }
     }
