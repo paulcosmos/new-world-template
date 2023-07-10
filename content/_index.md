@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable, professionally installed **paving, patios and driveways** throughout **{{<county>}}** and beyond.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been providing {{<industry>}} services to customers in {{<towncity>}} and beyond for over {{<years>}}. We are a family-run business, specialising in imprinted concrete, resin bound stone and Indian stone.

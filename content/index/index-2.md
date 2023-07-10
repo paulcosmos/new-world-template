@@ -4,10 +4,10 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/imprinted-driveway.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## We **specialise** in imprinted concrete, resin bound stone and Indian stone.
 
 + Experienced across all aspects of {{<industry>}}
 + Reputation for fast delivery times and reliability
