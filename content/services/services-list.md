@@ -1,16 +1,13 @@
 ---
 type: services-list
 ---
-* Windows and Doors
+* Bespoke Media Units
 * Wooden Doors (External)
 * Wooden Doors (Internal)
-* Wooden Sash Window
-* Wooden Shutter
-* Wooden Casement Window
+* Wooden Shutters
 * Flooring
 * Solid Timber Flooring
 * Laminate Flooring
-* Floor Sanding & Finishing
 * LVT 
 * Furniture Assembly
 * Bespoke Furniture
@@ -21,4 +18,3 @@ type: services-list
 * General Fitted Furniture
 * Exterior & Garden
 * Wooden Decking
-* Wooden fascias, soffits and cladding
