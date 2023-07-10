@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Lighting Installation
 type: review
 rating: 5
-location: 
+location: London, SE10
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Friendly, helpful and efficient service. Returned calls and messages, arrived punctually and carried out work to a really good standard. Will use again and highly recommended.

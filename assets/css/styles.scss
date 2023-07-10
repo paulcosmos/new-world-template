@@ -1125,7 +1125,7 @@ strong {
 .cta {
 
     &-banner {
-        background-color: $primary;
+        background-color: $secondary;
         display: block;
         color: $white;
         text-align: center;
@@ -1138,7 +1138,7 @@ strong {
         font-weight: 600;
         @include rounded-corners;
         @include box-shadow-high;
-        @include background-paved;
+        // @include background-paved;
 
         a {
             // color:white;
@@ -1474,7 +1474,7 @@ strong {
 .site-footer {
     background-color: $site-footer-bg;
     color: $site-footer-text;
-    @include background-paved;
+    // @include background-paved;
 
     &-company-info {
 

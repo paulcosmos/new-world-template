@@ -1,8 +1,8 @@
 ---
-title: James
+title: Plug Socket Installations
 type: review
 rating: 5
-location: 
+location: London, SE3
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Very professional, left very clean, overall extremely pleased with the service. Would highly recommend and will definitely be using again. Thank you.
