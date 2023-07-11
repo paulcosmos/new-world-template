@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Gavin Brock
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Davy and Jnr done a great job for us before Xmas after my dogs destroyed my garden would not hesitate to recommend these guys and will definitely be using them again in the future. Great service. Cheers guys
