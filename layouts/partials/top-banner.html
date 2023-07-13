@@ -24,11 +24,11 @@
 						<div class="column is-narrow is-6-touch has-text-right">
 							<span class="icon-text">
 
-								{{- if .phone }}
-								<span class="icon"><i class="fa-regular fa-mobile"></i></span>
-								{{ else -}}
+								{{/*  {{- if .phone }}  */}}
+								{{/*  <span class="icon"><i class="fa-regular fa-mobile"></i></span>  */}}
+								{{/*  {{ else -}}  */}}
 								<span class="icon"><i class="fa-regular fa-phone"></i></span>
-								{{ end -}}
+								{{/*  {{ end -}}  */}}
 								<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
 							</span>
 						</div>

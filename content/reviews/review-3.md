@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Jacqui Rose
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Josh is the nicest Plumber I’ve ever met.  He is trustworthy, punctual, professional and most importantly reliable. He has always done an excellent job when he’s done any work at my house.  Definitely my go to plumber.
