@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: John Phillip Cairns
 type: review
 rating: 5
-location: 
+location: Preston
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Quality of work and timekeeping absolutely spot-on. Very helpful advice and after-service too. Highly recommend.

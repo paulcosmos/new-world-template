@@ -389,10 +389,12 @@ strong {
         img {
             max-width: $logo-max-width;
             max-height: $logo-max-height;
+            padding-right: 1rem;
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
                 padding: 0;
+                padding-right: 1rem;
             }
         }
     }
