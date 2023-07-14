@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Marshall Morrison
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Absolutely delighted. Kelvin managed to book us in with such short notice and added extra sockets for us. very honest with which to go for especially pricing etc, very loyal and an exceptionally neat job was carried out. very very pleased with the work. highly recommended!

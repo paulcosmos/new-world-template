@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Teresa King
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Recently had Kelvin do a couple of jobs for us, can highly recommend him for any electrical work, and he’s a genuinely nice guy.
