@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Jason Whelan
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Just had a ear wax removal, it was really interesting and lovely experience. Can’t believe what came out. Would definitely recommend a treatment.

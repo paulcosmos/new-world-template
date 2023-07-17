@@ -801,7 +801,7 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
+            // @include background-dots;
             background-position: bottom;
             padding-bottom: 5rem;
 
@@ -1117,7 +1117,7 @@ strong {
 .cta {
 
     &-banner {
-        background-color: $secondary;
+        background-color: $hero-cta-bg;
         display: block;
         color: $white;
         text-align: center;
