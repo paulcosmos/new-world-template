@@ -7,11 +7,6 @@
 				<a href="https://www.checkatrade.com/trades/{{- .checkatrade -}}" title="Find us on checkatrade.com" target="_blank" rel="noopener"><img src="images/creds/checkatrade.png" alt="" title=""></a>
 			</div>
 			{{- end }}
-			{{- if .facebook }}
-			<div class="level-item accreditations-item has-text-centered">
-				<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><img src="images/creds/facebook.png" alt="" title=""></a>
-			</div>
-			{{ end }}
 			{{- if .instagram }}
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="https://instagram.com/{{- .instagram -}}" title="Find us on Instagram" target="_blank" rel="noopener"><img src="images/creds/instagram.png" alt="" title=""></a>
@@ -40,6 +35,11 @@
 			{{- if .mybuilder }}
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="https://mybuilder.com/profile/view/{{- .mybuilder -}}" title="Find us on mybuilder.com" target="_blank" rel="noopener"><img src="images/creds/mybuilder.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .facebook }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><img src="images/creds/facebook.png" alt="" title=""></a>
 			</div>
 			{{ end }}
 			{{- if .bookabuilder }}

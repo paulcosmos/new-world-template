@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Fitting 3pc Suite
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Paul is a very friendly tradesman and easy to communicate. Job was done promptly and in an efficient manner. Planning to hire for another job.
