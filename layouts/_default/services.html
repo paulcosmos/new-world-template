@@ -11,11 +11,9 @@
 					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
 						{{ partial "services/services-image-text.html" . }}
 					{{ end }}
-				</div>
-			</section>
-			<section class="section">
-				<div class="container is-fullhd company-services-list pb-4">
-					{{ partial "services/services-image-list.html" . }}
+
+					{{ partial "services/services-list.html" . }}
+
 				</div>
 			</section>
 

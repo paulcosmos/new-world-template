@@ -24,6 +24,19 @@ body {
     color: $text;
 }
 
+.container {
+
+    &.is-fluid {
+
+        @include until($navbar-breakpoint){
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }
+
+}
+
 // Typography
 
 h1,
@@ -125,6 +138,7 @@ strong {
 
             i {
                 margin-left: 0.75rem;
+                margin-right: 0.5rem;
             }
 
             a {
@@ -263,6 +277,14 @@ strong {
         color: inherit;
         font-weight: inherit;
     }
+
+    .container.is-fluid {
+
+        @include until($navbar-breakpoint){
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
 }
 
 
@@ -270,6 +292,10 @@ strong {
 @import "bulma/components/navbar.sass";
 
 .navbar {
+
+    @include until($navbar-breakpoint){
+        background-color: $navbar-background-color-mobile;
+    }
 
     .container {
         @include until($navbar-breakpoint) {
@@ -310,7 +336,7 @@ strong {
 
         span {
             display: block;
-            font-size: 1em;
+            font-size: $size-7;
             color: inherit;
             font-weight: 400;
 
@@ -361,17 +387,19 @@ strong {
         padding-bottom: 1rem;
 
         img {
+            max-width: $logo-max-width;
+            max-height: $logo-max-height;
 
-            max-height: 3rem;
-
-            @include from($navbar-breakpoint) {
-                max-width: $logo-max-width;
-                max-height: $logo-max-height;
+            @include until($navbar-breakpoint) {
+                max-height: 4rem !important;
+                padding: 0;
             }
         }
     }
 
     &-logo-overlap {
+
+        padding: 0;
 
         @include from($navbar-breakpoint) {
             position: relative;
@@ -391,7 +419,7 @@ strong {
 
         img {
             padding: 0;
-            width: 100%;
+            max-width: 100%;
             max-height: $navbar-height;
 
             @include from($navbar-breakpoint) {
@@ -415,7 +443,7 @@ strong {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: rgba(0, 0, 0, 0.94);
+                background-color: rgba($navbar-background-color-mobile,0.95);
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
@@ -475,7 +503,7 @@ strong {
 
         &.is-active {
             z-index: 99;
-            color: white;
+            color: $navbar-burger-text;
 
             &:before {
                 content: "Close";
@@ -561,7 +589,6 @@ strong {
 
     &-index {
         @include hero-index-bg;
-        padding-top: 0;
 
         h1,
         h2 {
@@ -583,14 +610,6 @@ strong {
             background-color: $secondary;
             background-image: none !important;
         }
-
-        // h1, h2 {
-        //     font-size: $hero-title-size;
-        // }
-
-        // p {
-        //     font-size: $hero-text-size;
-        // }
     }
 
     &-fail {
@@ -693,7 +712,7 @@ strong {
         margin-right: 20px;
         margin-left: auto;
         width: 80px;
-        z-index: 99;
+        // z-index: 90;
 
         @include from($desktop) {
             position: absolute;
@@ -832,13 +851,45 @@ strong {
 
         &-list {
 
-            .content {
-                columns: 2;
+            ul {
+                margin-top: 2rem;
+                columns: 1;
 
-                ul {
-                    margin-top: 0;
+                @include from($tablet){
+                    columns: 2;
                 }
+
+                @include from($desktop){
+                    columns: 3;
+                }
+
+                li {
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    &:before {
+                        content:"\f14a";
+                        font-family: "FontAwesome";
+                        margin-right: 10px;
+                        color: $primary;
+                    }
+
+                    display: block;
+                    background-color: white;
+                    @include box-shadow-high;
+                    padding: 10px;
+                    margin: 10px;
             }
+        }
+
+            // .content {
+            //     columns: 2;
+
+            //     ul {
+            //         margin-top: 0;
+            //     }
+            // }
         }
 
         &-item {
@@ -1066,7 +1117,7 @@ strong {
 .cta {
 
     &-banner {
-        background-color: $primary;
+        background-color: $secondary;
         display: block;
         color: $white;
         text-align: center;
@@ -1079,7 +1130,7 @@ strong {
         font-weight: 600;
         @include rounded-corners;
         @include box-shadow-high;
-        @include background-paved;
+        // @include background-paved;
 
         a {
             // color:white;
@@ -1189,6 +1240,10 @@ strong {
             &:last-child {
                 margin-right: 0;
             }
+        }
+        
+        img {
+            max-height: 130px;
         }
     }
 }
@@ -1400,11 +1455,18 @@ strong {
     }
 }
 
+.policy-content {
+    
+    strong {
+        font-weight: bold;
+    }
+}
+
 // Site Footer 
 .site-footer {
     background-color: $site-footer-bg;
     color: $site-footer-text;
-    @include background-paved;
+    // @include background-paved;
 
     &-company-info {
 
