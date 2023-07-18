@@ -3,7 +3,7 @@ title: "24/7 Electrical Repairs"
 type: service-item
 desc: Electrical fault-finding and same-day repair when possible.
 weight: 1
-image: images/fault-finding.jpg
+image: images/commercial.jpg
 anchor: Diagnostics & Repairs
 ---
 

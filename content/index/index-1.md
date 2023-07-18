@@ -4,7 +4,7 @@ weight: 1
 _build:
     list: true
     render: false
-image: images/wiring-socket.jpg
+image: images/plug-socket.jpg
 ---
 
 ## We're your **top choice** for an {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
