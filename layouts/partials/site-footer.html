@@ -65,10 +65,14 @@
 			</div>
 			{{ end -}}
 			{{ end -}}
-			<div class="container is-fluid site-footer-signoff">
-				<div class="content">
-					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ if .building }}{{ .building }},{{end }} {{ .street }}, {{ .towncity }}, {{ if .county }}{{ .county }}, {{ end }} {{ .postcode }}</address> | {{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
-					{{- end }}
+
+			<div class="site-footer-signoff section">
+				<div class="container is-fullhd">
+					<div class="content">
+						{{- with .Site.Params }}
+						Website by New World Digital Media on behalf of {{ .fullname }} | {{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }} | <a href="/privacy-policy.html">Privacy Policy</a>
+						{{- end }}
+					</div>
 				</div>
 			</div>
+
