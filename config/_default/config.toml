@@ -1,4 +1,4 @@
-baseURL = 'http://localhost'
+baseURL = 'http://collectivegas.uk'
 title = ''
 servicePages = 'true'
 
