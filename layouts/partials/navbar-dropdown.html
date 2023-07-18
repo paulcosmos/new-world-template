@@ -4,7 +4,7 @@
 						<a class="navbar-item navbar-logo no-underline" href="/index.html" data-aos="fade-right">
 							{{- with .Site.Params }}
 							{{ if .logo }}
-							<img src="/images/{{ .logo }}"/>
+							<img src="/images/{{ .logo }}" alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" />
 							{{- else }}
 							<div class="content navbar-title">
 								{{ .company }}
@@ -22,7 +22,7 @@
 					<div id="navbar-site" class="navbar-menu">
 						<div class="navbar-end has-text-centered">
 						    <a href="/index.html" class="navbar-item">
-							Home
+							About
 							</a>
 
 							{{/*  Dropdown  */}}

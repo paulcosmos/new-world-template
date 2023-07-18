@@ -24,6 +24,19 @@ body {
     color: $text;
 }
 
+.container {
+
+    &.is-fluid {
+
+        @include until($navbar-breakpoint){
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }
+
+}
+
 // Typography
 
 h1,
@@ -129,6 +142,7 @@ strong {
 
             i {
                 margin-left: 0.75rem;
+                margin-right: 0.5rem;
             }
 
             a {
@@ -267,6 +281,14 @@ strong {
         color: inherit;
         font-weight: inherit;
     }
+
+    .container.is-fluid {
+
+        @include until($navbar-breakpoint){
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
 }
 
 
@@ -274,6 +296,10 @@ strong {
 @import "bulma/components/navbar.sass";
 
 .navbar {
+
+    @include until($navbar-breakpoint){
+        background-color: $navbar-background-color-mobile;
+    }
 
     .container {
         @include until($navbar-breakpoint) {
@@ -284,6 +310,7 @@ strong {
 
     &-brand {
         position: relative;
+        margin-left: 0!important;
 
         .navbar-item {
             @include until($navbar-breakpoint) {
@@ -313,7 +340,7 @@ strong {
 
         span {
             display: block;
-            font-size: 1em;
+            font-size: $size-7;
             color: inherit;
             font-weight: 400;
 
@@ -369,6 +396,42 @@ strong {
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
+                padding: 0;
+            }
+        }
+    }
+
+    &-logo-overlap {
+
+        padding: 0;
+
+        @include from($navbar-breakpoint) {
+            position: relative;
+            top: 0;
+            padding: 1rem;
+            // padding-top: 0;
+            margin-top: 0;
+            margin-bottom: -40px;
+            background-color: $logo-bg-colour;
+            @include box-shadow-high;
+
+            &:hover,
+            &:focus {
+                background-color: $logo-bg-hover-colour!important;
+            }
+        }
+
+        img {
+            padding: 0;
+            max-width: 100%;
+            max-height: $navbar-height;
+
+            @include from($navbar-breakpoint) {
+                position: relative;
+                top: 0;
+                bottom: -40px;
+                left: 0;
+                max-height: 120px;
             }
         }
     }
@@ -384,7 +447,7 @@ strong {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: rgba(0, 0, 0, 0.94);
+                background-color: rgba($navbar-background-color-mobile,0.95);
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
@@ -446,7 +509,7 @@ strong {
 
         &.is-active {
             z-index: 99;
-            color: white;
+            color: $navbar-burger-text;
 
             &:before {
                 content: "Close";
@@ -457,7 +520,7 @@ strong {
                 height: 5rem;
                 line-height: 5rem;
                 top: 50%;
-                left: -50%;
+                left: -60%;
                 transform: translateX(0%) translateY(-50%);
             }
 
@@ -661,7 +724,7 @@ strong {
         margin-right: 20px;
         margin-left: auto;
         width: 80px;
-        z-index: 99;
+        // z-index: 90;
 
         @include from($desktop) {
             position: absolute;
@@ -722,7 +785,7 @@ strong {
             &:not(:last-child) {
                 margin-bottom: $size-1 !important;
                 padding-bottom: $size-3;
-                border-bottom: solid 2px lighten($secondary, 94%);
+                border-bottom: $services-item-divider;
             }
 
             &:nth-of-type(odd) {
@@ -795,6 +858,11 @@ strong {
                             opacity: 0.5;
                             transition: all 0.3s;
                         }
+                        
+                        &>img {
+                            opacity: 0.5;
+                            transition: all 0.3s;
+                        }
                     }
 
                 }
@@ -803,13 +871,45 @@ strong {
 
         &-list {
 
-            .content {
-                columns: 2;
+            ul {
+                margin-top: 2rem;
+                columns: 1;
 
-                ul {
-                    margin-top: 0;
+                @include from($tablet){
+                    columns: 2;
                 }
+
+                @include from($desktop){
+                    columns: 3;
+                }
+
+                li {
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    &:before {
+                        content:"\f14a";
+                        font-family: "FontAwesome";
+                        margin-right: 10px;
+                        color: $primary;
+                    }
+
+                    display: block;
+                    background-color: white;
+                    @include box-shadow-high;
+                    padding: 10px;
+                    margin: 10px;
             }
+        }
+
+            // .content {
+            //     columns: 2;
+
+            //     ul {
+            //         margin-top: 0;
+            //     }
+            // }
         }
 
         &-item {
@@ -1037,7 +1137,7 @@ strong {
 .cta {
 
     &-banner {
-        background-color: $primary;
+        background-color: $secondary;
         display: block;
         color: $white;
         text-align: center;
@@ -1049,7 +1149,7 @@ strong {
         font-weight: 600;
         @include rounded-corners;
         @include box-shadow-high;
-        @include background-paved;
+        // @include background-paved;
 
         a {
             // color:white;
@@ -1160,6 +1260,18 @@ strong {
                 margin-right: 0;
             }
         }
+        
+        img {
+            max-height: 130px;
+        }
+    }
+}
+
+// Our Process
+.our-process {
+
+    i {
+        color: $primary;
     }
 }
 
@@ -1167,11 +1279,17 @@ strong {
 .why-us {
 
     &-banner {
-        background-color: $tertiary;
+        background-color: $why-us-bg;
         color: $why-us-text;
 
+        i {
+            margin-bottom: 1rem;
+            color: darken(white, 10%);
+            font-size: 1.75rem;
+        }
+
         h3 {
-            font-weight: $family-heading-weight;
+            color: $text;
         }
     }
 }
@@ -1358,11 +1476,18 @@ strong {
     }
 }
 
+.policy-content {
+    
+    strong {
+        font-weight: bold;
+    }
+}
+
 // Site Footer 
 .site-footer {
     background-color: $site-footer-bg;
     color: $site-footer-text;
-    @include background-paved;
+    // @include background-paved;
 
     &-company-info {
 
