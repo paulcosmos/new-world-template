@@ -4,7 +4,7 @@ weight: 2
 _build:
     list: true
     render: false
-image: images/ceiling-lights.jpg
+image: 
 ---
 
 ## We're **{{<industry>}} experts**. No job is too big for us.

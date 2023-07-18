@@ -13,4 +13,4 @@ cascade:
 
 # Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
 
-**{{<company>}}** has been serving commerical and domestic customers in and around {{<towncity>}} for a number of years. We are professional, qualified electricians experienced in all aspects of the electrical trade.
+**{{<company>}}** has been serving commercial and domestic customers across {{<towncity>}} and {{<county>}} for a number of years. We are professional, qualified electricians experienced in all aspects of the electrical trade.
