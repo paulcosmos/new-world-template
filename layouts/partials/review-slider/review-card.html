@@ -4,7 +4,16 @@
 										<div class="media content">
 											<figure class="media-content">
 												{{- if .Title }}
-												<figcaption>{{ .Title }}</figcaption>
+												<figcaption>
+													{{ .Title }}
+													<span class="is-size-6 is-block">
+														{{ if .Params.location }}
+														{{.Params.location }}
+														{{ else }}
+														{{ .Site.Params.county }}
+														{{ end }}
+													</span>
+												</figcaption>
 												{{ end -}}
 												<div class="review-stars">
 												{{- if .Params.rating -}}
