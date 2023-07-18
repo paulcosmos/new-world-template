@@ -4,7 +4,7 @@ weight: 1
 _build:
     list: true
     render: false
-image: images/radiator.jpg
+image: images/nwgas-fireplace.jpg
 ---
 
 ## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}

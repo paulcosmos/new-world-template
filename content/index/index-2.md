@@ -4,7 +4,7 @@ weight: 2
 _build:
     list: true
     render: false
-image: images/boiler-install.jpg
+image: images/food-truck.jpg
 ---
 
 ## We're **{{<industry>}} experts**. Tough jobs are our speciality.

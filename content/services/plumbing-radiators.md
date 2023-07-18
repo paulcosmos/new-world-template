@@ -3,7 +3,7 @@ title: "Central Heating"
 type: service-item
 desc: Radiators and heated fixtures available to suit any property or budget.
 weight: 3
-image: images/solar-heater.jpg
+image: images/radiator.jpg
 anchor: "Radiators"
 ---
 ## Central Heating
