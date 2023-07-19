@@ -2,7 +2,7 @@
 				<div class="container _is-fluid is-fullhd">
 					<div class="columns is-mobile is-8 is-multiline">
 
-						<div class="column is-12-mobile is-12-tablet is-4-desktop">
+						<div class="column is-12-mobile is-5-tablet _is-5-desktop is-3-fullhd ">
 							<div class="content site-footer-company-info">
 							{{- with .Site.Params }}
 								<img class="mb-3" src="/images/logo-light.png" width="180px">
@@ -18,16 +18,16 @@
 							</div>
 						</div>
 
-						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd is-offset-1-desktop _is-narrow">
-							<div class="content site-footer-links _has-columns">
-								<h4>Site Links</h4>
-								<ul>
-									{{- range .Site.Menus.footer }}
-									<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
-									{{- end }}
-								</ul>
-							</div>
+					<div class="column is-6-mobile is-3-tablet is-3-desktop is-3-fullhd is-offset-1-fullhd _is-narrow">
+						<div class="content site-footer-links has-columns">
+							<h4>Site Links</h4>
+							<ul>
+								{{- range .Site.Menus.footer }}
+								<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
+								{{- end }}
+							</ul>
 						</div>
+					</div>
 
 					<div class="column _is-12-mobile is-3-tablet _is-3-desktop is-4-fullhd is-offset-1-fullhd">
 						<div class="content site-footer-links has-columns">
@@ -44,6 +44,7 @@
 								{{- end }}
 							</ul>
 						</div>
+					</div>
 
 					</div>
 				</div>
@@ -58,7 +59,7 @@
 			<div class="container is-fluid site-footer-signoff">
 				<div class="content">
 					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ if .building }}{{ .building }},{{end }} {{ .street }}, {{ .towncity }}, {{ if .county }}{{ .county }}, {{ end }} {{ .postcode }}</address> | {{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
+					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ if .building }}{{ .building }},{{end }} {{ .street }}, {{ .towncity }}, {{ if .county }}{{ .county }}, {{ end }} {{ .postcode }}</address>
 					{{- end }}
 				</div>
 			</div>
