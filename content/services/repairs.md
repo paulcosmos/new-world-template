@@ -3,7 +3,7 @@ title: "24/7 Electrical Repairs"
 type: service-item
 desc: Commercial and domestic electrical faults, failures and issues resolved around the clock.
 weight: 6
-image: images/consumer-unit.jpg
+image: images/electrical-repair.jpg
 anchor:
 ---
 ## 24 Hour Electrical Repairs
