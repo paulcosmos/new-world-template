@@ -12,7 +12,7 @@
 		<header>
 			{{ partial "top-banner.html" . }}
 
-			{{ partial "navbar.html" . }}
+			{{ partial "navbar-dropdown.html" . }}
 
 			{{ block "hero" . -}}
 			<section class="hero is-small">
@@ -31,7 +31,9 @@
 		</footer>
 
 		{{ partial "quote-modal.html" . }}
-
+		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-ba152002-d0f5-41fa-a7df-baea9ec1e1f6"></div>
+		
 		<script src="/js/site.js"></script>
 		<script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
