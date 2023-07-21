@@ -9,3 +9,7 @@ anchor:
 ## Professional LED light Therapy
 
 A wonderful treatment to add after many other facials that works from inside out to help repair skin structures. Also a great stand-alone facial to help reduce acne, pores, eczema, psoriasis, and rosacea.
+
+| Treatment    | Price |
+|--------------|-------|
+| LED Therapy  | £25   |

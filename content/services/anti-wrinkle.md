@@ -8,4 +8,15 @@ anchor:
 ---
 ## Anti-Wrinkle Injections
 
-Anti-wrinkle injections are designed to relaxing muscles, helping smooth our your skin and give a more youthful appearance. Anti-wrinkle treatment can also help prevent new lines from forming in future.
+Anti-wrinkle injections (Botox) are designed to relaxing muscles, helping smooth our your skin and give a more youthful appearance. Anti-wrinkle treatment can also help prevent new lines from forming in future.
+
+| Treatment    | Price |
+|--------------|-------|
+| 1 Area       | £140  |
+| 2 Areas      | £160  |
+| 3 Areas      | £190  |
+| 4 Areas      | £210  |
+
+
+
+

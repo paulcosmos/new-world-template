@@ -9,3 +9,7 @@ anchor:
 ## Fat Dissolving Aqualyx Treatment
 
 Great treatment for those stubborn areas of fat that we can all find hard to shift, such as under the chin, top of the arms, knees, belly fat, and backs of legs. Up to four treatments may be needed, depending on the area being treated.
+
+| Treatment                             | Price     |
+|---------------------------------------|-----------|
+| Aqualyx (3 to 4 treatments required)  | £140      |
