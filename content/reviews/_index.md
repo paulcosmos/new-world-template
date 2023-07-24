@@ -12,6 +12,6 @@ cascade:
     render: false
 ---
 
-# We are a **customer-focused** business, proud of our reputation for **quality**.
+# I am highly **customer-focused**, proud of my reputation for **quality**.
 
-Feedback is important to us as it helps us improve our service. Below are some of our recent reviews from happy customers.
+Below are some of our recent reviews from happy customers. Read more on [Facebook](https://www.facebook.com/charlottethegardener/reviews).

@@ -4,18 +4,18 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/charlotte-gardener-york.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## Award-winning **{{<industry>}}** in {{<towncity>}} &amp; {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+Hi there! I’m Charlotte and I'm an **award-winning** landscaper and **garden designer** based in {{<towncity>}}.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+I’ve been gardening most of my life – whether that was with my dad on the vegetable patch or my mum in the flower borders. Originally I started a garden maintenance business part-time, while still working as a social worker, but in 2018 I took the plunge to do gardening full time and I haven’t looked back. 
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+I now have a small team of gardeners who all love the job as much as I do! We look after a range of gardens in and around York, helping clients develop their garden into a space they love. 
+
+![](/images/goty.jpg)
 
 
 

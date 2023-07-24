@@ -25,7 +25,7 @@
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "900x1100 q70 Center").RelPermalink }}'
 									alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
@@ -45,7 +45,7 @@
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
-							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
+							<h2>{{ .Site.Params.industry | humanize }} services I offer</h2>
 						</div>
 						<div class="column is-narrow" data-aos="fade-in">
 							<span class="icon company-icon">

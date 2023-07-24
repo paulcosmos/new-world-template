@@ -8,7 +8,7 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
+$primary: #60AE00;
 $secondary: #242833;
 $info: $secondary;
 $tertiary: #EFF2F5;
@@ -67,7 +67,7 @@ $navbar-divider-background-color: lighten($secondary, 10%);
 // Buttons
 $button-text: white;
 $button-bg: $primary;
-$button-bg-hover: lighten($button-bg, 10%);
+$button-bg-hover: darken($button-bg, 5%);
 
 // Modal overlay
 $sl-overlay-background: $secondary;

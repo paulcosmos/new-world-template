@@ -2,7 +2,7 @@
 title: 'About'
 menu: ["main","footer"]
 weight: 1
-preheading: 
+preheading: Award-winning garden design in York
 _build:
   render: true
 cascade:
@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Professional **{{<industry>}} services** throughout **{{<towncity>}}** and {{<county>}}.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+Hello, I'm **{{<company>}}** an award-winning landscaper and garden designer based in {{<towncity>}}. I've been providing {{<industry>}} services to happy customers throughout {{<county>}} since 2018.
