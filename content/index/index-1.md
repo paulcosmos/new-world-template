@@ -4,18 +4,16 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/super-nanny-lynn.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## Passionate, experienced, fun and **reliable childcare** in the Northwest.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+Hello, I'm Lynn, a local, experienced and highly energetic private nanny. Based in {{<towncity>}}, I provide my services across the Northwest, including Manchester, Stockport, Cheshire and Derbyshire. 
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+Full of life, fun, compassionate, patient, creative, reliable and consistent, I offer ad-hoc, live-in and live-out childcare services to families in Manchester, Derbyshire and across the Northwest.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+I am a huge advocate of outdoor, active and creative childcare methods, including forest walks, seaside trips, baking and cooking, face-painting, crafts and music and imagination-play.
 
 
 

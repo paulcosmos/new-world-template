@@ -13,6 +13,6 @@ cascade:
 
 # Looking for **{{<industry>}} services** in **{{<towncity>}}** &amp; {{<county>}}?
 
-Speak to us today to request a quote. 
+Speak to me today and I'll be happy to help!
 
 

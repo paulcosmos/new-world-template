@@ -12,6 +12,6 @@ cascade:
     render: false
 ---
 
-# We are a **customer-focused** business, proud of our reputation for **quality**.
+# I am patient, **reliable** and **compassionate** and accommodating. 
 
-Feedback is important to us as it helps us improve our service. Below are some of our recent reviews from happy customers.
+Below are some of our recent reviews from happy parents. Full references and certifications are available on request.
