@@ -1,8 +1,8 @@
 ---
-title: James
+title: Mary Millichip
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Daniel is very professional, he enjoys his work, so you get perfection in what he does
