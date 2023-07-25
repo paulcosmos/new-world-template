@@ -8,7 +8,7 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
+$primary: #e5cb0a;
 $secondary: #242833;
 $info: $secondary;
 $tertiary: #EFF2F5;
@@ -65,7 +65,7 @@ $navbar-dropdown-border-top: 2px solid $primary;
 $navbar-divider-background-color: lighten($secondary, 10%);
 
 // Buttons
-$button-text: white;
+$button-text: $secondary;
 $button-bg: $primary;
 $button-bg-hover: lighten($button-bg, 10%);
 
