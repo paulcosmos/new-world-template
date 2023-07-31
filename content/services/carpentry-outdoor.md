@@ -3,7 +3,7 @@ title: "Outdoor Carpentry"
 type: service-item
 desc: From fencing, gates or pergolas, to outdoor rooms, tree-houses and alfresco dining spaces, our team can build it.
 weight: 3
-image: images/pergola.jpg
+image: images/carpentry.jpg
 anchor:
 ---
 ## Outdoor Carpentry
