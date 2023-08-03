@@ -1,0 +1,109 @@
+{{ define "hero" }}
+<section class="hero hero-service is-halfheight"
+ 	style="background-image:linear-gradient(-249deg, rgba(24, 26, 64, 0.9), rgba(24, 26, 64, 0.5)), url(../{{ .Params.backgroundImage }}">
+	<div class="hero-body">
+		<div class="container is-fullhd">
+			<div class="columns">
+				<div class="column is-12-tablet is-8-desktop is-6-fullhd">
+					<span class="pre-heading has-text-white" data-aos="fade-left">
+						Our Services
+					</span>
+					<div class="content hero-services-content has-accent" data-aos="fade-down">
+						<h1>{{ .Title }} in {{ .Site.Params.towncity }}</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+
+{{ define "main" }}
+<section class="section">
+	<div class="container is-fullhd">
+		<div class="columns is-multiline is-centered">
+			<div class="column is-12-touch is-7-desktop" data-aos="fade-in">
+				<article class="content has-accent box">
+				{{ .Content }}
+
+				{{/*  <div class="image has-rounded-corners mt-6">
+					{{- $image := resources.Get .Params.inlineimage }}
+					{{- if $image }}
+					{{- with .Site.Params }}
+						<img src='{{ ($image.Fill "1200x1200 q70 Center").RelPermalink }}'
+							alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
+							title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
+					{{ end }}
+					{{ else }}
+						<img src='/images/placeholder.jpg'/>
+					{{- end }}
+				</div>  */}}
+
+				</article>
+				
+			</div>
+			<div class="column is-offset-1-desktop _is-narrow _is-12-touch" data-aos="fade-left">
+			{{- if .Params.services }}
+				<aside class="content service-page-list box">
+					<h3>What we offer</h3>
+					<ul>
+					{{ range .Params.services }}
+					<li>{{ . }}</li>
+					{{ end }}
+				</aside>
+			{{- end }}
+				<div class="content hero-cta">
+					<h3>Get a Quote</h3>
+					<hr/>
+					<h4>
+					{{- if $.Site.Params.phone }}
+						{{- .Site.Params.phone -}}
+					{{ else }}
+						{{- .Site.Params.mobile -}}
+					{{- end -}}
+					</h4>
+					<p>Speak to us today to arrange a no obligation quotation or use our contact form to request a callback</p>
+
+					<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
+						<span class="icon-text">
+						  <span class="icon is-hidden-touch">
+						    <i class="fa-regular fa-phone"></i>
+						  </span>
+						  <span>Request a call back</span>
+						</span>
+					</button>
+
+				</div>
+
+				<div class="image has-rounded-corners mt-6">
+					{{- $image := resources.Get .Params.inlineimage }}
+					{{- $fallback := resources.Get .Params.image }}
+
+					{{- with .Site.Params }}
+					{{- if $image }}
+						<img src='{{ ($image.Fill "1200x1200 q70 Center").RelPermalink }}'
+							alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
+							title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
+					{{ else }}
+					<img src='{{ ($fallback.Fill "1200x1200 q70 Center").RelPermalink }}'
+						alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
+						title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
+					{{- end }}
+					{{- end }}
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+	{{/*  {{ partial "cta-text.html" . }}  */}}
+	{{ partial "why-us-banner.html" . }}
+
+{{ end }}
+
+{{ define "scripts" }}
+<!-- Page specific scripts -->
+{{ end }}

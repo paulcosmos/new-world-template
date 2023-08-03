@@ -17,5 +17,7 @@ image: images/plug-socket.jpg
 
 Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
 
+We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+
 
 
