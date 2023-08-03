@@ -179,6 +179,8 @@ strong {
 
 .content {
 
+    color: inherit;
+
     &.media {
         margin-bottom: 0;
     }
@@ -228,7 +230,7 @@ strong {
 
     strong,
     span {
-        color: $accent;
+        color: $primary;
     }
 
     p,
@@ -469,6 +471,10 @@ strong {
                 }
             }
         }
+    }
+
+    &-divider {
+        background-color: $navbar-divider-background-color!important;
     }
 
     &-end {
@@ -1327,7 +1333,7 @@ strong {
             color: $text;
 
             span {
-                color: lighten($accent, 0%);
+                color: lighten($primary, 0%);
                 font-size: $size-5;
             }
         }

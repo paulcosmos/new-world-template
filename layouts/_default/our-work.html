@@ -1,7 +1,139 @@
 		{{- define "main" }}
 			<section class="section">
 				<div class="container is-fullhd">
-					{{ partial "image-gallery.html" . }}
+
+
+					<h2>Project 1</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/project1/%s"}}
+					<div class="gallery my-6 pb-6">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/project1/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="460px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
+
+					<h2>Project 2</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/project2/%s"}}
+					<div class="gallery my-6 pb-6">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/project2/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="460px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
+
+					<h2>Project 3</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/project3/%s"}}
+					<div class="gallery my-6 pb-6">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/project3/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="460px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
+
+					<h2>Project 4</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/project4/%s"}}
+					<div class="gallery my-6 pb-6">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/project4/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="460px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
+
+
+					<h2>Project 5</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/project5/%s"}}
+					<div class="gallery my-6 pb-6">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/project5/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="460px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
+
 				</div>
 			</section>
 

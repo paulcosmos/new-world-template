@@ -1,6 +1,6 @@
 ---
 title: Our Services
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 2
 anchor: "Services"
 dropdown: 
@@ -14,6 +14,6 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}.
+# Providing a wide range of **{{<industry>}} services** across all of {{<towncity>}}.
 
 With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.

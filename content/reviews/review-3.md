@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: KC Liang
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+MC has the keenest eye for detail in a craftsman that I have ever seen. I have always considered myself to have an exceptionally keen eye but MC surpasses me in this regard. The finish in the work he has done for me is outstanding and has been carried out in a timely manner. He is a professional of the first class and I would not hesitate to recommend him to anyone.

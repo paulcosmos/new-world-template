@@ -14,4 +14,4 @@ cascade:
 
 # We are a **customer-focused** business, proud of our reputation for **quality**.
 
-Feedback is important to us as it helps us improve our service. Below are some of our recent reviews from happy customers.
+Our customers are very important to us. We show true dedication to meeting their exact needs, and this is what keeps them returning to us for {{<industry>}} work time and time again.
