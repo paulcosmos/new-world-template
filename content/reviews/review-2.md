@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Bathroom Refurbishment
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+We are delighted with the result that Johnny and his team have achieved. On time, on budget. What a wonderful transformation to our bathroom

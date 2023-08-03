@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Bathroom Renovation
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Macoku are an excellent team that transformed our bathroom on time and on budget, the craftsmanship of the tiling was second to none and the guys offered tons of advise to make sure the job was done properly , professional and with attention to detail we will be calling them again!!
