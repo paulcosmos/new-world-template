@@ -351,6 +351,7 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
+        font-weight: $family-heading-weight;
 
         &:before {
             @include animated-underline;
@@ -469,6 +470,10 @@ strong {
                 }
             }
         }
+    }
+
+    &-divider {
+        background-color: $navbar-divider-background-color!important;
     }
 
     &-end {
@@ -1244,6 +1249,12 @@ strong {
         
         img {
             max-height: 130px;
+            filter: grayscale(100%);
+            transition: all 0.2s;
+
+            &:hover {
+                filter: grayscale(0%);
+            }
         }
     }
 }
