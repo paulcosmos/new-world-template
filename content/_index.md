@@ -2,7 +2,7 @@
 title: 'About'
 menu: ["main","footer"]
 weight: 1
-preheading: 
+preheading: Combined Heating & Power services
 _build:
   render: true
 cascade:
@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable, professional **{{<industry>}} services** throughout **{{<county>}}** and the North East.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers across {{<county>}} and the North East for {{<years>}}. We are experienced in all aspects of the {{<industry>}} trade.
