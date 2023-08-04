@@ -179,6 +179,8 @@ strong {
 
 .content {
 
+    color: inherit;
+
     &.media {
         margin-bottom: 0;
     }
@@ -607,14 +609,19 @@ strong {
 
     &-service {
         color: white;
+        background: none;
+        background-color: $secondary;
+        background-image: url('/images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        padding: 0;
+        
 
-        @include until($tablet) {
-            background-color: $secondary;
-            background-image: none !important;
-        }
+        // @include until($tablet) {
+        //     background-color: $secondary;
+        //     // background-image: none !important;
+        // }
     }
 
     &-fail {
