@@ -24,6 +24,19 @@ body {
     color: $text;
 }
 
+.container {
+
+    &.is-fluid {
+
+        @include until($navbar-breakpoint){
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }
+
+}
+
 // Typography
 
 h1,
@@ -165,6 +178,7 @@ strong {
 }
 
 .content {
+    color: inherit;
 
     &.media {
         margin-bottom: 0;
@@ -264,6 +278,14 @@ strong {
         color: inherit;
         font-weight: inherit;
     }
+
+    .container.is-fluid {
+
+        @include until($navbar-breakpoint){
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
 }
 
 
@@ -271,6 +293,10 @@ strong {
 @import "bulma/components/navbar.sass";
 
 .navbar {
+
+    @include until($navbar-breakpoint){
+        background-color: $navbar-background-color-mobile;
+    }
 
     .container {
         @include until($navbar-breakpoint) {
@@ -326,7 +352,7 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
-        font-weight: 600;
+        font-weight: $family-heading-weight;
 
         &:before {
             @include animated-underline;
@@ -396,7 +422,7 @@ strong {
 
         img {
             padding: 0;
-            width: 100%;
+            max-width: 100%;
             max-height: $navbar-height;
 
             @include from($navbar-breakpoint) {
@@ -448,6 +474,10 @@ strong {
         }
     }
 
+    &-divider {
+        background-color: $navbar-divider-background-color!important;
+    }
+
     &-end {
         @include until($navbar-breakpoint) {
             min-height: 100%;
@@ -480,7 +510,7 @@ strong {
 
         &.is-active {
             z-index: 99;
-            color: white;
+            color: $navbar-burger-text;
 
             &:before {
                 content: "Close";
@@ -566,7 +596,6 @@ strong {
 
     &-index {
         @include hero-index-bg;
-        padding-top: 0;
 
         h1,
         h2 {
@@ -584,22 +613,13 @@ strong {
 
     &-service {
         color: white;
+        background: none;
+        background-color: $secondary;
+        background-image: url('/images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-
-        @include until($tablet) {
-            background-color: $secondary;
-            background-image: none !important;
-        }
-
-        // h1, h2 {
-        //     font-size: $hero-title-size;
-        // }
-
-        // p {
-        //     font-size: $hero-text-size;
-        // }
+        padding: 0;
     }
 
     &-fail {
@@ -702,7 +722,7 @@ strong {
         margin-right: 20px;
         margin-left: auto;
         width: 80px;
-        z-index: 99;
+        // z-index: 90;
 
         @include from($desktop) {
             position: absolute;
@@ -854,6 +874,9 @@ strong {
                 }
 
                 li {
+                    &:first-child {
+                        margin-top: 0;
+                    }
 
                     &:before {
                         content:"\f14a";
@@ -869,16 +892,8 @@ strong {
                     margin: 10px;
                     margin-top: 0;
                     font-weight: bold;
+                }
             }
-        }
-
-            // .content {
-            //     columns: 2;
-
-            //     ul {
-            //         margin-top: 0;
-            //     }
-            // }
         }
 
         &-item {
@@ -1106,7 +1121,7 @@ strong {
 .cta {
 
     &-banner {
-        background-color: $primary;
+        background-color: $secondary;
         display: block;
         color: $white;
         text-align: center;
@@ -1119,7 +1134,7 @@ strong {
         font-weight: 600;
         @include rounded-corners;
         @include box-shadow-high;
-        @include background-paved;
+        // @include background-paved;
 
         a {
             color:$hero-cta-number-text;
@@ -1230,6 +1245,16 @@ strong {
                 margin-right: 0;
             }
         }
+        
+        img {
+            max-height: 130px;
+            filter: grayscale(100%);
+            transition: all 0.2s;
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
     }
 }
 
@@ -1262,13 +1287,6 @@ strong {
 
 .level {
     flex-wrap: wrap !important;
-
-    &-item {
-
-        img {
-            
-        }
-    }
 }
 
 .stats-row {
