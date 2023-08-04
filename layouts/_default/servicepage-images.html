@@ -1,6 +1,6 @@
 {{ define "hero" }}
-<section class="hero hero-service is-halfheight"
- 	style="background-image:linear-gradient(-249deg, rgba(24, 26, 64, 0.9), rgba(24, 26, 64, 0.5)), url(../{{ .Params.backgroundImage }}">
+<section class="hero hero-service is-medium"
+	{{/* style="background-image:linear-gradient(-249deg, rgba(24, 26, 64, 0.9), rgba(24, 26, 64, 0.5)), url(../{{ .Params.backgroundImage }}"     */}}>
 	<div class="hero-body">
 		<div class="container is-fullhd">
 			<div class="columns">
@@ -24,20 +24,22 @@
 		<div class="columns is-multiline is-centered">
 			<div class="column is-12-touch is-7-desktop" data-aos="fade-in">
 				<article class="content has-accent box">
-				{{ .Content }}
 
-				{{/*  <div class="image has-rounded-corners mt-6">
-					{{- $image := resources.Get .Params.inlineimage }}
+				<div class="image has-rounded-corners mb-6">
+					{{- $image := resources.Get .Params.image }}
 					{{- if $image }}
 					{{- with .Site.Params }}
-						<img src='{{ ($image.Fill "1200x1200 q70 Center").RelPermalink }}'
+						<img src='{{ ($image.Fill "1200x600 q70 Center").RelPermalink }}'
 							alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 							title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 					{{ end }}
 					{{ else }}
 						<img src='/images/placeholder.jpg'/>
 					{{- end }}
-				</div>  */}}
+				</div>
+
+				{{ .Content }}
+
 
 				</article>
 				
@@ -52,6 +54,8 @@
 					{{ end }}
 				</aside>
 			{{- end }}
+
+
 				<div class="content hero-cta">
 					<h3>Get a Quote</h3>
 					<hr/>
@@ -73,23 +77,6 @@
 						</span>
 					</button>
 
-				</div>
-
-				<div class="image has-rounded-corners mt-6">
-					{{- $image := resources.Get .Params.inlineimage }}
-					{{- $fallback := resources.Get .Params.image }}
-
-					{{- with .Site.Params }}
-					{{- if $image }}
-						<img src='{{ ($image.Fill "1200x1200 q70 Center").RelPermalink }}'
-							alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
-							title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
-					{{ else }}
-					<img src='{{ ($fallback.Fill "1200x1200 q70 Center").RelPermalink }}'
-						alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
-						title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
-					{{- end }}
-					{{- end }}
 				</div>
 
 			</div>

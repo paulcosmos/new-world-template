@@ -33,9 +33,10 @@
 				<aside class="content service-page-list box">
 					<h3>What we offer</h3>
 					<ul>
-					{{ range .Params.services }}
-					<li>{{ . }}</li>
-					{{ end }}
+						{{ range .Params.services }}
+						<li>{{ . }}</li>
+						{{ end }}
+					</ul>
 				</aside>
 			{{- end }}
 				<div class="content hero-cta">

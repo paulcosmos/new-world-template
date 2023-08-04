@@ -178,6 +178,7 @@ strong {
 }
 
 .content {
+    color: inherit;
 
     &.media {
         margin-bottom: 0;
@@ -607,14 +608,13 @@ strong {
 
     &-service {
         color: white;
+        background: none;
+        background-color: $secondary;
+        background-image: url('/images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-
-        @include until($tablet) {
-            background-color: $secondary;
-            background-image: none !important;
-        }
+        padding: 0;
     }
 
     &-fail {
@@ -885,16 +885,9 @@ strong {
                     @include box-shadow-high;
                     padding: 10px;
                     margin: 10px;
+                }
             }
-        }
 
-            // .content {
-            //     columns: 2;
-
-            //     ul {
-            //         margin-top: 0;
-            //     }
-            // }
         }
 
         &-item {
