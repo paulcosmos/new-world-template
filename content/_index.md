@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Professional **{{<industry>}} services** throughout **{{<towncity>}}** and {{<county>}}.
+# Professional {{<industry>}} services throughout {{<towncity>}} and {{<county>}}.
 
 Hello, I'm **{{<company>}}** an award-winning landscaper and garden designer based in {{<towncity>}}. I've been providing {{<industry>}} services to happy customers throughout {{<county>}} since 2018.

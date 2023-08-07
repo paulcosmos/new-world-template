@@ -1,8 +1,8 @@
 ---
-title: Ground-up Design
+title: Garden Design
 type: service-item
 desc: With years of landscaping experience, I have the knowledge and skills to take your perfect garden from a dream to a reality.
-anchor: Bespoke Design
+anchor: 
 weight: 1
 image: images/garden-design.jpg
 ---

@@ -2,7 +2,7 @@
 title: Landscaping Consultation
 type: service-item
 desc: Need some one-off expert advice? I offer a landscape consultation service where we can chat through ideas or solve problems with your garden.
-anchor: Bespoke Design
+anchor:
 weight: 4
 image: images/landscaping-design.jpg
 ---

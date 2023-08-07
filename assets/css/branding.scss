@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200;9..144,300;9..144,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 // Override Bulma variables here:
-$family-headings: "Poppins", sans-serif;
+$family-headings: "Vollkorn", sans-serif;
 $family-sans-serif: "Nunito Sans", sans-serif;
-$family-heading-weight: 600;
+$family-heading-weight: 300;
 
 //  Set colours
-$primary: #60AE00;
+$primary: #0C5E5E;
 $secondary: #242833;
 $info: $secondary;
 $tertiary: #EFF2F5;
@@ -30,7 +32,7 @@ $text: $secondary;
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
+	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.6)), url('../images/hero-image.jpg');
 
 }
 
@@ -42,17 +44,17 @@ $top-banner-text: white;
 $top-banner-icon: $accent;
 
 // Main Navigation 
-$navbar-background-color: $secondary;
+$navbar-background-color: white;
 $navbar-background-color-mobile: $navbar-background-color;
 
 $navbar-height: 5rem;
-$logo-max-width: 180px;
+$logo-max-width: 280px;
 $logo-max-height: $navbar-height;
 $logo-bg-colour: lighten($navbar-background-color,5%);
 $logo-bg-hover-colour: lighten($logo-bg-colour,5%);
 
-$navbar-item-color: white;
-$navbar-item-hover-color: white;
+$navbar-item-color: $secondary;
+$navbar-item-hover-color: $primary;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
 $navbar-item-mobile-color: $navbar-item-color;

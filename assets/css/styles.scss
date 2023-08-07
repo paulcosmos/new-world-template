@@ -352,6 +352,7 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
+        font-family: $family-headings;
         font-weight: $family-heading-weight;
 
         &:before {
@@ -1030,6 +1031,7 @@ strong {
             margin-right: 0;
 
             figcaption {
+                font-family: $family-headings;
                 font-size: $size-4;
                 font-weight: 600;
                 font-style: inherit;

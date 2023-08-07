@@ -2,7 +2,7 @@
 title: Planting Design
 type: service-item
 desc: I can help you choose the right plants and create a bespoke planting design that works for your space.
-anchor: Bespoke Design
+anchor: 
 weight: 2
 image: images/planting-design.jpg
 ---
