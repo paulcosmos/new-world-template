@@ -1,8 +1,8 @@
 ---
 title: 'About'
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 1
-preheading: 
+preheading: Save time, money and the environment
 _build:
   render: true
 cascade:
@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Drain Tags, an effective **long-term solution** for clearly marking your **site drainage**.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+Show the flow. Drain Tags are a permanent, hard-wearing and easy to install drain marking solution that clearly shows the direction of flow.

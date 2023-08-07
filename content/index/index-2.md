@@ -4,13 +4,16 @@ weight: 2
 _build:
     list: true
     render: false
-image:
+image: images/drain-tags-looping.jpg
 ---
 
-## We're **{{<industry>}} experts**. Tough jobs are our speciality.
+## Know the flow at a glance. Drain Tags are **colour coded** to British drainage standards.
 
-+ Experienced across all aspects of {{<industry>}}
-+ Reputation for fast delivery times and reliability
-+ Competitive and affordable prices
+Drain tags are available in 4 vibrant hues, adhering to British drainage colour codes:
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+* **Blue**: Surface Water (SW) 
+* **Red**: Foul Water (FW)
+* **Green**: Trade Effluent (TE)
+* **Yellow**: Unmarked*
+
+_*Yellow markers are universal, and can be used for marking interceptors, grease traps, or even pathways to reception._

@@ -93,9 +93,14 @@ strong {
     background-color: $tertiary;
 }
 
+.card {
+    color: inherit;
+}
+
 // Buttons 
 .button {
     color: $secondary;
+    border-radius: $button-corner-radius;
 
     &-primary,
     &-primary>button {
@@ -165,6 +170,8 @@ strong {
 }
 
 .content {
+
+    color: inherit;
 
     &.media {
         margin-bottom: 0;
@@ -271,6 +278,10 @@ strong {
 @import "bulma/components/navbar.sass";
 
 .navbar {
+
+    @include until($navbar-breakpoint) {
+        background-color: white;
+    }
 
     .container {
         @include until($navbar-breakpoint) {
@@ -380,7 +391,6 @@ strong {
             position: relative;
             top: 0;
             padding: 1rem;
-            // padding-top: 0;
             margin-top: 0;
             margin-bottom: -40px;
             background-color: $logo-bg-colour;
@@ -393,16 +403,18 @@ strong {
         }
 
         img {
-            padding: 0;
+            padding: 0.8rem;
             width: 100%;
             max-height: $navbar-height;
+            box-sizing: border-box;
 
             @include from($navbar-breakpoint) {
+                box-sizing: initial;
                 position: relative;
                 top: 0;
                 bottom: -40px;
-                left: 0;
-                max-height: 120px;
+                max-height: 140px;
+                padding: 0;
             }
         }
     }
@@ -577,23 +589,13 @@ strong {
     }
 
     &-service {
-        color: white;
+        color: $text;
+        background-image: url('../images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-color: $tertiary;
 
-        @include until($tablet) {
-            background-color: $secondary;
-            background-image: none !important;
-        }
-
-        // h1, h2 {
-        //     font-size: $hero-title-size;
-        // }
-
-        // p {
-        //     font-size: $hero-text-size;
-        // }
     }
 
     &-fail {
@@ -811,7 +813,7 @@ strong {
                     margin-top: 1rem;
 
                     &:after {
-                        @include animated-underline;
+                        // @include animated-underline;
                         width: 100%;
                     }
 
@@ -853,16 +855,8 @@ strong {
                     @include box-shadow-high;
                     padding: 10px;
                     margin: 10px;
+                }
             }
-        }
-
-            // .content {
-            //     columns: 2;
-
-            //     ul {
-            //         margin-top: 0;
-            //     }
-            // }
         }
 
         &-item {
@@ -1135,6 +1129,17 @@ strong {
     }
 }
 
+.select select {
+    font-size:1rem;
+    padding: 1rem;
+    height: 3rem;
+    line-height: 1rem;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color:$link;
+}
+
 .accreditations {
     display: flex;
 
@@ -1222,6 +1227,44 @@ strong {
 
     i {
         color: $primary;
+    }
+}
+
+.price-list {
+
+    background-color: $tertiary;
+
+    color: $text!important;
+
+    h2 {
+        @include section-item-title;
+    }
+
+    &-card {
+        border-radius: 20px;
+        @include box-shadow-high;
+        padding: 2rem;
+        border: solid 2px lighten($primary,0%);
+
+    }
+
+    &-price {
+        font-weight: bold;
+        font-size: 2rem;
+        font-family: $family-headings;
+        color: $primary!important;
+
+        &-extras {
+            font-size: 1rem;
+        }
+    }
+}
+
+.price-span {
+
+    span {
+        display: block;
+        font-size: 2rem;
     }
 }
 

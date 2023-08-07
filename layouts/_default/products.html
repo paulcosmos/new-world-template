@@ -1,0 +1,18 @@
+		{{- define "hero" -}}
+		<section class="hero is-halfheight hero-index">
+			{{ partial "hero/hero-text-only.html" . }}
+		</section>
+		{{ end -}}
+
+		{{ define "main" }}
+			<section class="section">
+				<div class="container is-fullhd company-services pb-4">
+					{{ partial "services/services-grid-images.html" . }}
+
+				</div>
+				
+			</section>
+		{{ end }}
+
+		{{ define "scripts" }}
+		{{ end }}

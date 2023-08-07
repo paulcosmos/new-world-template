@@ -1,7 +1,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
 				<div class="container is-fluid">  
 				    <div class="navbar-brand">
-						<a class="navbar-item navbar-logo no-underline" href="/index.html">
+						<a class="navbar-item navbar-logo-overlap no-underline" href="/index.html">
 							{{- with .Site.Params }}
 							{{ if .logo }}
 							<img src="/images/{{ .logo }}"/>
@@ -22,17 +22,17 @@
 					<div id="navbar-site" class="navbar-menu">
 						<div class="navbar-end has-text-centered">
 						    <a href="/index.html" class="navbar-item">
-							Home
+							About
 							</a>
 
 							{{/*  Dropdown  */}}
 							<div class="navbar-item has-dropdown is-hoverable no-underline">
-								<a href="/services.html" class="navbar-link is-hidden-touch">
-								  Services
+								<a href="/products.html" class="navbar-link is-hidden-touch">
+								  Products
 								</a>
 								<div class="navbar-dropdown">
 							    {{- $currentPage := . }}
-								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
+								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "products/" }}
 									<a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Title }}">
 									{{- if .Params.anchor -}}
 									  {{ .Params.anchor }}
@@ -42,8 +42,8 @@
 									</a>
 									<hr class="navbar-divider">
 								{{- end }}
-								<a class="navbar-item" href="/services.html" title="View all services">
-									View All Services
+								<a class="navbar-item" href="/products.html" title="View all services">
+									View All Products
 								</a>
 								</div>
 					      	</div>
@@ -60,7 +60,7 @@
 							</a>
 						    {{ end }}
 						    <div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
-						      <button class="button-primary">{{ .Site.Params.modalbuttontext }}</button>
+								<button class="button-primary">Request a FREE Sample</button>
 						    </div>
 						</div>
 					</div>

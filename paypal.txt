@@ -1,0 +1,24 @@
+*** PayPal Developer login ***
+
+Use these details to access the development sandbox: https://developer.paypal.com/
+
+user  : developer9000
+pass  : Pan1cDHH69
+
+================================================
+
+*** Test payment details ***
+
+Use this account to login to PayPal payment prompts to make test purchases
+
+user  : sb-q0ppl26232488@personal.example.com
+pass  : +_4_u7lI
+
+================================================
+
+*** Sandbox details ***
+
+Use this account to login to PayPal sandbox to review test purchases
+
+user  : sb-ajhvd26237287@business.example.com
+pass  : ^U179uK=

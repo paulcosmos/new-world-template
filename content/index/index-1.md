@@ -4,16 +4,17 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/drain-tags-angled.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}
+## Drain Tags help ensure that polluting substances are directed to the **appropriate drain**.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+Drain Tags are a cost-effective, long-term solution for clearly but discretely marking your site drainage system. 
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+Their intuitive arrow design allows for quick drain and flow direction identification at a glance.
+
+Available in boxes of 25, 50, 100 or 250, each Drain Tag comes complete with fixing bolts and free postage.
+
 
 
 
