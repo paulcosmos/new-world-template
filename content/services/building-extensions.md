@@ -2,7 +2,7 @@
 title: "Property Extensions"
 type: service-item
 desc: Our expert builders have years of experience building extensions for a wide range of property types in a myriad of styles.
-weight: 1
+weight: 2
 image: images/extensions.jpg
 anchor:
 ---
