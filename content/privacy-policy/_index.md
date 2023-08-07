@@ -125,7 +125,7 @@ If you have any questions about this Privacy Policy, please contact us:
 
 **By email:** {{<email>}}
 
-**By phone:** {{<mobile>}}
+**By phone:** {{<phone>}}
 
 
 
