@@ -19,7 +19,8 @@ html {
 html,
 body {
     width: auto !important;
-    overflow-x: hidden !important;
+    // overflow-x: hidden !important;
+    // overflow-y: initial !important;
     font-family: $family-sans-serif;
     color: $text;
 }

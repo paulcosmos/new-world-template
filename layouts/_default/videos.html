@@ -1,0 +1,25 @@
+
+		
+		{{ define "main" -}}
+			<section class="section">
+				<div class="container is-fullhd">  
+					<div class="columns is-vcentered is-multiline is-variable is-8">
+
+						{{ range .Params.videos }}
+						<div class="column is-12-mobile is-6-tablet mb-6">
+							<div class="content" data-aos="fade-in">
+								<figure class="image is-16by9">
+									<iframe class="has-ratio" width="640" height="360" src="https://youtube.com/embed/{{ . }}" frameborder="0" allowfullscreen></iframe>
+								</figure>
+							</div>
+						</div>
+						{{ end }}
+						
+		
+					</div>
+				</div>
+			</section>
+
+			{{ partial "cta-text.html" . }}
+
+		{{ end }}

@@ -40,10 +40,12 @@
 					{{- end }}
 
 					<div class="columns is-vcentered is-multiline is-variable is-8">
-						<div class="column is-6 is-offset-3 has-text-centered mb-6" data-aos="fade-up">
+
+						<div class="column is-12-touch is-6-desktop is-offset-3-desktop has-text-centered mb-6" data-aos="fade-up">
 							<h2>Mission Statement</h2>
 							<p>Our mission is to provide the residents of London with a no hassle Building service where all work exceeds expectations, meets deadlines & offer excellent value.</p>
 						</div>
+
 						<div class="column is-6-desktop is-6-fullhd">
 							<div class="content" data-aos="fade-in">
 								<figure class="image is-16by9">
@@ -51,6 +53,7 @@
 								</figure>
 							</div>
 						</div>
+
 						<div class="column is-6-desktop is-6-fullhd">
 							<div class="content" data-aos="fade-in">
 								<figure class="image is-16by9">
@@ -58,6 +61,16 @@
 								</figure>
 							</div>
 						</div>
+
+						<div class="column is-12 has-text-centered mt-6 _is-offset-2">
+							<div class="is-grouped">
+								{{/*  <a href="/reviews.html" class="button is-ghost is-inline-block" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">View more reviews</a>  */}}
+								<div class="" data-target="quote-modal" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+									<a class="button-primary" href="/videos.html">View more videos <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+
 					</div>
 
 
@@ -84,7 +97,15 @@
 
 			{{ partial "cta-banner.html" . }}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			<section>
+				<div class="container is_fluid mb-6">
+
+					<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+					<div class="elfsight-app-218d7519-955b-4e04-8855-898779801f24"></div>
+				
+
+				</div>
+			</section>
 
 			{{ partial "cta-text.html" . }}
 

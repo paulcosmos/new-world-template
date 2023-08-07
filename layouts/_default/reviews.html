@@ -3,11 +3,16 @@
 		{{ define "main" -}}
 			<section class="section">
 				<div class="container is-fullhd">  
-					<div class="columns is-multiline is-mobile review-grid">
+					{{/*  <div class="columns is-multiline is-mobile review-grid">
 						{{ range where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/" }}
 							{{ partial "review-slider/review-card.html" . }}
 						{{- end }}
-					</div>
+					</div>  */}}
+
+					<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+					<div class="elfsight-app-218d7519-955b-4e04-8855-898779801f24"></div>
+
+					
 				</div>
 			</section>
 
