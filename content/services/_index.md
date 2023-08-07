@@ -1,6 +1,5 @@
 ---
 title: Our Services
-menu: ["main","footer"]
 weight: 2
 anchor: "Services"
 dropdown: 

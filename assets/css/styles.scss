@@ -331,7 +331,7 @@ strong {
             color: $link;
 
             span {
-                color: white;
+                color: inherit;
             }
         }
 
@@ -387,6 +387,7 @@ strong {
     &-logo {
         padding-top: 1rem;
         padding-bottom: 1rem;
+        overflow-wrap: break-word;
 
         img {
             max-width: $logo-max-width;
@@ -610,7 +611,7 @@ strong {
         color: white;
         background: none;
         background-color: $secondary;
-        background-image: url('/images/bg.png');
+        background-image: url('../images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

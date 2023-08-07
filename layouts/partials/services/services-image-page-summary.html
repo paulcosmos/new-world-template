@@ -3,8 +3,8 @@
 						<div class="column is-12-touch is-7-desktop is-6-fullhd">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="content has-accent" data-aos="fade-right">
-								<h2>{{ .Title }}</h2>
-								<p>{{ .Params.desc }}</p>
+								{{/*  <h2>{{ .Title }}</h2>  */}}
+								{{ .Content }}
 								<hr/>
 								<a 	class="button button-primary ml-0 modal-trigger" 
 									data-aos="fade-up" 
@@ -20,7 +20,7 @@
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
 								{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q50 Smart").RelPermalink }}' 
+								<img src='{{ ($image.Fill "1200x1000 q70 Smart").RelPermalink }}' 
 									alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
 									title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
 								{{ end }}

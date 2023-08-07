@@ -6,10 +6,10 @@
 							{{ if .logo }}
 							<img src="/images/{{ .logo }}" alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" />
 							{{- else }}
-							<div class="content navbar-title">
-								{{ .company }}
-								<span>{{ .industry | humanize }} services in {{ .towncity }}</span>
-							</div>
+							<span class="content navbar-title">
+								Gainsborough Plumbing <br/> & Handyman Services
+								{{/*  <span>{{ .industry | humanize }} services in {{ .towncity }}</span>  */}}
+							</span>
 							{{ end -}}
 							{{ end -}}
 						</a>
