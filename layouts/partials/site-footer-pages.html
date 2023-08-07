@@ -30,12 +30,22 @@
 							<div class="content site-footer-links _has-columns">
 							<h4>Primary Services</h4>
 								<ul>
-									{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
+									{{- range where .Site.RegularPages "Type" "service-page" }}
 									<li><a href="{{ .RelPermalink }}">
 										{{- if (ne .Params.anchor nil) }}
 											{{- .Params.anchor -}}
 										{{- else -}}
 											{{- .Title -}}
+										{{- end -}}
+									</a></li>
+									{{- end }}
+									{{/*  {{- range .Site.Menus.services }}  */}}
+									{{- range .Site.Menus.services }}
+									<li><a href="/services.html#{{ anchorize .Title }}">
+										{{- if (ne .Page.Params.anchor nil) }}
+											{{- .Page.Params.anchor -}}
+										{{- else -}}
+											{{- .Page.Title -}}
 										{{- end -}}
 									</a></li>
 									{{- end }}

@@ -4,7 +4,7 @@ weight: 1
 _build:
     list: true
     render: false
-image: images/plug-socket.jpg
+image: images/vale-electrical-van.jpg
 ---
 
 ## We're your **top choice** for an {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.

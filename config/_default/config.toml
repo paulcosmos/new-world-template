@@ -1,13 +1,12 @@
 baseURL = 'http://vale-electrical.uk'
 title = ''
-servicePages = 'true'
 
 languageCode = 'en-us'
 uglyurls = true
 canonifyURLs = false
 relativeURLs = true
 disableKinds = ['taxonomy', 'term', 'RSS']
-sectionPagesMenu = ['main', 'footer']
+sectionPagesMenu = ['main', 'footer', 'services',]
 
 [markup.goldmark.parser]
     autoHeadingID = false

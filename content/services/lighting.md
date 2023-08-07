@@ -1,10 +1,11 @@
 ---
-title: "Lighting Design & Installation"
+title: "Lighting Design"
 type: service-item
 desc: Wide variety of stylish or practical lighting options for you home or business, indoor or out.
 weight: 4
 image: images/lighting.jpg
-anchor: "Lighting Design"
+anchor: Lighting Design
+
 ---
 ## Lighting Design & Installation
 

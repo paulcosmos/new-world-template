@@ -5,6 +5,7 @@ desc: From adding or moving plugs and lights to full rewiring jobs.
 weight: 2
 image: images/electrical-installation.jpg
 anchor: Electrician Services
+
 ---
 
 ## Electrical Installations & Rewires

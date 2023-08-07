@@ -1,10 +1,16 @@
 ---
 title: "Consumer Units"
+menu: ["services"]
 type: service-item
 desc: We are fully qualified to install and upgrade consumer units to meet modern standards.
 weight: 3
 image: images/consumer-units.jpg
 anchor:
+
+_build:
+    list: true
+    render: false
+
 ---
 
 ## Consumer Units

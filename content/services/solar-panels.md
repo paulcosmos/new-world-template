@@ -1,12 +1,15 @@
 ---
-title: "Solar Panel Installations"
+title: Solar Panel Installations
+menu: ["services"]
 type: service-item
 desc: Our team are fully qualified and experienced in the installation of solar roof panels.
 weight: 6
 image: "images/solar-pv.jpg"
 anchor:
+
 _build:
-  render: true
+    list: true
+    render: false
 ---
 
 ## Solar Panel Installations

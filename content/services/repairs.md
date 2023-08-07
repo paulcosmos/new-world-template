@@ -1,10 +1,15 @@
 ---
-title: "24/7 Electrical Repairs"
+title: 24/7 Electrical Repairs
+menu: ["services"]
 type: service-item
 desc: Electrical fault-finding and same-day repair when possible.
 weight: 1
 image: images/commercial.jpg
 anchor: Diagnostics & Repairs
+
+_build:
+    list: true
+    render: false
 ---
 
 ## 24/7 Electrical Repairs
