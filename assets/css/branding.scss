@@ -62,7 +62,7 @@ $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
-$navbar-divider-background-color: whitesmoke;
+$navbar-divider-background-color: lighten($navbar-dropdown-background-color, 5%);
 
 // Buttons
 $button-text: white;
