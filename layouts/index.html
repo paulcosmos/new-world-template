@@ -25,7 +25,7 @@
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "1200x1000 q70 Center").RelPermalink }}'
 									alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
@@ -57,9 +57,9 @@
 				</div>
 			</section>
 
-			{{ partial "cta-banner.html" . }}
+			{{/*  {{ partial "cta-banner.html" . }}  */}}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
 			{{ partial "cta-text.html" . }}
 

@@ -4,18 +4,16 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/jeff-woods-and-son.jpg
 ---
 
 ## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+Based in {{<towncity>}}, {{<company>}} offer rapid repairs and maintenance work across The Rhondda, Pontypridd, Caerphilly, Cardiff, and most of Mid Glamorgan or Rhondda Cynon Taff. 
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+All work is carried out with the customers needs in mind, from start to finish, we always ensure that all of our work is completed with the utmost professionalism and to the highest standards. We pride ourselves on keeping our customers happy and delivering their requirements. 
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We are Gas Safe registered and highly experienced. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
 
 
 
