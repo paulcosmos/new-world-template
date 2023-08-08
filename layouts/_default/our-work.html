@@ -1,7 +1,92 @@
 		{{- define "main" }}
 			<section class="section">
 				<div class="container is-fullhd">
-					{{ partial "image-gallery.html" . }}
+					<h2>Bathrooms</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/bathrooms/%s"}}
+					<div class="gallery mt-4">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/bathrooms/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="460px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container is-fullhd has-border-top pt-6">
+					<h2>Sanitaryware</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/sanitaryware/%s"}}
+					<div class="gallery mt-4">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/sanitaryware/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="460px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="section">
+				<div class="container is-fullhd has-border-top pt-6">
+					<h2>Mechanical Work</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/mechanical/%s"}}
+					<div class="gallery mt-4">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/mechanical/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="460px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
 				</div>
 			</section>
 

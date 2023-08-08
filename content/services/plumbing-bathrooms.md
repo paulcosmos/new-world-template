@@ -1,15 +1,13 @@
 ---
-title: "Bathroom Installations"
+title: "Designer Bathrooms"
 type: service-item
-desc: Elegant, bespoke bathrooms designed and built to your exact specifications.
+desc: Elegant, bespoke bathrooms designed, supplied and built to your exact specifications.
 weight: 1
-image: images/bathroom-taps.jpg
+image: images/bathrooms.jpg
 anchor:
 ---
-## Bathroom Fitting & Installations
+## Bathroom Fitting & Refurbishment
 
-Elegant, luxurious bath and shower rooms designed and built to your exact specifications. The team at {{<company>}} have years of bathroom fitting experience in a multitude of property types and sizes.
+Elegant, luxurious bath and shower rooms designed and built to your exact specifications. The team at {{<company>}} have years of bathroom fitting experience in a multitude of property types and sizes. 
 
-* Professional, high quality finish guaranteed
-* Vast choice of styles and fittings to suit
-* No job too big or too complicated
+We can design, supply and install bathrooms in a wide range of styles and fittings, all completed to the highest quality finish. We do it all.

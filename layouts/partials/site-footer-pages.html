@@ -12,9 +12,6 @@
 										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
 								</div>
 							{{ end }}
-								{{/*  <div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
-								{{ partial "social-links-icons.html" . }}
-								</div>  */}}
 							</div>
 						</div>
 
@@ -33,8 +30,8 @@
 							<div class="content site-footer-links _has-columns">
 							<h4>Primary Services</h4>
 								<ul>
-									{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-									<li><a href="/services.html#{{ anchorize .Title }}">
+									{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
+									<li><a href="{{ .RelPermalink }}">
 										{{- if (ne .Params.anchor nil) }}
 											{{- .Params.anchor -}}
 										{{- else -}}
@@ -46,14 +43,14 @@
 							</div>
 						</div>
 
-						{{/*  <div class="column is-6-mobile _is-4-tablet _is-2-desktop">
+						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
 							<div class="content site-footer-links _has-columns">
 								<h4>Social Media</h4>
 								<ul>
 									{{ partial "social-links-text.html" . }}
 								</ul>
 							</div>
-						</div>  */}}
+						</div>
 
 					</div>
 				</div>

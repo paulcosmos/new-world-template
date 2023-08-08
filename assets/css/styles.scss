@@ -92,6 +92,10 @@ strong {
     border-radius: $image-corner-radius;
 }
 
+.has-border-top {
+    border-top: solid 1px darken($tertiary, 5%);
+}
+
 .image {
 
     &.has-rounded-corners {
@@ -100,6 +104,14 @@ strong {
             border-color: $primary;
         }
     }
+}
+
+.has-background-primary {
+    background-color: $primary;
+}
+
+.has-background-secondary {
+    background-color: $secondary;
 }
 
 .has-background-tertiary {
@@ -178,6 +190,7 @@ strong {
 }
 
 .content {
+    color: inherit;
 
     &.media {
         margin-bottom: 0;
@@ -351,6 +364,7 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
+        font-weight: $family-heading-weight;
 
         &:before {
             @include animated-underline;
@@ -469,6 +483,10 @@ strong {
                 }
             }
         }
+    }
+
+    &-divider {
+        background-color: $navbar-divider-background-color!important;
     }
 
     &-end {
@@ -592,7 +610,11 @@ strong {
 
         h1,
         h2 {
-            font-size: $hero-title-size;
+            font-size: $hero-title-size-mobile;
+
+            @include from($tablet) {
+                font-size: $hero-title-size;
+            }
         }
 
         p {
@@ -602,6 +624,9 @@ strong {
 
     &-service {
         color: white;
+        background: none;
+        background-color: $secondary;
+        background-image: url('../images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -880,16 +905,9 @@ strong {
                     @include box-shadow-high;
                     padding: 10px;
                     margin: 10px;
+                }
             }
-        }
 
-            // .content {
-            //     columns: 2;
-
-            //     ul {
-            //         margin-top: 0;
-            //     }
-            // }
         }
 
         &-item {
@@ -1244,6 +1262,12 @@ strong {
         
         img {
             max-height: 130px;
+            filter: grayscale(100%);
+            transition: all 0.2s;
+
+            &:hover {
+                filter: grayscale(0%);
+            }
         }
     }
 }
