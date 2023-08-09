@@ -806,7 +806,9 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
+            background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
             background-position: bottom;
             padding-bottom: 5rem;
 
