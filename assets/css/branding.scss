@@ -13,7 +13,8 @@ $family-heading-weight: 300;
 $primary: #0C5E5E;
 $secondary: #242833;
 $info: $secondary;
-$tertiary: #EFF2F5;
+// $tertiary: #EFF2F5;
+$tertiary: #fef9f1;
 $accent: darken($primary, 0%);
 $link: $primary;
 $animated-underline: $link;
@@ -26,17 +27,22 @@ $text: $secondary;
 
 // Page hero settings 
 @mixin hero-default-bg {
-	@include background-dots;
+	background-color: $tertiary;
+	background-image: linear-gradient(-249deg, rgba($tertiary, 0.9), rgba($tertiary, 0.4)), url('../images/bg.png');
+	background-repeat: no-repeat;
 }
 
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.6)), url('../images/hero-image.jpg');
+	background-image: linear-gradient(-249deg, rgba($tertiary, 0.9), rgba($tertiary, 0.4)), url('../images/bg.png');
 
+	@include until($navbar-breakpoint){
+		background-image: linear-gradient(-180deg, rgba($tertiary, 0.6), rgba($tertiary, 0.6)), url('../images/bg.png');
+	}
 }
 
-$hero-index-text: white;
+$hero-index-text: $text;
 
 //  Top Banner
 $top-banner-bg: darken($secondary,10%);
@@ -44,7 +50,7 @@ $top-banner-text: white;
 $top-banner-icon: $accent;
 
 // Main Navigation 
-$navbar-background-color: white;
+$navbar-background-color: $tertiary;
 $navbar-background-color-mobile: $navbar-background-color;
 
 $navbar-height: 5rem;
@@ -79,7 +85,7 @@ $sl-navigation-color: white;
 $hero-text: $text;
 $preheading-text: $primary;
 $preheading-size: 1rem;
-$hero-title-size: 2rem;
+$hero-title-size: 2.4rem;
 $hero-text-size: 1rem;
 $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);
@@ -89,7 +95,7 @@ $hero-cta-border: none;
 $bg-overlay: rgba(0, 0, 0, 0.6);
 
 // Services
-$services-item-divider: solid 2px $tertiary;
+$services-item-divider: solid 2px darken($tertiary, 4%);
 
 // Reviews
 $review-section-bg: $secondary;
@@ -105,7 +111,7 @@ $review-dots-border-radius: 50%;
 $review-dots-border: solid 4px lighten($link, 20%);
 $review-dots-bg: transparent;
 $review-dots-bg-active: $link;
-$review-stars: $primary;
+$review-stars: $tertiary;
 $review-stars-remaining:lighten($primary, 15%);
 
 // Why us banner 
@@ -115,7 +121,7 @@ $why-us-title-size: 1rem;
 
 // Main Footer
 $site-footer-bg: $secondary;
-$site-footer-text: white;
+$site-footer-text: $tertiary;
 $site-footer-signoff-bg: darken($secondary, 3%);
 $site-footer-signoff-text: $tertiary;
 
@@ -133,6 +139,6 @@ $ring-y: 50%;
 
 // Settings for 'Dots' BG pattern
 $dot-bg-color: $tertiary;
-$dot-color: darken($dot-bg-color, 5%);
+$dot-color: darken($dot-bg-color, 0%);
 $dot-size: 2px;
 $dot-space: 16px;

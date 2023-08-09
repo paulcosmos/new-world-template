@@ -8,8 +8,6 @@ image: images/garden-maintenance.jpg
 ---
 ## General Garden Maintenance
 
-Not every job has to be a large, bespoke project. I'm more than happy to tackle small upkeep jobs for you too, such as tidying up borders, turfing lawns, pruning shrubs, and power-washing.
-
-I also offer regular garden maintenance services to local businesses and landlords.
+Not every job has to be a large, bespoke project; we also offer general garden maintenance. We specialise in looking after herbaceous borders, pruning shrubs and roses and working with you to maximise your garden’s existing potential.
 
 

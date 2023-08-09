@@ -8,6 +8,6 @@ image: images/garden-design.jpg
 ---
 ## Garden & Landscape Design
 
-I offer different levels of garden design, working work with you to design and create a beautiful outdoor living space that's perfectly suited to your property. 
+I offer different levels of garden design, working work with you to design and create a beautiful outdoor living space that's perfectly suited to your lifestyle and property. 
 
 From concept to finished project, my team and I have the creativity and experience to bring your ideas to life, consulting with you every step of the way to ensure we create the perfect space for you and your family.
