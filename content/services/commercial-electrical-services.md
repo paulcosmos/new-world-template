@@ -1,22 +1,13 @@
 ---
 title: "Commercial Electrical Services"
 type: service-page
-layout: servicepage
-desc: Coming soon
-summary: Safety checks and certifications for domestic and commercial properties and appliances.
-# services:
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-weight: 4
-image: "images/service.jpg"
-backgroundImage: images/service-hero.jpg
+layout: servicepage-images
+
+summary: A wide range of electrical installation and repair services for businesses and commercial premises.
+
+weight: 2
+image: "images/commercial.jpg"
+
 anchor:
 _build:
   render: true

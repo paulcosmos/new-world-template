@@ -1,22 +1,13 @@
 ---
 title: "Electrical Inspections & Testing"
 type: service-page
-layout: servicepage
-desc: Coming soon
-summary: Safety checks and certifications for domestic and commercial properties and appliances.
-# services:
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
+layout: servicepage-images
+
+summary: Complete electrical safety inspections and certifications for home and business.
+
 weight: 4
-image: "images/service.jpg"
-backgroundImage: images/service-hero.jpg
+image: "images/testing.jpg"
+
 anchor:
 _build:
   render: true

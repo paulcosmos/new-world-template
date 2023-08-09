@@ -1,22 +1,13 @@
 ---
 title: "PAT Testing"
 type: service-page
-layout: servicepage
-desc: Coming soon
-summary: Safety checks and certifications for domestic and commercial properties and appliances.
-# services:
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
+layout: servicepage-images
+
+summary: Ensure your business is safe with our portable appliance testing (PAT) certificates.
+
 weight: 4
-image: "images/service.jpg"
-backgroundImage: images/service-hero.jpg
+image: "images/pat-testing.jpg"
+
 anchor:
 _build:
   render: true

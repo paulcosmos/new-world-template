@@ -1,27 +1,18 @@
 ---
-title: "Rewires"
+title: "Electrical Rewires"
 type: service-page
-layout: servicepage
-desc: Coming soon
-summary: Safety checks and certifications for domestic and commercial properties and appliances.
-# services:
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-weight: 4
-image: "images/service.jpg"
-backgroundImage: images/service-hero.jpg
+layout: servicepage-images
+
+summary: New build wiring and rewires of homes and commercial premises.
+
+weight: 3
+image: "images/rewires.jpg"
+
 anchor:
 _build:
   render: true
 ---
 
-## Rewiring
+## Electrical Rewiring
 
 Content coming soon.

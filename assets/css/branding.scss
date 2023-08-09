@@ -9,7 +9,7 @@ $family-heading-weight: 600;
 
 //  Set colours
 $primary: #FF6E00;
-$secondary: #0f1218;
+$secondary: #090b0f;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -62,7 +62,7 @@ $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
-$navbar-divider-background-color: lighten($secondary, 10%);
+$navbar-divider-background-color: lighten($navbar-dropdown-background-color, 5%);
 
 // Buttons
 $button-text: white;
