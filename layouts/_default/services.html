@@ -13,12 +13,25 @@
 					{{ end }}
 				</div>
 			</section>
-			{{/*  <section class="section">
+			{{ if .Params.services }}
+			<section class="section">
 				<div class="container is-fullhd company-services-list pb-4">
-					{{ partial "services/services-image-list.html" . }}
+					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+						<div class="column is-12-touch is-12-desktop">
+							<div class="pre-heading" data-aos="fade-down">What we do</div>
+							<div class="_content has-accent company-services-list" data-aos="fade-right">
+								<ul>
+								{{- range .Params.services }}
+								<li>{{ . }}</li>
+								{{ end }}
+								</ul>						
+							</div>
+						</div>
+					</div>
 				</div>
-			</section>  */}}
-
+			</section>
+			{{ end }}
+			
 			{{ partial "cta-banner.html" . }}
 			{{ partial "why-us-banner.html" . }}
 
