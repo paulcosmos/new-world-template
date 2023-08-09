@@ -24,12 +24,7 @@ $text: $secondary;
 
 // Page hero settings 
 @mixin hero-default-bg {
-	background-color: $tertiary;
-	background-image: linear-gradient(-249deg, rgba($tertiary, 1), rgba($tertiary, 0.5)), url('../images/bg.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom;
-	padding-bottom: 5rem;
+	@include background-dots;
 }
 
 @mixin hero-index-bg {
