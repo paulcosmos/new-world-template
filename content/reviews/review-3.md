@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: "Fantastic Team"
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Started using Ryan and the team last year to look after the maintenance on our portfolio. R & R Roofing have been reliable, very competitively priced and no job has been too big or small. Thanks for your continued help! 

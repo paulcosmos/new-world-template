@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: "Very Happy Customer"
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Ryan was fantastic, I’ve finally found a roofer that can be trusted, arrived when said and was very efficient, I can’t recommend enough 

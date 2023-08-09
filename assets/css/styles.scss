@@ -106,6 +106,10 @@ strong {
     background-color: $tertiary;
 }
 
+.has-border-top {
+    border-top: solid 2px whitesmoke!important;
+    padding-top: 2rem;
+}
 // Buttons 
 .button {
     color: $secondary;
@@ -610,7 +614,7 @@ strong {
         color: white;
         background: none;
         background-color: $secondary;
-        background-image: url('/images/bg.png');
+        background-image: url('./images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
