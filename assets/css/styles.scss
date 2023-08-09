@@ -806,9 +806,12 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
-            background-position: bottom;
+            background-image: linear-gradient(-249deg, rgba($tertiary, 1), rgba($tertiary, 0.5)), url('../images/bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             padding-bottom: 5rem;
+
 
             &-list {
                 background-color: $tertiary;
