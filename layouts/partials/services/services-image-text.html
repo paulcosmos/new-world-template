@@ -23,8 +23,8 @@
 								{{- if $image }}
 								{{- with .Site.Params }}
 								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}' 
-									alt="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"
-									title="{{ .industry|humanize }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
 								{{ end }}
 								{{ else }}
 								<img src='/images/placeholder.jpg'/>
