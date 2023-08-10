@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Heroes with Trowels
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+I would happily 110% recommend the {{<company>}} team. Darryl was calm, knowledgeable & honest when discussing the job requirements & costs involved. They helped to transform my house from what had felt like total devastation into feeling like a home again.

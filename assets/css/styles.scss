@@ -806,7 +806,7 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
+            // @include background-dots;
             background-position: bottom;
             padding-bottom: 5rem;
 
