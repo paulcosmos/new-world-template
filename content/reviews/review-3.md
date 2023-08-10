@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Excellent Service, Highly Recommended
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Joe provided an excellent service. He communicated well, was very reliable and meticulous in his work. He achieved an amazing finish and we were over the moon with the results. Highly recommend his services. 

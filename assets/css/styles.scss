@@ -107,6 +107,17 @@ strong {
 }
 
 // Buttons 
+
+.messenger-button {
+    background-color: #2374e1;
+    border: none;
+}
+
+.whatsapp-button {
+    background-color: #5ACD71;
+    border: none;
+}
+
 .button {
     color: $secondary;
 
@@ -607,14 +618,10 @@ strong {
     }
 
     &-service {
-        color: white;
-        background: none;
-        background-color: $secondary;
-        background-image: url('../images/bg.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 0;
+        background-color: $tertiary;
+        @include background-dots;
+        background-position: bottom;
+        padding-bottom: 5rem;
     }
 
     &-fail {

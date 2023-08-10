@@ -32,9 +32,18 @@
 								{{- end -}}
 							</a>
 						    {{ end }}
-						    <div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
-						      <button class="button-primary">{{ .Site.Params.modalbuttontext }}</button>
+						    <div class="navbar-item has-text-centered _modal-trigger no-underline" _data-target="quote-modal">
+						      <a class="button _button-primary is-small is-rounded messenger-button"
+							  	href="https://m.me/{{ .Site.Params.facebook }}"
+								target="_blank" rel="noopener">
+								<i class="mx-2 fa-brands fa-facebook-messenger"></i> Messenger</a>
 						    </div>
+							<div class="navbar-item has-text-centered _modal-trigger no-underline" _data-target="quote-modal">
+								<a class="button _button-primary is-small is-rounded whatsapp-button"
+									href="https://wa.me/447710550917"
+									target="_blank" rel="noopener">
+									<i class="mx-2 fa-brands fa-whatsapp"></i> WhatsApp</a>
+							</div>
 						</div>
 					</div>
 				</div>

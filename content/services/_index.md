@@ -4,6 +4,22 @@ menu: ["main","footer"]
 weight: 2
 anchor: "Services"
 dropdown: 
+services:
+- Rental properties
+- Door Painting
+- Exterior Decorating
+- Exterior Painting
+- Floor Painting
+- Interior Painting
+- New builds
+- Painting
+- Window Painting
+- Decorating Paint Effects
+- Home Decor
+- Paint Stripping
+- Painting Contractors
+- Patch/Filler Repairs
+
 preheading: "Our Services"
 image: images/placeholder.jpg
 _build:
