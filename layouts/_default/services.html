@@ -28,7 +28,8 @@
 
 				</div>
 			</section>
-			{{/*  <section class="section">
+			{{ if .Params.services }}
+			<section class="section">
 				<div class="container is-fullhd company-services-list pb-4">
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
 						<div class="column is-12-touch is-12-desktop">
@@ -43,8 +44,9 @@
 						</div>
 					</div>
 				</div>
-			</section>  */}}
-
+			</section>
+			{{ end }}
+			
 			{{ partial "cta-banner.html" . }}
 			{{ partial "why-us-banner.html" . }}
 
