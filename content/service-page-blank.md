@@ -15,7 +15,7 @@ services:
 - service
 weight: 4
 image: "images/service.jpg"
-backgroundImage: images/service-hero.jpg
+
 anchor:
 _build:
   render: true
