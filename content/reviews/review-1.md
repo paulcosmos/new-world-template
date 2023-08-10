@@ -1,8 +1,8 @@
 ---
-title: James
+title: Yvonne Davies
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Ben installed and tiled a downstairs cloakroom for me. His work is excellent, nothing was to much trouble for him. His attention to detail is exceptional. Highly recommended.
