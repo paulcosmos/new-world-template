@@ -4,7 +4,7 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/building-wall.jpg
 ---
 
 ## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
