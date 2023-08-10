@@ -2,7 +2,7 @@
 title: 'About'
 menu: ["main","footer"]
 weight: 1
-preheading: 
+preheading: Never a problem, only a solution
 _build:
   render: true
 cascade:
