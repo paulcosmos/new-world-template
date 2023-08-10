@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Richard Hodgson
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+These guys do a great job! Workmanship is first class and everything is tidied up afterwards. Pricing is very competitive too. I can thoroughly recommend.

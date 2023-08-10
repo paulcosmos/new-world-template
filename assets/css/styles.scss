@@ -394,14 +394,14 @@ strong {
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
-                padding: 0;
+                padding: 0.3rem;
             }
         }
     }
 
     &-logo-overlap {
 
-        padding: 0;
+        padding: 0.3rem;
 
         @include from($navbar-breakpoint) {
             position: relative;

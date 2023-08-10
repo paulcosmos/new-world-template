@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Valentin Nastasa
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Good company, they are very professional and in top of that they are nice people to deal with! Strongly recommend!
