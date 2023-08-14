@@ -3,7 +3,7 @@ title: "Electrical Installations"
 type: service-item
 desc: From adding plug sockets and installing lighting to full rewiring jobs.
 weight: 1
-image: images/electrical-installation.jpg
+image: images/electrical-installations.jpg
 anchor: Electrician Services
 ---
 
