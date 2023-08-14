@@ -1,0 +1,21 @@
+					{{- $currentPage := . }}
+					{{- range where .Site.RegularPages "Type" "locations-list" }}
+					<div class="columns is-multiline is-mobile is-variable is-4">
+						<div class="column" data-aos="fade-in">
+							<h2>Locations in {{ .Site.Params.county }} I cover</h2>
+						</div>
+						<div class="column is-narrow is-hidden-mobile" data-aos="fade-in">
+							<span class="icon company-icon">
+								<i class="fa-light fa-route"></i>
+							</span>
+						</div>
+					</div>
+					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+						<div class="column is-12-touch is-12-desktop">
+							{{/*  <div class="pre-heading" data-aos="fade-down">What we do</div>  */}}
+							<div class="_content has-accent company-services-list" data-aos="fade-right">
+								{{ .Content }}							
+							</div>
+						</div>
+					</div>
+				{{ end }}

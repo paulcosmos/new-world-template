@@ -10,7 +10,7 @@
 					</span>
 					<div class="content hero-services-content has-accent" data-aos="fade-down">
 						<h1>{{ .Title }}</h1>
-						<p>{{ .Params.desc }}</p>
+						<p>{{ .Params.summary }}</p>
 					</div>
 				</div>
 			</div>
@@ -23,8 +23,9 @@
 <section class="section">
 	<div class="container is-fullhd">
 		<div class="columns is-multiline is-centered">
-			<div class="column is-12-touch is-7-desktop" data-aos="fade-in">
-				<article class="content has-accent">
+			<div class="column is-12-touch is-7-desktop">
+				{{- range where .Site.RegularPages "Type" "service-item" -}}
+				<article class="content has-accent" data-aos="fade-in">
 				{{ .Content }}
 				</article>
 			</div>

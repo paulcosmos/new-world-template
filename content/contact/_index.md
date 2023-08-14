@@ -1,7 +1,7 @@
 ---
 title: Contact
 menu: ["main","footer"]
-weight: 5
+weight: 99
 preheading: "Get a Quote"
 _build:
   render: true

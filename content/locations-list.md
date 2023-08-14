@@ -1,0 +1,24 @@
+---
+type: locations-list
+---
+- Calne
+- Chippenham
+- Corsham
+- Lacock
+- Melksham
+- Trowbridge
+- Bromham
+- Devizes
+- Marlborough
+- Royal
+- Wootton
+- Bassett
+- Swindon
+- Lyneham
+- Compton
+- Bassett
+- Malmesbury
+- Sherston
+- Westbury
+- Colerne
+- and surrounding villages

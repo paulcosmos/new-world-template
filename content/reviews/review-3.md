@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Victoria Hale
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Excellent, friendly service from someone who comes across as passionate and knowledgable about what he does. Thank you!

@@ -4,18 +4,16 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/alan-key-locks.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## Your local & reliable **{{<industry>}}** in {{<towncity>}}, {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+Hell, I'm Alan Havard and I am your local Locksmiths based in Calne, Wiltshire. I am professional, highly experienced, qualified and trained at the UK Locksmiths Association.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+The services that I offer incorporate virtually every type of lock or lock associated scenario, be it dealing with residential properties or business premises. As well as dealing with every day situations, I offer an **around the clock emergency call out service** 365 days a year.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+I have been police vetted subject to access and always carry identification. I assist Wiltshire Police with an emergency entry/call-out service. I pride myself on a highly professional service in everything I do from taking your enquiry on the telephone right up to completing the job.
 
 
 

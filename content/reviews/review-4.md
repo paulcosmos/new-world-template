@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Sandra Bosley
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Alan responded quickly and came at a time to suit me. Explained everything fully and was honest about what was and more importantly what was not needed. His fee was very reasonable for the time he took investigating the problem. Would definitely recommend him to anyone. Thanks Alan. First class.

@@ -12,7 +12,7 @@
 		<header>
 			{{ partial "top-banner.html" . }}
 
-			{{ partial "navbar.html" . }}
+			{{ partial "navbar-dropdown.html" . }}
 
 			{{ block "hero" . -}}
 			<section class="hero is-small">
@@ -27,7 +27,7 @@
 		</main>
 
 		<footer class="site-footer">
-			{{ partial "site-footer.html" . }}
+			{{ partial "site-footer-pages.html" . }}
 		</footer>
 
 		{{ partial "quote-modal.html" . }}
@@ -39,6 +39,8 @@
 		  AOS.init();
 		</script>
 		{{ block "scripts" . }}
+		{{- end }}
+		{{ block "extrascripts" . }}
 		{{- end }}
 	</body>
 </html>

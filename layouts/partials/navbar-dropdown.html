@@ -32,7 +32,7 @@
 								</a>
 								<div class="navbar-dropdown">
 							    {{- $currentPage := . }}
-								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
+								{{- range where .Site.RegularPages "Type" "service-page" }}
 									<a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Title }}">
 									{{- if .Params.anchor -}}
 									  {{ .Params.anchor }}
