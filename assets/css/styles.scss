@@ -806,8 +806,11 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
-            background-position: bottom;
+            // @include background-dots;
+            // background-image: url('../images/bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            // background-position: bottom;
             padding-bottom: 5rem;
 
             &-list {
@@ -1226,10 +1229,10 @@ strong {
             }
         }
 
-        @include from($desktop) {
+        @include from($widescreen) {
             padding-left: 2rem;
             padding-right: 2rem;
-            flex: 0 0 20%;
+            flex: 0 0 10%;
 
             &:first-child {
                 margin-left: 0;
@@ -1241,7 +1244,7 @@ strong {
         }
         
         img {
-            max-height: 130px;
+            max-height: 100px;
             filter: grayscale(100%);
             transition: all 0.2s;
 

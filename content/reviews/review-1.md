@@ -1,8 +1,8 @@
 ---
-title: James
+title: Paul
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Outstanding - couldn't have been more helpful. 
