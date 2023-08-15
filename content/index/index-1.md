@@ -4,7 +4,7 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/ryder-daly-van.jpg
 ---
 
 ## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.

@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Caroline
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Can't recommend highly enough. Transparency from start to finish. Work carried out to excellent standard and finish as scheduled. 5 stars all the way ! 
