@@ -1,8 +1,8 @@
 ---
-title: James
+title: Gemma Davies
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Danny made some brilliant wardrobes for us, very pleased with the result. Would highly recommend.

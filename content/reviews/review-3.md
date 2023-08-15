@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Jessica Axe
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Delighted to recommend D B Carpentry. Excellent work, great communication, very clear and accurate on time frames and plans and delighted with the results. Danny and his colleague Anthony were also extremely polite and tidy. Highly recommend.

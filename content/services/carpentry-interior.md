@@ -3,7 +3,7 @@ title: "Interior Carpentry"
 type: service-item
 desc: A wide range of professional carpentry services for inside the home
 weight: 1
-image: images/kitchen.jpg
+image: images/bespoke-carpentry-london.jpg
 anchor:
 ---
 ## Interior Carpentry
