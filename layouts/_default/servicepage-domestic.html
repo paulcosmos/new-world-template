@@ -1,5 +1,9 @@
+{{ define "stylesheets" }}
+<link rel="stylesheet" href="/css/splide-default.min.css">
+{{ end }}
+
 {{ define "hero" -}}
-<section class="hero hero-service-page is-medium">
+<section class="hero hero-service-page domestic is-medium">
 	{{ partial "hero/hero-image.html" . }}
 </section>
 {{ end }}
@@ -13,10 +17,10 @@
 					Domestic & Residential Services
 				</h2>
 				<h3>
-					Electrical Services for the Home
+					Local electrians in Norfolk and Devon. 
 				</h3>
 				<p>
-					Local electrians in {{ .Site.Params.towncity }} with over {{ .Site.Params.years }} experience, we are proud of our customer service track record working across {{ .Site.Params.county }} and East Anglia.
+					With over {{ .Site.Params.years }} experience, we are proud of our customer service track record working across Norwich, East Anglia, Exeter, Devon and Southern England.
 				</p>
 			</div>
 		</div>
@@ -30,8 +34,7 @@
 				<div class="_content mt-4 px-4 service-page-list domestic">
 					<div class="has-text-centered mb-6">
 						<h3>New Build Wiring</h3>
-						{{/*  <p>Our team of skilled engineers are experienced with complete new-build wiring, from start to finish. To ensure a successful project we like to be involved from the initial electrical design stage to assist with any technical support. We typically split new build wiring into the following stages:</p>  */}}
-						<p>Our qualified, highly skilled team of engineers are fully experienced with new-build wiring. We prefer to be involved right from the electrical design stage so we can provide technical assistance and ensure a smooth process. All new build wiring projects are broken into smaller stages:</p>
+						<p>All our engineers are qualified to carry out new-build wiring that complies with British standard BS7671:2018 (IET Wiring Regulations). We prefer to be involved from the electrical design stage and break all new build wiring projects into smaller stages:</p>
 						<ul>
 							<li>Electrical System Design</li>
 							<li>First-fix Wiring Installations</li>
@@ -50,7 +53,7 @@
 				<div class="_content mt-4 px-4 service-page-list domestic">
 					<div class="has-text-centered mb-6">
 						<h3>Smart Home Automation</h3>
-						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<p>Our experienced team can assist with the design and installation of innovative Smart Home control systems, giving you a safer and more comfortable living environment. Start with the essentials and add extra functionality as required.</p>
 						<ul>
 							<li>Home Security Control</li>
 							<li>Smart Heating Control</li>
@@ -69,7 +72,7 @@
 				<div class="_content mt-4 px-4 service-page-list domestic">
 					<div class="has-text-centered mb-6">
 						<h3>EICR Testing & Inspection</h3>
-						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<p>Ensure your home or business is safe with our complete electrical safety inspections. We offer portable appliance testing (PAT) and domestic/landlord EICR certificates. It is recommended to get your property and appliances tested at least every:</p>
 						<ul>
 							<li>Private Domestic - 10 years</li>
 							<li>Rented Domestic - 5 years</li>
@@ -94,7 +97,7 @@
 					<div class=" form-choice-wrapper box">
 						<div class="control">
 							<label class="checkbox">
-							<input type="checkbox" name="Enquiry" value="New Build Wiring">
+							<input type="checkbox" name="Domestic1" value="New Build Wiring">
 							New Build Wiring
 							</label>
 						</div>
@@ -104,7 +107,7 @@
 					<div class=" form-choice-wrapper box">
 						<div class="control">
 							<label class="checkbox">
-							<input type="checkbox" name="Enquiry" value="Smart Home">
+							<input type="checkbox" name="Domestic2" value="Smart Home">
 							Smart Home
 							</label>
 						</div>
@@ -114,7 +117,7 @@
 					<div class=" form-choice-wrapper box">
 						<div class="control">
 							<label class="checkbox">
-							<input type="checkbox" name="Enquiry" value="Testing & Inspections">
+							<input type="checkbox" name="Domestic3" value="Testing & Inspections">
 							Testing & Inspections
 							</label>
 						</div>
@@ -133,9 +136,9 @@
 						</div>
 					</div>
 					<div class="field">
-						{{/*  <label class="label">Email</label>  */}}
+
 						<div class="control">
-							{{/*  <p class="help">This field is required</p>  */}}
+
 							<input class="input" type="email" required="required" name="Email" placeholder="e.g. alexsmith@gmail.com">
 						</div>
 					</div>
@@ -143,9 +146,8 @@
 				{{/*  Second Column  */}}
 				<div class="column is-6-desktop">
 					<div class="field">
-						{{/*  <label class="label">Tell us about your {{ .Site.Params.industry }} needs</label>  */}}
 						<div class="control">
-							{{/*  <p class="help">This field is required</p>  */}}
+
 							<textarea class="textarea" type="textarea" required="required" name="Message" placeholder="As much or as little detail as you have"></textarea>
 						</div>
 					</div>
@@ -167,7 +169,20 @@
 {{ end }}
 
 {{ define "scripts" }}
-<!-- Page specific scripts -->
+<script src="/js/splide.min.js"></script>
+<script>
+	document.addEventListener( 'DOMContentLoaded', function() {
+		var splide = new Splide( '.splide', {
+			type   : 'loop',
+			perPage: 1,
+			arrows: true,
+			cover: true,
+			heightRatio: 0.9,
+		});
+		splide.mount();
+	  } );
+</script>
+{{/*  <!-- Page specific scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script>
 	var slider = tns({
@@ -189,5 +204,5 @@
 		preventActionWhenRunning: true,
 		mouseDrag: true,
 	});
-</script>
+</script>  */}}
 {{ end }}

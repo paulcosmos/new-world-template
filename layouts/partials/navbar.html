@@ -1,6 +1,7 @@
 <nav class="navbar pt-0" role="navigation" aria-label="main navigation">
 				<div class="container is-fullhd"> 
 
+
 				    <div class="navbar-brand">
 						<a class="navbar-item navbar-logo no-underline" href="/index.html">
 							{{ if .Params.logo }}
@@ -9,34 +10,62 @@
 							<img src="/images/{{ .Site.Params.logo }}"/>
 							{{ end -}}
 						</a>
-						<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-site">
+						<a role="button" id="navbar-burger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-site">
 							<span aria-hidden="true"></span>
 							<span aria-hidden="true"></span>
 							<span aria-hidden="true"></span>
 						</a>
 				    </div>
+
+
 					<div id="navbar-site" class="navbar-menu">
 						<nav class="navbar-end has-text-centered">
 						    {{- $currentPage := . }}
 						    {{ range .Site.Menus.main -}}
 						    <a href="{{ .URL }}" title="{{ .Title }}" class="navbar-item {{ .Page.Params.serviceClass }}">
 								{{- if .Page.Params.anchor -}}
-								  {{ .Page.Params.anchor }}
+									{{ .Page.Params.anchor }}
 								{{- else -}}
-								  {{- .Title }}
+									{{- .Title }}
 								{{- end -}}
 							</a>
 						    {{ end }}
-							<div class="navbar-item has-text-centered modal-trigger no-underline is-hidden-desktop">
-								<a href="{{ if .Params.bannerButtonURL }} {{ .Params.bannerButtonURL }} {{ else }}#contact{{ end }}" class="button button-primary is-fullwidth navbar-button">{{ .Site.Params.modalbuttontext }}</a>
+
+
+							<div class="navbar-item has-text-centered no-underline is-hidden-desktop">
+								<a href="{{ if .Params.bannerButtonURL }} {{ .Params.bannerButtonURL }} {{ else }}#contact{{ end }}" class="button button-primary is-fullwidth navbar-button menu-closer" data-target="navbar-site">{{ .Site.Params.modalbuttontext }}</a>
 							</div>
+
+
 							<div class="navbar-item no-underline is-hidden-desktop">
-								<span class="icon-text">
-									<span class="icon"><i class="fa-regular fa-phone"></i></span>
-									<span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a></span>
-								</span>
+								<div class="is-size-7">
+									Norwich
+								</div>
+								<div>
+									<span class="icon-text">
+										<span class="icon"><i class="fa-regular fa-phone"></i></span>
+										<span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a></span>
+									</span>
+								</div>
 							</div>
+
+							<div class="navbar-item no-underline is-hidden-desktop">
+								<div class="is-size-7">
+									Devon
+								</div>
+								<div>
+									<span class="icon-text">
+										<span class="icon"><i class="fa-regular fa-phone"></i></span>
+										<span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.mobile |  -}}'>{{ .Site.Params.mobile }}</a></span>
+									</span>
+								</div>
+							</div>
+
+
 						</nav>
 					</div>
+
+
+
 				</div>
 			</nav>

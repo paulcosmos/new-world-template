@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-  
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
   
@@ -24,7 +23,40 @@ document.addEventListener('DOMContentLoaded', () => {
   
         });
       });
+
     }
+
+    // const $menuCloser = Array.prototype.slice.call(document.querySelectorAll('.menu-closer'), 0);
+
+    // // Check if there are any navbar burgers
+    // if ($menuCloser.length > 0) {
+  
+    //   // Add a click event on each of them
+    //   $menuCloser.forEach( el => {
+    //     el.addEventListener('click', () => {
+  
+    //       // Get the target from the "data-target" attribute
+    //       const target = el.dataset.target;
+    //       const $target = document.getElementById(target);
+  
+    //       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    //       el.classList.toggle('is-active');
+    //       $target.classList.toggle('is-active');
+    //       document.getElementById("navbar-burger").toggle("is-active");
+
+
+    //       // document.querySelectorAll(".navbar-closer").onclick = function() {
+    //       //   document.getElementById("navbar-site").removeClass("is-active");
+    //       //   document.getElementById("navbar-burger").removeClass("is-active");
+    //       // };
+
+    //     });
+    //   });
+
+      
+
+    // }
+  
 
     // ========================================================================
     // Show/hide modals

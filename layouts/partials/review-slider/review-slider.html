@@ -19,7 +19,7 @@
 				<div class="columns is-multiline is-mobile review-slider">
 					{{ $slides := 6 }}
 					{{ range first $slides (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
-						{{ partial "review-slider/review-card.html" . }}
+						{{ partial "review-slider/review-quote.html" . }}
 					{{ end -}}
 				</div>
 				<div id="review-slider-dots">
@@ -30,15 +30,8 @@
 						{{ end }}
 					</ul>
 				</div>
-				<div class="_container py-5 has-text-centered _is-fluid">
+				<div class="container py-5 has-text-centered is-fluid">
 					<div class="columns">
-						{{/*  <div class="column is-8 is-offset-2">
-							<div class="is-grouped">
-								<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
-									<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
-								</div>
-							</div>
-						</div>  */}}
 						<div class="column text-align-center _is-narrow">
 							<div id="review-slider-controls" class="buttons is-small is-centered" aria-label="Carousel Navigation" tabindex="0">
 								<button class="button review-slider-nav-button" aria-controls="review-slider" tabindex="-1" data-controls="prev">
@@ -76,26 +69,21 @@
 			    nav: false,
 				navPosition: 'bottom',
 				navContainer: '#review-slider-dots',
-			    controls: false,
+			    controls: true,
 			    controlsContainer: '#review-slider-controls',
 			    preventActionWhenRunning: true,
 				responsive: {
 			        960: {
-			            items: 2,
+			            items: 1,
 			            controls: true,
 			            center: false,
 			        },
 			        1024: {
 			            gutter: 20,
-			            items: 2,
-			            edgePadding: 40,
+			            items:1,
+			            edgePadding: 20,
 			            center: true,
 			        },
-			        1280: {
-			            items: 3,
-			            edgePadding: 40,
-
-			        }
 			    }
 			});
 		</script>

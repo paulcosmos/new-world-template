@@ -11,17 +11,26 @@
 							</span>
 							<div class="content has-accent" data-aos="fade-down">
 								{{ .Content }}
-								<a href="#contact" class="button button-{{ .Params.serviceClass }} mt-4 ml-0">{{ .Params.hero_anchor_text }} <i class="fa-solid fa-arrow-right"></i></a>
+								<a href="#contact" class="button button-{{ .Params.serviceClass }} mt-4 ml-0">{{ .Params.bannerButtonAnchor }} <i class="fa-solid fa-arrow-right"></i></a>
 							</div>
 						</div>
 						<div class="column is-hidden-touch is-12-tablet is-6-desktop is-6-fullhd">
 							<div class="service-page-hero-slider-wrapper">
-								<div class="service-page-hero-slider">
-									<img src="/images/placeholder.jpg">
-									<img src="/images/placeholder.jpg">
+								<div class="splide" aria-label="Hero Navigation Image Slideshow">
+									<div class="splide__track">
+										<ul class="splide__list">
+											{{ range .Params.slideimages }}
+											<li class="splide__slide">
+												<img src="/images/{{ . }}">
+											</li>
+											{{ end }}
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				  </div>
 				</div>
+			</div>
+
+			

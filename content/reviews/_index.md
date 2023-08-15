@@ -5,7 +5,7 @@ weight: 4
 preheading: "Customer Reviews"
 type: "single"
 _build:
-  render: true
+  render: false
 cascade:
   _build:
     list: true

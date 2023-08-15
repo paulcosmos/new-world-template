@@ -1,8 +1,9 @@
 			<div class="section">
 				<div class="container _is-fluid is-fullhd">
-					<div class="columns is-mobile is-8 is-multiline">
+					<div class="columns is-mobile is-8 is-multiline is-vcentered">
 
-						<div class="column is-12-mobile is-12-tablet is-6-desktop">
+
+						<div class="column is-12-mobile is-6-tablet is-4-desktop">
 							<div class="site-footer-company-info">
 							{{- with .Site.Params }}
 								<h4>{{ .company }} in  {{ .county }}</h4>
@@ -23,46 +24,66 @@
 									<span>{{ if .building }}{{ .building }},{{end }} {{ .street }}, {{ .towncity }}, {{ if .county }}{{ .county }}, {{ end }} {{ .postcode }}</span>
 								</address>
 							{{ end }}
-							<p class="nwdm">Website by New World Digital Media</p>
+							{{/*  <p class="nwdm">Website by New World Digital Media</p>  */}}
 							</div>
 						</div>
 
-						{{/*  <div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd is-offset-1-desktop _is-narrow">
-							<div class="content site-footer-links _has-columns">
-								<h4>Site Links</h4>
-								<ul>
-									{{- range .Site.Menus.footer }}
-									<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
-									{{- end }}
-								</ul>
-							</div>
-						</div>  */}}
 
-						{{/*  <div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
-							<div class="content site-footer-links _has-columns">
-							<h4>Primary Services</h4>
-								<ul>
-									{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
-									<li><a href="{{.RelPermalink }}">
-										{{- if (ne .Params.anchor nil) }}
-											{{- .Params.anchor -}}
-										{{- else -}}
-											{{- .Title -}}
-										{{- end -}}
-									</a></li>
-									{{- end }}
-								</ul>
+						<div class="column is-hidden-touch _is-hidden-desktop">
+							<div class="footer-logos">
+								<div class="footer-logo">
+									<img src="/images/creds/napit-light.png" alt="" title="">
+								</div>
+								<div class="footer-logo">
+									<img src="/images/creds/SMAS.png" alt="" title="">
+								</div>
+								<div class="footer-logo">
+									<img src="/images/creds/MCSCertified.jpg" alt="" title="">
+								</div>
 							</div>
-						</div>  */}}
+						</div>
 
-						{{/*  <div class="column is-6-mobile _is-4-tablet _is-2-desktop">
-							<div class="content site-footer-links _has-columns">
-								<h4>Social Media</h4>
-								<ul>
-									{{ partial "social-links-text.html" . }}
-								</ul>
+
+						<div class="column is-12-mobile is-6-tablet is-4-desktop">
+							<div class="site-footer-company-info has-text-right-tablet">
+							{{- with .Site.Params }}
+								<h4>{{ .company }} in  Devon</h4>
+								<p>
+									<span class="icon-text">
+										<span class="icon"><i class="fa-regular fa-phone"></i></span>
+										<span>01392 342 042</span>
+									</span>
+								</p>
+								<p>
+									<span class="icon-text">
+										<span class="icon"><i class="fa-regular fa-envelope"></i></span>
+										<span>{{ .email }}</span>
+									</span>
+								</p>
+								<address>
+									<span class="icon"><i class="fa-sharp fa-regular fa-location-dot"></i></i></span>
+									<span>Marsh Green Rd East, Exeter, Devon, EX2 2NY</span>
+								</address>
+							{{ end }}
 							</div>
-						</div>  */}}
+						</div>
+
+
+						<div class="column is-12 is-hidden-desktop">
+							<div class="footer-logos">
+								<div class="footer-logo">
+									<img src="/images/creds/napit-light.png" alt="" title="">
+								</div>
+								<div class="footer-logo">
+									<img src="/images/creds/SMAS.png" alt="" title="">
+								</div>
+								<div class="footer-logo">
+									<img src="/images/creds/MCSCertified.jpg" alt="" title="">
+								</div>
+							</div>
+						</div>
+
+
 
 					</div>
 				</div>

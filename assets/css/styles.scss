@@ -80,7 +80,8 @@ strong {
 // Global Helpers
 
 .nwdm {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    // margin-bottom: 1rem;
     color: inherit;
     text-decoration: none;
     font-size: $size-7;
@@ -631,6 +632,8 @@ strong {
         &.is-active {
             z-index: 99;
             color: $secondary;
+            position: fixed;
+            right: 0;
 
             &:before {
                 content: "Close";
@@ -738,10 +741,12 @@ strong {
     font-weight: normal;
     text-align: left;
     text-align: inherit;
+    display: block;
 
     @include from($navbar-breakpoint) {
         padding-top: 3rem;
         padding-bottom: 3rem;
+        display: flex;
     }
 
     &-body {
@@ -762,12 +767,22 @@ strong {
             font-size: $hero-text-size;
         }
 
+        .button {
+            margin-top: 1rem;
+        }
+
         &-service {
             position: relative;
-            padding: 9rem 4rem;
             background-size: cover;
             background-position: bottom;
             background-repeat: no-repeat;
+            padding: 4rem 2rem;
+            min-height: 1vh;
+
+
+            @include from($desktop){
+                padding: 6rem 4rem 3rem;
+            }
         }
     }
 
@@ -783,17 +798,39 @@ strong {
         }
 
         .hero-body {
-            padding: 4.5rem!important;
+            @include from($desktop){
+                padding: 4.5rem!important;
+            }
         }
     }
 
     // Carousel
     &-carousel {
         color: white;
+        // min-height: 400px;
 
         h2 {
-            font-size: 77px;
+            font-size: 2rem;
             font-weight: 800;
+
+            @include from($navbar-breakpoint){
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+
+            @include from($navbar-breakpoint){
+                font-size: 1.5rem;
+            }
+        }
+
+        .button {
+            margin-top: 1rem;
+            @include from($desktop){
+                margin-top:2rem;
+            }
         }
 
         em {
@@ -803,16 +840,37 @@ strong {
         &-wrapper {
             overflow: hidden;
             border-radius: 25px;
+        }        
+    }
+
+    .splide__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    .splide__pagination__page {
+        width: 50px;
+        height: 8px;
+        border: none;
+        background-color: rgba(white, 0.7);
+        transition: all 0.3s;
+        border-radius: 0;
+
+        &.is-active {
+            transform: scale(1);
         }
-        
+
     }
 
     .tns-nav {
-        position: absolute;
+        @include from ($navbar-breakpoint) {
+        position: relative;
         display: inline-block;
         left: 50%;
         transform: translateX(-50%);
         bottom: 2rem;
+        }
 
         button {
             width: 50px;
@@ -856,16 +914,6 @@ strong {
             background-image: none !important;
         }
     }
-
-    // &.domestic {
-    //     background-color: $domestic;
-    // }
-    // &.commercial {
-    //     background-color: $commercial;
-    // }
-    // &.renewable {
-    //     background-color: BLACK;
-    // }
 
     // Contact Form Result Pages
 
@@ -1137,16 +1185,8 @@ strong {
                     @include box-shadow-high;
                     padding: 10px;
                     margin: 10px;
+                }
             }
-        }
-
-            // .content {
-            //     columns: 2;
-
-            //     ul {
-            //         margin-top: 0;
-            //     }
-            // }
         }
 
         &-item {
@@ -1199,6 +1239,8 @@ strong {
     &-hero-slider-wrapper {
         border-radius: 15px;
         overflow: hidden;
+        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     }
 
     &-contact-form {
@@ -1971,8 +2013,26 @@ strong {
 .site-footer {
     background-color: $site-footer-bg;
     color: $site-footer-text;
-    // @include background-paved;
-    border-top: solid 1px $tertiary;
+    border-top: solid 1px darken($tertiary,10%);
+
+    .footer-logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 3fr));
+        gap: 1rem;
+        align-self: stretch;
+        // margin-top: 2rem;
+
+        .footer-logo {
+            place-self: center;
+            flex-basis: 80px;
+
+            img {
+                filter: grayscale(100%);
+            }
+        }
+    }
 
     &-company-info {
 

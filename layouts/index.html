@@ -1,22 +1,30 @@
+			{{ define "stylesheets" }}
+				<link rel="stylesheet" href="/css/splide-default.min.css">
+			{{ end }}
+
 			{{ define "hero" -}}
-			<section class="hero is-medium">
+			<section class="hero pt-4 is-medium">
 				<div class="container is-fullhd">
 					<div class="hero-body p-0">
 						<div class="hero-carousel-wrapper">
-							<div class="hero-carousel">
-								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" -}}
-								<div class="hero-index-service" style="background-image:linear-gradient(-249deg, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url( '{{ .Params.backgroundImage }}' );">
-									<div class="columns is-multiline is-centered">
-										<div class="column is-12-tablet">
-											<div class="content" data-aos="fade-down">
-												<h2>{{ .Params.hero_title }}</h2>
-												<p>{{ .Params.hero_subtitle }}</p>
-												<a href="{{ .RelPermalink }}" class="button button-{{ .Params.serviceClass }} mt-6 ml-0">{{ .Params.hero_anchor_text }} <i class="fa-solid fa-arrow-right"></i></a>
+							<div class="splide" aria-label="Hero Navigation Slider">
+								<div class="splide__track">
+									<div class="splide__list hero-carousel">
+									{{- range where .Site.RegularPages "Type" "service-page" -}}
+										<div class="splide__slide hero-index-service has-text-white" style="background-image:linear-gradient(-249deg, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url( '{{ .Params.backgroundImage }}' );">
+											<div class="columns is-multiline _is-centered">
+												<div class="column is-12-tablet is-7-desktop is-6-widescreen">
+													<div class="content" data-aos="fade-down">
+														<h2>{{ .Params.hero_title }}</h2>
+														<p>{{ .Params.hero_subtitle }}</p>
+														<a href="{{ .RelPermalink }}" class="button button-{{ .Params.serviceClass }} ml-0">{{ .Params.index_anchor_text }} <i class="fa-solid fa-arrow-right"></i></a>
+													</div>
+												</div>
 											</div>
 										</div>
+									{{ end }}
 									</div>
 								</div>
-								{{ end }}
 							</div>
 						</div>
 					</div>
@@ -34,10 +42,10 @@
 									Complete electrical services
 								</h2>
 								<h3>
-									{{ .Site.Params.towncity }} Electrical Contractors
+									Electrical Contractors in Norwich and Exeter.
 								</h3>
 								<p>
-									With {{ .Site.Params.years }} experience, we are proud of our customer service track record working across {{ .Site.Params.targetarea }}.
+									With {{ .Site.Params.years }} experience, we are proud of our customer service track record working across Norwich, East Anglia, Exeter, Devon and Southern England.
 								</p>
 							</div>
 						</div>
@@ -57,14 +65,35 @@
 
 			{{ partial "review-slider/review-slider.html" . }}
 
-			<script src="/js/tiny-slider-min.js"></script>
+			<script src="/js/splide.min.js"></script>
+			<script>
+				document.addEventListener( 'DOMContentLoaded', function() {
+					var splide = new Splide( '.splide', {
+						type   : 'fade',
+						perPage: 1,
+						arrows: false,
+						mediaQuery: 'max',
+						breakpoints: {
+							640: {
+								autoHeight:true,
+							},
+							940: {
+								height: 600,
+							},
+					  },
+					  autoHeight: true,
+					});
+					splide.mount();
+				  } );
+			</script>
+			{{/*  <script src="/js/tiny-slider-min.js"></script>
 			<script type="module">
 
 				var slider = tns({
 					container: '.hero-carousel',
 					mode: 'carousel',
 					items: 1,
-					autoHeight: false,
+					autoHeight: true,
 					slideBy: 1,
 					loop: false,
 					autoplay: false,
@@ -81,8 +110,13 @@
 					navAsThumbnails: false,
 					preventActionWhenRunning: true,
 					mouseDrag: false,
+					responsive : {
+						800 : {
+							autoHeight: false,
+						}
+					}
 				});
-			  </script>
+			  </script>  */}}
 			{{- end }}
 
 	{{- define "scripts" -}}

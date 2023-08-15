@@ -1,5 +1,9 @@
+{{ define "stylesheets" }}
+<link rel="stylesheet" href="/css/splide-default.min.css">
+{{ end }}
+
 {{ define "hero" -}}
-<section class="hero hero-service-page is-medium">
+<section class="hero hero-service-page commercial is-medium">
 	{{ partial "hero/hero-image.html" . }}
 </section>
 {{ end }}
@@ -30,7 +34,7 @@
 				<div class="_content mt-4 px-4 service-page-list commercial">
 					<div class="has-text-centered mb-6">
 						<h3>Commercial Electrical Systems</h3>
-						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<p>Our expert electrical engineers are on hand to provide LED lighting and upgrades from the smallest office or cafe to the largest warehouse or superstore. We can also provide telephone, power sockets and data cabling throughout your workplace.</p>
 						<ul>
 							<li>CAT6 Data Connections</li>
 							<li>Office Dado Rails</li>
@@ -49,7 +53,7 @@
 				<div class="_content mt-4 px-4 service-page-list commercial">
 					<div class="has-text-centered mb-6">
 						<h3>Industrial Installations</h3>
-						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<p>Whether it's food and beverage plants or manufacturing facilities, our fully CHAS accredited electricians can provide a wide range of industrial electrical installations across a broad spectrum of industries.</p>
 						<ul>
 							<li>3 Phase Installations</li>
 							<li>Metal Conduit Systems</li>
@@ -68,7 +72,7 @@
 				<div class="_content mt-4 px-4 service-page-list commercial">
 					<div class="has-text-centered mb-6">
 						<h3>EICR Testing & Inspection</h3>
-						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<p>Ensure your business is safe with our complete electrical safety inspections. We also offer portable appliance testing (PAT) and EICR certificates. It is recommended to get your property and appliances tested at least every:</p>
 						<ul>
 							<li>Commercial - 5 years</li>
 							<li>Industrial - 3 years</li>
@@ -91,7 +95,7 @@
 					<div class=" form-choice-wrapper box">
 						<div class="control">
 							<label class="checkbox">
-							<input type="checkbox" name="Enquiry" value="Commercial">
+							<input type="checkbox" name="Commercial1" value="Commercial Services">
 							Commercial
 							</label>
 						</div>
@@ -101,7 +105,7 @@
 					<div class=" form-choice-wrapper box">
 						<div class="control">
 							<label class="checkbox">
-							<input type="checkbox" name="Enquiry" value="Industrial">
+							<input type="checkbox" name="Commercial2" value="Industrial Services">
 							Industrial
 							</label>
 						</div>
@@ -111,7 +115,7 @@
 					<div class=" form-choice-wrapper box">
 						<div class="control">
 							<label class="checkbox">
-							<input type="checkbox" name="Enquiry" value="Testing & Inspections">
+							<input type="checkbox" name="Commercial3" value="Testing & Inspections">
 							Testing & Inspections
 							</label>
 						</div>
@@ -159,29 +163,18 @@
 
 {{ end }}
 
-{{ define "scripts" }}
-<!-- Page specific scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+{{ define "scripts" }}			
+<script src="/js/splide.min.js"></script>
 <script>
-	var slider = tns({
-		container: '.service-page-hero-slider',
-		autoHeight: false,
-		items: 1,
-		slideBy: 1,
-		loop: true,
-		autoplay: true,
-		autoplayButtonOutput: false,
-		autoplayHoverPause: true,
-		speed: 800,
-		gutter: 0,
-		edgePadding: 0,
-		center: true,
-		nav: false,
-		navPosition: 'bottom',
-		controls: false,
-		//controlsContainer: '#review-slider-controls',
-		preventActionWhenRunning: true,
-		mouseDrag: true,
-	});
+	document.addEventListener( 'DOMContentLoaded', function() {
+		var splide = new Splide( '.splide', {
+			type   : 'loop',
+			perPage: 1,
+			arrows: true,
+			cover: true,
+			heightRatio: 0.9,
+		});
+		splide.mount();
+	  } );
 </script>
 {{ end }}

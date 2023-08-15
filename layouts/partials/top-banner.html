@@ -5,32 +5,38 @@
 						<div class="column _is-narrow is-hidden-touch">
 							<a href="{{ if .Params.bannerButtonURL }} {{ .Params.bannerButtonURL }} {{ else }}#contact{{ end }}" class="button button-{{ .Params.serviceClass }} ml-0">{{ if .Params.bannerButtonAnchor }}{{ .Params.bannerButtonAnchor }}{{ else }} Get a Quote for Solar PV {{ end }}<i class="fa-regular fa-sm fa-arrow-right"></i></a> 
 						</div>
-						<div class="column is-narrow is-6-touch _is-3-desktop _is-offset-6-desktop has-text-right">
+						{{/*  <div class="column is-narrow is-6-touch _is-3-desktop _is-offset-6-desktop has-text-right">
 							<span class="icon-text">
 								<span class="icon {{ .Params.serviceClass }}"><i class="fa-regular fa-envelope"></i></span>
 								<span>{{ .Site.Params.email }}</span>
 							</span>
-						</div>
+						</div>  */}}
 						{{- if .Site.Params.phone }}
 						<div class="column is-narrow is-6-touch _is-2-desktop _has-text-centered has-text-right-desktop ">
-							<span class="icon-text">
-								<span class="icon {{ .Params.serviceClass }}"><i class="fa-regular fa-phone"></i></span>
-								<span>{{ .Site.Params.phone }}</span>
-							</span>
+							<div class="is-size-7 ">
+								Norwich
+							</div>
+							<div>
+								<span class="icon-text">
+									<span class="icon {{ .Params.serviceClass }}"><i class="fa-regular fa-phone"></i></span>
+									<span>{{ .Site.Params.phone }}</span>
+								</span>
+							</div>
 						</div>
 						{{ end }}
-						{{/*  {{- if .mobile }}
-						<div class="column is-narrow is-6-touch is-3-desktop has-text-right">
-							<span class="icon-text">
-								{{- if .phone }}
-								<span class="icon"><i class="fa-regular fa-mobile"></i></span>
-								{{ else -}}
-								<span class="icon"><i class="fa-regular fa-phone"></i></span>
-								{{ end -}}
-								<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
-							</span>
-						</div>						
-						{{ end }}  */}}
+						{{- if .Site.Params.mobile }}
+							<div class="column is-narrow is-6-touch _is-2-desktop _has-text-centered has-text-right-desktop ">
+								<div class="is-size-7 ">
+									Devon
+								</div>
+								<div>
+									<span class="icon-text">
+										<span class="icon {{ .Params.serviceClass }}"><i class="fa-regular fa-phone"></i></span>
+										<span>{{ .Site.Params.mobile }}</span>
+									</span>
+								</div>
+							</div>					
+						{{ end }}
 					</div>
 				</div>
 			</aside>

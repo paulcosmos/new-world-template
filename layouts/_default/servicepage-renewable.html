@@ -1,3 +1,7 @@
+{{ define "stylesheets" }}
+<link rel="stylesheet" href="/css/splide-default.min.css">
+{{ end }}
+
 {{ define "hero" -}}
 <section class="hero hero-service-page renewable is-medium">
 	{{ partial "hero/hero-image.html" . }}
@@ -13,10 +17,10 @@
 					Domestic & Residential Services
 				</h2>
 				<h3>
-					Norwich Electrical Contractors
+					Electrical Contractors in Norwich & Exeter.
 				</h3>
 				<p>
-					Family owned and operated with {{ .Site.Params.years }} experience, we are proud of our customer service track record working across {{ .Site.Params.county }}.
+					Family owned and operated with {{ .Site.Params.years }} experience, we are proud of our customer service track record working across Norfolk, East Anglia, Exetor and Devon.
 				</p>
 			</div>
 		</div>
@@ -30,7 +34,7 @@
 				<div class="_content mt-4 px-4 service-page-list renewable">
 					<div class="has-text-centered mb-6">
 						<h3>Solar Panels (PV)</h3>
-						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<p>Solar energy is a 100% clean, renewable power source. Solar Photovoltaic (PV) Panels utilise the latest technology to convert the sun's rays into to usable electricity, providing a high power output even on a cloudy day. The modular design of solar panels allows for multiple layout configurations on almost any roof type.</p>
 						<ul>
 							<li>5 Year Guarantee</li>
 							<li>1kWh – 15kWh Systems</li>
@@ -49,7 +53,7 @@
 				<div class="_content mt-4 px-4 service-page-list renewable">
 					<div class="has-text-centered mb-6">
 						<h3>Solar Battery Storage</h3>
-						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<p>Solar Batteries allow you to store excess solar electricity generated from your solar panels, giving you a surplus of energy throughout the day that can be used at night. This reduces the amount of grid electricity you need to buy, helping you to cut-down on electricty bill long term.</p>
 						<ul>
 							<li>10 Year Guarantee</li>
 							<li>Expandable Systems</li>
@@ -67,13 +71,12 @@
 				</figure>
 				<div class="_content mt-4 px-4 service-page-list renewable">
 					<div class="has-text-centered mb-6">
-						<h3>EICR Testing & Inspection</h3>
-						<p>PLACEHOLDER TEXT: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non odio euismod lacinia at quis risus sed vulputate. A erat nam at lectus urna duis convallis. Sit amet risus nullam eget felis eget nunc.</p>
+						<h3>EV Charge Points</h3>
+						<p>We can supply and install all major brands of Electric Vehicle (EV) chargers fitted with universal sockets or tethered charging cables, giving you access to quick and easy charging at home or work. Choose a charging speed that suits your requirements, from 3.6kW up to 22kW.</p>
 						<ul>
-							<li>Private Domestic - 10 years</li>
-							<li>Rented Domestic - 5 years</li>
-							<li>Commercial - 5 years</li>
-							<li>Industrial - 3 years</li>
+							<li>Charge at home</li>
+							<li>Multiple charging modes</li>
+							<li>Cheaper charging at night</li>
 						</ul>
 					</div>
 				</div>
@@ -93,7 +96,7 @@
 					<div class=" form-choice-wrapper box">
 						<div class="control">
 							<label class="checkbox">
-							<input type="checkbox" name="Enquiry" value="Solar Panels">
+							<input type="checkbox" name="Renewable1" value="Solar Panels">
 							Solar Panels
 							</label>
 						</div>
@@ -103,7 +106,7 @@
 					<div class=" form-choice-wrapper box">
 						<div class="control">
 							<label class="checkbox">
-							<input type="checkbox" name="Enquiry" value="Battery Storage">
+							<input type="checkbox" name="Renewable2" value="Battery Storage">
 							Battery Storage
 							</label>
 						</div>
@@ -113,7 +116,7 @@
 					<div class=" form-choice-wrapper box">
 						<div class="control">
 							<label class="checkbox">
-							<input type="checkbox" name="Enquiry" value="EV Charger">
+							<input type="checkbox" name="Renewable3" value="EV Charger">
 							EV Charger
 							</label>
 						</div>
@@ -123,7 +126,7 @@
 					<div class=" form-choice-wrapper box">
 						<div class="control">
 							<label class="checkbox">
-							<input type="checkbox" name="Enquiry" value="Package System">
+							<input type="checkbox" name="Renewable4" value="Package System">
 							Package System
 							</label>
 						</div>
@@ -172,8 +175,21 @@
 {{ end }}
 
 {{ define "scripts" }}
+<script src="/js/splide.min.js"></script>
+<script>
+	document.addEventListener( 'DOMContentLoaded', function() {
+		var splide = new Splide( '.splide', {
+			type   : 'loop',
+			perPage: 1,
+			arrows: true,
+			cover: true,
+			heightRatio: 0.9,
+		});
+		splide.mount();
+	  } );
+</script>
 <!-- Page specific scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+{{/*  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script>
 	var slider = tns({
 		container: '.service-page-hero-slider',
@@ -194,5 +210,5 @@
 		preventActionWhenRunning: true,
 		mouseDrag: true,
 	});
-</script>
+</script>  */}}
 {{ end }}
