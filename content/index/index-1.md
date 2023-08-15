@@ -7,12 +7,12 @@ _build:
 image: images/highland-sparks-van.jpg
 ---
 
-## We're your **top choice** for electrician services in {{<towncity>}} &amp; {{<county>}}.
+## We're your **top choice** for an electrician in the Highlands.
 
-* Many years of experience in and around {{<towncity>}}
+* Many years of experience throughout Scotland
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+Based in Ross-shire, {{<company>}} have been providing {{<industry>}} services to happy customers throughout the Scottish Highlands for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We are highly experienced, CHAS registered professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.

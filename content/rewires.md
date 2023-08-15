@@ -15,7 +15,7 @@ _build:
 
 ## Electrical Rewiring
 
-At {{<company>}}, we are a NAPIT-approved electrical team based in Tain, offering our electrical rewiring services to all domestic and commercial property owners across the Highlands of Scotland. As a professional team, we are skilled and experienced in the rewiring process, allowing us to conduct all of our full and partial rewires with accuracy and safety. Therefore, if you are looking for assistance with rewiring your commercial or domestic electrics, our team at {{<company>}} are perfect for you. 
+At {{<company>}}, we are an electrical team based in Tain, offering our electrical rewiring services to all domestic and commercial property owners across the Highlands of Scotland. As a professional team, we are skilled and experienced in the rewiring process, allowing us to conduct all of our full and partial rewires with accuracy and safety. Therefore, if you are looking for assistance with rewiring your commercial or domestic electrics, our team at {{<company>}} are perfect for you. 
 
 Electricity is transmitted around each property through electrical circuits. Each circuit is coated in resilient electrical wiring to ensure electricity runs from the mains supply to the electrical appliances and features within the property, safely. Unfortunately, over time, this wiring is susceptible to wear and tear, which if left unresolved will deteriorate further, leading to major issues such as overheating, appliance damage and in the worst case, electrical fires. 
 

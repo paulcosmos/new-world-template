@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable, professional **{{<industry>}} services** throughout the Highlands.
 
-A family-run business based in {{<towncity>}}, **{{<company>}}** provides {{<industry>}} services to both domestic and commercial across the Scottish Highlands. We are highly experienced in all aspects of the {{<industry>}} trade, using only the highest quality, tried and tested materials.
+A family-run business based in Ross-shire, **{{<company>}}** provides {{<industry>}} services to both domestic and commercial across the Scottish Highlands. We are highly experienced in all aspects of the {{<industry>}} trade, using only the highest quality, tried and tested materials.

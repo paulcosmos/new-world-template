@@ -15,7 +15,7 @@ _build:
 
 ## PAT Testing
 
-At {{<company>}}, we are a NAPIT-approved electrical team based in Tain, offering our electrical inspection and testing services to all areas across the Highlands of Scotland. As a professional team, we are skilled in a comprehensive range of electrical inspections and tests, allowing us to achieve accurate results with ease and efficiency, each time we conduct an assessment. Therefore, if you are looking for assistance with diagnosing an electrical fault or generally maintaining your electrical aspects, our team at {{<company>}} are perfect for you. 
+At {{<company>}}, we are an electrical team based in Tain, offering our electrical inspection and testing services to all areas across the Highlands of Scotland. As a professional team, we are skilled in a comprehensive range of electrical inspections and tests, allowing us to achieve accurate results with ease and efficiency, each time we conduct an assessment. Therefore, if you are looking for assistance with diagnosing an electrical fault or generally maintaining your electrical aspects, our team at {{<company>}} are perfect for you. 
 
 Portable Appliance Testing (PAT) is integral when it comes to the preservation and safety of electric portable appliances. Commonly, commercial businesses rely on a range of portable electrical appliances to run smoothly day-to-day. With this, to ensure the premises are maintained in an electrically safe condition, as well as prevent potentially disruptive, inconvenient breakdowns or faults, PAT tests are essential in detecting and locating signs of deterioration.  
 

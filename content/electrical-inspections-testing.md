@@ -23,7 +23,7 @@ _build:
 
 ## Electrical Inspections & Testing
 
-At {{<company>}}, we are a NAPIT-approved electrical team based in Tain, offering our electrical inspection and testing services to all areas across the Highlands of Scotland. As a professional team, we are skilled in a comprehensive range of electrical inspections and tests, allowing us to achieve accurate results with ease and efficiency, each time we conduct an assessment. Therefore, if you are looking for assistance with diagnosing an electrical fault or generally maintaining your electrical aspects, our team at {{<company>}} are perfect for you. 
+At {{<company>}}, we are an electrical team based in Tain, offering our electrical inspection and testing services to all areas across the Highlands of Scotland. As a professional team, we are skilled in a comprehensive range of electrical inspections and tests, allowing us to achieve accurate results with ease and efficiency, each time we conduct an assessment. Therefore, if you are looking for assistance with diagnosing an electrical fault or generally maintaining your electrical aspects, our team at {{<company>}} are perfect for you. 
 
 The electrical safety of any property is imperative in maintaining a hazard-free, functional environment. With this, at {{<company>}}, it is our job to assist and accommodate customers who are looking to maintain the electrical safety of their properties by undergoing routine or one-off inspection and testing services. 
 

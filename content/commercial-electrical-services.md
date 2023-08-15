@@ -30,7 +30,7 @@ _build:
 
 ## Commercial Electrical Services
 
-At {{<company>}}, we are a NAPIT-approved electrical team based in Tain, offering our electrical services to all commercial businesses throughout the Highlands of Scotland. As a professional team, we are skilled in a comprehensive range of electrical installation, maintenance and repair services, allowing us to take on all requirements, no matter how big or small. Therefore, if you are looking for assistance with the electrics within your commercial premises, our team at {{<company>}} are perfect for you. 
+At {{<company>}}, we are an electrical team based in Tain, offering our electrical services to all commercial businesses throughout the Highlands of Scotland. As a professional team, we are skilled in a comprehensive range of electrical installation, maintenance and repair services, allowing us to take on all requirements, no matter how big or small. Therefore, if you are looking for assistance with the electrics within your commercial premises, our team at {{<company>}} are perfect for you. 
 
 Electricity plays an essential role in the running of every modern-day commercial business, deeming electrical aspects some of their most important features. Not only does electricity power the internal, external and emergency lighting but it also powers speaker systems, security systems and so much more. At {{<company>}}, we cover every base with our commercial electrical services, assisting businesses with their installation, maintenance and repair requirements or issues as soon as they arise. 
 

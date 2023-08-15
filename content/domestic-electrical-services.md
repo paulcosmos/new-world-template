@@ -31,9 +31,9 @@ _build:
 
 ## Domestic Electrical Services
 
-At {{<company>}}, we are a NAPIT-approved electrical team based in Tain, offering our electrical services to all domestic property owners throughout the Highlands of Scotland. As a professional team, we are skilled in a comprehensive range of electrical installation, maintenance and repair services, allowing us to take on all requirements, no matter how big or small. Therefore, if you are looking for assistance with the electrics in your residential property, our team at {{<company>}} are perfect for you. 
+At {{<company>}}, we are an electrical team based in Tain, offering our electrical services to all domestic property owners throughout the Highlands of Scotland. As a professional team, we are skilled in a comprehensive range of electrical installation, maintenance and repair services, allowing us to take on all requirements, no matter how big or small. Therefore, if you are looking for assistance with the electrics in your residential property, our team at {{<company>}} are perfect for you. 
 
-Electrics play a huge role in the running of every residential property. Not only does electricity power essential appliances and devices, but it also allows homeowners to light the house during the evening time, and so much more. At {{<company>}}, we cover every base with our domestic electrical services, assisting property owners with their installation, maintenance and repair requirements or issues as soon as they arise. 
+Electrics play a huge role in the running of every residential property, and there is never a convenient time for your lights to fail or any other fault to develop. At {{<company>}}, we cover every base with our domestic electrical services, assisting property owners with their installation, maintenance and repair requirements or issues as soon as they arise. 
 
 Our domestic electrical services include:
 
