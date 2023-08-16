@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Veronica Dobson
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Installed and connected the electrics in the garden. Did a good job and left everywhere clean and tidy. Highly recommend.

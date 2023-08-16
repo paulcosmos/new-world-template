@@ -394,6 +394,7 @@ strong {
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
+                max-width: 240px;
                 padding: 0;
             }
         }
