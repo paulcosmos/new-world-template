@@ -4,18 +4,16 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/me.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## Reliable **{{<industry>}} services** in {{<towncity>}} &amp; across {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+Hello, I'm Patrick Murphy, an experienced gas engineer trading as **{{<company>}}**. Located on the Wales & Shropshire border, I provide a range of professional plumbing, heating and bathroom renovation services and pride ourselves on our customer care.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+I am a highly experienced professional and a member of *Gas Safe* (Reg no: 648223) and *OFTEC* (Reg no: 104596) regulatory trade bodies.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+Call me today on **{{<phone>}}** to arrange a no obligation quote.
 
 
 

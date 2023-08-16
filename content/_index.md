@@ -1,6 +1,6 @@
 ---
 title: 'About'
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 1
 preheading: 
 _build:
@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable, professional **{{<industry>}} services** throughout **{{<county>}}**.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been providing {{<industry>}} services to customers in and around {{<county>}} for {{<years>}}. We are experienced in all aspects of the {{<industry>}} trade.

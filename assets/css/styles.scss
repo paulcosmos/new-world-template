@@ -394,7 +394,7 @@ strong {
 
             @include until($navbar-breakpoint) {
                 max-height: 3rem !important;
-                padding: 0;
+                padding: 0.2rem;
             }
         }
     }
@@ -420,7 +420,7 @@ strong {
         }
 
         img {
-            padding: 0;
+            padding: 0.3rem;
             max-width: 100%;
             max-height: $navbar-height;
 
@@ -429,7 +429,7 @@ strong {
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 150px;
             }
         }
     }
@@ -643,7 +643,7 @@ strong {
     &-cta {
         background-color: $hero-cta-bg;
         border-radius: $hero-cta-corner-radius;
-        @include box-shadow-offset-solid($hero-cta-shadow);
+        // @include box-shadow-offset-solid($hero-cta-shadow);
         color: white;
         font-weight: 600;
         padding: 1.25rem;
@@ -806,7 +806,10 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
+            // @include background-dots;
+            background-image: linear-gradient(180deg, rgba($tertiary, 0.7), rgba(white, 1)), url('../images/bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
             background-position: bottom;
             padding-bottom: 5rem;
 
@@ -1150,6 +1153,22 @@ strong {
         }
     }
 
+    &-bg-image {
+        background-color: $secondary;
+        background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.5), rgba($secondary, 0.5)), url('../images/logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+        color: white;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+
+        @include until($navbar-breakpoint){
+            background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.95)), url('../images/logo-bg.png');
+            background-position: center;
+        }
+    }
+
     &-finance {
         background-color: $accent;
         color: $text;
@@ -1379,7 +1398,50 @@ strong {
         &-list {
             background-color: lighten($secondary, 0%);
             color: white;
-            @include box-shadow-offset-solid($hero-cta-shadow);
+            // @include box-shadow-offset-solid($hero-cta-shadow);
+        }
+
+        &-thumbnail {
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            border-bottom: solid 2px darken($tertiary,5%);
+
+            h4 {
+                font-family: $family-headings;
+                font-weight: $family-heading-weight;
+                margin-bottom: 0.5rem;
+            }
+
+            .image-link {
+                transition: all 0.2s;
+                display: block;
+                opacity: 1;
+                margin-bottom: 0.5rem;
+                position: relative;
+                padding: 0;
+            
+
+                &:hover {
+                    opacity: 0.7;
+                }
+
+            }
+
+            .text-link {
+                display: inline-block;
+                margin-top: 0.5rem;
+
+                &:after{
+                    @include animated-underline;
+                }
+
+                &:hover {
+                    &:after{
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }

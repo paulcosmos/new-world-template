@@ -2,7 +2,7 @@
 				<div class="container section is-fullhd ">
 					<div class="columns is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
-							<h2>Our reviews speak for themselves</h2>
+							<h2>What happy customers say</h2>
 						</div>
 						<div class="column is-narrow" data-aos="fade-in">
 							<span class="icon company-icon">
@@ -11,21 +11,17 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="columns is-multiline is-mobile review-slider">
 					{{ $slides := 6 }}
 					{{ range first $slides (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
-						{{ partial "review-slider/review-quote.html" . }}
+						{{ partial "review-slider/review-card.html" . }}
 					{{ end -}}
 				</div>
+
 				<div class="_container py-5 has-text-centered _is-fluid">
 					<div class="columns">
-						<div class="column is-8 is-offset-2">
-							<div class="is-grouped">
-								<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
-									<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
-								</div>
-							</div>
-						</div>
+
 						<div class="column text-align-center _is-narrow">
 							<div id="review-slider-controls" class="buttons is-small is-centered" aria-label="Carousel Navigation" tabindex="0">
 								<button class="button review-slider-nav-button" aria-controls="review-slider" tabindex="-1" data-controls="prev">
@@ -40,6 +36,7 @@
 								</button>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</section>
@@ -57,10 +54,11 @@
 			    autoplayButtonOutput: false,
 			    autoplayHoverPause: true,
 			    speed: 800,
-			    gutter: 0,
-			    edgePadding: 10,
+			    gutter: 20,
+			    edgePadding: 40,
 			    center: true,
 			    nav: false,
+				center: true,
 			    controls: true,
 			    controlsContainer: '#review-slider-controls',
 			    preventActionWhenRunning: true,
@@ -68,7 +66,7 @@
 			        960: {
 			            items: 2,
 			            controls: true,
-			            center: false,
+			            center: true,
 			        },
 			        1024: {
 			            gutter: 20,
@@ -77,8 +75,9 @@
 			            center: true,
 			        },
 			        1280: {
-			            items: 2,
+			            items: 3,
 			            edgePadding: 40,
+						center: true,
 
 			        }
 			    }
