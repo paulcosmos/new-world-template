@@ -9,7 +9,7 @@ $family-heading-weight: 600;
 
 //  Set colours
 $primary: #15595c;
-$secondary: #154454;
+$secondary: #091c23;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -30,20 +30,20 @@ $text: #232323;
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba(darken($secondary,15%), 0.9), rgba(darken($secondary,15%), 0.8)), url('../images/hero-image.jpg');
-
+	background-image: linear-gradient(-249deg, rgba(darken($secondary,2%), 0.9), rgba(darken($secondary,2%), 0.8)), url('../images/hero-image.jpg');
 }
 
 $hero-index-text: white;
 
 //  Top Banner
-$top-banner-bg: darken($secondary,12%);
+$top-banner-bg: darken($secondary,0%);
 $top-banner-text: white;
 $top-banner-icon:lighten($primary, 10%);
 
 // Main Navigation 
 $navbar-background-color: white;
-$navbar-background-color-mobile: rgba(darken($secondary, 5%), 0.95);
+$navbar-background-color-mobile: $navbar-background-color;
+$menu-background-color-mobile: rgba(darken($secondary, 5%), 0.95);
 
 $navbar-height: 5rem;
 $logo-max-width: 260px;
@@ -82,7 +82,7 @@ $preheading-size: 1rem;
 $hero-title-size: 2rem;
 $hero-text-size: 1rem;
 
-$hero-cta-bg: darken($secondary,9%);
+$hero-cta-bg: lighten($secondary,2%);
 $hero-cta-shadow: #c7c6c6;
 $hero-cta-number-text: white;
 $hero-cta-corner-radius: .5rem;
@@ -93,7 +93,7 @@ $bg-overlay: rgba(0, 0, 0, 0.6);
 $services-item-divider: solid 2px $tertiary;
 
 // Reviews
-$review-section-bg: darken($secondary,9%);
+$review-section-bg: lighten($secondary,2%);
 $review-section-text: white;
 $review-nav-text: $primary;
 $review-nav-bg: transparent;
@@ -115,9 +115,9 @@ $why-us-text: $text;
 $why-us-title-size: 1rem;
 
 // Main Footer
-$site-footer-bg: darken($secondary, 12%);
+$site-footer-bg: darken($secondary, 0%);
 $site-footer-text: white;
-$site-footer-signoff-bg: darken($secondary, 15%);
+$site-footer-signoff-bg: darken($secondary, 3%);
 $site-footer-signoff-text: $tertiary;
 
 // Settings for 'Paving' BG pattern

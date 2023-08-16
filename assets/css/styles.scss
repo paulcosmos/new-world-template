@@ -446,7 +446,7 @@ strong {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: $navbar-background-color-mobile;
+                background-color: $menu-background-color-mobile;
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
@@ -1248,7 +1248,7 @@ strong {
         
         img {
             max-height: 130px;
-            filter: grayscale(100%);
+            filter: grayscale(0%);
             transition: all 0.2s;
 
             &:hover {

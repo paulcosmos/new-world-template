@@ -2,7 +2,7 @@
 title: Artificial Grass
 type: service-item
 desc: Artificial lawns are hard wearing, never need mowing and stay green all year round. We can install them to fit any space.
-weight: 3
+weight: 2
 image: images/artificial-grass.jpg
 anchor:
 ---
