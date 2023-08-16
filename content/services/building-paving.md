@@ -1,14 +1,14 @@
 ---
-title: "Patios & Driveways"
+title: "New Builds"
 type: service-item
-desc: Improve the overall look of your property whilst also increasing value with a professionally installed driveway or patio.
+desc: We have the skills and experience to build new properties from scratch. From ground to roof, we do it all.
 weight: 2
-image: images/paving.jpg
+image: images/new-builds.jpg
 anchor: 
 ---
-## Paving, Driveways & Patios
+## New Builds
 
-Professionally installed block paving is hard-wearing, long lasting, and easy to clean and maintain. We can design and install paving, patios and driveways in a range of styles and materials to fit your needs and your budget.
+We are a full-service {{<industry>}} company. With {{<years>}} of experience in the {{<industry>}} trade, have have the skills and know-how to build a wide range of properties and structures completely from scratch. From ground to roof, we do it all.
 
-* Maximise and optimise your outdoor space
-* Increase the value of your property
+* Bespoke new builds are not a problem
+* Highly experienced, reputable team

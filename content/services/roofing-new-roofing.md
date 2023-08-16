@@ -2,7 +2,7 @@
 title: "New & Replacement Roofing"
 type: service-item
 desc: Our licensed team have the knowledge and expertise to safely replace any roof.
-weight: 1
+weight: 5
 image: images/roofing.jpg
 anchor: Roofing
 ---

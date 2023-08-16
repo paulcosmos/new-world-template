@@ -1,12 +1,12 @@
 ---
-title: "Landscaping & Groundworks"
+title: "Landscaping & Patios"
 type: service-item
 desc: From concept to finished project, we have the tools and experience to create your perfect outdoor space.
-weight: 3
-image: images/landscaping-groundworks.jpg
+weight: 4
+image: images/landscaping-patios.jpg
 anchor: Landscaping
 ---
-## Landscaping & Groundworks
+## Landscaping & Patios
 
 We can work with you to design and create a beautiful outdoor living space that’s perfectly suited to your property. From concept to finished project, we have the creativity and experience to bring your ideas to life.
 

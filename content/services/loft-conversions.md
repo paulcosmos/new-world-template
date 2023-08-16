@@ -2,7 +2,7 @@
 title: "Loft Conversions"
 type: service-item
 desc: Increase both the practicality and value of your home by converting your loft space into an additional room or living area.
-weight: 4
+weight: 6
 image: images/loft-conversions.jpg
 anchor:
 ---
