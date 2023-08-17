@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: James Robinson
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Sam came and squared off an archway and fitted two new doors for us. He did a fantastic job and left the rooms clean and tidy afterwards. His carpentry knowledge is exceptional and we love the work he’s done. Thanks again Sam 👍

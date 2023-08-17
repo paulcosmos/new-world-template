@@ -5,12 +5,11 @@
 						<div class="column is-12-mobile is-12-tablet is-4-desktop">
 							<div class="content site-footer-company-info">
 							{{- with .Site.Params }}
-								<h4>{{ .company }}</h4>
-								<h5>{{ .industry | strings.FirstUpper }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>
-								<div data-aos="fade-right" data-aos-easing="ease-in-back">
-									<a 	class="button-primary ml-0 modal-trigger" 
-										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
-								</div>
+							<img src="/images/{{ .logo }}" 
+								 alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+								 width="180px"
+								/>
+
 							{{ end }}
 								{{/*  <div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
 								{{ partial "social-links-icons.html" . }}
@@ -58,13 +57,6 @@
 					</div>
 				</div>
 			</div>
-			{{- with .Site.Params }}
-			{{ if .emblem }}
-			<div class="emblem">
-				<img class="gas-safe-emblem" src="/images/{{ .emblem }}">
-			</div>
-			{{ end -}}
-			{{ end -}}
 			<div class="container is-fluid site-footer-signoff">
 				<div class="content">
 					{{- with .Site.Params }}

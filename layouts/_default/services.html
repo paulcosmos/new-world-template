@@ -1,6 +1,7 @@
 		{{- define "hero" -}}
 		<section class="hero is-small">
 			{{ partial "hero/hero-text-cta.html" . }}
+			{{/*  <img src="images/wave.svg" class="wave"/>  */}}
 		</section>
 		{{ end -}}
 
@@ -31,9 +32,11 @@
 				</div>
 			</section>
 			{{ end }}
+
+			{{ partial "cta-image-bg.html" . }}
 			
-			{{ partial "cta-banner.html" . }}
-			{{ partial "why-us-banner.html" . }}
+			{{/*  {{ partial "cta-banner.html" . }}  */}}
+			{{/*  {{ partial "why-us-banner.html" . }}  */}}
 
 		{{ end }}
 

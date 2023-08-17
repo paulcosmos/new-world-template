@@ -1,21 +1,24 @@
 ---
 title: Our Services
-menu: ["main","footer"]
+menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
 image: images/placeholder.jpg
 
 services:
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
+- Bespoke Joinery
+- Doors and frames
+- Fire doors
+- Wardrobes 
+- Staircases
+- Custom Storage 
+- Radiator Covers
+- Skirting
+- Wooden / Timber Structures 
+- Outdoor Buildings
+- Summer Houses
+- Built-in Furniture
 
 _build:
   render: true
