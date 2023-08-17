@@ -1152,16 +1152,16 @@ strong {
 
     &-bg-image {
         background-color: $secondary;
-        background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.5), rgba($secondary, 0.5)), url('../images/logo-bg.png');
+        background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.5), rgba($secondary, 0.5)), url('../images/bg.png');
         background-repeat: no-repeat;
         background-position: center right;
-        background-size: contain;
+        background-size: cover;
         color: white;
         padding-top: 9rem;
         padding-bottom: 9rem;
 
         @include until($navbar-breakpoint){
-            background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.95)), url('../images/logo-bg.png');
+            background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.95)), url('../images/bg.png');
             background-position: center;
         }
     }

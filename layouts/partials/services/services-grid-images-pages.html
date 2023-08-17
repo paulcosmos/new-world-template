@@ -14,6 +14,7 @@
 									{{- if $image }}
 									{{- with .Site.Params }}
 									<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}' 
+										class="has-rounded-corners"
 										alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
 										title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
 									{{ end -}}
