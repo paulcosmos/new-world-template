@@ -1,0 +1,53 @@
+					<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
+					<div class="video-gallery">
+
+						<div class="gallery">
+
+							{{ $folder := .Params.name | lower | printf "assets/images/gallery/%s"}}
+							{{- if fileExists $folder }}
+							{{ $files := readDir $folder }}
+							{{- range $files -}}
+							{{- if not .IsDir}}
+							{{- if ne .Name ".DS_Store" }}
+							{{- $image := resources.Get ( printf "images/gallery/%s" .Name ) -}}
+							{{- $thumb := resources.Get $image  -}}
+							<a href="{{ $image.RelPermalink }}" class="glightbox">
+								<img 
+									src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
+									alt="" 
+									title=""
+									width="460px"
+									height="460px"
+								/>
+							</a>
+							{{ end -}}
+							{{ end -}}
+							{{ end -}}
+							{{ end -}}
+
+
+							{{ $videofolder := .Params.name | lower | printf "assets/video/%s"}}
+							{{- if fileExists $videofolder }}
+							{{ $files := readDir $videofolder }}
+							{{- range $files -}}
+							{{- if not .IsDir}}
+							{{- if ne .Name ".DS_Store" }}
+							{{- $video := resources.Get ( printf "video/%s" .Name ) -}}
+							<a href="{{ $video.RelPermalink }}" class="glightbox">
+								<img 
+									src='images/play.png' 
+									alt="" 
+									title=""
+									width="460px"
+									height="460px"
+								/>
+							</a>
+							{{ end -}}
+							{{ end -}}
+							{{ end -}}
+							{{ end -}}
+
+						</div>
+
+						<div class="clear"></div>
+					</div>

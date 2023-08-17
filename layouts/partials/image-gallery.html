@@ -1,5 +1,5 @@
-				{{ $folder := .Params.name | lower | printf "assets/images/gallery/%s"}}
-					<div class="gallery">
+<div class="gallery">
+						{{ $folder := .Params.name | lower | printf "assets/images/gallery/%s"}}
 						{{- if fileExists $folder }}
 						{{ $files := readDir $folder }}
 						{{- range $files -}}
@@ -20,5 +20,4 @@
 						{{ end -}}
 						{{ end -}}
 						{{ end -}}
-						<div class="clear"></div>
 					</div>

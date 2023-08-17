@@ -1,7 +1,10 @@
 		{{- define "main" }}
 			<section class="section">
 				<div class="container is-fullhd">
-					{{ partial "image-gallery.html" . }}
+					{{/*  {{ partial "image-gallery.html" . }}  */}}
+
+					{{ partial "video-gallery.html" . }}
+
 				</div>
 			</section>
 
@@ -11,15 +14,23 @@
 		{{ end }}
 
 		{{- define "scripts" -}}
-		<script src="js/simple-lightbox.min.js?v2.11.0"></script>
+
+		<link rel="stylesheet" href="/css/glightbox.css" />
+		<script src="/js/glightbox.min.js"></script>
 		<script>
-			(function() {
-				var $gallery = new SimpleLightbox('.gallery a', {
-				scrollZoom : false,
-				captions: false,
-				overlayOpacity : 0.95,
-				disableScroll: false,
+			const lightbox = GLightbox({
+				touchNavigation: true,
+				loop: true,
+				autoplayVideos: true,
+				openEffect: 'zoom',
+				plyr: {
+					config: {
+						ratio: '9:16',
+						muted: false,
+						muted: true,
+					}
+				}
 			});
-		})();
 		</script>
+
 		{{ end }}
