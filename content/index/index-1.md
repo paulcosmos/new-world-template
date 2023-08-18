@@ -7,7 +7,7 @@ _build:
 image: images/drain-tags-angled.jpg
 ---
 
-## Drain Tags help ensure that polluting substances are directed to the **appropriate drain**.
+## Drain Tags help to **avoid pollution incidents** by clearly showing the type of drain and the direction it flows.
 
 Drain Tags are a cost-effective, long-term solution for clearly but discretely marking your site drainage system. 
 

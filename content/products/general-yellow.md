@@ -6,6 +6,8 @@ anchor: Generic Drain Tags
 _build:
   render: true
 
+pricepertag: £3.75
+
 desc: Yellow unmarked Drain Tags for universal highlighting.
 weight: 4
 image: images/drain-tags-yellow.jpg
@@ -24,7 +26,7 @@ These have been left unmarked so that they can be used for a variety of differen
 | 50           | £225      | £4.50          |
 | 100          | £375      | £3.75          |
 
-_Please [contact customer services](/contact.html) for contracts and larger volumes_
+_Due to ongoing website development we don’t currently have an add to basket facility. Please order your required quantities of each tag separately or simply select multi colour bundle packs. Sorry for any inconvenience. For contracts and larger volumes, please [contact customer services](/contact.html)._
 
 ---
 

@@ -6,6 +6,8 @@ anchor: Foul Water Drain Tags
 _build:
   render: true
 
+pricepertag: £3.75
+
 desc: Red 'FW' Drain Tags for marking Foul Water drains.
 weight: 2
 image: images/drain-tags-red.jpg
@@ -24,7 +26,7 @@ This water is considered 'foul' because it is contaminated with pollutants, like
 | 50           | £225      | £4.50          |
 | 100          | £375      | £3.75          |
 
-_Please [contact customer services](/contact.html) for contracts and larger volumes_
+_Due to ongoing website development we don’t currently have an add to basket facility. Please order your required quantities of each tag separately or simply select multi colour bundle packs. Sorry for any inconvenience. For contracts and larger volumes, please [contact customer services](/contact.html)._
 
 ---
 

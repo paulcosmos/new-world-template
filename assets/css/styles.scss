@@ -543,6 +543,13 @@ strong {
     }
 }
 
+.product-details {
+
+    p em { 
+        font-size: 0.8rem;
+    }
+}
+
 // Inherit font colour from parents Bulma modifier classes 
 
 // .pre-heading > span,

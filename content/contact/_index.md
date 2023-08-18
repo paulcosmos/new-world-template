@@ -13,6 +13,7 @@ cascade:
 
 # Contact us
 
-Speak to us today to and we will be happy to answer any questions you have. request a quote. 
+Wherever you are in the world from we’re here to help. Whether you’re sole trader or a multi national company **Drain Tags** have the right solution for you and your business.
 
+Speak to us today to and we will be happy to answer any questions you have.
 
