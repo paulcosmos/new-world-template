@@ -4,10 +4,10 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/championphs.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We're your **top choice** for {{<industry>}} in {{<towncity>}}.
 
 * Many years of experience in and around {{<towncity>}}
 * A reputation for excellent quality and professionalism
@@ -15,7 +15,7 @@ image:
 
 {{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We are highly experienced, [Gas Safe registered](https://www.gassaferegister.co.uk/ShowEngineers?se=True&page=1&ep=1xPOGK1AdTeDy4hfLti5P8nfzD7veOXgQMZi8oL8HTXsAmKjPmGjQO2PFORCu59Ubqnic7RFc0tpHLfeib2MmjryVUXrv2sb7DxgiMyQJwr9qCO9kqH0xhs3CDnvvXUeBGeq0iApZM0lU5C%252btXSoxVUuY4UQKDQ7i4hkF3dMhPE%253d&rno=927367&backurl=%252fFindBusinessResults%253fep%253d1xPOGK1AdTeDy4hfLti5P8nfzD7veOXgQMZi8oL8HTXsAmKjPmGjQO2PFORCu59Ubqnic7RFc0tpHLfeib2MmjryVUXrv2sb7DxgiMyQJwr9qCO9kqH0xhs3CDnvvXUeLPMKkDMgYWUYufymyOeIlg%2525253d%2525253d%2526Page%253d4&searchurl=%252FFindBusinessResults%253Fep%253D1xPOGK1AdTeDy4hfLti5P8nfzD7veOXgQMZi8oL8HTXsAmKjPmGjQO2PFORCu59Ubqnic7RFc0tpHLfeib2MmjryVUXrv2sb7DxgiMyQJwr9qCO9kqH0xhs3CDnvvXUeLPMKkDMgYWUYufymyOeIlg%2525253d%2525253d%2526Page%253D4) professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
 
 
 
