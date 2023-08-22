@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Impact Paving Ltd are your local **paving specialists** in Wakefield
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** have been providing {{<industry>}} services to customers in {{<towncity>}} for a number of years. We are experienced in all aspects of the {{<industry>}} trade.

@@ -1,8 +1,8 @@
-		{{- define "hero" -}}
+		{{/*  {{- define "hero" -}}
 		<section class="hero is-small">
 			{{ partial "hero/hero-text-cta.html" . }}
 		</section>
-		{{ end -}}
+		{{ end -}}  */}}
 
 		{{ define "main" }}
 			<section class="section">
@@ -17,7 +17,9 @@
 			<section class="section">
 				<div class="container is-fullhd company-services-list pb-4">
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
-						<div class="column is-12-touch is-12-desktop">
+
+
+						<div class="column is-12-touch is-8-desktop">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="_content has-accent company-services-list" data-aos="fade-right">
 								<ul>
@@ -27,13 +29,29 @@
 								</ul>						
 							</div>
 						</div>
+
+						<div class="column is-hidden-touch" data-aos="fade-left">
+							<div class="image is-4by5 company-services-image company-services-image">
+								{{- $image := resources.Get .Params.image }}
+								{{- if $image }}
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end }}
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
+						</div>
+
+
 					</div>
 				</div>
 			</section>
 			{{ end }}
 			
-			{{ partial "cta-banner.html" . }}
-			{{ partial "why-us-banner.html" . }}
+			{{ partial "cta-image-bg.html" . }}
 
 		{{ end }}
 

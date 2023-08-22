@@ -1,11 +1,34 @@
 			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
-				{{ partial "hero/hero-image.html" . }}
-				{{- with .Site.Params }}
-				{{ if .emblem }}
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
-				{{ end -}}
-				{{ end -}}
+			<section class="hero is-medium hero-index">
+				<div class="hero-head">
+					{{ partial "navbar.html" . }}
+				</div>
+				<div class="hero-body">
+					<div class="container is-fullhd">
+						<div class="columns">
+							<div class="column is-8-desktop _is-offset-2-desktop is-7-fullhd _is-offset-3-fullhd is-12-tablet">
+								<span class="pre-heading" data-aos="fade-down">
+								{{- if .Params.preheading -}}
+									{{ .Params.preheading }} 
+								{{ else }}
+									{{ .Site.Params.industry | humanize }} services in {{ .Site.Params.towncity }}
+								{{- end }}
+								</span>
+								<div class="content hero-services-content has-accent" data-aos="fade-left">
+									{{ .Content }}
+								</div>
+
+
+								<div class="is-grouped mt-5">
+									<div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+										<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">Get a Quote<i class="fa-solid fa-arrow-right"></i></button>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
 			</section>
 			{{ end -}}
 
@@ -25,7 +48,7 @@
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "890x900 q70 Center").RelPermalink }}'
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
@@ -59,11 +82,70 @@
 
 			{{ partial "cta-banner.html" . }}
 
+			<section class="has-bg-tertiary section">
+				<div class="container is-fullhd">
+					<div class="columns _box content is-multiline is-variable is-6">
+					{{ with .Site.Params }}
+						<div class="column is-12 has-accent is-4 has-text-centered" data-aos="fade-in" data-aos-delay="0">
+							<h2>We only use the best materials</h2>
+						</div>
+						<div class="column is-4-tablet is-4-fullhd" data-aos="fade-in" data-aos-delay="200">
+							<div class="box has-text-centered">
+								<img src="images/creds/tarmac.jpg"/>
+							</div>
+						</div>
+						<div class="column is-4-tablet is-4-fullhd" data-aos="fade-in" data-aos-delay="400">
+							<div class="box has-text-centered">
+								<img src="images/creds/plaspave.jpg"/>
+							</div>
+						</div>
+						<div class="column is-4-tablet is-4-fullhd" data-aos="fade-in" data-aos-delay="600">
+							<div class="box has-text-centered">
+								<img src="images/creds/marshalls.jpg"/>
+							</div>
+						</div>
+					{{ end }}
+					</div>
+				</div>
+			</section>
+
+
 			{{ partial "review-slider/review-slider.html" . }}
 
-			{{ partial "cta-text.html" . }}
 
-			{{ partial "why-us-banner.html" . }}
+			{{/*  <section class="section has-bg-tertiary _pl-6">
+				<div class="columns is-multiline is-variable is-8 is-centered is-vcentered">
+
+
+					<div class="column is-12-touch is-6-desktop is-4-widescreen is-4-fullhd _is-offset-1-fullhd py-6">
+						<div class="box content">
+							<h3>Where are we based and which areas do we serve?</h3>
+							<p>We are based in Wakefield and are able to cover the whole of West Yorkshire and the surrounding areas.</p>
+							<div class="mt-5" data-aos="fade-in">
+								<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">Get a Quote<i class="fa-solid fa-arrow-right"></i></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="column map py-0 is-12-touch is-half-fullhd">
+						<iframe frameborder="0" 
+								scrolling="no" 
+								marginheight="0" 
+								marginwidth="0" 
+								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q=WF1 5BU+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+								class="box"
+								data-aos="fade-right">
+						</iframe>
+					</div>
+
+
+				</div>
+			</section>  */}}
+
+
+			{{/*  {{ partial "why-us-banner.html" . }}  */}}
+			
+			{{ partial "cta-image-bg.html" . }}
 
 			{{- end }}
 

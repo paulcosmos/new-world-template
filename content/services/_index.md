@@ -4,18 +4,23 @@ menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: images/natural-stone-paving.jpg
 
 services:
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
+- Block Paving 
+- Brick and Cobbles 
+- Concrete Driveways 
+- Tarmacadam 
+- Indian Sandstone 
+- Fencing 
+- Landscaping 
+- Asphalt 
+- Flagging 
+- Slabbing 
+- Drainage 
+- Concreting 
+- Patios 
+- Driveways 
 
 _build:
   render: true

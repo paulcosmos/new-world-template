@@ -1,5 +1,5 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
-				<div class="container is-fluid">  
+				<div class="container is-fullhd">  
 				    <div class="navbar-brand">
 						<a class="navbar-item navbar-logo no-underline" href="/index.html">
 							{{- with .Site.Params }}
@@ -32,8 +32,8 @@
 								{{- end -}}
 							</a>
 						    {{ end }}
-						    <div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
-						      <button class="button-primary">{{ .Site.Params.modalbuttontext }}</button>
+						    <div class="navbar-item has-text-centered modal-trigger no-underline">
+						      <a href="https://api.whatsapp.com/send?phone=447481748345" target="_blank" rel="noopener" class="button-primary"><i class="fa-brands fa-whatsapp mr-3"></i> Message us</a>
 						    </div>
 						</div>
 					</div>

@@ -1,25 +1,32 @@
 <div class="content contact-details mt-4" data-aos="fade-right">
 								<h2>Contact Details</h2>
 								<address>
-								{{- with .Site.Params -}}
+									{{- with .Site.Params -}}
+
+									<span class="icon-text">
+										<span class="icon is-small"><i class="fa-regular fa-envelope"></i></span>
+										<span><a href="mailto:{{ .email }}">{{ .email }}</a></span>
+									</span>
+
 									{{ if .phone  -}}
 									<span class="icon-text">
 										<span class="icon is-small"><i class="fa-regular fa-phone"></i></span>
 										<span><a href='tel:{{- replaceRE "(\\s)" "" .phone |  -}}'>{{ .phone }}</a></span>
 									</span> 
 									{{ end -}}
-									{{ if .mobile  -}}
+
 									<span class="icon-text">
-										<span class="icon is-small"><i class="fa-regular fa-mobile"></i></span>
-										<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
+										<span class="icon is-small"><i class="fa-regular fa-phone"></i></span>
+										<span><b>Wakefield:</b> 01924 917 853</span>
 									</span>
-									{{ end -}}
+
 									<span class="icon-text">
-										<span class="icon is-small"><i class="fa-regular fa-envelope"></i></span>
-									<span><a href="mailto:{{ .email }}">{{ .email }}</a></span>
+										<span class="icon is-small"><i class="fa-regular fa-phone"></i></span>
+										<span><b>Huddersfield:</b> 01924 917 853</span>
 									</span>
+
+									{{- end }}
 								</address>
-								{{- end }}
 								<div class="social-links" data-aos="fade-in-up">
 									{{ partial "social-links-icons.html" . }}
 								</div>

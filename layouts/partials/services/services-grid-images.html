@@ -22,10 +22,12 @@
 								{{- end }}
 								</a>
 							</div>
-							<h3>{{ .Params.title }}</h3>
-							<p>{{ .Params.desc }}</p>
-							<div>
-								<a href="/services.html#{{ anchorize .Title }}">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
+							<div class="content box" data-aos="fade-up">
+								<h3>{{ .Params.title }}</h3>
+								<p>{{ .Params.desc }}</p>
+								<div>
+									<a href="/services.html#{{ anchorize .Title }}">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
+								</div>
 							</div>
 						</div>
 					{{ end -}}

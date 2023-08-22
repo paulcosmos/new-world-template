@@ -7,7 +7,7 @@
 						{{- if ne .Name ".DS_Store" }}
 						{{- $image := resources.Get ( printf "images/gallery/%s" .Name ) -}}
 						{{- $thumb := resources.Get $image  -}}
-						<a href="{{ $image.RelPermalink }}">
+						<a href="{{ $image.RelPermalink }}" class="has-rounded-corners">
 							<img 
 								src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
 								alt="" 
