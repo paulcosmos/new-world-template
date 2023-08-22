@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Jules
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Kostas estimated accurately for the work (demolishing a weak garden wall, clearing, and then building a new replacement wall/fence), he and his colleague were professional, he provided detail, and kept us up-to-date throughout the process. He also handled all of the debris, disposal, skip issues in a very efficient way. I am pleased with the results, and would certainly recommend Kostas/{{<company>}} based on this job.

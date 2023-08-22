@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Anonymous
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Re-plastering two ceilings, Re-fitting bathroom & kitchen. Complete decoration throughout the flat. Work was carried out efficiently & to a high standard within the time frame anticipated and within the agreed budget.

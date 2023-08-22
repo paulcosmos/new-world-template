@@ -4,16 +4,14 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/consta-construction.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We're your **top choice** for {{<industry>}} and construction in North West {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+Here at **{{<company>}}** we cover all aspects of construction and building services in and around North West London. We are a small construction company with over 40 years experience in the industry, offering our services to domestic customers.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+We pride ourselves on offering a friendly and reliable service to all of our customers whilst maintaining a professional approach to every job that we carry out
 
 We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
 

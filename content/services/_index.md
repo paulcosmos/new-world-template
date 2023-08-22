@@ -7,15 +7,21 @@ preheading: "Our Services"
 image: images/placeholder.jpg
 
 services:
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
+- New Builds
+- Loft Conversions
+- Extensions
+- Carpentry
+- Joinery
+- Kitchen Renovation
+- Bathroom Renovation
+- Garden Design
+- Hard Landscaping
+- Brickwork
+- Plumbing
+- Electrics
+- Tiling
+- Flooring
+- And more!
 
 _build:
   render: true
