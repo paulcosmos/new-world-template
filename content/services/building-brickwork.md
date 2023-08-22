@@ -1,9 +1,9 @@
 ---
-title: "Brickwork"
+title: "Brickwork & Brick Laying"
 type: service-item
 desc: Whether you require a new construction or just repairs and repointing, whatever your brickwork needs our experienced team can help.
 weight: 2
-image: images/brickwork.jpg
+image: images/bricklaying.jpg
 anchor:
 ---
 ## Brickwork
