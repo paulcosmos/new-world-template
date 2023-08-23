@@ -1,5 +1,5 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
-				<div class="container is-fluid">  
+				<div class="container is-fullhd">  
 				    <div class="navbar-brand">
 						<a class="navbar-item navbar-logo no-underline" href="/index.html">
 							{{- with .Site.Params }}
@@ -32,7 +32,7 @@
 								</a>
 								<div class="navbar-dropdown">
 							    {{- $currentPage := . }}
-								{{- range where (where .Site.RegularPages "Type" "service-page") "File.Dir" "services/" }}
+								{{- range where .Site.RegularPages "Type" "service-page" }}
 									<a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Title }}">
 									{{- if .Params.anchor -}}
 									  {{ .Params.anchor }}
@@ -59,9 +59,9 @@
 								{{- end -}}
 							</a>
 						    {{ end }}
-						    <div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
+						    {{/*  <div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
 						      <button class="button-primary">{{ .Site.Params.modalbuttontext }}</button>
-						    </div>
+						    </div>  */}}
 						</div>
 					</div>
 				</div>

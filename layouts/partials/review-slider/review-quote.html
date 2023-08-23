@@ -32,13 +32,6 @@
 												{{- if .Title -}}
 												<figcaption>
 													{{ .Title }}
-													<span class="is-size-6 is-block">
-														{{ if .Params.location }}
-														{{.Params.location }}
-														{{ else }}
-														{{ .Site.Params.county }}
-														{{ end }}
-													</span>
 												</figcaption>
 												{{ end }}
 											</figure>

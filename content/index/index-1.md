@@ -4,18 +4,18 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/remedy-plumbing-heating.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We pride ourselves on our high work standards and **excellent** customer service.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+Established in 2020, **{{<company>}}** are a local {{<industry>}} company firm based in Gilston (near Harlow), on the Hertfordshire and Essex border. 
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+We have been providing {{<industry>}} services to happy customers for {{<years>}} earning a reputation for excellent customer service, attention to detail and professional working practices along the way.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+Our team are highly experienced, [Gas Safe registered](https://www.gassaferegister.co.uk/CheckBusinessResults?cp=c%252fxlCqDAZx%252fxcdwjDoVv2VPcatuQ%252bIoche1qzRjZnmzo8ybM%252bAvEeG62T5z0gJwDbCiGkyMPff42ePY1R5dWYFubkuUD%252bOkeCqS1EokFGpF6%252fK23peIlCmhaPgqXR6CImKugRt2QeretVdreJR0Xnw%253d%253d) professionals. Whatever the job, we can handle it. 
+
+Call us today on **{{<phone>}}** for a no obligation quote.
 
 
 

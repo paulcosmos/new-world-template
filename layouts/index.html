@@ -1,11 +1,7 @@
 			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
+			<section class="hero is-medium hero-index">
 				{{ partial "hero/hero-image.html" . }}
-				{{- with .Site.Params }}
-				{{ if .emblem }}
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
-				{{ end -}}
-				{{ end -}}
+
 			</section>
 			{{ end -}}
 
@@ -15,6 +11,7 @@
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
 					<div class="columns is-vcentered is-multiline is-variable is-8">
 						<div class="column is-7-desktop is-6-fullhd">
+							<span class="pre-heading">About us</span>
 							<div class="content company-intro-content has-accent" data-aos="fade-in">
 								{{ .Content }}
 							</div>
@@ -25,7 +22,7 @@
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "890x960 q70 Center").RelPermalink }}'
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
@@ -39,29 +36,65 @@
 				</div>
 			</section>
 
-			{{ partial "accreditations.html" . }}
+			{{/*  {{ partial "accreditations.html" . }}  */}}
 			
 			<section class="section company-services-overview">
-				<div class="container is-fullhd">
-					<div class="columns is-multiline is-mobile is-variable is-4">
+				<div class="container is-fluid">
+					<div class="columns has-text-centered is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
 							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
 						</div>
-						<div class="column is-narrow" data-aos="fade-in">
-							<span class="icon company-icon">
-								<i class="fa-light fa-square-check"></i>
-							</span>
-						</div>
 					</div>
-					{{ partial "services/services-grid-images.html" . }}
+					{{ partial "services/services-grid-images-pages.html" . }}
 				</div>
 			</section>
 
-			{{ partial "cta-banner.html" . }}
+			{{/*  {{ partial "cta-banner.html" . }}  */}}
 
 			{{ partial "review-slider/review-slider.html" . }}
 
-			{{ partial "cta-text.html" . }}
+			<section class="section has-bg-tertiary">
+				<div class="columns is-multiline is-variable is-8 is-centered is-vcentered">
+
+
+					<div class="column is-12-touch is-6-desktop is-6-widescreen is-5-fullhd is-offset-1-fullhd py-6">
+						<div class="box _has-bg-secondary _has-text-white">
+							<div class="content">
+							<h3>Where are we based and which areas do we serve?</h3>
+							<p>We are based in Harlow on the border of Hertfordshire and Essex, and cover the following areas:</p>
+							</div>
+
+							<div class="chunky-list mb-4" data-aos="fade-right">
+								<ul>
+								{{- range .Params.areas }}
+								<li>{{ . }}</li>
+								{{ end }}
+								</ul>						
+							</div>
+							<p>Not sure if we cover your area? Give us a call on <b>{{ .Site.Params.phone }}</b> or request a call from us and we'll be happy to help.</p>
+
+							<div class="mt-5" data-aos="fade-in">
+								<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">Request a callback <i class="fa-regular fa-phone-flip"></i></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="column map _py-0 is-12-touch _is-half-fullhd">
+						<iframe frameborder="0" 
+								scrolling="no" 
+								marginheight="0" 
+								marginwidth="0" 
+								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q=CM20 2FP+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+								class="box"
+								data-aos="fade-left">
+						</iframe>
+					</div>
+
+
+				</div>
+			</section>
+
+			{{ partial "cta-image-bg.html" . }}
 
 			{{ partial "why-us-banner.html" . }}
 
