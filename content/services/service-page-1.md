@@ -2,7 +2,7 @@
 title: "#ServiceTitle"
 type: service-page
 layout: servicepage
-desc:
+desc: Service description
 services:
 - service
 - service

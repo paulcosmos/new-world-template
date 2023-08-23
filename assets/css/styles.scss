@@ -423,11 +423,11 @@ strong {
             max-height: $navbar-height;
 
             @include from($navbar-breakpoint) {
-                position: relative;
+                // position: relative;
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 140px;
             }
         }
     }
