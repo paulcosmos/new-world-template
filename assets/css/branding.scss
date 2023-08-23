@@ -62,7 +62,7 @@ $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
-$navbar-divider-background-color: lighten($secondary, 10%);
+$navbar-divider-background-color: lighten($navbar-dropdown-background-color, 5%);
 
 // Buttons
 $button-text: white;
@@ -77,7 +77,8 @@ $sl-navigation-color: white;
 $hero-text: $text;
 $preheading-text: $primary;
 $preheading-size: 1rem;
-$hero-title-size: 2rem;
+$hero-title-size: 2.2rem;
+$hero-title-size-mobile: 1.8rem;
 $hero-text-size: 1rem;
 $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);

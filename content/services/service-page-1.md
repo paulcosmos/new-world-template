@@ -1,8 +1,8 @@
 ---
 title: "#ServiceTitle"
 type: service-page
-layout: servicepage
-desc: Service description
+layout: servicepage-images
+desc:
 services:
 - service
 - service

@@ -8,7 +8,7 @@ anchor:
 ---
 ## Paving, Driveways & Patios
 
-A well thought-out and professionally installed driveway is easy to clean and maintain. We can design and install paving and driveways in a range of styles and materials to fit your needs and your budget.
+Professionally installed block paving is hard-wearing, long lasting, and easy to clean and maintain. We can design and install paving, patios and driveways in a range of styles and materials to fit your needs and your budget.
 
 * Maximise and optimise your outdoor space
 * Increase the value of your property

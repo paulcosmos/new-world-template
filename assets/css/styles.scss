@@ -178,6 +178,7 @@ strong {
 }
 
 .content {
+    color: inherit;
 
     &.media {
         margin-bottom: 0;
@@ -351,6 +352,7 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
+        font-weight: $family-heading-weight;
 
         &:before {
             @include animated-underline;
@@ -469,6 +471,10 @@ strong {
                 }
             }
         }
+    }
+
+    &-divider {
+        background-color: $navbar-divider-background-color!important;
     }
 
     &-end {
@@ -592,7 +598,10 @@ strong {
 
         h1,
         h2 {
-            font-size: $hero-title-size;
+            font-size: $hero-title-size-mobile;
+            @include from ($navbar-breakpoint){
+                font-size: $hero-title-size;
+            }
         }
 
         p {
@@ -602,14 +611,13 @@ strong {
 
     &-service {
         color: white;
+        background: none;
+        background-color: $secondary;
+        background-image: url('../images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-
-        @include until($tablet) {
-            background-color: $secondary;
-            background-image: none !important;
-        }
+        padding: 0;
     }
 
     &-fail {
@@ -880,16 +888,9 @@ strong {
                     @include box-shadow-high;
                     padding: 10px;
                     margin: 10px;
+                }
             }
-        }
 
-            // .content {
-            //     columns: 2;
-
-            //     ul {
-            //         margin-top: 0;
-            //     }
-            // }
         }
 
         &-item {
@@ -1152,6 +1153,22 @@ strong {
         }
     }
 
+    &-bg-image {
+        background-color: $secondary;
+        background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.5), rgba($secondary, 0.5)), url('../images/bg.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+        color: white;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+
+        @include until($navbar-breakpoint){
+            background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.95)), url('../images/bg.png');
+            background-position: center;
+        }
+    }
+
     &-finance {
         background-color: $accent;
         color: $text;
@@ -1244,6 +1261,12 @@ strong {
         
         img {
             max-height: 130px;
+            filter: grayscale(100%);
+            transition: all 0.2s;
+
+            &:hover {
+                filter: grayscale(0%);
+            }
         }
     }
 }

@@ -1,11 +1,21 @@
 ---
 title: Our Services
-menu: ["footer"]
+menu: ["main"]
 weight: 2
 anchor: "Services"
-dropdown: 
 preheading: "Our Services"
 image: images/placeholder.jpg
+# - service
+# - service
+# - service
+# - service
+# - service
+# - service
+# - service
+# - service
+# - service
+
+
 _build:
   render: true
 cascade:
