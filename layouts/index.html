@@ -1,5 +1,5 @@
 			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
+			<section class="hero is-medium hero-index">
 				{{ partial "hero/hero-image.html" . }}
 				{{- with .Site.Params }}
 				{{ if .emblem }}
@@ -57,11 +57,11 @@
 				</div>
 			</section>
 
-			{{ partial "cta-banner.html" . }}
+			{{/*  {{ partial "cta-banner.html" . }}  */}}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
-			{{ partial "cta-text.html" . }}
+			{{ partial "cta-image-bg.html" . }}
 
 			{{ partial "why-us-banner.html" . }}
 

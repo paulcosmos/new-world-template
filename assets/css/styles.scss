@@ -401,12 +401,14 @@ strong {
 
     &-logo-overlap {
 
-        padding: 0;
+        // padding: 1rem;
+        // background-color: $logo-bg-colour;
 
-        @include from($navbar-breakpoint) {
+
+        // @include from($navbar-breakpoint) {
             position: relative;
             top: 0;
-            padding: 1rem;
+            padding: 1rem!important;
             // padding-top: 0;
             margin-top: 0;
             margin-bottom: -40px;
@@ -417,7 +419,7 @@ strong {
             &:focus {
                 background-color: $logo-bg-hover-colour!important;
             }
-        }
+        // }
 
         img {
             padding: 0;
@@ -609,15 +611,23 @@ strong {
         }
     }
 
+    h1 {
+        font-size: $hero-title-size-mobile;
+        @include from ($navbar-breakpoint){
+            font-size: $hero-title-size;
+        }
+    }
+
     &-service {
         color: white;
-        background: none;
-        background-color: $secondary;
-        background-image: url('../images/bg.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        // background: none;
+        // background-color: $secondary;
+        // background-image: url('../images/bg.png');
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-position: center;
         padding: 0;
+        @include hero-default-bg;
     }
 
     &-fail {
@@ -808,8 +818,8 @@ strong {
     &-services {
 
         &-overview {
-            background-color: $tertiary;
-            @include background-dots;
+            background-color: white;
+            background-image: linear-gradient(180deg, rgba($tertiary, 1), rgba(white, 1)), url('../images/bg.png');
             background-position: bottom;
             padding-bottom: 5rem;
 
