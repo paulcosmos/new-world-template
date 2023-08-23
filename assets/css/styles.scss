@@ -102,7 +102,7 @@ strong {
     }
 }
 
-.has-background-tertiary {
+.has-bg-tertiary {
     background-color: $tertiary;
 }
 
@@ -593,6 +593,15 @@ strong {
         padding-bottom: 3rem;
     }
 
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-height: 110px;
+        z-index: 20;
+    }
+
     &-index {
         @include hero-index-bg;
 
@@ -606,6 +615,13 @@ strong {
 
         p {
             font-size: $hero-text-size;
+        }
+    }
+    
+    h1 {
+        font-size: $hero-title-size-mobile;
+        @include from ($navbar-breakpoint){
+            font-size: $hero-title-size;
         }
     }
 
@@ -1466,8 +1482,19 @@ strong {
 
 // Map section
 .map {
-    margin-bottom: 3rem;
-    width: 100%;
+
+    // background-color: rgba($tertiary, 1);
+
+    iframe {
+        pointer-events: none;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        top: 150px;
+        filter: grayscale(1);
+        min-height: 500px;
+    }
 }
 
 .ol-viewport {
