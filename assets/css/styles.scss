@@ -747,6 +747,56 @@ strong {
     }
 }
 
+.big-logo {
+
+    min-height: 450px;
+    background: $secondary;
+    background-image: url('../images/logo-white.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.chunky-list {
+
+    ul {
+        margin-top: 2rem;
+        columns: 1;
+
+        @include from($tablet){
+            columns: 2;
+        }
+
+        @include from($widescreen){
+            columns: 2;
+        }
+
+        @include from($fullhd){
+            columns: 2;
+        }
+
+        li {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:before {
+                content:"\f14a";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+                color: $primary;
+            }
+
+            display: block;
+            background-color: white;
+            @include box-shadow-high;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+    }
+}
+
 .social-links {
     fill: inherit;
     display: grid;
