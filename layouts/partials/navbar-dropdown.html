@@ -26,11 +26,11 @@
 							</a>
 
 							{{/*  Dropdown  */}}
-							<div class="navbar-item has-dropdown is-hoverable no-underline">
+							<div class="navbar-item has-dropdown py-0 is-hoverable no-underline">
 								<a href="/services.html" class="navbar-link is-hidden-touch">
 								  Services
 								</a>
-								<div class="navbar-dropdown">
+								<div class="navbar-dropdown py-0">
 							    {{- $currentPage := . }}
 								{{- range where .Site.RegularPages "Type" "service-page" }}
 									<a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Title }}">
@@ -40,7 +40,7 @@
 									  {{- .Title }}
 									{{- end -}}
 									</a>
-									<hr class="navbar-divider">
+									{{/*  <hr class="navbar-divider">  */}}
 								{{- end }}
 								<a class="navbar-item" href="/services.html" title="View all services">
 									View All Services

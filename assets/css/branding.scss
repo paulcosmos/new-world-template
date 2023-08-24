@@ -24,7 +24,8 @@ $text: $secondary;
 
 // Page hero settings 
 @mixin hero-default-bg {
-	@include background-dots;
+	background-color: $tertiary;
+	// @include background-dots;
 }
 
 @mixin hero-index-bg {

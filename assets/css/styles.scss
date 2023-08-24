@@ -449,6 +449,9 @@ strong {
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
+                    border-bottom: none!important;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
                 }
             }
         }
@@ -461,7 +464,25 @@ strong {
             padding: 0;
         }
 
+        // .navbar-item {
+        //     &:hover {
+
+        //         &:before {
+        //             @include from($navbar-breakpoint) {
+        //                 display: none;
+        //             }
+        //         }
+        //     }
+        // }
+
         .navbar-item {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: solid 2px $navbar-divider-background-color;
+            }
+            
             &:hover {
 
                 &:before {
@@ -788,10 +809,12 @@ strong {
             }
 
             display: block;
-            background-color: white;
-            @include box-shadow-high;
+            background-color: lighten($tertiary, 2%);
+            // @include box-shadow-stripe;
             padding: 10px;
             margin: 10px;
+            border-radius: 8px;
+            outline: solid 1px $tertiary;
         }
         
     }
