@@ -12,7 +12,6 @@ services:
 - Other Services
 - General Plumbing
 - Bathroom installations 
-- Commercial Services
 - Landlord Gas Safety
 - Emergency Gas Engineer 
 - 24 hour call outs
