@@ -47,6 +47,7 @@ h5,
 h6 {
 
     font-family: $family-headings;
+    font-weight: $family-heading-weight!important;
 }
 
 h2 {
@@ -445,10 +446,23 @@ strong {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: rgba($navbar-background-color-mobile,0.95);
+                background-color: rgba($navbar-active-menu-background-color,0.95);
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+
+                    &.has-dropdown {
+                        padding: 0;
+                    }
+
+                }
+            }
+
+            .navbar-dropdown {
+                .navbar-item {
+                    border:none;
                 }
             }
         }
@@ -456,12 +470,20 @@ strong {
 
     &-dropdown {
         font-size: 1rem;
+        border: none;
 
         @include until($navbar-breakpoint) {
             padding: 0;
         }
 
         .navbar-item {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: solid 2px $navbar-divider-background-color;
+            }
+            
             &:hover {
 
                 &:before {
@@ -475,6 +497,7 @@ strong {
 
     &-divider {
         background-color: $navbar-divider-background-color!important;
+        margin: 0;
     }
 
     &-end {
@@ -584,7 +607,6 @@ strong {
     @include hero-default-bg;
     position: relative;
     color: $hero-text;
-    font-weight: normal;
     text-align: left;
     text-align: inherit;
 
@@ -607,6 +629,7 @@ strong {
 
         h1,
         h2 {
+            font-weight: $family-heading-weight!important;
             font-size: $hero-title-size-mobile;
             @include from ($navbar-breakpoint){
                 font-size: $hero-title-size;
@@ -626,14 +649,7 @@ strong {
     }
 
     &-service {
-        color: white;
-        background: none;
-        background-color: $secondary;
-        background-image: url('../images/bg.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 0;
+        @include service-page-hero;
     }
 
     &-fail {
@@ -747,6 +763,56 @@ strong {
     }
 }
 
+.big-logo {
+
+    min-height: 450px;
+    background: $secondary;
+    background-image: url('../images/logo-white.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.chunky-list {
+
+    ul {
+        margin-top: 2rem;
+        columns: 1;
+
+        @include from($tablet){
+            columns: 2;
+        }
+
+        @include from($widescreen){
+            columns: 2;
+        }
+
+        @include from($fullhd){
+            columns: 2;
+        }
+
+        li {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:before {
+                content:"\f14a";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+                color: $primary;
+            }
+
+            display: block;
+            background-color: white;
+            @include box-shadow-high;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+    }
+}
+
 .social-links {
     fill: inherit;
     display: grid;
@@ -825,7 +891,8 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
+            background: linear-gradient(180deg, $tertiary, white);
+            // @include background-dots;
             background-position: bottom;
             padding-bottom: 5rem;
 

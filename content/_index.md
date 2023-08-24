@@ -1,12 +1,17 @@
 ---
 title: 'About'
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 1
-preheading: 
+preheading: Make your house the home you want!
 areas:
-- Location 1
-- Location 2
-- Location 3
+- Altrincham
+- Timperley
+- Bowdon
+- Hale
+- Brooklands
+- Dunham
+- Stockport
+- Warrington
 
 _build:
   render: true
@@ -16,6 +21,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Professional **{{<industry>}} services** throughout {{<county>}}.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+Since 1973, **{{<company>}}** have converted empty or dilapidated space into comfortable, useful living areas. We are experienced in all aspects of the {{<industry>}} trade. See what we can do for you home.

@@ -5,11 +5,11 @@
 		<div class="container is-fullhd">
 			<div class="columns">
 				<div class="column is-12-tablet is-8-desktop is-8-fullhd">
-					<span class="pre-heading has-text-white" data-aos="fade-left">
+					<span class="pre-heading _has-text-white" data-aos="fade-left">
 						Our Services
 					</span>
 					<div class="content hero-services-content has-accent" data-aos="fade-down">
-						<h1>{{ .Title }} in {{ .Site.Params.towncity }}</h1>
+						<h1>{{ .Title }} in {{ .Site.Params.county }}</h1>
 					</div>
 				</div>
 			</div>
@@ -22,30 +22,31 @@
 <section class="section">
 	<div class="container is-fullhd">
 		<div class="columns is-multiline is-centered">
+			
+			
 			<div class="column is-12-touch is-7-desktop" data-aos="fade-in">
 				<article class="content has-accent box">
 
-				<div class="image has-rounded-corners mb-6">
-					{{- $image := resources.Get .Params.image }}
-					{{- if $image }}
-					{{- with .Site.Params }}
-						<img src='{{ ($image.Fill "1200x600 q70 Center").RelPermalink }}'
-							alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
-							title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
-					{{ end }}
-					{{ else }}
-						<img src='/images/placeholder.jpg'/>
-					{{- end }}
-				</div>
+					<div class="image has-rounded-corners mb-6">
+						{{- $image := resources.Get .Params.image }}
+						{{- if $image }}
+						{{- with .Site.Params }}
+							<img src='{{ ($image.Fill "1200x600 q70 Center").RelPermalink }}'
+								alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
+								title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
+						{{ end }}
+						{{ else }}
+							<img src='/images/placeholder.jpg'/>
+						{{- end }}
+					</div>
 
-				{{ .Content }}
-
+					{{ .Content }}
 
 				</article>
-				
 			</div>
+
 			<div class="column is-offset-1-desktop _is-narrow _is-12-touch" data-aos="fade-left">
-			{{- if .Params.services }}
+				{{- if .Params.services }}
 				<aside class="content service-page-list box">
 					<h3>What we offer</h3>
 					<ul>
@@ -53,7 +54,7 @@
 					<li>{{ . }}</li>
 					{{ end }}
 				</aside>
-			{{- end }}
+				{{- end }}
 
 
 				<div class="content hero-cta">
@@ -70,13 +71,22 @@
 
 					<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
 						<span class="icon-text">
-						  <span class="icon is-hidden-touch">
-						    <i class="fa-regular fa-phone"></i>
-						  </span>
-						  <span>Request a call back</span>
+							<span class="icon is-hidden-touch">
+								<i class="fa-regular fa-phone"></i>
+							</span>
+							<span>Request a call back</span>
 						</span>
 					</button>
 
+				</div>
+
+				<div class="level mt-6">
+					<div class="level-item has-text-centered">
+						<img src="images/chas.png"/>
+					</div>
+					<div class="level-item has-text-centered">
+						<img src="images/basementsystems.png"/>
+					</div>
 				</div>
 
 			</div>

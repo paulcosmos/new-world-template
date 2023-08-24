@@ -1,16 +1,15 @@
-		{{- define "hero" -}}
+		{{/*  {{- define "hero" -}}
 		<section class="hero is-small">
 			{{ partial "hero/hero-text-cta.html" . }}
 		</section>
-		{{ end -}}
+		{{ end -}}  */}}
 
 		{{ define "main" }}
 			<section class="section">
-				<div class="container is-fullhd company-services pb-4">
-					{{- $currentPage := . }}
-					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-						{{ partial "services/services-image-text.html" . }}
-					{{ end }}
+				<div class="container is-fluid company-services pb-4">
+
+						{{ partial "services/services-grid-images-pages.html" . }}
+
 				</div>
 			</section>
 			{{ if .Params.services }}
