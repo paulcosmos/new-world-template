@@ -102,7 +102,7 @@ strong {
     }
 }
 
-.has-background-tertiary {
+.has-bg-tertiary {
     background-color: $tertiary;
 }
 
@@ -178,6 +178,7 @@ strong {
 }
 
 .content {
+    color: inherit;
 
     &.media {
         margin-bottom: 0;
@@ -351,6 +352,7 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
+        font-weight: $family-heading-weight;
 
         &:before {
             @include animated-underline;
@@ -447,6 +449,9 @@ strong {
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
+                    border-bottom: none!important;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
                 }
             }
         }
@@ -459,7 +464,25 @@ strong {
             padding: 0;
         }
 
+        // .navbar-item {
+        //     &:hover {
+
+        //         &:before {
+        //             @include from($navbar-breakpoint) {
+        //                 display: none;
+        //             }
+        //         }
+        //     }
+        // }
+
         .navbar-item {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: solid 2px $navbar-divider-background-color;
+            }
+            
             &:hover {
 
                 &:before {
@@ -469,6 +492,10 @@ strong {
                 }
             }
         }
+    }
+
+    &-divider {
+        background-color: $navbar-divider-background-color!important;
     }
 
     &-end {
@@ -587,29 +614,47 @@ strong {
         padding-bottom: 3rem;
     }
 
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-height: 110px;
+        z-index: 20;
+    }
+
     &-index {
         @include hero-index-bg;
 
         h1,
         h2 {
-            font-size: $hero-title-size;
+            font-size: $hero-title-size-mobile;
+            @include from ($navbar-breakpoint){
+                font-size: $hero-title-size;
+            }
         }
 
         p {
             font-size: $hero-text-size;
         }
     }
+    
+    h1 {
+        font-size: $hero-title-size-mobile;
+        @include from ($navbar-breakpoint){
+            font-size: $hero-title-size;
+        }
+    }
 
     &-service {
         color: white;
+        background: none;
+        background-color: $secondary;
+        background-image: url('../images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-
-        @include until($tablet) {
-            background-color: $secondary;
-            background-image: none !important;
-        }
+        padding: 0;
     }
 
     &-fail {
@@ -720,6 +765,58 @@ strong {
             bottom: 10px;
             margin: 0;
         }
+    }
+}
+
+.big-logo {
+
+    min-height: 450px;
+    background: $secondary;
+    background-image: url('../images/logo-white.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.chunky-list {
+
+    ul {
+        margin-top: 2rem;
+        columns: 1;
+
+        @include from($tablet){
+            columns: 2;
+        }
+
+        @include from($widescreen){
+            columns: 2;
+        }
+
+        @include from($fullhd){
+            columns: 2;
+        }
+
+        li {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:before {
+                content:"\f14a";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+                color: $primary;
+            }
+
+            display: block;
+            background-color: lighten($tertiary, 2%);
+            // @include box-shadow-stripe;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            outline: solid 1px $tertiary;
+        }
+        
     }
 }
 
@@ -880,16 +977,9 @@ strong {
                     @include box-shadow-high;
                     padding: 10px;
                     margin: 10px;
+                }
             }
-        }
 
-            // .content {
-            //     columns: 2;
-
-            //     ul {
-            //         margin-top: 0;
-            //     }
-            // }
         }
 
         &-item {
@@ -1117,7 +1207,7 @@ strong {
 .cta {
 
     &-banner {
-        background-color: $primary;
+        background-color: $secondary;
         display: block;
         color: $white;
         text-align: center;
@@ -1130,7 +1220,7 @@ strong {
         font-weight: 600;
         @include rounded-corners;
         @include box-shadow-high;
-        @include background-paved;
+        // @include background-paved;
 
         a {
             // color:white;
@@ -1149,6 +1239,22 @@ strong {
                     width: 0%;
                 }
             }
+        }
+    }
+
+    &-bg-image {
+        background-color: $secondary;
+        background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.5), rgba($secondary, 0.5)), url('../images/bg.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+        color: white;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+
+        @include until($navbar-breakpoint){
+            background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.95)), url('../images/bg.png');
+            background-position: center;
         }
     }
 
@@ -1244,6 +1350,12 @@ strong {
         
         img {
             max-height: 130px;
+            filter: grayscale(100%);
+            transition: all 0.2s;
+
+            &:hover {
+                filter: grayscale(0%);
+            }
         }
     }
 }
@@ -1443,8 +1555,19 @@ strong {
 
 // Map section
 .map {
-    margin-bottom: 3rem;
-    width: 100%;
+
+    // background-color: rgba($tertiary, 1);
+
+    iframe {
+        pointer-events: none;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        top: 150px;
+        filter: grayscale(1);
+        min-height: 500px;
+    }
 }
 
 .ol-viewport {
@@ -1466,7 +1589,7 @@ strong {
 .site-footer {
     background-color: $site-footer-bg;
     color: $site-footer-text;
-    @include background-paved;
+    // @include background-paved;
 
     &-company-info {
 

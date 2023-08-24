@@ -3,6 +3,11 @@ title: 'About'
 menu: ["main","footer"]
 weight: 1
 preheading: 
+areas:
+- Location 1
+- Location 2
+- Location 3
+
 _build:
   render: true
 cascade:
