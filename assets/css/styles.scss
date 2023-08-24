@@ -401,13 +401,13 @@ strong {
 
     &-logo-overlap {
 
-        padding: 0;
+        padding: 0.5rem;
+        position: relative;
 
         @include from($navbar-breakpoint) {
             position: relative;
             top: 0;
             padding: 1rem;
-            // padding-top: 0;
             margin-top: 0;
             margin-bottom: -40px;
             background-color: $logo-bg-colour;
@@ -422,14 +422,14 @@ strong {
         img {
             padding: 0;
             max-width: 100%;
-            max-height: $navbar-height;
+            max-height: $logo-max-height;
 
             @include from($navbar-breakpoint) {
                 position: relative;
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 140px;
             }
         }
     }
@@ -788,10 +788,12 @@ strong {
             }
 
             display: block;
-            background-color: white;
-            @include box-shadow-high;
+            // @include box-shadow-stripe;
             padding: 10px;
             margin: 10px;
+            outline: solid 1px $tertiary;
+            background-color: lighten($tertiary,3%);
+            border-radius: 8px;
         }
         
     }
@@ -875,7 +877,10 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
+            background-image: linear-gradient(180deg, rgba($tertiary, 1), rgba(white, 0.6), white);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             background-position: bottom;
             padding-bottom: 5rem;
 
@@ -1382,7 +1387,7 @@ strong {
         padding-top:1.5rem;
         padding-bottom:1.5rem;
         flex: 0 0 25%;
-        background: white;
+        background: $secondary;
         @include box-shadow-below;
         border-radius: $image-corner-radius;
         margin: 0 0.5rem;
@@ -1413,7 +1418,7 @@ strong {
             font-weight: 800;
             font-size: $size-3;
             line-height: 2rem;
-            color: $text;
+            color: white;
 
             span {
                 color: lighten($accent, 0%);
@@ -1422,9 +1427,9 @@ strong {
         }
 
         .icon {
-            color: $accent;
+            color: darken($accent,0%);
             margin-top: 0.75rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             font-size: 1.75rem;
         }
     }

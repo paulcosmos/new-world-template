@@ -4,9 +4,10 @@ menu: ["main","footer"]
 weight: 1
 preheading: 
 areas:
-- Location 1
-- Location 2
-- Location 3
+- Trentham
+- Newcastle-under-Lyme
+- Stone
+- Whitchurch
 
 _build:
   render: true
@@ -15,7 +16,6 @@ cascade:
     list: true
     render: false
 ---
-
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# High quality, professional **{{<industry>}}** services throughout {{<county>}} and the surrounding areas.
 
 **{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.

@@ -1,8 +1,8 @@
 ---
-title: James
+title: Cooker Disconnection
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Nick was professional throughout, very thorough with his work, genuine local tradesman felt safe and would recommend nick every time for any gas work. Fantastic service. Thank you nick.

@@ -7,15 +7,17 @@ preheading: "Our Services"
 image: images/placeholder.jpg
 
 services:
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
+- Landlord certificates
+- Gas Boilers, Cookers, Fires
+- Gas Installations
+- 24/7 Emergency repairs
+- General Plumbing
+- Tap repairs or swaps
+- Toilet repair or swaps
+- Cylinder repair or upgrade
+- Radiators and valves replacement
+- Friendly Advice 
+- Free Quotes
 
 _build:
   render: true

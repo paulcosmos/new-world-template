@@ -1,17 +1,18 @@
 				<div class="hero-body">
 					<div class="container is-fullhd">
 						<div class="columns">
-							<div class="column is-8-desktop _is-offset-2-desktop is-7-fullhd _is-offset-3-fullhd is-12-tablet">
-								<span class="pre-heading" data-aos="fade-left">
-								{{- if .Params.preheading -}}
-									{{ .Params.preheading }} 
-								{{ else }}
-									{{ .Site.Params.industry | humanize }} services in {{ .Site.Params.towncity }}
-								{{- end }}
-								</span>
+							<div class="column is-8-desktop _is-offset-2-desktop is-8-fullhd _is-offset-3-fullhd is-12-tablet">
+
 								<div class="content hero-services-content has-accent" data-aos="fade-down">
 									{{ .Content }}
 								</div>
+
+								<div class="is-grouped mt-5">
+
+									<a class="button button-primary ml-0 modal-trigger" data-target="quote-modal" data-aos="fade-up" data-aos-delay="100" href="#">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+
+								</div>
+
 							</div>
 						</div>
 					</div>
