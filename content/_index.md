@@ -1,12 +1,11 @@
 ---
 title: 'About'
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 1
 preheading: 
 areas:
-- Location 1
-- Location 2
-- Location 3
+- Croydon
+- Surrey
 
 _build:
   render: true

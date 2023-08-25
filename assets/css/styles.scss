@@ -318,12 +318,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-7;
+        font-size: $size-6;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
         @include from($widescreen) {
-            font-size: $size-6;
+            font-size: $size-5;
         }
 
         &:hover {
@@ -898,7 +898,8 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
+            background: linear-gradient(180deg, $tertiary, white);
+            // @include background-dots;
             background-position: bottom;
             padding-bottom: 5rem;
 
@@ -1258,12 +1259,14 @@ strong {
         }
     }
 
-    &-finance {
-        background-color: $accent;
-        color: $text;
+    &-callout{
+        background-color: $secondary;
+        color: white;
+        @include box-shadow-below;
 
         h2 {
             margin: 0 auto;
+            font-size: 1.4rem;
         }
     }
 }
@@ -1566,7 +1569,15 @@ strong {
         padding: 0;
         top: 150px;
         filter: grayscale(1);
-        min-height: 500px;
+        min-height: 600px;
+
+        @include until($navbar-breakpoint){
+            min-height: 400px;
+        }
+    }
+
+    &-content {
+        color: $text;
     }
 }
 
