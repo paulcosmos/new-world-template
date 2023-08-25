@@ -1258,12 +1258,14 @@ strong {
         }
     }
 
-    &-finance {
-        background-color: $accent;
-        color: $text;
+    &-callout{
+        background-color: $secondary;
+        color: white;
+        @include box-shadow-below;
 
         h2 {
             margin: 0 auto;
+            font-size: 1.4rem;
         }
     }
 }
@@ -1566,7 +1568,15 @@ strong {
         padding: 0;
         top: 150px;
         filter: grayscale(1);
-        min-height: 500px;
+        min-height: 600px;
+
+        @include until($navbar-breakpoint){
+            min-height: 400px;
+        }
+    }
+
+    &-content {
+        color: $text;
     }
 }
 
