@@ -3,6 +3,11 @@ title: 'About'
 menu: ["main","footer"]
 weight: 1
 preheading: 
+areas:
+- Location 1
+- Location 2
+- Location 3
+
 _build:
   render: true
 cascade:
@@ -13,4 +18,4 @@ cascade:
 
 # Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** has been providing {{<industry>}} to domestic and commercial customers in {{<towncity>}} for a number of years. We are highly experienced in the {{<industry>}} trade. Whatever you need, we can help.

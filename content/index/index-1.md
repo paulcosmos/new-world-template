@@ -7,15 +7,13 @@ _build:
 image: images/carpentry-london.jpg
 ---
 
-## We're your top choice for **{{<industry>}} in {{<towncity>}}**.
+## We're your top choice for **{{<industry>}}** in {{<towncity>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+{{<company>}} have been providing designing and installing bespoke furniture for happy customers in and around {{<towncity>}} for {{<years>}}. 
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+Whether you need a fitted wardrobe, custom shelving, or even under-stair storage, our expert carpenters have the skills, tools and experience to help.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We take great pride in all work which we undertake and we are confident that we can exceed your expectations. Speak to us today on **{{<phone>}}** for a no obligation quote.
 
 
 

@@ -24,13 +24,18 @@ $text: $secondary;
 
 // Page hero settings 
 @mixin hero-default-bg {
-	@include background-dots;
+	background-color: $tertiary;
+	background-image: linear-gradient(-180deg, rgba($primary, 0.3), rgba(white, 1)), url('../images/bg.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: cover;
+	// @include background-dots;
 }
 
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
+	background-image: linear-gradient(-180deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
 }
 
 $hero-index-text: white;
@@ -41,7 +46,7 @@ $top-banner-text: white;
 $top-banner-icon: $accent;
 
 // Main Navigation 
-$navbar-background-color: $secondary;
+$navbar-background-color: white;
 $navbar-background-color-mobile: $navbar-background-color;
 
 $navbar-height: 5rem;
@@ -50,8 +55,8 @@ $logo-max-height: $navbar-height;
 $logo-bg-colour: lighten($navbar-background-color,5%);
 $logo-bg-hover-colour: lighten($logo-bg-colour,5%);
 
-$navbar-item-color: white;
-$navbar-item-hover-color: white;
+$navbar-item-color: $secondary;
+$navbar-item-hover-color: $primary;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
 $navbar-item-mobile-color: $navbar-item-color;
@@ -76,7 +81,8 @@ $sl-navigation-color: white;
 $hero-text: $text;
 $preheading-text: $primary;
 $preheading-size: 1rem;
-$hero-title-size: 2rem;
+$hero-title-size: 2.2rem;
+$hero-title-size-mobile: 1.8rem;
 $hero-text-size: 1rem;
 $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);
@@ -89,8 +95,8 @@ $bg-overlay: rgba(0, 0, 0, 0.6);
 $services-item-divider: solid 2px $tertiary;
 
 // Reviews
-$review-section-bg: $secondary;
-$review-section-text: white;
+$review-section-bg: white;
+$review-section-text: $text;
 $review-nav-text: $primary;
 $review-nav-bg: transparent;
 $review-nav-text-hover: white;

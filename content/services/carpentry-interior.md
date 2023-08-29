@@ -1,16 +1,15 @@
 ---
-title: "Interior Carpentry"
+title: "Bespoke Fitted Furniture"
 type: service-item
-desc: A wide range of professional carpentry services for inside the home
+desc: Custom-built fitted furniture, media units and storage options for your home.
 weight: 1
 image: images/bespoke-carpentry-london.jpg
 anchor:
 ---
 ## Interior Carpentry
 
-Here at {{<company>}} our expert team of carpenters are highly experienced in all aspects of {{<industry>}} for your home, including but not limited to:
+Here at {{<company>}} our expert team of highly experienced carpenters can design and fit a wide array of bespoke furniture, all custom-made and professional installed in your home. We also offer spray painting as a service to quickly refresh and update your fixtures.
 
-* Kitchen cabinets, counter worktops and flooring
-* Architraves, radiator covers and skirting
-* Custom shelving, built-in storage, fireplace surrounds
-* Door hanging, skirting and stair installation
+- Kitchen cabinets, counter worktops and dining areas
+- Custom shelving, streamer desks and TV/media units
+- Bespoke wardrobes, bookshelves and built-in storage

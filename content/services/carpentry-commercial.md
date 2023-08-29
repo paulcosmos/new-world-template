@@ -1,16 +1,15 @@
 ---
-title: Commercial Carpentry
+title: Bespoke Commercial Carpentry
 type: service-item
-desc: Carpentry services for your business or commercial property.
+desc: Bespoke storage and display units for your business or commercial premises.
 weight: 2
 image: images/commercial-carpentry-london.jpg
-anchor: "Business Carpentry"
+anchor: Commercial Carpentry
 ---
-## Commercial Carpentry
+## Bespoke Commercial Carpentry
 
-The team at {{<company>}} also offer a range of professional and competitively priced carpentry services for businesses in {{<towncity>}} and the surrounding areas, including:
+We have years of experience designing and installing bespoke storage and wooden fixtures for a wide range of businesses. From custom office shelving cupboards and drawers, to shop counters, storage and display units, whatever the size and whatever the purpose the team at {{<company>}} can tailor a solution to your needs.
 
-* Shop counters, shelving and storage
-* Custom doors and windows
-* Flooring and stairs
-* Spray-painting
+- Shop counters, shelving and office storage
+- Coffeeshop and hospitality displays
+- Spray painting also available
