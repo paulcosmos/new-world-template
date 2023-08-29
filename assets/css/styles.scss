@@ -445,7 +445,7 @@ strong {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: rgba($navbar-background-color-mobile,0.95);
+                background-color: rgba($mobile-menu-background-color,0.95);
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
@@ -898,7 +898,8 @@ strong {
 
         &-overview {
             background-color: $tertiary;
-            @include background-dots;
+            // @include background-dots;
+            background: linear-gradient(180deg, $tertiary, white);
             background-position: bottom;
             padding-bottom: 5rem;
 
