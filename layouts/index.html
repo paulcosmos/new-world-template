@@ -13,7 +13,7 @@
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
-					<div class="columns is-vcentered is-multiline is-variable is-8">
+					<div class="columns is-vcentered is-multiline is-variable is-6">
 						<div class="column is-7-desktop is-6-fullhd">
 							<div class="content company-intro-content has-accent" data-aos="fade-in">
 								{{ .Content }}
@@ -25,7 +25,7 @@
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "1200x1200 q80 Center").RelPermalink }}'
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
@@ -67,7 +67,7 @@
 
 
 					<div class="column is-12-touch is-6-desktop is-6-widescreen is-5-fullhd is-offset-1-fullhd py-6">
-						<div class="box _has-bg-secondary _has-text-white">
+						<div class="box locations-content">
 							<div class="content">
 							<h3>Where are we based and which areas do we serve?</h3>
 							<p>We are based in {{ .Site.Params.towncity }} and cover the following areas:</p>
@@ -93,7 +93,7 @@
 								scrolling="no" 
 								marginheight="0" 
 								marginwidth="0" 
-								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q=WF31TQ+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 								class="box"
 								data-aos="fade-left">
 						</iframe>

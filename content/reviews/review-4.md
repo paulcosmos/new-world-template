@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Reposition Radiator
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Jason arrived on time, worked quickly and tidily and overall did a good job for a good price.

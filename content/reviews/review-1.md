@@ -1,8 +1,8 @@
 ---
-title: James
+title: Gas Hob Connection 
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+JJ price did me a brilliant job I would definitely recommend him he's a great lad.

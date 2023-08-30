@@ -4,9 +4,11 @@ menu: ["main","footer"]
 weight: 1
 preheading: 
 areas:
-- Location 1
-- Location 2
-- Location 3
+- Huddersfield
+- Bradford
+- Leeds
+- Oldham
+- Wakefield
 
 _build:
   render: true
@@ -16,6 +18,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
 
 **{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
