@@ -1,5 +1,5 @@
 			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
+			<section class="hero is-medium hero-index">
 				{{ partial "hero/hero-image.html" . }}
 				{{- with .Site.Params }}
 				{{ if .emblem }}
@@ -25,7 +25,7 @@
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "890x1000 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "890x960 q70 Center").RelPermalink }}'
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
@@ -53,7 +53,7 @@
 							</span>
 						</div>
 					</div>
-					{{ partial "services/services-grid-images.html" . }}
+					{{ partial "services/services-image-grid.html" . }}
 				</div>
 			</section>
 
@@ -97,7 +97,8 @@
 								scrolling="no" 
 								marginheight="0" 
 								marginwidth="0" 
-								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+								center="true"
+								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q=LU11UP&amp;ll=51.885725,-0.453622&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 								class="box"
 								data-aos="fade-left">
 						</iframe>

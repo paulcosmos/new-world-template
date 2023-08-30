@@ -9,9 +9,9 @@ $family-heading-weight: 600;
 
 //  Set colours
 $primary: #c09c69;
-$secondary: #242833;
+$secondary: #2b2419;
 $info: $secondary;
-$tertiary: #F6F1EA;
+$tertiary: #e7e7e7;
 $accent: darken($primary, 0%);
 $link: $primary;
 $animated-underline: $link;
@@ -25,7 +25,10 @@ $text: $secondary;
 // Page hero settings 
 @mixin hero-default-bg {
 	background-color: $tertiary;
-	// @include background-dots;
+	background-image: linear-gradient(-180deg, rgba($tertiary, 0.5), rgba($tertiary, 1)), url('../images/bg.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
 }
 
 @mixin hero-index-bg {
@@ -90,7 +93,7 @@ $hero-cta-border: none;
 $bg-overlay: rgba(0, 0, 0, 0.6);
 
 // Services
-$services-item-divider: solid 2px $tertiary;
+$services-item-divider: solid 2px lighten($tertiary, 6%);
 
 // Reviews
 $review-section-bg: white;

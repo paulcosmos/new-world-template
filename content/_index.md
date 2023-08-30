@@ -4,9 +4,10 @@ menu: ["main","footer"]
 weight: 1
 preheading: 
 areas:
-- Location 1
-- Location 2
-- Location 3
+- Dunstable
+- Aylesbury
+- Stevenage
+- Hemel Hempstead
 
 _build:
   render: true
