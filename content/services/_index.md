@@ -7,15 +7,51 @@ preheading: "Our Services"
 image: images/placeholder.jpg
 
 services:
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
-# - service
+- Architraves
+- Barn Conversions
+- Bars
+- Beds
+- Bespoke Staircases
+- Bespoke Windows / Doors
+- Built In Furniture
+- Cabinet Makers / Handmade Furniture
+- Cladding
+- Decking
+- Door Fitting / Hanging
+- Flooring
+- General Carpentry
+- Handmade Kitchens Designed / Installed
+- Joinery
+- Log Cabins
+- Pergolas
+- Remodelling Floor Plans
+- Roofing
+- Skirting
+- Staircases
+- Truss Roofing
+- TV Units
+- Wooden / Timber Structures
+- Artexing
+- Coving
+- Dry Lining
+- Flat Ceilings
+- Insulated Rendering
+- K Rend
+- Lath Plastering
+- Lime Plastering
+- Monocouche Rendering
+- Pebble Dashing / Rough Casting
+- Plaster Mouldings
+- Plastering
+- Polished Plastering
+- Rendering
+- Screeding
+- Skimming
+- Spray Rendering
+- Tape & Jointing
+- Waterproof Plasterer
+
+
 
 _build:
   render: true

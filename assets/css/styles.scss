@@ -356,6 +356,7 @@ strong {
 
         &:before {
             @include animated-underline;
+            background-color: $accent;
             display: block;
             position: absolute;
             bottom: 25%;
@@ -381,6 +382,11 @@ strong {
             &:before {
                 display: none;
             }
+        }
+
+        .button-primary {
+           background-color: $navbar-button-bg;
+           color: $navbar-button-text;
         }
     }
 
@@ -623,6 +629,15 @@ strong {
         z-index: 20;
     }
 
+    .has-accent {
+
+        span,
+        strong {
+            color: inherit;
+            font-weight: 600 !important;
+        }
+    }
+
     &-index {
         @include hero-index-bg;
 
@@ -683,7 +698,7 @@ strong {
     &-cta {
         background-color: $hero-cta-bg;
         border-radius: $hero-cta-corner-radius;
-        @include box-shadow-offset-solid($hero-cta-shadow);
+        // @include box-shadow-offset-solid($hero-cta-shadow);
         color: white;
         font-weight: 600;
         padding: 1.25rem;
@@ -897,8 +912,8 @@ strong {
     &-services {
 
         &-overview {
-            background-color: $tertiary;
-            @include background-dots;
+            background-color: white;
+            background-image: linear-gradient(0deg, rgba(white, 1), rgba(white, 0.5), rgba(white, 1)), url('../images/bg.png');
             background-position: bottom;
             padding-bottom: 5rem;
 
@@ -1207,7 +1222,7 @@ strong {
 .cta {
 
     &-banner {
-        background-color: $secondary;
+        background-color: lighten($secondary, 2%);
         display: block;
         color: $white;
         text-align: center;
@@ -1223,17 +1238,17 @@ strong {
         // @include background-paved;
 
         a {
-            // color:white;
+            color:white;
             display: inline-block;
 
             &:after {
                 @include animated-underline;
-                background-color: white;
+                background-color: $accent;
                 width: 100%;
             }
 
             &:hover {
-                // color: $primary;
+                color: $accent;
 
                 &:after {
                     width: 0%;
@@ -1249,8 +1264,8 @@ strong {
         background-position: center right;
         background-size: cover;
         color: white;
-        padding-top: 9rem;
-        padding-bottom: 9rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
 
         @include until($navbar-breakpoint){
             background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.95)), url('../images/bg.png');

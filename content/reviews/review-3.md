@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Knock Through Two Walls
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Hayden and his team completed the works promptly, to a good standard and with minimal mess. All relevant plumbing and electrics were altered to accomodate the new space. New lowered ceiling structure was created with new insulation added.

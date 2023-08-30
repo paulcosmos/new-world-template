@@ -4,9 +4,10 @@ menu: ["main","footer"]
 weight: 1
 preheading: 
 areas:
-- Location 1
-- Location 2
-- Location 3
+- Torquay
+- Paignton
+- Dartington
+- Newton Abbot
 
 _build:
   render: true
@@ -16,6 +17,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Commercial and residential **{{<industry>}} services** throughout **{{<towncity>}}** and the Southwest.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+Full refurbishment’s including bathrooms, kitchens, and building works. Knock-throughs, extensions and all aspects of carpentry and plastering
