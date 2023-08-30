@@ -10,6 +10,6 @@ anchor:
 
 Here at {{<company>}} our expert team of highly experienced carpenters can design and fit a wide array of bespoke furniture, all custom-made and professional installed in your home. We also offer spray painting as a service to quickly refresh and update your fixtures.
 
-- Kitchen cabinets, counter worktops and dining areas
-- Custom shelving, streamer desks and TV/media units
+- Custom shelving, desks and TV/media units
 - Bespoke wardrobes, bookshelves and built-in storage
+- Radiator covers, window seats and alcove units
