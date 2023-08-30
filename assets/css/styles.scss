@@ -957,8 +957,8 @@ strong {
                     columns: 2;
                 }
 
-                @include from($desktop){
-                    columns: 3;
+                @include from($widescreen){
+                    columns: 2;
                 }
 
                 li {

@@ -13,14 +13,24 @@
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
-					<div class="columns is-vcentered is-multiline is-variable is-8">
-						<div class="column is-7-desktop is-6-fullhd">
-							<div class="content company-intro-content has-accent" data-aos="fade-in">
+					<div class="columns is-vcentered is-centered is-multiline is-variable is-8 pt-6">
+						<div class="column is-10-tablet is-10-desktop is-7-fullhd">
+							<div class="content has-text-centered company-intro-content has-accent" data-aos="fade-in">
 								{{ .Content }}
 							</div>
+
+							<div class="level container accreditations" data-aos="fade-up">
+								<div class="level-item accreditations-item has-text-centered">
+									<img src="images/creds/niceic-approved.png" alt="" title=""></a>
+								</div>
+								<div class="level-item accreditations-item has-text-centered">
+									<img src="images/creds/chas.png" alt="" title=""></a>
+								</div>
+							</div>
+
 						</div>
 
-						<div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
+						{{/*  <div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
 							<div class="image has-rounded-corners">
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
@@ -33,33 +43,30 @@
 								<img src='/images/placeholder.jpg'/>
 							{{- end }}
 							</div>
-						</div>
+						</div>  */}}
 					</div>
 				{{- end }}
 				</div>
 			</section>
 
-			{{ partial "accreditations.html" . }}
+			{{/*  {{ partial "accreditations.html" . }}  */}}
 			
 			<section class="section company-services-overview">
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column" data-aos="fade-in">
+						<div class="column has-text-centered" data-aos="fade-in">
 							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
 						</div>
-						<div class="column is-narrow" data-aos="fade-in">
-							<span class="icon company-icon">
-								<i class="fa-light fa-square-check"></i>
-							</span>
-						</div>
 					</div>
-					{{ partial "services/services-grid-images.html" . }}
+
+					{{/*  {{ partial "services/services-grid-images.html" . }}  */}}
+					{{ partial "services/services-image-list.html" . }}
 				</div>
 			</section>
 
 			{{ partial "cta-banner.html" . }}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
 			{{ if .Params.areas }}
 			<section class="section has-bg-tertiary">
@@ -97,8 +104,8 @@
 								scrolling="no" 
 								marginheight="0" 
 								marginwidth="0" 
-								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-								class="box"
+								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q=Aljay Electrical&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+								class="lazy box"
 								data-aos="fade-left">
 						</iframe>
 					</div>

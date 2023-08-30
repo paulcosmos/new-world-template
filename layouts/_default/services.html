@@ -8,12 +8,10 @@
 			<section class="section">
 				<div class="container is-fullhd company-services pb-4">
 					{{- $currentPage := . }}
-					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-						{{ partial "services/services-image-text.html" . }}
-					{{ end }}
+					{{ partial "services/services-image-list.html" . }}
 				</div>
 			</section>
-			{{ if .Params.services }}
+			{{/*  {{ if .Params.services }}
 			<section class="section">
 				<div class="container is-fullhd company-services-list pb-4">
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
@@ -30,7 +28,7 @@
 					</div>
 				</div>
 			</section>
-			{{ end }}
+			{{ end }}  */}}
 			
 			{{ partial "cta-banner.html" . }}
 			{{ partial "why-us-banner.html" . }}
