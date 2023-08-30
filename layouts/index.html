@@ -67,19 +67,23 @@
 
 
 					<div class="column is-12-touch is-6-desktop is-6-widescreen is-5-fullhd is-offset-1-fullhd py-6">
-						<div class="box _has-bg-secondary _has-text-white">
+						<div class="box locations-content">
 							<div class="content">
 							<h3>Where are we based and which areas do we serve?</h3>
 							<p>We are based in {{ .Site.Params.towncity }} and cover the following areas:</p>
 							</div>
 
-							<div class="chunky-list mb-4" data-aos="fade-right">
+							{{- $.Scratch.Set "delay" 0 }}
+							<div class="chunky-list mb-4">
 								<ul>
 								{{- range .Params.areas }}
-								<li>{{ . }}</li>
+								{{- $i := $.Scratch.Get "delay" }}
+								{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 50) }}
+								<li data-aos="fade-right" data-aos-delay="{{ print $i }}">{{ . }}</li>
 								{{ end }}
-								</ul>						
+								</ul>	
 							</div>
+							
 							<p>Not sure if we cover your area? Give us a call on <b>{{ .Site.Params.phone }}</b> or request a call from us and we'll be happy to help.</p>
 
 							<div class="mt-5" data-aos="fade-in">
