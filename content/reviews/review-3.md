@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Install Patio Doors
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Amazing workmanship this was a special request for a huge piece of glass the GSP guys are efficient and do first class work will use again for all glazing work great communication and arrive on time just brilliant Thks to them my lounge looks amazing lots of light.
