@@ -39,6 +39,7 @@
 				</div>
 			</section>
 
+
 			{{ partial "accreditations.html" . }}
 			
 			<section class="section company-services-overview">
@@ -56,6 +57,47 @@
 					{{ partial "services/services-grid-images.html" . }}
 				</div>
 			</section>
+
+			{{/*  {{ with .Site.GetPage "/services" }}
+			{{ if .Params.services }}
+			<section class="section has-bg-tertiary">
+				<div class="container is-fullhd _company-services-list pb-4">
+					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+
+
+						<div class="column is-12-touch is-6-desktop">
+							<div class="pre-heading" data-aos="fade-down">What we do</div>
+							<div class="_content has-accent service-list-2cols _company-services-list-index" data-aos="fade-right">
+								<ul>
+								{{- range .Params.services }}
+								<li>{{ . }}</li>
+								{{ end }}
+								</ul>						
+							</div>
+						</div>
+
+
+						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
+							<div class="image is-4by5 company-services-image company-services-image">
+								{{- $image := resources.Get .Params.image }}
+								{{- if $image }}
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end }}
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+			{{ end }}
+			{{ end }}  */}}
 
 			{{ partial "cta-banner.html" . }}
 
