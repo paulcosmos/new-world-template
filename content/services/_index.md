@@ -1,21 +1,30 @@
 ---
 title: Our Services
-menu: ["main"]
+menu: ["main", "footer"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: images/paint-roller.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- House house extensions
+- Painting & decorating
+- Patios and groundworks
+- General contracting
+- Waterproofing
+- Demolition services
+- Foundation services
+- Concrete driveways
+- Insulation
+- Roofing
+- Bathroom installations 
+- Bathroom tiling
+- Kitchen installations 
+- Floor & wall tiling
+- Interior & exterior painting
+- Drywall
+- Plastering
+- Wallpapering
 
 _build:
   render: true

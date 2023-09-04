@@ -2,11 +2,11 @@
 title: 'About'
 menu: ["main","footer"]
 weight: 1
-preheading: 
+preheading: Property maintenance company in East Sussex
 areas:
-- Location 1
-- Location 2
-- Location 3
+# - Location 1
+# - Location 2
+# - Location 3
 
 _build:
   render: true

@@ -4,18 +4,16 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/lounge.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We're your **top choice** for {{<industry>}} in {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+We are a reactive and preventive maintenance company who has built up a solid customer base built on mutual trust and quality workmanship. We have lots of regular customers and also do maintenance and decorating for company's such as Henry Adams Estate Agents and Paul Moult and Associates', as well as local landlords,
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+Whether it be a leaky roof, a broken window, or some decorating that needs doing, you can depend on us.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We have a wealth of experience {{<years>}} in property maintenance. We can fix a whole slew of problems. After twenty years in the local home repair and remodelling business, we've seen a whole lot – chances are your problem isn't something we haven't seen before.
 
 
 
