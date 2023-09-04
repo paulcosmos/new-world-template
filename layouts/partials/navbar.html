@@ -7,7 +7,7 @@
 							<img src="/images/{{ .logo }}" alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" />
 							{{- else }}
 							<div class="content navbar-title">
-								{{ .company }}
+								{{ .fullname }}
 								<span>{{ .industry | humanize }} services in {{ .towncity }}</span>
 							</div>
 							{{ end -}}
