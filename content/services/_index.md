@@ -1,21 +1,20 @@
 ---
 title: Our Services
-menu: ["main"]
+# menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
 image: images/placeholder.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+# - Domestic plumbing
+# - Commercial plumbing
+# - Unvented hot water cylinders
+# - Power flushing
+# - Leak detection
+# - Heating systems
+# - Bathroom installations
+
 
 _build:
   render: true

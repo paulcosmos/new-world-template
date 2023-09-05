@@ -1,15 +1,21 @@
 			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
+			<section class="hero is-medium hero-index">
 				{{ partial "hero/hero-image.html" . }}
-				{{- with .Site.Params }}
+
+				{{/*  {{- with .Site.Params }}
 				{{ if .emblem }}
 				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
 				{{ end -}}
-				{{ end -}}
+				{{ end -}}  */}}
 			</section>
 			{{ end -}}
 
 			{{- define "main" -}}
+
+
+			{{ partial "cta-callout.html" . }}
+
+
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
@@ -40,21 +46,21 @@
 			</section>
 
 
-			{{ partial "accreditations.html" . }}
+			{{/*  {{ partial "accreditations.html" . }}  */}}
 			
 			<section class="section company-services-overview">
-				<div class="container is-fullhd">
+				<div class="container is-fluid">
 					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column" data-aos="fade-in">
+						<div class="column has-text-centered" data-aos="fade-in">
 							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
 						</div>
-						<div class="column is-narrow" data-aos="fade-in">
+						{{/*  <div class="column is-narrow" data-aos="fade-in">
 							<span class="icon company-icon">
 								<i class="fa-light fa-square-check"></i>
 							</span>
-						</div>
+						</div>  */}}
 					</div>
-					{{ partial "services/services-grid-images.html" . }}
+					{{ partial "services/services-grid-images-pages.html" . }}
 				</div>
 			</section>
 
@@ -111,8 +117,8 @@
 					<div class="column is-12-touch is-6-desktop is-6-widescreen is-5-fullhd is-offset-1-fullhd py-6">
 						<div class="box locations-content">
 							<div class="content">
-							<h3>Where are we based and which areas do we serve?</h3>
-							<p>We are based in {{ .Site.Params.towncity }} and cover the following areas:</p>
+							<h3>Which areas do we serve?</h3>
+							<p>We are based in {{ .Site.Params.towncity }} and cover the surrounding areas, including:</p>
 							</div>
 
 							{{- $.Scratch.Set "delay" 0 }}
@@ -139,7 +145,7 @@
 								scrolling="no" 
 								marginheight="0" 
 								marginwidth="0" 
-								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode | }}+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 								class="box"
 								data-aos="fade-left">
 						</iframe>
