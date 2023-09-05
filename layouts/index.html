@@ -42,7 +42,7 @@
 
 			{{ partial "accreditations.html" . }}
 			
-			<section class="section company-services-overview">
+			{{/*  <section class="section company-services-overview">
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
@@ -56,9 +56,9 @@
 					</div>
 					{{ partial "services/services-grid-images.html" . }}
 				</div>
-			</section>
+			</section>  */}}
 
-			{{/*  {{ with .Site.GetPage "/services" }}
+			{{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
 				<div class="container is-fullhd _company-services-list pb-4">
@@ -78,8 +78,8 @@
 
 
 						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
-							<div class="image is-4by5 company-services-image company-services-image">
-								{{- $image := resources.Get .Params.image }}
+							<div class="image is-1by1 company-services-image company-services-image">
+								{{- $image := resources.Get .Params.imagehome }}
 								{{- if $image }}
 								{{- with .Site.Params }}
 								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
@@ -97,14 +97,14 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}  */}}
+			{{ end }}
 
 			{{ partial "cta-banner.html" . }}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
 			{{ if .Params.areas }}
-			<section class="section has-bg-tertiary">
+			<section class="section map-section _has-bg-tertiary">
 				<div class="columns is-multiline is-variable is-8 is-centered is-vcentered">
 
 

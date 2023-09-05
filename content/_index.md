@@ -4,10 +4,14 @@ menu: ["main","footer"]
 weight: 1
 preheading: 
 areas:
-# - Location 1
-# - Location 2
-# - Location 3
-# - Location 4
+- Didsbury
+- Chorley
+- Altrincham
+- Hale
+- Heaton Moor
+- Heaton Chapel
+- Heaton Mersey
+- Heaton Norris
 
 _build:
   render: true

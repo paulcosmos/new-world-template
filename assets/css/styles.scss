@@ -1605,6 +1605,10 @@ strong {
 
 .map {
 
+    &-section {
+        background: linear-gradient(180deg, white, $tertiary);
+    }
+
     // background-color: rgba($tertiary, 1);
 
     iframe {

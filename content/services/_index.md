@@ -4,18 +4,25 @@ menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: images/services.jpg
+imagehome: images/painting-tools.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Artex
+- Artex Removal
+- Decorating Paint Effects
+- Exterior Decorating
+- Floor Painting
+- Door Painting
+- Home Decor
+- Industrial Painting
+- Interior Painting
+- Paint
+- Paint Stripping
+- Wallpapering
+- Window Painting
+- Wallpapers and Paints
+
 
 _build:
   render: true
