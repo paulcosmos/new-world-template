@@ -39,6 +39,7 @@
 				</div>
 			</section>
 
+
 			{{ partial "accreditations.html" . }}
 			
 			<section class="section company-services-overview">
@@ -57,9 +58,97 @@
 				</div>
 			</section>
 
-			{{/*  {{ partial "cta-banner.html" . }}  */}}
+			{{/*  {{ with .Site.GetPage "/services" }}
+			{{ if .Params.services }}
+			<section class="section has-bg-tertiary">
+				<div class="container is-fullhd _company-services-list pb-4">
+					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+
+
+						<div class="column is-12-touch is-6-desktop">
+							<div class="pre-heading" data-aos="fade-down">What we do</div>
+							<div class="_content has-accent service-list-2cols _company-services-list-index" data-aos="fade-right">
+								<ul>
+								{{- range .Params.services }}
+								<li>{{ . }}</li>
+								{{ end }}
+								</ul>						
+							</div>
+						</div>
+
+
+						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
+							<div class="image is-4by5 company-services-image company-services-image">
+								{{- $image := resources.Get .Params.image }}
+								{{- if $image }}
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end }}
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+			{{ end }}
+			{{ end }}  */}}
+
+			{{ partial "cta-banner.html" . }}
 
 			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
+
+			{{ if .Params.areas }}
+			<section class="section has-bg-tertiary">
+				<div class="columns is-multiline is-variable is-8 is-centered is-vcentered">
+
+
+					<div class="column is-12-touch is-6-desktop is-6-widescreen is-5-fullhd is-offset-1-fullhd py-6">
+						<div class="box locations-content">
+							<div class="content">
+								<h3>Which areas do we serve?</h3>
+								<p>We are based in {{ .Site.Params.towncity }} and cover the surrounding areas, including but not limited, to the following areas:</p>
+							</div>
+
+							{{- $.Scratch.Set "delay" 0 }}
+							<div class="chunky-list mb-4">
+								<ul>
+								{{- range .Params.areas }}
+								{{- $i := $.Scratch.Get "delay" }}
+								{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 50) }}
+								<li data-aos="fade-right" data-aos-delay="{{ print $i }}">{{ . }}</li>
+								{{ end }}
+								</ul>	
+							</div>
+							
+							<p>Not sure if we cover your area? Give us a call on <b>{{ .Site.Params.phone }}</b> or request a call from us and we'll be happy to help.</p>
+
+							<div class="mt-5" data-aos="fade-in">
+								<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">Request a callback <i class="fa-regular fa-phone-flip"></i></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="column map _py-0 is-12-touch _is-half-fullhd">
+						<iframe frameborder="0" 
+								scrolling="no" 
+								marginheight="0" 
+								marginwidth="0" 
+								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+								class="box"
+								data-aos="fade-left">
+						</iframe>
+					</div>
+
+
+				</div>
+			</section>
+			{{ end }}
 
 			{{ partial "cta-image-bg.html" . }}
 

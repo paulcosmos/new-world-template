@@ -102,7 +102,7 @@ strong {
     }
 }
 
-.has-background-tertiary {
+.has-bg-tertiary {
     background-color: $tertiary;
 }
 
@@ -331,7 +331,7 @@ strong {
             color: $link;
 
             span {
-                color: white;
+                color: inherit;
             }
         }
 
@@ -445,10 +445,13 @@ strong {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: rgba($navbar-background-color-mobile,0.95);
+                background-color: rgba($mobile-menu-background-color,0.95);
                 
                 .navbar-item {
                     color: $navbar-item-mobile-color;
+                    border-bottom: none!important;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
                 }
             }
         }
@@ -461,7 +464,25 @@ strong {
             padding: 0;
         }
 
+        // .navbar-item {
+        //     &:hover {
+
+        //         &:before {
+        //             @include from($navbar-breakpoint) {
+        //                 display: none;
+        //             }
+        //         }
+        //     }
+        // }
+
         .navbar-item {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: solid 2px $navbar-divider-background-color;
+            }
+            
             &:hover {
 
                 &:before {
@@ -593,6 +614,15 @@ strong {
         padding-bottom: 3rem;
     }
 
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-height: 110px;
+        z-index: 20;
+    }
+
     &-index {
         @include hero-index-bg;
 
@@ -606,6 +636,13 @@ strong {
 
         p {
             font-size: $hero-text-size;
+        }
+    }
+    
+    h1 {
+        font-size: $hero-title-size-mobile;
+        @include from ($navbar-breakpoint){
+            font-size: $hero-title-size;
         }
     }
 
@@ -731,6 +768,100 @@ strong {
     }
 }
 
+.big-logo {
+
+    min-height: 450px;
+    background: $secondary;
+    background-image: url('../images/logo-white.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.chunky-list {
+
+    ul {
+        margin-top: 2rem;
+        columns: 1;
+
+        @include from($tablet){
+            columns: 2;
+        }
+
+        @include from($widescreen){
+            columns: 2;
+        }
+
+        @include from($fullhd){
+            columns: 2;
+        }
+
+        li {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:before {
+                content:"\f14a";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+                color: $primary;
+            }
+
+            display: block;
+            background-color: lighten($tertiary, 2%);
+            // @include box-shadow-stripe;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            outline: solid 1px $tertiary;
+        }
+        
+    }
+}
+
+.service-list-2cols {
+
+    ul {
+        margin-top: 2rem;
+        columns: 1;
+
+        @include from($tablet){
+            columns: 2;
+        }
+
+        @include from($desktop){
+            columns: 2;
+        }
+
+        @include from($fullhd){
+            columns: 2;
+        }
+
+        li {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:before {
+                content:"\f14a";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+                color: $primary;
+            }
+
+            display: block;
+            background-color: lighten(white, 2%);
+            @include box-shadow-stripe;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            outline: solid 1px $tertiary;
+        }
+        
+    }
+}
+
 .social-links {
     fill: inherit;
     display: grid;
@@ -810,6 +941,7 @@ strong {
         &-overview {
             background-color: $tertiary;
             // @include background-dots;
+            background: linear-gradient(180deg, $tertiary, white);
             background-position: bottom;
             padding-bottom: 5rem;
 
@@ -1169,12 +1301,14 @@ strong {
         }
     }
 
-    &-finance {
-        background-color: $accent;
-        color: $text;
+    &-callout{
+        background-color: $secondary;
+        color: white;
+        @include box-shadow-below;
 
         h2 {
             margin: 0 auto;
+            font-size: 1.4rem;
         }
     }
 }
@@ -1465,9 +1599,32 @@ strong {
 }
 
 // Map section
+.locations-content {
+    color: $text;
+}
+
 .map {
-    margin-bottom: 3rem;
-    width: 100%;
+
+    // background-color: rgba($tertiary, 1);
+
+    iframe {
+        pointer-events: none;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        top: 150px;
+        filter: grayscale(1);
+        min-height: 600px;
+
+        @include until($navbar-breakpoint){
+            min-height: 400px;
+        }
+    }
+
+    &-content {
+        color: $text;
+    }
 }
 
 .ol-viewport {
