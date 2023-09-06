@@ -7,15 +7,11 @@ preheading: "Our Services"
 image: images/placeholder.jpg
 
 services:
+- Bodywork repair
+- Dent Removal
+- Scratch Repair
 - service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+
 
 _build:
   render: true
@@ -25,6 +21,6 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}.
+# Providing a range of **{{<industry>}} services** in {{<towncity>}}.
 
 With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.

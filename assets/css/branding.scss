@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #E62428;
+$secondary: #14161c;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -31,8 +31,8 @@ $text: $secondary;
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-image.jpg');
-	background-position: bottom;
+	background-image: linear-gradient(-249deg, rgba($secondary, 0.8), rgba($secondary, 0.8)), url('../images/hero-image.jpg');
+	// background-position: bottom;
 }
 
 $hero-index-text: white;
@@ -93,8 +93,8 @@ $bg-overlay: rgba(0, 0, 0, 0.6);
 $services-item-divider: solid 2px $tertiary;
 
 // Reviews
-$review-section-bg: white;
-$review-section-text: $text;
+$review-section-bg: $secondary;
+$review-section-text: white;
 $review-nav-text: $primary;
 $review-nav-bg: transparent;
 $review-nav-text-hover: white;
