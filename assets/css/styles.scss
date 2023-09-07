@@ -423,13 +423,15 @@ strong {
             padding: 0;
             max-width: 100%;
             max-height: $navbar-height;
+            border-radius: 50%;
 
             @include from($navbar-breakpoint) {
                 position: relative;
                 top: 0;
                 bottom: -40px;
                 left: 0;
-                max-height: 120px;
+                max-height: 140px;
+                border-radius: 0%;
             }
         }
     }

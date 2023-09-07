@@ -4,18 +4,18 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/fireplace.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We're your **top choice** for {{<industry>}} in {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+- A reputation for excellent quality and professionalism
+- Hard-working, customer focused approach to projects
+- Highly experienced and fully HETAS certified
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+{{<company>}} have been providing {{<industry>}} services in South East Wales and the South Wales Valleys for {{<years>}}. We've earned a reputation for efficiency, tidiness and professional working practices.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We are highly experienced professionals. Call us today on **{{<phone>}}** for a no obligation quote.
 
 
 
