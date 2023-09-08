@@ -6,7 +6,7 @@ preheading:
 areas:
 - Cardiff
 - Newport 
-- Chipstow
+- Chepstow
 - Caerphilly
 - Monmothshire
 - South Wales Valleys

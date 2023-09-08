@@ -10,6 +10,29 @@
 			{{ end -}}
 
 			{{- define "main" -}}
+
+			<section class="section pb-0">
+				<div class="container is-fullhd">
+
+					<div class="level container pos" data-aos="fade-up">
+						<div class="level-item pos-item has-text-centered">
+							<img src="images/01.jpg" alt="" title="">
+						</div>
+						<div class="level-item pos-item has-text-centered">
+							<img src="images/02.jpg" alt="" title="">
+						</div>
+						<div class="level-item pos-item has-text-centered">
+							<img src="images/03.jpg" alt="" title="">
+						</div>
+						<div class="level-item pos-item has-text-centered">
+							<img src="images/04.jpg" alt="" title="">
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}

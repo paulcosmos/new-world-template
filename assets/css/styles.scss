@@ -1407,6 +1407,50 @@ strong {
     }
 }
 
+
+.pos {
+    display: flex;
+
+    &-item {          
+        padding-top:1.5rem;
+        padding-bottom:1.5rem;
+        flex: 0 1 48%;
+        // margin: 0 0.5rem;
+        margin-bottom: 2rem!important;
+
+        @include from($tablet) {
+            @include until($navbar-breakpoint) {
+                padding: 0.5rem;
+                flex: 0 0 50%;
+            }
+        }
+
+        @include from($desktop) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            flex: 0 0 20%;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+        img {
+            max-height: 200px;
+            // filter: grayscale(100%);
+            transition: all 0.2s;
+            border-radius: 20px;
+
+            // &:hover {
+            //     filter: grayscale(0%);
+            // }
+        }
+    }
+}
 // Our Process
 .our-process {
 
