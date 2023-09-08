@@ -1,8 +1,8 @@
 ---
-title: James
+title: Replacing Floorboards
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Very competent and able workman. Pleasant attitude and sensible quote for work required. Job completed without any fuss or mess. Well satisfied on completion of job and would certainly recommend his services.

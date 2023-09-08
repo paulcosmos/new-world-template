@@ -7,15 +7,24 @@ preheading: "Our Services"
 image: images/placeholder.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Agricultural Building
+- Car Ports
+- Cladding
+- Concrete Garages
+- Concreting
+- Emergency Builder Service
+- Extensions / Conversions
+- Fire and Flood Renovation
+- Foundations
+- Garage Conversions
+- Garden Studios
+- General Building
+- Loft Conversions
+- Mastic Sealant
+- Partition Walls
+- Refurbishments
+- Suspended Ceilings
+- Workshop Design / Construction
 
 _build:
   render: true
