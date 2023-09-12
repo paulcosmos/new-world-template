@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Switch Socket Change
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Ant was on time and did a great job of switching out the sockets. Definitely recommend and would use again.
