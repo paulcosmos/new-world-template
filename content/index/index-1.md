@@ -4,16 +4,16 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/multi-heat.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We provide **installation and servicing** of range cookers, stoves, wood burners & boilers in {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+{{<company>}} is proud to offer all flue linings for oil, gas and solid fuel installations for commercial and domestic customers.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+Our domain spans services in boiler and underfloor heating systems. Our team brings unparalleled quality along with reasonable prices. 
+
+Over the years, we have accumulated extensive experience offering safe and efficient repair and maintenance services for your boiler and flue system.
 
 We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
 

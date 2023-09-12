@@ -4,18 +4,18 @@ menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+
+image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Gas & Oil Boilers
+- Power Flushing
+- Underfloor Heating
+- Wood Burners
+- Wood Burning Stoves
+- Aga Installation
+- Aga Maintenance
+- Flue Lining
 
 _build:
   render: true

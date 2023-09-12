@@ -17,6 +17,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable & professional {{<industry>}} services throughout {{<county>}}.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+{{<company>}} specializes in installation and service of Aga and Rayburn cookers, Stanley and Esse cookers and boilers for customers in {{<county>}}. We are **Gas Safe registered** and **HETAS approved**.

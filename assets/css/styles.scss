@@ -863,6 +863,48 @@ strong {
     }
 }
 
+.service-list-3cols {
+
+    ul {
+        margin-top: 2rem;
+        columns: 1;
+
+        @include from($tablet){
+            columns: 2;
+        }
+
+        @include from($desktop){
+            columns: 2;
+        }
+
+        @include from($fullhd){
+            columns: 3;
+        }
+
+        li {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:before {
+                content:"\f14a";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+                color: $primary;
+            }
+
+            display: block;
+            background-color: lighten(white, 2%);
+            @include box-shadow-stripe;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            outline: solid 1px $tertiary;
+        }
+        
+    }
+}
+
 .social-links {
     fill: inherit;
     display: grid;
