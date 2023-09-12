@@ -3,7 +3,7 @@ title: Reviews
 menu: ["main","footer"]
 weight: 4
 preheading: "Customer Reviews"
-morelink:
+morelink: https://www.checkatrade.com/trades/pavestyleuk1020864/reviews
 
 type: "single"
 _build:

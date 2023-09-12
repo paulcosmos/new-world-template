@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #ca2727;
+$secondary: #11182a;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -31,8 +31,8 @@ $text: $secondary;
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-image.jpg');
-	background-position: bottom;
+	background-image: linear-gradient(-249deg, rgba($secondary, 0.8), rgba($secondary, 0.8)), url('../images/hero-image.jpg');
+	background-position: middle;
 }
 
 $hero-index-text: white;

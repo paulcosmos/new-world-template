@@ -42,7 +42,7 @@
 
 			{{ partial "accreditations.html" . }}
 			
-			<section class="section company-services-overview">
+			{{/*  <section class="section company-services-overview">
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
@@ -56,16 +56,16 @@
 					</div>
 					{{ partial "services/services-grid-images.html" . }}
 				</div>
-			</section>
+			</section>  */}}
 
-			{{/*  {{ with .Site.GetPage "/services" }}
+			{{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
 				<div class="container is-fullhd _company-services-list pb-4">
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
 
 
-						<div class="column is-12-touch is-6-desktop">
+						<div class="column is-12-touch is-12-desktop is-7-widescreen">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="_content has-accent service-list-2cols _company-services-list-index" data-aos="fade-right">
 								<ul>
@@ -97,7 +97,7 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}  */}}
+			{{ end }}
 
 			{{ partial "cta-banner.html" . }}
 

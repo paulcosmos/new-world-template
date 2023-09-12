@@ -4,18 +4,33 @@ menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Block Paving
+- Bonded Aggregate Surfacing
+- Concrete Driveways
+- Driveway Cleaning / Sealing
+- Driveway Repair
+- Driveway / Patio Design
+- Emergency Paving & Pathways
+- Gravel / Shingle Driveways
+- Patios / Paving
+- Patterned Imprinted Concrete
+- Resin Bond Surfacing
+- Resin Bound Surfacing
+- Soakaways
+- Tarmac Driveways
+- Landscaping 
+- Fencing & Gates
+- Garden Decking 
+- Indian stone 
+- Porcelin 
+- Natural stone 
+- Tarmac 
+- Resin 
+- Jetwashing
+- Garden walls  
 
 _build:
   render: true

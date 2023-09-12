@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Patio Replacement
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+John's team arrived on time and worked meticulously to take up our old patio and replace it with a lovely new one. All work was discussed and completed as agreed.
