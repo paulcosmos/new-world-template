@@ -17,6 +17,8 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable, professional **vehicle recovery, repairs** and **servicing** in {{<towncity>}}.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+Count on the team at **{{<company>}}** to get your vehicle back on the road.
+
+<!-- **{{<company>}}** been provide {{<industry>}} to both domestic and commercial customers in {{<towncity>}}. We are experienced in all aspects of the {{<industry>}} trade. -->

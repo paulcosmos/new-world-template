@@ -10,6 +10,9 @@
 			{{ end -}}
 
 			{{- define "main" -}}
+
+			{{ partial "cta-callout.html" . }}
+
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
@@ -42,7 +45,7 @@
 
 			{{ partial "accreditations.html" . }}
 			
-			<section class="section company-services-overview">
+			{{/*  <section class="section company-services-overview">
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
@@ -56,17 +59,18 @@
 					</div>
 					{{ partial "services/services-grid-images.html" . }}
 				</div>
-			</section>
+			</section>  */}}
 
-			{{/*  {{ with .Site.GetPage "/services" }}
+			{{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
+
 				<div class="container is-fullhd _company-services-list pb-4">
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
 
 
 						<div class="column is-12-touch is-12-desktop is-6-widescreen">
-							<div class="pre-heading" data-aos="fade-down">What we do</div>
+							<h2 class="pre-heading" data-aos="fade-down">What we do</h2>
 							<div class="_content has-accent service-list-2cols _company-services-list-index" data-aos="fade-right">
 								<ul>
 								{{- range .Params.services }}
@@ -78,11 +82,11 @@
 
 
 						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
-							<div class="image is-4by5 company-services-image company-services-image">
+							<div class="image is-1by1 company-services-image company-services-image">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
 								{{- with .Site.Params }}
-								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+								<img src='{{ ($image.Fill "600x600 q75 Center").RelPermalink }}' 
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
 								{{ end }}
@@ -97,25 +101,39 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}  */}}
+			{{ end }}
 
 			{{ partial "cta-banner.html" . }}
 
 			{{ partial "review-slider/review-slider.html" . }}
 
-			{{ if .Params.areas }}
+			{{/*  {{ if .Params.areas }}  */}}
 			<section class="section has-bg-tertiary">
 				<div class="columns is-multiline is-variable is-8 is-centered is-vcentered">
 
 
-					<div class="column is-12-touch is-6-desktop is-6-widescreen is-5-fullhd is-offset-1-fullhd py-6">
+					<div class="column is-12-touch is-6-desktop is-6-widescreen is-3-fullhd is-offset-1-fullhd py-6">
 						<div class="box locations-content">
 							<div class="content">
-								<h3>Which areas do we serve?</h3>
-								<p>We are based in {{ .Site.Params.towncity }} and cover the surrounding areas, including but not limited, to the following areas:</p>
+								<h3>How to find u?</h3>
+								<p>We are based in {{ .Site.Params.towncity }} just off Junctions 27 and 28 of the M1.</p>
+								<address>
+									{{- with .Site.Params }}
+									<b>{{ .fullname }},<br/></b>
+									{{ if .building }}
+									{{ .building }},<br/>
+									{{end }}
+									{{ .street }},<br/>
+									{{ .towncity }},<br/>
+									{{ if .county -}}
+									{{ .county }}, <br/>
+									{{ end -}}
+									{{ .postcode }}
+								{{- end }}
+								</address>
 							</div>
 
-							{{- $.Scratch.Set "delay" 0 }}
+							{{/*  {{- $.Scratch.Set "delay" 0 }}
 							<div class="chunky-list mb-4">
 								<ul>
 								{{- range .Params.areas }}
@@ -124,13 +142,12 @@
 								<li data-aos="fade-right" data-aos-delay="{{ print $i }}">{{ . }}</li>
 								{{ end }}
 								</ul>	
-							</div>
-							
-							<p>Not sure if we cover your area? Give us a call on <b>{{ .Site.Params.phone }}</b> or request a call from us and we'll be happy to help.</p>
+							</div>  */}}
+							<p>We also offer vehicle recovery across {{ .Site.Params.county }}. Call us now on <b>{{ .Site.Params.phone }}</b>.</p>
 
-							<div class="mt-5" data-aos="fade-in">
+							{{/*  <div class="mt-5" data-aos="fade-in">
 								<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">Request a callback <i class="fa-regular fa-phone-flip"></i></button>
-							</div>
+							</div>  */}}
 						</div>
 					</div>
 
@@ -139,7 +156,7 @@
 								scrolling="no" 
 								marginheight="0" 
 								marginwidth="0" 
-								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q=Unit 2 Rington Court, Nunn Brook Rise, Huthwaite, Sutton-in-Ashfield NG17 2PD&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 								class="box"
 								data-aos="fade-left">
 						</iframe>
@@ -148,7 +165,7 @@
 
 				</div>
 			</section>
-			{{ end }}
+			{{/*  {{ end }}  */}}
 
 			{{ partial "cta-image-bg.html" . }}
 

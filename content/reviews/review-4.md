@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: High Quality, Low Prices
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+High standards of work at damn reasonable rates and always friendly! Can't really fault them and realy do rate them!!

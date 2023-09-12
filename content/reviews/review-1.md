@@ -1,8 +1,8 @@
 ---
-title: James
+title: Double Puncture Repair
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Speedy response to help a double puncture. Top bloke and reasonably priced also. 
