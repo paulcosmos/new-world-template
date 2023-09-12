@@ -1,10 +1,10 @@
 ---
 title: Our Services
-menu: ["main"]
+# menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: images/services.jpg
 
 services:
 - New Builds
@@ -21,7 +21,6 @@ services:
 - Electrics
 - Tiling
 - Flooring
-- And more!
 
 _build:
   render: true
