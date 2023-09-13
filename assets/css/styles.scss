@@ -625,6 +625,7 @@ strong {
 
     &-index {
         @include hero-index-bg;
+        // padding-bottom: +110px; // add the height of the wave.svg
 
         h1,
         h2 {

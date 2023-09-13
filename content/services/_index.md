@@ -4,7 +4,7 @@ menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: images/services.jpg
 
 services:
 - service
