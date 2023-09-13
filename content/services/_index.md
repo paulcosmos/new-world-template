@@ -4,18 +4,18 @@ menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Roofing
+- Groundworks
+- Landscaping
+- Damp Proofing
+- Damp Detection
+- Damp Repair
+- Property Renovations
+- General Building 
+- Carpentry
 
 _build:
   render: true
