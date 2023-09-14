@@ -4,10 +4,10 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/dean-berry-electrical.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We're your **top choice** for an electrician in {{<towncity>}} &amp; {{<county>}}.
 
 * Many years of experience in and around {{<towncity>}}
 * A reputation for excellent quality and professionalism

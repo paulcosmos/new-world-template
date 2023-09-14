@@ -6,20 +6,21 @@
 
 		{{ define "main" }}
 			<section class="section">
-				<div class="container is-fullhd company-services pb-4">
+				<div class="container is-fullhd company-services pb-1">
 					{{- $currentPage := . }}
 					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
 						{{ partial "services/services-image-text.html" . }}
 					{{ end }}
 				</div>
 			</section>
+
 			{{ if .Params.services }}
-			<section class="section">
+			<section class="section pt-0">
 				<div class="container is-fullhd company-services-list pb-4">
-					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+					<div class="columns _company-services-item is-multiline is-vcentered is-variable is-8">
 						<div class="column is-12-touch is-12-desktop">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
-							<div class="_content has-accent company-services-list" data-aos="fade-right">
+							<div class="_content has-accent service-list-2cols" data-aos="fade-right">
 								<ul>
 								{{- range .Params.services }}
 								<li>{{ . }}</li>

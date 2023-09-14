@@ -3,7 +3,7 @@ title: Reviews
 menu: ["main","footer"]
 weight: 4
 preheading: "Customer Reviews"
-morelink:
+morelink: https://www.checkatrade.com/trades/deanberryelectricalservices/reviews
 
 type: "single"
 _build:

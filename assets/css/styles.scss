@@ -1071,10 +1071,13 @@ strong {
 
         &-item {
 
+            // margin-bottom: $size-1 !important;
+            padding-bottom: $size-1;
+            border-bottom: $services-item-divider;
+            
             &:not(:last-child) {
                 margin-bottom: $size-1 !important;
-                padding-bottom: $size-3;
-                border-bottom: $services-item-divider;
+                // border-bottom: $services-item-divider;
             }
 
             &:last-child {
