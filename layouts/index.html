@@ -10,6 +10,11 @@
 			{{ end -}}
 
 			{{- define "main" -}}
+
+			
+			{{ partial "cta-callout.html" . }}
+
+
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
