@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Quicker & Cheaper than RAC
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+My dad had to have his car drained when he put wrong fuel in. The guy who came was great, very helpful and got there pretty quick. Quicker than the RAC who wanted to charge my dad forty pounds more and who would have taken longer to get there. Definitely recommend this service.

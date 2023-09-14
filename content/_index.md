@@ -4,10 +4,11 @@ menu: ["main","footer"]
 weight: 1
 preheading: 
 areas:
-# - Location 1
-# - Location 2
-# - Location 3
-# - Location 4
+- Fishguard
+- Swansea
+- Bridgend
+- Cardiff
+- Newport
 
 _build:
   render: true
@@ -17,6 +18,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**, {{<county>}} and beyond.
+# Reliable **{{<industry>}} services** throughout {{<county>}}.
 
-**{{<company>}}** has been providing {{<industry>}} services to both domestic and commercial customers in {{<towncity>}} and beyond for a number of years. We are experienced in all aspects of the {{<industry>}} trade.
+Based in Swansea, **{{<company>}}** provide 24 hour {{<industry>}} services throughout {{<county>}}. 

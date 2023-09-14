@@ -318,12 +318,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-7;
+        font-size: $size-6;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
         @include from($widescreen) {
-            font-size: $size-6;
+            font-size: $size-5;
         }
 
         &:hover {
@@ -625,6 +625,7 @@ strong {
 
     &-index {
         @include hero-index-bg;
+        padding-bottom: +110px;
 
         h1,
         h2 {
@@ -1657,7 +1658,7 @@ strong {
         margin: 0;
         padding: 0;
         top: 150px;
-        filter: grayscale(1);
+        // filter: grayscale(1);
         min-height: 600px;
 
         @include until($navbar-breakpoint){

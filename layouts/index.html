@@ -1,5 +1,5 @@
 			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
+			<section class="hero is-medium hero-index">
 				{{ partial "hero/hero-image.html" . }}
 				{{- with .Site.Params }}
 				{{ if .emblem }}
@@ -10,6 +10,11 @@
 			{{ end -}}
 
 			{{- define "main" -}}
+
+
+			{{ partial "cta-callout.html" . }}
+
+
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
@@ -25,7 +30,7 @@
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "1200x1000 q70 Center").RelPermalink }}'
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
@@ -42,7 +47,7 @@
 
 			{{ partial "accreditations.html" . }}
 			
-			<section class="section company-services-overview">
+			{{/*  <section class="section company-services-overview">
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
@@ -56,9 +61,9 @@
 					</div>
 					{{ partial "services/services-grid-images.html" . }}
 				</div>
-			</section>
+			</section>  */}}
 
-			{{/*  {{ with .Site.GetPage "/services" }}
+			{{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
 				<div class="container is-fullhd _company-services-list pb-4">
@@ -78,7 +83,7 @@
 
 
 						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
-							<div class="image is-4by5 company-services-image company-services-image">
+							<div class="image _is-4by5 company-services-image company-services-image">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
 								{{- with .Site.Params }}
@@ -97,7 +102,7 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}  */}}
+			{{ end }}
 
 			{{ partial "cta-banner.html" . }}
 
@@ -112,8 +117,9 @@
 						<div class="box locations-content">
 							<div class="content">
 								<h3>Which areas do we serve?</h3>
-								<p>We are based in {{ .Site.Params.towncity }} and cover the surrounding areas, including but not limited, to the following areas:</p>
+								<p>We are based in {{ .Site.Params.towncity }} and cover the whole of South Wales, including but not limited, to the following areas:</p>
 							</div>
+							<hr/>
 
 							{{- $.Scratch.Set "delay" 0 }}
 							<div class="chunky-list mb-4">
@@ -125,12 +131,12 @@
 								{{ end }}
 								</ul>	
 							</div>
-							
-							<p>Not sure if we cover your area? Give us a call on <b>{{ .Site.Params.phone }}</b> or request a call from us and we'll be happy to help.</p>
+							<hr/>
+							<p>Give us a call on <b>{{ .Site.Params.phone }}</b>. We are available 24 hours a day and can usually be at your side within 60 minutes.</p>
 
-							<div class="mt-5" data-aos="fade-in">
+							{{/*  <div class="mt-5" data-aos="fade-in">
 								<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">Request a callback <i class="fa-regular fa-phone-flip"></i></button>
-							</div>
+							</div>  */}}
 						</div>
 					</div>
 
@@ -139,7 +145,7 @@
 								scrolling="no" 
 								marginheight="0" 
 								marginwidth="0" 
-								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q=unit 6, SA1 Business Park, Langdon Rd, Port Tennant, Swansea SA1 8DB+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 								class="box"
 								data-aos="fade-left">
 						</iframe>

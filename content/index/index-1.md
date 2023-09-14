@@ -4,18 +4,19 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/wrong-fuel.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## Wrong fuel in your vehicle? We're only a phone call away.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+- Fully insured & SPA Misfuel Accredited 
+- Featured on the *Approved Garages System*.
+- RAC Approved & Trading Standards recommended.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+We are 'wrong fuel' experts covering the whole of South Wales, from Fishguard to Newport. Located in {{<towncity>}} and with a fleet of equipped vehicles, we aim to get to you within **60 minutes away** from anywhere in South Wales. 
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+If you have put the wrong fuel in your vehicle we are the only company to trust. Call us on 24 hours a day on **{{<phone>}}**. 
+
 
 
 
