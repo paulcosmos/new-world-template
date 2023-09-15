@@ -3,9 +3,12 @@ title: Our Services
 menu: ["footer"]
 weight: 2
 anchor: "Services"
-dropdown: 
 preheading: "Our Services"
-image: images/placeholder.jpg
+image: images/services.jpg
+
+services:
+
+
 _build:
   render: true
 cascade:
