@@ -58,7 +58,7 @@
 				</div>
 			</section>
 
-			{{/*  {{ with .Site.GetPage "/services" }}
+			{{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
 				<div class="container is-fullhd _company-services-list pb-4">
@@ -97,7 +97,7 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}  */}}
+			{{ end }}
 
 			{{ partial "cta-banner.html" . }}
 
@@ -112,8 +112,7 @@
 						<div class="box locations-content">
 							<div class="content">
 								<h3>Which areas do we serve?</h3>
-								<p>We are based in {{ .Site.Params.towncity }} and cover the surrounding areas, including but not limited, to the following areas:</p>
-							</div>
+								<p>We are based in {{ .Site.Params.towncity }} and cover the surrounding areas, including the following areas:</p>							</div>
 
 							{{- $.Scratch.Set "delay" 0 }}
 							<div class="chunky-list mb-4">
