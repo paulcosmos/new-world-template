@@ -29,7 +29,7 @@
 					{{- $image := resources.Get .Params.image }}
 					{{- if $image }}
 					{{- with .Site.Params }}
-						<img src='{{ ($image.Fill "1200x600 q70 Center").RelPermalink }}'
+						<img src='{{ ($image.Fill "1200x900 q70 Center").RelPermalink }}'
 							alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 							title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 					{{ end }}

@@ -3,7 +3,8 @@ title: Reviews
 menu: ["main","footer"]
 weight: 4
 preheading: "Customer Reviews"
-morelink:
+
+morelink: https://www.trustatrader.com/traders/wokingham-decorators-painter-and-decorators-wokingham#reviews 
 
 type: "single"
 _build:

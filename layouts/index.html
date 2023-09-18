@@ -58,14 +58,14 @@
 				</div>
 			</section>
 
-			{{/*  {{ with .Site.GetPage "/services" }}
+			{{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
 				<div class="container is-fullhd _company-services-list pb-4">
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
 
 
-						<div class="column is-12-touch is-12-desktop is-6-widescreen">
+						<div class="column is-12-touch is-12-desktop is-7-widescreen">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="_content has-accent service-list-2cols _company-services-list-index" data-aos="fade-right">
 								<ul>
@@ -97,7 +97,7 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}  */}}
+			{{ end }}
 
 			{{ partial "cta-banner.html" . }}
 
@@ -112,7 +112,7 @@
 						<div class="box locations-content">
 							<div class="content">
 								<h3>Which areas do we serve?</h3>
-								<p>We are based in {{ .Site.Params.towncity }} and cover the surrounding areas, including but not limited, to the following areas:</p>
+								<p>We are based in {{ .Site.Params.towncity }} and cover the surrounding areas, including the following areas:</p>
 							</div>
 
 							{{- $.Scratch.Set "delay" 0 }}
@@ -139,7 +139,7 @@
 								scrolling="no" 
 								marginheight="0" 
 								marginwidth="0" 
-								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 								class="box"
 								data-aos="fade-left">
 						</iframe>

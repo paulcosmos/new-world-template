@@ -1,13 +1,13 @@
 ---
 title: 'About'
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 1
 preheading: 
 areas:
-# - Location 1
-# - Location 2
-# - Location 3
-# - Location 4
+- Woking
+- Reading
+- Guildford
+- Henley-on-Thames
 
 _build:
   render: true
@@ -17,6 +17,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
+# Professional **{{<industry>}}** services throughout {{<county>}}.
 
 **{{<company>}}** provide {{<industry>}} services to both domestic and commercial customers in {{<towncity>}}. We are experienced in all aspects of the {{<industry>}} trade.

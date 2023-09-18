@@ -627,6 +627,17 @@ strong {
         @include hero-index-bg;
         // padding-bottom: +110px; // add the height of the wave.svg
 
+        .has-accent h1 strong {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: $primary;
+            text-decoration-thickness: 4px;
+
+            @include from ($navbar-breakpoint){
+            text-decoration-thickness: 8px;
+            }
+        }
+
         h1,
         h2 {
             font-size: $hero-title-size-mobile!important;
@@ -1310,17 +1321,16 @@ strong {
         // @include background-paved;
 
         a {
-            // color:white;
+            color:lighten($link, 55%);
             display: inline-block;
 
             &:after {
                 @include animated-underline;
-                background-color: white;
+                background-color: $link;
                 width: 100%;
             }
 
             &:hover {
-                // color: $primary;
 
                 &:after {
                     width: 0%;

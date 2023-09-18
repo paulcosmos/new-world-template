@@ -1,8 +1,8 @@
 ---
-title: James
+title: Carol
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+I am delighted with the internal decorating carried out by Steve, & have no hesitation in recommending him, as he is punctual, works neatly, cleanly, & is a consummate decorating professional.

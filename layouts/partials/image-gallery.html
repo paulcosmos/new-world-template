@@ -1,11 +1,11 @@
-				{{ $folder := .Params.name | lower | printf "assets/images/gallery/%s"}}
+				{{ $folder := .Params.name | lower | printf "assets/gallery/%s"}}
 					<div class="gallery">
 						{{- if fileExists $folder }}
 						{{ $files := readDir $folder }}
 						{{- range $files -}}
 						{{- if not .IsDir}}
 						{{- if ne .Name ".DS_Store" }}
-						{{- $image := resources.Get ( printf "images/gallery/%s" .Name ) -}}
+						{{- $image := resources.Get ( printf "gallery/%s" .Name ) -}}
 						{{- $thumb := resources.Get $image  -}}
 						<a href="{{ $image.RelPermalink }}">
 							<img 
