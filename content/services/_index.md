@@ -7,15 +7,15 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Landscaping & Groundworks
+- Fencing & Decking
+- Roofing
+- Loft Conversion
+- Property Extensions
+- Brickwork
+- Shop Fitting
+- Carpentry
+- New Builds & Construction
 
 _build:
   render: true

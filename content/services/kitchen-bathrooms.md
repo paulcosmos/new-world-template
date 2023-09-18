@@ -3,7 +3,9 @@ title: "Bathroom & Kitchen Fitting"
 type: service-item
 desc: Elegant, bespoke bathrooms and kitchens professionally designed and built to suit your style and your budget.
 weight: 3
+# image: images/kitchens.jpg
 image: images/bathrooms.jpg
+
 anchor:
 ---
 ## Bathroom & Kitchen Fitting
