@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Katherine Adele
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Highly recommend, his work is very high standard. He fitted a bathroom for us and can not fault it. Very reliable, would use again.

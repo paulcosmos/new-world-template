@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #f69b2c;
+$secondary: #191919;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -43,7 +43,7 @@ $top-banner-text: white;
 $top-banner-icon: $accent;
 
 // Main Navigation 
-$navbar-background-color: $secondary;
+$navbar-background-color: darken($secondary, 5%);
 $navbar-background-color-mobile: $navbar-background-color;
 $mobile-menu-background-color: $secondary;
 
@@ -69,7 +69,7 @@ $navbar-divider-background-color: lighten($navbar-dropdown-background-color, 5%)
 // Buttons
 $button-text: white;
 $button-bg: $primary;
-$button-bg-hover: lighten($button-bg, 10%);
+$button-bg-hover: darken($button-bg, 10%);
 
 // Modal overlay
 $sl-overlay-background: $secondary;

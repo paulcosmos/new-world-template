@@ -7,15 +7,29 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Boiler Installations
+- Boiler Replacement
+- Boiler Service & Repair
+- Boiler Work
+- Central Heating Boilers
+- Central Heating Equipment
+- Central Heating Installation
+- Central Heating Pumps
+- Central Heating Repairs
+- Central Heating Services
+- Power Flushing
+- Condensing Boilers
+- Dripping Taps
+- Emergency Plumbers
+- Gas Boilers
+- Gas Safe Work
+- Gas Safety
+- Plumbing Leaks
+- Radiator Repairs
+- Small Plumbing Jobs
+- Emergency Repairs
+
+
 
 _build:
   render: true
