@@ -4,18 +4,16 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/sd-van.jpg
 ---
 
-## We're your **top choice** for {{<industry>}} in {{<towncity>}} &amp; {{<county>}}.
+## We are a Sittingbourne based **building company** working throughout Kent.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+**{{<company>}}** is a local building company that has built up an enviable reputation {{<years>}} in the trade. We pride ourselves on our commitment to provide a professional and speedy service whilst maintaining the highest quality of work.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+We cover all aspects of the **building and construction** trade from small jobs to kitchen and bathroom installations, painting and decorating, full property renovations, house extensions, cellar and loft conversions and structural work. We also offer groundworks and landscaping services.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We are highly experienced, professional builders. Call us today on **{{<phone>}}** for a no obligation quote.
 
 
 

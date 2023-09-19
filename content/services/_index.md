@@ -7,15 +7,30 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- New Builds
+- Property Refurbishment
+- Loft conversions
+- Garage conversions
+- Cellar conversions
+- Barn Conversions
+- Basement Conversion
+- Building Conversions
+- Structural work
+- Block Paving
+- Gardens & Landscaping
+- Bricklaying
+- Property Renovations
+- Conservatories
+- Damp Proofing
+- Roofing services
+- Guttering 
+- Kitchen & Bathrooms
+- Joinery &carpentry
+- Domestic Maintenance
+- Repair Services
+- Patio Laying
+- Paving & Driveways
+- Groundworks
 
 _build:
   render: true
@@ -25,6 +40,6 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}.
+# Providing a wide range of **{{<industry>}} services** throughout {{<county>}}.
 
 With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.
