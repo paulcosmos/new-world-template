@@ -1,9 +1,9 @@
 ---
-title: "#ServiceTitle"
+title: "Retail Lighting"
 type: service-page
 layout: servicepage-images
 
-desc:
+desc: Content coming soon.
 
 bullets:
 # - Bullet point
@@ -15,14 +15,14 @@ services:
 # - service
 # - service
 
-weight: 4
-image: "images/service.jpg"
+weight: 3
+image: "images/retail-lighting.jpg"
 
-anchor:
+anchor: Retail Lighting
 _build:
   render: true
 ---
 
-## #ServiceTitle
+## Retail Lighting
 
 Content coming soon.

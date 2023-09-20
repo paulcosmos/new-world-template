@@ -46,15 +46,15 @@
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
-							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
+							<h2>Commercial services we offer</h2>
 						</div>
 						<div class="column is-narrow" data-aos="fade-in">
 							<span class="icon company-icon">
-								<i class="fa-light fa-square-check"></i>
+								<i class="fa-regular fa-bolt"></i>
 							</span>
 						</div>
 					</div>
-					{{ partial "services/services-grid-images.html" . }}
+					{{ partial "services/services-grid-images-pages.html" . }}
 				</div>
 			</section>
 
@@ -101,7 +101,7 @@
 
 			{{ partial "cta-banner.html" . }}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
 			{{ if .Params.areas }}
 			<section class="section has-bg-tertiary">

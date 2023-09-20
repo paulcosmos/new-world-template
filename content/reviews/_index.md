@@ -1,13 +1,13 @@
 ---
 title: Reviews
-menu: ["main","footer"]
+# menu: ["main","footer"]
 weight: 4
 preheading: "Customer Reviews"
 morelink:
 
 type: "single"
 _build:
-  render: true
+  render: false
 cascade:
   _build:
     list: true

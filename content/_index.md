@@ -1,6 +1,6 @@
 ---
 title: 'About'
-menu: ["main","footer"]
+menu: ["footer"]
 weight: 1
 preheading: 
 areas:
@@ -17,6 +17,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
+# Professional, **{{<industry>}} services** in {{<county>}}.
 
-**{{<company>}}** provide {{<industry>}} services to both domestic and commercial customers in {{<towncity>}}. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** provide electrical services to commercial customers in {{<county>}}. We are experienced in all aspects of the {{<industry>}} trade.
