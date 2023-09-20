@@ -19,4 +19,4 @@ cascade:
 
 # Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
 
-**{{<company>}}** provide {{<industry>}} services to both domestic and commercial customers in {{<towncity>}}. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<companyfull>}}** provide {{<industry>}} services to both domestic and commercial customers in {{<towncity>}}. We are experienced in all aspects of the {{<industry>}} trade.

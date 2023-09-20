@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #44a3b6;
+$secondary: #0B0C11;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -32,7 +32,7 @@ $text: $secondary;
 	@include background-image;
 	color: $hero-index-text;
 	background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-image.jpg');
-	// background-position: bottom;
+	background-position: bottom;
 }
 
 $hero-index-text: white;
@@ -51,8 +51,8 @@ $mobile-menu-background-color: $secondary;
 
 $logo-max-width: 180px;
 $logo-max-height: $navbar-height;
-$logo-bg-colour: lighten($navbar-background-color,5%);
-$logo-bg-hover-colour: lighten($logo-bg-colour,5%);
+$logo-bg-colour: lighten($navbar-background-color,10%);
+$logo-bg-hover-colour: darken($logo-bg-colour,5%);
 
 $navbar-item-color: white;
 $navbar-item-hover-color: white;

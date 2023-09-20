@@ -7,15 +7,24 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Weekly Cleaning
+- Bi-weekly Cleaning
+- Deep Cleans
+- Office Cleans
+- Commercial Cleaning
+- Carpets & Rugs
+- Upholstery Cleans
+- Sofa Cleans
+- End of Tenancy
+- AirBnB Cleans
+- Holiday Home Cleans
+- Post-builder Cleaning
+- Oven Cleaning
+- Cooker Cleans
+- Caravan Cleaning
+- Bathroom Cleans
+- Kitchen Cleaning
+- Catering Van Cleans
 
 _build:
   render: true

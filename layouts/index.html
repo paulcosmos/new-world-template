@@ -78,11 +78,11 @@
 
 
 						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
-							<div class="image is-4by5 company-services-image company-services-image">
+							<div class="image is-1by1 company-services-image company-services-image">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
 								{{- with .Site.Params }}
-								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+								<img src='{{ ($image.Resize "x1000 q75 Center").RelPermalink }}' 
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
 								{{ end }}

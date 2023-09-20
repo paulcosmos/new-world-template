@@ -401,7 +401,7 @@ strong {
 
     &-logo-overlap {
 
-        padding: 0;
+        padding: 0.5rem;
 
         @include from($navbar-breakpoint) {
             position: relative;
