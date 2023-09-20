@@ -3,9 +3,9 @@
 						<div class="columns">
 							<div class="column is-12-tablet is-8-desktop is-7-fullhd">
 								<span class="pre-heading" data-aos="fade-left">
-								{{- if .Params.preheading -}}
+								{{ if .Params.preheading -}}
 									{{ .Params.preheading }} 
-								{{ else }}
+								{{- else -}}
 									{{ .Site.Params.industry | humanize }} services in {{ .Site.Params.towncity }}
 								{{- end }}
 								</span>
