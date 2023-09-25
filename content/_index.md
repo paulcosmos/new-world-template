@@ -17,6 +17,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
+# Reliable, professional **{{<industry>}}** in {{<towncity>}} and throughout {{<county>}}.
 
 **{{<company>}}** provide {{<industry>}} services to both domestic and commercial customers in {{<towncity>}}. We are experienced in all aspects of the {{<industry>}} trade.
