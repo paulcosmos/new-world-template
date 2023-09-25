@@ -3,7 +3,7 @@ title: "Patios & Driveways"
 type: service-item
 desc: Improve the overall look of your property whilst also increasing value with a professionally installed driveway or patio.
 weight: 2
-image: images/paving.jpg
+image: images/driveway.jpg
 anchor: 
 ---
 ## Paving, Driveways & Patios

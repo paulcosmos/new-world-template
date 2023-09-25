@@ -24,6 +24,11 @@
 				<a href="https://instagram.com/{{- .instagram -}}" title="Find us on Instagram" target="_blank" rel="noopener"><img src="images/creds/instagram.png" alt="" title=""></a>
 			</div>
 			{{ end }}
+			{{- if .twitter }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://twitter.com/{{- .twitter -}}" title="Find us on Twitter" target="_blank" rel="noopener"><img src="images/creds/twitter.png" alt="" title=""></a>
+			</div>
+			{{ end }}
 			{{- if .tradesmen }}
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="https://tradesmenonline.co.uk/directory/name/{{- .tradesmen -}}" title="Find us on tradesmenonline.co.uk" target="_blank" rel="noopener"><img src="images/creds/tradesmenonline.png" alt="" title=""></a>

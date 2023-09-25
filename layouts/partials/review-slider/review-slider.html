@@ -12,8 +12,8 @@
 					</div>
 				</div>
 				<div class="columns is-multiline is-mobile review-slider">
-					{{ $slides := 6 }}
-					{{ range first $slides (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
+					{{ $slides := 4 }}
+					{{ range last $slides (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
 						{{ partial "review-slider/review-quote.html" . }}
 					{{ end -}}
 				</div>

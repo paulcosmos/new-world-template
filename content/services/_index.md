@@ -7,15 +7,23 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Barn Conversions 
+- Basement Conversion 
+- Building Conversions 
+- Building Refurbishments 
+- Building Renovations 
+- Commercial Builders 
+- Dry Lining 
+- Drywall 
+- Garage Conversions 
+- Home Improvements 
+- House Builders 
+- Paving and Driveways 
+- Loft Conversions 
+- Lofts 
+- Self Build Homes 
+- Wall Rendering 
+- Storm Damage Repairs 
 
 _build:
   render: true
@@ -25,6 +33,6 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of **{{<industry>}} services in {{<towncity>}}** and throughout {{<county>}}.
+# Providing a wide range of **{{<industry>}} services** throughout {{<towncity>}} and the surrounding areas.
 
 With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.
