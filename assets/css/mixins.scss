@@ -2,16 +2,16 @@
 @mixin section-item-title {
     color: inherit;
     font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.125;
+    font-weight: $family-heading-weight;
+    line-height: 1.5;
     word-break: break-word;
     margin-bottom:1rem;
 }
 
 @mixin x-item-title {
     color: inherit;
-    font-weight: 600;
-    font-size:1.25rem;
+    font-weight: $family-heading-weight;
+    font-size:1.8rem;
     margin-bottom: 0.75rem;
 }
 

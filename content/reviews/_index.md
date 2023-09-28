@@ -3,7 +3,7 @@ title: Reviews
 menu: ["main","footer"]
 weight: 4
 preheading: "Customer Reviews"
-morelink:
+morelink: https://www.mybuilder.com/profile/view/certifiedtrades/feedback
 
 type: "single"
 _build:

@@ -4,12 +4,13 @@
 	<div class="hero-body">
 		<div class="container is-fullhd">
 			<div class="columns">
-				<div class="column is-12-tablet is-8-desktop is-8-fullhd">
+				<div class="column is-12-tablet is-8-desktop is-7-fullhd">
 					<span class="pre-heading _has-text-white" data-aos="fade-left">
 						Our Services
 					</span>
 					<div class="content hero-services-content has-accent" data-aos="fade-down">
-						<h1>{{ .Title }} in {{ .Site.Params.towncity }}</h1>
+						<h1>{{ .Title }} in {{ .Site.Params.county }}</h1>
+						<p>{{ .Params.summary }}</p>
 					</div>
 				</div>
 			</div>
@@ -29,7 +30,7 @@
 					{{- $image := resources.Get .Params.image }}
 					{{- if $image }}
 					{{- with .Site.Params }}
-						<img src='{{ ($image.Fill "1200x600 q70 Center").RelPermalink }}'
+						<img src='{{ ($image.Fill "1200x1000 q70 Center").RelPermalink }}'
 							alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 							title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 					{{ end }}
