@@ -331,11 +331,11 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-6;
+        font-size: $size-4;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
-
-        @include from($widescreen) {
+        line-height: 1.4rem;
+        @include from($fullhd) {
             font-size: $size-4;
         }
 
@@ -350,12 +350,12 @@ strong {
 
         span {
             display: block;
-            font-size: $size-7;
+            font-size: $size-6;
             color: inherit;
             font-weight: 400;
 
             @include from($widescreen) {
-                font-size: $size-7;
+                font-size: $size-6;
             }
         }
 
