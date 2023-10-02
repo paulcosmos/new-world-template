@@ -385,15 +385,19 @@ strong {
     }
 
     &-logo {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        @include from($navbar-breakpoint) {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
 
         img {
             max-width: $logo-max-width;
             max-height: $logo-max-height;
 
             @include until($navbar-breakpoint) {
-                max-height: 3rem !important;
+                max-height: 4rem !important;
                 padding: 0;
             }
         }

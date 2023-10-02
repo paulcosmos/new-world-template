@@ -17,6 +17,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
+# Professional **{{<industry>}} services** throughout Cambridgeshire, Suffolk & Norfolk.
 
-**{{<company>}}** provide {{<industry>}} services to both domestic and commercial customers in {{<towncity>}}. We are experienced in all aspects of the {{<industry>}} trade.
+Professional Bathroom & Kitchen Fitters, Builders & Roofers working across the Cambridgeshire, Suffolk, Norfolk & the surrounding areas. Get in touch for more information or to arrange a free, no-obligation quote.

@@ -4,18 +4,18 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/unlimited.jpg
 ---
 
-## Reliable and professional **{{<industry>}}** in {{<towncity>}} &amp; {{<county>}}.
+<!-- ## Reliable and professional **{{<industry>}}** in {{<towncity>}} &amp; {{<county>}}. -->
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+## {{<company>}} specialise in residential **loft conversions,** **building extensions** and **renovations**.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+With years of experience building Loft conversions and home extensions in Cambridgeshire, Northamptonshire, Bedfordshire & Surrounding Areas, we are perfectly positioned to help you produce a beautiful addition to your home.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+You can be guaranteed of impartial, honest advice and support all the way through, whether that be developing ideas for extension or loft conversion, home extensions, conversions or that dream kitchen or bathroom.
+
+Whatever your building requirements may be, we are certain that our team can cater for all your needs. Call us today on **{{<phone>}}** to arrange a no obligation quote.
 
 
 
