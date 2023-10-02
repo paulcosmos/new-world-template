@@ -1248,7 +1248,9 @@ strong {
         opacity: 1;
         background-color: $secondary;
         transition: all 0.2s ease-in-out;
+        @include rounded-corners;
         @include box-shadow-below;
+        overflow: hidden;
 
         &:hover {
             // @include box-shadow-below();
@@ -1649,7 +1651,18 @@ strong {
 
 .map {
 
-    // background-color: rgba($tertiary, 1);
+    &-compact-container {
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    &-compact-content {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        height:100%;
+        background-color: $secondary;
+    }
 
     iframe {
         pointer-events: none;
