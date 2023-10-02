@@ -7,15 +7,21 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Loft & Garage Conversions 
+- House Extensions
+- Patios
+- Conservatories
+- Paving & Driveways
+- Landscaping
+- Groundwork 
+- Building Refurbishments
+- Maintenance & Repairs
+- New Builds 
+- Brickwork & Demolition
+- Renovations
+- Bathroom Installations
+- Kitchen Fitting
+- Tiling & Flooring
 
 _build:
   render: true

@@ -4,14 +4,14 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/patio-paving.jpg
 ---
 
-## Reliable and professional **{{<industry>}}** in {{<towncity>}} &amp; {{<county>}}.
+## Reliable and professional **builders** in {{<towncity>}} &amp; {{<county>}}.
 
 * Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+* Reputation for excellent quality and professionalism
+* Covered & protected by full liability insurance
 
 {{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
 

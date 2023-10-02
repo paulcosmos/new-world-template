@@ -10,38 +10,7 @@
 			{{ end -}}
 
 			{{- define "main" -}}
-			<section class="section company-intro">
-				<div class="container is-fullhd">
-				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
-					<div class="columns is-vcentered is-multiline is-variable is-8">
-						<div class="column is-7-desktop is-6-fullhd">
-							<div class="content company-intro-content has-accent" data-aos="fade-in">
-								{{ .Content }}
-							</div>
-						</div>
 
-						<div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
-							<div class="image has-rounded-corners">
-							{{- $image := resources.Get .Params.image }}
-							{{- if $image }}
-							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
-									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
-									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
-							{{ end }}
-							{{ else }}
-								<img src='/images/placeholder.jpg'/>
-							{{- end }}
-							</div>
-						</div>
-					</div>
-				{{- end }}
-				</div>
-			</section>
-
-
-			{{ partial "accreditations.html" . }}
-			
 			<section class="section company-services-overview">
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
@@ -78,11 +47,11 @@
 
 
 						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
-							<div class="image is-4by5 company-services-image company-services-image">
+							<div class="image is-4by3 company-services-image company-services-image">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
 								{{- with .Site.Params }}
-								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+								<img src='{{ ($image.Fit "1200x900 q75 Center").RelPermalink }}' 
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
 								{{ end }}
@@ -101,7 +70,40 @@
 
 			{{ partial "cta-banner.html" . }}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			<section class="section company-intro">
+				<div class="container is-fullhd">
+				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
+					<div class="columns is-vcentered is-multiline is-variable is-8">
+						<div class="column is-7-desktop is-6-fullhd">
+							<div class="content company-intro-content has-accent" data-aos="fade-in">
+								{{ .Content }}
+							</div>
+						</div>
+
+						<div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
+							<div class="image has-rounded-corners">
+							{{- $image := resources.Get .Params.image }}
+							{{- if $image }}
+							{{- with .Site.Params }}
+								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
+							{{ end }}
+							{{ else }}
+								<img src='/images/placeholder.jpg'/>
+							{{- end }}
+							</div>
+						</div>
+					</div>
+				{{- end }}
+				</div>
+			</section>
+
+
+			{{ partial "accreditations.html" . }}
+			
+
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
 			{{ if .Params.areas }}
 			<section class="section has-bg-tertiary">
