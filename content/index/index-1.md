@@ -4,10 +4,10 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/services.jpg
 ---
 
-## Reliable and professional **{{<industry>}}** in {{<towncity>}} &amp; {{<county>}}.
+## Reliable and professional **{{<industry>}}** services in {{<towncity>}}.
 
 * Many years of experience in and around {{<towncity>}}
 * A reputation for excellent quality and professionalism
