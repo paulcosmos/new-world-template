@@ -4,7 +4,7 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/services.jpg
 ---
 
 ## Reliable and professional **{{<industry>}}** in {{<towncity>}} &amp; {{<county>}}.

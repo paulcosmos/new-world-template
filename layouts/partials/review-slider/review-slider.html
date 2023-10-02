@@ -12,7 +12,7 @@
 					</div>
 				</div>
 				<div class="columns is-multiline is-mobile review-slider">
-					{{ $slides := 6 }}
+					{{ $slides := 4 }}
 					{{ range first $slides (where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/") }}
 						{{ partial "review-slider/review-quote.html" . }}
 					{{ end -}}

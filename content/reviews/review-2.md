@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: New Balustrade
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+{{<company>}} were very polite and all mess was fully cleared up after the job was done. Team got on with the job which was great.

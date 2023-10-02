@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Kitchen Removal
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Clear communication before the job with a a detailed breakdown of prices. Always came on time and was very polite. Good clean job and prompt contact.

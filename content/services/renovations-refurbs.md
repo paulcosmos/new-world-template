@@ -3,7 +3,7 @@ title: "Renovations & Refurbishment"
 type: service-item
 desc: Our team of skilled and reliable builders are on hand to provide a wide variety of property services that will enhance and update your home.
 weight: 2
-image: images/property-refurbishment.jpg
+image: images/renovations.jpg
 anchor:
 ---
 ## Renovations & Refurbishment
