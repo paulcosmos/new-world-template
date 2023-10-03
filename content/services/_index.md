@@ -7,15 +7,27 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Electric Cookers
+- Electric Radiators
+- Electric Range Cookers
+- Electric Showers
+- Electric Sockets
+- Electric Stoves
+- Electrical Contractors
+- EICR & Safety Checks
+- Electrical Emergencies
+- Emergency Lighting
+- Energy Efficient Lighting
+- Extractor Fans
+- Fault Finding
+- Fuseboards
+- Consumer Units
+- Garden Lighting
+- Hot Tub Wiring
+- House Rewiring
+- LED Lighting
+- Lighting Design
+- Smoke Alarms
 
 _build:
   render: true

@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Reliable Electrician
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+James, 1st fixed and 2nd fixed the electrics in my extension. He was reliable and turned up when promised and always got done what he promised. He was a tidy and competent installer and everything went to plan.

@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Efficient & Tidy
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+James was very efficient and tidy. Works were done to a great standard! Thank you James.
