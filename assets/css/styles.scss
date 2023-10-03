@@ -335,13 +335,14 @@ strong {
         font-family: $family-headings;
         font-weight: $family-heading-weight;
         line-height: 1.4rem;
+        color: $link;
         @include from($fullhd) {
             font-size: $size-4;
         }
 
         &:hover {
-            transition: color 0.3s;
-            color: $link;
+            transition: color 0.2s;
+            color: lighten($link, 12%);
 
             span {
                 color: white;
@@ -353,6 +354,7 @@ strong {
             font-size: $size-6;
             color: inherit;
             font-weight: 400;
+            color: white;
 
             @include from($widescreen) {
                 font-size: $size-6;
@@ -1755,7 +1757,7 @@ strong {
             margin-bottom: 2rem;
         }
 
-        h5 {
+        h4 {
             margin-bottom: 1rem;
             font-size: $size-4;
 
@@ -1765,7 +1767,7 @@ strong {
             }
         }
 
-        h4 {
+        h5 {
             font-weight: normal;
             font-size: $size-6;
             line-height: 1.4em;
