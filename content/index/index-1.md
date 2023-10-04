@@ -15,5 +15,7 @@ We have had many happy customers over the years that return to our service again
 
 We are a 5 star rated service on both [Google](https://www.google.com/search?q=Harrington+Removals&source=hp&ei=FzR_ZNmjIPTB8gLSpZLoDA&iflsig=AOEireoAAAAAZH9CJ6h8BskC4TShpUMLQOj5H8wDIPtU&ved=0ahUKEwiZi_DE367_AhX0oFwKHdKSBM0Q4dUDCAo&uact=5&oq=Harrington+Removals&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsIABCKBRCGAxCLAzILCAAQigUQhgMQiwMyCwgAEIoFEIYDEIsDOhAIABADEI8BEOoCEIwDEOUCOhAILhADEI8BEOoCEIwDEOUCUKEMWKEMYO8OaAJwAHgAgAFdiAFdkgEBMZgBAKABAqABAbABCrgBAQ&sclient=gws-wiz#lrd=0x487ac7e27bde4a39:0x38598446d789336b,1,,,,) and [Facebook](https://www.facebook.com/harringtonremoval/reviews).
 
+We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+
 
 
