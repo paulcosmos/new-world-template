@@ -67,7 +67,7 @@
 
 						<div class="column is-12-touch is-12-desktop is-6-widescreen">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
-							<div class="_content has-accent service-list-2cols _company-services-list-index" data-aos="fade-right">
+							<div class="_content has-accent service-list cols-2 _company-services-list-index" data-aos="fade-right">
 								<ul>
 								{{- range .Params.services }}
 								<li>{{ . }}</li>
@@ -104,49 +104,7 @@
 			{{ partial "review-slider/review-slider.html" . }}
 
 			{{ if .Params.areas }}
-			<section class="section has-bg-tertiary">
-				<div class="columns is-multiline is-variable is-8 is-centered is-vcentered">
-
-
-					<div class="column is-12-touch is-6-desktop is-6-widescreen is-5-fullhd is-offset-1-fullhd py-6">
-						<div class="box locations-content">
-							<div class="content">
-								<h3>Which areas do we serve?</h3>
-								<p>We are based in {{ .Site.Params.towncity }} and cover the surrounding areas, including the following areas:</p>							</div>
-
-							{{- $.Scratch.Set "delay" 0 }}
-							<div class="chunky-list mb-4">
-								<ul>
-								{{- range .Params.areas }}
-								{{- $i := $.Scratch.Get "delay" }}
-								{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 50) }}
-								<li data-aos="fade-right" data-aos-delay="{{ print $i }}">{{ . }}</li>
-								{{ end }}
-								</ul>	
-							</div>
-							
-							<p>Not sure if we cover your area? Give us a call on <b>{{ .Site.Params.phone }}</b> or request a call from us and we'll be happy to help.</p>
-
-							<div class="mt-5" data-aos="fade-in">
-								<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">Request a callback <i class="fa-regular fa-phone-flip"></i></button>
-							</div>
-						</div>
-					</div>
-
-					<div class="column map _py-0 is-12-touch _is-half-fullhd">
-						<iframe frameborder="0" 
-								scrolling="no" 
-								marginheight="0" 
-								marginwidth="0" 
-								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-								class="box"
-								data-aos="fade-left">
-						</iframe>
-					</div>
-
-
-				</div>
-			</section>
+			{{ partial "map-compact.html" . }}
 			{{ end }}
 
 			{{ partial "cta-image-bg.html" . }}

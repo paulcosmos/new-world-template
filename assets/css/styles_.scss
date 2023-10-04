@@ -8,7 +8,7 @@
 @import "bulma/utilities/initial-variables.sass";
 @import "bulma/utilities/mixins.sass";
 
-$button-corner-radius: 12px;
+$button-corner-radius: 40px;
 $image-corner-radius: 0.5rem;
 $navbar-breakpoint: $desktop !default;
 
@@ -106,24 +106,6 @@ strong {
     background-color: $tertiary;
 }
 
-.has-bg-secondary {
-    background-color: $secondary;
-}
-
-.has-bg-waves {
-    background-color: $secondary;
-	background-image: linear-gradient(0deg, rgba($secondary, 0.6), rgba($secondary, 0.6)), url('../images/waves.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.has-bg-waves-light {
-    background-color: $secondary;
-	background-image: linear-gradient(0deg, rgba(lighten($secondary, 20%), 0.6), rgba(lighten($secondary, 20%), 0.6)), url('../images/waves.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 // Buttons 
 .button {
     color: $secondary;
@@ -136,7 +118,6 @@ strong {
         color: $button-text !important;
         border-width: 1px;
         font-size: inherit;
-        font-weight: $family-heading-weight;
         cursor: pointer;
         justify-content: center;
         padding: 1rem;
@@ -182,13 +163,8 @@ strong {
 
     &.is-ghost {
 
-        // padding:1rem;
-        // height: 3rem;
-        // line-height: 3rem;
-
         &:after {
-            // @include animated-underline;
-            color: white;
+            @include animated-underline;
             background-color: $primary;
             width: 100%;
         }
@@ -196,7 +172,7 @@ strong {
         &:hover {
             color: $primary;
             text-decoration: none;
-            transition: all 0.2s;
+            transition: all 0.3s;
         }
     }
 }
@@ -245,42 +221,6 @@ strong {
             }
         }
     }
-}
-
-.has-checkmark {
-    ul {
-        position: relative;
-        margin-left: 0;
-
-        li {
-            list-style: none;
-            position: relative;
-            // padding-left: 1.5rem;
-            font-weight: $family-heading-weight;
-
-            &:before {
-                content: "\f00c";
-                font-family: 'FontAwesome';
-                position: relative;
-                left: 0;
-                bottom: 0;
-                line-height: 2rem;
-                text-align: center;
-                border-radius: 0%;
-                color: $primary;
-                margin-right: 0.5rem;
-            }
-        }
-    }
-}
-
-.inline-list {
-
-    li {
-        display: inline-block;
-        margin-right: 1rem;
-    }
-
 }
 
 .has-accent {
@@ -352,10 +292,6 @@ strong {
 // Navigation Menu
 @import "bulma/components/navbar.sass";
 
-// .menu-phone {
-//     border-left: solid 1px $tertiary;
-// }
-
 .navbar {
 
     @include until($navbar-breakpoint){
@@ -372,11 +308,6 @@ strong {
     &-brand {
         position: relative;
         margin-left: 0!important;
-        // @include from($navbar-breakpoint) {
-        //     position: absolute;
-        //     top: 0;
-        //     left: 32px;
-        // }
 
         .navbar-item {
             @include until($navbar-breakpoint) {
@@ -662,40 +593,6 @@ strong {
     margin-bottom: $size-5;
     display: block;
     color: $preheading-text;
-    position: relative;
-
-    &:before {
-        content:'';
-        display: inline-block;
-        position: relative;
-        top: -4px;
-        left: 0;
-        width: 1.6rem;
-        height: 2px;
-        margin-right: .2rem;
-        background-color: $primary;
-        transform: translateY(-50%);
-    }
-
-
-    // &.inset {
-    //     // margin-left: 2rem;
-    //     display: block;
-    //     position: relative;
-
-    //     &:before {
-    //         content:'';
-    //         display: inline-block;
-    //         position: relative;
-    //         top: -4px;
-    //         left: 0;
-    //         width: 1.6rem;
-    //         height: 2px;
-    //         margin-right: .2rem;
-    //         background-color: $primary;
-    //         transform: translateY(-50%);
-    //     }
-    // }
 }
 
 // Page Content
@@ -717,10 +614,6 @@ strong {
         padding-bottom: 3rem;
     }
 
-    &-body {
-        text-transform: inherit;
-    }
-
     .wave {
         position: absolute;
         bottom: 0;
@@ -732,6 +625,7 @@ strong {
 
     &-index {
         @include hero-index-bg;
+        // padding-bottom: +110px; // add the height of the wave.svg
 
         h1,
         h2 {
@@ -754,38 +648,19 @@ strong {
         }
     }
 
-    // Background images for pages
-
-    &-services {
-        background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-services.jpg');
-    }
-
-    &-gallery {
-        background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-gallery.jpg');
-    }
-
-    &-reviews {
-        background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-reviews.jpg');
-    }
-
-    &-contact {
-        background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-contact.jpg');
-    }
-
     &-service {
         color: white;
         background: none;
         background-color: $secondary;
-        background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/waves.svg');
+        background-image: url('../images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         padding: 0;
     }
 
-
     &-fail {
-        // color: inherit;
+        color: inherit;
         text-align: inherit;
 
         .has-accent {
@@ -809,8 +684,8 @@ strong {
 
     &-cta {
         background-color: $hero-cta-bg;
-        // border-radius: $hero-cta-corner-radius;
-        // @include box-shadow-offset-solid($hero-cta-shadow);
+        border-radius: $hero-cta-corner-radius;
+        @include box-shadow-offset-solid($hero-cta-shadow);
         color: white;
         font-weight: 600;
         padding: 1.25rem;
@@ -823,7 +698,6 @@ strong {
 
         h4 {
             display: inline-block;
-            font-family: $family-sans-serif;
             font-size: 150%;
             font-weight: bold;
             width: 100%;
@@ -948,19 +822,6 @@ strong {
     }
 }
 
-.service-column {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    height: 100%;
-
-    img {
-        &:hover{
-            opacity: 0.6;
-        }
-    }
-}
-
 .service-list {
 
     ul {
@@ -1003,45 +864,45 @@ strong {
     }
 }
 
-// .3-cols {
+.cols-2 {
 
-//     ul {
-//         margin-top: 2rem;
-//         columns: 1;
+    ul {
+        margin-top: 2rem;
+        columns: 1;
 
-//         @include from($tablet){
-//             columns: 2;
-//         }
+        @include from($tablet){
+            columns: 2;
+        }
 
-//         @include from($desktop){
-//             columns: 2;
-//         }
+        @include from($desktop){
+            columns: 2;
+        }
 
-//         @include from($fullhd){
-//             columns: 3;
-//         }
-//     }
-// }
+        @include from($fullhd){
+            columns: 2;
+        }
+    }
+}
 
-// .2-cols {
+.cols-3 {
 
-//     ul {
-//         margin-top: 2rem;
-//         columns: 1;
+    ul {
+        margin-top: 2rem;
+        columns: 1;
 
-//         @include from($tablet){
-//             columns: 2;
-//         }
+        @include from($tablet){
+            columns: 2;
+        }
 
-//         @include from($desktop){
-//             columns: 2;
-//         }
+        @include from($desktop){
+            columns: 2;
+        }
 
-//         @include from($fullhd){
-//             columns: 2;
-//         }
-//     }
-// }
+        @include from($fullhd){
+            columns: 3;
+        }
+    }
+}
 
 .social-links {
     fill: inherit;
@@ -1088,10 +949,6 @@ strong {
 
     &-intro {
 
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-        min-height: 50vh;
-
         .columns {
 
             &:not(:last-child) {
@@ -1115,15 +972,8 @@ strong {
         }
 
         .image {
-
-            @include until($navbar-breakpoint){
-                margin-top: 3rem;
-            }
             img {
                 @include box-shadow-below;
-                // @include from($navbar-breakpoint){
-                //     box-shadow: -100px 0px 100px rgba($primary, 0.4);
-                // }
             }
         }
     }
@@ -1131,9 +981,9 @@ strong {
     &-services {
 
         &-overview {
-            // background-color: $tertiary;
+            background-color: $tertiary;
             // @include background-dots;
-            // background: linear-gradient(180deg, $tertiary, white);
+            background: linear-gradient(180deg, $tertiary, white);
             background-position: bottom;
             padding-bottom: 5rem;
 
@@ -1321,9 +1171,9 @@ strong {
 
     &-card {
         @include box-shadow-stripe;
-        background-color: darken($secondary, 2%);
-        color: white;
-        // border-radius: 0.5rem;
+        background-color: white;
+        color: $text;
+        border-radius: 0.5rem;
         display: flex;
         flex-grow: 1;
         border: solid 1px lighten(black, 95%);
@@ -1397,11 +1247,11 @@ strong {
         background-color: $secondary;
         transition: all 0.2s ease-in-out;
         @include rounded-corners;
-        box-shadow: 0px 0px 00px rgba($primary, 0);
+        @include box-shadow-below;
         overflow: hidden;
 
         &:hover {
-           box-shadow: 0px 0px 8px rgba($primary, 0.8);
+            // @include box-shadow-below();
 
             img {
                 opacity: 0.4;
@@ -1455,7 +1305,7 @@ strong {
         border: solid 4px white;
         padding: 2rem;
         font-weight: 600;
-        // @include rounded-corners;
+        @include rounded-corners;
         @include box-shadow-high;
         // @include background-paved;
 
@@ -1563,6 +1413,7 @@ strong {
         padding-top:1.5rem;
         padding-bottom:1.5rem;
         flex: 0 1 100%;
+        // margin: 0 0.5rem;
         margin-bottom: 2rem!important;
 
         @include from($tablet) {
@@ -1575,7 +1426,7 @@ strong {
         @include from($desktop) {
             padding-left: 2rem;
             padding-right: 2rem;
-            flex: 0 0 12%;
+            flex: 0 0 20%;
 
             &:first-child {
                 margin-left: 0;
@@ -1587,8 +1438,8 @@ strong {
         }
         
         img {
-            max-height: 120px;
-            max-width: 200px;
+            max-height: 130px;
+            max-width: 240px;
             filter: grayscale(100%);
             transition: all 0.2s;
 
@@ -1729,7 +1580,6 @@ strong {
             @include box-shadow-offset-solid($hero-cta-shadow);
         }
     }
-    
 }
 
 // Contact Page
@@ -1744,14 +1594,14 @@ strong {
         h4,
         h5,
         h6 {
-            color: inherit;
+            color: $text;
             font-weight: $family-heading-weight;
         }
 
         p {
             font-size: $size-7;
             font-style: italic;
-            color: inherit;
+            color: $text;
         }
 
         address {
@@ -1786,12 +1636,6 @@ strong {
 
     &-form {
         padding: 0.75rem;
-
-        &-pulled {
-            @include from($desktop){
-                margin-top: -100px;
-            }
-        }
     }
 }
 
@@ -1820,7 +1664,7 @@ strong {
     }
 
     iframe {
-        // pointer-events: none;
+        pointer-events: none;
         display: flex;
         width: 100%;
         margin: 0;
@@ -1858,7 +1702,6 @@ strong {
 .site-footer {
     background-color: $site-footer-bg;
     color: $site-footer-text;
-    border-top: solid 1px lighten($secondary, 10%);
     // @include background-paved;
 
     &-company-info {
@@ -1889,21 +1732,11 @@ strong {
     }
 
     &-links {
-
-        ul {
-            list-style: none;
-            margin-left: 0;
-
-            li {
-                line-height: 1.2rem;
-            }
-        }
         a {
             font-size: $size-7;
-            color: lighten($secondary,40%);
+            color: white;
             fill: white;
             text-decoration: none;
-            // text-transform: uppercase;
             transition: color 0.3s;
             display: inline-block;
 
