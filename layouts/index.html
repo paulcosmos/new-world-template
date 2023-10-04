@@ -46,12 +46,8 @@
 				<div class="container is-fullhd">
 					<div class="columns is-multiline is-mobile is-variable is-4">
 						<div class="column" data-aos="fade-in">
-							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
-						</div>
-						<div class="column is-narrow" data-aos="fade-in">
-							<span class="icon company-icon">
-								<i class="fa-light fa-square-check"></i>
-							</span>
+							<h2>Our Services</h2>
+							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}</p>
 						</div>
 					</div>
 					{{ partial "services/services-grid-images.html" . }}
