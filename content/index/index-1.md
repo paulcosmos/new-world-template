@@ -4,12 +4,12 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/index.jpg
 ---
 
-## Reliable and professional **{{<seo>}}** in {{<towncity>}} &amp; {{<county>}}.
+## Reliable and professional **{{<seo>}}** throughout {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
+* Based in {{<towncity>}} with years of experience 
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 
