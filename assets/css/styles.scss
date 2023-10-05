@@ -227,21 +227,34 @@ strong {
         li {
             list-style: none;
             position: relative;
-            padding-left: 1.5rem;
+            // padding-left: 1.5rem;
             font-weight: $family-heading-weight;
 
+            // &:before {
+            //     content: " ";
+            //     position: absolute;
+            //     left: 0;
+            //     top: 0.5rem;
+            //     bottom: 0;
+            //     width: 0.5rem;
+            //     height: 0.5rem;
+            //     line-height: 2rem;
+            //     text-align: center;
+            //     border-radius: 50%;
+            //     background-color: $primary;
+            // }
+
             &:before {
-                content: " ";
-                position: absolute;
+                content: "\f00c";
+                font-family: 'FontAwesome';
+                position: relative;
                 left: 0;
-                top: 0.5rem;
                 bottom: 0;
-                width: 0.5rem;
-                height: 0.5rem;
                 line-height: 2rem;
                 text-align: center;
-                border-radius: 50%;
-                background-color: $primary;
+                border-radius: 0%;
+                color: $primary;
+                margin-right: 0.5rem;
             }
         }
     }
@@ -1868,7 +1881,7 @@ strong {
         }
 
         h4 {
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             font-size: $size-6;
 
             span {
@@ -1893,19 +1906,21 @@ strong {
         ul {
             list-style: none;
             margin-left: 0;
+            margin-top: 0.8rem;
 
             li {
-                line-height: 1.2rem;
+                line-height: 1.6rem;
             }
         }
+
         a {
             font-size: $size-7;
-            color: lighten($secondary,40%);
+            color: lighten($secondary,60%);
             fill: white;
             text-decoration: none;
-            // text-transform: uppercase;
             transition: color 0.3s;
             display: inline-block;
+            margin-bottom: 0.1rem;
 
             &:after {
                 @include animated-underline;

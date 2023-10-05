@@ -3,7 +3,7 @@
 					<div class="columns is-mobile is-8 is-multiline">
 
 						<div class="column is-12-mobile is-12-tablet is-4-desktop">
-							<div class="content site-footer-company-info">
+							<div class="site-footer-company-info">
 							{{- with .Site.Params }}
 								<h4>{{ .company }}</h4>
 								<h5>{{ .industry | strings.FirstUpper }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>
@@ -19,7 +19,7 @@
 						</div>
 
 						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd is-offset-1-desktop _is-narrow">
-							<div class="content site-footer-links _has-columns">
+							<div class="site-footer-links _has-columns">
 								<h4>Site Links</h4>
 								<ul>
 									{{- range .Site.Menus.footer }}
@@ -29,7 +29,7 @@
 							</div>
 						</div>
 
-						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
+						<div class="_is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
 							<div class="content site-footer-links _has-columns">
 							<h4>Primary Services</h4>
 								<ul>
@@ -47,7 +47,7 @@
 							</div>
 						</div>
 
-						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
+						<div class=" is-6-mobile _is-4-tablet _is-2-desktop">
 							<div class="content site-footer-links _has-columns">
 								<h4>Social Media</h4>
 								<ul>
