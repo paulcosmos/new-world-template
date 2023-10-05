@@ -10,5 +10,5 @@ anchor:
 
 If you're looking to improve, enhance or update your home through specialist renovation and refurbishment works, our skilled and reliable team of builders and trusted tradesmen are on hand to help. Whether it's plastering and decorating, removing or adding walls, or garages and loft conversions, we have the skills and experience to make your dream a reality.
 
-* Over {{<years>}} of building experience
-* Highly experienced expert team
+* {{<years>}} of building experience
+* Highly qualified, expert team

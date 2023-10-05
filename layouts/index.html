@@ -42,23 +42,25 @@
 
 			{{ partial "accreditations.html" . }}
 			
-			<section class="section company-services-overview">
+			<section class="section has-bg-tertiary company-services-overview">
 				<div class="container is-fullhd">
-					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column" data-aos="fade-in">
-							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
-						</div>
-						<div class="column is-narrow" data-aos="fade-in">
-							<span class="icon company-icon">
-								<i class="fa-light fa-square-check"></i>
-							</span>
+					<div class="columns is-centered is-multiline is-mobile is-variable is-4">
+						<div class="column has-text-centered _has-text-white is-12-touch is-6-fullhd" data-aos="fade-in">
+							<h2>Our Services</h2>
+							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}</p>
 						</div>
 					</div>
-					{{ partial "services/services-grid-images.html" . }}
 				</div>
+
+
+				<div class="container is-fluid mt-5">
+					{{ partial "services/services-grid-images-pages.html" . }}
+				</div>
+
+
 			</section>
 
-			{{ with .Site.GetPage "/services" }}
+			{{/*  {{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
 				<div class="container is-fullhd _company-services-list pb-4">
@@ -97,11 +99,10 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}
+			{{ end }}  */}}
 
-			{{ partial "cta-banner.html" . }}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
 			{{ if .Params.areas }}
 			{{ partial "map-compact.html" . }}

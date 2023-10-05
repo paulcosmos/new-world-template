@@ -1,21 +1,21 @@
 ---
 title: Our Services
-menu: ["main"]
+# menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- New builds
+- Property extensions
+- Garden Walls
+- Project management
+- Refurbs
+- Renovations
+- Roof Repairs
+- General groundworks
+- Domestic & commercial
 
 _build:
   render: true

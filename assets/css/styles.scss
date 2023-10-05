@@ -8,8 +8,8 @@
 @import "bulma/utilities/initial-variables.sass";
 @import "bulma/utilities/mixins.sass";
 
-$button-corner-radius: 12px;
-$image-corner-radius: 0.5rem;
+// $button-corner-radius: 12px;
+// $image-corner-radius: 0.5rem;
 $navbar-breakpoint: $desktop !default;
 
 html {
@@ -112,7 +112,7 @@ strong {
 
 .has-bg-waves {
     background-color: $secondary;
-	background-image: linear-gradient(0deg, rgba($secondary, 0.6), rgba($secondary, 0.6)), url('../images/waves.svg');
+	background-image: linear-gradient(0deg, rgba($secondary, 0.6), rgba($secondary, 0.6)), url('../images/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -387,12 +387,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-7;
+        font-size: $size-6;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
         @include from($widescreen) {
-            font-size: $size-6;
+            font-size: $size-5;
         }
 
         &:hover {
@@ -776,7 +776,7 @@ strong {
         color: white;
         background: none;
         background-color: $secondary;
-        background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/waves.svg');
+        background-image: linear-gradient(-249deg, rgba($secondary, 0.3), rgba($secondary, 0.3)), url('../images/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1088,9 +1088,9 @@ strong {
 
     &-intro {
 
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-        min-height: 50vh;
+        // padding-top: 6rem;
+        // padding-bottom: 6rem;
+        // min-height: 50vh;
 
         .columns {
 
@@ -1321,8 +1321,8 @@ strong {
 
     &-card {
         @include box-shadow-stripe;
-        background-color: darken($secondary, 2%);
-        color: white;
+        background-color: darken(white, 0%);
+        color: inherit;
         // border-radius: 0.5rem;
         display: flex;
         flex-grow: 1;
