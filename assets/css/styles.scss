@@ -1003,45 +1003,45 @@ strong {
     }
 }
 
-// .3-cols {
+.cols-2 {
 
-//     ul {
-//         margin-top: 2rem;
-//         columns: 1;
+    ul {
+        margin-top: 2rem;
+        columns: 1;
 
-//         @include from($tablet){
-//             columns: 2;
-//         }
+        @include from($tablet){
+            columns: 2;
+        }
 
-//         @include from($desktop){
-//             columns: 2;
-//         }
+        @include from($desktop){
+            columns: 2;
+        }
 
-//         @include from($fullhd){
-//             columns: 3;
-//         }
-//     }
-// }
+        @include from($fullhd){
+            columns: 2;
+        }
+    }
+}
 
-// .2-cols {
+.cols-3 {
 
-//     ul {
-//         margin-top: 2rem;
-//         columns: 1;
+    ul {
+        margin-top: 2rem;
+        columns: 1;
 
-//         @include from($tablet){
-//             columns: 2;
-//         }
+        @include from($tablet){
+            columns: 2;
+        }
 
-//         @include from($desktop){
-//             columns: 2;
-//         }
+        @include from($desktop){
+            columns: 2;
+        }
 
-//         @include from($fullhd){
-//             columns: 2;
-//         }
-//     }
-// }
+        @include from($fullhd){
+            columns: 3;
+        }
+    }
+}
 
 .social-links {
     fill: inherit;
