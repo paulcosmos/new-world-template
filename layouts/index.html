@@ -15,7 +15,7 @@
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
 					<div class="columns is-vcentered is-multiline is-variable is-8">
 						<div class="column is-7-desktop is-6-fullhd">
-							<div class="content company-intro-content has-accent" data-aos="fade-in">
+							<div class="content has-checkmark company-intro-content has-accent" data-aos="fade-in">
 								{{ .Content }}
 							</div>
 						</div>
@@ -25,7 +25,7 @@
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "1200x1100 q70 Center").RelPermalink }}'
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
@@ -42,12 +42,12 @@
 
 			{{ partial "accreditations.html" . }}
 			
-			<section class="section company-services-overview">
-				<div class="container is-fullhd">
-					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column mb-6 has-text-centered" data-aos="fade-in">
+			<section class="section has-bg-tertiary company-services-overview">
+				<div class="container is-fluid">
+					<div class="columns is-centered is-multiline is-mobile is-variable is-4">
+						<div class="column is-7-widescreen mb-6 has-text-centered" data-aos="fade-in">
 							<h2>Our Services</h2>
-							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
+							<p>We provide a wide range of {{ .Site.Params.industry }} services to domestic and commercial customers in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
 						</div>
 					</div>
 					{{ partial "services/services-grid-images.html" . }}
@@ -58,7 +58,7 @@
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
 				
-				<div class="container is-fullhd _company-services-list pb-4">
+				<div class="container is-fullhd pb-4">
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
 
 
@@ -96,9 +96,9 @@
 			{{ end }}
 			{{ end }}
 
-			{{ partial "cta-banner.html" . }}
+			{{/*  {{ partial "cta-banner.html" . }}  */}}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
 			{{ if .Params.areas }}
 			{{ partial "map-compact.html" . }}

@@ -4,14 +4,14 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/hob.jpg
 ---
 
 ## Reliable and professional **{{<seo>}}** in {{<towncity>}} &amp; {{<county>}}.
 
 * Based in {{<towncity>}} with years of experience
 * A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+* Experienced, qualified & Gas Safe registered
 
 {{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
 
