@@ -7,9 +7,9 @@ _build:
 image: images/services.jpg
 ---
 
-## Reliable and professional **electrician services** in {{<towncity>}} &amp; {{<county>}}.
+## Reliable and professional **electrician services** in {{<county>}}.
 
-* Many years of experience in and around {{<towncity>}}
+* Many years of experience in and around Outer {{<towncity>}}
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 
