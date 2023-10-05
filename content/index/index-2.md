@@ -2,7 +2,7 @@
 type: index-content
 weight: 2
 _build:
-    list: true
+    list: false
     render: false
 image: images/mobile-fitting-van.jpg
 ---
