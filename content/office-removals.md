@@ -17,7 +17,7 @@ services:
 - Quality assurance
 
 weight: 2
-image: "images/office-moves.jpg"
+image: "images/commercial-moves.jpg"
 
 anchor: Commercial Moves
 _build:

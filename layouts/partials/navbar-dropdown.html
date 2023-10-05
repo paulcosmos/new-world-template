@@ -32,19 +32,19 @@
 								</a>
 								<div class="navbar-dropdown py-0">
 							    {{- $currentPage := . }}
-								{{- range where .Site.RegularPages "Type" "service-page" }}
+								{{- range where .Site.RegularPages "Type" "service-page" -}}
 									<a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Title }}">
 									{{- if .Params.anchor -}}
-									  {{ .Params.anchor }}
+									  {{- .Params.anchor }}
 									{{- else -}}
-									  {{- .Title }}
+									  {{- .Title -}}
 									{{- end -}}
 									</a>
 									{{/*  <hr class="navbar-divider">  */}}
-								{{- end }}
-								<a class="navbar-item" href="/services.html" title="View all services">
-									View All Services
-								</a>
+								{{- end -}}
+									<a class="navbar-item" href="/services.html" title="View all services">
+										View All Services
+									</a>
 								</div>
 					      	</div>
 							{{/*  END dropdown  */}}

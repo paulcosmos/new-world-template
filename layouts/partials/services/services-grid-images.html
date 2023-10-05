@@ -6,12 +6,12 @@
 					{{- $i := $.Scratch.Get "delay" }}
 						{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
 						<div class="column is-6-tablet is-one-third-desktop is-one-fifth-widescreen company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
-							<div class="image is-1by1 _company-services-image mb-4">
+							<div class="image is-5by4 _company-services-image mb-4">
 								{{- $image := resources.Get .Params.image }}
 								<a href="/services.html#{{ anchorize .Title }}">
 								{{- if $image }}
 								{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}' 
+								<img src='{{ ($image.Fill "1200x1200 q70 Center").RelPermalink }}' 
 									class="has-rounded-corners"
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
