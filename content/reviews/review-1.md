@@ -1,8 +1,8 @@
 ---
-title: James
+title: Johnathan Whalley
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Worked alongside Mickey in the past and hopefully again in the future. He’s a great guy and a quality joiner. Highly recommended!

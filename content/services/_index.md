@@ -7,15 +7,16 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Kitchens
+- Acoustic Cladding
+- Renovations
+- Refurbishment
+- Outdoor Cladding
+- Facias
+- Joinery
+- Bespoke Carpentry
+- Building Services
+- Property Extensions
 
 _build:
   render: true
