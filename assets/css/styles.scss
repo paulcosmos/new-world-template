@@ -999,8 +999,8 @@ strong {
             @include box-shadow-stripe;
             padding: 10px;
             margin: 10px;
-            // border-radius: 8px;
             outline: solid 1px $tertiary;
+            text-transform: capitalize;
 
             &:first-child {
                 margin-top: 0;
