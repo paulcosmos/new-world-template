@@ -16,7 +16,7 @@ image: images/lion-tyres.jpg
 {{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
 
 ### Opening Hours
-- Weekdays - 8am to 6pm
+- Weekdays - 8am to 7pm
 - Saturday - 8am to 5pm
 - Sunday - 8am to 4pm
 
