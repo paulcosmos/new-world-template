@@ -6,7 +6,11 @@
 								{{ if .Params.preheading -}}
 									{{ .Params.preheading }} 
 								{{- else -}}
-									{{ .Site.Params.industry | humanize }} services in {{ .Site.Params.towncity }}
+								{{ if .Site.Params.seo }}
+									{{ .Site.Params.seo | humanize }} 
+									{{ else }} 
+									{{ .Site.Params.industry | humanize }} services 
+									{{ end }} in {{ .Site.Params.towncity }} 
 								{{- end }}
 								</span>
 								<div class="content hero-services-content has-accent" data-aos="fade-down">

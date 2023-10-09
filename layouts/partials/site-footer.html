@@ -29,8 +29,8 @@
 							</div>
 						</div>
 
-						<div class="_is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
-							<div class="content site-footer-links _has-columns">
+						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
+							<div class="site-footer-links _has-columns">
 							<h4>Primary Services</h4>
 								<ul>
 									{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
@@ -47,8 +47,8 @@
 							</div>
 						</div>
 
-						<div class=" is-6-mobile _is-4-tablet _is-2-desktop">
-							<div class="content site-footer-links _has-columns">
+						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
+							<div class=" site-footer-links _has-columns">
 								<h4>Social Media</h4>
 								<ul>
 									{{ partial "social-links-text.html" . }}
