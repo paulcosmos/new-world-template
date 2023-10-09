@@ -1,8 +1,8 @@
 ---
-title: James
+title: Keith H.
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Professional company solved all the problems with our heating system and gave very good service . Would recommend without hesitation. Thanks Kevin 
