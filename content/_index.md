@@ -11,6 +11,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout **{{<towncity>}}**.
+# Reliable, professional **{{<industry>}}** in {{<towncity>}}.
 
 **{{<company>}}** has been keeping both drivers in {{<towncity>}} on the road for a number of years.

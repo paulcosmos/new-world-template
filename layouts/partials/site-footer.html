@@ -3,7 +3,7 @@
 					<div class="columns is-mobile is-8 is-multiline">
 
 						<div class="column is-12-mobile is-12-tablet is-4-desktop">
-							<div class="content site-footer-company-info">
+							<div class="site-footer-company-info">
 							{{- with .Site.Params }}
 							<img src="/images/logo-light.png" width="280px"/>
 								{{/*  <h4>{{ .company }}</h4>
@@ -20,7 +20,7 @@
 						</div>
 
 						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd is-offset-1-desktop _is-narrow">
-							<div class="content site-footer-links _has-columns">
+							<div class="site-footer-links _has-columns">
 								<h4>Site Links</h4>
 								<ul>
 									{{- range .Site.Menus.footer }}
@@ -31,7 +31,7 @@
 						</div>
 
 						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
-							<div class="content site-footer-links _has-columns">
+							<div class="site-footer-links _has-columns">
 							<h4>Primary Services</h4>
 								<ul>
 									{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
@@ -43,12 +43,13 @@
 										{{- end -}}
 									</a></li>
 									{{- end }}
+									<li><a href="/services.html">All Services</a></li>
 								</ul>
 							</div>
 						</div>
 
-						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
-							<div class="content site-footer-links" data-aos="fade-right">
+						<div class="column is-12-mobile _is-4-tablet _is-2-desktop">
+							<div class="_content site-footer-links" data-aos="fade-right">
 								<h4>Opening Hours</h4>
 								<ul>
 									<li>Weekdays - 8am to 7pm</li>
@@ -68,10 +69,12 @@
 			</div>
 			{{ end -}}
 			{{ end -}}
-			<div class="container is-fluid site-footer-signoff">
-				<div class="content">
-					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ if .building }}{{ .building }},{{end }} {{ .street }}, {{ .towncity }}, {{ if .county }}{{ .county }}, {{ end }} {{ .postcode }}</address>
-					{{- end }}
+			<div class="site-footer-signoff">
+				<div class="container is-fullhd">
+					<div class="content">
+						{{- with .Site.Params }}
+						Website by New World Digital Media on behalf of {{ .fullname }} | <address>{{ .street }}, {{ .towncity }}, {{ .county }}, {{ .postcode }}</address> | {{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
+						{{- end }}
+					</div>
 				</div>
 			</div>
