@@ -569,7 +569,9 @@ strong {
 
         h1,
         h2 {
-            font-size: $hero-title-size;
+            @include from ($navbar-breakpoint){
+                font-size: $hero-title-size;
+            }
         }
 
         p {
