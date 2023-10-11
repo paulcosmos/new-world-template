@@ -3,7 +3,7 @@ title: Reviews
 menu: ["main","footer"]
 weight: 4
 preheading: "Customer Reviews"
-morelink:
+morelink: https://www.trustatrader.com/traders/proper-roof-ltd-roofers-roofing-derby-south-west#reviews
 
 type: "single"
 _build:

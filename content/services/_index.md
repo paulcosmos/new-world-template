@@ -1,21 +1,36 @@
 ---
 title: Our Services
-menu: ["main"]
+menu: ["main", "footer"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- New Roofs & Re-roofs
+- Domestic & Commercial
+- Industrial roofing
+- Agricultural roofs
+- Joists & Rafters
+- Roof Repairs
+- Chimney Work
+- Lead Work
+- Lead Roofs
+- Flat Roofs
+- Felt Roofs
+- Pitched Roofs
+- Garage & Extension Roofs
+- Fascias, Soffits & Guttering
+- UPVC
+- Slates
+- Tiles
+- Repointing
+- Ventilation
+- Stone Tar & Chip Coatings
+- Moss Removal
+- Roof Cleaning
+- EPDM/Rubber Roofing
+- Fibreglass Roofing
 
 _build:
   render: true

@@ -8,7 +8,7 @@
 @import "bulma/utilities/initial-variables.sass";
 @import "bulma/utilities/mixins.sass";
 
-$button-corner-radius: 12px;
+$button-corner-radius: 2px;
 $image-corner-radius: 0.5rem;
 $navbar-breakpoint: $desktop !default;
 
@@ -130,7 +130,7 @@ strong {
 
     &-primary,
     &-primary>button {
-        // @include brand-gradient;
+        @include brand-gradient;
         background-color: $button-bg;
         border-color: transparent;
         color: $button-text !important;
@@ -1101,8 +1101,8 @@ strong {
 
     &-intro {
 
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         min-height: 50vh;
 
         .columns {
@@ -1172,13 +1172,13 @@ strong {
                     margin-top: 1rem;
 
                     &:after {
-                        @include animated-underline;
+                        // @include animated-underline;
                         width: 100%;
                     }
 
                     &:hover {
                         color: $primary;
-                        margin-right: 0.5rem;
+                        // margin-right: 0.5rem;
 
                         &:after {
                             width: 100%;
@@ -1190,6 +1190,13 @@ strong {
                         }
                     }
 
+                }
+
+                .button-primary {
+                    padding: 1rem;
+                    height: auto;
+                    line-height: initial;
+                    display: block;
                 }
             }
         }
@@ -1876,6 +1883,10 @@ strong {
 
     &-company-info {
 
+        font-size: 14px;
+        font-family: $family-sans-serif;
+        color: lighten($secondary,60%);
+
         @include until($desktop) {
             margin-bottom: 2rem;
         }
@@ -1883,6 +1894,7 @@ strong {
         h4 {
             margin-bottom: 0.8rem;
             font-size: $size-6;
+            color: white;
 
             span {
                 font-size: $size-4;
@@ -1892,6 +1904,7 @@ strong {
 
         h5 {
             font-weight: normal;
+            font-family: inherit;
             font-size: $size-7;
             line-height: 1.4em;
         }

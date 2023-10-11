@@ -4,10 +4,10 @@ menu: ["main","footer"]
 weight: 1
 preheading: 
 areas:
-# - Location 1
-# - Location 2
-# - Location 3
-# - Location 4
+- Birmingham
+- Derby
+- Stafford
+- Wolverhampton
 
 _build:
   render: true
@@ -19,4 +19,4 @@ cascade:
 
 # Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
 
-**{{<company>}}** provide {{<industry>}} services to both domestic and commercial customers across {{<county>}}. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** provide {{<industry>}} services to domestic, commercial and industrial customers across {{<county>}}. We are experienced in all aspects of the {{<industry>}} trade.

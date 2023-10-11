@@ -6,11 +6,19 @@
 							<div class="site-footer-company-info">
 							{{- with .Site.Params }}
 								<h4>{{ .company }}</h4>
-								<h5>{{ .industry | strings.FirstUpper }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>
-								<div data-aos="fade-right" data-aos-easing="ease-in-back">
+								<p>{{ .industry | strings.FirstUpper }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</p>
+								
+								<div class="mt-6">
+									<p>Tel: {{ .phone }}</p>
+								</div>
+								<div class="mt-2">
+									<p>Email: {{.email }}</p>
+								</div>
+
+								{{/*  <div data-aos="fade-right" data-aos-easing="ease-in-back">
 									<a 	class="button-primary ml-0 modal-trigger" 
 										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
-								</div>
+								</div>  */}}
 							{{ end }}
 								{{/*  <div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
 								{{ partial "social-links-icons.html" . }}
@@ -25,6 +33,7 @@
 									{{- range .Site.Menus.footer }}
 									<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
 									{{- end }}
+									{{/*  <li><a href="/services.html">All Services</a></li>  */}}
 								</ul>
 							</div>
 						</div>
@@ -42,7 +51,6 @@
 										{{- end -}}
 									</a></li>
 									{{- end }}
-									<li><a href="/services.html">All Services</a></li>
 								</ul>
 							</div>
 						</div>
