@@ -5,12 +5,38 @@
 						<div class="column is-12-mobile is-12-tablet is-4-desktop">
 							<div class="site-footer-company-info">
 							{{- with .Site.Params }}
-								<h4>{{ .company }}</h4>
-								<h5>{{ .industry | strings.FirstUpper }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>
-								<div data-aos="fade-right" data-aos-easing="ease-in-back">
-									<a 	class="button-primary ml-0 modal-trigger" 
-										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
-								</div>
+								<h4><b>{{ .fullname }}</b></h4>
+								{{/*  <h5>{{ .industry | strings.FirstUpper }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>  */}}
+								<address class="is-block">
+									{{ if .building }}
+									{{ .building }},<br/>
+									{{end }}
+									{{ .street }},<br/>
+									Walton, Liverpool, <br/>
+									{{ .postcode }}
+								</address>
+								<p class="mt-3"><a href='tel:{{- replaceRE "(\\s)" "" .phone |  -}}'>{{ .phone }}</a></p>
+								<p class="mt-1"><a href="mailto:{{ .email }}">{{ .email }}</a></p>
+
+								{{/*  <address class="is-block">
+									{{ if .phone  -}}
+									<span class="icon-text">
+										<span class="icon is-small"><i class="fa-regular fa-phone"></i></span>
+										<span><a href='tel:{{- replaceRE "(\\s)" "" .phone |  -}}'>{{ .phone }}</a></span>
+									</span> 
+									{{ end -}}
+									{{ if .mobile  -}}
+									<span class="icon-text">
+										<span class="icon is-small"><i class="fa-regular fa-mobile"></i></span>
+										<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
+									</span>
+									{{ end -}}
+									<span class="icon-text">
+										<span class="icon is-small"><i class="fa-regular fa-envelope"></i></span>
+									<span><a href="mailto:{{ .email }}">{{ .email }}</a></span>
+									</span>
+								</address>  */}}
+								
 							{{ end }}
 							</div>
 						</div>
@@ -44,14 +70,14 @@
 							</div>
 						</div>
 
-						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
+						{{/*  <div class="column is-6-mobile _is-4-tablet _is-2-desktop">
 							<div class="site-footer-links _has-columns">
 								<h4>Social Media</h4>
 								<ul>
 									{{ partial "social-links-text.html" . }}
 								</ul>
 							</div>
-						</div>
+						</div>  */}}
 
 					</div>
 				</div>

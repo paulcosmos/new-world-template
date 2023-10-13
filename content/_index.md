@@ -8,7 +8,7 @@ areas:
 # - Location 2
 # - Location 3
 # - Location 4
-
+heroclass: hero-index
 _build:
   render: true
 cascade:
@@ -17,6 +17,4 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
-
-**{{<company>}}** provide {{<industry>}} services to both domestic and commercial customers across {{<county>}}. We are experienced in all aspects of the {{<industry>}} trade.
+# Experienced & professional {{<industry>}} services for candidates and businesses {{<county>}}.

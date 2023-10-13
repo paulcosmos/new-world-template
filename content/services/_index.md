@@ -1,21 +1,23 @@
 ---
 title: Our Services
-menu: ["main"]
+menu: ["main", "footer"]
 weight: 2
-anchor: "Services"
+anchor: " Services"
 preheading: "Our Services"
 image: images/services.jpg
 
+heroclass: hero-services
+
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+# - service
+# - service
+# - service
+# - service
+# - service
+# - service
+# - service
+# - service
+# - service
 
 _build:
   render: true
@@ -25,6 +27,6 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of **{{<industry>}}** services throughout {{<county>}}.
+# Providing **nationwide {{<industry>}}** services in a range of sectors.
 
 With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.

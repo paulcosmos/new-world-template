@@ -9,13 +9,9 @@ image: images/intro.jpg
 
 ## Reliable and professional **{{<seo>}}** in {{<towncity>}} &amp; {{<county>}}.
 
-* Based in {{<towncity>}} with years of experience
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+The Essential Group is Liverpool based, specialising in recruitment and the placement of staff across the country. We can help your business connect with the right candidates for your requirement needs.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
-
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+All of our recruitment specialists are experts in the industry, with 50 years of experience under their belts, so if you want to discover an amazing career opportunity see our ‘Contact Us’ page, and speak to one of our dedicated consultants to find out which job will be best suited to you.
 
 
 

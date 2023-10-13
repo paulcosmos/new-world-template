@@ -15,8 +15,8 @@
 			{{ partial "navbar.html" . }}
 
 			{{ block "hero" . -}}
-			<section class="hero is-small">
-			    {{ partial "hero/hero-text-only.html" . }}
+			<section class="hero is-small {{ .Params.heroclass }}">
+			    {{ partial "hero/hero-image.html" . }}
 			</section>
 			{{ end }}
 		</header>
@@ -27,7 +27,7 @@
 		</main>
 
 		<footer class="site-footer">
-			{{ partial "site-footer.html" . }}
+			{{ partial "site-footer-pages.html" . }}
 		</footer>
 
 		{{ partial "quote-modal.html" . }}

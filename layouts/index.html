@@ -1,20 +1,46 @@
 			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
-				{{ partial "hero/hero-image.html" . }}
-				{{- with .Site.Params }}
-				{{ if .emblem }}
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
-				{{ end -}}
-				{{ end -}}
+
+			<section class="hero is-halfheight {{ .Params.heroclass }} _pt-0">
+
+				<div class="hero-body">
+					<div class="container is-fullhd">
+						<div class="columns">
+							<div class="column is-12-tablet is-10-desktop is-10-fullhd">
+								{{/*  <span class="pre-heading inset has-text-white mb-3" data-aos="fade-left">
+								{{ if .Params.preheading -}}
+									{{ .Params.preheading }} 
+								{{- else -}}
+									{{ .Site.Params.industry | humanize }} services in {{ .Site.Params.towncity }}
+								{{- end }}
+								</span>  */}}
+								<div class="content hero-services-content has-accent" data-aos="fade-in">
+									{{ .Content }}
+								</div>
+								<div data-aos="fade-right" data-aos-easing="ease-in-back">
+									<a 	class="button-primary ml-0 px-5 modal-trigger" 
+										href="contact.html">{{ .Site.Params.modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
+
+									<span class="icon-text button is-ghost has-text-white"> 
+										<span class="icon"><i class="fa-regular fa-phone"></i></span>
+										<span><a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a></span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{/*  <div class="hero-footer has-text-centered is-size-1" data-aos="fade-down" data-aos-delay="200" data-aos-easing="ease-out-in">
+					<i class="fa-solid fa-arrow-down fa-2xs"></i>
+				</div>  */}}
 			</section>
 			{{ end -}}
 
 			{{- define "main" -}}
-			<section class="section company-intro">
+			{{/*  <section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
-					<div class="columns is-vcentered is-multiline is-variable is-8">
-						<div class="column is-7-desktop is-6-fullhd">
+					<div class="columns is-centered is-vcentered is-multiline is-variable is-8">
+						<div class="column has-text-centered is-7-desktop is-8-fullhd">
 							<div class="content company-intro-content has-accent" data-aos="fade-in">
 								{{ .Content }}
 							</div>
@@ -37,24 +63,21 @@
 					</div>
 				{{- end }}
 				</div>
-			</section>
-
-
-			{{ partial "accreditations.html" . }}
+			</section>  */}}
 			
 			<section class="section company-services-overview">
 				<div class="container is-fullhd">
-					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column mb-6 has-text-centered" data-aos="fade-in">
+					<div class="columns is-centered is-multiline is-mobile is-variable is-4">
+						<div class="column mb-6 has-text-centered is-12-touch is-10-desktop is-8-fullhd" data-aos="fade-in">
 							<h2>Our Services</h2>
-							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
+							<p>{{ .Site.Params.fullname}} are Liverpool based experts in recruitment and the placement of staff across the country. Each year we connect thousands of candidates and businesses in a multitude of industries throughout the UK. With {{ .Site.Params.years }} experience, we can help your business connect with the right candidates for your requirement needs. </p>
 						</div>
 					</div>
-					{{ partial "services/services-grid-images.html" . }}
+					{{ partial "services/services-grid-images-pages.html" . }}
 				</div>
 			</section>
 
-			{{ with .Site.GetPage "/services" }}
+			{{/*  {{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
 				
@@ -94,15 +117,17 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}
+			{{ end }}  */}}
 
-			{{ partial "cta-banner.html" . }}
+			{{/*  {{ partial "cta-banner.html" . }}  */}}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
-			{{ if .Params.areas }}
+			{{/*  {{ if .Params.areas }}  */}}
 			{{ partial "map-compact.html" . }}
-			{{ end }}
+			{{/*  {{ end }}  */}}
+
+			{{ partial "accreditations.html" . }}
 
 			{{ partial "cta-image-bg.html" . }}
 

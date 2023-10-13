@@ -12,9 +12,6 @@
 										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
 								</div>
 							{{ end }}
-								{{/*  <div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
-								{{ partial "social-links-icons.html" . }}
-								</div>  */}}
 							</div>
 						</div>
 
@@ -47,15 +44,6 @@
 							</div>
 						</div>
 
-						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
-							<div class=" site-footer-links _has-columns">
-								<h4>Social Media</h4>
-								<ul>
-									{{ partial "social-links-text.html" . }}
-								</ul>
-							</div>
-						</div>
-
 					</div>
 				</div>
 			</div>
@@ -69,7 +57,8 @@
 			<div class="container is-fluid site-footer-signoff">
 				<div class="content">
 					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ .fullname }} | {{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
+					Website by New World Digital Media on behalf of {{ .fullname }} | Company no. 09759017 | VAT no. 223710542
+					{{/*|  {{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}  */}}
 					{{- end }}
 				</div>
 			</div>

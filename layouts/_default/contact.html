@@ -1,13 +1,43 @@
 			{{ define "main" }}
-			<section class="section contact">
+			<section class="section contact has-bg-tertiary">
 				<div class="container is-fullhd">
-					<div id="map" class="map has-background-grey is-hidden-touch"></div>
-					<div class="columns is-variableis-multiline">
+					{{/*  <div id="map" class="map has-background-grey is-hidden-touch"></div>  */}}
+					{{/*  <div class="columns is-variable _is-multiline">
+						<div class="column is-4-desktop">
+							<div class="image is-4by5 company-services-image company-services-image">
+								{{- $image := resources.Get .Params.image }}
+								{{- if $image }}
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end }}
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
+						</div>
+					</div>  */}}
+					<div class="columns is-variable _is-multiline">
 
 						<div class="column is-4-desktop">
+
+							<div class="image is-1by1 company-services-image company-services-image mb-6">
+								{{- $image := resources.Get .Params.image }}
+								{{- if $image }}
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end }}
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
+
 							<div class="content contact-details mb-6" data-aos="fade-right">
 								<h2>Business Address</h2>
-								<p>Please note, our business address is purely for correspondence. We do not have a public office.</p>
+								{{/*  <p>Please note, our business address is purely for correspondence. We do not have a public office.</p>  */}}
 								<address>
 									{{- with .Site.Params }}
 									<b>{{ .fullname }},<br/></b>
@@ -15,10 +45,8 @@
 									{{ .building }},<br/>
 									{{end }}
 									{{ .street }},<br/>
-									{{ .towncity }},<br/>
-									{{ if .county -}}
-									{{ .county }}, <br/>
-									{{ end -}}
+									Walton,<br/>
+									Liverpool, <br/>
 									{{ .postcode }}
 								{{- end }}
 								</address>
@@ -26,8 +54,10 @@
 							{{  partial "contact-details.html" .  }}
 						</div>
 
-						<div class="column is-offset-2-desktop box contact-form contact-form-pulled" data-aos="fade-up">         
+						<div class="column is-offset-2-desktop" data-aos="fade-up">    
+							<div class="box contact-form contact-form-pulled">     
 										{{ partial "contact-form.html" . }}
+							</div>
 						</div>
 					</div>
 				</div>

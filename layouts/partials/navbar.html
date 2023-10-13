@@ -1,5 +1,5 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
-				<div class="container is-fluid">  
+				<div class="container is-fullhd">  
 				    <div class="navbar-brand">
 						<a class="navbar-item navbar-logo no-underline" href="/index.html">
 							{{- with .Site.Params }}
@@ -7,7 +7,7 @@
 							<img src="/images/{{ .logo }}" alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" />
 							{{- else }}
 							<div class="content navbar-title">
-								{{ .company }}
+								{{ .fullname }}
 								<span>{{ .industry | humanize }} services in {{ .towncity }}</span>
 							</div>
 							{{ end -}}
@@ -42,9 +42,9 @@
 								</div>
 							-->
 						    {{ end }}
-						    <div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
+						    {{/*  <div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
 						      <button class="button-primary"><i class="fa-light fa-envelope-circle-check pr-2"></i> {{ .Site.Params.modalbuttontext }}</button>
-						    </div>
+						    </div>  */}}
 						</div>
 					</div>
 				</div>
