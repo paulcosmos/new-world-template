@@ -7,17 +7,14 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
+- Air Source Heat Pumps
 - Bathroom Installations
 - Bathroom Plumbing
-- Blocked Drains
-- Blocked Sinks
-- Blocked Toilets
 - Boiler Engineers
 - Boiler Installations
 - Boiler Replacements
 - Boiler Service & Repair
 - Boilers
-- Burst Pipes
 - Central Heating Boilers
 - Central Heating Equipment
 - Central Heating Installation
@@ -26,16 +23,12 @@ services:
 - Central Heating Services
 - Condensing Boilers
 - Gas Safe Registered
-- Gas Safety
+- Gas Safety Inspections
 - Oil Boiler Servicing
 - Oil Heating Engineers
-- Power Flushing
-- Radiator Repairs
-- Shower Installation
-- Water Leaks
-- Water Systems
-- Wet Room Plumbing
-- Wet Rooms
+- Renewable & Eco Energy
+- Underfloor Heating
+
 
 
 _build:
