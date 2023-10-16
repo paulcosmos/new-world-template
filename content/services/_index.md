@@ -1,21 +1,27 @@
 ---
 title: Our Services
-menu: ["main"]
+menu: ["footer"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Commercial Work
+- Contract jobs
+- Dry Lining
+- Flat Ceilings
+- Liquid Screeding
+- Plaster boarding
+- Plastering
+- Polished Plastering
+- Property renovations
+- Rendering
+- Screeding
+- Skimming
+- Wall Smoothing
+- Waterproof Plasterer
+
 
 _build:
   render: true
