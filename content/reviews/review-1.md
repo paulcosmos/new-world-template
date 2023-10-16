@@ -1,8 +1,8 @@
 ---
-title: James
+title: Garden Fencing & Shed
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Very pleased with the fencing that Jay, Dianne and team provided us. Also with the removal of the sheds and the base ready for the new shed. We are hoping to use Bees again for further work in the back garden

@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Porcelain Patio
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+All work completed. Very neat and tidy. Very organised. Customer service and communication very good. The finished product we’re very happy with. Very flexible. Would use again.

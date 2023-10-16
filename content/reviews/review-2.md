@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Raised Beds
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+The guys from Bees landscaping did a fantastic job and cleaned up after themselves. Would definitely recommend.
