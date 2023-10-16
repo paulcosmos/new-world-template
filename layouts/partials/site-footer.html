@@ -33,16 +33,21 @@
 							<div class="site-footer-links _has-columns">
 							<h4>Primary Services</h4>
 								<ul>
-									{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
+									{{/*  {{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
 									<li><a href="/services.html#{{ anchorize .Title }}">
 										{{- if (ne .Params.anchor nil) }}
 											{{- .Params.anchor -}}
 										{{- else -}}
 											{{- .Title -}}
 										{{- end -}}
-									</a></li>
-									{{- end }}
+									</a></li>  */}}
+									{{/*  {{- end }}  */}}
+									<li><a href="/services.html">Kitchens & Bathrooms</a></li>
+									<li><a href="/services.html">Gas Appliances</a></li>
+									<li><a href="/services.html">Emergency Plumbing</a></li>
+									<li><a href="/services.html">Central Heating</a></li>
 									<li><a href="/services.html">All Services</a></li>
+
 								</ul>
 							</div>
 						</div>

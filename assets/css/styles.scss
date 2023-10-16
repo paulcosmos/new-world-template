@@ -1101,8 +1101,8 @@ strong {
 
     &-intro {
 
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
         min-height: 50vh;
 
         .columns {
@@ -1602,7 +1602,7 @@ strong {
         img {
             max-height: 120px;
             max-width: 200px;
-            filter: grayscale(100%);
+            filter: grayscale(0%);
             transition: all 0.2s;
 
             &:hover {

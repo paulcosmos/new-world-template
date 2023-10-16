@@ -1,8 +1,8 @@
 ---
-title: James
+title: Bathroom Installation
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Exceptional work! The attention to detail 10/10 I would definitely recommend Thank you

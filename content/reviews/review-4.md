@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Fix Leaking Toilet
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Sam was really helpful in providing a quote before work commenced. I would highly recommend for any plumbing work in the bathroom and will be keeping his number for future jobs!

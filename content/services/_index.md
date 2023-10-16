@@ -7,15 +7,25 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Bathroom & Kitchens
+- Bathroom tiling
+- Blocked Pipes
+- Central heating
+- Domestic & commercial
+- Emergency Plumbing
+- General Plumbing
+- Pipe Fitting
+- Plumbing Repairs
+- Power Flushing
+- Radiator Installation
+- Radiator Repair
+- Radiator Thermostats
+- Shower Installation
+- Shower Repair
+- Tap Repair
+- Thermal Dynamics
+- Underfloor Heating
+- Unvented cylinders
 
 _build:
   render: true
