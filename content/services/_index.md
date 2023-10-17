@@ -7,15 +7,31 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- 24 Hour Electricians
+- CCTV Installation
+- Commercial Electricians
+- Consumer units
+- Data Cabling
+- Domestic Electricians
+- EICRs & Safety
+- Electric Vehicle Charging
+- Electrical Earthing
+- Electrical Inspecting and Testing
+- Electrical Installations
+- Electrical Repairs
+- Emergency Electricians
+- Emergency lighting
+- EV Chargers
+- Fault finding
+- Fire alarm installs
+- Fuse Box Rewiring
+- Inspection and testing
+- Landlord Safety Certificates
+- Mobile Electricians
+- Outdoor Electrical Wiring
+- Rewiring
+- Security Lighting
+- Socket Replacements
 
 _build:
   render: true

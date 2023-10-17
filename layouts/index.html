@@ -10,6 +10,64 @@
 			{{ end -}}
 
 			{{- define "main" -}}
+			
+			<section class="section company-services-overview has-bg-tertiary">
+				<div class="container is-fullhd">
+					<div class="columns is-multiline is-mobile is-variable is-4">
+						<div class="column mb-6 has-text-centered" data-aos="fade-in">
+							<h2>Our Services</h2>
+							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
+						</div>
+					</div>
+					{{ partial "services/services-grid-images.html" . }}
+				</div>
+			{{/*  </section>  */}}
+
+			{{ with .Site.GetPage "/services" }}
+			{{ if .Params.services }}
+			{{/*  <section class="section has-bg-tertiary">  */}}
+				
+				<div class="container mt-6 is-fullhd _company-services-list pb-4">
+					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+
+
+						<div class="column is-12-touch is-12-desktop is-12-widescreen">
+							<div class="pre-heading" data-aos="fade-down">What we do</div>
+							<div class="_content has-accent service-list cols-3 _company-services-list-index" data-aos="fade-right">
+								<ul>
+								{{- range .Params.services }}
+								<li>{{ . }}</li>
+								{{ end }}
+								</ul>						
+							</div>
+						</div>
+
+
+						{{/*  <div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
+							<div class="image is-4by5 company-services-image company-services-image">
+								{{- $image := resources.Get .Params.image }}
+								{{- if $image }}
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end }}
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
+						</div>  */}}
+
+
+					</div>
+				</div>
+			</section>
+			{{ end }}
+			{{ end }}
+
+			{{ partial "cta-banner.html" . }}
+
+
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
@@ -25,7 +83,7 @@
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "1200x1200 q70 Center").RelPermalink }}'
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
@@ -37,68 +95,11 @@
 					</div>
 				{{- end }}
 				</div>
-			</section>
+			</section>			
 
 
 			{{ partial "accreditations.html" . }}
-			
-			<section class="section company-services-overview">
-				<div class="container is-fullhd">
-					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column mb-6 has-text-centered" data-aos="fade-in">
-							<h2>Our Services</h2>
-							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
-						</div>
-					</div>
-					{{ partial "services/services-grid-images.html" . }}
-				</div>
-			</section>
-
-			{{ with .Site.GetPage "/services" }}
-			{{ if .Params.services }}
-			<section class="section has-bg-tertiary">
-				
-				<div class="container is-fullhd _company-services-list pb-4">
-					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
-
-
-						<div class="column is-12-touch is-12-desktop is-6-widescreen">
-							<div class="pre-heading" data-aos="fade-down">What we do</div>
-							<div class="_content has-accent service-list cols-2 _company-services-list-index" data-aos="fade-right">
-								<ul>
-								{{- range .Params.services }}
-								<li>{{ . }}</li>
-								{{ end }}
-								</ul>						
-							</div>
-						</div>
-
-
-						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
-							<div class="image is-4by5 company-services-image company-services-image">
-								{{- $image := resources.Get .Params.image }}
-								{{- if $image }}
-								{{- with .Site.Params }}
-								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
-									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
-									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
-								{{ end }}
-								{{ else }}
-								<img src='/images/placeholder.jpg'/>
-								{{- end }}
-							</div>
-						</div>
-
-
-					</div>
-				</div>
-			</section>
-			{{ end }}
-			{{ end }}
-
-			{{ partial "cta-banner.html" . }}
-
-			{{ partial "review-slider/review-slider.html" . }}
+		
 
 			{{ if .Params.areas }}
 			{{ partial "map-compact.html" . }}
