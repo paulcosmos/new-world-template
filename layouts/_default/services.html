@@ -8,9 +8,9 @@
 			<section class="section">
 				<div class="container is-fullhd company-services pb-4">
 					{{- $currentPage := . }}
-					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-						{{ partial "services/services-image-text.html" . }}
-					{{ end }}
+					{{/*  {{- range where .Site.RegularPages "Type" "service-page"}}  */}}
+						{{ partial "services/services-grid-images-pages.html" . }}
+					{{/*  {{ end }}  */}}
 				</div>
 			</section>
 			{{ if .Params.services }}

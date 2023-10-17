@@ -1,21 +1,21 @@
 ---
 title: Our Services
-menu: ["main"]
+# menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- boiler installations 
+- central heating 
+- gas appliances
+- gas safety
+- general plumbing
+- heating upgrades
+- landlord certificates
+- leaks & faults
+- power flushing
 
 _build:
   render: true

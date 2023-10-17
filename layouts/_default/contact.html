@@ -10,15 +10,13 @@
 								<p>Please note, our business address is purely for correspondence. We do not have a public office.</p>
 								<address>
 									{{- with .Site.Params }}
-									<b>{{ .fullname }},<br/></b>
+									<b>{{ .fullname }}, <br/></b>
 									{{ if .building }}
-									{{ .building }},<br/>
+									{{ .building }}, <br/>
 									{{end }}
-									{{ .street }},<br/>
-									{{ .towncity }},<br/>
-									{{ if .county -}}
-									{{ .county }}, <br/>
-									{{ end -}}
+									{{ .street }}, <br/>
+									{{ .towncity }}, <br/>
+									Merseyside, <br/>
 									{{ .postcode }}
 								{{- end }}
 								</address>
