@@ -10,6 +10,21 @@
 			{{ end -}}
 
 			{{- define "main" -}}
+			<section class="section company-services-overview">
+				<div class="container is-fullhd">
+					<div class="columns is-multiline is-mobile is-variable is-4">
+						<div class="column mb-6 has-text-centered" data-aos="fade-in">
+							<h2>Our Services</h2>
+							<p>We provide a wide range of domestic and commercial {{ .Site.Params.industry }} services to customers throughout {{ .Site.Params.county }}.</p>
+						</div>
+					</div>
+					{{ partial "services/services-grid-images.html" . }}
+				</div>
+			</section>
+
+			{{ partial "cta-banner.html" . }}
+
+
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
@@ -42,19 +57,9 @@
 
 			{{ partial "accreditations.html" . }}
 			
-			<section class="section company-services-overview">
-				<div class="container is-fullhd">
-					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column mb-6 has-text-centered" data-aos="fade-in">
-							<h2>Our Services</h2>
-							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
-						</div>
-					</div>
-					{{ partial "services/services-grid-images.html" . }}
-				</div>
-			</section>
 
-			{{ with .Site.GetPage "/services" }}
+
+			{{/*  {{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
 				
@@ -94,11 +99,9 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}
+			{{ end }}  */}}
 
-			{{ partial "cta-banner.html" . }}
-
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
 			{{ if .Params.areas }}
 			{{ partial "map-compact.html" . }}

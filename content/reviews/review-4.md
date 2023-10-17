@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Ryan Hodgetts
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+I have called JEM out twice now for 2 separate jobs around the busy Christmas period. On both occasions Jon was fantastic, enthusiastic and very knowledgeable about what needed doing. I could not recommend him enough! 5* from a happy customer.

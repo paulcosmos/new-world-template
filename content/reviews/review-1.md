@@ -1,8 +1,8 @@
 ---
-title: James
+title: Adrian Dance
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+EV installation was perfect, very knowledgeable and would 1000% recommend to anyone looking for electrical works done.
