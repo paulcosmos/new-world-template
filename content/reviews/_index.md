@@ -3,7 +3,8 @@ title: Reviews
 menu: ["main","footer"]
 weight: 4
 preheading: "Customer Reviews"
-morelink:
+
+morelink: https://www.ratedpeople.com/profile/plumfixer#reviews-and-ratings
 
 type: "single"
 _build:

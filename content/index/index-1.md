@@ -10,12 +10,15 @@ image: images/intro.jpg
 ## Reliable and professional **{{<seo>}}** in {{<towncity>}} &amp; {{<county>}}.
 
 * Based in {{<towncity>}} with years of experience
-* A reputation for excellent quality and professionalism
+* City & Guilds qualified plumber
 * Hard-working, customer focused approach to projects
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. We've earned a reputation for excellent customer satisfaction and professional working practices.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+Whatever the job, we are dedicated to delivering high-quality workmanship. Whether it's repairing leaks, unclogging drains, installing new fixtures, or talking other plumbing needs, we can handle it. 
+
+Call us today on **{{<phone>}}** for a no obligation quote.
+
 
 
 

@@ -7,15 +7,32 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- 24 Hour Plumbers
+- Bathroom Plumbing
+- Blocked Drains
+- Blocked Sinks
+- Blocked Toilets
+- Burst Pipes
+- Central Heating Boilers
+- Central Heating Equipment
+- Central Heating Pumps
+- Central Heating Repairs
+- Central Heating Services
+- Drainage Systems
+- Dripping Taps
+- Gas Plumbers
+- Heating Engineers
+- Hot Water Plumbing
+- Kitchen Plumbing
+- Overflow Systems
+- Plumbing Leaks
+- Radiator Repairs
+- Shower Installation
+- Water Leaks
+- Water Systems
+- Water Tanks
+- Wet Room Plumbing
+- Wet Rooms
 
 _build:
   render: true
