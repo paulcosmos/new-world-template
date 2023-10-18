@@ -1101,8 +1101,8 @@ strong {
 
     &-intro {
 
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 1rem;
+        padding-bottom: 4rem;
         min-height: 50vh;
 
         .columns {
@@ -1273,6 +1273,44 @@ strong {
         height: 2rem;
         font-size: 2rem;
     }
+}
+.team-section {
+    background-color: $secondary;
+    color: white;
+
+    .team-slider {
+        padding-bottom: $size-2;
+    
+        .team-member {
+            background-color: white;
+            color: $secondary;
+            border-radius: 10px;
+            padding:3rem;
+
+            &-image {
+                margin: 0 auto 2rem;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            &-name {
+                font-size: $size-5;
+            }
+
+            &-title {
+                display: block;
+                font-size: $size-6;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            &-desc {
+
+            }
+        }
+    
+    }
+
 }
 
 // Customer Reviews 

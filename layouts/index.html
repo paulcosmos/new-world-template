@@ -10,6 +10,23 @@
 			{{ end -}}
 
 			{{- define "main" -}}
+			<section class="section company-services-overview">
+				<div class="container is-fullhd">
+					<div class="columns is-multiline is-mobile is-variable is-4">
+						<div class="column mb-6 has-text-centered" data-aos="fade-in">
+							<h2>Our Services</h2>
+							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
+						</div>
+					</div>
+					{{ partial "services/services-grid-images.html" . }}
+				</div>
+			</section>
+
+
+			{{ partial "cta-banner.html" . }}
+
+
+
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
@@ -40,21 +57,187 @@
 			</section>
 
 
-			{{ partial "accreditations.html" . }}
-			
-			<section class="section company-services-overview">
-				<div class="container is-fullhd">
-					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column mb-6 has-text-centered" data-aos="fade-in">
-							<h2>Our Services</h2>
-							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
+			<section class="team-section">
+				<div class="container section is-fullhd ">
+					<div class="columns is-centered is-multiline is-mobile is-variable is-4">
+						<div class="column has-text-centered" data-aos="fade-in">
+							<h2>Meet the Team</h2>
+							<p>We are a full-service team. From ground to roof and everything in between, we do it all.</p>
 						</div>
 					</div>
-					{{ partial "services/services-grid-images.html" . }}
+				</div>
+
+				<!-- Team Slider -->
+				<div class="columns is-multiline is-mobile team-slider has-text-centered">
+					
+					<div class="column is-flex" data-aos="fade-in">
+						<div class="team-member">
+							<div class="team-content">
+								<figure class="image is-128x128 team-member-image">
+									<img src="/images/profile.jpg">
+								</figure>
+								<h3 class="team-member-name">Jay</h3>
+								<span class="team-member-title">Project Manager</span>
+								<p class="team-member-desc">Manchester graduate in management with a Health and Safety background in working at height and spill control. Over 10 years experience within the construction industry and project management. Responsible for managing the customers' expectations and beyond. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-flex" data-aos="fade-in">
+						<div class="team-member">
+							<div class="team-content">
+								<figure class="image is-128x128 team-member-image">
+									<img src="/images/profile.jpg">
+								</figure>
+								<h3 class="team-member-name">Mo</h3>
+								<span class="team-member-title">Site Manager</span>
+								<p class="team-member-desc">Qualified Bricklayer, Plasterer and bathroom fitter - multi skilled builder with over 12 years experience within the building industry.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-flex" data-aos="fade-in">
+						<div class="team-member">
+							<div class="team-content">
+								<figure class="image is-128x128 team-member-image">
+									<img src="/images/profile.jpg">
+								</figure>
+								<h3 class="team-member-name">Leigh</h3>
+								<span class="team-member-title">Builder</span>
+								<p class="team-member-desc">Over 20 years experience from single storey extensions to complete new builds.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-flex" data-aos="fade-in">
+						<div class="team-member">
+							<div class="team-content">
+								<figure class="image is-128x128 team-member-image">
+									<img src="/images/profile.jpg">
+								</figure>
+								<h3 class="team-member-name">Giles</h3>
+								<span class="team-member-title">Architect</span>
+								<p class="team-member-desc">His job is not to draw plans but to mould dreams into existence, with over 10 years experience working for firms in London now has his very own office, is a stickler for details and works directly alongside the project and site manager. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-flex" data-aos="fade-in">
+						<div class="team-member">
+							<div class="team-content">
+								<figure class="image is-128x128 team-member-image">
+									<img src="/images/profile.jpg">
+								</figure>
+								<h3 class="team-member-name">Carl</h3>
+								<span class="team-member-title">Welder</span>
+								<p class="team-member-desc">Our man of steel. Qualified Welder with over 20 years experience with steel structures - from laying a single RSJ to entire warehousing structures.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-flex" data-aos="fade-in">
+						<div class="team-member">
+							<div class="team-content">
+								<figure class="image is-128x128 team-member-image">
+									<img src="/images/profile.jpg">
+								</figure>
+								<h3 class="team-member-name">Ellis</h3>
+								<span class="team-member-title">Joiner</span>
+								<p class="team-member-desc">Since he left school all he has been doing is playing with wood, specialises in bespoke cottage windows, doors and staircases but not limited to with over 10 years experience.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-flex" data-aos="fade-in">
+						<div class="team-member">
+							<div class="team-content">
+								<figure class="image is-128x128 team-member-image">
+									<img src="/images/profile.jpg">
+								</figure>
+								<h3 class="team-member-name">Kyle</h3>
+								<span class="team-member-title">Roofer</span>
+								<p class="team-member-desc">Loves working at height and off ladders, something we all try and stay away from. With over 15 years experience does anything and everything got to with roofing from felt, rubber, fibreglass to tiles including fascia, soffits and guttering. 
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-flex" data-aos="fade-in">
+						<div class="team-member">
+							<div class="team-content">
+								<figure class="image is-128x128 team-member-image">
+									<img src="/images/profile.jpg">
+								</figure>
+								<h3 class="team-member-name">Ross</h3>
+								<span class="team-member-title">Heavy Plant & Demolition</span>
+								<p class="team-member-desc">Master of grounds works and demolition, Ross is our master of heavy machinery.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-flex" data-aos="fade-in">
+						<div class="team-member">
+							<div class="team-content">
+								<figure class="image is-128x128 team-member-image">
+									<img src="/images/profile.jpg">
+								</figure>
+								<h3 class="team-member-name">Mark</h3>
+								<span class="team-member-title">Electrician</span>
+								<p class="team-member-desc">Part P qualified electrician with an abundance of experience throughout all industry with over 25 years experience.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-flex" data-aos="fade-in">
+						<div class="team-member">
+							<div class="team-content">
+								<figure class="image is-128x128 team-member-image">
+									<img src="/images/profile.jpg">
+								</figure>
+								<h3 class="team-member-name">Mikel</h3>
+								<span class="team-member-title">Gas Engineer</span>
+								<p class="team-member-desc">Originally Corgi registered and now Gas Safe - has a soft spot for copper pipes however partial to some flexi tube due to changing times with over 14 years experience.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+
+				<div class="_container py-5 has-text-centered _is-fluid">
+					<div class="columns">
+						{{/*  <div class="column is-8 is-offset-2">
+							<div class="is-grouped">
+								<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+									<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>  */}}
+						<div class="column text-align-center _is-narrow">
+							<div id="team-slider-controls" class="buttons is-small is-centered" aria-label="Carousel Navigation" tabindex="0">
+								<button class="button review-slider-nav-button" aria-controls="review-slider" tabindex="-1" data-controls="prev">
+									<span class="icon is-medium">
+										<i class="fa-regular fa-arrow-left"></i>
+									</span>
+								</button>
+								<button class="button review-slider-nav-button" aria-controls="review-slider" tabindex="-1" data-controls="next">
+									<span class="icon is-medium">
+										<i class="fa-regular fa-arrow-right"></i>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
-			{{ with .Site.GetPage "/services" }}
+
+			{{ partial "accreditations.html" . }}
+		
+
+			
+
+			{{/*  {{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
 			<section class="section has-bg-tertiary">
 				
@@ -94,11 +277,10 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}
+			{{ end }}  */}}
 
-			{{ partial "cta-banner.html" . }}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
 			{{ if .Params.areas }}
 			{{ partial "map-compact.html" . }}
@@ -111,5 +293,43 @@
 			{{- end }}
 
 	{{- define "scripts" -}}
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+		<script>
+			var slider = tns({
+				container: '.team-slider',
+				autoHeight: false,
+				items: 1,
+				slideBy: 1,
+				loop: true,
+				autoplay: false,
+				autoplayButtonOutput: false,
+				autoplayHoverPause: true,
+				speed: 800,
+				gutter: 0,
+				edgePadding: 10,
+				center: true,
+				nav: false,
+				controls: true,
+				controlsContainer: '#team-slider-controls',
+				preventActionWhenRunning: true,
+				responsive: {
+					960: {
+						items: 2,
+						controls: true,
+						center: true,
+					},
+					1024: {
+						gutter: 20,
+						items: 2,
+						edgePadding: 40,
+						center: true,
+					},
+					1280: {
+						items: 3,
+						edgePadding: 40,
 
+					}
+				}
+			});
+		</script>
 	{{ end }}
