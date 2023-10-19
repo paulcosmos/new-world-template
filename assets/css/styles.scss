@@ -106,6 +106,30 @@ strong {
     background-color: $tertiary;
 }
 
+.has-bg-secondary {
+    background-color: $secondary;
+}
+
+.has-bg-dark {
+    background-color: $dark;
+}
+
+.has-bg-waves {
+    // background-color: $dark;
+	background-image: url('../images/waves.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.has-bg-grad-waves {
+    background-color: $dark;
+	background-image: linear-gradient(180deg, rgba($dark, 0), $secondary), url('../images/waves.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 // Buttons 
 .button {
     color: $secondary;
@@ -602,16 +626,24 @@ strong {
     background-repeat: no-repeat;
     background-position: center;
     // @include background-dots;
-    @include hero-default-bg;
+    // @include hero-default-bg;
     position: relative;
     color: $hero-text;
     font-weight: normal;
     text-align: left;
     text-align: inherit;
+    padding: 1rem;
 
     @include from($navbar-breakpoint) {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding: 0 3rem ;
+    }
+
+    &-body {
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        @include hero-default-bg;
+        padding: 3rem;
     }
 
     .wave {
@@ -624,7 +656,7 @@ strong {
     }
 
     &-index {
-        @include hero-index-bg;
+        @include hero-default-bg;
         // padding-bottom: +110px; // add the height of the wave.svg
 
         h1,
@@ -685,7 +717,7 @@ strong {
     &-cta {
         background-color: $hero-cta-bg;
         border-radius: $hero-cta-corner-radius;
-        @include box-shadow-offset-solid($hero-cta-shadow);
+        // @include box-shadow-offset-solid($hero-cta-shadow);
         color: white;
         font-weight: 600;
         padding: 1.25rem;
@@ -756,15 +788,15 @@ strong {
         position: relative;
         display: block;
         margin-bottom: 1rem;
-        margin-right: 20px;
+        margin-right: auto;
         margin-left: auto;
-        width: 80px;
-        // z-index: 90;
+        width: 200px;
+        bottom: -40px;
 
         @include from($desktop) {
             position: absolute;
-            right: 10px;
-            bottom: 10px;
+            right: 20px;
+            bottom: 20px;
             margin: 0;
         }
     }
@@ -820,6 +852,20 @@ strong {
         }
         
     }
+}
+
+.has-offset-shadow:after {
+
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+    bottom: -40px;
+    left: -40px;
+    width: 95%;
+    height: 100%;
+    background: linear-gradient($secondary, $dark);
+
 }
 
 .service-list-2cols {
@@ -975,7 +1021,7 @@ strong {
 
         .image {
             img {
-                @include box-shadow-below;
+                // @include box-shadow-below;
             }
         }
     }
@@ -985,7 +1031,7 @@ strong {
         &-overview {
             background-color: $tertiary;
             // @include background-dots;
-            background: linear-gradient(180deg, $tertiary, white);
+            background: linear-gradient(0deg, $tertiary, white);
             background-position: bottom;
             padding-bottom: 5rem;
 
@@ -1302,7 +1348,7 @@ strong {
         position: relative;
         margin-top: -5rem;
         // margin-bottom: 2rem;
-        border: solid 4px white;
+        // border: solid 4px white;
         padding: 2rem;
         font-weight: 600;
         @include rounded-corners;
@@ -1331,7 +1377,7 @@ strong {
 
     &-bg-image {
         background-color: $secondary;
-        background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.5), rgba($secondary, 0.5)), url('../images/bg.png');
+        background-image: linear-gradient(180deg, rgba($secondary, 1), rgba($secondary, 0.2)), url('../images/bg.png');
         background-repeat: no-repeat;
         background-position: center right;
         background-size: cover;
@@ -1649,6 +1695,18 @@ strong {
 
 .map {
 
+    &-container {
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        height:100%;
+    }
+
     // background-color: rgba($tertiary, 1);
 
     iframe {
@@ -1658,7 +1716,7 @@ strong {
         margin: 0;
         padding: 0;
         top: 150px;
-        filter: grayscale(1);
+        // filter: grayscale(1);
         min-height: 600px;
 
         @include until($navbar-breakpoint){
@@ -1708,7 +1766,7 @@ strong {
             }
         }
 
-        h5 {
+        h4, h5 {
             font-weight: normal;
             font-size: $size-7;
             line-height: 1.4em;

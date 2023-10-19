@@ -1,11 +1,6 @@
 			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
+			<section class="hero is-medium">
 				{{ partial "hero/hero-image.html" . }}
-				{{- with .Site.Params }}
-				{{ if .emblem }}
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
-				{{ end -}}
-				{{ end -}}
 			</section>
 			{{ end -}}
 
@@ -13,7 +8,7 @@
 			<section class="section company-intro">
 				<div class="container is-fullhd">
 				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
-					<div class="columns is-vcentered is-multiline is-variable is-8">
+					<div class="columns is-vcentered is-multiline is-variable is-8 my-6">
 						<div class="column is-7-desktop is-6-fullhd">
 							<div class="content company-intro-content has-accent" data-aos="fade-in">
 								{{ .Content }}
@@ -21,11 +16,11 @@
 						</div>
 
 						<div class="column is-12-touch is-6-fullhd" data-aos="fade-up">
-							<div class="image has-rounded-corners">
+							<div class="image is-5by4 has-rounded-corners has-offset-shadow">
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "1200x1200 q70 Center").RelPermalink }}'
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
@@ -40,18 +35,13 @@
 			</section>
 
 
-			{{ partial "accreditations.html" . }}
+			{{/*  {{ partial "accreditations.html" . }}  */}}
 			
-			<section class="section company-services-overview">
+			<section class="section _company-services-overview">
 				<div class="container is-fullhd">
-					<div class="columns is-multiline is-mobile is-variable is-4">
-						<div class="column" data-aos="fade-in">
-							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
-						</div>
-						<div class="column is-narrow" data-aos="fade-in">
-							<span class="icon company-icon">
-								<i class="fa-light fa-square-check"></i>
-							</span>
+					<div class="columns is-multiline is-mobile is-variable is-4 is-centered">
+						<div class="column is-8-desktop has-text-centered has-accent my-6" data-aos="fade-in">
+							<h2>We have all aspects of the <strong>{{ .Site.Params.industry }}</strong> trade covered</h2>
 						</div>
 					</div>
 					{{ partial "services/services-grid-images.html" . }}
@@ -59,17 +49,33 @@
 			</section>
 
 			{{ with .Site.GetPage "/services" }}
-			{{ if .Params.services }}
+			{{/*  {{ if .Params.services1 }}  */}}
 			<section class="section has-bg-tertiary">
-				<div class="container is-fullhd _company-services-list pb-4">
-					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+				<div class="container is-fullhd pb-4">
 
+					<div class="columns is-centered is-multiline is-mobile is-variable is-4">
+						<div class="column is-12 is-8-fullhd has-text-centered _has-text-white my-6" data-aos="fade-in">
+							<h2>{{ .Site.Params.industry | humanize }} services we offer</h2>
+						</div>
+					</div>
+
+
+					<div class="columns _company-services-item is-multiline is-vcentered is-variable is-8">
 
 						<div class="column is-12-touch is-12-desktop is-6-widescreen">
-							<div class="pre-heading" data-aos="fade-down">What we do</div>
-							<div class="_content has-accent service-list-2cols _company-services-list-index" data-aos="fade-right">
+							<div class="pre-heading" data-aos="fade-down">Internal property renovation services</div>
+							<div class="has-accent service-list-2cols mb-6" data-aos="fade-right">
 								<ul>
-								{{- range .Params.services }}
+								{{- range .Params.services1 }}
+								<li>{{ . }}</li>
+								{{ end }}
+								</ul>						
+							</div>
+
+							<div class="pre-heading" data-aos="fade-down">External property renovation services</div>
+							<div class="has-accent service-list-2cols" data-aos="fade-right">
+								<ul>
+								{{- range .Params.services2 }}
 								<li>{{ . }}</li>
 								{{ end }}
 								</ul>						
@@ -97,57 +103,59 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}
+			{{/*  {{ end }}  */}}
 
 			{{ partial "cta-banner.html" . }}
 
 			{{ partial "review-slider/review-slider.html" . }}
 
-			{{ if .Params.areas }}
-			<section class="section has-bg-tertiary">
-				<div class="columns is-multiline is-variable is-8 is-centered is-vcentered">
+			{{/*  {{ if .Params.areas }}  */}}
+			<section class="section">
+				<div class="container is-fullhd">
+					<div class="columns is-multiline is-gapless map-container">
 
 
-					<div class="column is-12-touch is-6-desktop is-6-widescreen is-5-fullhd is-offset-1-fullhd py-6">
-						<div class="box locations-content">
-							<div class="content">
-								<h3>Which areas do we serve?</h3>
-								<p>We are based in {{ .Site.Params.towncity }} and cover the surrounding areas, including the following areas:</p>							</div>
+						<div class="column has-bg-dark is-12-touch is-6-desktop is-6-widescreen">
+							<div class=" map-content p-6 is-flex is-flex-direction-column is-justify-content-center is-align-self-center locations-content is-align-items-stretch">
+								<div class="content has-text-white">
+									<h3>Which areas do we serve?</h3>
+									<p>We are based in {{ .Site.Params.towncity }} and serve the surrounding areas.</p>
+									<p>Not sure if we cover your area? Give us a call on <b>{{ .Site.Params.phone }}</b> or request a call from us and we'll be happy to help.</p>
+								</div>
 
-							{{- $.Scratch.Set "delay" 0 }}
-							<div class="chunky-list mb-4">
-								<ul>
-								{{- range .Params.areas }}
-								{{- $i := $.Scratch.Get "delay" }}
-								{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 50) }}
-								<li data-aos="fade-right" data-aos-delay="{{ print $i }}">{{ . }}</li>
-								{{ end }}
-								</ul>	
-							</div>
-							
-							<p>Not sure if we cover your area? Give us a call on <b>{{ .Site.Params.phone }}</b> or request a call from us and we'll be happy to help.</p>
+								{{/*  {{- $.Scratch.Set "delay" 0 }}
+								<div class="chunky-list mb-4">
+									<ul>
+									{{- range .Params.areas }}
+									{{- $i := $.Scratch.Get "delay" }}
+									{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 50) }}
+									<li data-aos="fade-right" data-aos-delay="{{ print $i }}">{{ . }}</li>
+									{{ end }}
+									</ul>	
+								</div>
+								*/}}
 
-							<div class="mt-5" data-aos="fade-in">
-								<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">Request a callback <i class="fa-regular fa-phone-flip"></i></button>
+								<div class="mt-5" data-aos="fade-in">
+									<button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">Request a callback <i class="fa-regular fa-phone-flip"></i></button>
+								</div>
 							</div>
 						</div>
+
+						<div class="column map is-12-touch is-6-desktop is-6-widescreen">
+							<iframe frameborder="0" 
+									scrolling="no" 
+									marginheight="0" 
+									marginwidth="0" 
+									src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;ll=51.840518,0.966178&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+									>
+							</iframe>
+						</div>
+
+
 					</div>
-
-					<div class="column map _py-0 is-12-touch _is-half-fullhd">
-						<iframe frameborder="0" 
-								scrolling="no" 
-								marginheight="0" 
-								marginwidth="0" 
-								src="https://maps.google.com/maps?width=100vw%25&amp;height=100%25&amp;hl=en&amp;q={{ .Site.Params.postcode }}+()&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-								class="box"
-								data-aos="fade-left">
-						</iframe>
-					</div>
-
-
 				</div>
 			</section>
-			{{ end }}
+			{{/*  {{ end }}  */}}
 
 			{{ partial "cta-image-bg.html" . }}
 

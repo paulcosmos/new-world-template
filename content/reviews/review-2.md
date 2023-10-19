@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Quick and Fair
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Ive had regular EICR’s completed at my properties. He prices the job fairly and always gets the job done quickly and efficiently.

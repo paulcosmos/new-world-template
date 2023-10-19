@@ -8,8 +8,9 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #d3b063;
+$secondary: #131322;
+$dark: lighten($secondary, 8%);
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -24,14 +25,20 @@ $text: $secondary;
 
 // Page hero settings 
 @mixin hero-default-bg {
-	background-color: $tertiary;
-	// @include background-dots;
+	background-color: $secondary;
+	background-image: linear-gradient(-249deg, rgba($secondary, 0.4), rgba($secondary, 0.4)), url('../images/bg.png');
+	color: white!important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
 }
 
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-image.jpg');
+	background-color: $secondary;
+	background-image: linear-gradient(-249deg, rgba($secondary, 0.4), rgba($secondary, 0.4)), url('../images/bg.png');
 	// background-position: bottom;
 }
 
@@ -45,17 +52,17 @@ $top-banner-icon: $accent;
 // Main Navigation
 $navbar-height: 5rem;
 
-$navbar-background-color: $secondary;
+$navbar-background-color: white;
 $navbar-background-color-mobile: $navbar-background-color;
 $mobile-menu-background-color: $secondary;
 
-$logo-max-width: 180px;
+$logo-max-width: 100px;
 $logo-max-height: $navbar-height;
 $logo-bg-colour: lighten($navbar-background-color,5%);
 $logo-bg-hover-colour: lighten($logo-bg-colour,5%);
 
-$navbar-item-color: white;
-$navbar-item-hover-color: white;
+$navbar-item-color: $secondary;
+$navbar-item-hover-color: $primary;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
 $navbar-item-mobile-color: white;
@@ -69,8 +76,8 @@ $navbar-divider-background-color: lighten($navbar-dropdown-background-color, 5%)
 
 // Buttons
 $button-text: white;
-$button-bg: $primary;
-$button-bg-hover: lighten($button-bg, 10%);
+$button-bg: darken($primary, 0%);
+$button-bg-hover: lighten($button-bg, 5%);
 
 // Modal overlay
 $sl-overlay-background: $secondary;
@@ -96,8 +103,8 @@ $bg-overlay: rgba(0, 0, 0, 0.6);
 $services-item-divider: solid 2px $tertiary;
 
 // Reviews
-$review-section-bg: white;
-$review-section-text: $text;
+$review-section-bg: $dark;
+$review-section-text: white;
 $review-nav-text: $primary;
 $review-nav-bg: transparent;
 $review-nav-text-hover: white;

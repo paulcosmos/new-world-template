@@ -1,36 +1,64 @@
-		{{- define "hero" -}}
+		{{/*  {{- define "hero" -}}
 		<section class="hero is-small">
 			{{ partial "hero/hero-text-cta.html" . }}
 		</section>
-		{{ end -}}
+		{{ end -}}  */}}
 
 		{{ define "main" }}
-			<section class="section">
+			{{/*  <section class="section">
 				<div class="container is-fullhd company-services pb-4">
 					{{- $currentPage := . }}
 					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
 						{{ partial "services/services-image-text.html" . }}
 					{{ end }}
 				</div>
-			</section>
-			{{ if .Params.services }}
-			<section class="section">
-				<div class="container is-fullhd company-services-list pb-4">
-					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
-						<div class="column is-12-touch is-12-desktop">
-							<div class="pre-heading" data-aos="fade-down">What we do</div>
-							<div class="_content has-accent company-services-list" data-aos="fade-right">
+			</section>  */}}
+
+			{{/*  {{ if .Params.services }}  */}}
+			<section class="section has-bg-tertiary">
+				<div class="container is-fullhd _company-services-list pb-4">
+					<div class="columns _company-services-item is-multiline is-vcentered is-variable is-8">
+
+						<div class="column is-hidden-touch" data-aos="fade-left">
+							<div class="image is-4by5 company-services-image company-services-image">
+								{{- $image := resources.Get .Params.image2 }}
+								{{- if $image }}
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end }}
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
+						</div>
+
+						<div class="column is-12-touch is-12-desktop is-6-widescreen">
+							<div class="pre-heading" data-aos="fade-down">Internal property renovation services</div>
+							<div class="has-accent service-list-2cols mb-6" data-aos="fade-right">
 								<ul>
-								{{- range .Params.services }}
+								{{- range .Params.services1 }}
+								<li>{{ . }}</li>
+								{{ end }}
+								</ul>						
+							</div>
+
+							<div class="pre-heading" data-aos="fade-down">External property renovation services</div>
+							<div class="has-accent service-list-2cols" data-aos="fade-right">
+								<ul>
+								{{- range .Params.services2 }}
 								<li>{{ . }}</li>
 								{{ end }}
 								</ul>						
 							</div>
 						</div>
+
+
 					</div>
 				</div>
 			</section>
-			{{ end }}
+			{{/*  {{ end }}  */}}
 			
 			{{ partial "cta-banner.html" . }}
 			{{ partial "why-us-banner.html" . }}

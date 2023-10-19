@@ -4,18 +4,33 @@ menu: ["main"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
-image: images/services.jpg
 
-services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+image: images/services.jpg
+image2: images/services.jpg
+
+
+services1:
+- House renovations
+- Extensions
+- Electrics (Part P Qualified)
+- Kitchens
+- Bathroom installation
+- Tiling
+- Flooring
+- Carpentry
+- Plastering
+- Plumbing
+
+
+services2:
+- Fencing
+- Bespoke Summer Houses
+- Outdoor Rooms & Sheds
+- Block Paving
+- Cladding
+- Landscaping 
+- Patios
+- And more
 
 _build:
   render: true

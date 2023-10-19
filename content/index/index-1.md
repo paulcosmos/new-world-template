@@ -4,18 +4,18 @@ weight: 1
 _build:
     list: true
     render: false
-image: 
+image: images/kitchen.jpg
 ---
 
-## Reliable and professional **{{<industry>}}** in {{<towncity>}} &amp; {{<county>}}.
+## Let 71C take the stress out of your **property renovations** project in Essex.
 
-* Many years of experience in and around {{<towncity>}}
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+We can offer all aspects of property renovations from beginning to end.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+Whether taking care of the whole project or just a small part, we take great pride in our work and complete all projects to a high standard, always ensuring customers are 100% happy with the finished product.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+We are highly experienced professionals. Whatever the job, we can handle it. 
+
+Call us today on **{{<phone>}}** for a no obligation quote.
 
 
 

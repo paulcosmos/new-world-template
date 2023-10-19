@@ -1,7 +1,7 @@
 
 		
 		{{ define "main" -}}
-			<section class="section">
+			<section class="section has-bg-waves">
 				<div class="container is-fullhd">  
 					<div class="columns is-multiline is-mobile review-grid">
 						{{ range where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/" }}
@@ -18,6 +18,6 @@
 				</div>
 			</section>
 
-			{{ partial "cta-text.html" . }}
+			{{/*  {{ partial "cta-image-bg.html" . }}  */}}
 
 		{{ end }}

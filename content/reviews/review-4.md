@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Professional & Responsive
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+I highly recommend using Danny and his team. They were quick to respond to any queries and very professional. I am very happy with the outcome of our double storey extension. I would be keen to use their services again for the next project.
