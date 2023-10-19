@@ -7,15 +7,24 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Domestic electrical 
+- Electrical installations 
+- maintenance & repairs
+- Wiring & Rewiring
+- Commercial & industrial
+- Electrical fault finding
+- Electrical testing
+- PAT testing & EICR
+- indoor lighting
+- garden & outdoor lights
+- Electric showers
+- Bathroom renovations
+- Electric oven installations
+- kitchen installations
+- Fuse box repairs
+- Consumer units
+- Plug sockets
+- Light switches
 
 _build:
   render: true

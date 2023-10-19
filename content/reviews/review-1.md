@@ -1,8 +1,8 @@
 ---
-title: James
+title: George S.
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+ Really efficient job, fair price and professional service.
