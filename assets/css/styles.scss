@@ -746,6 +746,13 @@ strong {
     &-index {
         @include hero-index-bg;
 
+        .pre-heading {
+
+            &:before {
+                background-color: white;
+            }
+        }
+
         h1,
         h2 {
             font-size: $hero-title-size-mobile!important;
@@ -1910,17 +1917,23 @@ strong {
 
             li {
                 line-height: 1.6rem;
+                font-size: $size-7;
+                color: lighten($secondary,60%);
+                fill: white;
+                text-decoration: none;
+                // display: inline-block;
+                margin-bottom: 0.1rem;
             }
         }
 
         a {
-            font-size: $size-7;
-            color: lighten($secondary,60%);
-            fill: white;
-            text-decoration: none;
+            // font-size: $size-7;
+            // color: lighten($secondary,60%);
+            // fill: white;
+            // text-decoration: none;
             transition: color 0.3s;
             display: inline-block;
-            margin-bottom: 0.1rem;
+            // margin-bottom: 0.1rem;
 
             &:after {
                 @include animated-underline;

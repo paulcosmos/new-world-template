@@ -8,8 +8,8 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #7c69c0;
-$secondary: #242833;
+$primary: #1c98eb;
+$secondary: #151619;
 $info: $secondary;
 $tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
@@ -19,7 +19,7 @@ $text: $secondary;
 
 @mixin brand-gradient {
 	background: $primary;
-	background: linear-gradient(-90deg, darken($primary, 0%), darken($primary, 10%));
+	background: linear-gradient(90deg, darken(#4F6EA5, 0%), darken($primary, 0%), darken(#0B132A, 10%));
 }
 
 // Page hero settings 
@@ -31,7 +31,8 @@ $text: $secondary;
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-image.jpg');
+	background-color: $primary;
+	background-image: linear-gradient(180deg, rgba($secondary, 0.3), rgba($secondary, 0.3)), url('../images/bg.png');
 	// background-position: bottom;
 }
 
@@ -49,7 +50,7 @@ $navbar-background-color: $secondary;
 $navbar-background-color-mobile: $navbar-background-color;
 $mobile-menu-background-color: $secondary;
 
-$logo-max-width: 180px;
+$logo-max-width: 240px;
 $logo-max-height: $navbar-height;
 $logo-bg-colour: lighten($navbar-background-color,5%);
 $logo-bg-hover-colour: lighten($logo-bg-colour,5%);
