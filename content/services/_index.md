@@ -1,21 +1,19 @@
 ---
 title: Our Services
-menu: ["main"]
+menu: ["main", "footer"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- boiler installs
+- boiler servicing
+- central heating
+- kitchens & bathroom
+- unvented cylinders
+- underfloor heating
+- domestic & commercial
 
 _build:
   render: true

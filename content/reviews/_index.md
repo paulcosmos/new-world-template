@@ -1,6 +1,6 @@
 ---
 title: Reviews
-menu: ["main","footer"]
+# menu: ["main","footer"]
 weight: 4
 preheading: "Customer Reviews"
 morelink:
