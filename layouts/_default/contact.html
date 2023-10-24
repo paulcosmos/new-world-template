@@ -5,25 +5,17 @@
 					<div class="columns is-variableis-multiline">
 
 						<div class="column is-4-desktop">
-							<div class="content contact-details mb-6" data-aos="fade-right">
-								<h2>Business Address</h2>
-								<p>Please note, our business address is purely for correspondence. We do not have a public office.</p>
-								<address>
-									{{- with .Site.Params }}
-									<b>{{ .fullname }},<br/></b>
-									{{ if .building }}
-									{{ .building }},<br/>
-									{{end }}
-									{{ .street }},<br/>
-									{{ .towncity }},<br/>
-									{{ if .county -}}
-									{{ .county }}, <br/>
-									{{ end -}}
-									{{ .postcode }}
-								{{- end }}
-								</address>
-							</div>
+
+
 							{{  partial "contact-details.html" .  }}
+
+
+							<div class="content contact-details mt-6" data-aos="fade-right">
+								<h2>Social Media</h2>
+								<ul>
+									{{ partial "social-links-text.html" . }}
+								</ul>
+							</div>
 						</div>
 
 						<div class="column is-offset-2-desktop box contact-form contact-form-pulled" data-aos="fade-up">         
