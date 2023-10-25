@@ -9,40 +9,8 @@
 			</section>
 			{{ end -}}
 
-			{{- define "main" -}}
-			<section class="section company-intro">
-				<div class="container is-fullhd">
-				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
-					<div class="columns is-vcentered is-multiline is-variable is-8">
-						<div class="column is-7-desktop is-6-fullhd">
-							<div class="content company-intro-content has-accent" data-aos="fade-in">
-								{{ .Content }}
-							</div>
-						</div>
-
-						<div class="column is-12-touch is-6-fullhd" data-aos="fade-right">
-							<div class="image has-rounded-corners">
-							{{- $image := resources.Get .Params.image }}
-							{{- if $image }}
-							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
-									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
-									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
-							{{ end }}
-							{{ else }}
-								<img src='/images/placeholder.jpg'/>
-							{{- end }}
-							</div>
-						</div>
-					</div>
-				{{- end }}
-				</div>
-			</section>
-
-
-			{{ partial "accreditations.html" . }}
-			
-			<section class="section company-services-overview">
+			{{- define "main" -}}		
+			<section class="section company-services-overview has-bg-tertiary">
 				<div class="container is-fullhd">
 					<div class="columns is-centered is-multiline">
 						<div class="column is-12-touch is-8-desktop is-7-fullhd mb-6 has-text-centered" data-aos="fade-in">
@@ -50,13 +18,13 @@
 							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
 						</div>
 					</div>
-					{{ partial "services/services-grid-images.html" . }}
+					{{/*  {{ partial "services/services-grid-images.html" . }}  */}}
 				</div>
-			</section>
+			{{/*  </section>  */}}
 
 			{{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
-			<section class="section has-bg-tertiary">
+			{{/*  <section class="section has-bg-tertiary">  */}}
 				
 				<div class="container is-fullhd _company-services-list pb-4">
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
@@ -97,6 +65,38 @@
 			{{ end }}
 
 			{{ partial "cta-banner.html" . }}
+
+			<section class="section company-intro">
+				<div class="container is-fullhd">
+				{{- range where (where .Site.RegularPages "Type" "index-content") "File.Dir" "index/" }}
+					<div class="columns is-vcentered is-multiline is-variable is-8">
+						<div class="column is-7-desktop is-6-fullhd">
+							<div class="content company-intro-content has-accent" data-aos="fade-in">
+								{{ .Content }}
+							</div>
+						</div>
+
+						<div class="column is-12-touch is-6-fullhd" data-aos="fade-right">
+							<div class="image has-rounded-corners">
+							{{- $image := resources.Get .Params.image }}
+							{{- if $image }}
+							{{- with .Site.Params }}
+								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
+							{{ end }}
+							{{ else }}
+								<img src='/images/placeholder.jpg'/>
+							{{- end }}
+							</div>
+						</div>
+					</div>
+				{{- end }}
+				</div>
+			</section>
+
+
+			{{ partial "accreditations.html" . }}
 
 			{{ partial "review-slider/review-slider.html" . }}
 
