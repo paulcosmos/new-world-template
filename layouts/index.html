@@ -1,5 +1,5 @@
 			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
+			<section class="hero is-medium hero-index">
 				{{ partial "hero/hero-image.html" . }}
 				{{- with .Site.Params }}
 				{{ if .emblem }}
@@ -40,17 +40,20 @@
 			</section>
 
 
-			{{ partial "accreditations.html" . }}
+			{{ partial "cta-banner.html" . }}
+
+
 			
-			<section class="section company-services-overview">
+			<section class="section company-services-overview has-bg-tertiary">
 				<div class="container is-fullhd">
 					<div class="columns is-centered is-multiline">
 						<div class="column is-12-touch is-8-desktop is-7-fullhd mb-6 has-text-centered" data-aos="fade-in">
-							<h2>Our Services</h2>
-							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
+							<h2>Our Stock</h2>
+							<p>We offer a wide range of furniture, furnishings and household items. Our stock is always changing so be sure to give us a follow.</p>
 						</div>
 					</div>
-					{{ partial "services/services-grid-images.html" . }}
+					<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+					<div class="elfsight-app-835d3db8-d8b2-456b-a221-b4e9bf398fcb" data-elfsight-app-lazy></div>
 				</div>
 			</section>
 
@@ -96,15 +99,38 @@
 			{{ end }}
 			{{ end }}
 
-			{{ partial "cta-banner.html" . }}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			{{ partial "accreditations.html" . }}
+
+
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
+
+
+			{{/*  <section class="review-section">
+				<div class="container section is-fullhd ">
+					<div class="columns is-centered is-multiline is-mobile is-variable is-4">
+						<div class="column has-text-centered" data-aos="fade-in">
+							<h2>Our reviews speak for themselves</h2>
+						</div>
+
+
+						<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+						<div class="elfsight-app-7778d881-ce89-4ffb-a1d4-fc215b2bdadc" data-elfsight-app-lazy></div>
+
+
+					</div>
+				</div>
+			</section>  */}}
+
 
 			{{ if .Params.areas }}
 			{{ partial "map-compact.html" . }}
 			{{ end }}
 
+
+
 			{{ partial "cta-image-bg.html" . }}
+
 
 			{{ partial "why-us-banner.html" . }}
 

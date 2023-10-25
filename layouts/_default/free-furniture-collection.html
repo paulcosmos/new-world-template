@@ -1,0 +1,32 @@
+			{{ define "main" }}
+			<section class="section contact">
+				<div class="container is-fullhd">
+					<div id="map" class="map has-background-grey is-hidden-touch"></div>
+					<div class="columns is-variableis-multiline">
+
+						<div class="column is-5-desktop">
+							<div class="content mb-6" data-aos="fade-right">
+								<h2>Arrange a Collection</h2>
+								<p>Do you have some bulky furniture you're tired of? We'll take it off your hands for free!</p>
+								<p>We accept tables, chairs, sofas, armchairs, wardrobes, drawers, bookshelves, desks, even garden furniture</p>
+								<p>All we ask is:</p>
+								<ul>
+									<li>The furniture is located in Swindon</li>
+									<li>The items are in good, resaleable condition</li>
+									<li>You or someone else is available to help us load the van</li>
+								</ul>
+								<p>Call us on <b>{{ .Site.Params.phone }}</b> or use our contact form to arrange a FREE collection.</p>
+							</div>
+						</div>
+
+						<div class="column is-offset-1-desktop box contact-form contact-form-pulled" data-aos="fade-up">         
+										{{ partial "contact-form.html" . }}
+						</div>
+					</div>
+				</div>
+			</section>
+			{{ end }}
+
+		{{- define "scripts" -}}
+		<script async defer src="js/map.js"></script>
+		{{ end }}

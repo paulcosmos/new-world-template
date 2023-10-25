@@ -6,7 +6,7 @@
 							<div class="site-footer-company-info">
 							{{- with .Site.Params }}
 								<h4>{{ .company }}</h4>
-								<h5>{{ .industry | strings.FirstUpper }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>
+								<h5>{{ .industry | strings.FirstUpper }} services in {{ .towncity }}.</h5>
 								<div data-aos="fade-right" data-aos-easing="ease-in-back">
 									<a 	class="button-primary ml-0 modal-trigger" 
 										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
@@ -29,7 +29,7 @@
 							</div>
 						</div>
 
-						<div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
+						{{/*  <div class="column _is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
 							<div class="site-footer-links _has-columns">
 							<h4>Primary Services</h4>
 								<ul>
@@ -45,7 +45,7 @@
 									<li><a href="/services.html">All Services</a></li>
 								</ul>
 							</div>
-						</div>
+						</div>  */}}
 
 						<div class="column is-6-mobile _is-4-tablet _is-2-desktop">
 							<div class=" site-footer-links _has-columns">
@@ -69,7 +69,7 @@
 			<div class="container is-fluid site-footer-signoff">
 				<div class="content">
 					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ .fullname }} | {{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
+					Website by New World Digital Media on behalf of {{ .fullname }} | {{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}
 					{{- end }}
 				</div>
 			</div>

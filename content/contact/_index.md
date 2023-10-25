@@ -11,8 +11,8 @@ cascade:
     render: false
 ---
 
-# Looking for **{{<industry>}} services** in {{<county>}}?
+# Looking for **{{<industry>}} services** in {{<towncity>}}?
 
-Speak to us today to request a quote. 
+Speak to us today to arrange a clearance. 
 
 

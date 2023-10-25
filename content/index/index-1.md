@@ -7,15 +7,13 @@ _build:
 image: images/intro.jpg
 ---
 
-## Reliable and professional **{{<seo>}}** in {{<towncity>}} &amp; {{<county>}}.
+## Looking for **{{<industry>}}** in {{<towncity>}}?
 
-* Based in {{<towncity>}} with years of experience
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+{{<company>}} is a family run business specialising in all aspects of house clearance. Based in Swindon, we operate a small fleet of vans and we pride ourselves on being reliable and friendly. 
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+We are a fully licensed waste carrier and have full public liability insurance. We carry out all works quickly and efficiently.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+Whether it’s a full house clearance, garage, shed, loft or office space, we can do it.
 
 
 

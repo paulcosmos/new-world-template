@@ -1,8 +1,8 @@
 ---
-title: James
+title: Sam Telling
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Good professional service and best price I found in Swindon, would highly recommend! Good work 

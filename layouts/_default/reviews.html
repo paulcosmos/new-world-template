@@ -4,9 +4,15 @@
 			<section class="section">
 				<div class="container is-fullhd">  
 					<div class="columns is-multiline is-mobile review-grid">
-						{{ range where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/" }}
+						{{/*  {{ range where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/" }}
 							{{ partial "review-slider/review-card.html" . }}
-						{{- end }}
+						{{- end }}  */}}
+						<div class="column">
+							<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+							<div class="elfsight-app-b1560c98-d41a-415f-931e-9271d620e3b3"></div>
+						</div>
+
+
 					</div>
 					{{ if .Params.morelink }}
 					<div class="is-grouped has-text-centered mt-5">
