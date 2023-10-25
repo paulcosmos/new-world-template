@@ -24,14 +24,15 @@ $text: $secondary;
 
 // Page hero settings 
 @mixin hero-default-bg {
-	@include background-dots;
+	background-color: $tertiary;
+	// @include background-dots;
 }
 
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
-
+	background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-image.jpg');
+	// background-position: bottom;
 }
 
 $hero-index-text: white;
@@ -41,9 +42,12 @@ $top-banner-bg: darken($secondary,10%);
 $top-banner-text: white;
 $top-banner-icon: $accent;
 
-// Main Navigation 
+// Main Navigation
+$navbar-height: 5rem;
+
 $navbar-background-color: $secondary;
 $navbar-background-color-mobile: $navbar-background-color;
+$mobile-menu-background-color: $secondary;
 
 $navbar-height:6rem;
 $logo-max-width: 400px;
@@ -55,14 +59,14 @@ $navbar-item-color: white;
 $navbar-item-hover-color: white;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
-$navbar-item-mobile-color: $navbar-item-color;
+$navbar-item-mobile-color: white;
 $navbar-dropdown-arrow: $primary;
 $navbar-burger-text: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
 $navbar-dropdown-item-hover-background-color: $navbar-dropdown-background-color;
 $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
-$navbar-divider-background-color: lighten($secondary, 10%);
+$navbar-divider-background-color: lighten($navbar-dropdown-background-color, 5%);
 
 // Buttons
 $button-text: white;
@@ -75,9 +79,12 @@ $sl-navigation-color: white;
 
 // Page Hero
 $hero-text: $text;
-$preheading-text: $primary;
+$preheading-text: inherit;
 $preheading-size: 1rem;
-$hero-title-size: 2rem;
+$hero-title-size: 3.4rem;
+$hero-font-size: 2.4rem;
+$hero-font-size-mobile: 1.8rem;
+$hero-title-size-mobile: 1.8rem;
 $hero-text-size: 1rem;
 $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);
