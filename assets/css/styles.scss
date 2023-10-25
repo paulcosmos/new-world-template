@@ -400,12 +400,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-7;
+        font-size: $size-6;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
         @include from($widescreen) {
-            font-size: $size-6;
+            font-size: $size-5;
         }
 
         &:hover {
@@ -1400,7 +1400,7 @@ strong {
     }
 
     @include from($fullhd) {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     a {

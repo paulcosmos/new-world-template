@@ -3,7 +3,8 @@ title: Reviews
 menu: ["main","footer"]
 weight: 4
 preheading: "Customer Reviews"
-morelink:
+
+morelink: https://trustedtraders.which.co.uk/businesses/bs-gas-and-heating-ltd/#reviews
 
 type: "single"
 _build:

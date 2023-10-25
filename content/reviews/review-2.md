@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Boiler Servicing & Inspections
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+I have known the company director Silviu for about 6 years through my work, refurbishing social housing properties and he has also been servicing and inspecting the boilers in both our residential and a small BTL properties portfolio that we currently own. 
