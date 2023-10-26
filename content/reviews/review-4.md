@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Louise Booth
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Fabulous job done today by Liam. The laurel had taken over & was too much for me to trim. Liam has cut it beautifully, taken everything away, cleaned up. Highly recommended, excellent service.

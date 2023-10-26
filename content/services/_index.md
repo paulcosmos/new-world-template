@@ -7,15 +7,18 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+# - Hedges & Tree care
+# - Tree surgery, 
+# - Hedges trimming
+# - hedge reductions
+# - tree pollarding
+# - stump grinding
+# - stump removal
+# - shrubbery
+# - Lawn Care 
+# - Artificial Grass
+# - Garden Maintenance
+
 
 _build:
   render: true

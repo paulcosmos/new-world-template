@@ -400,12 +400,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-7;
+        font-size: $size-6;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
-        @include from($widescreen) {
-            font-size: $size-6;
+        @include from($fullhd) {
+            font-size: $size-5;
         }
 
         &:hover {
