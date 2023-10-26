@@ -3,10 +3,10 @@ title: "Our Work"
 menu: ["main","footer"]
 weight: 3
 _build:
-  render: true
+  render: false
 cascade:
   _build:
-    list: true
+    list: false
     render: false
 ---
 

@@ -400,12 +400,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-7;
+        font-size: $size-6;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
         @include from($widescreen) {
-            font-size: $size-6;
+            font-size: $size-5;
         }
 
         &:hover {
@@ -469,6 +469,7 @@ strong {
     &-logo {
         padding-top: 1rem;
         padding-bottom: 1rem;
+        padding-left: 0;
 
         img {
             max-width: $logo-max-width;
@@ -1161,7 +1162,7 @@ strong {
                 h3 {
                     // color: white;
                     color: inherit;
-                    font-size: $size-5;
+                    font-size: 1rem;
                     margin-bottom: $size-7;
                 }
 
@@ -1839,7 +1840,7 @@ strong {
         margin: 0;
         padding: 0;
         top: 150px;
-        filter: grayscale(1);
+        filter: grayscale(0);
         min-height: 600px;
 
         @include until($navbar-breakpoint){
@@ -1915,7 +1916,7 @@ strong {
 
         a {
             font-size: $size-7;
-            color: lighten($secondary,60%);
+            color: $site-footer-links;
             fill: white;
             text-decoration: none;
             transition: color 0.3s;

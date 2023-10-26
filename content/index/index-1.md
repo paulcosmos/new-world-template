@@ -1,5 +1,5 @@
 ---
-type: index-content
+type: index-text
 weight: 1
 _build:
     list: true
@@ -7,15 +7,9 @@ _build:
 image: images/intro.jpg
 ---
 
-## Reliable and professional **{{<seo>}}** in {{<towncity>}} &amp; {{<county>}}.
+<!-- ## Reliable and professional **{{<seo>}}** in {{<towncity>}} &amp; {{<county>}}. -->
 
-* Based in {{<towncity>}} with years of experience
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
-
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
-
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+**{{<company>}}** have been providing {{<industry>}} services to clients in a range of industries and professions throughout the UK since 2012. Our accountants are highly experienced professionals and have successfully completed ACCA and IFA examinations, numerous CPD's and FCA webinars. <!--Call us today on **{{<phone>}}** to find out how we can help your business.-->
 
 
 

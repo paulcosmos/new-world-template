@@ -4,10 +4,10 @@ menu: ["main","footer"]
 weight: 1
 preheading: 
 areas:
-# - Location 1
-# - Location 2
-# - Location 3
-# - Location 4
+- London
+- Nottingham
+- Birmingham
+- Leicester
 
 _build:
   render: true
@@ -17,6 +17,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
+# Reliable, professional **{{<industry>}} services** in {{<towncity>}}.
 
-**{{<company>}}** provide {{<industry>}} services to both domestic and commercial customers across {{<county>}}. We are experienced in all aspects of the {{<industry>}} trade.
+**{{<company>}}** have been providing expert accountancy and bookkeeping services to large logistic companies, construction and development engineers, freelancers, NHS professionals and other businesses since 2012.

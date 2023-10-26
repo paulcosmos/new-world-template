@@ -1,8 +1,8 @@
 ---
-title: James
+title: Daina Berzina
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Aleksandra, thank you so much for your patience with me! I'm so thankful for everything you helped me! Highly recommend your service! Great communication! Thank you!
