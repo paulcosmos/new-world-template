@@ -17,6 +17,6 @@ cascade:
     render: false
 ---
 
-# Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
+# Reliable, professional **{{<industry>}}** services in {{<county>}}.
 
-**{{<company>}}** provide {{<industry>}} services to both domestic and commercial customers across {{<county>}}. We are experienced in all aspects of the {{<industry>}} trade.
+Based in {{<towncity>}}, Kent, **{{<company>}}** are a family run business with over 25 years of experience in the {{<industry>}} trades. 

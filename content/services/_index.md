@@ -7,15 +7,27 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- All Carpentry
+- Bespoke Furniture
+- Bespoke Staircases
+- Bespoke Windows & Doors
+- Built In Furniture
+- Cupboards and storage units
+- Door Fitting & Hanging
+- Emergency Carpenter Service
+- General Carpentry
+- Handmade Furniture
+- Joinery
+- Kitchen fitting
+- Kitchens Designed & Installed
+- Radiator Covers
+- roof conversion,
+- shelving, wardrobes.
+- Skirting
+- Staircases
+- Window Frames & Repairs
+- Wood flooring
+- Wooden & Timber Structures
 
 _build:
   render: true

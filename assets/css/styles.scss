@@ -483,7 +483,7 @@ strong {
 
     &-logo-overlap {
 
-        padding: 0;
+        padding: 0.5rem;
 
         @include from($navbar-breakpoint) {
             position: relative;
@@ -996,7 +996,7 @@ strong {
 
             display: block;
             background-color: rgba(white, 1);
-            @include box-shadow-stripe;
+            @include box-shadow-high;
             padding: 10px;
             margin: 10px;
             outline: solid 1px $tertiary;
