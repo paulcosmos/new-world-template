@@ -996,7 +996,7 @@ strong {
 
             display: block;
             background-color: rgba(white, 1);
-            @include box-shadow-stripe;
+            @include box-shadow-high;
             padding: 10px;
             margin: 10px;
             outline: solid 1px $tertiary;
