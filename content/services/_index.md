@@ -7,15 +7,16 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Emergency Heating Repair
+- Gas appliance installations
+- Gas Boiler Installation
+- Gas Boiler Servicing
+- Gas Boilers Repair
+- Gas Central Heating
+- Gas Cooker Installation
+- Gas Safety Checks - CP12
+- Smart Thermostats
+- underfloor heating 
 
 _build:
   render: true

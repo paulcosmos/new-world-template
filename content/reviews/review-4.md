@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Boiler Servicing
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+We have been a customer of Gary's for years, he has consistently provided a great service. We would definitely recommend Climate Eco Heating.

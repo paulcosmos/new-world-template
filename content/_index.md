@@ -19,4 +19,4 @@ cascade:
 
 # Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
 
-**{{<company>}}** provide {{<industry>}} services to both domestic and commercial customers across {{<county>}}. We are experienced in all aspects of the {{<industry>}} trade.
+Based in {{<towncity>}}, **{{<company>}}** offers boiler servicing, repairs and installations. We have {{<years>}} experience in the domestic industry and are fully qualified & insured for all domestic works. We are polite, friendly and honest with our pricing.
