@@ -96,10 +96,12 @@
 			</section>
 
 
+			
+			{{ partial "review-slider/review-slider.html" . }}
+			
 			{{ partial "accreditations.html" . }}
 
-			{{ partial "review-slider/review-slider.html" . }}
-
+			
 			{{ if .Params.areas }}
 			{{ partial "map-compact.html" . }}
 			{{ end }}
