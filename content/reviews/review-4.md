@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Boiler Service & Gas Check
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Jamie was great at communicating, time keeping and all round very efficient at his job. Extremely detailed in showing me what he was doing and explained what needed to be done.

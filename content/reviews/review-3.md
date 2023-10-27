@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Moved Boiler & Gas Fire
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+This was the first time I used {{<company>}}. Great coms all through the project, courteous and trustworthy. All work completed to time. Definitely use this tradesman in future projects.

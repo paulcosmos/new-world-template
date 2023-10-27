@@ -1,8 +1,8 @@
 ---
-title: James
+title: Replaced Radiators
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Jamie was extremely thorough and meticulous. Communication was excellent. Jamie will be our gas engineer and plumber from now on. Well done Jamie, thank you.

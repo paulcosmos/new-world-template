@@ -1,8 +1,8 @@
 ---
-title: Sarah
+title: Immersion Heater Inspection
 type: review
 rating: 5
 location: 
 ---
 
-Very professional, fast workers and the final results look great. Highly recommended for any {{<industry>}} needs in {{<towncity>}}! Will definitely use again.
+Kept me well informed of time of visit, relevant costs for replacement parts and arrangements have been made for repairs to be done to the necessary appliances.
