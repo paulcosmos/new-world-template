@@ -17,9 +17,11 @@
 			<section class="section">
 				<div class="container is-fullhd pb-4">
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
-						<div class="column is-12-touch is-12-desktop">
+
+						
+						<div class="column is-12-touch is-6-desktop">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
-							<div class="_content has-accent service-list cols-3" data-aos="fade-right">
+							<div class="_content has-accent service-list cols-2" data-aos="fade-right">
 								<ul>
 								{{- range .Params.services }}
 								<li>{{ . }}</li>
@@ -27,6 +29,23 @@
 								</ul>						
 							</div>
 						</div>
+
+						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
+							<div class="image is-5by4 company-services-image company-services-image">
+								{{- $image := resources.Get .Params.image }}
+								{{- if $image }}
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Resize "1200x q75 Center").RelPermalink }}' 
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end }}
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
+						</div>
+
+
 					</div>
 				</div>
 			</section>

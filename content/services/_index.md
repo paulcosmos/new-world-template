@@ -7,15 +7,14 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Bathroom Supply
+- Bathroom Installation
+- Kitchen Installation
+- General Plumbing
+- Leaks & Repairs
+- Emergency Plumbers 
+- Heating Systems
+- Domestic & Commercial
 
 _build:
   render: true
@@ -25,6 +24,6 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of **{{<industry>}}** services throughout {{<county>}}.
+# Providing a wide range of **{{<industry>}}** services throughout {{<towncity>}}.
 
 With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.

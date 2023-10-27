@@ -15,7 +15,7 @@
 					<div class="columns is-centered is-multiline">
 						<div class="column is-12-touch is-8-desktop is-7-fullhd mb-6 has-text-centered" data-aos="fade-in">
 							<h2>Our Services</h2>
-							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
+							<p>We provide a wide range of {{ .Site.Params.industry }} services to customers in {{ .Site.Params.towncity }}.</p>
 						</div>
 					</div>
 					{{/*  {{ partial "services/services-grid-images.html" . }}  */}}
@@ -43,11 +43,11 @@
 
 
 						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
-							<div class="image is-4by5 company-services-image company-services-image">
+							<div class="image is-5by4 company-services-image company-services-image">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
 								{{- with .Site.Params }}
-								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+								<img src='{{ ($image.Resize "1200x q75 Center").RelPermalink }}' 
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
 								{{ end }}
@@ -96,9 +96,11 @@
 			</section>
 
 
-			{{ partial "accreditations.html" . }}
+			{{/*  {{ partial "review-slider/revie/-slider.html" . }}  */}}
 
-			{{ partial "review-slider/review-slider.html" . }}
+			
+			{{ partial "accreditations.html" . }}
+			
 
 			{{ if .Params.areas }}
 			{{ partial "map-compact.html" . }}
