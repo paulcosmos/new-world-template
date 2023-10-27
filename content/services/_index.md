@@ -7,15 +7,31 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Balcony Roofing
+- Brickwork
+- Chimney Cowlings
+- Chimney Repair
+- Conservatory Roofs
+- Dormer / Roof Windows
+- Emergency Roofing
+- Fascias & Gutters
+- Felt Roofing
+- Fibre Glass Roofing
+- Flat Roofing
+- Glass Roofing
+- General Building
+- Green Roofing
+- Leadwork Repair
+- Metal Roofing
+- Moss Removal
+- Pitched Roofing
+- Polycarbonate Roofing
+- Ridged Tiles
+- Roof Replacement
+- Roofing Repairs
+- Rubber Roofing 
+- Slate Roofing
+
 
 _build:
   render: true
