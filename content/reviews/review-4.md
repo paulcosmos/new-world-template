@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Wendy Pourmahak
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Highly recommend H2Pro. Jack did a very professional job, excellent customer service and at a reasonable price. 10/10

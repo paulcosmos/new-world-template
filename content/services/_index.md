@@ -7,15 +7,14 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Bathroom Installation 
+- Boiler Installs & Services 
+- Boiler Repairs
+- Central Heating
+- Gas Appliance Installs
+- Gas Safety Checks
+- General Plumbing
+- Underfloor Heating
 
 _build:
   render: true
