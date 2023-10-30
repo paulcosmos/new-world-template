@@ -14,11 +14,6 @@
 				<a href="https://www.checkatrade.com/trades/{{- .checkatrade -}}" title="Find us on checkatrade.com" target="_blank" rel="noopener"><img src="images/creds/checkatrade.png" alt="" title=""></a>
 			</div>
 			{{- end }}
-			{{- if .facebook }}
-			<div class="level-item accreditations-item has-text-centered">
-				<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><img src="images/creds/facebook.png" alt="" title=""></a>
-			</div>
-			{{ end }}
 			{{- if .instagram }}
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="https://instagram.com/{{- .instagram -}}" title="Find us on Instagram" target="_blank" rel="noopener"><img src="images/creds/instagram.png" alt="" title=""></a>
@@ -37,6 +32,11 @@
 			{{- if .tiktok }}
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="https://www.tiktok.com/@{{- .tiktok -}}" title="Find us on TikTok" target="_blank" rel="noopener"><img src="images/creds/tiktok.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .facebook }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><img src="images/creds/facebook.png" alt="" title=""></a>
 			</div>
 			{{ end }}
 			{{- if .ratedpeople }}
@@ -69,12 +69,15 @@
 				<a href="https://www.trustatrader.com/traders/{{- .trustatrader -}}" title="Find us on trustatrader.com" target="_blank" rel="noopener"><img src="images/creds/trustatrader.png" alt="" title=""></a>
 			</div>
 			{{- end }}
-
-			<!-- 
 			<div class="level-item accreditations-item has-text-centered">
-				<a href="#" title="Find us on the Gas Safe Register" target="_blank" rel="noopener"><img src="images/creds/gas-safe.png" alt="" title=""></a>
+				<a href="https://nextdoor.co.uk/pages/stephen-pike-electrical/" title="Find us on NextDoor" target="_blank" rel="noopener"><img src="images/creds/nextdoor.png" alt="" title=""></a>
 			</div> 
-			-->
+			<div class="level-item accreditations-item has-text-centered">
+				<img src="images/creds/napit.png" alt="" title="">
+			</div> 
+			<div class="level-item accreditations-item has-text-centered">
+				<img src="images/creds/trustmark.png" alt="" title="">
+			</div> 
 		{{ end }}
 	</div>
 </section>

@@ -7,7 +7,7 @@ _build:
 image: images/intro.jpg
 ---
 
-## Reliable and professional **{{<seo>}}** in {{<towncity>}} &amp; {{<county>}}.
+## Reliable and professional **{{<seo>}}** in {{<county>}}.
 
 * Based in {{<towncity>}} with years of experience
 * A reputation for excellent quality and professionalism

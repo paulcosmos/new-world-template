@@ -7,15 +7,24 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Additional power sockets
+- Alarm systems
+- CCTV installations
+- Consumer units
+- electrical installations
+- Electrical maintenance
+- emergency call-outs
+- EV charging
+- Full & partial rewires
+- Fuseboard upgrades
+- Garden lighting
+- LED lighting upgrades
+- Lighting installation
+- Lighting upgrades
+- PAT testing
+- Safety certificates (EICR)
+- Smoke ventilation
+- testing & inspections
 
 _build:
   render: true
