@@ -30,6 +30,17 @@ services:
 - Water Leak Detection
 - Water Pumps
 
+services2:
+- Commercial Boiler Service
+- Commercial Air Heaters
+- Commercial Catering
+- Commercial Gas Main Installation
+- Commercial Appliance Installation
+- Service & Repair
+- Radiant Plaque & Tube Heaters
+- Testing & Purging Commercial Gas Mains
+- Commercial Gas Safety Certification
+
 _build:
   render: true
 cascade:
