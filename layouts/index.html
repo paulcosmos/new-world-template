@@ -18,13 +18,13 @@
 							<p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} and throughout {{ .Site.Params.county }}.</p>
 						</div>
 					</div>
-					{{/*  {{ partial "services/services-grid-images.html" . }}  */}}
+					{{ partial "services/services-grid-images.html" . }}
 				</div>
-			{{/*  </section>  */}}
+			</section>
 
-			{{ with .Site.GetPage "/services" }}
+			{{/*  {{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
-			{{/*  <section class="section has-bg-tertiary">  */}}
+			<section class="section has-bg-tertiary">
 				
 				<div class="container is-fullhd _company-services-list pb-4">
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
@@ -62,7 +62,7 @@
 				</div>
 			</section>
 			{{ end }}
-			{{ end }}
+			{{ end }}  */}}
 
 			{{ partial "cta-banner.html" . }}
 
@@ -77,18 +77,24 @@
 						</div>
 
 						<div class="column is-12-touch is-6-fullhd" data-aos="fade-right">
-							<div class="image has-rounded-corners">
-							{{- $image := resources.Get .Params.image }}
+							{{/*  <div class="image is-1by1 has-rounded-corners">  */}}
+
+								<div class="video-container">
+									<figure class="image is-4by3">
+										<iframe class="has-ratio" width="640" height="500" src="https://player.vimeo.com/video/834812926?h=b2d584684b&autoplay=1&loop=1&autopause=1&muted=1&title=0&byline=0&portrait=0&controls=0" frameborder="0" allowfullscreen></iframe>
+									</figure>
+								</div>
+							{{/*  {{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "1200x1100 q70 Center").RelPermalink }}'
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
 							{{ else }}
 								<img src='/images/placeholder.jpg'/>
-							{{- end }}
-							</div>
+							{{- end }}  */}}
+							{{/*  </div>  */}}
 						</div>
 					</div>
 				{{- end }}
@@ -97,7 +103,16 @@
 
 
 			
-			{{ partial "review-slider/review-slider.html" . }}
+			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
+			<section class="section _has-bg-tertiary">
+				<div class="container is-fullhd">
+
+
+					<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+					<div class="elfsight-app-3183c5dd-8347-4716-b30b-65d19fe70d6e" data-elfsight-app-lazy></div>
+
+				</div>
+			</section>
 			
 			{{ partial "accreditations.html" . }}
 

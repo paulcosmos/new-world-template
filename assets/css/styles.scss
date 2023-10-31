@@ -1808,6 +1808,11 @@ strong {
     }
 }
 
+.video-container iframe {
+    background-color: black;
+    border-radius: 20px;
+}
+
 .help {
     color: $grey-light;
 }
