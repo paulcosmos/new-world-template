@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Scott Fairley
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+I would highly recommend Gary and his team they done a full rewire on My house, always cleans up ad they went 1class job.

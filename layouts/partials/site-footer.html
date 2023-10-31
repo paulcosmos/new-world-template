@@ -31,9 +31,9 @@
 
 						<div class="column is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
 							<div class="site-footer-links _has-columns">
-							<h4>Primary Services</h4>
+							<h4>Popular Services</h4>
 								<ul>
-									{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
+									{{/*  {{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
 									<li><a href="/services.html#{{ anchorize .Title }}">
 										{{- if (ne .Params.anchor nil) }}
 											{{- .Params.anchor -}}
@@ -41,7 +41,11 @@
 											{{- .Title -}}
 										{{- end -}}
 									</a></li>
-									{{- end }}
+									{{- end }}  */}}
+									<li><a href="/services.html">Electrical Installations</a></li>
+									<li><a href="/services.html">Landlord Safety Certficates</a></li>
+									<li><a href="/services.html">EV Charger Installation</a></li>
+									<li><a href="/services.html">Consumer Unit Upgrades</a></li>
 									<li><a href="/services.html">All Services</a></li>
 								</ul>
 							</div>
