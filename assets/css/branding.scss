@@ -31,6 +31,7 @@ $text: $secondary;
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
+	background-color: $secondary;
 	background-image: linear-gradient(-249deg, rgba($secondary, 0.9), rgba($secondary, 0.9)), url('../images/hero-image.jpg');
 	// background-position: bottom;
 }
