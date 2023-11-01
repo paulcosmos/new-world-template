@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Efficient & Tidy
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+I could not fault Rudi on anything, he was efficient and tidy in his work, always happy to advise on the job prior and during. The completed flooring and skirting exceeded my expectations and we are really pleased with the finished results.

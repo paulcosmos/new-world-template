@@ -7,15 +7,18 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- 1st and 2nd fix
+- Bathroom Fitting
+- bookshelves & cabinets
+- Carpentry and Joinery 
+- Door hanging
+- fitted furniture
+- garage conversions
+- kitchen installations
+- loft conversions
+- property renovations
+- property extensions 
+- wardrobes & storage
 
 _build:
   render: true

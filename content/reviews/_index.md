@@ -4,7 +4,7 @@ menu: ["main","footer"]
 weight: 4
 preheading: "Customer Reviews"
 
-morelink: 
+morelink: https://www.checkatrade.com/trades/rlcarpentryandbuilders1053795#reviews-summary
 
 type: "single"
 _build:

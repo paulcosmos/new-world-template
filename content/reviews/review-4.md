@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: Great Attention to Detail
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Rudi did a great job of fitting 13 internal wooden doors, always ensuring attention to detail and going the extra mile to make sure the job was done to the highest standards. Polite, tidy and hard working - I would thoroughly recommend using him.
