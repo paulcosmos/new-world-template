@@ -1,6 +1,6 @@
 ---
 title: 'Privacy Policy'
-menu: ["footer"]
+# menu: ["footer"]
 type: single.html
 weight: 99
 _build:

@@ -7,15 +7,15 @@ _build:
 image: images/intro.jpg
 ---
 
-## Reliable and professional **{{<seo>}}** in {{<towncity>}} &amp; {{<county>}}.
+## Reliable and professional **{{<seo>}}** in {{<towncity>}}.
 
-* Based in {{<towncity>}} with years of experience
-* A reputation for excellent quality and professionalism
-* Hard-working, customer focused approach to projects
+**{{<company>}}** have over 10 years experience within the Electrical Industry and ceaselessly keep up to date with current regulations and training requirements for new and upcoming technology.
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
+Accredited with NAPIT as an Approved Electrician we can install and certify a wide range of electrical work within domestic and commercial areas, offering full peace of mind to our customers.
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a no obligation quote.
+Our work is completed to a high standard and conforms to the latest regulations with the appropriate certifications where required. 
+
+This all equates to giving our customers the best outcome possible. Call us today on **{{<phone>}}** for a no obligation quote.
 
 
 

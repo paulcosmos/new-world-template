@@ -7,15 +7,19 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Additional Sockets
+- Additional Lighting
+- Complete or Partial Rewire
+- Consumer Units
+- Electrical Safety (EICR)
+- EV Charge Points
+- Garage & Shed Power
+- Indoor / Outdoor Wifi
+- LED Upgrading
+- Outdoor Sockets & Lighting
+- Smoke & Heat Detection
+- Smart Home Technology
+- Solar PV & Batteries
 
 _build:
   render: true
@@ -25,6 +29,6 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of **{{<industry>}}** services throughout {{<county>}}.
+# Providing a wide range of **{{<industry>}}** services throughout {{<towncity>}}.
 
 With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.

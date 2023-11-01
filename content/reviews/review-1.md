@@ -1,8 +1,8 @@
 ---
-title: James
+title: J. Bartle
 type: review
 rating: 5
 location: 
 ---
 
-Excellent! Great final result and a very friendly service. Highly recommended.
+Considering the job was extremely complicated, Wired by James achieved an excellent result. Would highly recommend this company.

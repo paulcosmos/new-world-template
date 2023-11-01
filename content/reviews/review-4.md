@@ -1,8 +1,8 @@
 ---
-title: Simon
+title: R. Smith
 type: review
 rating: 5
 location: 
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+Very helpful in his work and experience, great job done, very competitive price. A really nice guy. Thanks James
