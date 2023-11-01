@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Hollie Ennis
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+James was able to help us with a new shower installation at short notice and very reasonably priced! Very friendly and professional. Also offered some advice & tips to us on our non-standard heating / water system in our basement. Thanks again James! Would highly recommend!

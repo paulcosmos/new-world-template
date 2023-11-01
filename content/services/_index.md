@@ -1,21 +1,37 @@
 ---
 title: Our Services
-menu: ["main"]
+menu: ["main","footer"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Bathroom Installation
+- Bathroom Plumbing
+- Boosted Hot and Cold Water
+- brickwork
+- Burst Pipes
+- Central Heating Equipment
+- Central Heating Pumps
+- Central Heating Repairs
+- Central Heating Services
+- commercial heating Heating
+- Domestic and commercial
+- Drainage work
+- Guttering
+- Hot Water Plumbing
+- Plastering
+- Plumbing 24 Hour call out
+- Plumbing Leaks
+- Pointing
+- Property maintenance
+- Radiator Repairs
+- Radiators
+- Shower Installation
+- Water Leaks
+- Water Systems
+- Water Tanks
 
 _build:
   render: true

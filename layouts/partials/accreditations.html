@@ -14,11 +14,6 @@
 				<a href="https://www.checkatrade.com/trades/{{- .checkatrade -}}" title="Find us on checkatrade.com" target="_blank" rel="noopener"><img src="images/creds/checkatrade.png" alt="" title=""></a>
 			</div>
 			{{- end }}
-			{{- if .facebook }}
-			<div class="level-item accreditations-item has-text-centered">
-				<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><img src="images/creds/facebook.png" alt="" title=""></a>
-			</div>
-			{{ end }}
 			{{- if .instagram }}
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="https://instagram.com/{{- .instagram -}}" title="Find us on Instagram" target="_blank" rel="noopener"><img src="images/creds/instagram.png" alt="" title=""></a>
@@ -32,6 +27,11 @@
 			{{- if .yell }}
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="https://yell.com/biz/{{- .yell -}}" title="Find us on Yell.com" target="_blank" rel="noopener"><img src="images/creds/yell.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .facebook }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><img src="images/creds/facebook.png" alt="" title=""></a>
 			</div>
 			{{ end }}
 			{{- if .tiktok }}
@@ -69,12 +69,10 @@
 				<a href="https://www.trustatrader.com/traders/{{- .trustatrader -}}" title="Find us on trustatrader.com" target="_blank" rel="noopener"><img src="images/creds/trustatrader.png" alt="" title=""></a>
 			</div>
 			{{- end }}
-
-			<!-- 
 			<div class="level-item accreditations-item has-text-centered">
-				<a href="#" title="Find us on the Gas Safe Register" target="_blank" rel="noopener"><img src="images/creds/gas-safe.png" alt="" title=""></a>
+				<a href="https://nextdoor.co.uk/pages/wilsons-plumbing-heating-and-building-services-ltd/" title="Find us on Nextdoor" target="_blank" rel="noopener"><img src="images/creds/nextdoor.png" alt="" title=""></a>
 			</div> 
-			-->
+
 		{{ end }}
 	</div>
 </section>
