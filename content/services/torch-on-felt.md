@@ -2,7 +2,7 @@
 title: "Torch On Felt"
 type: service-item
 desc: Whether it’s a new build, refurbishment or replacement, felt is a great, cost effective roofing solution.
-weight: 3
+weight: 1
 image: images/felt.jpg
 anchor: 
 ---

@@ -21,13 +21,15 @@
 								<div class="content _box hero-cta">
 									<h3>Get a Quote</h3>
 									<hr/>
+									<span>Jack</span>
 									<h4>
-									{{- if .Site.Params.phone }}
 										{{- .Site.Params.phone -}}
-									{{ else }}
-										{{- .Site.Params.mobile -}}
-									{{- end -}}
 									</h4>
+									<span>Paul</span>
+									<h4>
+										{{- .Site.Params.mobile -}}
+									</h4>
+									<hr/>
 									<p>Call us today to arrange a no obligation quotation. Or you can use our contact form to request a callback</p>
 									<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
 										<span class="icon-text">

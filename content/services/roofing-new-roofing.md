@@ -1,5 +1,5 @@
 ---
-title: "New Roofing"
+title: "New & Replacement Roofing"
 type: service-item
 desc: Our skilled team have the knowledge and expertise to safely replace any roof, flat or pitched.
 weight: 1

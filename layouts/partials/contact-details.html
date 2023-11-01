@@ -5,13 +5,13 @@
 									{{ if .phone  -}}
 									<span class="icon-text">
 										<span class="icon is-small"><i class="fa-regular fa-phone"></i></span>
-										<span><a href='tel:{{- replaceRE "(\\s)" "" .phone |  -}}'>{{ .phone }}</a></span>
+										<span><a href='tel:{{- replaceRE "(\\s)" "" .phone |  -}}'>{{ .phone }}</a> (Jack)</span>
 									</span> 
 									{{ end -}}
 									{{ if .mobile  -}}
 									<span class="icon-text">
-										<span class="icon is-small"><i class="fa-regular fa-mobile"></i></span>
-										<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
+										<span class="icon is-small"><i class="fa-regular fa-phone"></i></span>
+										<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a> (Paul)</span>
 									</span>
 									{{ end -}}
 									<span class="icon-text">

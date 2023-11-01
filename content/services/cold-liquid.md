@@ -2,7 +2,7 @@
 title: "Cold Applied Liquid Systems"
 type: service-item
 desc: Seamless application with an anti-skid quartz finish, ideal for balconies or roofs that endure a lot of foot traffic.
-weight: 3
+weight: 2
 image: images/cold.jpg
 anchor: 
 ---
