@@ -730,6 +730,18 @@ strong {
         padding-bottom: 3rem;
     }
 
+    &-logo {
+	background-image: url('../images/logo.png');
+	background-position: center;
+	background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+    @include from ($navbar-breakpoint){
+        min-height: 400px;
+    }
+    }
+
     &-body {
         text-transform: inherit;
     }
