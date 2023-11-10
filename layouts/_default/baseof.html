@@ -38,6 +38,17 @@
 		<script>
 		  AOS.init();
 		</script>
+		<script src="js/simple-lightbox.min.js?v2.11.0"></script>
+		<script>
+			(function() {
+				var $gallery = new SimpleLightbox('.gallery a', {
+				scrollZoom : false,
+				captions: false,
+				overlayOpacity : 0.95,
+				disableScroll: false,
+			});
+		})();
+		</script>
 		{{ block "scripts" . }}
 		{{- end }}
 	</body>
