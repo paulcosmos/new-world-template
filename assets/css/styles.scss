@@ -1819,6 +1819,10 @@ strong {
 
 .map {
 
+    &-section {
+        background: $map-section-bg;
+    }
+
     &-compact-container {
         overflow: hidden;
         border-radius: 20px;

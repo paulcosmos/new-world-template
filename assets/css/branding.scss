@@ -96,6 +96,9 @@ $bg-overlay: rgba(0, 0, 0, 0.6);
 // Services
 $services-item-divider: solid 2px $tertiary;
 
+// Map
+$map-section-bg: linear-gradient(180deg, darken($primary, 0%), darken($primary, 10%));
+
 // Reviews
 $review-section-bg: white;
 $review-section-text: $text;
