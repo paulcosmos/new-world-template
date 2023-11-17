@@ -8,7 +8,7 @@ anchor:
 ---
 ## Landlord Safety Certificates
 
-Natgas Services Ltd have long established links with many landlords and property management companies across Solihull. We provide a cost-effective service that assists you in meeting your legal obligations.
+{{<company>}} have long established links with many landlords and property management companies across {{<towncity>}}. We provide a cost-effective service that assists you in meeting your legal obligations.
 
 * Conducted by experienced, Gas Safe Registered engineers
 * Annual boiler maintenance also available
