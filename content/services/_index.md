@@ -1,6 +1,6 @@
 ---
 title: Our Services
-menu: ["main"]
+menu: ["main","footer"]
 weight: 2
 anchor: "Services"
 preheading: "Our Services"
