@@ -1602,12 +1602,7 @@ strong {
         img {
             max-height: 120px;
             max-width: 200px;
-            filter: grayscale(100%);
             transition: all 0.2s;
-
-            &:hover {
-                filter: grayscale(0%);
-            }
         }
     }
 }
