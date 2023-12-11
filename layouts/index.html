@@ -47,7 +47,7 @@
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
 								{{- with .Site.Params }}
-								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+								<img src='{{ ($image.Fill "1200x1000 q75 Center").RelPermalink }}' 
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
 								{{ end }}
@@ -77,11 +77,11 @@
 						</div>
 
 						<div class="column is-12-touch is-6-fullhd" data-aos="fade-right">
-							<div class="image has-rounded-corners">
+							<div class="image is-5by4 has-rounded-corners">
 							{{- $image := resources.Get .Params.image }}
 							{{- if $image }}
 							{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}'
+								<img src='{{ ($image.Fill "1200x1000 q70 Center").RelPermalink }}'
 									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
 									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
 							{{ end }}
