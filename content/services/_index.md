@@ -7,15 +7,15 @@ preheading: "Our Services"
 image: images/services.jpg
 
 services:
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
-- service
+- Plumbing & Heating Repairs
+- Domestic & Commercial
+- Full Bathroom Installations
+- Leaks, Taps & Repairs
+- Breakdown & Servicing
+- Property Maintenance Services 
+- Electrical Services 
+- Tiling & Flooring
+- No Job To Small
 
 _build:
   render: true
@@ -25,6 +25,6 @@ cascade:
     render: false
 ---
 
-# Providing a wide range of **{{<industry>}}** services throughout {{<county>}}.
+# Providing a wide range of **{{<industry>}}** services across {{<county>}}, Buckinghamshire, Surrey and Berkshire.
 
 With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.

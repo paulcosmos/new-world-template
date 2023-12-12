@@ -45,17 +45,24 @@ h3,
 h4,
 h5,
 h6 {
-
     font-family: $family-headings;
+    text-transform: uppercase!important;
 }
 
 h2 {
-    @include section-item-title;
+    color: inherit;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    word-break: break-word;
+    margin-bottom:1rem;
 }
 
 h3 {
-    @include x-item-title;
-
+    color: inherit;
+    font-weight: 600;
+    font-size:1.25rem;
+    margin-bottom: 0.75rem;
 }
 
 address {
@@ -110,6 +117,11 @@ strong {
     background-color: $secondary;
 }
 
+.has-bg-primary {
+    background-color: $primary;
+    color: white;
+}
+
 .has-bg-waves {
     background-color: $secondary;
 	background-image: linear-gradient(0deg, rgba($secondary, 0.6), rgba($secondary, 0.6)), url('../images/waves.svg');
@@ -149,6 +161,7 @@ strong {
         box-shadow: none;
         display: inline-flex;
         height: 3rem;
+        transition: all 0.2s;
 
         &:hover {
             background-color: $button-bg-hover;
@@ -334,7 +347,7 @@ strong {
 // Top Banner
 .top-banner {
     background-color: $top-banner-bg;
-    // @include brand-gradient;
+    @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
     font-weight: bold;
@@ -400,12 +413,12 @@ strong {
 
     &-title {
         text-align: left;
-        font-size: $size-7;
+        font-size: $size-6;
         font-family: $family-headings;
         font-weight: $family-heading-weight;
 
         @include from($widescreen) {
-            font-size: $size-6;
+            font-size: $size-4;
         }
 
         &:hover {
@@ -475,6 +488,7 @@ strong {
             max-height: $logo-max-height;
 
             @include until($navbar-breakpoint) {
+                max-width: $logo-max-width-mobile;
                 max-height: 3rem !important;
                 padding: 0;
             }
@@ -686,7 +700,7 @@ strong {
         width: 1.6rem;
         height: 2px;
         margin-right: .2rem;
-        background-color: $primary;
+        background-color: $accent;
         transform: translateY(-50%);
     }
 
@@ -1007,7 +1021,7 @@ strong {
             }
 
             &:before {
-                content:"\f14a";
+                content:"\f013";
                 font-family: "FontAwesome";
                 margin-right: 10px;
                 color: $primary;
@@ -1243,9 +1257,9 @@ strong {
             }
 
             // Flip the columns to make it pretty
-            &:nth-of-type(odd) {
-                flex-direction: row-reverse !important;
-            }
+            // &:nth-of-type(odd) {
+            //     flex-direction: row-reverse !important;
+            // }
 
             hr {
                 top: -10px;
@@ -1456,7 +1470,8 @@ strong {
 // Call to Action banner
 .cta {
 
-    &-banner {
+    &-banner,
+    &-callout {
         background-color: $secondary;
         display: block;
         color: $white;
@@ -1487,6 +1502,27 @@ strong {
 
                 &:after {
                     width: 0%;
+                }
+            }
+        }
+
+        &-callout {
+            a {
+                color:$primary;
+                display: inline-block;
+    
+                &:after {
+                    @include animated-underline;
+                    background-color: white;
+                    width: 100%;
+                }
+    
+                &:hover {
+                    // color: $primary;
+    
+                    &:after {
+                        width: 0%;
+                    }
                 }
             }
         }
@@ -1602,12 +1638,7 @@ strong {
         img {
             max-height: 120px;
             max-width: 200px;
-            filter: grayscale(100%);
             transition: all 0.2s;
-
-            &:hover {
-                filter: grayscale(0%);
-            }
         }
     }
 }

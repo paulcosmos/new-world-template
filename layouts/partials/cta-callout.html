@@ -1,7 +1,24 @@
-			<section class="section">
-				<div class="container is-fullhd" data-aos="fade-in">
-					<div class="content box has-text-centered cta-callout px-6">
-						<h2>Got a gas or water emergency? Call us 24 hours a day on <a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a></h2>
-					</div>
+<section class="section">
+	<div class="container is-fullhd">
+	   <div class="cta-callout" data-aos="fade-up">
+		  <div class="columns is-vcentered is-multiline">
+			 <div class="column is-12-tablet is-9-desktop">
+				<div class="content">
+				   <p>Ready to get started? Call us today on 
+				   {{ if $.Site.Params.phone }}
+					  <a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a>
+				   {{ else -}}
+					  <a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.mobile |  -}}'>{{ .Site.Params.mobile }}</a>
+				   {{- end }}
+				   or use our contact form.</p>
 				</div>
-			</section>
+			 </div>
+			 <div class="column is-12-tablet is-3-desktop">
+				<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+				   <button class="button button-primary ml-0 modal-trigger" data-target="quote-modal"  href="#">{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+	</div>
+ </section>
