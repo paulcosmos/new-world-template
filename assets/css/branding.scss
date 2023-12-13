@@ -50,7 +50,8 @@ $navbar-background-color: $secondary;
 $navbar-background-color-mobile: $navbar-background-color;
 $mobile-menu-background-color: $secondary;
 
-$logo-max-width: 180px;
+$logo-max-width: 240px;
+$logo-max-width-mobile: 20px;
 $logo-max-height: $navbar-height;
 $logo-bg-colour: lighten($navbar-background-color,5%);
 $logo-bg-hover-colour: lighten($logo-bg-colour,5%);
@@ -71,7 +72,7 @@ $navbar-divider-background-color: lighten($navbar-dropdown-background-color, 5%)
 // Buttons
 $button-text: white;
 $button-bg: $primary;
-$button-bg-hover: lighten($button-bg, 10%);
+$button-bg-hover: darken($button-bg, 10%);
 
 // Modal overlay
 $sl-overlay-background: $secondary;

@@ -149,6 +149,7 @@ strong {
         box-shadow: none;
         display: inline-flex;
         height: 3rem;
+        transition: all 0.2s;
 
         &:hover {
             background-color: $button-bg-hover;
@@ -475,6 +476,7 @@ strong {
             max-height: $logo-max-height;
 
             @include until($navbar-breakpoint) {
+                max-width: $logo-max-width-mobile;
                 max-height: 3rem !important;
                 padding: 0;
             }
