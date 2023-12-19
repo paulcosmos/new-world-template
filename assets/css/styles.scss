@@ -226,7 +226,7 @@ strong {
         margin-left: 0;
 
         li {
-            list-style: none;
+            // list-style: none;
             position: relative;
             // padding-left: 1.5rem;
             font-weight: $family-heading-weight;
@@ -1127,6 +1127,10 @@ strong {
                 color: inherit;
             }
 
+            ul {
+                list-style: none;
+            }
+
         }
 
         .image {
@@ -1257,6 +1261,10 @@ strong {
                 width: 60px;
                 background-color: $primary;
                 border: 0px !important;
+            }
+
+            ul {
+                list-style: none;
             }
 
         }
@@ -1981,6 +1989,30 @@ strong {
                 bottom: 18px;
                 margin: 0;
             }
+        }
+    }
+}
+
+.faqs {
+
+    background-color: $tertiary;
+
+    h2 {
+        text-align: center;
+    }
+
+    .faq-item {
+
+        border: solid 1px $tertiary;
+        color: $text;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        h4 {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
         }
     }
 }
