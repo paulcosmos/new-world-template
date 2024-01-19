@@ -226,9 +226,10 @@ strong {
         margin-left: 0;
 
         li {
-            // list-style: none;
+            list-style: disc;
             position: relative;
-            // padding-left: 1.5rem;
+            margin-left: 1rem;
+            padding-left: 0.5rem;
             font-weight: $family-heading-weight;
 
             // &:before {
@@ -245,18 +246,18 @@ strong {
             //     background-color: $primary;
             // }
 
-            &:before {
-                content: "\f00c";
-                font-family: 'FontAwesome';
-                position: relative;
-                left: 0;
-                bottom: 0;
-                line-height: 2rem;
-                text-align: center;
-                border-radius: 0%;
-                color: $primary;
-                margin-right: 0.5rem;
-            }
+            // &:before {
+            //     content: "\f00c";
+            //     font-family: 'FontAwesome';
+            //     position: relative;
+            //     left: 0;
+            //     bottom: 0;
+            //     line-height: 2rem;
+            //     text-align: center;
+            //     border-radius: 0%;
+            //     color: $primary;
+            //     margin-right: 0.5rem;
+            // }
         }
     }
 }
@@ -269,7 +270,6 @@ strong {
         li {
             list-style: none;
             position: relative;
-            // padding-left: 1.5rem;
             font-weight: $family-heading-weight;
 
             &:before {
@@ -1001,7 +1001,7 @@ strong {
         margin-left: 0;
 
         li {
-            list-style: none;
+            // list-style: none;
         }
     }
 }
