@@ -33,11 +33,16 @@
 		{{ partial "quote-modal.html" . }}
 
 		<script src="/js/site.js"></script>
+		<script src="http://code.jquery.com/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>
+
+		<!-- Animate on Scoll -->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
-		  AOS.init();
+			AOS.init();
 		</script>
+
+		<!-- Lightbox -->
 		<script src="js/simple-lightbox.min.js?v2.11.0"></script>
 		<script>
 			(function() {
@@ -49,6 +54,20 @@
 			});
 		})();
 		</script>
+
+		<!-- BG Slider -->
+		<script src="./js/vegas/vegas.min.js"></script>
+		<script>
+			$(".vegas-slides").vegas({
+				slides: [
+					{ src: "./images/slider/slide1.jpg" },
+					{ src: "./images/slider/slide2.jpg" },
+					{ src: "./images/slider/slide3.jpg" }
+				],
+				overlay: './js/vegas/vegas-overlay.png'
+			});
+		</script>
+		
 		{{ block "scripts" . }}
 		{{- end }}
 	</body>

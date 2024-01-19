@@ -911,6 +911,24 @@ strong {
     }
 }
 
+.vegas-overlay {
+    opacity: 0.8;
+}
+
+.vegas-content {
+    @include until($tablet){
+        overflow: hidden;
+    }
+}
+
+.vegas-timer {
+    height: 5px;
+}
+
+.vegas-timer-progress {
+    background: $primary;
+}
+
 .big-logo {
 
     min-height: 450px;
