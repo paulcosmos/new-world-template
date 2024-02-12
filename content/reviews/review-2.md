@@ -5,4 +5,4 @@ rating: 5
 location: 
 ---
 
-The guys from Bees landscaping did a fantastic job and cleaned up after themselves. Would definitely recommend.
+The guys from {{<company>}} did a fantastic job and cleaned up after themselves. Would definitely recommend.

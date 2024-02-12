@@ -5,4 +5,4 @@ rating: 5
 location: 
 ---
 
-A thoroughly professional work force. The job was completed within budget and on time. The final result was excellent. I would have no problem in recommending Bees Landscaping.
+A thoroughly professional work force. The job was completed within budget and on time. The final result was excellent. I would have no problem in recommending {{<company>}}.
