@@ -1,8 +1,8 @@
 ---
-title: Peter
+title: Katie James
 type: review
 rating: 5
-location: 
+location: SA71
 ---
 
-Very friendly, showed up on time every day and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.
+{{<company>}} carried out a whole roof repair on my property, the job was done to a very high standard all the team was very polite and a lovely bunch of boys would 100% recommend.

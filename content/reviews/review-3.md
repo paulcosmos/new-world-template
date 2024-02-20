@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Barry
 type: review
 rating: 5
-location: 
+location: SA71
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Recently had several roof tiles come loose and lost a ridge tile, {{<company>}} came around asap and carried the work to a high standard, highly recommended and very professional and polite. Would not hesitate to call them out again to fix any roofing problems.
