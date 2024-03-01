@@ -10,7 +10,12 @@
 								<p>Please note, our business address is purely for correspondence. We do not have a public office.</p>
 								<address>
 									{{- with .Site.Params }}
-									<b>{{ .fullname }},<br/></b>
+									<b>{{- if .fullname -}}
+										{{- .fullname -}}
+										{{- else -}}
+										{{- .company -}}
+										{{- end -}}
+										,<br/></b>
 									{{ if .building }}
 									{{ .building }},<br/>
 									{{end }}

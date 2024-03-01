@@ -1,6 +1,6 @@
 modalbuttontext =  "Get a Quote"
 company     =   "#companyName"
-fullname    =   "#companyFullName"
+fullname    =   ""
 slogan      =   ""
 logo		=	"logo.png"
 emblem		=	""

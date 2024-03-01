@@ -66,7 +66,7 @@
 			<div class="container is-fluid site-footer-signoff">
 				<div class="content">
 					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ .fullname }} | {{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
+					Website by New World Digital Media on behalf of {{ if .fullname }}{{ .fullname }}{{ else }}{{ .company }}{{ end }} | {{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
 					{{- end }}
 				</div>
 			</div>
