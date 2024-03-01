@@ -21,28 +21,35 @@
 			{{ end }}
 		</header>
 
+
 		<main>
 			{{ block "main" . }}
 			{{ end }} 
 		</main>
+		
 
 		<footer class="site-footer">
 			{{ partial "site-footer.html" . }}
 		</footer>
 
+
+		{{ "<!-- Contact Form Pop-up -->" | safeHTML }}
 		{{ partial "quote-modal.html" . }}
 
+
+
+		{{ "<!-- Scripts -->" | safeHTML }}
 		<script src="/js/site.js"></script>
 		<script src="http://code.jquery.com/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/590b99fc1d.js" crossorigin="anonymous"></script>
 
-		<!-- Animate on Scoll -->
+		{{ "<!-- Animate on Scroll -->" | safeHTML }}
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 			AOS.init();
 		</script>
 
-		<!-- Lightbox -->
+		{{ "<!-- Lightbox -->" | safeHTML }}
 		<script src="js/simple-lightbox.min.js?v2.11.0"></script>
 		<script>
 			(function() {
@@ -55,7 +62,7 @@
 		})();
 		</script>
 
-		<!-- BG Slider -->
+		{{ "<!-- Vegas BG Slider -->" | safeHTML }}
 		<script src="./js/vegas/vegas.min.js"></script>
 		<script>
 			$(".vegas-slides").vegas({
