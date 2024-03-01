@@ -232,32 +232,6 @@ strong {
             padding-left: 0.5rem;
             font-weight: $family-heading-weight;
 
-            // &:before {
-            //     content: " ";
-            //     position: absolute;
-            //     left: 0;
-            //     top: 0.5rem;
-            //     bottom: 0;
-            //     width: 0.5rem;
-            //     height: 0.5rem;
-            //     line-height: 2rem;
-            //     text-align: center;
-            //     border-radius: 50%;
-            //     background-color: $primary;
-            // }
-
-            // &:before {
-            //     content: "\f00c";
-            //     font-family: 'FontAwesome';
-            //     position: relative;
-            //     left: 0;
-            //     bottom: 0;
-            //     line-height: 2rem;
-            //     text-align: center;
-            //     border-radius: 0%;
-            //     color: $primary;
-            //     margin-right: 0.5rem;
-            // }
         }
     }
 }
