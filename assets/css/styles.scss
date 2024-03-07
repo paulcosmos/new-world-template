@@ -915,6 +915,14 @@ strong {
     background-position: center;
 }
 
+.bgimage {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    max-height: 650px;
+}
+
 .chunky-list {
 
     ul {
