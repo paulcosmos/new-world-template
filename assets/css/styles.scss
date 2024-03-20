@@ -8,7 +8,7 @@
 @import "bulma/utilities/initial-variables.sass";
 @import "bulma/utilities/mixins.sass";
 
-$button-corner-radius: 12px;
+$button-corner-radius: 0px;
 $image-corner-radius: 0.5rem;
 $navbar-breakpoint: $desktop !default;
 
@@ -314,7 +314,7 @@ strong {
     // @include brand-gradient;
     color: $top-banner-text;
     font-size: $size-7;
-    font-weight: bold;
+    font-weight: 500;
     padding: 0.5rem 0;
     // padding-top: $size-7;
     // padding-bottom: $size-7;
@@ -411,7 +411,7 @@ strong {
         transition: all 0.3s;
         text-align: center;
         position: relative;
-        font-weight: $family-heading-weight;
+        font-weight: 500;
 
         &:before {
             @include animated-underline;
@@ -649,7 +649,7 @@ strong {
 .pre-heading {
     text-transform: uppercase;
     font-size: $preheading-size;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: $size-5;
     display: block;
     color: $preheading-text;
@@ -816,7 +816,7 @@ strong {
             display: inline-block;
             font-family: $family-sans-serif;
             font-size: 150%;
-            font-weight: bold;
+            font-weight: 600;
             width: 100%;
             color: $hero-cta-number-text;
             margin-top: 0;
@@ -888,7 +888,9 @@ strong {
 }
 
 .vegas-overlay {
-    opacity: 0.8;
+    opacity: 1;
+    background-color: $secondary;
+    background: linear-gradient(180deg, (rgba($secondary, 0.9), rgba($secondary, 0.9)));
 }
 
 .vegas-content {
@@ -1885,7 +1887,7 @@ strong {
 .policy-content {
     
     strong {
-        font-weight: bold;
+        font-weight: 500;
     }
 }
 
