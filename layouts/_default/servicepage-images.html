@@ -1,11 +1,10 @@
 {{ define "hero" }}
-<section class="hero hero-service is-medium"
-	{{/* style="background-image:linear-gradient(-249deg, rgba(24, 26, 64, 0.9), rgba(24, 26, 64, 0.5)), url(../{{ .Params.backgroundImage }}"     */}}>
+<section class="hero hero-service is-medium">
 	<div class="hero-body">
 		<div class="container is-fullhd">
-			<div class="columns">
-				<div class="column is-12-tablet is-8-desktop is-6-fullhd">
-					<span class="pre-heading has-text-white" data-aos="fade-left">
+			<div class="columns is-centered">
+				<div class="column is-12-tablet is-8-desktop is-8-fullhd has-text-centered">
+					<span class="pre-heading _has-text-white" data-aos="fade-left">
 						Our Services
 					</span>
 					<div class="content hero-services-content has-accent" data-aos="fade-down">
@@ -19,11 +18,11 @@
 {{ end }}
 
 {{ define "main" }}
-<section class="section">
+<section class="section has-bg-tertiary">
 	<div class="container is-fullhd">
 		<div class="columns is-multiline is-centered">
 			<div class="column is-12-touch is-7-desktop" data-aos="fade-in">
-				<article class="content has-accent box">
+				<article class="content has-accent service-page-content box">
 
 				<div class="image has-rounded-corners mb-6">
 					{{- $image := resources.Get .Params.image }}
@@ -70,10 +69,10 @@
 
 					<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
 						<span class="icon-text">
-						  <span class="icon is-hidden-touch">
-						    <i class="fa-regular fa-phone"></i>
-						  </span>
-						  <span>Request a call back</span>
+							<span class="icon is-hidden-touch">
+								<i class="fa-regular fa-phone"></i>
+							</span>
+							<span>Request a call back</span>
 						</span>
 					</button>
 

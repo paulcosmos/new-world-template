@@ -1,8 +1,8 @@
 ---
-title: Andy
+title: Simon
 type: review
 rating: 5
 location: 
 ---
 
-I recently used {{<company>}} and their customer service was top-notch, the prices were very reasonable, and the quality of work was excellent. Highly recommended!
+Very friendly, showed up on time and went above and beyond to please us. I couldn’t recommend {{<company>}} enough.

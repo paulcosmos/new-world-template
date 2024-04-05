@@ -24,14 +24,16 @@ $text: $secondary;
 
 // Page hero settings 
 @mixin hero-default-bg {
-	@include background-dots;
+	background-color: $tertiary;
+	// @include background-dots;
 }
 
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
-	background-image: linear-gradient(-249deg, rgba($secondary, 1), rgba($secondary, 0.5)), url('../images/hero-image.jpg');
-
+	background-color: $secondary;
+	background-image: linear-gradient(180deg, rgba(black, 0.3), rgba($secondary, 0.9)), url('../images/hero-image.jpg');
+	// background-position: bottom;
 }
 
 $hero-index-text: white;
@@ -41,12 +43,15 @@ $top-banner-bg: darken($secondary,10%);
 $top-banner-text: white;
 $top-banner-icon: $accent;
 
-// Main Navigation 
+// Main Navigation
+$navbar-height: 5rem;
+
 $navbar-background-color: $secondary;
 $navbar-background-color-mobile: $navbar-background-color;
+$mobile-menu-background-color: $secondary;
 
-$navbar-height: 5rem;
-$logo-max-width: 180px;
+$logo-max-width: 240px;
+$logo-max-width-mobile: 200px;
 $logo-max-height: $navbar-height;
 $logo-bg-colour: lighten($navbar-background-color,5%);
 $logo-bg-hover-colour: lighten($logo-bg-colour,5%);
@@ -55,7 +60,7 @@ $navbar-item-color: white;
 $navbar-item-hover-color: white;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
-$navbar-item-mobile-color: $navbar-item-color;
+$navbar-item-mobile-color: white;
 $navbar-dropdown-arrow: $primary;
 $navbar-burger-text: $primary;
 $navbar-dropdown-background-color: lighten($navbar-background-color, 5%);
@@ -67,7 +72,7 @@ $navbar-divider-background-color: lighten($navbar-dropdown-background-color, 5%)
 // Buttons
 $button-text: white;
 $button-bg: $primary;
-$button-bg-hover: lighten($button-bg, 10%);
+$button-bg-hover: darken($button-bg, 10%);
 
 // Modal overlay
 $sl-overlay-background: $secondary;
@@ -75,9 +80,12 @@ $sl-navigation-color: white;
 
 // Page Hero
 $hero-text: $text;
-$preheading-text: $primary;
+$preheading-text: inherit;
 $preheading-size: 1rem;
-$hero-title-size: 2rem;
+$hero-title-size: 3.4rem;
+$hero-font-size: 2.4rem;
+$hero-font-size-mobile: 1.8rem;
+$hero-title-size-mobile: 1.8rem;
 $hero-text-size: 1rem;
 $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);
@@ -89,9 +97,12 @@ $bg-overlay: rgba(0, 0, 0, 0.6);
 // Services
 $services-item-divider: solid 2px $tertiary;
 
+// Map
+$map-section-bg: linear-gradient(180deg, darken($primary, 0%), darken($primary, 10%));
+
 // Reviews
-$review-section-bg: $secondary;
-$review-section-text: white;
+$review-section-bg: white;
+$review-section-text: $text;
 $review-nav-text: $primary;
 $review-nav-bg: transparent;
 $review-nav-text-hover: white;

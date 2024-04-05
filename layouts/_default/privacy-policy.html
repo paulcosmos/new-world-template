@@ -5,7 +5,7 @@
 			<div class="columns is-centered">
 				<div class="column is-8-desktop is-7-fullhd">
 					<div class="content _hero-services-content has-text-centered has-accent" data-aos="fade-down">
-						<h1>Privacy Policy for <br/>{{ .Site.Params.fullname }}</h1>
+						<h1>Privacy Policy for <br/>{{ if .Site.Params.fullname}}{{ .Site.Params.fullname }}{{ else }}{{.Site.Params.company }}{{ end }}</h1>
 					</div>
 				</div>
 			</div>

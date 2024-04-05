@@ -1,1 +1,1 @@
-{{- .Site.Params.fullname -}}
+{{ if .Site.Params.fullname }}{{ .Site.Params.fullname }}{{ else }}{{ .Site.Params.company }}{{ end }}
