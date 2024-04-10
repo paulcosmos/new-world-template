@@ -4,12 +4,12 @@
 					<div class="columns _is-vcentered is-multiline is-variable is-6">
 						
 						<div class="column is-12-touch is-4-desktop is-4-fullhd">
-							{{- if .Params.preheading }}
-							<div class="pre-heading" data-aos="fade-down">{{ .Params.preheading }}</div>
-							{{- end }}
 							<div class="content company-intro-content has-accent has-checkmark" data-aos="fade-in">
 								<h2>{{ .Params.heading }}</h2>
 							</div>
+							{{- if .Params.preheading }}
+							<div class="pre-heading" data-aos="fade-down">{{ .Params.preheading }}</div>
+							{{- end }}
 						</div>
 
 						<div class="column is-12-touch is-8-desktop is-8-fullhd mb-4">
