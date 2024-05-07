@@ -888,9 +888,9 @@ strong {
 }
 
 .vegas-overlay {
-    opacity: 0.8;
+    opacity: 1;
     background-color: $secondary;
-    background: linear-gradient(180deg, (rgba($secondary, 0.9), rgba($secondary, 0.9)));
+    background-color: linear-gradient(180deg, (rgba($secondary, 0.9), rgba($secondary, 0.9)));
 }
 
 .vegas-content {

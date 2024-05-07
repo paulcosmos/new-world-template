@@ -23,7 +23,7 @@
 									{{- end }}
 									</a>
 								</div>
-								<h3>{{ .Params.title }}</h3>
+								<h3>{{- if .Params.anchor -}}{{- .Params.anchor -}}{{- else -}}{{- .Params.title -}}{{- end -}}</h3>
 								<p>{{ .Params.desc }}</p>
 								<div>
 									<a href="{{ .RelPermalink }}">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>

@@ -6,8 +6,8 @@ _build:
     render: false
 image: images/intro-small.jpg
 image2: images/intro-wide.jpg
-preheading: Preheading
 heading: Title Here
+preheading: Preheading
 ---
 
 {{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. In that time we've earned a reputation for excellent work quality and professional working practices.
