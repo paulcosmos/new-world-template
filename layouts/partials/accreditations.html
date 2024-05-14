@@ -69,7 +69,11 @@
 				<a href="https://www.trustatrader.com/traders/{{- .trustatrader -}}" title="Find us on trustatrader.com" target="_blank" rel="noopener"><img src="images/creds/trustatrader.png" alt="" title=""></a>
 			</div>
 			{{- end }}
-
+			{{- if .bark }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.bark.com/en/gb/company/{{- .bark -}}" title="Find us on bark.com" target="_blank" rel="noopener"><img src="images/creds/bark.png" alt="bark logo" title=""></a>
+			</div>
+			{{- end }}
 			<!-- 
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="#" title="Find us on the Gas Safe Register" target="_blank" rel="noopener"><img src="images/creds/gas-safe.png" alt="" title=""></a>
