@@ -4,7 +4,7 @@
 			<section class="section">
 				<div class="container is-fullhd">  
 					<div class="columns is-multiline is-mobile review-grid">
-						{{ range where (where .Site.RegularPages "Type" "review") "File.Dir" "reviews/" }}
+						{{ range (where .Site.RegularPages "Type" "review") }}
 							{{ partial "review-slider/review-card.html" . }}
 						{{- end }}
 					</div>
