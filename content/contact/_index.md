@@ -2,7 +2,7 @@
 title: Contact
 menu: ["main","footer"]
 weight: 5
-preheading: "Get a Quote"
+preheading: "Contact Us"
 _build:
   render: true
 cascade:
@@ -11,8 +11,4 @@ cascade:
     render: false
 ---
 
-# Looking for **{{<industry>}} services** in {{<county>}}?
-
-Speak to us today to request a quote. 
-
-
+# Get a Quote
