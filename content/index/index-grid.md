@@ -4,8 +4,8 @@ weight: 1
 _build:
     list: true
     render: false
-image: images/intro-small.jpg
-image2: images/intro-wide.jpg
+# image: images/intro-small.jpg
+# image2: images/intro-wide.jpg
 heading: Title Here
 preheading: Preheading
 ---
