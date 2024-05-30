@@ -1,6 +1,6 @@
 ---
 title: "Our Work"
-menu: ["main","footer"]
+menu: ["main","footer", "dropdown"]
 weight: 3
 _build:
   render: true
