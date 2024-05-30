@@ -50,7 +50,7 @@
 							{{/*  END dropdown  */}}
 							{{/*  Main Nav  */}}
 						    {{- $currentPage := . }}
-						    {{ range .Site.Menus.main -}}
+						    {{ range .Site.Menus.dropdown -}}
 						    <a href="{{ .URL }}" title="{{ .Title }}" class="navbar-item">
 								{{- if .Page.Params.anchor -}}
 								  {{ .Page.Params.anchor }}

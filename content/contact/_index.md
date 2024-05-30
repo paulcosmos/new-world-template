@@ -1,6 +1,6 @@
 ---
 title: Contact
-menu: ["main","footer"]
+menu: ["main","footer", "dropdown"]
 weight: 5
 preheading: "Contact Us"
 _build:
