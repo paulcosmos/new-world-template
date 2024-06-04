@@ -12,11 +12,11 @@
 		<header>
 			{{ partial "top-banner.html" . }}
 
-			{{ partial "navbar-dropdown.html" . }}
+			{{ partial "navbar.html" . }}
 
 			{{ block "hero" . -}}
 			<section class="hero is-small">
-			    {{ partial "hero/hero-text-only.html" . }}
+				{{ partial "hero/hero-text-only.html" . }}
 			</section>
 			{{ end }}
 		</header>
