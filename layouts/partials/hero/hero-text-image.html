@@ -1,20 +1,9 @@
 				<div class="hero-body">
 					<div class="container is-fullhd">
-					    <div class="columns is-multiline is-vcentered">
+						<div class="columns is-multiline is-vcentered">
 
 							<div class="column is-7-desktop is-6-fullhd">
 								<div class="content">
-								{{/*  {{ if (ne .Params "preheading" "") }}
-									<div class="" data-aos="fade-down">
-									  <span class="pre-heading" data-aos="fade-left">
-									    {{ if .Params.preheading }}
-											{{- .Params.preheading -}}
-										{{ else }}
-											{{ .Site.Params.slogan }}
-										{{ end }}
-									  </span>
-									</div>
-								{{ end }}  */}}
 									<div class="has-accent" data-aos="fade-left">
 										{{ .Content }}
 									</div>
@@ -29,7 +18,7 @@
 									{{- $image := resources.Get .Params.image }}
 									{{- if $image }}
 									<img src='{{ ($image.Fill "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
-									  {{ else }}
+									{{ else }}
 									<img src='/images/placeholder.jpg'/>
 									{{- end }}
 								</div>
