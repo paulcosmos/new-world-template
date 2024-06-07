@@ -8,10 +8,10 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #f3e4ed;
+$primary: #9a66bf;
 $secondary: #242833;
 $info: $secondary;
-$tertiary: #eff1f5;
+$tertiary: #EFF2F5;
 $accent: darken($primary, 0%);
 $link: $primary;
 $animated-underline: $link;
@@ -49,7 +49,6 @@ $navbar-height: 5rem;
 $navbar-background-color: $secondary;
 $navbar-background-color-mobile: $navbar-background-color;
 $mobile-menu-background-color: $secondary;
-
 $navbar-item-color: white;
 $navbar-item-hover-color: white;
 $navbar-item-hover-background-color: transparent;
