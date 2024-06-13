@@ -15,6 +15,9 @@ cascade:
   _build:
     list: true
     render: false
+
+sitemap:
+  priority: 1.0
 ---
 
 # Reliable, professional **{{<industry>}} services** throughout {{<county>}}.
