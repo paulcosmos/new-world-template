@@ -699,8 +699,7 @@ strong {
     position: relative;
     color: $hero-text;
     font-weight: normal;
-    text-align: left;
-    text-align: inherit;
+    text-align: center;
 
     @include from($navbar-breakpoint) {
         padding-top: 3rem;
@@ -1518,18 +1517,13 @@ strong {
 
     &-bg-image {
         background-color: $secondary;
-        background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.5), rgba($secondary, 0.5)), url('../images/bg.png');
+        background-image: linear-gradient(180deg, rgba($black, 0.8), rgba($secondary, 0.1)), url('../images/bg.png');
         background-repeat: no-repeat;
         background-position: center right;
         background-size: cover;
         color: white;
         padding-top: 9rem;
         padding-bottom: 9rem;
-
-        @include until($navbar-breakpoint){
-            background-image: linear-gradient(-249deg, rgba($secondary, 0.95), rgba($secondary, 0.95)), url('../images/bg.png');
-            background-position: center;
-        }
     }
 
     &-callout{
@@ -1820,6 +1814,7 @@ strong {
         padding: 0.75rem;
 
         &-pulled {
+            border: solid 1px rgba($secondary, 0.2);
             @include from($desktop){
                 margin-top: -100px;
             }

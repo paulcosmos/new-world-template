@@ -8,7 +8,7 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $family-heading-weight: 600;
 
 //  Set colours
-$primary: #9a66bf;
+$primary: #bd87e3;
 $secondary: #242833;
 $info: $secondary;
 $tertiary: #EFF2F5;
@@ -25,7 +25,7 @@ $text: $secondary;
 // Page hero settings 
 @mixin hero-default-bg {
 	background-color: $tertiary;
-	// @include background-dots;
+	background-image: linear-gradient(180deg, rgba($tertiary, 0.6), rgba($secondary, 0.05));
 }
 
 @mixin hero-index-bg {
@@ -62,7 +62,7 @@ $navbar-dropdown-item-hover-color: $primary;
 $navbar-dropdown-border-top: 2px solid $primary;
 $navbar-divider-background-color: lighten($navbar-dropdown-background-color, 5%);
 
-$logo-max-width: 240px;
+$logo-max-width: 320px;
 $logo-max-width-mobile: 200px;
 $logo-max-height: $navbar-height;
 $logo-bg-colour: lighten($navbar-background-color,5%);
@@ -81,10 +81,10 @@ $sl-navigation-color: white;
 $hero-text: $text;
 $preheading-text: inherit;
 $preheading-size: 1rem;
-$hero-title-size: 3.4rem;
+$hero-title-size: 4.4rem;
 $hero-font-size: 2.4rem;
-$hero-font-size-mobile: 1.8rem;
-$hero-title-size-mobile: 1.8rem;
+$hero-font-size-mobile: 2.2rem;
+$hero-title-size-mobile: 2.2rem;
 $hero-text-size: 1rem;
 $hero-cta-bg: $secondary;
 $hero-cta-shadow: lighten($primary, 5%);
