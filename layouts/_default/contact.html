@@ -5,7 +5,12 @@
 					<div class="columns is-variableis-multiline">
 
 						<div class="column is-4-desktop">
-							<div class="content contact-details mb-6" data-aos="fade-right">
+
+
+							{{  partial "contact-details.html" .  }}
+
+
+							<div class="content contact-details mt-6" data-aos="fade-right">
 								<h2>Business Address</h2>
 								<p>Please note, our business address is purely for correspondence. We do not have a public office.</p>
 								<address>
@@ -28,7 +33,6 @@
 								{{- end }}
 								</address>
 							</div>
-							{{  partial "contact-details.html" .  }}
 						</div>
 
 						<div class="column is-offset-2-desktop box contact-form contact-form-pulled" data-aos="fade-up">         
