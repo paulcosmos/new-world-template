@@ -20,6 +20,6 @@ sitemap:
   priority: 1.0
 ---
 
-# Reliable **{{<seo>}}** across {{<county>}}.
+# Reliable **{{<seo>}}** in {{<county>}}.
 
 We are experienced in all aspects of the {{<industry>}} trade.
