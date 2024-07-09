@@ -1639,10 +1639,11 @@ strong {
     &-banner {
         background-color: $why-us-bg;
         color: $why-us-text;
+        text-align: center;
 
         i {
             margin-bottom: 1rem;
-            color: darken(white, 10%);
+            color: darken($primary, 10%);
             font-size: 1.75rem;
         }
 
