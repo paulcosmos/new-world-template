@@ -127,6 +127,7 @@ strong {
 // Buttons 
 .button {
     color: $secondary;
+    font-family: $family-sans-serif;
 
     &-primary,
     &-primary>button {
@@ -137,6 +138,7 @@ strong {
         border-width: 1px;
         font-size: inherit;
         font-weight: $family-heading-weight;
+        font-family: $family-sans-serif;
         cursor: pointer;
         justify-content: center;
         padding: 1rem;
