@@ -888,8 +888,7 @@ strong {
 
 .vegas-overlay {
     opacity: 1;
-    background-color: $secondary;
-    background-color: linear-gradient(180deg, (rgba($secondary, 0.9), rgba($secondary, 0.9)));
+    background: linear-gradient(0deg, (rgba(black, 0.9)), rgba(black, 0.6));
 }
 
 .vegas-content {
@@ -1644,7 +1643,7 @@ strong {
 
         i {
             margin-bottom: 1rem;
-            color: darken($primary, 10%);
+            color: darken($primary, 0%);
             font-size: 1.75rem;
         }
 
