@@ -1,0 +1,2 @@
+Disallow: /success.html
+Disallow: /fail.html
