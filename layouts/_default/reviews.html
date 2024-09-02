@@ -6,11 +6,18 @@
 					<div class="is-size-5 has-text-centered py-6">
 					<p>Reviews coming soon…</p>
 					</div> 
-					<!-- <div class="columns is-multiline is-mobile review-grid">
+					
+					
+					{{ "<!-- Review Cards" | safeHTML }}
+					<div class="columns is-multiline is-mobile review-grid">
 						{{ range (where .Site.RegularPages "Type" "review") }}
 							{{ partial "review-slider/review-card.html" . }}
 						{{- end }}
-					</div> -->
+					</div>
+					{{ " End Review Cards -->" | safeHTML }}
+					
+
+
 					{{ if .Params.morelink }}
 					<div class="is-grouped has-text-centered mt-5">
 						<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
