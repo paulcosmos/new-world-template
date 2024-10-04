@@ -1987,17 +1987,16 @@ strong {
         .gas-safe-emblem {
             position: relative;
             display: block;
+            margin: 0 auto;
+            margin-bottom: 1rem;
             width: 80px;
-            margin-left: auto;
-            margin-right: 20px;
-            margin-bottom: 20px;
-            z-index: 99;
-
-            @include from ($desktop) {
+    
+            @include from($desktop) {
                 position: absolute;
-                right: 18px;
-                bottom: 18px;
+                right: 20px;
+                bottom: 20px;
                 margin: 0;
+                width: 80px;
             }
         }
     }

@@ -13,9 +13,9 @@ image: images/intro.jpg
 * A reputation for excellent quality and professionalism
 * Hard-working, customer focused approach to projects
 
-{{<company>}} have been providing {{<industry>}} services to happy customers in and around {{<towncity>}} for {{<years>}}. We've earned a reputation for our excellent work quality and customer service.
+**{{<company>}}** provide {{<industry>}} services to customers in and around {{<towncity>}}. We are highly experienced {{<seo>}} with a reputation for excellent work quality and professional working practices. 
 
-We are highly experienced professionals. Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a FREE, no obligation quote.
+Whatever the job, we can handle it. Call us today on **{{<phone>}}** for a FREE, no obligation quote.
 
 
 
