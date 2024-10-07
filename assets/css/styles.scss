@@ -874,14 +874,14 @@ strong {
         display: block;
         margin: 0 auto;
         margin-bottom: 1rem;
-        width: 120px;
+        width: 60px;
 
         @include from($desktop) {
             position: absolute;
             right: 20px;
             bottom: 20px;
             margin: 0;
-            width: 160px;
+            width: 80px;
         }
     }
 }
