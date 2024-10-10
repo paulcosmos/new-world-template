@@ -31,16 +31,16 @@
 								  {{- .Title }}
 								{{- end -}}
 							</a>
-							<!-- Dropdown example 
-							<div class="navbar-dropdown py-0">
-									<a class="navbar-item" href="#" title="">
-										Link
-									</a>
-									<a class="navbar-item" href="/services.html" title="View all services">
-										View All Services
-									</a>
-								</div>
-							-->
+							{{"<!-- Dropdown example " | safeHTML }}
+								<div class="navbar-dropdown py-0">
+										<a class="navbar-item" href="#" title="">
+											Link
+										</a>
+										<a class="navbar-item" href="/services.html" title="View all services">
+											View All Services
+										</a>
+									</div>
+							{{" -->" | safeHTML }}
 						    {{ end }}
 						    <div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
 						      <button class="button-primary"><i class="fa-light fa-envelope-circle-check pr-2"></i> {{ .Site.Params.modalbuttontext }}</button>
