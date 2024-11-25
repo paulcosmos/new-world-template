@@ -102,12 +102,22 @@ strong {
     }
 }
 
-.has-bg-tertiary {
-    background-color: $tertiary;
+.has-bg-primary {
+    background-color: $primary;
+    color: $hero-text;
+
+    .pre-heading:before {
+        background-color: currentColor;
+    }
 }
 
 .has-bg-secondary {
     background-color: $secondary;
+    color: white;
+}
+
+.has-bg-tertiary {
+    background-color: $tertiary;
 }
 
 .has-bg-waves {
@@ -1816,6 +1826,8 @@ strong {
 
         &-pulled {
             border: solid 1px rgba($secondary, 0.2);
+            background: $tertiary;
+            
             @include from($desktop){
                 margin-top: -100px;
             }
