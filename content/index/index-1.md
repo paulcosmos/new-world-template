@@ -5,6 +5,7 @@ _build:
     list: true
     render: false
 image: images/intro.jpg
+preheading: About us
 ---
 
 ## Professional **{{<seo>}}** in {{<towncity>}} &amp; {{<county>}}.

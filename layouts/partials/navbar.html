@@ -1,5 +1,5 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
-				<div class="container is-fluid">  
+				<div class="container is-desktop">  
 				    <div class="navbar-brand">
 						<a class="navbar-item navbar-logo no-underline" href="/index.html">
 							{{- with .Site.Params }}
@@ -47,9 +47,11 @@
 								</div>
 							</div>
 							{{" -->" | safeHTML }}
+							{{"<!--" | safeHTML }}
 						    <div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
 						      <button class="button-primary"><i class="fa-light fa-envelope-circle-check pr-2"></i> {{ .Site.Params.modalbuttontext }}</button>
 						    </div>
+							{{"-->" | safeHTML }}
 						</div>
 					</div>
 				</div>
