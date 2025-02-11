@@ -30,10 +30,10 @@
 			{{/*  <section class="section has-bg-tertiary">  */}}
 				
 				<div class="container is-fullhd pb-4">
-					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+					<div class="columns _company-services-item is-justify-content-center is-multiline is-vcentered is-variable is-8">
 
 
-						<div class="column is-12-touch is-12-desktop is-6-widescreen">
+						<div class="column is-12-touch is-12-desktop is-6-widescreen is-align-self-center">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="_content has-accent service-list cols-2" data-aos="fade-right">
 								<ul>
@@ -46,7 +46,7 @@
 
 
 						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
-							<div class="image is-5by4 company-services-image">
+							<div class="image bg-image is-5by4 company-services-image has-rounded-corners">
 								{{- $image := resources.Get .Params.image }}
 								{{- if $image }}
 								{{- with .Site.Params }}

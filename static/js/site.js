@@ -73,4 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // ========================================================================
+    // Set images as backgrounds
+    // =======================================================================
+    $('.bg-image').each(function(){
+      if($(this).find('img').length > 0){
+        var imgSrc = $(this).find('img').prop('src');
+        $(this).css('background-image','url(' + imgSrc + ')');
+      }
+    });
+
 });  

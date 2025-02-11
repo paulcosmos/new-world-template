@@ -37,6 +37,12 @@ body {
 
 }
 
+.columns {
+    align-items: stretch!important;
+    align-content: center;
+    justify-content: center;
+}
+
 // Typography
 
 h1,
@@ -926,12 +932,20 @@ strong {
     background-position: center;
 }
 
-.bgimage {
-    width: 100%;
+.bg-image {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    flex-grow: 1;
+
     background-size: cover;
     background-position: center;
     min-height: 400px;
-    max-height: 650px;
+
+    img {
+        display: none!important;
+    }
 }
 
 .chunky-list {
