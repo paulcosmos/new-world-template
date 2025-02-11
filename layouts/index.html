@@ -47,16 +47,11 @@
 
 						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
 							<div class="image bg-image is-5by4 company-services-image has-rounded-corners">
-								{{- $image := resources.Get .Params.image }}
-								{{- if $image }}
-								{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x1000 q75 Center").RelPermalink }}' 
-									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
-									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
-								{{ end }}
-								{{ else }}
-								<img src='/images/placeholder.jpg'/>
-								{{- end }}
+
+								<img src='{{ .Params.image }}' 
+									alt="{{ if .Site.Params.seo }}{{ .Site.Params.seo|humanize }}{{ else }}{{ .Site.Params.industry|humanize}}{{ end }} in {{ .Site.Params.towncity }}{{ if .Site.Params.county }} and {{ .Site.Params.county }} {{- end }}" 
+									title="{{ if .Site.Params.seo }}{{ .Site.Params.seo|humanize }}{{ else }}{{ .Site.Params.industry|humanize}}{{ end }} in {{ .Site.Params.towncity }}{{ if .Site.Params.county }} and {{ .Site.Params.county }} {{- end }}"/>
+
 							</div>
 						</div>
 

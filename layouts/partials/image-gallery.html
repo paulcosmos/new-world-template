@@ -9,11 +9,11 @@
 						{{- $thumb := resources.Get $image  -}}
 						<a href="{{ $image.RelPermalink }}">
 							<img 
-								src='{{ ($thumb.Fill "460x460 q75 center").RelPermalink }}' 
+								src='{{ ($thumb.Fill "460x600 q75 center").RelPermalink }}' 
 								alt="" 
 								title=""
 								width="460px"
-								height="460px"
+								height="600px"
 							/>
 						</a>
 						{{ end -}}

@@ -1,7 +1,7 @@
 					{{/*  {{- $currentPage := . }}
 					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}  */}}
-					<div id="{{ anchorize .Title }}" class="columns company-services-item is-vcentered is-multiline is-variable is-8">
-						<div class="column is-12-touch is-7-desktop is-6-fullhd">
+					<div id="{{ anchorize .Title }}" class="columns company-services-item is-vcentered is-multiline is-variable is-8 flex-stretch">
+						<div class="column is-align-content-center is-12-touch is-7-desktop is-6-fullhd">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
 							<div class="content has-accent has-checkmark" data-aos="fade-right">
 								{{ .Content }}
@@ -18,17 +18,10 @@
 							</div>
 						</div>
 						<div class="column" data-aos="fade-left">
-							<div class="image is-5by4 company-services-image company-services-image">
-								{{- $image := resources.Get .Params.image }}
-								{{- if $image }}
-								{{- with .Site.Params }}
-								<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}' 
-									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"
-									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
-								{{ end }}
-								{{ else }}
-								<img src='/images/placeholder.jpg'/>
-								{{- end }}
+							<div class="image is-5by4 bg-image has-rounded-corners">
+								<img src='{{ .Params.image }}' 
+									alt="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"
+									title="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"/>
 							</div>
 						</div>
 					</div>

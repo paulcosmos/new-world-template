@@ -5,17 +5,17 @@
 		{{ end -}}
 
 		{{ define "main" }}
-			{{/*  <section class="section">
+			<section class="section">
 				<div class="container is-fullhd company-services pb-4">
 					{{- $currentPage := . }}
 					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
 						{{ partial "services/services-image-text.html" . }}
 					{{ end }}
-				</div>
-			</section>  */}}
+				{{/*  </div>  */}}
+			{{/*  </section>  */}}
 			{{ if .Params.services }}
-			<section class="section">
-				<div class="container is-fullhd pb-4">
+			{{/*  <section class="section">  */}}
+				{{/*  <div class="container is-fullhd pb-4">  */}}
 					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
 						<div class="column is-12-touch is-12-desktop">
 							<div class="pre-heading" data-aos="fade-down">What we do</div>
