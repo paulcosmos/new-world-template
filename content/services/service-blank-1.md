@@ -3,8 +3,9 @@ title: "#service-1"
 type: service-item
 desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 weight: 1
-image: 
+image: images/placeholder.jpg
 anchor:
+icon: fa-image
 ---
 ## #service-3
 

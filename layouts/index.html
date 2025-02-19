@@ -21,13 +21,11 @@
 							{{/*  <p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} {{- if .Site.Params.county }} and throughout {{ .Site.Params.county }}{{ end }}.</p>  */}}
 						</div>
 					</div>
-					{{/*  {{ partial "services/services-grid-images.html" . }}  */}}
+					{{ partial "services/services-grid-images-icons.html" . }}
 				</div>
-			{{/*  </section>  */}}
 
 			{{ with .Site.GetPage "/services" }}
 			{{ if .Params.services }}
-			{{/*  <section class="section has-bg-tertiary">  */}}
 				
 				<div class="container is-fullhd pb-4">
 					<div class="columns _company-services-item is-justify-content-center is-multiline is-vcentered is-variable is-8">
@@ -58,11 +56,11 @@
 
 					</div>
 				</div>
+			{{- end }}
+			{{- end }}
 			</section>
-			{{ end }}
-			{{ end }}
 
-			{{ partial "cta-banner.html" . }}
+			{{/*  {{ partial "cta-banner.html" . }}  */}}
 
 			
 			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
