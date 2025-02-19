@@ -6,6 +6,14 @@ weight: 3
 image: images/placeholder.jpg
 anchor:
 icon: fa-image
+
+# services:
+# - test
+# - test
+# - test
+# - test
+# - test
+# - test
 ---
 ## #service-3
 

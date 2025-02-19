@@ -1,28 +1,49 @@
-					{{/*  {{- $currentPage := . }}
-					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}  */}}
-					<div id="{{ anchorize .Title }}" class="columns company-services-item is-vcentered is-multiline is-variable is-8 flex-stretch">
-						<div class="column is-align-content-center is-12-touch is-7-desktop is-6-fullhd">
-							<div class="pre-heading" data-aos="fade-down">What we do</div>
-							<div class="content has-accent has-checkmark" data-aos="fade-right">
-								{{ .Content }}
-								<hr/>
-								{{/*  <div class="button _button-primary ml-0 modal-trigger" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">  */}}
-									<a 	class="button button-primary ml-0 modal-trigger" 
-									data-aos="fade-up" 
-									data-aos-easing="ease-in-back" 
-									data-aos-anchor-placement="bottom-bottom" 
-									data-aos-delay="200"
-									href="contact.html">{{ .Site.Params.modalbuttontext }} 
-									<i class="fa-solid fa-arrow-right"></i></a>
-								{{/*  </div>  */}}
-							</div>
-						</div>
-						<div class="column" data-aos="fade-left">
-							<div class="image is-5by4 bg-image has-rounded-corners">
-								<img src='{{ .Params.image }}' 
-									alt="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"
-									title="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"/>
-							</div>
-						</div>
-					</div>
-				{{/*  {{ end }}  */}}
+
+<div id="{{ anchorize .Title }}" class="columns company-services-item is-vcentered is-multiline is-variable is-8 flex-stretch">
+	<div class="column is-align-content-center is-12-touch is-7-desktop is-6-fullhd">
+		<div class="pre-heading" data-aos="fade-down">What we do</div>
+		<div class="content has-accent has-checkmark" data-aos="fade-right">
+			{{ .Content }}
+			<hr/>
+			{{/*  <div class="button _button-primary ml-0 modal-trigger" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">  */}}
+				<a 	class="button button-primary ml-0 modal-trigger" 
+				data-aos="fade-up" 
+				data-aos-easing="ease-in-back" 
+				data-aos-anchor-placement="bottom-bottom" 
+				data-aos-delay="200"
+				href="contact.html">{{ .Site.Params.modalbuttontext }} 
+				<i class="fa-solid fa-arrow-right"></i></a>
+			{{/*  </div>  */}}
+		</div>
+	</div>
+	<div class="column _is-hidden-mobile" data-aos="fade-left">
+		<div class="image is-5by4 bg-image has-rounded-corners">
+			<img src='{{ .Params.image }}' 
+				alt="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"
+				title="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"/>
+		</div>
+	</div>
+
+{{ if .Params.services }}
+{{/*  <div class="container is-fullhd ">
+	<div class="columns pb-4 is-justify-content-center is-multiline is-vcentered is-variable is-8">  */}}
+
+		<div class="column is-12-touch is-12-desktop is-12-widescreen is-align-self-center">
+			<div class="pre-heading" data-aos="fade-down">What we do</div>
+			<div class="_content has-accent service-list cols-3" data-aos="fade-right">
+				<ul>
+				{{- range .Params.services }}
+				<li>{{ . }}</li>
+				{{ end }}
+				</ul>						
+			</div>
+		</div>
+
+	{{/*  </div>
+</div>  */}}
+{{- end }}
+
+</div>
+
+
+{{/*  {{ end }}  */}}

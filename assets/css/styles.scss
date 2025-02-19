@@ -365,6 +365,8 @@ strong {
 
 .navbar {
 
+    border-top: solid 1px rgba($primary, 0.2);
+
     @include until($navbar-breakpoint){
         background-color: $navbar-background-color-mobile;
     }
@@ -2001,6 +2003,7 @@ strong {
 
         .image {
             margin-bottom: 1.2rem;
+            height: auto!important;
         }
     }
 

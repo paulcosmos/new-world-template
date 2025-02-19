@@ -1,83 +1,80 @@
-			{{- define "hero" -}}
-			<section class="hero is-halfheight hero-index">
-				{{ partial "hero/hero-image.html" . }}
-				{{- with .Site.Params }}
-				{{ if .emblem }}
-				<img class="gas-safe-emblem" src="images/{{ .emblem }}">
-				{{ end -}}
-				{{ end -}}
-			</section>
-			{{ end -}}
+{{- define "hero" -}}
+<section class="hero is-halfheight hero-index">
+	{{ partial "hero/hero-image.html" . }}
+	{{- with .Site.Params }}
+	{{ if .emblem }}
+	<img class="gas-safe-emblem" src="images/{{ .emblem }}">
+	{{ end -}}
+	{{ end -}}
+</section>
+{{ end -}}
 
-			{{- define "main" -}}
-			{{ partial "intro-images.html" . }}
-			
+{{- define "main" -}}
+{{ partial "intro-images.html" . }}
 
-			<section class="section company-services-overview has-bg-tertiary">
-				<div class="container is-fullhd">
-					<div class="columns is-centered is-multiline">
-						<div class="column is-12-touch is-8-desktop is-7-fullhd mb-3 has-text-centered" data-aos="fade-in">
-							<h2>Our Services</h2>
-							{{/*  <p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} {{- if .Site.Params.county }} and throughout {{ .Site.Params.county }}{{ end }}.</p>  */}}
-						</div>
-					</div>
-					{{ partial "services/services-grid-images-icons.html" . }}
+
+<section class="section company-services-overview has-bg-tertiary">
+	<div class="container is-fullhd">
+		<div class="columns is-centered is-multiline">
+			<div class="column is-12-touch is-8-desktop is-7-fullhd mb-3 has-text-centered" data-aos="fade-in">
+				<h2>Our Services</h2>
+				{{/*  <p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} {{- if .Site.Params.county }} and throughout {{ .Site.Params.county }}{{ end }}.</p>  */}}
+			</div>
+		</div>
+		{{ partial "services/services-grid-images-icons.html" . }}
+	</div>
+
+{{ with .Site.GetPage "/services" }}
+{{ if .Params.services }}
+	
+	<div class="container is-fullhd pb-4">
+		<div class="columns _company-services-item is-justify-content-center is-multiline is-vcentered is-variable is-8">
+
+
+			<div class="column is-12-touch is-12-desktop is-6-widescreen is-align-self-center">
+				<div class="pre-heading" data-aos="fade-down">What we do</div>
+				<div class="_content has-accent service-list cols-2" data-aos="fade-right">
+					<ul>
+					{{- range .Params.services }}
+					<li>{{ . }}</li>
+					{{ end }}
+					</ul>						
 				</div>
-
-			{{ with .Site.GetPage "/services" }}
-			{{ if .Params.services }}
-				
-				<div class="container is-fullhd pb-4">
-					<div class="columns _company-services-item is-justify-content-center is-multiline is-vcentered is-variable is-8">
+			</div>
 
 
-						<div class="column is-12-touch is-12-desktop is-6-widescreen is-align-self-center">
-							<div class="pre-heading" data-aos="fade-down">What we do</div>
-							<div class="_content has-accent service-list cols-2" data-aos="fade-right">
-								<ul>
-								{{- range .Params.services }}
-								<li>{{ . }}</li>
-								{{ end }}
-								</ul>						
-							</div>
-						</div>
+			<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
+				<div class="image bg-image is-5by4 company-services-image has-rounded-corners">
 
+					<img src='{{ .Params.image }}' 
+						alt="{{ if .Site.Params.seo }}{{ .Site.Params.seo|humanize }}{{ else }}{{ .Site.Params.industry|humanize}}{{ end }} in {{ .Site.Params.towncity }}{{ if .Site.Params.county }} and {{ .Site.Params.county }} {{- end }}" 
+						title="{{ if .Site.Params.seo }}{{ .Site.Params.seo|humanize }}{{ else }}{{ .Site.Params.industry|humanize}}{{ end }} in {{ .Site.Params.towncity }}{{ if .Site.Params.county }} and {{ .Site.Params.county }} {{- end }}"/>
 
-						<div class="column is-hidden-touch _is-hidden-desktop" data-aos="fade-left">
-							<div class="image bg-image is-5by4 company-services-image has-rounded-corners">
-
-								<img src='{{ .Params.image }}' 
-									alt="{{ if .Site.Params.seo }}{{ .Site.Params.seo|humanize }}{{ else }}{{ .Site.Params.industry|humanize}}{{ end }} in {{ .Site.Params.towncity }}{{ if .Site.Params.county }} and {{ .Site.Params.county }} {{- end }}" 
-									title="{{ if .Site.Params.seo }}{{ .Site.Params.seo|humanize }}{{ else }}{{ .Site.Params.industry|humanize}}{{ end }} in {{ .Site.Params.towncity }}{{ if .Site.Params.county }} and {{ .Site.Params.county }} {{- end }}"/>
-
-							</div>
-						</div>
-
-
-					</div>
 				</div>
-			{{- end }}
-			{{- end }}
-			</section>
+			</div>
 
-			{{/*  {{ partial "cta-banner.html" . }}  */}}
 
-			
-			{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
-			
-			{{ partial "accreditations.html" . }}
+		</div>
+	</div>
+{{- end }}
+{{- end }}
+</section>
 
-			
-			{{ if .Params.areas }}
-			{{ partial "map-compact.html" . }}
-			{{ end }}
+{{/*  {{ partial "cta-banner.html" . }}  */}}
 
-			{{ partial "cta-image-bg.html" . }}
+{{/*  {{ partial "review-slider/review-slider.html" . }}  */}}
 
-			{{ partial "why-us-banner.html" . }}
+{{ partial "accreditations.html" . }}
 
-			{{- end }}
+{{ partial "map-fullwidth.html" . }}
 
-	{{- define "scripts" -}}
+{{ partial "why-us-banner.html" . }}
 
-	{{ end }}
+{{ partial "cta-image-bg.html" . }}
+
+
+{{- end }}
+
+{{- define "scripts" -}}
+
+{{ end }}

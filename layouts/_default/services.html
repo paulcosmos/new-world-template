@@ -1,41 +1,39 @@
-		{{- define "hero" -}}
-		<section class="hero is-small">
-			{{ partial "hero/hero-text-cta.html" . }}
-		</section>
-		{{ end -}}
+{{- define "hero" -}}
+<section class="hero is-small">
+	{{ partial "hero/hero-text-cta.html" . }}
+</section>
+{{ end -}}
 
-		{{ define "main" }}
-			<section class="section">
-				<div class="container is-fullhd company-services pb-4">
-					{{- $currentPage := . }}
-					{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
-						{{ partial "services/services-image-text.html" . }}
-					{{ end }}
-				{{/*  </div>  */}}
-			{{/*  </section>  */}}
-			{{ if .Params.services }}
-			{{/*  <section class="section">  */}}
-				{{/*  <div class="container is-fullhd pb-4">  */}}
-					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
-						<div class="column is-12-touch is-12-desktop">
-							<div class="pre-heading" data-aos="fade-down">What we do</div>
-							<div class="_content has-accent service-list cols-3" data-aos="fade-right">
-								<ul>
-								{{- range .Params.services }}
-								<li>{{ . }}</li>
-								{{ end }}
-								</ul>						
-							</div>
-						</div>
+{{ define "main" }}
+	<section class="section">
+		<div class="container is-fullhd company-services pb-4">
+			{{- $currentPage := . }}
+			{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
+				{{ partial "services/services-image-text.html" . }}
+			{{ end }}
+
+			{{- if .Params.services }}
+			<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+				<div class="column is-12-touch is-12-desktop">
+					<div class="pre-heading" data-aos="fade-down">What we do</div>
+					<div class="_content has-accent service-list cols-3" data-aos="fade-right">
+						<ul>
+						{{- range .Params.services }}
+						<li>{{ . }}</li>
+						{{ end }}
+						</ul>						
 					</div>
 				</div>
-			</section>
-			{{ end }}
-			
-			{{ partial "cta-banner.html" . }}
-			{{ partial "why-us-banner.html" . }}
+			</div>
+			{{- end }}
 
-		{{ end }}
 
-		{{ define "scripts" }}
-		{{ end }}
+		</div>
+	</section>
+	
+	{{ partial "cta-image-bg.html" . }}
+
+{{ end }}
+
+{{ define "scripts" }}
+{{ end }}
