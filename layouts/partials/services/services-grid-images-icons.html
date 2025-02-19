@@ -21,7 +21,9 @@
 						</div>
 
 						<div class="service-description">
+							{{- if .Params.icon }}
 							<i class="fa-regular {{ .Params.icon }} fa-2x my-4"></i>
+							{{- end }}
 							<h3>{{ if .Params.anchor }}{{ .Params.anchor }}{{ else }}{{ .Params.title}}{{ end}}</h3>
 							<p>{{ .Params.desc }}</p>
 						</div>
