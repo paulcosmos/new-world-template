@@ -1,9 +1,9 @@
 ---
-title: Our Services
+title: Services
 menu: ["main","footer"]
 weight: 2
 anchor: "Services"
-preheading: "Our Services"
+preheading: "Services"
 image: images/services.jpg
 
 services:
@@ -27,4 +27,4 @@ cascade:
 
 # Providing a wide range of **{{<industry>}}** services throughout {{<county>}}.
 
-With {{<years>}} in the {{<industry>}} business, **{{<company>}}** are the reliable and professional choice for all aspects of {{<industry>}}.
+With {{<years>}} in the {{<industry>}} business, **{{<company>}}** is the reliable and professional choice.

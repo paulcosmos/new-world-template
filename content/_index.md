@@ -22,4 +22,4 @@ sitemap:
 
 # Reliable **{{<industry>}} services** in {{<county>}}.
 
-We are experienced in all aspects of the {{<industry>}} trade.
+Experienced in all aspects of the {{<industry>}} trade.

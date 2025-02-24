@@ -1,5 +1,5 @@
 ---
-title: "Our Work"
+title: "Gallery"
 menu: ["main","footer", "dropdown"]
 weight: 3
 _build:
@@ -9,7 +9,7 @@ cascade:
     list: true
     render: false
 
-preheading: Our Work
+preheading: Work
 ---
 
 # Image Gallery 

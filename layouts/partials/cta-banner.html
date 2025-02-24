@@ -4,13 +4,13 @@
          <div class="columns is-vcentered is-multiline">
             <div class="column is-12-tablet is-9-desktop">
                <div class="content">
-                  <p>Ready to get started? Call us today on 
+                  <p>Ready to get started? Call today on 
                   {{ if $.Site.Params.phone }}
                      <a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.phone |  -}}'>{{ .Site.Params.phone }}</a>
                   {{ else -}}
                      <a href='tel:{{- replaceRE "(\\s)" "" .Site.Params.mobile |  -}}'>{{ .Site.Params.mobile }}</a>
                   {{- end }}
-                  or use our contact form.</p>
+                  or use the contact form.</p>
                </div>
             </div>
             <div class="column is-12-tablet is-3-desktop">
