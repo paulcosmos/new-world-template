@@ -27,16 +27,9 @@
 					{{ .Content }}
 
 					<div class="image has-rounded-corners my-5">
-						{{- $image := resources.Get .Params.image }}
-						{{- if $image }}
-						{{- with .Site.Params }}
-							<img src='{{ ($image.Fill "1200x600 q70 Center").RelPermalink }}'
-								alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}." 
-								title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}."/>
-						{{ end }}
-						{{ else }}
-							<img src='/images/placeholder.jpg'/>
-						{{- end }}
+						<img src='{{ .Params.image }}' 
+						alt="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"
+						title="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"/>	
 					</div>
 
 				</article>
