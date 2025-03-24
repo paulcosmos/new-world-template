@@ -2212,6 +2212,17 @@ strong {
             line-height: 1.4em;
         }
 
+        address {
+            line-height: 1.8rem;
+            font-size: $size-7;
+            color: $site-footer-link;
+            fill: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+            margin-bottom: 0.1rem;
+        }
+
         .button-primary {
             margin-top: 2rem;
         }
@@ -2223,9 +2234,16 @@ strong {
             list-style: none;
             margin-left: 0;
             margin-top: 0.8rem;
-
+            
             li {
                 line-height: 1.6rem;
+                font-size: $size-7;
+                color: $site-footer-link;
+                fill: white;
+                text-decoration: none;
+                transition: color 0.3s;
+                display: block;
+                margin-bottom: 0.1rem;
             }
         }
 

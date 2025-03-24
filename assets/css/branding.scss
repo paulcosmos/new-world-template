@@ -126,6 +126,7 @@ $why-us-title-size: 1rem;
 // Main Footer
 $site-footer-bg: $secondary;
 $site-footer-text: white;
+$site-footer-link: lighten($secondary,80%);
 $site-footer-signoff-bg: darken($secondary, 3%);
 $site-footer-signoff-text: $tertiary;
 
