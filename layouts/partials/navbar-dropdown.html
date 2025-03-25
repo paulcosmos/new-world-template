@@ -1,7 +1,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
 	<div class="container is-fluid">  
 		<div class="navbar-brand">
-			<a class="navbar-item navbar-logo no-underline" href="/index.html">
+			<a class="navbar-item navbar-logo no-underline" href="/">
 				{{- with .Site.Params }}
 				{{ if .logo }}
 				<img src="/images/{{ .logo }}" alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" />
@@ -21,7 +21,7 @@
 		</div>
 		<div id="navbar-site" class="navbar-menu">
 			<div class="navbar-end has-text-centered">
-				<a href="/index.html" class="navbar-item">
+				<a href="/" class="navbar-item">
 				About
 				</a>
 
