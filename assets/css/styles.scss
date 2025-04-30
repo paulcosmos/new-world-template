@@ -1731,8 +1731,8 @@ strong {
 
     &-bg-image {
         background-color: $secondary;
-        background-image: linear-gradient(180deg, rgba(black, 0.8), rgba($secondary, 0.1)), url('../images/bg.png');
         background-image: linear-gradient(180deg, rgba(black, 0.8), rgba(black, 0.6)), url('../images/cta-bg.jpg');
+        background-image: linear-gradient(180deg, rgba(black, 0.8), rgba($secondary, 0.1)), url('../images/bg.png');
         background-repeat: no-repeat;
         background-position: center right;
         background-size: cover;
