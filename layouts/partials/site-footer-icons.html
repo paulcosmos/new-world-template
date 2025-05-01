@@ -4,23 +4,26 @@
 
 						<div class="column is-12-mobile is-4-desktop big-icon">
 							<span class="icon">
-								<i class="fa-light fa-phone-volume fa-3x"></i>
+								<i class="fa-duotone fa-light fa-phone-volume fa-3x icon-theme"></i>
 							</span>
-							<h4>{{ .Site.Params.phone }}</h4>
+							<h4>Call us:</h4>
+							<p>{{ .Site.Params.phone }}</p>
 							</div>
 
 						<div class="column is-12-mobile is-4-desktop big-icon">
 							<span class="icon">
-								<i class="fa-light fa-paper-plane fa-3x"></i>
+								<i class="fa-duotone fa-light fa-paper-plane fa-3x icon-theme"></i>
 							</span>
-							<h4>{{ .Site.Params.email }}</h4>
+							<h4>Email us:</h4>
+							<p>{{ .Site.Params.email }}</p>
 						</div>
 
 						<div class="column is-12-mobile is-4-desktop big-icon">
 							<span class="icon">
-								<i class="fa-light fa-map-location-dot fa-3x"></i>
+								<i class="fa-duotone fa-light fa-map-location-dot fa-3x icon-theme"></i>
 							</span>
-							<h4>{{ if .Site.Params.county }}{{ .Site.Params.county }}{{ else }}{{ .Site.Params.towncity }}{{ end }}</h4>
+							<h4>Based in:</h4>
+							<p>{{ if .Site.Params.county }}{{ .Site.Params.county }}{{ else }}{{ .Site.Params.towncity }}{{ end }}</p>
 						</div>
 
 					</div>

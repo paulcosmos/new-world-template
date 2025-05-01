@@ -1,6 +1,12 @@
 @charset "utf-8";
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 
+:root {
+    --fa-primary-color: rgb(255, 255, 255);
+	--fa-secondary-color: rgb(255, 255, 255);
+    --fa-secondary-opacity: 0.1;
+}
+
 @import "mixins.scss";
 @import "branding.scss";
 @import "bulma/grid/_all.sass";
@@ -2202,8 +2208,15 @@ strong {
     border-top: solid 1px lighten($secondary, 10%);
     // @include background-paved;
 
+    @include until($navbar-breakpoint){
+        .big-icon {
+            margin-bottom: 3rem;
+        }
+    }
+
     .big-icon h4 {
-        margin: 1rem auto;
+        margin-top: 1rem;
+        font-weight: bold;
     }
 
     &-company-info {
