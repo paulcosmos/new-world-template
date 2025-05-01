@@ -7,11 +7,50 @@
 					<p>Reviews coming soon…</p>
 					</div> 
 					
-					
 					{{ "<!-- Review Cards" | safeHTML }}
-					<div class="columns is-multiline is-mobile review-grid">
+					<div class="review-grid 2-cols">
 						{{ range (where .Site.RegularPages "Type" "review") }}
-							{{ partial "review-slider/review-card.html" . }}
+						<div class="cell review-card">
+							<div class="card-content">
+								<div class="media content">
+									<figure class="media-content">
+										{{- if .Title }}
+										<figcaption>
+											{{ .Title }}
+											<span class="is-size-6 is-block">
+												{{- if .Params.location }}
+												{{.Params.location }}
+												{{- else }}
+												{{ .Site.Params.county }}
+												{{- end }}
+											</span>
+										</figcaption>
+										{{ end -}}
+										<div class="review-stars">
+										{{- if .Params.rating -}}
+											{{- $rating := .Params.rating -}}
+											{{- $stars := sub .Params.rating 5 -}}
+											{{- range $num := (seq $rating) }}
+											<span class="icon stars"><i class="fa-solid fa-star-sharp"></i></span>
+											{{- end -}}
+											{{- if (ne $stars "0") -}}
+											{{ range $num := (seq $stars) -}}
+											<span class="icon stars-remaining"><i class="fa-solid fa-star-sharp"></i></span>
+											{{ end -}}
+											{{ end -}}
+										{{ else -}}
+											{{- range $num := (seq 5) -}}
+											<span class="icon"><i class="fa-solid fa-star-sharp"></i></span>
+											{{- end -}}
+										{{ end }}
+										</div>
+									</figure>
+								</div>
+								<blockquote class="content">
+									{{ .Content }}
+								</blockquote>
+							</div>
+						</div>
 						{{- end }}
 					</div>
 					{{ " End Review Cards -->" | safeHTML }}

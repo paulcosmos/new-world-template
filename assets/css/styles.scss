@@ -3,6 +3,7 @@
 
 @import "mixins.scss";
 @import "branding.scss";
+@import "bulma/grid/_all.sass";
 @import "bulma/utilities/controls.sass";
 @import "bulma/utilities/extends.sass";
 @import "bulma/utilities/initial-variables.sass";
@@ -908,7 +909,7 @@ strong {
 
 .vegas-overlay {
     opacity: 1;
-    background: linear-gradient(0deg, (rgba(black, 0.9)), rgba(black, 0.6));
+    background: linear-gradient(180deg, (rgba($secondary, 0.6)), rgba($secondary, 0.6));
 }
 
 .vegas-content {
@@ -1520,15 +1521,26 @@ strong {
         color: $review-section-text;
     }
 
-    &-grid,
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    
+        @include from($desktop) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    
+        @include from($fullhd) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
     &-slider {
+        padding-bottom: $size-2;
+        
         .column {
             display: flex;
         }
-    }
-
-    &-slider {
-        padding-bottom: $size-2;
 
         &-nav {
 
@@ -1570,10 +1582,10 @@ strong {
     }
 
     &-card {
-        @include box-shadow-stripe;
-        background-color: darken($secondary, 2%);
+        @include box-shadow-below;
+        background-color: darken($secondary, 0%);
         color: white;
-        // border-radius: 0.5rem;
+        border-radius: 0.5rem;
         display: flex;
         flex-grow: 1;
         border: solid 1px lighten(white, 0%);
