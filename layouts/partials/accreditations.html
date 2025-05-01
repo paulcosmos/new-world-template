@@ -39,6 +39,11 @@
 				<a href="https://www.tiktok.com/@{{- .tiktok -}}" title="Find us on TikTok" target="_blank" rel="noopener"><img src="images/creds/tiktok.png" alt="" title=""></a>
 			</div>
 			{{ end }}
+			{{- if .linkedin }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.linkedin.com/company/{{ .linkedin }}" title="Find us on Linkedin" target="_blank" rel="noopener"><img src="images/creds/linkedin.png" alt="Linkedin logo"></a>
+			</div> 
+			{{ end }}
 			{{- if .ratedpeople }}
 			<div class="level-item accreditations-item has-text-centered">
 				<a href="https://ratedpeople.com/profile/{{- .ratedpeople -}}" title="Find us on ratedpeople.com" target="_blank" rel="noopener"><img src="images/creds/ratedpeople.png" alt="" title=""></a>
