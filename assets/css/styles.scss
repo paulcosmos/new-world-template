@@ -551,15 +551,9 @@ strong {
             padding: 0;
         }
 
-        // .navbar-item {
-        //     &:hover {
-
-        //         &:before {
-        //             @include from($navbar-breakpoint) {
-        //                 display: none;
-        //             }
-        //         }
-        //     }
+        // @include from($navbar-breakpoint){
+        //     columns:2;
+        //     transform: translateX(-25%);
         // }
 
         .navbar-item {
