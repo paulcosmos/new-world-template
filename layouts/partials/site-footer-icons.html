@@ -1,0 +1,42 @@
+			<div class="section ">
+				<div class="container _is-fluid is-fullhd">
+					<div class="columns is-mobile is-8 is-multiline has-text-centered">
+
+						<div class="column is-12-mobile is-4-desktop big-icon">
+							<span class="icon">
+								<i class="fa-light fa-phone-volume fa-3x"></i>
+							</span>
+							<h4>{{ .Site.Params.phone }}</h4>
+							</div>
+
+						<div class="column is-12-mobile is-4-desktop big-icon">
+							<span class="icon">
+								<i class="fa-light fa-paper-plane fa-3x"></i>
+							</span>
+							<h4>{{ .Site.Params.email }}</h4>
+						</div>
+
+						<div class="column is-12-mobile is-4-desktop big-icon">
+							<span class="icon">
+								<i class="fa-light fa-map-location-dot fa-3x"></i>
+							</span>
+							<h4>{{ if .Site.Params.county }}{{ .Site.Params.county }}{{ else }}{{ .Site.Params.towncity }}{{ end }}</h4>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			{{- with .Site.Params }}
+			{{ if .emblem }}
+			<div class="emblem">
+				<img class="gas-safe-emblem" src="/images/{{ .emblem }}">
+			</div>
+			{{ end -}}
+			{{ end -}}
+			<div class="container is-fluid site-footer-signoff">
+				<div class="content">
+					{{- with .Site.Params }}
+					Website by New World Digital Media on behalf of {{ if .fullname }}{{ .fullname }}{{ else }}{{ .company }}{{ end }} | {{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
+					{{- end }}
+				</div>
+			</div>

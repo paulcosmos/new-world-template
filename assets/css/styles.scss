@@ -2202,6 +2202,10 @@ strong {
     border-top: solid 1px lighten($secondary, 10%);
     // @include background-paved;
 
+    .big-icon h4 {
+        margin: 1rem auto;
+    }
+
     &-company-info {
 
         @include until($desktop) {
