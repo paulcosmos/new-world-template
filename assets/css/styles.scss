@@ -2208,7 +2208,7 @@ strong {
     border-top: solid 1px lighten($secondary, 10%);
     // @include background-paved;
 
-    @include until($navbar-breakpoint){
+    @include until($tablet){
         .big-icon {
             margin-bottom: 3rem;
         }
