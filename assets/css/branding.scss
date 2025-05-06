@@ -26,7 +26,7 @@ $text: $secondary;
 // Page hero settings 
 @mixin hero-default-bg {
 	background-color: $tertiary;
-	background-image: linear-gradient(180deg, rgba($tertiary, 0.6), rgba($secondary, 0.05));
+	background-image: linear-gradient(180deg, rgba($tertiary, 0.6), rgba($secondary, 0.05)), url('../images/bg.png');
 }
 
 @mixin hero-index-bg {
