@@ -1527,11 +1527,11 @@ strong {
         gap: 1rem;
     
         @include from($desktop) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
     
         @include from($fullhd) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
     }
     
@@ -1583,12 +1583,13 @@ strong {
 
     &-card {
         @include box-shadow-below;
-        background-color: darken($secondary, 0%);
-        color: white;
+        // background-color: darken($secondary, 0%);
+        background-color: white;
+        color: $secondary;
         border-radius: 0.5rem;
         display: flex;
         flex-grow: 1;
-        border: solid 1px lighten(white, 0%);
+        border: solid 1px lighten($secondary, 80%);
 
         figure {
             text-align: left;
