@@ -86,7 +86,12 @@
 			{{- end }}
 			{{- if .gassafe }}
 			<div class="level-item accreditations-item has-text-centered">
-				<a href="{{ .gassafe }}" title="Find us on the Gas Safe Register" target="_blank" rel="noopener"><img src="images/creds/gas-safe.png" alt="" title=""></a>
+				<a href="{{ .gassafe }}" title="Find us on the Gas Safe Register" target="_blank" rel="noopener"><img src="images/creds/gas-safe.png" alt=""></a>
+			</div> 
+			{{ end }}
+			{{- if .myjobquote }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="{{ .myjobquote }}" title="Find us on My Job Quote" target="_blank" rel="noopener"><img src="images/creds/myjobquote.png" alt="my job quote logo"></a>
 			</div> 
 			{{ end }}
 			
