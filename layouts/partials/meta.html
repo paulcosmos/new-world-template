@@ -1,6 +1,6 @@
 <title>
 	{{- if .IsHome }}
-	{{- print .Site.Params.company }} | Trusted and professional {{ print .Site.Params.industry }} in {{ .Site.Params.towncity }}{{ if .Site.Params.county }} and {{ .Site.Params.county }}{{ end }}.
+	{{- print .Site.Params.company }} | {{ print .Site.Params.seo |h humanize }} in {{ .Site.Params.towncity }}{{ if .Site.Params.county }} and {{ .Site.Params.county }}{{ end }}.
 	{{- else }}
 	{{- print .Page.Title }} | {{ print .Site.Params.company }}
 	{{ end -}}
