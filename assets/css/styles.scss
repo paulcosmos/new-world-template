@@ -2003,6 +2003,7 @@ strong {
         align-content: stretch;
         justify-content: space-between;
         height: 100%;
+        width: 100%;
     }
 
     &-content {
@@ -2014,6 +2015,7 @@ strong {
         background-color: white;
         padding-bottom: 2rem;
         height: 100%;
+        width: 100%;
 
         .image {
             margin-bottom: 1.2rem;
