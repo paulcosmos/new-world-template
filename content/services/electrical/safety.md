@@ -3,7 +3,7 @@ title: "Electrical Safety Inspections"
 type: service-item
 desc: Safety checks and certifications for domestic and commercial properties and appliances.
 weight: 3
-image: images/electrical-inspections-london.jpg
+image: images/safety.jpg
 anchor: Safety Inspections
 ---
 ## Electrical Safety Inspections

@@ -2,7 +2,7 @@
 title: "Commercial & Business"
 type: service-item
 desc: Electrical services for businesses, from inspections to complete rewires.  
-weight: 3
+weight: 9
 image: images/commercial-electrican-stockport.jpg
 anchor:
 ---
