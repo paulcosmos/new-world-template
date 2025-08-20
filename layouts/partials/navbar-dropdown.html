@@ -25,7 +25,6 @@
 				About
 				</a>
 
-				{{/*  Dropdown  */}}
 				<div class="navbar-item has-dropdown py-0 is-hoverable no-underline">
 					<a href="/services.html" class="navbar-link is-hidden-touch">
 						Services
@@ -40,12 +39,9 @@
 							{{- .Title }}
 						{{- end -}}
 						</a>
-						{{/*  <hr class="navbar-divider">  */}}
 					{{- end }}
 					</div>
 				</div>
-				{{/*  END dropdown  */}}
-				{{/*  Main Nav  */}}
 				{{- $currentPage := . }}
 				{{ range .Site.Menus.dropdown -}}
 				<a href="{{ .URL }}" title="{{ .Title }}" class="navbar-item">
