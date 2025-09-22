@@ -1,0 +1,100 @@
+		{{- define "main" }}
+			<section class="section">
+				<div class="container is-fullhd has-text-centered">
+					<h2>Paving & Brickwork</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/paving/%s"}}
+					<div class="gallery mt-6">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/paving/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x600 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="600px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
+
+				</div>
+			</section>
+
+
+			<section class="section">
+				<div class="container is-fullhd has-text-centered">
+					<h2>Plastering & Skimming</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/plastering/%s"}}
+					<div class="gallery mt-6">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/plastering/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x600 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="600px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
+
+				</div>
+			</section>
+
+
+			<section class="section">
+				<div class="container is-fullhd has-text-centered">
+					<h2>Brickwork</h2>
+					{{ $folder := .Params.name | lower | printf "assets/images/gallery/brickwork/%s"}}
+					<div class="gallery mt-6">
+						{{- if fileExists $folder }}
+						{{ $files := readDir $folder }}
+						{{- range $files -}}
+						{{- if not .IsDir}}
+						{{- if ne .Name ".DS_Store" }}
+						{{- $image := resources.Get ( printf "images/gallery/brickwork/%s" .Name ) -}}
+						{{- $thumb := resources.Get $image  -}}
+						<a href="{{ $image.RelPermalink }}">
+							<img 
+								src='{{ ($thumb.Fill "460x600 q75 center").RelPermalink }}' 
+								alt="" 
+								title=""
+								width="460px"
+								height="600px"
+							/>
+						</a>
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						{{ end -}}
+						<div class="clear"></div>
+					</div>
+
+				</div>
+			</section>
+
+			{{ partial "cta-image-bg.html" . }}
+			{{/*  {{ partial "why-us-banner.html" . }}  */}}
+
+		{{ end }}

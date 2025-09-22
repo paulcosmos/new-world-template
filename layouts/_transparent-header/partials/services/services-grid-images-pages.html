@@ -1,0 +1,33 @@
+
+
+					<div class="columns is-multiline is-variable is-4">
+						{{/* Automatically increment the aos-delay value */}}
+						{{- $currentPage := . -}}
+						{{- $.Scratch.Set "delay" 0 }}
+						{{- range where .Site.RegularPages "Type" "service-page" -}}
+						{{- $i := $.Scratch.Get "delay" }}
+							{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
+							<div class="column is-6-tablet is-4-desktop is-6-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
+								<div class="image is-3by2 _company-services-image mb-4">
+									{{- $image := resources.Get .Params.image }}
+									<a href="{{ .RelPermalink }}">
+									{{- if $image }}
+									{{- with .Site.Params }}
+									<img src='{{ ($image.Fill "1200x890 q70 Center").RelPermalink }}' 
+										class="has-rounded-corners"
+										alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+										title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+									{{ end -}}
+									{{ else }}
+									<img src='/images/placeholder.jpg'/>
+									{{- end }}
+									</a>
+								</div>
+								<h3>{{- if .Params.anchor -}}{{- .Params.anchor -}}{{- else -}}{{- .Params.title -}}{{- end -}}</h3>
+								<p>{{ .Params.desc }}</p>
+								<div>
+									<a href="{{ .RelPermalink }}">More info</a> <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span>
+								</div>
+							</div>
+						{{ end -}}
+						</div>

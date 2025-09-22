@@ -1,0 +1,36 @@
+			<section class="section company-intro-grid">
+				<div class="container is-fullhd">
+				{{- range where (where .Site.RegularPages "Type" "index-grid") "File.Dir" "index/" }}
+					<div class="columns _is-vcentered is-multiline is-variable is-4">
+						
+						<div class="column is-12-touch is-4-desktop is-4-fullhd">
+							<div class="content company-intro-content has-accent has-checkmark" data-aos="fade-in">
+								<h2>{{ .Params.heading }}</h2>
+							</div>
+							{{- if .Params.preheading }}
+							<div class="pre-heading" data-aos="fade-down">{{ .Params.preheading }}</div>
+							{{- end }}
+						</div>
+
+						<div class="column is-12-touch is-8-desktop is-8-fullhd mb-4">
+							<div class="content company-intro-content has-accent has-checkmark" data-aos="fade-in">
+								{{ .Content }}
+							</div>
+						</div>
+						{{ if .Params.image }}
+						<div class="column is-12-touch is-4-fullhd" data-aos="fade-up">
+							<div class="image _is-4by5 has-rounded-corners bgimage" style='background-image:url({{ .Params.image }})'>
+							</div>
+						</div>
+						{{ end }}
+						{{ if .Params.image2 }}
+						<div class="column is-12-touch is-8-fullhd" data-aos="fade-up" data-aos-delay="200">
+							<div class="image _is-4by5 has-rounded-corners bgimage" style='background-image:url({{ .Params.image2 }})'>
+							</div>
+						</div>
+						{{ end }}
+
+					</div>
+				{{- end }}
+				</div>
+			</section>

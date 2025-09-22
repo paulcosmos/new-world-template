@@ -1,0 +1,63 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+	<div class="container is-desktop">  
+		<div class="navbar-brand">
+			<a class="navbar-item navbar-logo no-underline" href="/">
+				{{- with .Site.Params }}
+				{{ if .logo }}
+				<img src="/images/{{ .logo }}" alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" />
+				{{- else }}
+				<div class="content navbar-title">
+					{{ .company }}
+					<span>{{ .industry | humanize }} services in {{ .towncity }}</span>
+				</div>
+				{{ end -}}
+				{{ end -}}
+			</a>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-site">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+		<div id="navbar-site" class="navbar-menu">
+			<div class="navbar-end has-text-centered">
+				<a href="/" class="navbar-item">
+				About
+				</a>
+
+				<div class="navbar-item has-dropdown py-0 is-hoverable no-underline">
+					<a href="/services.html" class="navbar-link is-hidden-touch">
+						Services
+					</a>
+					<div class="navbar-dropdown py-0">
+					{{- $currentPage := . }}
+					{{- range where .Site.RegularPages "Type" "service-page" }}
+						<a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Title }}">
+						{{- if .Params.anchor -}}
+							{{ .Params.anchor }}
+						{{- else -}}
+							{{- .Title }}
+						{{- end -}}
+						</a>
+					{{- end }}
+					</div>
+				</div>
+				{{- $currentPage := . }}
+				{{ range .Site.Menus.dropdown -}}
+				<a href="{{ .URL }}" title="{{ .Title }}" class="navbar-item">
+					{{- if .Page.Params.anchor -}}
+						{{ .Page.Params.anchor }}
+					{{- else -}}
+						{{- .Title }}
+					{{- end -}}
+				</a>
+				{{ end }}
+				{{"<!--" | safeHTML }}
+				<div class="navbar-item has-text-centered modal-trigger no-underline" data-target="quote-modal">
+					<button class="button-primary"><i class="fa-light fa-envelope-circle-check pr-2"></i> {{ .Site.Params.modalbuttontext }}</button>
+				</div>
+				{{"-->" | safeHTML }}
+			</div>
+		</div>
+	</div>
+</nav>

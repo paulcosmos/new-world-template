@@ -1,0 +1,89 @@
+{{ define "hero" }}
+<section class="hero hero-service is-medium">
+	<div class="hero-body">
+		<div class="container is-fullhd">
+			<div class="columns is-centered">
+				<div class="column is-12-tablet is-8-desktop is-8-fullhd has-text-centered">
+					<span class="pre-heading _has-text-white" data-aos="fade-left">
+						Our Services
+					</span>
+					<div class="content hero-services-content has-accent" data-aos="fade-down">
+						<h1>{{ .Title }} in {{ .Site.Params.towncity }}</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+
+{{ define "main" }}
+<section class="section _has-bg-tertiary">
+	<div class="container is-fullhd">
+		<div class="columns is-multiline is-centered">
+			<div class="column is-12-touch is-8-desktop" data-aos="fade-in">
+				<article class="content has-accent service-page-content _box">
+
+					{{ .Content }}
+
+					<div class="image has-rounded-corners my-5">
+						<img src='{{ .Params.image }}' 
+						alt="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"
+						title="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"/>	
+					</div>
+
+				</article>
+				
+			</div>
+			
+			{{"<!--" | safeHTML }}
+			<div class="column is-offset-1-desktop _is-narrow _is-12-touch" data-aos="fade-left">
+			{{- if .Params.services }}
+				<aside class="content service-page-list box">
+					<h3>What we offer</h3>
+					<ul>
+					{{ range .Params.services }}
+					<li>{{ . }}</li>
+					{{ end }}
+				</aside>
+			{{- end }}
+
+				<div class="content hero-cta">
+					<h3>Get a Quote</h3>
+					<hr/>
+					<h4>
+					{{- if $.Site.Params.phone }}
+						{{- .Site.Params.phone -}}
+					{{ else }}
+						{{- .Site.Params.mobile -}}
+					{{- end -}}
+					</h4>
+					<p>Speak to us today to arrange a no obligation quotation or use our contact form to request a callback</p>
+
+					<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
+						<span class="icon-text">
+							<span class="icon is-hidden-touch">
+								<i class="fa-regular fa-phone"></i>
+							</span>
+							<span>Request a call back</span>
+						</span>
+					</button>
+
+				</div>
+
+			</div>
+			{{"-->" | safeHTML }}
+
+		</div>
+	</div>
+</section>
+
+	{{/*  {{ partial "why-us-banner.html" . }}  */}}
+
+	{{ partial "cta-image-bg.html" . }}
+
+{{ end }}
+
+{{ define "scripts" }}
+<!-- Page specific scripts -->
+{{ end }}

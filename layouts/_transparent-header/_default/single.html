@@ -1,0 +1,62 @@
+{{ define "hero" }}
+<section class="hero">
+	<div class="hero-body">
+		<div class="container is-fullhd">
+		    <div class="columns is-multiline _is-vcentered">
+
+				<div class="column is-6-desktop is-7-widescreen is-6-fullhd">
+					<div class="content">
+						<div class="" data-aos="fade-down">
+							<span class="pre-heading" data-aos="fade-left">
+								Services
+							</span>
+						</div>
+					{{/*  {{ end }}  */}}
+						<div class="has-accent" data-aos="fade-left">
+							{{ .Title }}
+						</div>
+					</div>
+				</div>
+
+				<div class="column is-6-tablet _is-offset-1-tablet is-5-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen" data-aos="fade-right">
+					<div class="content _box hero-cta">
+						<h3>Get a Quote</h3>
+						<hr/>
+						<h4>
+						{{- if $.Site.Params.phone }}
+							{{- .Site.Params.phone -}}
+						{{ else }}
+							{{- .Site.Params.mobile -}}
+						{{- end -}}
+						</h4>
+						<p>Speak to us today to arrange a no obligation quotation or use our contact form to request a callback</p>
+						<button class="button button-primary is-fullwidth ml-0 modal-trigger" data-target="quote-modal">
+							<span class="icon-text">
+								<span class="icon is-hidden-touch">
+									<i class="fa-regular fa-phone"></i>
+								</span>
+								<span>Request a call back</span>
+							</span>
+						</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+
+{{ define "main" }}
+<section class="section">
+	<div class="container is-fullhd">
+		<article class="content">
+		{{ .Content }}
+		</article>
+	</div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<!-- Page specific scripts -->
+{{ end }}

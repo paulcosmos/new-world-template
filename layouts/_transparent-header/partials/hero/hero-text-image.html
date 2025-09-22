@@ -1,0 +1,29 @@
+				<div class="hero-body">
+					<div class="container is-fullhd">
+						<div class="columns is-multiline is-vcentered">
+
+							<div class="column is-7-desktop is-6-fullhd">
+								<div class="content">
+									<div class="has-accent" data-aos="fade-left">
+										{{ .Content }}
+									</div>
+									<div class="button-primary ml-0 mt-5 modal-trigger" data-target="quote-modal" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-bottom">
+										<button>{{ .Site.Params.modalbuttontext }} <i class="fa-solid fa-arrow-right"></i></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="column is-5-fullhd is-offset-1-fullhd" data-aos="fade-right">
+								<div class="image is-5by4 company-services-image">
+									{{- $image := resources.Get .Params.image }}
+									{{- if $image }}
+									<img src='{{ ($image.Fill "1200x890 q50 Center").RelPermalink }}' alt="" title=""/>
+									{{ else }}
+									<img src='/images/placeholder.jpg'/>
+									{{- end }}
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
