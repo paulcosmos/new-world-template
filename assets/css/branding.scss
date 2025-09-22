@@ -21,7 +21,7 @@ $text: $secondary;
 
 @mixin brand-gradient {
 	background: $primary;
-	background: linear-gradient(-90deg, darken($primary, 0%), darken($primary, 10%));
+	background-image: linear-gradient(180deg, rgba($tertiary, 1), rgba($tertiary, 0.5)), url('../images/bg.png');
 }
 
 // Page hero settings 
