@@ -1,0 +1,25 @@
+					{{- $currentPage := . }}
+					{{- range where (where .Site.RegularPages "Type" "services-list") "File.Dir" "services/" }}
+					<div class="columns company-services-item is-multiline is-vcentered is-variable is-8">
+						<div class="column is-12-touch is-5-desktop is-6-fullhd">
+							{{/*  <div class="pre-heading" data-aos="fade-down">What we do</div>  */}}
+							<div class="_content has-accent company-services-list" data-aos="fade-right">
+								{{ .Content }}							
+							</div>
+						</div>
+						<div class="column is-hidden-touch" data-aos="fade-left">
+							<div class="image is-4by5 company-services-image company-services-image">
+								{{- $image := resources.Get .Params.image }}
+								{{- if $image }}
+								{{- with .Site.Params }}
+								<img src='{{ ($image.Resize "x1200 q75 Center").RelPermalink }}' 
+									alt="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}" 
+									title="{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}"/>
+								{{ end }}
+								{{ else }}
+								<img src='/images/placeholder.jpg'/>
+								{{- end }}
+							</div>
+						</div>
+					</div>
+				{{ end }}

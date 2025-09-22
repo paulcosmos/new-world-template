@@ -1,0 +1,37 @@
+<title>
+	{{- if .IsHome }}
+	{{- print .Site.Params.company }} | {{ print .Site.Params.seo | humanize }} in {{ .Site.Params.towncity }}{{ if .Site.Params.county }} and {{ .Site.Params.county }}{{ end }}.
+	{{- else }}
+	{{- print .Page.Title }} | {{ print .Site.Params.company }}
+	{{ end -}}
+	</title>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="We provide all aspects of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} {{- if .Site.Params.county }} and {{ .Site.Params.county }}{{ end }}">
+		<meta name="keywords" content="{{ .Site.Params.industry|humanize }} in {{ .Site.Params.towncity }}{{- if .Site.Params.county }} and {{ .Site.Params.county }}{{ end }}. ">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:title" content="{{ if .IsHome }}{{ print .Site.Params.company }} | Trusted and professional {{ print .Site.Params.industry }} in {{ .Site.Params.towncity }} {{ else }} {{ .Title }} | {{ .Site.Params.company }} {{ end }}"/>
+		<meta property="og:description" content="Professional {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} {{- if .Site.Params.county }} and {{ .Site.Params.county }}{{ end }}"/>
+		<meta property="og:image" content="{{ print .Site.BaseURL }}/images/hero-image.jpg"/>
+		<meta property="og:url" content="{{ print .Site.BaseURL }}"/>
+		<meta property="og:type" content="website"/>
+		<meta property="twitter:card" content="{{ print .Site.BaseURL }}/images/hero-image.png"/>
+		<meta name="theme-color" content="#1a1a1a">
+		<meta name="msapplication-navbutton-color" content="#1a1a1a">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a">
+		<meta name="application-name" content="{{- print .Page.Title }} | {{ print .Site.Params.company }}">
+		{{/*  {{- if .IsHome }}  */}}
+		<link rel="canonical" href="{{ print .Permalink }}">
+		{{/*  {{- else }}  */}}
+		{{/*  {{"<!-- " | safeHTML }}<link rel="canonical" href="{{ print .Site.BaseURL }}">{{"-->" | safeHTML }}  */}}
+		{{/*  {{- end }}  */}}
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+		{{ "<!--[if (lt IE 9)]><script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js'></script><![endif]-->" | safeHTML }}
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="./js/vegas/vegas.min.css">
+		{{- $bulma := resources.Get "css/bulma.sass" | resources.ToCSS }}
+		{{- $style := resources.Get "css/styles.scss" | resources.ToCSS | resources.PostCSS  (dict "config" "./postcss.config.js") }}
+		{{- $stylemin := resources.Get "css/styles.scss" | resources.ToCSS | resources.PostCSS  (dict "config" "./postcss.config.js") | resources.Fingerprint "sha512" }}
+		<link rel="stylesheet" href="{{ $bulma.Permalink | relURL }}">
+		<link rel="stylesheet" href="{{ $style.Permalink | relURL }}">

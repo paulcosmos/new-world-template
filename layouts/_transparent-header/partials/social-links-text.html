@@ -1,0 +1,16 @@
+							{{- with .Site.Params }}
+								{{ if .facebook }}<li><a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener">Facebook</a></li>{{ end }}
+								{{ if .instagram }}<li><a href="https://instagram.com/{{- .instagram -}}" title="Find us on Instagram" target="_blank" rel="noopener">Instagram</a></li>{{ end }}
+								{{ if .twitter }}<li><a href="https://twitter.com/{{- .twitter -}}" title="Find us on Twitter" target="_blank" rel="noopener">Twitter</a></li>{{ end }}
+								{{ if .tiktok }}<li><a href="https://tiktok.com/@{{- .tiktok -}}" title="Find us on TikTok" target="_blank" rel="noopener">TikTok</a></li>{{ end }}
+								{{ if .linkedin }}<li><a href="https://linkedin.com/company/{{- .linkedin -}}" title="Find us on LinkedIn" target="_blank" rel="noopener">LinkedIn</a></li>{{ end }}
+								{{ if .yell }}<li><a href="https://yell.com/biz/{{- .yell -}}" title="Find us on Yell.com" target="_blank" rel="noopener">Yell.com</a></li>{{ end }}
+								{{ if .checkatrade }}<li><a href="https://www.checkatrade.com/trades/{{- .checkatrade -}}" title="Find us on checkatrade.com" target="_blank" rel="noopener">CheckaTrade</a></li>{{ end }}
+								{{ if .mybuilder }}<li><a href="https://mybuilder.com/profile/view/{{- .mybuilder -}}" title="Find us on mybuilder.com" target="_blank" rel="noopener">MyBuilder</a></li>{{ end }}
+								{{ if .ratedpeople }}<li><a href="https://ratedpeople.com/profile/{{- .ratedpeople -}}" title="Find us on ratedpeople.com" target="_blank" rel="noopener">RatedPeople</a></li>{{ end }}
+								{{ if .localheroes }}<li><a href="https://www.localheroes.com/the-heroes/{{- .localheroes -}}" title="Find us on localheroes.com" target="_blank" rel="noopener">LocalHeroes</a></li>{{ end }}
+								{{ if .tradesmen }}<li><a href="https://tradesmenonline.co.uk/directory/name/{{- .tradesmen -}}" title="Find us on tradesmenonline.co.uk" target="_blank" rel="noopener">Tradesmen Online</a></li>{{ end }}
+								{{ if .bookabuilder }}<li><a href="https://www.bookabuilderuk.com/profile/{{- .bookabuilder -}}" title="Find us on bookabuilderuk.com" target="_blank" rel="noopener">Book a Builder UK</a></li>{{ end }}
+								{{ if .trustatrader }}<li><a href="https://www.trustatrader.com/traders/{{- .trustatrader -}}" title="Find us on trustatrader.com" target="_blank" rel="noopener">TrustATrader</a></li>{{ end }}
+								{{ if .google }}<li><a href="{{- .google -}}" title="Find us on Google Places" target="_blank" rel="noopener">Google Places</a></li>{{ end }}
+								{{- end }}

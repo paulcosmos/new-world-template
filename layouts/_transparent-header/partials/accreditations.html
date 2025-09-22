@@ -1,0 +1,100 @@
+<section class="section _has-bg-tertiary">
+	<div class="container is-fullhd">
+
+		
+		<div class="content has-text-centered">
+			<h2>Find us on:</h2>
+		</div>
+
+
+	{{ with .Site.Params }}
+		<div class="level accreditations" data-aos="fade-up">
+			{{- if .checkatrade }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.checkatrade.com/trades/{{- .checkatrade -}}" title="Find us on checkatrade.com" target="_blank" rel="noopener"><img src="images/creds/checkatrade.png" alt="" title=""></a>
+			</div>
+			{{- end }}
+			{{- if .facebook }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://facebook.com/{{- .facebook -}}" title="Find us on Facebook" target="_blank" rel="noopener"><img src="images/creds/facebook.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .instagram }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://instagram.com/{{- .instagram -}}" title="Find us on Instagram" target="_blank" rel="noopener"><img src="images/creds/instagram.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .tradesmen }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://tradesmenonline.co.uk/directory/name/{{- .tradesmen -}}" title="Find us on tradesmenonline.co.uk" target="_blank" rel="noopener"><img src="images/creds/tradesmenonline.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .yell }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://yell.com/biz/{{- .yell -}}" title="Find us on Yell.com" target="_blank" rel="noopener"><img src="images/creds/yell.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .tiktok }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.tiktok.com/@{{- .tiktok -}}" title="Find us on TikTok" target="_blank" rel="noopener"><img src="images/creds/tiktok.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .linkedin }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.linkedin.com/company/{{ .linkedin }}" title="Find us on Linkedin" target="_blank" rel="noopener"><img src="images/creds/linkedin.png" alt="Linkedin logo"></a>
+			</div> 
+			{{ end }}
+			{{- if .ratedpeople }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://ratedpeople.com/profile/{{- .ratedpeople -}}" title="Find us on ratedpeople.com" target="_blank" rel="noopener"><img src="images/creds/ratedpeople.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .mybuilder }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://mybuilder.com/profile/view/{{- .mybuilder -}}" title="Find us on mybuilder.com" target="_blank" rel="noopener"><img src="images/creds/mybuilder.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .bookabuilder }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.bookabuilderuk.com/profile/{{- .bookabuilder -}}" title="Find us on bookabuilderuk.com" target="_blank" rel="noopener"><img src="images/creds/bookabuilder.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .localheroes }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.localheroes.com/the-heroes/{{- .localheroes -}}" title="Find us on localheroes.com" target="_blank" rel="noopener"><img src="images/creds/localheroes.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .watersafe }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.watersafe.org.uk/search/{{- .watersafe -}}" title="Watersafe.org certified" target="_blank" rel="noopener"><img src="images/creds/watersafe.png" alt="" title=""></a>
+			</div>
+			{{ end }}
+			{{- if .trustatrader }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.trustatrader.com/traders/{{- .trustatrader -}}" title="Find us on trustatrader.com" target="_blank" rel="noopener"><img src="images/creds/trustatrader.png" alt="" title=""></a>
+			</div>
+			{{- end }}
+			{{- if .bark }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.bark.com/en/gb/company/{{- .bark -}}" title="Find us on bark.com" target="_blank" rel="noopener"><img src="images/creds/bark.png" alt="bark logo" title=""></a>
+			</div>
+			{{- end }}
+			{{- if .google }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="{{- .google -}}" title="Find us on Google Maps" target="_blank" rel="noopener"><img src="images/creds/google-reviews.png" alt="google reviews logo"></a>
+			</div>
+			{{- end }}
+			{{- if .gassafe }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="{{ .gassafe }}" title="Find us on the Gas Safe Register" target="_blank" rel="noopener"><img src="images/creds/gas-safe.png" alt=""></a>
+			</div> 
+			{{ end }}
+			{{- if .myjobquote }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="https://www.myjobquote.co.uk/t/{{ .myjobquote }}" title="Find us on My Job Quote" target="_blank" rel="noopener"><img src="images/creds/myjobquote.png" alt="my job quote logo"></a>
+			</div> 
+			{{ end }}
+		</div>
+		{{ end }}
+	</div>
+</section>

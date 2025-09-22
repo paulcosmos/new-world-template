@@ -1,0 +1,40 @@
+			{{"<!-- Top Banner -->" | safeHTML }}
+			{{- with .Site.Params }}
+			<aside class="top-banner _is-hidden-touch">
+				<div class="container is-desktop">
+					<div class="columns is-multiline is-vcentered is-centered is-mobile">
+						<div class="column is-hidden-mobile has-text-centered-mobile">
+						Professional {{ if .seo }}{{ .seo }}{{ else }}{{.industry }} services {{ end }} in {{ if .county }}{{ .county }}{{ else }}{{ .towncity}}{{ end }}
+						</div>
+						<div class="column is-hidden-mobile is-narrow is-6-touch has-text-right">
+							<span class="icon-text">
+								<span class="icon"><i class="fa-regular fa-envelope"></i></span>
+								<span><a href='mailto:{{- .email |  -}}'>{{ .email }}</a></span>
+							</span>
+						</div>
+						{{- if .phone }}
+						<div class="column is-narrow is-6-touch has-text-left has-text-right-desktop ">
+							<span class="icon-text">
+								<span class="icon"><i class="fa-regular fa-phone"></i></span>
+								<span><a href='tel:{{- replaceRE "(\\s)" "" .phone |  -}}'>{{ .phone }}</a></span>
+							</span>
+						</div>
+						{{ end }}
+						{{- if .mobile }}
+						<div class="column is-narrow is-6-touch has-text-right">
+							<span class="icon-text">
+
+								{{- if .phone }}
+								<span class="icon"><i class="fa-regular fa-mobile"></i></span>
+								{{ else -}}
+								<span class="icon"><i class="fa-regular fa-phone"></i></span>
+								{{ end -}}
+								<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
+							</span>
+						</div>
+						{{ end }}
+
+					</div>
+				</div>
+			</aside>
+			{{ end -}}

@@ -1,0 +1,26 @@
+<div class="content contact-details mt-4" data-aos="fade-right">
+								<h2>Contact Details</h2>
+								<address>
+								{{- with .Site.Params -}}
+									{{ if .phone  -}}
+									<span class="icon-text">
+										<span class="icon is-small"><i class="fa-regular fa-phone"></i></span>
+										<span><a href='tel:{{- replaceRE "(\\s)" "" .phone |  -}}'>{{ .phone }}</a></span>
+									</span> 
+									{{ end -}}
+									{{ if .mobile  -}}
+									<span class="icon-text">
+										<span class="icon is-small"><i class="fa-regular fa-mobile"></i></span>
+										<span><a href='tel:{{- replaceRE "(\\s)" "" .mobile |  -}}'>{{ .mobile }}</a></span>
+									</span>
+									{{ end -}}
+									<span class="icon-text">
+										<span class="icon is-small"><i class="fa-regular fa-envelope"></i></span>
+									<span><a href="mailto:{{ .email }}">{{ .email }}</a></span>
+									</span>
+								</address>
+								{{- end }}
+								{{/*  <div class="social-links" data-aos="fade-in-up">
+									{{ partial "social-links-icons.html" . }}
+								</div>  */}}
+							</div>

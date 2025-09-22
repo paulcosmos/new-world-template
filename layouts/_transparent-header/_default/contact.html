@@ -1,0 +1,48 @@
+			{{ define "main" }}
+			<section class="section contact">
+				<div class="container is-fullhd">
+					<div id="map" class="map has-background-grey is-hidden-touch"></div>
+					<div class="columns is-variableis-multiline">
+
+						<div class="column is-4-desktop">
+
+
+							{{  partial "contact-details.html" .  }}
+
+
+							<div class="content contact-details mt-6" data-aos="fade-right">
+								<h2>Business Address</h2>
+								<p>Please note, our business address is purely for correspondence. We do not have a public office.</p>
+								<address>
+									{{- with .Site.Params }}
+									<b>{{- if .fullname -}}
+										{{- .fullname -}}
+										{{- else -}}
+										{{- .company -}}
+										{{- end -}}
+										,<br/></b>
+									{{ if .building }}
+									{{ .building }},<br/>
+									{{end }}
+									{{ .street }},<br/>
+									{{ .towncity }},<br/>
+									{{ if .county -}}
+									{{ .county }}, <br/>
+									{{ end -}}
+									{{ .postcode }}
+								{{- end }}
+								</address>
+							</div>
+						</div>
+
+						<div class="column is-offset-2-desktop box contact-form contact-form-pulled" data-aos="fade-up">         
+										{{ partial "contact-form.html" . }}
+						</div>
+					</div>
+				</div>
+			</section>
+			{{ end }}
+
+		{{- define "scripts" -}}
+		<script async defer src="js/map.js"></script>
+		{{ end }}

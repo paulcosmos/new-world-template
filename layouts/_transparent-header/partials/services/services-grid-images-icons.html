@@ -1,0 +1,41 @@
+
+<div class="columns is-multiline is-variable is-4">
+	{{/* Automatically increment the aos-delay value */}}
+	{{- $currentPage := . -}}
+	{{- $.Scratch.Set "delay" 0 }}
+	{{- range first 4 (where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/") -}}
+	{{- $i := $.Scratch.Get "delay" }}
+		{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
+		<div class="column is-6-tablet is-6-desktop is-3-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
+			<div class="service-flex-parent">
+				<div class="service-flex-wrapper">
+
+					<div class="service-content">
+						<div class="image bg-image is-3by2">
+							{{- $image := resources.Get .Params.image }}
+							{{/*  <a class="image _is-3by2 bg-image" href="/services.html#{{ anchorize .Title }}">  */}}
+								<img src='{{ .Params.image }}' 
+									alt="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"
+									title="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"/>	
+							{{/*  </a>  */}}
+						</div>
+
+						<div class="service-description">
+							{{- if .Params.icon }}
+							<i class="fa-regular {{ .Params.icon }} fa-2x my-4"></i>
+							{{- end }}
+							<h3>{{ if .Params.anchor }}{{ .Params.anchor }}{{ else }}{{ .Params.title}}{{ end}}</h3>
+							<p>{{ .Params.desc }}</p>
+						</div>
+
+						<div class="service-button">
+							<a class="button-primary" href="/services.html#{{ anchorize .Title }}">More info <span class="icon"><i class="fa-regular fa-sm fa-arrow-right"></i></span></a>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	{{ end -}}
+	</div>

@@ -1,0 +1,77 @@
+			<div class="section">
+				<div class="container _is-fluid is-fullhd">
+					<div class="columns is-mobile is-8 is-multiline">
+
+						<div class="column is-12-mobile is-12-tablet is-4-desktop">
+							<div class="site-footer-company-info">
+							{{- with .Site.Params }}
+								<h4>{{ .company }}</h4>
+								<h5>{{ .industry | strings.FirstUpper }} services in {{ .towncity }} {{- if .county }} and {{ .county }}. {{ else }}.{{ end }}</h5>
+								{{"<!--" | safeHTML }}
+								<div data-aos="fade-right" data-aos-easing="ease-in-back">
+									<a 	class="button-primary ml-0 modal-trigger" 
+										href="contact.html">{{ .modalbuttontext }}<i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+								{{"-->" | safeHTML }}
+							{{ end }}
+								{{/*  <div class="_site-footer-socials social-links" data-aos="fade-in" data-aos-delay="200">
+								{{ partial "social-links-icons.html" . }}
+								</div>  */}}
+							</div>
+						</div>
+
+						<div class="column is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd is-offset-1-desktop _is-narrow">
+							<div class="site-footer-links _has-columns">
+								<h4>Site Links</h4>
+								<ul>
+									{{- range .Site.Menus.footer }}
+									<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></li>
+									{{- end }}
+								</ul>
+							</div>
+						</div>
+
+						<div class="column is-6-mobile _is-4-tablet _is-2-desktop _is-4-fullhd _is-offset-1-fullhd">
+							<div class="site-footer-links _has-columns">
+							<h4>Primary Services</h4>
+								<ul>
+									{{- range where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/" }}
+									<li><a href="/services.html#{{ anchorize .Title }}">
+										{{- if (ne .Params.anchor nil) }}
+											{{- .Params.anchor -}}
+										{{- else -}}
+											{{- .Title -}}
+										{{- end -}}
+									</a></li>
+									{{- end }}
+									<li><a href="/services.html">All Services</a></li>
+								</ul>
+							</div>
+						</div>
+
+						{{/*  <div class="column is-6-mobile _is-4-tablet _is-2-desktop">
+							<div class=" site-footer-links _has-columns">
+								<h4>Social Media</h4>
+								<ul>
+									{{ partial "social-links-text.html" . }}
+								</ul>
+							</div>
+						</div>  */}}
+
+					</div>
+				</div>
+			</div>
+			{{- with .Site.Params }}
+			{{ if .emblem }}
+			<div class="emblem">
+				<img class="gas-safe-emblem" src="/images/{{ .emblem }}">
+			</div>
+			{{ end -}}
+			{{ end -}}
+			<div class="container is-fluid site-footer-signoff">
+				<div class="content">
+					{{- with .Site.Params }}
+					Website by New World Digital Media on behalf of {{ if .fullname }}{{ .fullname }}{{ else }}{{ .company }}{{ end }} | {{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
+					{{- end }}
+				</div>
+			</div>

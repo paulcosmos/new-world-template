@@ -1,0 +1,72 @@
+
+		
+		{{ define "main" -}}
+			<section class="section">
+				<div class="container is-fullhd"> 
+					<div class="is-size-5 has-text-centered py-6">
+					<p>Reviews coming soon…</p>
+					</div> 
+					
+					{{ "<!-- Review Cards" | safeHTML }}
+					<div class="review-grid 2-cols">
+						{{ range (where .Site.RegularPages "Type" "review") }}
+						<div class="cell review-card">
+							<div class="card-content">
+								<div class="media content">
+									<figure class="media-content">
+										{{- if .Title }}
+										<figcaption>
+											{{ .Title }}
+											<span class="is-size-6 is-block">
+												{{- if .Params.location }}
+												{{.Params.location }}
+												{{- else }}
+												{{ .Site.Params.county }}
+												{{- end }}
+											</span>
+										</figcaption>
+										{{ end -}}
+										<div class="review-stars">
+										{{- if .Params.rating -}}
+											{{- $rating := .Params.rating -}}
+											{{- $stars := sub .Params.rating 5 -}}
+											{{- range $num := (seq $rating) }}
+											<span class="icon stars"><i class="fa-solid fa-star-sharp"></i></span>
+											{{- end -}}
+											{{- if (ne $stars "0") -}}
+											{{ range $num := (seq $stars) -}}
+											<span class="icon stars-remaining"><i class="fa-solid fa-star-sharp"></i></span>
+											{{ end -}}
+											{{ end -}}
+										{{ else -}}
+											{{- range $num := (seq 5) -}}
+											<span class="icon"><i class="fa-solid fa-star-sharp"></i></span>
+											{{- end -}}
+										{{ end }}
+										</div>
+									</figure>
+								</div>
+								<blockquote class="content">
+									{{ .Content }}
+								</blockquote>
+							</div>
+						</div>
+						{{- end }}
+					</div>
+					{{ " End Review Cards -->" | safeHTML }}
+					
+
+
+					{{ if .Params.morelink }}
+					<div class="is-grouped has-text-centered mt-5">
+						<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+							<a href="{{ .Params.morelink }}" target="_blank" rel="noopener"  class="button button-primary ml-0">View more <i class="fa-light fa-square-arrow-up-right"></i></a>
+						</div>
+					</div>
+					{{ end }}
+				</div>
+			</section>
+
+			{{ partial "cta-text.html" . }}
+
+		{{ end }}

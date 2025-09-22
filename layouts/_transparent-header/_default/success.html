@@ -1,0 +1,25 @@
+
+			{{ define "hero" }}
+			<section class="hero has-text-centered is-halfheight hero-success">
+				<div class="hero-body">
+					<div class="container is-fullhd">
+						<div class="columns">
+							<div class="column is-8-desktop is-offset-2-desktop is-6-fullhd is-offset-3-fullhd is-12-tablet">
+								<div class="content hero-services-content has-accent" data-aos="fade-down">
+									{{ .Content }}
+									{{/*  {{- with .Site.Params -}}
+									<div class="hero-socials" data-aos="fade-in" data-aos-delay="200">
+										{{ partial "social-links.html" . }}
+									</div>
+									{{ end -}}  */}}
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			{{ end }}
+
+{{ define "scripts" }}
+{{ end }}
