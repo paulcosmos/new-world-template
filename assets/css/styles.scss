@@ -372,7 +372,7 @@ strong {
 
 .navbar {
 
-    border-top: solid 1px rgba($primary, 0.2);
+    // border-top: solid 1px rgba($primary, 0.2);
 
     @include until($navbar-breakpoint){
         background-color: $navbar-background-color-mobile;
@@ -725,7 +725,7 @@ strong {
     text-align: center;
 
     @include from($navbar-breakpoint) {
-        padding-top: 3rem;
+        // padding-top: 3rem;
         padding-bottom: 3rem;
     }
 

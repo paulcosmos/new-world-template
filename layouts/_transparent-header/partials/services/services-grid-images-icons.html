@@ -3,10 +3,10 @@
 	{{/* Automatically increment the aos-delay value */}}
 	{{- $currentPage := . -}}
 	{{- $.Scratch.Set "delay" 0 }}
-	{{- range first 4 (where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/") -}}
+	{{- range first 3 (where (where .Site.RegularPages "Type" "service-item") "File.Dir" "services/") -}}
 	{{- $i := $.Scratch.Get "delay" }}
 		{{- $.Scratch.Set "delay" (add ($.Scratch.Get "delay") 100) }}
-		<div class="column is-6-tablet is-6-desktop is-3-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
+		<div class="column is-6-tablet is-6-desktop is-4-fullhd company-services-overview-item" data-aos="fade-in" data-aos-delay="{{ print $i }}">
 			<div class="service-flex-parent">
 				<div class="service-flex-wrapper">
 
