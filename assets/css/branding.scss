@@ -20,14 +20,14 @@ $animated-underline: $link;
 $text: $secondary;
 
 @mixin brand-gradient {
-	background: $primary;
-	background-image: linear-gradient(180deg, rgba($tertiary, 1), rgba($tertiary, 0.5)), url('../images/bg.png');
+	background-color: $secondary;
+	background-image: linear-gradient(180deg, rgba($primary, 1), rgba($primary, 0.5));
 }
 
 // Page hero settings 
 @mixin hero-default-bg {
 	background-color: $tertiary;
-	background-image: linear-gradient(180deg, rgba($tertiary, 0.6), rgba($secondary, 0.05)), url('../images/bg.png');
+	background-image: linear-gradient(180deg, rgba($tertiary, 1), rgba($tertiary, .5)), url('../images/bg.png');
 }
 
 @mixin hero-index-bg {
