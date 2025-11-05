@@ -50,7 +50,7 @@
 		</script>
 
 		{{ "<!-- Lightbox -->" | safeHTML }}
-		<script src="js/simple-lightbox.min.js?v2.11.0"></script>
+		<script src="/js/simple-lightbox.min.js?v2.11.0"></script>
 		<script>
 			(function() {
 				var $gallery = new SimpleLightbox('.gallery a', {
@@ -63,13 +63,13 @@
 		</script>
 
 		{{ "<!-- Vegas BG Slider -->" | safeHTML }}
-		<script src="./js/vegas/vegas.min.js"></script>
+		<script src="/js/vegas/vegas.min.js"></script>
 		<script>
 			$(".vegas-slides").vegas({
 				slides: [
-					{ src: "./images/slider/slide1.jpg" },
-					{ src: "./images/slider/slide2.jpg" },
-					{ src: "./images/slider/slide3.jpg" }
+					{ src: "/images/slider/slide1.jpg" },
+					{ src: "/images/slider/slide2.jpg" },
+					{ src: "/images/slider/slide3.jpg" }
 				],
 				overlay: true,
 			});

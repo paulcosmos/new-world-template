@@ -24,12 +24,12 @@
 		{{/*  {{- if .IsHome }}  */}}
 		<link rel="canonical" href="{{ print .Permalink }}">
 		{{/*  {{- else }}  */}}
-		{{/*  {{"<!-- " | safeHTML }}<link rel="canonical" href="{{ print .Site.BaseURL }}">{{"-->" | safeHTML }}  */}}
+		{{/*  {{"<!-- " | safeHTML }}<link rel="canonical" href="{{ print .Permalink }}">{{"-->" | safeHTML }}  */}}
 		{{/*  {{- end }}  */}}
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 		{{ "<!--[if (lt IE 9)]><script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js'></script><![endif]-->" | safeHTML }}
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<link rel="stylesheet" href="./js/vegas/vegas.min.css">
+		<link rel="stylesheet" href="/js/vegas/vegas.min.css">
 		{{- $bulma := resources.Get "css/bulma.sass" | resources.ToCSS }}
 		{{- $style := resources.Get "css/styles.scss" | resources.ToCSS | resources.PostCSS  (dict "config" "./postcss.config.js") }}
 		{{- $stylemin := resources.Get "css/styles.scss" | resources.ToCSS | resources.PostCSS  (dict "config" "./postcss.config.js") | resources.Fingerprint "sha512" }}
