@@ -24,13 +24,12 @@
 			<div class="column is-12-touch is-8-desktop" data-aos="fade-in">
 				<article class="content has-accent service-page-content _box">
 
-					{{ .Content }}
-
-					<div class="image has-rounded-corners my-5">
+					<div class="image is-3by1 bg-image has-rounded-corners mb-6">
 						<img src='{{ .Params.image }}' 
-						alt="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"
-						title="{{ if .Params.seo }}{{ .Params.seo|humanize }}{{ else }}{{.Params.industry|humanize}}{{ end }} in {{ .Params.towncity }}{{ if .Params.county }} and {{ .Params.county }} {{- end }}"/>	
+						alt="{{.Title|humanize}} services in {{ .Site.Params.towncity }}{{ if .Site.Params.county }} and {{ .Site.Params.county }} {{- end }}"/>	
 					</div>
+
+					{{ .Content }}
 
 				</article>
 				
