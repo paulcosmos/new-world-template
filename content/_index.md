@@ -20,6 +20,6 @@ sitemap:
   priority: 1.0
 ---
 
-# Reliable **{{<industry>}} services** in {{<county>}}.
+# Expert {{<industry>}} services in {{<county>}}.
 
 Experienced in all aspects of the {{<industry>}} trade.
