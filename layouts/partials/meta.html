@@ -21,11 +21,7 @@
 		<meta name="msapplication-navbutton-color" content="#1a1a1a">
 		<meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a">
 		<meta name="application-name" content="{{- print .Page.Title }} | {{ print .Site.Params.company }}">
-		{{/*  {{- if .IsHome }}  */}}
 		<link rel="canonical" href="{{ print .Permalink }}">
-		{{/*  {{- else }}  */}}
-		{{/*  {{"<!-- " | safeHTML }}<link rel="canonical" href="{{ print .Site.BaseURL }}">{{"-->" | safeHTML }}  */}}
-		{{/*  {{- end }}  */}}
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 		{{ "<!--[if (lt IE 9)]><script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js'></script><![endif]-->" | safeHTML }}
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -35,3 +31,4 @@
 		{{- $stylemin := resources.Get "css/styles.scss" | resources.ToCSS | resources.PostCSS  (dict "config" "./postcss.config.js") | resources.Fingerprint "sha512" }}
 		<link rel="stylesheet" href="{{ $bulma.Permalink | relURL }}">
 		<link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+		<link rel="stylesheet" href="whatsapp-widget/whatsapp-widget.css">
