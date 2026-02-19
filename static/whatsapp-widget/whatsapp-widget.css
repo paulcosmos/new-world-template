@@ -122,8 +122,8 @@
     -o-object-position: center;
        object-position: center;
     background-color: var(--profile-pic-bg-color);
-    background-image: url('/images/logo.png');
-    background-image: url('/images/favicon.png');
+    background-image: url('../images/logo.png');
+    background-image: url('../images/favicon.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
