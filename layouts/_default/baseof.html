@@ -78,8 +78,9 @@
 		{{ block "scripts" . }}
 		{{- end }}
 
-		<div class="whatsapp-widget">
-		</div>
+		{{/*  <div class="whatsapp-widget">  */}}
+			{{ partial "whatsapp-widget.html" . }}
+		{{/*  </div>  */}}
 		<script src="whatsapp-widget/whatsapp-widget.js" defer></script>
 
 		{{ block "scripts" . }}
