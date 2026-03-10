@@ -94,6 +94,11 @@
 				<a href="{{ .myjobquote }}" title="Find us on My Job Quote" target="_blank" rel="noopener"><img src="images/creds/myjobquote.png" alt="my job quote logo"></a>
 			</div> 
 			{{ end }}
+			{{- if .nextdoor }}
+			<div class="level-item accreditations-item has-text-centered">
+				<a href="{{ .nextdoor }}" title="Find us on Nextdoor" target="_blank" rel="noopener"><img src="images/creds/nextdoor.png" alt="Nextdoor logo"></a>
+			</div> 
+			{{ end }}
 		</div>
 		{{ end }}
 	</div>
