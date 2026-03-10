@@ -133,7 +133,7 @@
 }
 
 .whatsapp-widget .profile-pic:before {
-    display: block;
+    display: none;
     width: 9px;
     height: 9px;
     content: '';
