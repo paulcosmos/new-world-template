@@ -18,10 +18,12 @@
 				{{/*  <p>We provide a wide range of {{ .Site.Params.industry }} services in {{ .Site.Params.towncity }} {{- if .Site.Params.county }} and throughout {{ .Site.Params.county }}{{ end }}.</p>  */}}
 			</div>
 		</div>
+
 		{{ partial "services/services-grid-images-icons.html" . }}
+		
 	</div>
 
-{{ with .Site.GetPage "/services" }}
+{{/*  {{ with .Site.GetPage "/services" }}
 {{ if .Params.services }}
 	
 	<div class="container is-fullhd pb-4">
@@ -54,7 +56,7 @@
 		</div>
 	</div>
 {{- end }}
-{{- end }}
+{{- end }}  */}}
 </section>
 
 {{/*  {{ partial "cta-banner.html" . }}  */}}
