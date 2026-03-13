@@ -5,6 +5,7 @@ desc: Improve your privacy with a choice of fencing styles and heights, all guar
 anchor: 
 weight: 5
 image: images/fencing.jpg
+icon: fa-fence
 ---
 ## Fencing & Gate Installation
 

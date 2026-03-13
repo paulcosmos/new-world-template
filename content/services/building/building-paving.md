@@ -5,6 +5,7 @@ desc: Improve the overall look of your property whilst also increasing value wit
 weight: 2
 image: images/paving.jpg
 anchor: 
+icon: fa-diamonds-4
 ---
 ## Paving, Driveways & Patios
 

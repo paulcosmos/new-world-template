@@ -1,10 +1,11 @@
 ---
 title: "Roofing & Roof Repairs"
 type: service-item
-desc: We offer a comprehensive range of roofing services, from simply repairs to complete tile replacements.
+desc: We offer a comprehensive range of roofing services, from simple repairs to complete tile replacements.
 weight: 1
 image: images/roofing.jpg
 anchor: Roofing Services
+icon: fa-house-day
 ---
 ## Roofing & Roof Repairs
 
