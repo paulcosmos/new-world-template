@@ -5,6 +5,7 @@ desc: From adding plug sockets and installing lighting to full rewiring jobs.
 weight: 1
 image: images/electrical.jpg
 anchor: Electrician Services
+icon: fa-bolt
 ---
 
 ## Electrical Installations & Rewires

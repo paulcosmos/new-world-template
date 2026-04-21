@@ -9,7 +9,7 @@ icon: fa-shield-check
 ---
 ## Electrical Safety Inspections
 
-Ensure your home or business is safe with our complete electrical safety inspections. We offer portable appliance testing (PAT) and domestic/landlord EICR certificates. All our engineers are qualified & work within strict guidelines to ensure our work complies with the British wiring regulations.
+Ensure your home or business is safe with our complete electrical safety inspections. We offer domestic/landlord EICR certificates. All our engineers are qualified & work within strict guidelines to ensure our work complies with British wiring regulations.
 
-* EICRs completed within 48 hours
+* Annual scheduled EICRs available
 * Recommended for new home buyers and landlords
