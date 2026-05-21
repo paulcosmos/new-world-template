@@ -1,5 +1,5 @@
 ---
-title: "Electrical Installations"
+title: "Installations"
 type: service-item
 desc: From adding plug sockets and installing lighting to full rewiring jobs.
 weight: 1

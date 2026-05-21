@@ -1,5 +1,5 @@
 ---
-title: "Electrical Safety Inspections"
+title: "safety"
 type: service-item
 desc: Safety checks and certifications for domestic and commercial properties and appliances.
 weight: 3
