@@ -19,9 +19,9 @@
 											{{ .Title }}
 											{{- if .Params.location }}
 											<span class="is-size-6 is-block">
-												{{- end }}
+												{{.Params.location }}
 											</span>
-											{{.Params.location }}
+											{{- end }}
 										</figcaption>
 										{{ end -}}
 										<div class="review-stars">
