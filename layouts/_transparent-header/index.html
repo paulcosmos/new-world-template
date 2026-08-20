@@ -2,7 +2,11 @@
 <section class="hero is-fullheight-with-navbar hero-index pt-0">
 
 	{{ partial "hero/hero-image-navbar-index.html" . }}	
-
+	{{- with .Site.Params }}
+	{{ if .emblem }}
+	<img class="gas-safe-emblem" src="images/{{ .emblem }}">
+	{{ end -}}
+	{{ end }}
 </section>
 {{ end -}}
 
