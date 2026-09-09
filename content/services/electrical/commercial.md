@@ -13,4 +13,4 @@ icon: fa-buildings
 We cover every base with our commercial and industrial electrical services. From a simple routine repairs, lighting, data cabling and CCTV installation, to complete rewires of your premises, no matter how big or small your requirements, we can help. 
 
 * Lighting, network access points, consumer units, etc
-* Available for offices, restaurants, shops & chools
+* Available for offices, restaurants, shops & schools
