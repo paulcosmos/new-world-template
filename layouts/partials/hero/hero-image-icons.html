@@ -1,0 +1,60 @@
+<div class="hero-body">
+	<div class="container is-fullhd">
+		<div class="columns is-centered">
+			<div class="column is-12-tablet is-12-desktop is-10-widescreen">
+				<span class="pre-heading" data-aos="fade-left">
+				{{ if .Params.preheading -}}
+					{{ .Params.preheading }} 
+				{{- else -}}
+				{{ if .Site.Params.seo }}
+					{{ .Site.Params.seo | humanize }} 
+					{{ else }} 
+					{{ .Site.Params.industry | humanize }} services 
+					{{ end }} in {{ .Site.Params.towncity }} 
+				{{- end }}
+				</span>
+				<div class="content hero-services-content has-accent" data-aos="fade-down">
+					{{ .Content }}
+				</div>
+			</div>
+		</div>
+
+
+		<div class="columns is-mobile is-variable is-multiline is-centered selling-points">
+			<div class="column is-6-mobile is-4-tablet is-3-desktop">
+				<div data-aos="fade-in" data-aos-delay="0">
+					<span class="icon">
+						<i class="fa-sharp fa-2x fa-regular fa-shield-check"></i>
+					</span>
+					<p>Highly Experienced</p>
+				</div>
+			</div>
+			<div class="column is-6-mobile is-4-tablet is-3-desktop">
+				<div data-aos="fade-in" data-aos-delay="200">
+					<span class="icon">
+						<i class="fas fa-2x fa-regular fa-award-simple"></i>
+					</span>
+					<p>Premium Quality Materials</p>
+				</div>
+			</div>
+			<div class="column is-6-mobile is-4-tablet is-3-desktop">
+				<div data-aos="fade-in" data-aos-delay="400">
+					<span class="icon">
+						<i class="fa-sharp fa-2x fa-regular fa-message-smile"></i>
+					</span>
+					<p>Friendly Service</p>
+				</div>
+			</div>
+			<div class="column is-6-mobile is-4-tablet is-3-desktop">
+				<div data-aos="fade-in" data-aos-delay="600">
+					<span class="icon">
+						<i class="fas fa-2x fa-regular fa-trophy"></i>
+					</span>
+					<p>Customer Satisfaction</p>
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
