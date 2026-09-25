@@ -1,6 +1,6 @@
 {{- define "hero" -}}
 <section class="hero is-halfheight hero-index">
-	{{ partial "hero/hero-image.html" . }}
+	{{ partial "hero/hero-image-icons.html" . }}
 	{{- with .Site.Params }}
 	{{ if .emblem }}
 	<img class="gas-safe-emblem" src="images/{{ .emblem }}">
