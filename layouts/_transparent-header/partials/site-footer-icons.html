@@ -23,7 +23,7 @@
 								<i class="fa-duotone fa-light fa-map-location-dot fa-3x icon-theme"></i>
 							</span>
 							<h4>Based in:</h4>
-							<p>{{ if .Site.Params.county }}{{ .Site.Params.county }}{{ else }}{{ .Site.Params.towncity }}{{ end }}</p>
+							<p>{{ .Site.Params.towncity }}</p>
 						</div>
 
 					</div>
@@ -33,7 +33,8 @@
 			<div class="container is-fluid site-footer-signoff">
 				<div class="content">
 					{{- with .Site.Params }}
-					Website by New World Digital Media on behalf of {{ if .fullname }}{{ .fullname }}{{ else }}{{ .company }}{{ end }} | {{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}
+					<p>Website by New World Digital Media on behalf of {{ if .fullname }}{{ .fullname }}{{ else }}{{ .company }}{{ end }}</p>
+					<p>{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}</p>
 					{{- end }}
 				</div>
 			</div>

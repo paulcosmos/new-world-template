@@ -777,6 +777,7 @@ strong {
     @include hero-default-bg;
     position: relative;
     color: $hero-text;
+    text-align: center;
     font-weight: normal;
 
     @include from($navbar-breakpoint) {
