@@ -782,7 +782,7 @@ strong {
 
     @include from($navbar-breakpoint) {
         padding-top: 3rem;
-        // padding-bottom: 3rem;
+        padding-bottom: 3rem;
     }
 
     &-body {
