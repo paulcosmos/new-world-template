@@ -7,7 +7,7 @@
 					<p>Reviews coming soon…</p>
 					</div> 
 					
-					{{ "<!-- Review Cards" | safeHTML }}
+					{{/*  {{ "<!-- Review Cards" | safeHTML }}  */}}
 					<div class="review-grid 2-cols">
 						{{ range (where .Site.RegularPages "Type" "review") }}
 						<div class="cell review-card">
@@ -17,11 +17,6 @@
 										{{- if .Title }}
 										<figcaption>
 											{{ .Title }}
-											{{- if .Params.location }}
-											<span class="is-size-6 is-block">
-												{{.Params.location }}
-											</span>
-											{{- end }}
 										</figcaption>
 										{{ end -}}
 										<div class="review-stars">
@@ -51,7 +46,7 @@
 						</div>
 						{{- end }}
 					</div>
-					{{ " End Review Cards -->" | safeHTML }}
+					{{/*  {{ " End Review Cards -->" | safeHTML }}  */}}
 					
 
 
@@ -65,6 +60,6 @@
 				</div>
 			</section>
 
-			{{ partial "cta-text.html" . }}
+			{{ partial "cta-image-bg.html" . }}
 
 		{{ end }}

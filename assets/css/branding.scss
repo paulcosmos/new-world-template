@@ -27,15 +27,14 @@ $text: $secondary;
 
 // Page hero settings 
 @mixin hero-default-bg {
-	background-color: $tertiary;
-	background-image: linear-gradient(180deg, rgba($tertiary, 1), rgba($tertiary, .5)), url('../images/bg.png');
+	background-color: $secondary;
+	background-image: linear-gradient(180deg, rgba(black, 0.6), rgba(black, 0.6)), url('../images/hero.jpg');
 }
 
 @mixin hero-index-bg {
 	@include background-image;
 	color: $hero-index-text;
 	background-color: $secondary;
-	background-image: linear-gradient(180deg, rgba(black, 0.6), rgba(black, 0.3)), url('../images/bg.png');
 	background-image: linear-gradient(180deg, rgba(black, 0.6), rgba(black, 0.6)), url('../images/hero.jpg');
 	// background-position: top;
 }
@@ -82,7 +81,7 @@ $sl-overlay-background: $secondary;
 $sl-navigation-color: white;
 
 // Page Hero
-$hero-text: $text;
+$hero-text: white;
 $preheading-text: inherit;
 $preheading-size: 0.8rem;
 $hero-title-size: 4.4rem;

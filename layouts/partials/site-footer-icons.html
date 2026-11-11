@@ -33,7 +33,7 @@
 <div class="container is-fluid site-footer-signoff">
 	<div class="content">
 		{{- with .Site.Params }}
-		<p>Website by New World Digital Media on behalf of {{ if .fullname }}{{ .fullname }}{{ else }}{{ .company }}{{ end }}</p>
+		<p>{{ if .fullname }}{{ .fullname }}{{ else }}{{ .company }}{{ end }}</p>
 		<p>{{ if .seo }}{{ .seo|humanize }}{{ else }}{{.industry|humanize}}{{ end }} in {{ .towncity }}{{ if .county }} and {{ .county }} {{- end }}</p>
 		{{- end }}
 	</div>

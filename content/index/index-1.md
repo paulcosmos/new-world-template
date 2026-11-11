@@ -8,7 +8,7 @@ image: images/intro.jpg
 preheading: About us
 ---
 
-## Professional **{{<seo>}}** in {{<county>}} & surrounding areas.
+## Professional {{<seo>}} serving {{<county>}} & all surrounding areas.
 
 * Based in {{<towncity>}} with {{<years>}} of experience
 * Reputation for excellent quality and professionalism
