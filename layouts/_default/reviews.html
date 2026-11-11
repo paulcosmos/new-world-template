@@ -7,7 +7,7 @@
 					<p>Reviews coming soon…</p>
 					</div> 
 					
-					{{ "<!-- Review Cards" | safeHTML }}
+					{{/*  {{ "<!-- Review Cards" | safeHTML }}  */}}
 					<div class="review-grid 2-cols">
 						{{ range (where .Site.RegularPages "Type" "review") }}
 						<div class="cell review-card">
@@ -46,7 +46,7 @@
 						</div>
 						{{- end }}
 					</div>
-					{{ " End Review Cards -->" | safeHTML }}
+					{{/*  {{ " End Review Cards -->" | safeHTML }}  */}}
 					
 
 
