@@ -8,51 +8,44 @@
 					</div> 
 					
 					{{ "<!-- Review Cards" | safeHTML }}
-					<div class="review-grid 2-cols">
-						{{ range (where .Site.RegularPages "Type" "review") }}
-						<div class="cell review-card">
-							<div class="card-content">
-								<div class="media content">
-									<figure class="media-content">
-										{{- if .Title }}
-										<figcaption>
-											{{ .Title }}
-											<span class="is-size-7 is-block">
-												{{- if .Params.location }}
-												{{.Params.location }}
-												{{- else }}
-												{{ .Site.Params.county }}
-												{{- end }}
-											</span>
-										</figcaption>
-										{{ end -}}
-										<div class="review-stars">
-										{{- if .Params.rating -}}
-											{{- $rating := .Params.rating -}}
-											{{- $stars := sub .Params.rating 5 -}}
-											{{- range $num := (seq $rating) }}
-											<span class="icon stars"><i class="fa-solid fa-star-sharp"></i></span>
-											{{- end -}}
-											{{- if (ne $stars "0") -}}
-											{{ range $num := (seq $stars) -}}
-											<span class="icon stars-remaining"><i class="fa-solid fa-star-sharp"></i></span>
+						<div class="review-grid 2-cols">
+							{{ range (where .Site.RegularPages "Type" "review") }}
+							<div class="cell review-card">
+								<div class="card-content">
+									<div class="media content">
+										<figure class="media-content">
+											{{- if .Title }}
+											<figcaption>
+												{{ .Title }}
+											</figcaption>
 											{{ end -}}
-											{{ end -}}
-										{{ else -}}
-											{{- range $num := (seq 5) -}}
-											<span class="icon"><i class="fa-solid fa-star-sharp"></i></span>
-											{{- end -}}
-										{{ end }}
-										</div>
-									</figure>
+											<div class="review-stars">
+											{{- if .Params.rating -}}
+												{{- $rating := .Params.rating -}}
+												{{- $stars := sub .Params.rating 5 -}}
+												{{- range $num := (seq $rating) }}
+												<span class="icon stars"><i class="fa-solid fa-star-sharp"></i></span>
+												{{- end -}}
+												{{- if (ne $stars "0") -}}
+												{{ range $num := (seq $stars) -}}
+												<span class="icon stars-remaining"><i class="fa-solid fa-star-sharp"></i></span>
+												{{ end -}}
+												{{ end -}}
+											{{ else -}}
+												{{- range $num := (seq 5) -}}
+												<span class="icon"><i class="fa-solid fa-star-sharp"></i></span>
+												{{- end -}}
+											{{ end }}
+											</div>
+										</figure>
+									</div>
+									<blockquote class="content">
+										{{ .Content }}
+									</blockquote>
 								</div>
-								<blockquote class="content">
-									{{ .Content }}
-								</blockquote>
 							</div>
+							{{- end }}
 						</div>
-						{{- end }}
-					</div>
 					{{ " End Review Cards -->" | safeHTML }}
 
 
@@ -66,6 +59,6 @@
 				</div>
 			</section>
 
-			{{ partial "cta-text.html" . }}
+			{{ partial "cta-image-bg.html" . }}
 
 		{{ end }}

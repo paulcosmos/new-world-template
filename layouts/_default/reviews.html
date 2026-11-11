@@ -17,11 +17,6 @@
 										{{- if .Title }}
 										<figcaption>
 											{{ .Title }}
-											{{- if .Params.location }}
-											<span class="is-size-6 is-block">
-												{{.Params.location }}
-											</span>
-											{{- end }}
 										</figcaption>
 										{{ end -}}
 										<div class="review-stars">
@@ -65,6 +60,6 @@
 				</div>
 			</section>
 
-			{{ partial "cta-text.html" . }}
+			{{ partial "cta-image-bg.html" . }}
 
 		{{ end }}

@@ -9,6 +9,7 @@
 	</head>
 
 	<body>
+		{{ block "header" . -}}
 		<header>
 			{{ partial "top-banner.html" . }}
 
@@ -20,6 +21,7 @@
 			</section>
 			{{ end }}
 		</header>
+		{{ end }}
 
 
 		<main>
