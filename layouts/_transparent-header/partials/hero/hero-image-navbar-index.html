@@ -25,7 +25,19 @@
 					{{ .Content }}
 				</div>
 			</div>
-		</div>		
+		</div>
+		
+
+		<div class="columns is-multiline is-centered is-vcentered is-variable is-2 mt-4">
+			<div class="column is-12-mobile is-6-tablet is-4-desktop is-3-fullhd" data-aos="fade-up" data-aos-delay="200">
+				<a href='tel:{{ replaceRE "(\\s)" "" .Site.Params.phone | }}' class="button button-primary is-fullwidth"><i class="fa-light fa-phone pr-2"></i>Call now: {{.Site.Params.phone}}</a>
+			</div>
+			<div class="column is-12-mobile is-6-tablet is-4-desktop is-3-fullhd" data-aos="fade-up" data-aos-delay="400">
+				<a href="#" class="button button-outline is-fullwidth modal-trigger ml-0 mr-1" data-target="quote-modal"><i class="fa-light fa-envelope-circle-check pr-2"></i>Get a FREE Quote</a>
+			</div>
+		</div>
+		
+		
 	</div>
 </div>
 
