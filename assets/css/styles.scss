@@ -820,6 +820,46 @@ strong {
             margin: 0 auto;
         }
     }
+
+    &-index-left {
+        @include hero-index-bg;
+        text-align: left;
+
+        h1,
+        h2 {
+            color: white;
+        }
+
+        h1 {
+            // text-transform: uppercase;
+            font-size: 2.7rem!important;
+            margin-bottom: 0.8rem;
+            @include from ($navbar-breakpoint){
+                font-size: 4.4rem!important;
+            }
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-top:0!important;
+            @include from ($navbar-breakpoint){
+                font-size: 2rem;
+            }
+
+            &:after {
+                content:"";
+                margin-top: 2rem;
+                display: block;
+                background-color:$primary;
+                height: 3px;
+                width: 40px;
+            }
+        }
+
+        p {
+            font-size: $hero-text-size;
+        }
+    }
     
     h1 {
 

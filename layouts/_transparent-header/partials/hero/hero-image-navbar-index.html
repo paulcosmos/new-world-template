@@ -1,14 +1,12 @@
-<div class="hero-head">
-	{{ if .Site.Params.servicePages }}
-		{{ partial "navbar-dropdown.html" . }}
-	{{ else }}
-		{{ partial "navbar.html" . }}
-	{{end }}
-	</div>
 
+<div class="hero-head">
+	{{ partial "navbar.html" . }}
+</div>
+
+<!-- Hero content: will be in the middle -->
 <div class="hero-body">
 	<div class="container is-fullhd">
-		<div class="columns is-centered">
+		<div class="columns is-centered _is-vcentered">
 			<div class="column is-12-tablet is-12-desktop is-10-widescreen">
 				<span class="pre-heading" data-aos="fade-left">
 				{{ if .Params.preheading -}}
@@ -26,24 +24,23 @@
 				</div>
 			</div>
 		</div>
-		
 
 		<div class="columns is-multiline is-centered is-vcentered is-variable is-2 mt-4">
 			<div class="column is-12-mobile is-6-tablet is-4-desktop is-3-fullhd" data-aos="fade-up" data-aos-delay="200">
-				<a href='tel:{{ replaceRE "(\\s)" "" .Site.Params.phone | }}' class="button button-primary is-fullwidth"><i class="fa-light fa-phone pr-2"></i>Call now: {{.Site.Params.phone}}</a>
+				<a href='tel:{{ replaceRE "(\\s)" "" .Site.Params.phone | }}' class="button button-primary is-fullwidth"><i class="fa-light fa-phone pr-2"></i>Call: {{.Site.Params.phone}}</a>
 			</div>
 			<div class="column is-12-mobile is-6-tablet is-4-desktop is-3-fullhd" data-aos="fade-up" data-aos-delay="400">
-				<a href="#" class="button button-outline is-fullwidth modal-trigger ml-0 mr-1" data-target="quote-modal"><i class="fa-light fa-envelope-circle-check pr-2"></i>Get a FREE Quote</a>
+				<a href="#" class="button button-primary is-fullwidth modal-trigger" data-target="quote-modal"><i class="fa-light fa-envelope-circle-check pr-2"></i>Get a Quote</a>
 			</div>
 		</div>
-		
-		
+
 	</div>
 </div>
 
 <div class="hero-foot">
 	<div class="container is-fullhd">
-		<div class="columns is-mobile is-variable is-multiline is-centered selling-points">
+
+		<div class="columns is-centered is-mobile is-variable is-multiline is-centered selling-points">
 			<div class="column is-6-mobile is-4-tablet is-3-desktop">
 				<div data-aos="fade-in" data-aos-delay="0">
 					<span class="icon">
@@ -55,19 +52,29 @@
 			<div class="column is-6-mobile is-4-tablet is-3-desktop">
 				<div data-aos="fade-in" data-aos-delay="200">
 					<span class="icon">
-						<i class="fas fa-2x fa-regular fa-award"></i>
+						<i class="fas fa-2x fa-regular fa-award-simple"></i>
 					</span>
-					<p>Quality Workmanship</p>
+					<p>Premium Quality</p>
+				</div>
+			</div>
+			<div class="column is-6-mobile is-4-tablet is-3-desktop">
+				<div data-aos="fade-in" data-aos-delay="400">
+					<span class="icon">
+						<i class="fa-sharp fa-2x fa-regular fa-thumbs-up"></i>
+					</span>
+					<p>Friendly Service</p>
 				</div>
 			</div>
 			<div class="column is-6-mobile is-4-tablet is-3-desktop">
 				<div data-aos="fade-in" data-aos-delay="600">
 					<span class="icon">
-						<i class="fas fa-2x fa-regular fa-location-dot"></i>
+						<i class="fas fa-2x fa-regular fa-trophy"></i>
 					</span>
-					<p>Local Service</p>
+					<p>Customer Satisfaction</p>
 				</div>
 			</div>
 		</div>
+
+
 	</div>
 </div>
